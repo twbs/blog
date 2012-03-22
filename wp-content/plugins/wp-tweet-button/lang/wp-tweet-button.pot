@@ -1,0 +1,582 @@
+# Copyright (C) 2010 WP Tweet Button
+# This file is distributed under the same license as the WP Tweet Button package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Tweet Button 2.0.3.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-tweet-button\n"
+"POT-Creation-Date: 2011-02-17 00:20:38+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: wp-tweet-button.php:1203
+msgid "W3 Total Cache page cache has been cleared"
+msgstr ""
+
+#: wp-tweet-button.php:1204
+msgid "WP Super Cache cleared"
+msgstr ""
+
+#: wp-tweet-button.php:1205
+msgid ""
+"Auto-Tweeting authorized. You can now <a href=\"#tw_auto_tweet_box"
+"\">configure</a> Auto-Tweeting."
+msgstr ""
+
+#: wp-tweet-button.php:1206
+msgid ""
+"Auto-Tweeting authorization has been removed. Auto-Tweeting has been "
+"disabled."
+msgstr ""
+
+#: wp-tweet-button.php:1212
+msgid "Tweet Button settings have been saved"
+msgstr ""
+
+#: wp-tweet-button.php:1237 wp-tweet-button.php:1677
+msgid "Save Changes"
+msgstr ""
+
+#: wp-tweet-button.php:1242
+msgid "Display"
+msgstr ""
+
+#: wp-tweet-button.php:1245
+msgid "Position"
+msgstr ""
+
+#: wp-tweet-button.php:1247
+msgid "Before"
+msgstr ""
+
+#: wp-tweet-button.php:1248
+msgid "After"
+msgstr ""
+
+#: wp-tweet-button.php:1249
+msgid "Before and After"
+msgstr ""
+
+#: wp-tweet-button.php:1250
+msgid "Shortcode"
+msgstr ""
+
+#: wp-tweet-button.php:1251
+msgid "Manual"
+msgstr ""
+
+#: wp-tweet-button.php:1255
+msgid "Alignment"
+msgstr ""
+
+#: wp-tweet-button.php:1257
+msgid "None (Default)"
+msgstr ""
+
+#: wp-tweet-button.php:1258
+msgid "Right"
+msgstr ""
+
+#: wp-tweet-button.php:1259
+msgid "Left"
+msgstr ""
+
+#: wp-tweet-button.php:1260
+msgid "Center"
+msgstr ""
+
+#: wp-tweet-button.php:1264
+msgid "Visibility"
+msgstr ""
+
+#: wp-tweet-button.php:1267
+msgid "Posts"
+msgstr ""
+
+#: wp-tweet-button.php:1271
+msgid "Pages"
+msgstr ""
+
+#: wp-tweet-button.php:1275
+msgid "Front page (home)"
+msgstr ""
+
+#: wp-tweet-button.php:1279
+msgid "RSS feeds"
+msgstr ""
+
+#: wp-tweet-button.php:1283
+msgid "Archives"
+msgstr ""
+
+#: wp-tweet-button.php:1287
+msgid "Search"
+msgstr ""
+
+#: wp-tweet-button.php:1291
+msgid "Excerpts"
+msgstr ""
+
+#: wp-tweet-button.php:1298
+msgid "Mobile (WPTouch)"
+msgstr ""
+
+#: wp-tweet-button.php:1305
+msgid "No After on Front page"
+msgstr ""
+
+#: wp-tweet-button.php:1315
+msgid ""
+"You can also EXCLUDE the Tweet Button from custom post types by checking "
+"them here."
+msgstr ""
+
+#: wp-tweet-button.php:1329
+msgid "Set your look-and-feel preferences."
+msgstr ""
+
+#: wp-tweet-button.php:1332
+msgid ""
+"The <strong>\"No After on Front page\"</strong> option allows you to use "
+"\"Before and After\" placement and the \"Front page\" placement but exclude "
+"the button from the bottom of posts on the front page."
+msgstr ""
+
+#: wp-tweet-button.php:1337
+msgid "Tweet Button style"
+msgstr ""
+
+#: wp-tweet-button.php:1341
+msgid "Vertical"
+msgstr ""
+
+#: wp-tweet-button.php:1345
+msgid "Horizontal"
+msgstr ""
+
+#: wp-tweet-button.php:1349
+msgid "No count"
+msgstr ""
+
+#: wp-tweet-button.php:1360
+msgid "Default Twitter username"
+msgstr ""
+
+#: wp-tweet-button.php:1362
+msgid "Twitter username"
+msgstr ""
+
+#: wp-tweet-button.php:1372
+msgid ""
+"Authors can also configure their own Twitter accounts on their <a href="
+"\"profile.php\" title=\"your profile page\">profile</a> page."
+msgstr ""
+
+#: wp-tweet-button.php:1379
+msgid "Referral format"
+msgstr ""
+
+#: wp-tweet-button.php:1382
+msgid "{text} {link} via {@user}"
+msgstr ""
+
+#: wp-tweet-button.php:1384
+msgid "RT {@user} {text} {link}"
+msgstr ""
+
+#: wp-tweet-button.php:1390
+msgid "Default Tweet text"
+msgstr ""
+
+#: wp-tweet-button.php:1393
+msgid "Entry title e.g., \"Pictures Of My Cat\""
+msgstr ""
+
+#: wp-tweet-button.php:1395
+msgid "Page title e.g., \"Pictures of my cat - My Wordpress Blog\""
+msgstr ""
+
+#: wp-tweet-button.php:1397
+msgid "Blog title e.g., \"My Wordpress Blog\""
+msgstr ""
+
+#: wp-tweet-button.php:1399
+msgid "Custom text"
+msgstr ""
+
+#: wp-tweet-button.php:1403
+msgid "Tags for custom text:"
+msgstr ""
+
+#: wp-tweet-button.php:1405
+msgid "The post's title."
+msgstr ""
+
+#: wp-tweet-button.php:1406
+msgid "The blog's name."
+msgstr ""
+
+#: wp-tweet-button.php:1407
+msgid "#Hash tags generated using blog tags."
+msgstr ""
+
+#: wp-tweet-button.php:1408
+msgid "#Hash tags generated using blog categories."
+msgstr ""
+
+#: wp-tweet-button.php:1410
+msgid ""
+"Setting a tweet text for specific posts will override this default selection."
+msgstr ""
+
+#: wp-tweet-button.php:1414
+msgid "Auto-Tweeting"
+msgstr ""
+
+#: wp-tweet-button.php:1418
+msgid ""
+"Before you can configure Auto-Tweeting you must first authorize an account. "
+"Once you have authorized an account, return here to configure Auto-Tweeting."
+msgstr ""
+
+#: wp-tweet-button.php:1419
+msgid "Authorize"
+msgstr ""
+
+#: wp-tweet-button.php:1421
+msgid "Remove authorization data"
+msgstr ""
+
+#: wp-tweet-button.php:1422
+msgid "Auto-tweets will be posted by: "
+msgstr ""
+
+#: wp-tweet-button.php:1431
+msgid "Auto-tweet posts"
+msgstr ""
+
+#: wp-tweet-button.php:1437
+msgid "Auto-tweet pages"
+msgstr ""
+
+#: wp-tweet-button.php:1439
+msgid "If the tweet text + url is too long "
+msgstr ""
+
+#: wp-tweet-button.php:1441
+msgid "remove the URL"
+msgstr ""
+
+#: wp-tweet-button.php:1442
+msgid "remove the text"
+msgstr ""
+
+#: wp-tweet-button.php:1443
+msgid "shorten the text"
+msgstr ""
+
+#: wp-tweet-button.php:1444
+msgid "try anything that works"
+msgstr ""
+
+#: wp-tweet-button.php:1445
+msgid "do not auto-tweet"
+msgstr ""
+
+#: wp-tweet-button.php:1453
+msgid ""
+"Auto-Tweeting will allow your blog to send out a tweet when a post is "
+"published or saved. By default auto tweets are sent out only once but can be "
+"repeated from the post edit page."
+msgstr ""
+
+#: wp-tweet-button.php:1456
+msgid ""
+"It is recommended to select a URL shortener before enabling Auto-Tweeting."
+msgstr ""
+
+#: wp-tweet-button.php:1461
+msgid "Default recommended Twitter user"
+msgstr ""
+
+#: wp-tweet-button.php:1464
+msgid "Description"
+msgstr ""
+
+#: wp-tweet-button.php:1466
+msgid ""
+"After the user tweets the entry, Twitter will allow the user to follow a "
+"recommended users. Set a default recommended user here. You can also "
+"recommend Twitter users individually in posts and pages using the Tweet "
+"Button options."
+msgstr ""
+
+#: wp-tweet-button.php:1470
+msgid ""
+"Twitter recommendations configured in posts override these default settings."
+msgstr ""
+
+#: wp-tweet-button.php:1475
+msgid "Container style"
+msgstr ""
+
+#: wp-tweet-button.php:1480
+msgid ""
+"Use the container style box to add additional CSS properties to the DIV "
+"surrounding the Tweet Button."
+msgstr ""
+
+#: wp-tweet-button.php:1485
+msgid "Tweet Button language"
+msgstr ""
+
+#: wp-tweet-button.php:1488
+msgid "English"
+msgstr ""
+
+#: wp-tweet-button.php:1489
+msgid "French"
+msgstr ""
+
+#: wp-tweet-button.php:1490
+msgid "German"
+msgstr ""
+
+#: wp-tweet-button.php:1491
+msgid "Spanish"
+msgstr ""
+
+#: wp-tweet-button.php:1492
+msgid "Japanese"
+msgstr ""
+
+#: wp-tweet-button.php:1496
+msgid "This is the language that the button will render in on your website."
+msgstr ""
+
+#: wp-tweet-button.php:1500
+msgid "Rel metatag"
+msgstr ""
+
+#: wp-tweet-button.php:1506
+msgid "Tweet link text"
+msgstr ""
+
+#: wp-tweet-button.php:1511
+msgid ""
+"The text of the link before it is made into a button by Javascript. Clearing "
+"this field will prevent non-javascript clients from seeing the tweet link."
+msgstr ""
+
+#: wp-tweet-button.php:1515
+msgid "URL Shortener"
+msgstr ""
+
+#: wp-tweet-button.php:1530
+msgid "Limitations"
+msgstr ""
+
+#: wp-tweet-button.php:1530
+msgid ""
+"If you select a shortener from the list, Twitter will still wrap the "
+"shortened URL with its own short URL. (t.co)"
+msgstr ""
+
+#: wp-tweet-button.php:1531
+msgid "Usernames and API Keys"
+msgstr ""
+
+#: wp-tweet-button.php:1531
+msgid "Some URL shortening services may require(*) usernames and/or API key."
+msgstr ""
+
+#: wp-tweet-button.php:1534
+msgid "Delete all previously saved shortlinks when I save."
+msgstr ""
+
+#: wp-tweet-button.php:1536
+msgid "Do not shrink HTTPS URLs."
+msgstr ""
+
+#: wp-tweet-button.php:1543
+msgid "Wordpress 3.0 shortener"
+msgstr ""
+
+#: wp-tweet-button.php:1546
+msgid "Remove the \"www.\" prefix from my domain."
+msgstr ""
+
+#: wp-tweet-button.php:1550
+msgid "Disable the WP.org shortener."
+msgstr ""
+
+#: wp-tweet-button.php:1588
+msgid "UserID"
+msgstr ""
+
+#: wp-tweet-button.php:1592
+msgid "Host"
+msgstr ""
+
+#: wp-tweet-button.php:1606
+msgid "Advanced"
+msgstr ""
+
+#: wp-tweet-button.php:1608
+msgid ""
+"Filter hook priority. <span class=\"warning\">Only change this value if you "
+"know what you're doing!</span> (Default is 75)"
+msgstr ""
+
+#: wp-tweet-button.php:1632
+msgid "Build Tweet Button with HTML5 data attributes."
+msgstr ""
+
+#: wp-tweet-button.php:1634
+msgid "Display the same tweet count across all shorteners."
+msgstr ""
+
+#: wp-tweet-button.php:1636
+msgid ""
+"Add rel=&quot;me&quot; to &lt;head&gt;. (Overrides referral format to 'via "
+"{user}')"
+msgstr ""
+
+#: wp-tweet-button.php:1638
+msgid "Add rel=&quot;shortlink&quot; to &lt;head&gt;"
+msgstr ""
+
+#: wp-tweet-button.php:1640
+msgid "Force manual placement."
+msgstr ""
+
+#: wp-tweet-button.php:1642
+msgid "Place script in footer."
+msgstr ""
+
+#: wp-tweet-button.php:1644
+msgid "No styles in feeds."
+msgstr ""
+
+#: wp-tweet-button.php:1649
+msgid "Clear the W3 Total Cache when I save."
+msgstr ""
+
+#: wp-tweet-button.php:1655
+msgid "Clear the WP Super Cache when I save."
+msgstr ""
+
+#: wp-tweet-button.php:1661
+msgid "Add Google Analytics campaign tracking code to links."
+msgstr ""
+
+#: wp-tweet-button.php:1662
+msgid ""
+"You can use <code>%POSTID%</code> and <code>%POSTSLUG%</code> in this field "
+"but no spaces, no + and no domain names. Simply enter the URL parameters. "
+"Example:<br />\r\n"
+"\t\t\t\t\t\t\t<code>utm_source=twitter&utm_medium=twt&utm_campaign=%POSTSLUG%"
+"</code>"
+msgstr ""
+
+#: wp-tweet-button.php:1664
+msgid "Google Analytics tracking code"
+msgstr ""
+
+#: wp-tweet-button.php:1667
+msgid "Debug mode (NOT INTENDED FOR LIVE ENVIRONMENTS)."
+msgstr ""
+
+#: wp-tweet-button.php:1670
+msgid "Filter hook priority"
+msgstr ""
+
+#: wp-tweet-button.php:1671
+msgid ""
+"Hook priority allows you to change the order in which the button is placed "
+"in relation to other plugins. It should only be used if you're having "
+"trouble displaying the Tweet Button in a custom template. Use 7,8,9 or 10 to "
+"get your desired result. Changing this value may break the formatting of the "
+"button."
+msgstr ""
+
+#: wp-tweet-button.php:1689
+msgid "<a href='%1$s' class='button'>Show settings for diagnostics</a>"
+msgstr ""
+
+#: wp-tweet-button.php:1690
+msgid "<a href='%1$s' target='_blank' class='button'>Report a bug</a>"
+msgstr ""
+
+#: wp-tweet-button.php:1691
+msgid "<a href='%1$s' target='_blank' class='button'>Hire the author</a>"
+msgstr ""
+
+#: wp-tweet-button.php:1899
+msgid "Tweet Button options"
+msgstr ""
+
+#: wp-tweet-button.php:1901
+msgid ""
+"If this post is related to a Twitter user, the Tweet Button can be enhanced "
+"by adding the Twitter account as a recommended user."
+msgstr ""
+
+#: wp-tweet-button.php:1903
+msgid "Username:"
+msgstr ""
+
+#: wp-tweet-button.php:1905
+msgid "Description:"
+msgstr ""
+
+#: wp-tweet-button.php:1909
+msgid "Enter an optional custom tweet for this post."
+msgstr ""
+
+#: wp-tweet-button.php:1910
+msgid "Tweet text:"
+msgstr ""
+
+#: wp-tweet-button.php:1916
+msgid "Disable Tweet Button"
+msgstr ""
+
+#: wp-tweet-button.php:1918
+msgid "Clear shortlink cache"
+msgstr ""
+
+#: wp-tweet-button.php:1923
+msgid "Auto-tweet again"
+msgstr ""
+
+#: wp-tweet-button.php:1930
+msgid "View corresponding tweet"
+msgstr ""
+
+#: wp-tweet-button.php:1933
+msgid "Do not Auto-Tweet"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP Tweet Button"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://0xtc.com/plugins/wp-tweet-button"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "The WordPress implementation of the official Twitter Tweet Button."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tanin Ehrami"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://0xtc.com"
+msgstr ""
