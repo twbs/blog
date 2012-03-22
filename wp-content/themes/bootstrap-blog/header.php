@@ -51,6 +51,6 @@
             <a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name') ?></a>
           </strong>
           <br>
-          Announcements, discussion, and more for the open-source framework.
+          Announcements, discussions, and more for <a href="http://getbootstrap.com" title="Visit the official Twitter Bootstrap docs">Bootstrap</a>.
         </p>
       </header>
