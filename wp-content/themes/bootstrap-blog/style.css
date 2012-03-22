@@ -445,13 +445,13 @@ img {
   color: #777;
 }
 @media (max-width: 980px) {
-  .container {
+  .site-container {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media (max-width: 640px) {
-  .container {
+  .site-container {
     width: auto;
   }
 }
