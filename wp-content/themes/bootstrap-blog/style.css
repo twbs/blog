@@ -870,8 +870,9 @@ h4,
 h5,
 h6 {
   margin: 0;
-  line-height: 28px;
+  font-weight: normal;
   color: #111;
+  line-height: 28px;
 }
 h1 {
   margin: 0 0 10px;
