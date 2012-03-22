@@ -2,13 +2,18 @@
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <title><?php wp_title('&middot;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
     <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
 
+    <title><?php wp_title('&middot;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS for Deep Thoughts by Mark Otto" href="http://feeds.feedburner.com/mdo">
+    <link rel="alternate" type="application/rss+xml" title="RSS for Official Twitter Bootstrap Bog" href="<?php bloginfo('rss2_url'); ?>">
 
     <!-- CSS-->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">

@@ -1019,9 +1019,6 @@ img {
   margin: -10px 0 10px;
   color: #ccc;
 }
-.post figure .tw_button {
-  top: -65px;
-}
 .page {
   padding-bottom: 84px;
 }
@@ -1068,16 +1065,6 @@ img {
 .pagination a:hover span {
   background-color: #006699;
 }
-.well {
-  padding: 14px 19px;
-  margin: 0 0 20px;
-  border: 1px solid #eee;
-  border-top-color: #ddd;
-  background-color: #f3f3f3;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
 .right {
   float: right;
 }
@@ -1087,38 +1074,10 @@ img {
 .muted {
   color: #777;
 }
-.gist-highlight {
-  max-height: 400px;
-  overflow-y: scroll;
-}
 @media (max-width: 980px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .fusion-ads {
-    position: static;
-    float: none;
-    width: auto;
-    height: 90px;
-    margin: -56px 0 28px;
-    padding: 15px;
-  }
-  .fusionimg {
-    float: left;
-    margin-bottom: 0;
-  }
-  .fusiontext,
-  .fusion-ads .powered-by {
-    display: block;
-    margin-left: 145px;
-  }
-  figcaption {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    width: auto;
   }
 }
 @media (max-width: 640px) {
@@ -1144,9 +1103,5 @@ img {
   h2 {
     font-size: 18px;
     line-height: 20px;
-  }
-  .fusion-ads {
-    font-size: 12px;
-    line-height: 21px;
   }
 }
