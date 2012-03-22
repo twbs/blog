@@ -1002,10 +1002,7 @@ img {
 }
 .post {
   position: relative;
-  margin-bottom: 84px;
-}
-.post:after {
-  margin-top: 84px;
+  margin-bottom: 112px;
 }
 .post img {
   max-width: 100%;
