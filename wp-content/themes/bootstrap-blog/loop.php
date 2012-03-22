@@ -14,7 +14,9 @@
 
   <div class="post">
     <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-    <span class="date"><?php the_time('l, F jS, Y') ?></span>
+    <span class="meta">
+      by <?php the_author(); ?> on <?php the_time('l, F jS, Y') ?>
+    </span>
     <?php if (in_category('photos')) { // If a photo/video ?>
       <figure>
         <?php the_content(); ?>
