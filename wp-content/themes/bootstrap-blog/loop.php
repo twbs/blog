@@ -17,26 +17,7 @@
     <span class="meta">
       by <?php the_author(); ?> on <?php the_time('l, F jS, Y') ?>
     </span>
-    <?php if (in_category('photos')) { // If a photo/video ?>
-      <figure>
-        <?php the_content(); ?>
-        <figcaption>
-          <?php echo get_post_meta($post->ID, 'caption', true) ?>
-        </figcaption>
-      </figure>
-    <?php } elseif (in_category('quotes')) { // If a quote ?>
-      <figure>
-        <blockquote>
-          <p><?php echo get_post_meta($post->ID, 'quote', true) ?></p>
-        </blockquote>
-        <figcaption>
-          <?php echo get_post_meta($post->ID, 'caption', true) ?>
-        </figcaption>
-      </figure>
-      <?php the_content(); ?>
-    <?php } else { // If a regular post ?>
-      <?php the_content(); ?>
-    <?php } ?>
+    <?php the_content(); ?>
   </div>
 
 <?php endwhile; ?>
