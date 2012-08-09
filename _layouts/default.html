@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
+    <link href="/public/ico/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+
+    <title>
+      {% if page.title %}
+      {{ page.title }} &middot;
+      {% endif %}
+      Twitter Bootstrap Blog
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/css/theme.css" type="text/css">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="/public/ico/apple-touch-icon-57-precomposed.png">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="masthead">
+        <a class="mdo" href="/" title="Home">
+          <img src="/public/img/icons/twitter-bootstrap-128.png" alt="Twitter Bootstrap">
+        </a>
+        <p>
+          <strong>The Official Twitter Bootstrap Blog</strong><br>
+          Announcements, discussions, and more for <a href="http://getbootstrap.com" title="Visit the official Twitter Bootstrap docs">Bootstrap</a>.
+        </p>
+      </header>
+
+      {{ content }}
+
+      <footer class="colophon">
+        <ul class="quick-links">
+          <li><a href="http://getbootstrap.com">View the docs</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Submit issues</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+        </ul>
+        <ul class="quick-links">
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
+          </li>
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+          </li>
+        </ul>
+        <ul class="quick-links">
+          <li class="follow-btn">
+            <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+          </li>
+          <li class="tweet-btn">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+          </li>
+        </ul>
+
+        <p>&copy; 2012. All rights reserved.</p>
+      </footer>
+
+    </div> <!-- /close container -->
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f6ac530613f5d32c2000037');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+
+  </body>
+</html>
