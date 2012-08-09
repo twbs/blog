@@ -194,42 +194,28 @@ a:hover {
   margin-bottom: 84px;
 }
 
-.mdo,
-.mdo:after {
+
+.bootstrap-logo {
+  position: relative;
+  margin: 0 auto 20px;
+}
+.bootstrap-logo img {
   display: block;
-  width: 140px;
-  height: 140px;
-  -webkit-border-radius: 70px;
-  -moz-border-radius: 70px;
-  border-radius: 70px;
-}
-.mdo {
-  position: relative;
-  margin: 0 auto 28px;
+  margin: 0 auto;
+  -webkit-border-radius: 26px;
+     -moz-border-radius: 26px;
+          border-radius: 26px;
+  -webkit-box-shadow: 0 2px 8px rgba(109,51,83,.15);
+     -moz-box-shadow: 0 2px 8px rgba(109,51,83,.15);
+          box-shadow: 0 2px 8px rgba(109,51,83,.15);
   -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+     -moz-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
 }
-.mdo img {
-  margin-bottom: 0;
-  position: relative;
-  z-index: 1;
-}
-.mdo:hover {
-  opacity: .9;
-}
-.mdo:active {
-  opacity: .8;
-}
-.mdo:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  content: '';
-  -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+.bootstrap-logo:hover img {
+  -webkit-box-shadow: 0 2px 15px rgba(109,51,83,.75);
+     -moz-box-shadow: 0 2px 15px rgba(109,51,83,.75);
+          box-shadow: 0 2px 15px rgba(109,51,83,.75);
 }
 
 .masthead p {
