@@ -20,8 +20,8 @@ As always, here's a quick overview of some of the top changes.
 
 - Refactored forms.less to make our selectors more specific for fewer overrides and less code. Instead of a generic `input` selector and various resets, we target each type of input like `input[type="text"]`, `input[type="password"]`, etc.
 - Form field state (e.g., success or error) now applies to checkbox and radio labels.
-- Removed redundant CSS on `<p>` for `font-family`, `font-size`, and `line-height`.
-- Removed redundant `color` declaration from the `<label>` element.
+- Removed redundant CSS on `&lt;p&gt;` for `font-family`, `font-size`, and `line-height`.
+- Removed redundant `color` declaration from the `&lt;label&gt;` element.
 - Added variables for dropdown dividers border colors.
 - `legend` and `.form-actions` share the same `border-color`, `#e5e5e5`.
 - Fixed some responsive issues with input-prepend and -append, notably with the fluid grid.
