@@ -1,3 +1,7 @@
+name: Bootstrap
+description: Official blog for the Twitter Bootstrap framework.
+url: http://blog.getbootstrap.com
+
 markdown: rdiscount
 permalink: pretty
 pygments: true
