@@ -5,3 +5,4 @@ url: http://blog.getbootstrap.com
 markdown: rdiscount
 permalink: pretty
 pygments: true
+paginate: 5

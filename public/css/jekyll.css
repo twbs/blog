@@ -321,6 +321,27 @@ a:hover {
 
 
 
+/* Pagination
+-------------------------------------------------- */
+
+.pagination {
+  margin-bottom: 80px;
+  color: #ccc;
+  text-align: center;
+}
+.pagination a,
+.pagination span {
+  display: inline-block;
+  padding: 5px 10px;
+}
+.pagination a:hover {
+  text-decoration: none;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+
+
 /* Misc
 -------------------------------------------------- */
 

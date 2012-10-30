@@ -2,13 +2,37 @@
 layout: default
 ---
 
-<div class="posts">
-{% for post in site.posts %}
-  <h3>
+{% for post in paginator.posts %}
+
+<div class="post">
+  <h1>
     <a href="{{ post.url }}">
       {{ post.title }}
-      <small>{{ post.date | date_to_string }}</small>
     </a>
-  </h3>
+  </h1>
+
+  <span class="post-date">{{ post.date | date_to_string }}</span>
+
+  <div class="tweet-button">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="horizontal" data-via="twbootstrap" data-url="http://blog.getbootstrap.com{{ post.url }}" data-text="{{ post.title }}:">Tweet</a>
+  </div>
+
+  {{ post.content }}
+</div>
+
 {% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="older">Older</a>
+  {% else %}
+    <span class="next">Older</span>
+  {% endif %}
+  <span>&middot;</span>
+  {% if paginator.previous_page %}
+    <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
+  {% else %}
+    <span class="previous">Newer</span>
+  {% endif %}
 </div>
