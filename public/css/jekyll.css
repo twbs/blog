@@ -171,6 +171,23 @@ a:hover {
   text-decoration: underline;
 }
 
+.btn-link {
+  display: inline-block;
+  padding: 9px 20px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #08c;
+  border-radius: 6px;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.btn-link:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #005580;
+}
+
 
 
 /* Scaffolding

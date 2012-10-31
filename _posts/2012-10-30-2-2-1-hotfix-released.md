@@ -3,8 +3,8 @@ layout: post
 title: 2.2.1 hotfix released
 ---
 
-After the [2.2.0 release last night](/2012/10/29/bootstrap-2-2-0-released/), we found one major bug that we wanted to fix right away. Tonight, [@fat](http://twitter.com/fat) just pushed a fix for the carousel bug with a quick 2.2.1 release. Upgrading should be super simple given the scope of this release. You can [download 2.2.1 directly](https://github.com/twitter/bootstrap/zipball/master) here.
+After the [2.2.0 release last night](/2012/10/29/bootstrap-2-2-0-released/), a few bugs were reported, but only one major one: [malfunctioning carousels](https://twitter.com/twbootstrap/status/263327129905811459). To address that, [@fat](http://twitter.com/fat) just pushed out a 2.2.1 hotfix release that fixes the bug. Upgrading should be super simple given the scope of this release.
 
-Once more, apologies for any hiccups. Happy Bootstrapping!
+<a class="btn-link" href="https://github.com/twitter/bootstrap/zipball/master">Download Bootstrap 2.2.1</a> <span class="muted">(latest master ZIP)</span>
 
-Thanks!
+Once more, apologies for any hiccups and happy Bootstrapping!
