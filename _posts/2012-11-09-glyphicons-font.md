@@ -13,7 +13,7 @@ So, it's with some sadness that I inform you **we will not be including the Glyp
 
 Backwards compatibility is always a pain in the ass, and to avoid huge headaches for folks, we sometimes have to bend over, well, backwards. I hope this doesn't screw up your plans too much and that you understand we have the community's best interests at heart.
 
-There's some good news though. For you nerds who live on the edge, I've been working on tons of BS3-esque changes in the [exploratory branch on GitHub](https://github.com/twitter/bootstrap/tree/exploratory). If you really cannot wait for the Glyphicons font (and don't mind using unsupported code), do check it out. I plan on accelarating work on it in the coming weeks. (Please don't submit issues for it though, but rather email me or ping me on Twitter for questions.)
+There's some good news though. For you nerds who live on the edge, I've been working on tons of BS3-esque changes in the [3.0.0-wip branch on GitHub](https://github.com/twitter/bootstrap/tree/3.0.0-wip). If you really cannot wait for the Glyphicons font (and don't mind using unsupported code), do check it out. I plan on accelarating work on it in the coming weeks. (Please don't submit issues for it though, but rather email me or ping me on Twitter for questions.)
 
 Thanks for listening, and as always, <3<3<3.
 
