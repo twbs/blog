@@ -18,7 +18,7 @@ Overall, **Bootstrap 3 will be rather narrow in focus** compared to the last maj
 - Drop the `*-wip` branch style of development.
 - Use tags for all versioned downloads, use smaller feature branches for dev work, and merge right into master (after 3.0 launches).
 
-To help communicate and track changes, we put together a [wiki page for upcoming 3.0 changes](https://github.com/twitter/bootstrap/wiki/Upcoming-3.0-changes). Follow along with what we're working on, ask questions, or contribute by using that page as a reference point. We'll do our best to keep it up to date as development progresses.
+To help communicate and track changes, we've opened a [Bootstrap 3 pull request](https://github.com/twitter/bootstrap/pull/6342). Follow along with what we're working on, ask questions, or contribute by using that pull request as a reference point. We'll be keeping it up to date as development progresses.
 
 In addition, we're going to try to **accelerate versioning** by focusing on individual components for major releases after 3.0 (e.g., modals or the carousel could be punted to a 4.0 release). Given this approach, it's less important for us to stuff a lot of feature work into 3.0.
 
