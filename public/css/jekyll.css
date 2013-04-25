@@ -11,13 +11,19 @@ Version: v2.1
 /* Body resets
 -------------------------------------------------- */
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  padding: 40px 0;
+  padding: 40px 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #454441;
   background-color: #fff;
@@ -382,37 +388,10 @@ a:hover {
 /* Responsive
 -------------------------------------------------- */
 
-@media (max-width: 980px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .fusion-ads {
-    position: static;
-    float: none;
-    width: auto;
-    height: 90px;
-    margin: -56px 0 28px;
-    padding: 15px;
-  }
-  .fusionimg {
-    float: left;
-    margin-bottom: 0;
-  }
-  .fusiontext, .fusion-ads .powered-by {
-    display: block;
-    margin-left: 145px;
-  }
-}
-
 @media (max-width: 480px) {
   pre {
     font-size: 12px;
     line-height: 20px;
-  }
-  .fusion-ads {
-    font-size: 12px;
-    line-height: 21px;
   }
   .related h2,
   .posts h3 a {
@@ -423,3 +402,4 @@ a:hover {
     line-height: 20px;
   }
 }
+
