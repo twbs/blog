@@ -54,7 +54,6 @@ a:hover {
 }
 
 @media (min-width: 980px) {
-
   .carbonad {
     position: fixed;
     right: 20px;
@@ -74,7 +73,6 @@ a:hover {
   .carbonad-tag {
     margin-left: 0 !important;
   }
-
 }
 
 
