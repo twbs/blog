@@ -31,7 +31,11 @@ layout: default
   {% endif %}
   <span>&middot;</span>
   {% if paginator.previous_page %}
-    <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
+    {% if paginator.page == 2 %}
+      <a href="/" class="newer">Newer</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
+    {% endif %}
   {% else %}
     <span class="previous">Newer</span>
   {% endif %}
