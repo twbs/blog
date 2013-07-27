@@ -9,16 +9,16 @@ With 2.2.2 out the door, our attention has shifted almost entirely to the next m
 
 Overall, **Bootstrap 3 will be rather narrow in focus** compared to the last major update. In short, we'll drop legacy code, improve responsive CSS, and centralize community efforts. **Specifically, v3 will address the following:**
 
-- Migrate [twitter/bootstrap](https://github.com/twitter/bootstrap/), [twitter/bootstrap-server](https://github.com/twitter/bootstrap-server/), and mdo/bootstrap-blog (currently a private repo) to the [twbs](https://github.com/twbs) organization.
+- Migrate [twitter/bootstrap](https://github.com/twbs/bootstrap/), [twitter/bootstrap-server](https://github.com/twbs/bootstrap-server/), and mdo/bootstrap-blog (currently a private repo) to the [twbs](https://github.com/twbs) organization.
 - Change site URLs to [http://getbootstrap.com](http://getbootstrap.com) (more on that below).
 - Compile all Less code, including responsive styles, into a single CSS file.
 - Drop IE7/FF3x support entirely.
 - Use the `@font-face` version of Glyphicons instead of the current PNGs.
-- [Switch to the MIT license](https://github.com/twitter/bootstrap/issues/2054) instead of Apache.
+- [Switch to the MIT license](https://github.com/twbs/bootstrap/issues/2054) instead of Apache.
 - Drop the `*-wip` branch style of development.
 - Use tags for all versioned downloads, use smaller feature branches for dev work, and merge right into master (after 3.0 launches).
 
-To help communicate and track changes, we've opened a [Bootstrap 3 pull request](https://github.com/twitter/bootstrap/pull/6342). Follow along with what we're working on, ask questions, or contribute by using that pull request as a reference point. We'll be keeping it up to date as development progresses.
+To help communicate and track changes, we've opened a [Bootstrap 3 pull request](https://github.com/twbs/bootstrap/pull/6342). Follow along with what we're working on, ask questions, or contribute by using that pull request as a reference point. We'll be keeping it up to date as development progresses.
 
 In addition, we're going to try to **accelerate versioning** by focusing on individual components for major releases after 3.0 (e.g., modals or the carousel could be punted to a 4.0 release). Given this approach, it's less important for us to stuff a lot of feature work into 3.0.
 
