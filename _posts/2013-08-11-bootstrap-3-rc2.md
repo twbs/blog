@@ -36,6 +36,7 @@ Without listing all the minor changes, here's a quick overview of the changes. F
 
 * **Grid system:**
 	* Grid now includes offset, push, and pull classes for each break point [See #8974 for details.](https://github.com/twbs/bootstrap/pull/8974)
+	* Updated mixins to include ability to specify gutter width as a second parameter. [See #8935 for details.](https://github.com/twbs/bootstrap/pull/8935)
 
 * **Navbar:**
 	* Added new `.nav-collapse-scrollable` to account for navbers with hella content. Add it to your responsive navbar's `.nav-collapse` and you'll get some `overflow` and scrolling awesome sauce. See for details. (Note that this couldn't be applied to the entire navbar because it fubars `z-index` in iOS.)
