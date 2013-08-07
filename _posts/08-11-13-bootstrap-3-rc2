@@ -12,7 +12,7 @@ Without listing all the minor changes, here's a quick overview of the changes. F
 * **Docs changes:**
 	* The Customizer is back!
 	* Added a new mention to our [browser compatibility docs](http://getbootstrap.com/getting-started/#browsers) to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. [See #9171.](https://github.com/twbs/bootstrap/pull/9171)
-	
+
 * **BS2 Theme:**
 	* The first pass at the v2 theme has been added.
 	* Adds gradients, shadows, and more to key components to mimic the style of Bootstrap 2.
@@ -25,10 +25,10 @@ Without listing all the minor changes, here's a quick overview of the changes. F
 * **Buttons:**
 	* Buttons and inputs, and their large counterparts, are now a bit shorter.
 	* New default button styles and higher contrast on `:hover` and `:active` states. [Fixes #8786.](https://github.com/twbs/bootstrap/issues/8786)
-	* New classes for size modifier classes—instead of `.btn-mini`, `.btn-small`, or `.btn-large`, we now have `.btn-xs`, `.btn-sm`, and `.btn-lg`.
+	* New classes for size modifier classes—instead of `.btn-mini`, `.btn-small`, or `.btn-large`, we now have `.btn-xs`, `.btn-sm`, and `.btn-lg`. [See #9056.](https://github.com/twbs/bootstrap/pull/9056)
 
 * **Forms:**
-	* Similar to the new button classes, we have new input size classes: `.input-sm` and `.input-lg`.
+	* Similar to the new button classes, we have new input size classes: `.input-sm` and `.input-lg`. [See #9056.](https://github.com/twbs/bootstrap/pull/9056)
 	* Input focus states now generated via variable and mixin. Use the `@input-focus-border` variable and `.form-control-focus` mixin to generate a custom `border-color` and `box-shadow`. [See commit .](http://)	* Size modifier classes for large and small components—including buttons, form inputs, pagination, and wells—have all been standardized to use `-sm` or `-lg`. [See #9056 for details.](https://github.com/twbs/bootstrap/pull/9056)
 	* Added `.static-form-control` to account for static, placeholder text in horizontal form layouts. [Fixes #8150.](https://github.com/twbs/bootstrap/issues/8150)
 
