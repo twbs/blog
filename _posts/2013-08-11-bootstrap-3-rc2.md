@@ -19,9 +19,10 @@ Without listing all the minor changes, here's a quick overview of the changes. F
 	* Adds gradients, shadows, and more to key components to mimic the style of Bootstrap 2.
 
 * **Global CSS changes:** 
-  * Update vertical and horizontal gradients to make start and end color parameters come first, then start and end positions. [Fixes #9049.](https://github.com/twbs/bootstrap/issues/9049)
-	* Make `.pull-right` and `.pull-left` classes use `!important` to avoid needing overrides due to specificity (like in navbar, button groups, etc). [See #8697.](https://github.com/twbs/bootstrap/issues/8697)
-	* Lots of variable additions to components.
+  	* Update vertical and horizontal gradients to make start and end color parameters come first, then start and end positions. [Fixes #9049.](https://github.com/twbs/bootstrap/issues/9049)
+		* Make `.pull-right` and `.pull-left` classes use `!important` to avoid needing overrides due to specificity (like in navbar, button groups, etc). [See #8697.](https://github.com/twbs/bootstrap/issues/8697)
+		* Lots of variable additions to components.
+	* Updated gradients to not include `background-color` for improved use of `rgba()` colors within mixins. [See #8877](https://github.com/twbs/bootstrap/pull/8877)
 	
 * **Buttons:**
 	* Buttons and inputs, and their large counterparts, are now a bit shorter.
