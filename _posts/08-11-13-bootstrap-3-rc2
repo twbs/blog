@@ -9,8 +9,13 @@ We've just cut a new release for Bootstrap 3, RC2. It's a big RC2 and lots more 
 
 Without listing all the minor changes, here's a quick overview of the changes. For a full set of commits since RC1, [compare the last commits of each release](https://github.com/twbs/bootstrap/compare/9c63ffa00fd55c7e61c51b58778b06b28f93e1a8...6b850132d056a136dc4734c4d68c9e1c23b7843e).
 
-* The Customizer is back!
-* The first pass at the v2 theme has been added.
+* **Docs changes:**
+	* The Customizer is back!
+	* Added a new mention to our [browser compatibility docs](http://getbootstrap.com/getting-started/#browsers) to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. [See #9171.](https://github.com/twbs/bootstrap/pull/9171)
+	
+* **BS2 Theme:**
+	* The first pass at the v2 theme has been added.
+	* Adds gradients, shadows, and more to key components to mimic the style of Bootstrap 2.
 
 * **Global CSS changes:** 
   * Update vertical and horizontal gradients to make start and end color parameters come first, then start and end positions. [Fixes #9049.](https://github.com/twbs/bootstrap/issues/9049)
@@ -31,6 +36,7 @@ Without listing all the minor changes, here's a quick overview of the changes. F
 
 * **Navbar:**
 	* Added new `.nav-collapse-scrollable` to account for navbers with hella content. Add it to your responsive navbar's `.nav-collapse` and you'll get some `overflow` and scrolling awesome sauce. See for details. (Note that this couldn't be applied to the entire navbar because it fubars `z-index` in iOS.)
+	* Fixed overlap of navbar nav and toggle when no brand is present. [See #8749.](https://github.com/twbs/bootstrap/issues/8749)
 
 * **Miscellaneous component changes:**
 	* Dropped `.alert-block` for a simpler `.alert`.
