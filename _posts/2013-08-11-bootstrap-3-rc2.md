@@ -35,6 +35,7 @@ Without listing all the minor changes, here's a quick overview of the changes. F
 	* Added `.static-form-control` to account for static, placeholder text in horizontal form layouts. [Fixes #8150.](https://github.com/twbs/bootstrap/issues/8150)
 
 * **Grid system:**
+	* `.row`s only have negative left and right margins if they sit within a `.container`. This resolves the horizontal scrollbar issue for folks with full page containers (restoring the full behavior of the old fluid container from 2.x). [See #8959 for details.](https://github.com/twbs/bootstrap/issues/8959)
 	* Grid now includes offset, push, and pull classes for each break point [See #8974 for details.](https://github.com/twbs/bootstrap/pull/8974)
 	* Updated mixins to include ability to specify gutter width as a second parameter. [See #8935 for details.](https://github.com/twbs/bootstrap/pull/8935)
 
