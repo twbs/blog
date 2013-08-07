@@ -28,6 +28,7 @@ Without listing all the minor changes, here's a quick overview of the changes. F
 	* New classes for size modifier classes—instead of `.btn-mini`, `.btn-small`, or `.btn-large`, we now have `.btn-xs`, `.btn-sm`, and `.btn-lg`.
 
 * **Forms:**
+	* Similar to the new button classes, we have new input size classes: `.input-sm` and `.input-lg`.
 	* Input focus states now generated via variable and mixin. Use the `@input-focus-border` variable and `.form-control-focus` mixin to generate a custom `border-color` and `box-shadow`. [See commit .](http://)	* Size modifier classes for large and small components—including buttons, form inputs, pagination, and wells—have all been standardized to use `-sm` or `-lg`. [See #9056 for details.](https://github.com/twbs/bootstrap/pull/9056)
 	* Added `.static-form-control` to account for static, placeholder text in horizontal form layouts. [Fixes #8150.](https://github.com/twbs/bootstrap/issues/8150)
 
