@@ -11,7 +11,8 @@ Without listing all the minor changes, here's a quick overview of the changes. F
 
 * **Docs changes:**
 	* The Customizer is back!
-	* Added a new mention to our [browser compatibility docs](http://getbootstrap.com/getting-started/#browsers) to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. [See #9171.](https://github.com/twbs/bootstrap/pull/9171)
+	* Added new mention to our [browser compatibility docs](http://getbootstrap.com/getting-started/#browsers) to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. [See #9171.](https://github.com/twbs/bootstrap/pull/9171)
+	* Added new section to the Getting Started page for documenting [third party and addon compatibility](http://getbootstrap.com/getting-started/#third-parties) issues. [See #9175.](https://github.com/twbs/bootstrap/pull/9175)
 
 * **BS2 Theme:**
 	* The first pass at the v2 theme has been added.
