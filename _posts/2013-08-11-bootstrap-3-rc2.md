@@ -49,6 +49,7 @@ Without listing all the minor changes, here's a quick overview of the changes. F
   * Linked panel titles now inherit their color. Fixes [#9061](https://github.com/twbs/bootstrap/issues/9061).
   * List groups in panels no longer require `.list-group-flush`.
   * Labels now require `.label-default` for the "default" gray option. [See #9123.](https://github.com/twbs/bootstrap/pull/9123)
+  * Labels now collapse automatically (not in IE8) when empty. [See #9241.](https://github.com/twbs/bootstrap/issues/9241)
 
 -----
 
