@@ -13,7 +13,7 @@ Without listing all the minor changes, here's a quick overview of the changes. F
   * The Customizer is back!
   * Added new mention to our [browser compatibility docs](http://getbootstrap.com/getting-started/#browsers) to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. [See #9171.](https://github.com/twbs/bootstrap/pull/9171)
   * Added new section to the Getting Started page for documenting [third party and addon compatibility](http://getbootstrap.com/getting-started/#third-parties) issues. [See #9175.](https://github.com/twbs/bootstrap/pull/9175)
-  * Huge accessibility update to the docs and components. Adds [new Accessibility section](http://getbootstrap.com/getting-started/#accessibility), lots of new aria and and role attributes, and more for improved 508 and WCAG compliancy. [See #9186.](https://github.com/twbs/bootstrap/pull/9186)
+  * Added [new Accessibility section](http://getbootstrap.com/getting-started/#accessibility), lots of new aria and and role attributes, and more for improved 508 and WCAG compliancy. [See #9186.](https://github.com/twbs/bootstrap/pull/9186 Also improved used of more semantic HTML5 elements in docs per [#9332](https://github.com/twbs/bootstrap/pull/9332).
 
 * **BS2 Theme:**
   * The first pass at the v2 theme has been added.
