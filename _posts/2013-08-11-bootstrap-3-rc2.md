@@ -13,7 +13,7 @@ Without listing all the minor changes, here's a quick overview of the changes. F
   * The Customizer is back!
   * Added new mention to our [browser compatibility docs](http://getbootstrap.com/getting-started/#browsers) to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. [See #9171.](https://github.com/twbs/bootstrap/pull/9171)
   * Added new section to the Getting Started page for documenting [third party and addon compatibility](http://getbootstrap.com/getting-started/#third-parties) issues. [See #9175.](https://github.com/twbs/bootstrap/pull/9175)
-  * Added [new Accessibility section](http://getbootstrap.com/getting-started/#accessibility), lots of new aria and and role attributes, and more for improved 508 and WCAG compliancy. [See #9186.](https://github.com/twbs/bootstrap/pull/9186 Also improved used of more semantic HTML5 elements in docs per [#9332](https://github.com/twbs/bootstrap/pull/9332).
+  * Added [new Accessibility section](http://getbootstrap.com/getting-started/#accessibility), lots of new aria and and role attributes, and more for improved 508 and WCAG compliancy. [See #9186.](https://github.com/twbs/bootstrap/pull/9186) Also improved used of more semantic HTML5 elements in docs per [#9332](https://github.com/twbs/bootstrap/pull/9332), [#9347](https://github.com/twbs/bootstrap/pull/9347), and [#9352](https://github.com/twbs/bootstrap/pull/9352).
 
 * **BS2 Theme:**
   * The first pass at the v2 theme has been added.
@@ -24,7 +24,13 @@ Without listing all the minor changes, here's a quick overview of the changes. F
     * Make `.pull-right` and `.pull-left` classes use `!important` to avoid needing overrides due to specificity (like in navbar, button groups, etc). [See #8697.](https://github.com/twbs/bootstrap/issues/8697)
     * Lots of variable additions to components.
   * Updated gradients to not include `background-color` for improved use of `rgba()` colors within mixins. [See #8877](https://github.com/twbs/bootstrap/pull/8877)
-  
+
+* **Grid system:**
+  * Overhauled grid system to include four tiers instead of the original three of RC1. We now have `.col-xs` (phones), `.col-sm` (tablets), `.col-md` (desktops), and `.col-lg` (large desktops). Responsive utilities have been updated to match these new tiers as well. [See relevant commit](https://github.com/twbs/bootstrap/commit/a2b9988eb908e5b95fb253aac7fde0fbd61c375e) for details.
+  * `.row`s only have negative left and right margins if they sit within a `.container`. This resolves the horizontal scrollbar issue for folks with full page containers (restoring the full behavior of the old fluid container from 2.x). [See #8959 for details.](https://github.com/twbs/bootstrap/issues/8959)
+  * Grid now includes offset, push, and pull classes for each break point [See #8974 for details.](https://github.com/twbs/bootstrap/pull/8974)
+  * Updated mixins to include ability to specify gutter width as a second parameter. [See #8935 for details.](https://github.com/twbs/bootstrap/pull/8935)
+
 * **Buttons:**
   * Buttons and inputs, and their large counterparts, are now a bit shorter.
   * New default button styles and higher contrast on `:hover` and `:active` states. [Fixes #8786.](https://github.com/twbs/bootstrap/issues/8786)
@@ -35,16 +41,12 @@ Without listing all the minor changes, here's a quick overview of the changes. F
   * Input focus states now generated via variable and mixin. Use the `@input-focus-border` variable and `.form-control-focus` mixin to generate a custom `border-color` and `box-shadow`. [See commit .](http://) * Size modifier classes for large and small components—including buttons, form inputs, pagination, and wells—have all been standardized to use `-sm` or `-lg`. [See #9056 for details.](https://github.com/twbs/bootstrap/pull/9056)
   * Added `.static-form-control` to account for static, placeholder text in horizontal form layouts. [Fixes #8150.](https://github.com/twbs/bootstrap/issues/8150)
 
-* **Grid system:**
-  * `.row`s only have negative left and right margins if they sit within a `.container`. This resolves the horizontal scrollbar issue for folks with full page containers (restoring the full behavior of the old fluid container from 2.x). [See #8959 for details.](https://github.com/twbs/bootstrap/issues/8959)
-  * Grid now includes offset, push, and pull classes for each break point [See #8974 for details.](https://github.com/twbs/bootstrap/pull/8974)
-  * Updated mixins to include ability to specify gutter width as a second parameter. [See #8935 for details.](https://github.com/twbs/bootstrap/pull/8935)
-
 * **Navbar:**
   * Added new `.nav-collapse-scrollable` to account for navbers with hella content. Add it to your responsive navbar's `.nav-collapse` and you'll get some `overflow` and scrolling awesome sauce. See for details. (Note that this couldn't be applied to the entire navbar because it fubars `z-index` in iOS.)
   * Fixed overlap of navbar nav and toggle when no brand is present. [See #8749.](https://github.com/twbs/bootstrap/issues/8749)
 
 * **Miscellaneous component changes:**
+  * Responsive utilities are now mixin-able thanks to [#9211](https://github.com/twbs/bootstrap/issues/9211).
   * Dropped `.alert-block` for a simpler `.alert`.
   * Linked panel titles now inherit their color. Fixes [#9061](https://github.com/twbs/bootstrap/issues/9061).
   * List groups in panels no longer require `.list-group-flush`.
