@@ -322,7 +322,8 @@ a:hover {
   background-color: #eee;
   margin-top: 84px;
 }
-.post img {
+.post img,
+.post iframe {
   max-width: 100%;
 }
 .post ul,
