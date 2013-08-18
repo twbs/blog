@@ -10,7 +10,7 @@ Today, on [the two year anniversary](https://twitter.com/mdo/statuses/1046200396
 
 For those who haven't been following along too closely, here's a recap of all the biggest changes shipping with Bootstrap 3:
 
-* **New design and an optional theme!** With v3 we've gone flat. Don't call it a trend—it's all about customization, folks. Since we simplified the aesthetics though, we thought it'd help to have an optional theme. To use it, check out the [Bootstrap theme example](http://).
+* **New design and an optional theme!** With v3 we've gone flat. Don't call it a trend—it's all about customization, folks. Since we simplified the aesthetics though, we thought it'd help to have an optional theme. To use it, check out the [Bootstrap theme example](http://getbootstrap.com/examples/theme/).
 * **Mobile first and always responsive!** Nearly everything has been redesigned and rebuilt to start from your handheld devices and scale up.
 * **Brand new Customizer!** It's been redesigned, is now compiled in the browser instead of Heroku, has better dependency support, and even has built-in error handling. Better yet, we now save your customizations to an anonymous Gist for easy reuse, sharing, and modifications.
 * **Better box model by default.** Everything in Bootstrap gets `box-sizing: border-box`, making for easier sizing options and an enhanced grid system.
@@ -39,7 +39,7 @@ For our pre-release testers and others who have been following along with the RC
 
 With Bootstrap 3 we've gone deep on responsive and mobile first—it's built in and no longer requires a separate stylesheet. That's great for most folks, but not everyone needs or wants an adaptive web site or application. To help, we've added some documentation and an example that disables the adaptive or responsive features with just a few lines of CSS.
 
-Check out [the Disabling responsiveness section](http://getbootstrap.com/getting-started/#disable-responsive) or head right to the [non-responsive example](http://getbootstrap.com/examples/non-responsive/) to learn more.
+Check out the [Disabling responsiveness section](http://getbootstrap.com/getting-started/#disable-responsive) or head right to the [non-responsive example](http://getbootstrap.com/examples/non-responsive/) to learn more.
 
 
 ## Bootstrap 2.3.2
