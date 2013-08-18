@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap 3 released
 ---
 
+
 Today, on [the two year anniversary](https://twitter.com/mdo/statuses/104620039650557952) of releasing Bootstrap to the world, we're shipping Bootstrap 3.0. It's been a crazy long ride to say the least and we're stoked to finally have this out in the wild. Thanks to everyone who's tested our RCs (er, betas), reported bugs, and contributed code. We couldn't have done it without you beautiful nerds.
 
 
@@ -22,11 +23,11 @@ For those who haven't been following along too closely, here's a recap of all th
 * **Removed some components!** We've dropped the accordion (replaced with collapsible panels), submenus, typeahead, and a few more small items. (Worth celebrating as much as adding new ones.)
 * **More consistent base and sizing classes.** Buttons, tables, forms, alerts, and more have been updated to have more consistent classes for easier customizer and extensibility.
 * **Docs have been blown up, yo.** We've added a lot of new documentation, not only for our components, but for browser support (including gotchas and bugs), license FAQs, third party support (and workarounds), accessibility, and more.
-* Dropped Internet Explorer 7 and Firefox 3.6 support. For Internet Explorer 8, you'll need to include Respond.js for all the media queries to work correctly. You can read more about [browser support](http://getbootstrap.com/getting-started/#browser-support) in the docs.
+* **Dropped Internet Explorer 7 and Firefox 3.6 support.** For Internet Explorer 8, you'll need to include Respond.js for all the media queries to work correctly. You can read more about [browser support](http://getbootstrap.com/getting-started/#browser-support) in the docs.
 
 For our pre-release testers and others who have been following along with the RCs, here's a list of some of the more prominent changes made since RC2:
 
-* Hella bugs have been fixed.
+* Hella bugs have been fixed (duh, right?).
 * Examples are back in the main repo and have been fully updated.
 * Docs have been updated for more consistent placement, naming, etc.
 * Customizer compiling bugs have all been fixed.
@@ -51,9 +52,9 @@ As a side note, we apologize for all the redirect and 404 problems folks ran int
 
 ## Coming up next
 
-As always, we'll have one or two patch releases before hitting our next minor release. We have a few things we'd like to tackle for BS3.1 and are already tracking those as potential features in [#9397](https://github.com/twbs/bootstrap/issues/9397). If you'd like to see something added or changed in v3.1, go ahead and check that list and if it's not on there, open a new issue.
+As always, we'll have one or two patch releases before hitting our next minor release. Beyond that, we have a few things we'd like to tackle for BS3.1 and are already tracking those as potential additions in [#9397](https://github.com/twbs/bootstrap/issues/9397). If you'd like something considered for v3.1, check that list. If it's not there, open a new issue to discuss.
 
-No dates have been set for any patch or minor release yet. As soon as we figure out what's making the cut and when, we'll let you know.
+No dates have been set for any patch or minor release yet. As soon as we figure that out we'll let you know.
 
 
 ## Download!
