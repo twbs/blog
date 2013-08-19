@@ -42,6 +42,18 @@ For our pre-release testers and others who have been following along with the RC
 * The navbar components have been updated to better account for the presence of containers and more. You'll see some new margin and padding changes, but no markup changes should be required.
 
 
+## The numbers game
+
+For those keeping track, Bootstrap 3 took nearly nine months to design, develop, and ship. In that time we've had:
+
+* Over 2,700 commits from 319 contributors
+* 379 files changed, meaning 84,000 additions and deletions
+* Over 900 comments in the pull request
+* Over a 20% reduction in minified CSS (from 127kb to 97kb)
+
+This was a massive undertaking and it couldn't have come out better. Thanks once again to all our contributors and the rest of the community for helping us make this a reality.
+
+
 ## What about non-responsive sites?
 
 With Bootstrap 3 we've gone deep on responsive and mobile first—it's built in and no longer requires a separate stylesheet. That's great for most folks, but not everyone needs or wants an adaptive web site or application. To help, we've added some documentation and an example that disables the adaptive or responsive features with just a few lines of CSS.
