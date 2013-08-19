@@ -4,6 +4,8 @@ title: Bootstrap 3 released
 ---
 
 
+<iframe width="600" height="338" src="//www.youtube.com/embed/0hiUuL5uTKc?rel=0" frameborder="0" allowfullscreen></iframe>
+
 Today, on [the two year anniversary](https://twitter.com/mdo/statuses/104620039650557952) of releasing Bootstrap to the world, we're shipping Bootstrap 3.0. It's been a crazy long ride to say the least and we're stoked to finally have this out in the wild. Thanks to everyone who's tested our RCs (er, betas), reported bugs, and contributed code. We couldn't have done it without you beautiful nerds.
 
 
@@ -50,6 +52,13 @@ For those keeping track, Bootstrap 3 took nearly nine months to design, develop,
 * 379 files changed, meaning 84,000 additions and deletions
 * Over 900 comments in the pull request
 * Over a 20% reduction in minified CSS (from 127kb to 97kb)
+
+Beyond this release, numbers everywhere else are looking amazing. It's been staggering to watch these grow.
+
+* Over 56,000 stars and 19,000 forks on GitHub (still number one, baby!).
+* Over 9,800 closed issues (that's over 13 a day since we released Bootstrap).
+* Last month, we had nearly 15 million pageviews on our docs (and that barely includes anything from our v3 pre-releases).
+* In the last year, over 3 million downloads, 40% of which have come from the Customizer.
 
 This was a massive undertaking and it couldn't have come out better. Thanks once again to all our contributors and the rest of the community for helping us make this a reality.
 
