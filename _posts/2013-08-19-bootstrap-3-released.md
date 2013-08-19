@@ -33,6 +33,7 @@ For our pre-release testers and others who have been following along with the RC
 * Navbars now require a `.navbar-default` for the standard version.
 * Panels now require a `.panel-default` for the standard gray variation.
 * Alerts now require a modifier class (e.g., `.alert.alert-warning` for the previously default yellow alert).
+* Multiple responsive utilities can now be applied to the same element.
 * Examples are back in the main repo and have been fully updated.
 * Docs have been updated for more consistent placement, naming, etc.
 * Customizer compiling bugs have all been fixed.
