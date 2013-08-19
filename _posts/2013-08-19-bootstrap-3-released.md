@@ -22,7 +22,7 @@ For those who haven't been following along too closely, here's a recap of all th
 * **Modals are way more responsive.** We've overhauled the modal code to make it way more responsive on mobile devices. They now scroll the entire viewport instead of having a max-height.
 * **Added some components!** New to the mix are panels and list groups.
 * **Removed some components!** We've dropped the accordion (replaced with collapsible panels), submenus, typeahead, and a few more small items. (Worth celebrating as much as adding new ones.)
-* **More consistent base and sizing classes.** Buttons, tables, forms, alerts, and more have been updated to have more consistent classes for easier customizer and extensibility.
+* **More consistent base and sizing classes.** Buttons, tables, forms, alerts, and more have been updated to have more consistent classes for easier customization and extensibility.
 * **Docs have been blown up, yo.** We've added a lot of new documentation, not only for our components, but for browser support (including gotchas and bugs), license FAQs, third party support (and workarounds), accessibility, and more.
 * **Dropped Internet Explorer 7 and Firefox 3.6 support.** For Internet Explorer 8, you'll need to include [Respond.js](https://github.com/scottjehl/Respond) for all the media queries to work correctly. You can read more about [browser support](http://getbootstrap.com/getting-started/#browser-support) in the docs.
 
