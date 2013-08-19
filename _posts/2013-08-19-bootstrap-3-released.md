@@ -17,7 +17,7 @@ For those who haven't been following along too closely, here's a recap of all th
 * **Better box model by default.** Everything in Bootstrap gets `box-sizing: border-box`, making for easier sizing options and an enhanced grid system.
 * **Super-powered grid system.** With four tiers of grid classes—phones, tablets, desktops, and large desktops—you can do some super crazy awesome layouts.
 * **Rewritten JavaScript plugins.** All events are now namespaced, no-conflict stuff works way better, and more.
-* **New Glyphicons icon font!** While they were gone for awhile, we've since restored the Glyphicons to the main repo. In 2.x they were images, but now they're in font format and we've added 40 new glyphs.
+* **New Glyphicons icon font!** While they were gone for a while, we've since restored the Glyphicons to the main repo. In 2.x, they were images, but now they're in font format and we've added 40 new glyphs.
 * **Overhauled navbar.** It's now always responsive and comes with some super handy and re-arrangable subcomponents.
 * **Modals are way more responsive.** We've overhauled the modal code to make it way more responsive on mobile devices. They now scroll the entire viewport instead of having a max-height.
 * **Added some components!** New to the mix are panels and list groups.
