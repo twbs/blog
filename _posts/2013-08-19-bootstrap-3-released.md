@@ -58,14 +58,14 @@ Beyond this release, numbers everywhere else are looking amazing. It's been stag
 * Over 56,000 stars and 19,000 forks on GitHub (still number one, baby!).
 * Over 9,800 closed issues (that's over 13 a day since we released Bootstrap).
 * Last month, we had nearly 15 million pageviews on our docs (and that barely includes anything from our v3 pre-releases).
-* In the last year, over 3 million downloads, 40% of which have come from the Customizer.
+* In the last year, we've logged over 3 million downloads just from the docs, 40% of which are from the Customizer.
 
 This was a massive undertaking and it couldn't have come out better. Thanks once again to all our contributors and the rest of the community for helping us make this a reality.
 
 
 ## What about non-responsive sites?
 
-With Bootstrap 3 we've gone deep on responsive and mobile first—it's built in and no longer requires a separate stylesheet. That's great for most folks, but not everyone needs or wants an adaptive web site or application. To help, we've added some documentation and an example that disables the adaptive or responsive features with just a few lines of CSS.
+With Bootstrap 3 we've gone deep on responsive and mobile first—it's built in and no longer requires a separate stylesheet. That's great for most folks, but not everyone needs or wants an adaptive web site or application. To help, we've added some documentation and an example that disables the adaptive or responsive features with some extra CSS.
 
 Check out the [Disabling responsiveness section](http://getbootstrap.com/getting-started/#disable-responsive) or head right to the [non-responsive example](http://getbootstrap.com/examples/non-responsive/) to learn more.
 
@@ -88,7 +88,7 @@ No dates have been set for any patch or minor release yet. As soon as we figure 
 
 Woo, all set? Then head to the docs and download yourself some Bootstrap 3!
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.0">Download Bootstrap 3</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
+<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.0.zip">Download Bootstrap 3</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
 
 
 -----

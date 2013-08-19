@@ -180,6 +180,7 @@ a:hover {
 .btn-link {
   display: inline-block;
   padding: 9px 20px;
+  margin-right: 5px;
   color: #fff;
   font-weight: bold;
   background-color: #08c;
