@@ -1,13 +1,3 @@
-/*
-Theme Name: Theme
-Theme URI: http://markdotto.com/
-Description: The default theme for MDO.com, last updated Sun Feb 26 21:24:31 PST 2012
-Author: @mdo
-Version: v2.1
-*/
-
-
-
 /* Body resets
 -------------------------------------------------- */
 
@@ -17,7 +7,8 @@ Version: v2.1
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -45,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 28px;
   color: #111;
-  text-rendering: optimizeLegibility;
 }
 h1 {
   margin: 0 0 10px;
@@ -93,9 +83,7 @@ abbr {
   color: #555;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
 }
 
 code, pre {
@@ -103,8 +91,6 @@ code, pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 15px;
   color: #333333;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 code {
@@ -123,8 +109,6 @@ pre {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   white-space: pre;
   white-space: pre-wrap;
@@ -142,13 +126,11 @@ blockquote {
   background-color: #f5f5f5;
   padding: 20px 30px;
   margin-bottom: 14px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 blockquote p {
   margin-bottom: 0;
-  color: #999999;
+  color: #999;
   text-indent: -0.4em;
 }
 blockquote p:before {
@@ -163,9 +145,9 @@ img {
   margin: 0 0 20px;
 }
 
-
 /* Links
 -------------------------------------------------- */
+
 a {
   font-weight: inherit;
   line-height: inherit;
@@ -186,7 +168,6 @@ a:hover {
   background-color: #08c;
   border-radius: 6px;
   -webkit-transition: all .2s linear;
-     -moz-transition: all .2s linear;
           transition: all .2s linear;
 }
 .btn-link:hover {
@@ -194,8 +175,6 @@ a:hover {
   text-decoration: none;
   background-color: #005580;
 }
-
-
 
 /* Scaffolding
 -------------------------------------------------- */
@@ -234,11 +213,6 @@ a:hover {
   color: #222;
 }
 
-
-
-
-
-
 /* Footer
 -------------------------------------------------- */
 
@@ -254,7 +228,7 @@ a:hover {
   text-align: center;
   font-size: 12px;
   line-height: 20px;
-  color: #999999;
+  color: #999;
 }
 .colophon ul {
   margin-left: 0;
@@ -273,13 +247,12 @@ a:hover {
   margin: 56px auto 14px;
 }
 
-
-
 /* Posts
 -------------------------------------------------- */
 
 /* List of posts
 ------------------------- */
+
 .posts {
   margin-bottom: 80px;
 }
@@ -291,9 +264,7 @@ a:hover {
   display: block;
   padding: 5px 10px;
   margin: 5px 0;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 .posts h3 a:hover {
   text-decoration: none;
@@ -310,6 +281,7 @@ a:hover {
 
 /* Single post
 ------------------------- */
+
 .post {
   position: relative;
   margin-bottom: 84px;
@@ -344,8 +316,6 @@ a:hover {
   padding-bottom: 84px;
 }
 
-
-
 /* Pagination
 -------------------------------------------------- */
 
@@ -365,8 +335,6 @@ a:hover {
   border-radius: 4px;
 }
 
-
-
 /* Misc
 -------------------------------------------------- */
 
@@ -385,8 +353,6 @@ a:hover {
   overflow-y: scroll;
 }
 
-
-
 /* Responsive
 -------------------------------------------------- */
 
@@ -404,4 +370,3 @@ a:hover {
     line-height: 20px;
   }
 }
-
