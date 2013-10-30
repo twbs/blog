@@ -161,7 +161,7 @@ Compared to previous releases, we're going into a bit more detail here with the 
 
 ### Deprecated
 
-- [#9963](https://github.com/twbs/bootstrap/issues/9963), [#10567](https://github.com/twbs/bootstrap/issues/10567): Deprecate `@screen-*` classes for `@screen-*-min` to better match the `@screen-*-max` variables and provide more context to their actual uses.
+- [#9963](https://github.com/twbs/bootstrap/issues/9963), [#10567](https://github.com/twbs/bootstrap/issues/10567): Deprecate `@screen-*` variables for `@screen-*-min` to better match the `@screen-*-max` variables and provide more context to their actual uses.
 - [#10005](https://github.com/twbs/bootstrap/issues/10005): Finish removing uses of `@screen-{device}` variables by deprecating them for `@screen-*-min` wherever possible.
 - [#10100](https://github.com/twbs/bootstrap/issues/10100): Deprecate `.hide-text` mixin for `.text-hide`. This matches our class-mixin strategy elsewhere (e.g., `.clearfix`) and ensures the class and mixin use the same name to avoid confusion.
 - [#10125](https://github.com/twbs/bootstrap/issues/10125): Deprecate inconsistent container variables for new `@container-{screen-size}` variables (e.g., use `@container-sm` instead of `@container-tablet`)
