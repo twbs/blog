@@ -36,7 +36,7 @@ As always, get the details from the [v3.0.2 milestone](https://github.com/twbs/b
 
 ## Up next
 
-This release was unplanned, and as such it bumps a lot of planned fixes to a v3.0.3 release. We've already updated the relevant issues to be under the new v3.0.3 milestone. Look for that ralease, and perhaps another patch, before v3.1.0 ships in the coming months.
+This release was unplanned, and as such it bumps a lot of planned fixes to a v3.0.3 release. We've already updated the relevant issues to be under the new v3.0.3 milestone. Look for that release, and perhaps another patch, before v3.1.0 ships in the coming months.
 
 -----
 
