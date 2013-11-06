@@ -17,7 +17,7 @@ Here's the rundown on what's changed:
 
 * [#10039](https://github.com/twbs/bootstrap/issues/10039): Remove `window.jQuery` for `jQuery`.
 * [#11273](https://github.com/twbs/bootstrap/issues/11273): Add branch alias for `composer.json`.
-* [#11295](https://github.com/twbs/bootstrap/issues/11295): Restore offset, push, and pull zero classes (e.g., 1.col-md-offset-0`)
+* [#11295](https://github.com/twbs/bootstrap/issues/11295): Restore offset, push, and pull zero classes (e.g., `.col-md-offset-0`)
 * [#11315](https://github.com/twbs/bootstrap/issues/11315): Add navigation role to example navbars.
 * [#11327](https://github.com/twbs/bootstrap/issues/11327): Improve nesting of `.thumbnail` styles.
 * [#11334](https://github.com/twbs/bootstrap/issues/11334): Remove unnecessary `&` from CSS nesting for panels.
