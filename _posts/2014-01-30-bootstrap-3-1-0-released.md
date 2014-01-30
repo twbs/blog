@@ -150,7 +150,7 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#10044](https://github.com/twbs/bootstrap/issues/10044): Check that `href` id's are followed by valid characters in dropdowns.
 - [#10134](https://github.com/twbs/bootstrap/issues/10134): Don't use jQuery `offset` directly because it uses sub pixel rendering.
 - [#10199](https://github.com/twbs/bootstrap/issues/10199): Correct `hidden.bs` and `shown.bs` events firing too early in tooltips and popovers.
-- [#10205](https://github.com/twbs/bootstrap/issues/10205): Enable support of Chinese characters in Scrollspy targets.
+- [#10205](https://github.com/twbs/bootstrap/issues/10205): Enable support of arbitrary characters in Scrollspy targets.
 - [#10236](https://github.com/twbs/bootstrap/issues/10236): Properly calculate offset positioning for affix plugin when reloading a scrolled window.
 - [#10260](https://github.com/twbs/bootstrap/issues/10260), #10568, #10740: Properly hide tooltips and popovers if no animation is set.
 - [#10283](https://github.com/twbs/bootstrap/issues/10283): Prevent IE8 from complaining about `$.support.transition.end`.
