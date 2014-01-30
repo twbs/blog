@@ -50,7 +50,7 @@ We've been talking about it for what seems like forever, but thanks to all our c
 
 We're constantly trying to improve our tools for developing Bootstrap and v3.1 brings a slew of updates to do just that.
 
-* We've switched from Recess to LESS for our compiler, giving us access to LESS 1.6.x (as opposed to 1.3.x with Recess).
+* We've switched from Recess to Less for our compiler, giving us access to Less 1.6.x (as opposed to 1.3.x with Recess).
 * Our compiled code is virtually identical in formatting and organization thanks to [CSScomb](http://csscomb.com) and some other Grunt-fu.
 * Tests also run a tad faster with the help of some magical caching and parallelization.
 * The web Customizer is now generated from a Grunt task, meaning we'll never miss updating or adding a variable again. If you contribute to Bootstrap regularly, just run `grunt` and commit to update the page.
@@ -114,7 +114,7 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#11766](https://github.com/twbs/bootstrap/issues/11766): Use `@color` variable in `.button-variant()` mixin to set `background-color` on `.badge`s in buttons for proper default button badge styles.
 - [#11741](https://github.com/twbs/bootstrap/issues/11741): Don't set `@headings-font-family` to the same font stack as the `<body>`; instead, just use `inherit` for same default CSS.
 - [#11786](https://github.com/twbs/bootstrap/issues/11786): Nest media queries within print utilities for mixin-friendliness.
-- [#11790](https://github.com/twbs/bootstrap/issues/11790): With switch to LESS compiler, remove duplicate CSS generated from the nested `.clearfix` class and mixin by switching to `&:extend(.clearfix all)`.
+- [#11790](https://github.com/twbs/bootstrap/issues/11790): With switch to Less compiler, remove duplicate CSS generated from the nested `.clearfix` class and mixin by switching to `&:extend(.clearfix all)`.
 - [#11801](https://github.com/twbs/bootstrap/issues/11801): Use correct variables for grid containers.
 - [#11817](https://github.com/twbs/bootstrap/issues/11817): Rework input groups to use the `font-size: 0;` and `white-space: nowrap` hack for a more durable component with regards to code formatting and custom font size changes.
 - [#11829](https://github.com/twbs/bootstrap/issues/11829): Add `.make-xs-column` mixins to complement the recently added extra small predefined grid classes.
@@ -195,7 +195,7 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 ### Documentation
 
 - [#10486](https://github.com/twbs/bootstrap/issues/10486): Add note about `data-toggle` dropdown dependency.
-- [#10505](https://github.com/twbs/bootstrap/issues/10505): Document more of our LESS variables and mixins (not all, but the commonly used ones).
+- [#10505](https://github.com/twbs/bootstrap/issues/10505): Document more of our Less variables and mixins (not all, but the commonly used ones).
 - [#11158](https://github.com/twbs/bootstrap/issues/11158): Customizer's variables are now generated via Grunt task from the `variables.less` file.
 - [#11447](https://github.com/twbs/bootstrap/issues/11447): Document that modal remote URL is only loaded once.
 - [#11655](https://github.com/twbs/bootstrap/issues/11655): Normalize disabled inputs and buttons in iOS with `opacity: 1;`.
@@ -225,8 +225,8 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#11761](https://github.com/twbs/bootstrap/issues/11761): Add JavaScript Code Style checker integration.
 - [#11739](https://github.com/twbs/bootstrap/issues/11739): Lint `docs-assets/js/application.js` and `docs-assets/js/customizer.js`.
 - [#11780](https://github.com/twbs/bootstrap/issues/11780): Don't ignore `Gruntfile.js` or `package.json` in `bower.json` as they're required for compilation.
-- [#11790](https://github.com/twbs/bootstrap/issues/11790): Switch from Recess to LESS compiler.
-  * Dropped `grunt-recess` for `grunt-contrib-less` to get the latest version of LESS (v1.6.x) since Recess was still quite behind.
+- [#11790](https://github.com/twbs/bootstrap/issues/11790): Switch from Recess to Less compiler.
+  * Dropped `grunt-recess` for `grunt-contrib-less` to get the latest version of Less (v1.6.x) since Recess was still quite behind.
   * Adds CSScomb to take place of Recess's CSS linting. Includes custom `.csscomb.json` in project root with basically the same property order as Recess.
   * Fixes duplicate CSS generation from the nested `.clearfix` class and mixin by switching to `&:extend(.mixin all)` (also mentioned in changes section).
   * Compiled CSS looks only slightly different—yay!
