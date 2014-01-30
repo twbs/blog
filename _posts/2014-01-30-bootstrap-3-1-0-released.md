@@ -226,7 +226,7 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#11739](https://github.com/twbs/bootstrap/issues/11739): Lint `docs-assets/js/application.js` and `docs-assets/js/customizer.js`.
 - [#11780](https://github.com/twbs/bootstrap/issues/11780): Don't ignore `Gruntfile.js` or `package.json` in `bower.json` as they're required for compilation.
 - [#11790](https://github.com/twbs/bootstrap/issues/11790): Switch from Recess to LESS compiler.
-  * Dropped `grunt-recess` for `grunt-contrib-less` to get the latest version of LESS (v1.5.x) since Recess was still quite behind.
+  * Dropped `grunt-recess` for `grunt-contrib-less` to get the latest version of LESS (v1.6.x) since Recess was still quite behind.
   * Adds CSScomb to take place of Recess's CSS linting. Includes custom `.csscomb.json` in project root with basically the same property order as Recess.
   * Fixes duplicate CSS generation from the nested `.clearfix` class and mixin by switching to `&:extend(.mixin all)` (also mentioned in changes section).
   * Compiled CSS looks only slightly different—yay!
