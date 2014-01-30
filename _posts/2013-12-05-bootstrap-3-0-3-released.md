@@ -26,7 +26,7 @@ See the list below for more information on those changes and more.
 - [#9927](https://github.com/twbs/bootstrap/issues/9927): Update non-responsive example to prevent `.navbar-collapse` border from increasing height and increase specificity of nav selectors to keep dropdowns looking the same.
 - [#10147](https://github.com/twbs/bootstrap/issues/10147): Remove outline from carousel controls on focus.
 - [#10353](https://github.com/twbs/bootstrap/issues/10353): Tell Bower to ignore development and documentation files.
-- [#10483](https://github.com/twbs/bootstrap/issues/10483), #10357: Make .container mixin-friendly by moving the width declarations within one class.
+- [#10483](https://github.com/twbs/bootstrap/issues/10483), [#10357](https://github.com/twbs/bootstrap/issues/10357): Make .container mixin-friendly by moving the width declarations within one class.
 - [#10662](https://github.com/twbs/bootstrap/issues/10662): Enable individually linked images within thumbnails.
 - [#10744](https://github.com/twbs/bootstrap/issues/10744): Use `border-style: solid;` on `.caret`s to undo a previous Firefox fix that appears to no longer work.
 - [#10936](https://github.com/twbs/bootstrap/issues/10936): Increase height of large inputs to fix Firefox inconsistencies by using `ceil()` instead of `floor()`.
