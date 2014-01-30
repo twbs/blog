@@ -146,7 +146,7 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 
 ### JavaScript changes
 
-- [#9318](https://github.com/twbs/bootstrap/issues/9318), [#9459](https://github.com/twbs/bootstrap/issues/9459), [#10105](https://github.com/twbs/bootstrap/issues/10105): Properly place remote content within the `.modal-content` instead of `.modal-body` (see note below).
+- [#9318](https://github.com/twbs/bootstrap/issues/9318), [#9459](https://github.com/twbs/bootstrap/issues/9459), [#10105](https://github.com/twbs/bootstrap/issues/10105): Properly place remote content within the `.modal-content` instead of `.modal-body` (see note above).
 - [#10044](https://github.com/twbs/bootstrap/issues/10044): Check that `href` id's are followed by valid characters in dropdowns.
 - [#10134](https://github.com/twbs/bootstrap/issues/10134): Don't use jQuery `offset` directly because it uses sub pixel rendering.
 - [#10199](https://github.com/twbs/bootstrap/issues/10199): Correct `hidden.bs` and `shown.bs` events firing too early in tooltips and popovers.
