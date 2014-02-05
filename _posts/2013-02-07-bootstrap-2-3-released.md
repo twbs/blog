@@ -60,5 +60,5 @@ And that's just some of the highlights. Again, [peep the pull request](https://g
 
 <3,
 
-[@mdo](http://twitter.com/mdo) and [@fat](http://twitter.com/fat)
+[@mdo](https://twitter.com/mdo) and [@fat](https://twitter.com/fat)
 

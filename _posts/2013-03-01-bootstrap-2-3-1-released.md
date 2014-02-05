@@ -21,4 +21,4 @@ Check out the [2.3.1 pull request](https://github.com/twbs/bootstrap/pull/7111) 
 
 <3,
 
-[@mdo](http://twitter.com/mdo) and [@fat](http://twitter.com/fat)
+[@mdo](https://twitter.com/mdo) and [@fat](https://twitter.com/fat)

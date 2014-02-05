@@ -13,4 +13,4 @@ As a side note, the Expo is the second project appearing under the [twbs organiz
 
 Until then, enjoy and <3,
 
-[@mdo](http://twitter.com/mdo)
+[@mdo](https://twitter.com/mdo)

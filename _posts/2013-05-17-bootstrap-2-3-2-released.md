@@ -12,4 +12,4 @@ Work on Bootstrap 3 continues and we're almost ready to do an official release c
 
 <3,
 
-[@mdo](http://twitter.com/mdo) and [@fat](http://twitter.com/fat)
+[@mdo](https://twitter.com/mdo) and [@fat](https://twitter.com/fat)
