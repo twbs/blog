@@ -69,15 +69,12 @@
 /* Masthead
 -------------------------------------------------- */
 .bootstrap-logo {
-  position: relative;
-  margin: 0 auto 20px;
+  display: inline-block;
+  margin: 0 auto;
 }
 .bootstrap-logo img {
-  display: block;
   margin: 0 auto;
-  -webkit-border-radius: 26px;
-     -moz-border-radius: 26px;
-          border-radius: 26px;
+  border-radius: 26px;
   -webkit-box-shadow: 0 2px 8px rgba(109,51,83,.15);
      -moz-box-shadow: 0 2px 8px rgba(109,51,83,.15);
           box-shadow: 0 2px 8px rgba(109,51,83,.15);

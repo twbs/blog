@@ -38,4 +38,4 @@ Lastly, thanks everyone again for submitting issues and contributing—you rock!
 
 <3,
 
-[@mdo](http://twitter.com/mdo) and [@fat](http://twitter.com/fat)
+[@mdo](https://twitter.com/mdo) and [@fat](https://twitter.com/fat)

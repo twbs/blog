@@ -17,4 +17,4 @@ There's some good news though. For you nerds who live on the edge, I've been wor
 
 Thanks for listening, and as always, <3<3<3.
 
-[@mdo](http://twitter.com/mdo)
+[@mdo](https://twitter.com/mdo)

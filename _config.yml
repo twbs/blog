@@ -1,8 +1,10 @@
-name: Bootstrap
-description: Official blog for the Twitter Bootstrap framework.
-url: http://blog.getbootstrap.com
+name:           Bootstrap Blog
+description:    Official blog for the Twitter Bootstrap framework.
+url:            http://blog.getbootstrap.com
 
-markdown: rdiscount
-permalink: pretty
-pygments: true
-paginate: 5
+markdown:       rdiscount
+permalink:      pretty
+pygments:       true
+paginate:       5
+
+exclude:        ["README.md"]

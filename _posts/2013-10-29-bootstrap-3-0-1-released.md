@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap 3.0.1 released
 ---
 
-<iframe width="600" height="338" src="//www.youtube.com/embed/fdKsgBNEHUU?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="338" src="//www.youtube.com/embed/fdKsgBNEHUU?rel=0" allowfullscreen></iframe>
 
 Today we're shipping v3.0.1, a huge patch release with over 750 commits since v3 was released two months ago. We've outlined most of the changes below, including documentation updates, bug fixes, and even a few deprecations (our first in the history of the project).
 

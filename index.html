@@ -14,7 +14,7 @@ layout: default
   <span class="post-date">{{ post.date | date_to_string }}</span>
 
   <div class="tweet-button">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="horizontal" data-via="twbootstrap" data-url="http://blog.getbootstrap.com{{ post.url }}" data-text="{{ post.title }}:">Tweet</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="horizontal" data-via="twbootstrap" data-url="{{ site.url }}{{ post.url }}" data-text="{{ post.title }}:">Tweet</a>
   </div>
 
   {{ post.content }}
