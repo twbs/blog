@@ -87,17 +87,16 @@ abbr {
 }
 
 code, pre {
-  padding: 0 3px 2px;
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 15px;
   color: #333333;
-  border-radius: 3px;
 }
 code {
   padding: 2px 4px;
   color: #d14;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
+  border-radius: 3px;
 }
 
 pre {
@@ -110,7 +109,6 @@ pre {
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
@@ -141,6 +139,7 @@ blockquote p:after {
 }
 
 img {
+  border: 0;
   display: block;
   margin: 0 0 20px;
 }
@@ -149,6 +148,7 @@ img {
 -------------------------------------------------- */
 
 a {
+  background: transparent;
   font-weight: inherit;
   line-height: inherit;
   color: #08c;
@@ -195,12 +195,13 @@ a:hover {
 }
 .masthead {
   margin-bottom: 84px;
+  text-align: center;
 }
 
 .masthead p {
+  margin-top: 4px;
   padding-bottom: 28px;
   color: #999999;
-  text-align: center;
 }
 .masthead p a {
   color: #555555;
