@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap 2.1.1 released
 ---
 
-[Two weeks later](http://blog.getbootstrap.com/2012/08/20/bootstrap-2-1-0-released/), we've closed another 500 issues against Bootstrap. That includes all the dupes—you nerds like reporting typos—and invalid issues that don't end up making it on the official release milestone. But, what's awesome is that we have 2.1.1 ready to rock with 73 bugfixes.
+[Two weeks later]({{ site.url }}/2012/08/20/bootstrap-2-1-0-released/), we've closed another 500 issues against Bootstrap. That includes all the dupes—you nerds like reporting typos—and invalid issues that don't end up making it on the official release milestone. But, what's awesome is that we have 2.1.1 ready to rock with 73 bugfixes.
 
 
 ## Get it
