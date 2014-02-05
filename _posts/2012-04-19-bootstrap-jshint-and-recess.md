@@ -14,7 +14,7 @@ We're hoping that this will both catch potentially unsafe syntax as well as enco
 
 To begin with, Bootstrap's JS will use the following options (stored in a .jshintrc file in the js dir):
 
-<pre>
+{% highlight json %}
 {
     "validthis" : true
   , "laxcomma"  : true
@@ -24,7 +24,7 @@ To begin with, Bootstrap's JS will use the following options (stored in a .jshin
   , "expr"      : true
   , "asi"       : true
 }
-</pre>
+{% endhighlight %}
 
 We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven't played with JSHint, you should definitely take a moment to <a href="http://www.jshint.com/">check it out right now</a>!
 
