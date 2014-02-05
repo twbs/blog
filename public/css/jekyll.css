@@ -338,6 +338,11 @@ a:hover {
 /* Misc
 -------------------------------------------------- */
 
+iframe {
+  border: 0;
+  overflow: hidden;
+}
+
 .right {
   float: right;
 }
