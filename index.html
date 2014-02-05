@@ -6,16 +6,12 @@ layout: default
 
 <div class="post">
   <h1>
-    <a href="{{ post.url }}">
-      {{ post.title }}
-    </a>
+    <a href="{{ post.url }}">{{ post.title }}</a>
   </h1>
 
   <span class="post-date">{{ post.date | date_to_string }}</span>
 
-  <div class="tweet-button">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="horizontal" data-via="twbootstrap" data-url="{{ site.url }}{{ post.url }}" data-text="{{ post.title }}:">Tweet</a>
-  </div>
+  {% include tweet-button.html %}
 
   {{ post.content }}
 </div>
