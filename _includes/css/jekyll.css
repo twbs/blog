@@ -255,23 +255,24 @@ a:hover {
 ------------------------- */
 
 .posts {
+  list-style: none;
   margin-bottom: 80px;
 }
-.posts h3 {
+.posts li {
   margin: 0;
   font-size: 18px;
 }
-.posts h3 a {
+.posts li a {
   display: block;
   padding: 5px 10px;
   margin: 5px 0;
   border-radius: 4px;
 }
-.posts h3 a:hover {
+.posts li a:hover {
   text-decoration: none;
   background-color: #f5f5f5;
 }
-.posts h3 a small {
+.posts li a small {
   font-size: 14px;
   color: #999;
 }
@@ -368,10 +369,10 @@ iframe {
     line-height: 20px;
   }
   .related h2,
-  .posts h3 a {
+  .posts li a {
     text-align: center;
   }
-  .posts h3 a small {
+  .posts li a small {
     display: block;
     line-height: 20px;
   }
