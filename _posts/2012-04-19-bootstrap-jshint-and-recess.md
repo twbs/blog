@@ -32,7 +32,7 @@ We hope this will make it a little easier for those looking to contribute to Boo
 
 Recess is a project developed at Twitter to help support our internal style guide.
 
-<img src="http://f.cl.ly/items/3R2v3e1G2P2S0y020j1D/Screen%20Shot%202012-04-19%20at%2012.57.15%20PM.png" alt="null" />
+![Recess screenshot](http://f.cl.ly/items/3R2v3e1G2P2S0y020j1D/Screen%20Shot%202012-04-19%20at%2012.57.15%20PM.png)
 
 At it’s core, Recess is a linter, but with the added ability to compile and/or reformat your css/less files: normalizing whitespace, stripping 0 values, reordering properties, and any other safe stylistic optimizations it can find.
 
