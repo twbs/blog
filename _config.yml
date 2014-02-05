@@ -6,3 +6,5 @@ markdown:       rdiscount
 permalink:      pretty
 pygments:       true
 paginate:       5
+
+exclude:        ["README.md"]
