@@ -1,5 +1,5 @@
 name:           Bootstrap Blog
-description:    Official blog for the Twitter Bootstrap framework.
+description:    Official blog for the Bootstrap framework.
 url:            http://blog.getbootstrap.com
 
 markdown:       rdiscount
