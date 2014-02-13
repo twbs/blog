@@ -40,7 +40,7 @@ Update your CDN links to point to the v3.1.1 files:
 - [#12195](https://github.com/twbs/bootstrap/issues/12195): Apply `.btn:focused` styles to `.btn.active:focused` for improved accessibility.
 - [#12412](https://github.com/twbs/bootstrap/issues/12412): Refactored and renamed our internal grid mixins for generating custom number of grid columns.
 - [#12433](https://github.com/twbs/bootstrap/issues/12433): Use negative `margin` on `.list-inline`s so we don't override the `padding-left` on the first list item.
-- [#12448](https://github.com/twbs/bootstrap/issues/12448): Use `@navbar-height` instead on `.navbar-brand` to prevent element from being shorter than navbar height. Corrects a change introduced in v3.1.
+- [#12448](https://github.com/twbs/bootstrap/issues/12448): Use `@navbar-height` instead on `.navbar-brand` to prevent element from being shorter than navbar height. Corrects a change introduced in v3.1.0.
 - [#12462](https://github.com/twbs/bootstrap/issues/12462): Add `border-radius` to tables when in panels for proper rounding with all background settings.
 - [#12470](https://github.com/twbs/bootstrap/issues/12470): Scope large modal styles to minimum viewport width.
 - [#12486](https://github.com/twbs/bootstrap/issues/12486): Restore full width inputs for input groups in inline forms and navbars.
