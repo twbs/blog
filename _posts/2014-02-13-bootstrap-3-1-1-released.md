@@ -43,8 +43,8 @@ Update your CDN links to point to the v3.1.1 files:
 - [#12448](https://github.com/twbs/bootstrap/issues/12448): Use `@navbar-height` instead on `.navbar-brand` to prevent element from being shorter than navbar height. Corrects a change introduced in v3.1.0.
 - [#12462](https://github.com/twbs/bootstrap/issues/12462): Add `border-radius` to tables when in panels for proper rounding with all background settings.
 - [#12470](https://github.com/twbs/bootstrap/issues/12470): Scope large modal styles to minimum viewport width.
-- [#12486](https://github.com/twbs/bootstrap/issues/12486): Restore full width inputs for input groups in inline forms and navbars.
-- [#12502](https://github.com/twbs/bootstrap/issues/12502): Remove long deprecated `:-moz-placeholder` styles.
+- [#12486](https://github.com/twbs/bootstrap/issues/12486): Restore full-width inputs for input groups in inline forms and navbars.
+- [#12502](https://github.com/twbs/bootstrap/issues/12502): Remove long-deprecated `:-moz-placeholder` styles.
 - [#12532](https://github.com/twbs/bootstrap/issues/12532): Scope popover arrow styles to immediate children.
 - [#12552](https://github.com/twbs/bootstrap/issues/12552): Fixes two typos in `carousel.less` for the Glyphicon classes.
 - [#12620](https://github.com/twbs/bootstrap/issues/12620), [#12621](https://github.com/twbs/bootstrap/issues/12621): Use `:extend(.img-responsive)` instead of mixin in thumbnail and carousel.
