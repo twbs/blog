@@ -176,6 +176,13 @@ a:hover {
   background-color: #005580;
 }
 
+.btn-link-ratchet {
+  background-color: #b60c32;
+}
+.btn-link-ratchet:hover {
+  background-color: #0f1953;
+}
+
 /* Scaffolding
 -------------------------------------------------- */
 
