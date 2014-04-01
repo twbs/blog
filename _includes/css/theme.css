@@ -65,7 +65,6 @@
 }
 
 
-
 /* Masthead
 -------------------------------------------------- */
 .bootstrap-logo {
@@ -86,4 +85,20 @@
   -webkit-box-shadow: 0 2px 15px rgba(109,51,83,.75);
      -moz-box-shadow: 0 2px 15px rgba(109,51,83,.75);
           box-shadow: 0 2px 15px rgba(109,51,83,.75);
+}
+
+
+/* List page
+-------------------------------------------------- */
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+.list li {
+  display: block;
+  margin-bottom: 5px;
+}
+.list span {
+  float: right;
+  color: #999;
 }
