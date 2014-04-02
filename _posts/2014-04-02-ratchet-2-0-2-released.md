@@ -11,7 +11,7 @@ Download Ratchet right from GitHub or, go to the [project repository](https://gi
 
 <a class="btn-link btn-link-ratchet" href="https://github.com/twbs/ratchet/archive/v2.0.2.zip">Download Ratchet 2.0.2</a>
 
-For a complete list of changes, see the [v2.0.2 milestone](https://github.com/twbs/ratchet/issues?q=state%3Aclosed+type%3Aissue+milestone%3A2.0.2).
+For a complete list of changes, see the [v2.0.2 milestone](https://github.com/twbs/ratchet/issues?milestone=4&state=closed).
 
 ## What's next
 
