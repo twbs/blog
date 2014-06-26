@@ -3,37 +3,37 @@ layout: default
 name: "home"
 ---
 
-{% for post in paginator.posts %}
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-<div class="post">
-  <h1>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </h1>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-  <span class="post-date">{{ post.date | date_to_string }}</span>
+    {% include tweet-button.html %}
 
-  {% include tweet-button.html %}
-
-  {{ post.content }}
+    {{ post.content }}
+  </div>
+  {% endfor %}
 </div>
 
-{% endfor %}
-
-<!-- Pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="older">Older</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
   {% else %}
-    <span class="next">Older</span>
+    <span class="pagination-item older">Older</span>
   {% endif %}
-  <span>&middot;</span>
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a href="/" class="newer">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
     {% else %}
-      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
     {% endif %}
   {% else %}
-    <span class="previous">Newer</span>
+    <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>

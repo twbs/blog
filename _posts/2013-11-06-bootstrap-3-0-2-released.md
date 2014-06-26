@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap 3.0.2 released
 ---
 
-<iframe width="600" height="450" src="//www.youtube.com/embed/-eSN8Cwit_s?rel=0" allowfullscreen></iframe>
+<iframe width="760" height="428" src="//www.youtube.com/embed/-eSN8Cwit_s?rel=0" allowfullscreen></iframe>
 
 Today we're shipping a quick v3.0.2 patch to fix incorrect version numbers in our JavaScript files, restore missing grid classes, and make a few improvements to our documentation.
 
