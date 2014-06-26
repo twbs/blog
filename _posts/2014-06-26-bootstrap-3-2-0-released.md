@@ -68,7 +68,7 @@ For a complete breakdown, [read the release changelog](https://github.com/twbs/b
 
 ## What's next
 
-Well, we'll probably have a patch release (v3.2.1), and then I imagine it's onward to v4. We've been building a list of things we'd like to see in the new version, but we don't have anything ready for the public yet. We'll share more details as we have them though. Until then, enjoy!
+Well, we'll probably have a patch release (v3.2.1), and then I imagine it's onward to v4. We have a v3.3.0 milestone on GitHub, but it's still unclear if we'll ship that before jumping to v4. We've been building a list of things we'd like to see in the new version, but we don't have anything ready for the public yet. We'll share more details as we have them though. Until then, enjoy!
 
 <3,
 
