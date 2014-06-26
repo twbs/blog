@@ -36,7 +36,7 @@ Here's a look at some of the highlights of this release.
 
 ### Responsive embeds
 
-As seen in SUIT CSS, we've added a few classes for creating responsive embeds. They're perfect for proportionally scaling down Youtube videos and more. [Head to the docs](http://getbootstrap.com/components/#responsive-embed) to check them out.
+As seen in [SUIT CSS](http://suitcss.github.io), we've added a few classes for creating responsive embeds. They're great for proportionally scaling down YouTube videos and other `iframe` or `embed` elements. [Head to the docs](http://getbootstrap.com/components/#responsive-embed) to check them out.
 
 ### New responsive utility classes
 
@@ -54,9 +54,17 @@ Our documentation snippets just got an upgrade with the help of [ZeroClipboard](
 
 We've also begun tracking unresolved browser bugs that currently impact Bootstrap's development in some way. We call it the [Wall of browser bugs](http://getbootstrap.com/browser-bugs). One of the coolest parts of developing Bootstrap is finding and reporting browser bugs to their developers. We're literally helping to make the web a better place, and that's pretty awesome in our book.
 
----
+### And dozens more...
 
-For a complete breakdown, [read the release changelog](https://github.com/twbs/bootstrap/releases/tag/v3.2.0) or the [v3.2.0 milestone](https://github.com/twbs/bootstrap/issues?milestone=26&page=1&state=closed)
+With over 1,000 commits, a lot has changed, and all of it for the better. A few more notable changes include:
+
+* The docs have been rearranged and updated to be more specific and easier to develop.
+* The progress bar component has been improved for increased flexibility.
+* CSS repaint performance (most notably through scrolling) has been enhanced for several components.
+* Keyboard navigation (forward and backward) is now available for the carousel.
+* Modals should no longer shift left when being opened.
+
+For a complete breakdown, [read the release changelog](https://github.com/twbs/bootstrap/releases/tag/v3.2.0) or the [v3.2.0 milestone](https://github.com/twbs/bootstrap/issues?milestone=26&page=1&state=closed).
 
 ## What's next
 
