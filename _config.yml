@@ -4,7 +4,7 @@ url:            http://blog.getbootstrap.com
 
 markdown:       rdiscount
 permalink:      pretty
-pygments:       true
+highlighter:    rouge
 paginate:       5
 encoding:       UTF-8
 baseurl:        /
