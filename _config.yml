@@ -2,7 +2,7 @@ name:           Bootstrap Blog
 description:    Official blog for the Bootstrap framework.
 url:            http://blog.getbootstrap.com
 
-markdown:       rdiscount
+markdown:       kramdown
 highlighter:    true
 permalink:      pretty
 paginate:       5
