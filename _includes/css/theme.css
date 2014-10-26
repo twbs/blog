@@ -33,12 +33,12 @@ h2, h3, h4 {
   line-height: 6rem;
   color: #fff;
   text-align: center;
-  cursor: default;
   background-color: transparent;
   border: 1px solid #cdbfe3;
   border-radius: 15%;
 }
-.bs-docs-booticon:hover {
+.bs-docs-booticon:hover,
+.bs-docs-booticon:focus {
   text-decoration: none;
 }
 
