@@ -28,7 +28,7 @@ To begin with, Bootstrap's JS will use the following options (stored in a .jshin
 
 We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven't played with JSHint, you should definitely take a moment to <a href="http://www.jshint.com/">check it out right now</a>!
 
-### [Recess](http://twitter.github.com/recess)
+### [Recess](http://twitter.github.io/recess/)
 
 Recess is a project developed at Twitter to help support our internal style guide.
 
