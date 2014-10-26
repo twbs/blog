@@ -203,26 +203,6 @@ h2, h3, h4 {
 }
 
 
-/* Masthead
--------------------------------------------------- */
-.bootstrap-logo {
-  display: inline-block;
-  margin: 0 auto;
-}
-.bootstrap-logo img {
-  width: 72px;
-  height: 72px;
-  margin: 0 auto;
-  border-radius: 13px;
-  box-shadow: 0 2px 8px rgba(109,51,83,.15);
-  -webkit-transition: all 0.1s ease-in-out;
-     -moz-transition: all 0.1s ease-in-out;
-          transition: all 0.1s ease-in-out;
-}
-.bootstrap-logo:hover img {
-  box-shadow: 0 2px 15px rgba(109,51,83,.3);
-}
-
 
 /* List page
 -------------------------------------------------- */
