@@ -3,8 +3,8 @@ description:    Official blog for the Bootstrap framework.
 url:            http://blog.getbootstrap.com
 
 markdown:       rdiscount
+highlighter:    true
 permalink:      pretty
-pygments:       true
 paginate:       5
 encoding:       UTF-8
 baseurl:        /
