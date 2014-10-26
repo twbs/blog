@@ -3,7 +3,7 @@ layout: post
 title: Introducing Rorschach
 ---
 
-<iframe width="760" height="428" src="//www.youtube.com/embed/Pav2f4b-1ZE?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="760" height="428" src="//www.youtube.com/embed/Pav2f4b-1ZE?rel=0" allowfullscreen></iframe>
 
 Bootstrap receives tons of awesome pull requests every week. Many of them come from folks new to contributing to the project. As such, there are a few beginner mistakes we've noticed over time.
 
