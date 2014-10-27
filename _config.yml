@@ -7,6 +7,5 @@ highlighter:    true
 permalink:      pretty
 paginate:       5
 encoding:       UTF-8
-baseurl:        /
 
 exclude:        ["README.md"]
