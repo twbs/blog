@@ -1,4 +1,4 @@
-{% if page.layout == "post" %}
+{% if page.slug != "home" %}
 <div class="tweet-button">
   <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="horizontal" data-via="twbootstrap" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}:">Tweet</a>
 </div>
