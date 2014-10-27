@@ -17,10 +17,10 @@ h2, h3, h4 {
   margin: 1rem 0;
 }
 
-.post > iframe {
-  max-width: 100%;
+.embed-responsive {
   margin-bottom: 1rem;
 }
+
 
 /* Bootstrap "B" icon */
 .bs-docs-booticon {

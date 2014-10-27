@@ -3,7 +3,9 @@ layout: post
 title: Bootstrap 3.0.3 released
 ---
 
-<iframe width="760" height="428" src="//www.youtube.com/embed/xy4FXhkm6Nw?rel=0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/xy4FXhkm6Nw?rel=0" width="760" height="428" allowfullscreen></iframe>
+</div>
 
 Today we're shipping another patch release, v3.0.3, to fix a few dozen bugs and improve our documentation.
 

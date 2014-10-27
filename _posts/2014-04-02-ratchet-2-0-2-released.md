@@ -3,7 +3,9 @@ layout: post
 title: Ratchet 2.0.2 released
 ---
 
-<iframe width="760" height="428" src="//www.youtube.com/embed/9VAamPxlMG0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/9VAamPxlMG0?rel=0" width="760" height="428" allowfullscreen></iframe>
+</div>
 
 Today we're shipping Ratchet 2.0.2. This patch release is full of bug fixes, refinements to our docs, and improvements to our build tools. Check out the detailed [changelog](https://github.com/twbs/ratchet/releases/tag/v2.0.2) on the release page.
 

@@ -3,7 +3,9 @@ layout: post
 title: Bootstrap 3.1.0 released
 ---
 
-<iframe width="760" height="428" src="//www.youtube.com/embed/phOW-CZJWT0?rel=0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/phOW-CZJWT0?rel=0" width="760" height="428" allowfullscreen></iframe>
+</div>
 
 Today we're stoked to ship Bootstrap v3.1. We've got a handful of new features, plenty of bug fixes and improvements, and updated build tools.
 
