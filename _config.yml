@@ -3,7 +3,7 @@ description:    Official blog for the Bootstrap framework.
 url:            http://blog.getbootstrap.com
 
 markdown:       kramdown
-highlighter:    true
+highlighter:    pygments
 permalink:      pretty
 paginate:       5
 encoding:       UTF-8
