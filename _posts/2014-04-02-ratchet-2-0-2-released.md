@@ -19,4 +19,4 @@ We're going to be working on the v2.1.0 release next. This will mark the first f
 
 <3,
 
-[@connors](https://twitter.com/connors) & [team](https://github.com/orgs/twbs/members)
+[@connors](https://twitter.com/connors) & [team](https://github.com/orgs/twbs/people)

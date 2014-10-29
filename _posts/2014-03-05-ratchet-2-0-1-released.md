@@ -20,4 +20,4 @@ Since releasing Ratchet 2.0.0 we've reached over **7,000 stars** and over **650 
 
 <3,
 
-[@connors](https://twitter.com/connors) & [team](https://github.com/orgs/twbs/members)
+[@connors](https://twitter.com/connors) & [team](https://github.com/orgs/twbs/people)
