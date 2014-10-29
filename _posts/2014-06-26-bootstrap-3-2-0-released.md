@@ -74,4 +74,4 @@ Well, we'll probably have a patch release (v3.2.1), and then I imagine it's onwa
 
 <3,
 
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/orgs/twbs/members)
+[@mdo](https://twitter.com/mdo) & [team](https://github.com/orgs/twbs/people)
