@@ -10,9 +10,9 @@ Today we're releasing [Bootstrap 2.0.3](http://getbootstrap.com), another bugfix
 
 In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](http://jshint.com) and [Recess](http://twitter.github.com/recess), linters for javascript and CSS. To continue to run `make` via Terminal, do the following:
 
-<pre>
+{% highlight bash %}
 $ npm install -g recess jshint
-</pre>
+{% endhighlight %}
 
 We've also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the [updated readme](https://github.com/twbs/bootstrap/blob/master/README.md).
 

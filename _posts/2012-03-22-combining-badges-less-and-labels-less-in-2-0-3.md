@@ -7,7 +7,7 @@ For one reason or another, in 2.0.2 we made badges have separate LESS files. The
 
 Moving forward, we'll have the following as a shared set of base styles. As you can see, when combined, there isn't much extra weight at all for those who want just badges or labels.
 
-<pre>
+{% highlight scss %}
 .label,
 .badge {
   font-size: @baseFontSize * .846;
@@ -19,13 +19,13 @@ Moving forward, we'll have the following as a shared set of base styles. As you 
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
   background-color: @grayLight;
 }
-</pre>
+{% endhighlight %}
 
 One file, multiple components. We've done it before with our multiple types of navigation, so it's nothing folks familiar with Bootstrap haven't seen before.
 
 On a related note, we've changed how we handle hover states for badges and labels. Instead of having a default hover state on an inherently static element, one made with say a `span`, we relegate the hover state (a cursor and background change) to anchors only.
 
-<pre>
+{% highlight scss %}
 a {
   &.label:hover,
   &.badge:hover {
@@ -34,6 +34,6 @@ a {
     cursor: pointer;
   }
 }
-</pre>
+{% endhighlight %}
 
 For the alternate colors on badges and labels, we've also relegated those styles to anchors only (those with an `href` attribute).

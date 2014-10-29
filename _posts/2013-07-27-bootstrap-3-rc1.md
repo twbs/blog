@@ -3,7 +3,9 @@ layout: post
 title: Bootstrap 3 RC1
 ---
 
-<iframe width="760" height="428" src="//www.youtube.com/embed/uB1D9wWxd2w?rel=0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/uB1D9wWxd2w?rel=0" width="760" height="428" allowfullscreen></iframe>
+</div>
 
 Today we're releasing the first of at least two release candidates for Bootstrap 3, and along with it a slew of updates to the project and community. Buckle up.
 

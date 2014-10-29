@@ -3,7 +3,9 @@ layout: post
 title: Ratchet 2.0.1 released
 ---
 
-<iframe width="760" height="428" src="//www.youtube.com/embed/otCpCn0l4Wo" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/otCpCn0l4Wo?rel=0" width="760" height="428" allowfullscreen></iframe>
+</div>
 
 Today we're pumped to release Ratchet 2.0.1. This release focuses on CSS bug fixes and further improvements to our docs and build tools. Be sure to check out the detailed [changelog](https://github.com/twbs/ratchet/releases/tag/v2.0.1) on the release page.
 
