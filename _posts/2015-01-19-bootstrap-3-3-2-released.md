@@ -5,7 +5,7 @@ version: 3.3.2
 ---
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="@mdo's-MUSIC-VIDEO-HERE" width="XXXXX" height="XXXXX" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/DNPjeIamsck?rel=0" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 Bootstrap 3.3.2 is here! This release has been all about bug fixes, accessibility improvements, and documentation updates. We've had over 300 commits from 19 contributors since our last release. Woohoo!
