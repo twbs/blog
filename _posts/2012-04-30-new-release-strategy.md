@@ -19,4 +19,4 @@ To keep up with the community and improve code quality, we'll be shipping more r
 
 -----
 
-Questions? [Mention us on Twitter](https://twitter.com/twbootstrap).
+Questions? [Mention us on Twitter](https://twitter.com/getbootstrap).

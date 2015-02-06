@@ -15,7 +15,7 @@ To start, we'll take a good hard look at the docs and current components to get 
 
 After 2.0.3, we have a small feature and (as required) bugfix release to push out. So far, the only features we're planning on adding include an official addition of the subnav, Growl-style notifications, and an OOCSS-style media component. The first two are some of oldest feature requests, and honestly are fairly easy to add and document compared to some of the other requests.
 
-We haven't slated anything else because of other time commitments, but we're open to hearing your feedback if you have top requests. Feel free to weigh in on [Twitter](https://twitter.com/twbootstrap) or on [GitHub](https://github.com/twbs/bootstrap).
+We haven't slated anything else because of other time commitments, but we're open to hearing your feedback if you have top requests. Feel free to weigh in on [Twitter](https://twitter.com/getbootstrap) or on [GitHub](https://github.com/twbs/bootstrap).
 
 ## Timing
 
