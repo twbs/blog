@@ -32,10 +32,9 @@ Download the latest release—source code, compiled assets, and documentation—
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.4.zip">Download Bootstrap 3.3.4</a>
 
-<!--or [Sass repository](https://github.com/twbs/bootstrap-sass)  -->
-Hit the [project repository](https://github.com/twbs/bootstrap) for more options. Also, remember [we're available on npm](https://www.npmjs.org/package/bootstrap), too.
+Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.org/package/bootstrap), too.
 
-*Updates for the BootstrapCDN and the official Sass port will be available shortly.*
+*Updates for the BootstrapCDN will be available shortly.*
 
 <3,
 
