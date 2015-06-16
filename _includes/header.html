@@ -24,6 +24,20 @@
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS for Official Bootstrap Blog" href="/feed.xml">
 
+    <!-- Open Graph Tags -->
+    <meta content="{% if page.title %}article{% else %}website{% endif %}" property="og:type">
+    <meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" property="og:title">
+    <meta content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" property="og:description">
+    <meta content="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}" property="og:url">
+    <meta content="{{ site.name }}" property="og:site_name">
+    <meta content="{{ site.url }}/img/ogp.png" property="og:image">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@getbootstrap" />
+    <meta name="twitter:creator" content="@getbootstrap" />
+
     <!-- Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
