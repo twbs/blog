@@ -5,10 +5,10 @@ version: 3.3.5
 ---
 
 <div class="embed-responsive embed-responsive-16by9">
-  <!--@mdo: Insert awesome '80s music video here-->
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/vCadcBR95oU?rel=0" width="760" height="570" allowfullscreen></iframe>
 </div>
 
-Bootstrap 3.3.5 is here! This release has been focused on bug fixes, accessibility improvements, and documentation updates. We've had over 330 commits and 160 closed issues and pull requests from over 40 contributors since our last release! Hell yeah.
+Bootstrap 3.3.5 is here! This release has focused on bug fixes, accessibility improvements, and documentation updates. We've had over 330 commits and 160 closed issues and pull requests from over 40 contributors since our last release! Hell yeah.
 
 Here are some of the highlights:
 
@@ -26,9 +26,9 @@ For a complete breakdown, [read the release changelog](https://github.com/twbs/b
 
 ## Bootstrap Slack
 
-Since we last shipped a release, we made an official Slack for folks to hang out with other Bootstrappers. Registration is completely open thanks to the [Slackin open source project](https://github.com/rauchg/slackin). We've got two channels to start—general and help—and nearly 1,000 members!
+Since we last shipped a release, we made an official Slack for folks to hang out with other Bootstrappers. Registration is completely open thanks to the [Slackin open source project](https://github.com/rauchg/slackin). We have two channels to start—general and help—and nearly 1,000 members to date!
 
-**[Sign up today](https://bootstrap-slack.herokuapp.com/)** to join in.
+**[Sign up here](https://bootstrap-slack.herokuapp.com/)** to join.
 
 ## Download Bootstrap
 
