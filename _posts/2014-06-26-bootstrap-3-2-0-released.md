@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3.2.0 released
+video: c&c music factory gonna make you sweat
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

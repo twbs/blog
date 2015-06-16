@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ratchet 2.0.1 released
+video: mc hammer can't touch this
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

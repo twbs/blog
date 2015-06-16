@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3 RC2
+video: mc hammer 2 legit 2 quit
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3.3.1 released
+video: la bouche be my lover
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

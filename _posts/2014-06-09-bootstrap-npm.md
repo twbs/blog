@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap now available via npm
+video: snap the power
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

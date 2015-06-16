@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3.1.0 released
+video: rob base & dj ez rock it takes two
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

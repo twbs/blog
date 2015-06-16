@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3.1.1 released
+video: rhythym is a dancer
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

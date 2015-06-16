@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ratchet 2.0.2 released
+video: 2 unlimited get ready for this
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

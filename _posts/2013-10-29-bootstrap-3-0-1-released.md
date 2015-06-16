@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3.0.1 released
+video: tag team whoomp there it is
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

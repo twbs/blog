@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3 released
+video: montell jordan this is how we do it
 ---
 
 <div class="embed-responsive embed-responsive-16by9">

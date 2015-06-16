@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3.0.3 released
+video: young mc bust a move
 ---
 
 <div class="embed-responsive embed-responsive-16by9">
