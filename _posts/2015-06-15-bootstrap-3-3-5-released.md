@@ -35,7 +35,8 @@ Since we last shipped a release, we made an official Slack for folks to hang out
 Due to vagueness in Bower's specification, wiredep made some questionable assumptions about how the `main` field in `bower.json` works. Recently, [Bower updated their spec to address this and clarify how `main` should work](https://github.com/bower/bower.json-spec/pull/43), and we [updated our `bower.json` accordingly](https://github.com/twbs/bootstrap/pull/16359). Unfortunately, [wiredep broke as a result](https://github.com/twbs/bootstrap/issues/16663) if you were using it with Bootstrap's vanilla precompiled CSS. Bower is [working to further update their spec](https://github.com/bower/bower.json-spec/issues/47) to address this problem and better assist tools like wiredep.
 
 In the meantime, a quick-and-dirty workaround to get wiredep to work with Bootstrap again is to add the following to your project's `bower.json`:
-```json
+
+{% highlight json %}
 "overrides": {
   "bootstrap": {
     "main": [
@@ -45,7 +46,7 @@ In the meantime, a quick-and-dirty workaround to get wiredep to work with Bootst
     ]
   }
 }
-```
+{% endhighlight %}
 
 ## Download Bootstrap
 
