@@ -13,6 +13,7 @@ Bootstrap 3.3.5 is here! This release has focused on bug fixes, accessibility im
 Here are some of the highlights:
 
 - Updated to Normalize.css v3.0.3.
+- [Updated `main` in `bower.json` to comply with recent update to the `bower.json` specification](https://github.com/twbs/bootstrap/pull/16359)
 - List groups now support `<button>` elements.
 - Cleaned up some extraneous `padding` on jumbotrons across various viewports.
 - Fixed input group sizing classes on all supported elements for real this time.
