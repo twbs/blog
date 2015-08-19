@@ -64,7 +64,7 @@ h1 {
   font-size: 2rem;
 }
 h2 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 1.5rem;
 }
 h3 {
@@ -290,6 +290,14 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li a:hover small {
   color: inherit;
+}
+
+/* Special case the opening paragraph */
+.post > .embed-responsive + p {
+  margin-top: 2rem;
+  font-size: 125%;
+  font-weight: 300;
+  color: #222;
 }
 
 
