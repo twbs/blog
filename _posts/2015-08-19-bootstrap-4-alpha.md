@@ -35,7 +35,7 @@ Ready to check it out? Then [head to the v4 alpha docs!](http://v4-alpha.getboot
 
 ## Development plan
 
-We need your help to make Bootstrap 4 the best it can be. Starting today, the source code for v4 will be available in a [`v4-dev` branch on GitHub](https://github.com/twbs/bootstrap/tree/v4-dev). In addition, we have a [v4 development and tracking pull request](https://github.com/twbs/bootstrap/pull/#) that includes a master checklist of changes we've made and our remaining possible todos. We'd love for y'all to help chip away at those todos.
+We need your help to make Bootstrap 4 the best it can be. Starting today, the source code for v4 will be available in a [`v4-dev` branch on GitHub](https://github.com/twbs/bootstrap/tree/v4-dev). In addition, we have a [v4 development and tracking pull request](https://github.com/twbs/bootstrap/pull/17021) that includes a master checklist of changes we've made and our remaining possible todos. We'd love for y'all to help chip away at those todos.
 
 The general development and release plan looks something like this:
 
