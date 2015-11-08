@@ -25,7 +25,7 @@ There are a ton of major changes to Bootstrap and it's impossible to cover them 
 - **Brand new customization options.** Instead of relegating style embellishments like gradients, transitions, shadows, and more to a separate stylesheet like v3, we've moved all those options into Sass variables. Want default transitions on everything or to disable rounded corners? Simply update a variable and recompile.
 - **Dropped IE8 support and moved to rem and em units.** Dropping support for IE8 means we can take advantage of the best parts of CSS without being held back with CSS hacks or fallbacks. Pixels have been swapped for rems and ems where appropriate to make responsive typography and component sizing even easier. If you need IE8 support, keep using Bootstrap 3.
 - **Rewrote all our JavaScript plugins.** Every plugin has been rewritten in ES6 to take advantage of the newest JavaScript enhancements. They also now come with UMD support, generic teardown methods, option type checking, and tons more.
-- **Improved auto-placement of tooltips and popovers** thanks to the help of a tool called Tether.
+- **Improved auto-placement of tooltips and popovers** thanks to the help of a library called [Tether](http://github.hubspot.com/tether/).
 - **Improved documentation.** We rewrote it all in Markdown and added a few handy plugins to streamline examples and code snippets to make working with our docs way easier. Improved search is also on it's way.
 - **And tons more!** Custom form controls, margin and padding classes, new utility classes, and more have also been included.
 
