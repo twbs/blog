@@ -30,7 +30,18 @@ Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass reposit
 
 ## Bootstrap CDN
 
-*Coming soon!*
+After reviewing the changelog, update your CDN links to point to the v3.3.6 files:
+
+{% highlight html %}
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+{% endhighlight %}
 
 <3,
 
