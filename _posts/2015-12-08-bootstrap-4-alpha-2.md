@@ -21,8 +21,8 @@ Here's a look at a handful of the changes since our last alpha:
 - Replaced ZeroClipboard with clipboard.js for Flash-independent copy buttons.
 - Inputs and buttons now share the same border variable to ensure components are always sized similarly.
 - Updated all pseudo-element selectors to use the spec's preferred double colon (e.g., `::before` as opposed to `:before`).
-- Cards now have outline variants and mixins to support extending base cares further.
-- Utility classes for floats and text alignment now have responsive ranges. (This means we've dropped the none-responsive classes to avoid duplication.)
+- Cards now have outline variants and mixins to support extending base classes further.
+- Utility classes for floats and text alignment now have responsive ranges. *This means we've dropped the none-responsive classes to avoid duplication.*
 - Added support for jQuery 2.
 - And hundreds more Sass improvements, bug fixes, documentation updates, and more.
 
