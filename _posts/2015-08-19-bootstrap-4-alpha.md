@@ -26,7 +26,7 @@ There are a ton of major changes to Bootstrap and it's impossible to cover them 
 - **Dropped IE8 support and moved to rem and em units.** Dropping support for IE8 means we can take advantage of the best parts of CSS without being held back with CSS hacks or fallbacks. Pixels have been swapped for rems and ems where appropriate to make responsive typography and component sizing even easier. If you need IE8 support, keep using Bootstrap 3.
 - **Rewrote all our JavaScript plugins.** Every plugin has been rewritten in ES6 to take advantage of the newest JavaScript enhancements. They also now come with UMD support, generic teardown methods, option type checking, and tons more.
 - **Improved auto-placement of tooltips and popovers** thanks to the help of a library called [Tether](http://github.hubspot.com/tether/).
-- **Improved documentation.** We rewrote it all in Markdown and added a few handy plugins to streamline examples and code snippets to make working with our docs way easier. Improved search is also on it's way.
+- **Improved documentation.** We rewrote it all in Markdown and added a few handy plugins to streamline examples and code snippets to make working with our docs way easier. Improved search is also on its way.
 - **And tons more!** Custom form controls, margin and padding classes, new utility classes, and more have also been included.
 
 And that barely scratches the surface of the 1,100 commits and 120,000 lines of changes in v4 so far. Plus, we're not even done yet!
