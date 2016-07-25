@@ -8,7 +8,7 @@ version: 3.3.7
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p0OX_8YvFxA?rel=0" width="760" height="570" allowfullscreen></iframe>
 </div>
 
-Bootstrap 3.3.7 is here! We've had over XXX commits and 80 closed issues and pull requests from nearly XX contributors since our last release. Woohoo!
+Bootstrap 3.3.7 is here! We've had over 220 commits and 80 closed issues and pull requests from nearly 30 contributors since our last release. Woohoo!
 
 Here are some of the highlights:
 
@@ -29,18 +29,7 @@ Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass reposit
 
 ## Bootstrap CDN
 
-After reviewing the changelog, update your CDN links to point to the v3.3.7 files:
-
-{% highlight html %}
-<!-- Latest compiled and minified CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-xxx" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" integrity="sha384-xxx" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-xxx" crossorigin="anonymous"></script>
-{% endhighlight %}
+The CDN will be updated soon.
 
 <3,
 
