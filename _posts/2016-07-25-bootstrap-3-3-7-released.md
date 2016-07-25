@@ -29,7 +29,7 @@ Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass reposit
 
 ## Bootstrap CDN
 
-After reviewing the changelog, update your CDN links to point to the v3.3.6 files:
+After reviewing the changelog, update your CDN links to point to the v3.3.7 files:
 
 {% highlight html %}
 <!-- Latest compiled and minified CSS -->
