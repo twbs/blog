@@ -144,8 +144,8 @@ pre code {
 
 /* Pygments via Jekyll */
 .highlight {
-  margin-bottom: 1rem;
-  border-radius: 4px;
+  margin: 0 0 1rem;
+  border-radius: .25rem;
 }
 .highlight pre {
   margin-bottom: 0;
@@ -232,7 +232,6 @@ tbody tr:nth-child(odd) th {
   font-size: 75%;
   font-weight: 400;
   color: #c0c0c0;
-  letter-spacing: 0;
 }
 
 
