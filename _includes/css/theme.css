@@ -67,12 +67,13 @@ h2, h3, h4 {
   color: #fff;
 }
 .masthead p {
-  margin-bottom: 0;
+  max-width: 26rem;
+  margin: 0 auto;
 }
 .masthead h1 {
   margin-top: 0;
   margin-bottom: .25rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
