@@ -1,12 +1,29 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+kramdown:
+  auto_ids: true
+
+# Permalinks
+permalink:        pretty
+
+# Gems
+gems:
+  - jekyll-paginate
+
+# Setup
 name:           Bootstrap Blog
 description:    Official blog for the Bootstrap framework.
 url:            http://blog.getbootstrap.com
 
-markdown:       kramdown
-highlighter:    pygments
-permalink:      pretty
 paginate:       5
 encoding:       UTF-8
 future:         true
 
 exclude:        ["README.md"]
+
+# Links
+blog:             http://blog.getbootstrap.com
+expo:             http://expo.getbootstrap.com
+themes:           http://themes.getbootstrap.com
