@@ -21,7 +21,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -144,8 +144,8 @@ pre code {
 
 /* Pygments via Jekyll */
 .highlight {
-  margin-bottom: 1rem;
-  border-radius: 4px;
+  margin: 0 0 1rem;
+  border-radius: .25rem;
 }
 .highlight pre {
   margin-bottom: 0;
@@ -232,7 +232,6 @@ tbody tr:nth-child(odd) th {
   font-size: 75%;
   font-weight: 400;
   color: #c0c0c0;
-  letter-spacing: 0;
 }
 
 
