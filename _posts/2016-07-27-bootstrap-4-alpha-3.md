@@ -29,7 +29,7 @@ These changes are available in our standard grid, as well as our flexbox grid. M
 
 ## Flexbox
 
-<img alt="Flexbox auto-layout" src="https://cl.ly/0n1E3L2Y2222/Screen%20Shot%202016-07-25%20at%205.22.36%20PM.png" style="padding: 4px; border: 1px solid #eee;">
+<img alt="Flexbox auto-layout" src="/img/2016/07/flex-cols.png" style="padding: 4px; border: 1px solid #eee;">
 
 Flexbox mode has been updated across the board in Alpha 3, starting from the grid system (it uses the same variable and the updated Sass mixins) and moving through our utilities and components.
 
@@ -41,7 +41,7 @@ Flexbox mode has been updated across the board in Alpha 3, starting from the gri
 
 ## Forms
 
-<img alt="Form validation states" src="https://cl.ly/453m1x2M033G/Screen%20Shot%202016-07-25%20at%205.11.56%20PM.png" style="padding: 4px; border: 1px solid #eee;">
+<img alt="Form validation states" src="/img/2016/07/forms.png" style="padding: 4px; border: 1px solid #eee;">
 
 Forms saw a ton of activity early on in Alpha 3's development. Documentation, class names, layout options, and validation styles have all been drastically improved.
 
