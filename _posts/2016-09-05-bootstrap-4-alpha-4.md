@@ -17,6 +17,8 @@ This is a super small release compared to our previous alphas, so here's the run
 - Fix inconsistent checkbox and radio markup, as well as validation styles
 - Minor tweaks to cards, alerts, utilities, and input groups
 
+At the time of release, the Bootstrap CDN hasn't been updated for Alpha 4. Apologies for the delay, and stay tuned for an update on when they're live.
+
 For more details on this release's changes, take a look at the [Alpha 4 ship list issue](https://github.com/twbs/bootstrap/issues/20373), as well as the [closed Alpha 4 milestone](https://github.com/twbs/bootstrap/milestone/40?closed=1). Be sure to [join our official Slack room!](https://bootstrap-slack.herokuapp.com) and dive into [our issue tracker](https://github.com/twbs/bootstrap/issues/) with bug reports, questions, and general feedback whenever possible.
 
 <3,<br>
