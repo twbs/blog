@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="http://gmpg.org/xfn/11" rel="profile">
 
-    <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.name }}</title>
+    <title>
+      {% if page.title %}
+        {{ page.title }} &middot; {{ site.title }}
+      {% else %}
+        {{ site.title }} &middot; {{ site.description }}
+      {% endif %}
+    </title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
@@ -24,19 +30,38 @@
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS for Official Bootstrap Blog" href="/feed.xml">
 
-    <!-- Open Graph Tags -->
-    <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{% if page.url %}{{ page.url }}{% endif %}">
-    <meta property="og:site_name" content="{{ site.name }}">
-    <meta property="og:image" content="{{ site.url }}/img/ogp.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@getbootstrap">
-    <meta name="twitter:creator" content="@getbootstrap">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@{{ site.twitter }}">
+    <meta name="twitter:creator" content="@{{ site.twitter }}">
+
+    {% if page.title %}
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="{{ page.title }}">
+      <meta name="twitter:description" content="{{ page.description }}">
+      <meta name="twitter:image" content="{{ site.url }}{{ site.social_logo_path }}">
+    {% else %}
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="{{ site.title }}">
+      <meta name="twitter:description" content="{{ site.description }}">
+      <meta name="twitter:image" content="{{ site.url }}{{ site.social_image_path }}">
+    {% endif %}
+
+    <!-- Facebook -->
+    {% if page.title %}
+      <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+      <meta property="og:title" content="{{ page.title }}">
+      <meta property="og:description" content="{{ page.description }}">
+    {% else %}
+      <meta property="og:url" content="{{ site.url }}">
+      <meta property="og:title" content="{{ site.title }}">
+      <meta property="og:description" content="{{ site.description }}">
+    {% endif %}
+    <meta property="og:image" content="{{ site.url }}{{ site.social_image_path }}">
+
+    <!-- Meta -->
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.authors }}">
 
     <!-- Analytics -->
     <script>
