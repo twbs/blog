@@ -11,7 +11,7 @@ title: Bootstrap 4 Alpha 5
 
 ### New CSS bundles
 
-We've updated our build process to include compiled versions of all our CSS bundles. In addition to the longstanding default compiled and minified bundles, you now compiled CSS files for our flexbox mode, grid system only, and Reboot only bundles. Each bundle includes a compiled, minified, and Sass map, just like the default compiled CSS.
+We've updated our build process to include compiled versions of all our CSS bundles. In addition to the longstanding default compiled and minified bundles, we now include compiled CSS files for our flexbox mode, grid system only, and Reboot only bundles. Each bundle includes a compiled, minified, and Sass map, just like the default compiled CSS.
 
 ### Grid updates
 
