@@ -43,7 +43,7 @@ We've put a [ton of time into the navbar for Alpha 5](https://github.com/twbs/bo
 
 Here's a look at what's new, how it works, and what might change in our next release.
 
-- First up, the navbar has a **brand new toggler** that featuers a customizable SVG-based `background-image`. With the power of Sass variables, that allows us to easily change the color of those hamburger menu icons.
+- First up, the navbar has a **brand new toggler** that features a customizable SVG-based `background-image`. With the power of Sass variables, that allows us to easily change the color of those hamburger menu icons.
 
 - Second, the **default styles for the brand and navigation have largely been tweaked**. There's less custom styling overall and an emphasis on positioning and flexibility.
 
