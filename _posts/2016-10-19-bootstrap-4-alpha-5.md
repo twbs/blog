@@ -47,7 +47,7 @@ Here's a look at what's new, how it works, and what might change in our next rel
 
 - Second, the **default styles for the brand and navigation have largely been tweaked**. There's less custom styling overall and an emphasis on positioning and flexibility.
 
-- Building on that, we **overhauled the collapse plugin integration for responsive navbars**. With the help of some utility clases and collapse classes for each grid tier, you can easily pick the breakpoint for collapsing your navbar without having to recompile your Sass. Also included is the auto restyling of dropdown menus for mobile so they no longer hide other navbar content when toggled.
+- Building on that, we **overhauled the collapse plugin integration for responsive navbars**. With the help of some utility classes and collapse classes for each grid tier, you can easily pick the breakpoint for collapsing your navbar without having to recompile your Sass. Also included is the auto restyling of dropdown menus for mobile so they no longer hide other navbar content when toggled.
 
 - Lastly, we've **updated the styling and documentation for various navbar subcomponents**. There's more flexibility and examples of the `.navbar-brand`, better form control support, higher nav contrast, themed responsive toggles, and more.
 
