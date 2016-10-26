@@ -27,6 +27,8 @@ Utility classes got a ton of attention with Alpha 5 and will continue to in Alph
 
 - Simpler `margin` and `padding` syntax (e.g., now `mx-auto` instead of `m-x-auto`).
 
+- Renamed `.pull-*-left` and `.pull-*-right` to their CSS properties (e.g., now `.float-*-left` and `.float-*-right`).
+
 - Separated `background` and `color` utilities for more explicit styling.
 
 - Renamed image utilities, moving from `.img-rounded` and `.img-circle` to `.rounded` and `.rounded-circle`, respectively.
