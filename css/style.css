@@ -378,3 +378,14 @@ a.pagination-item:hover {
 
 {% include css/pygments-manni.css %}
 {% include css/theme.css %}
+
+iframe[data-url^="https://jsbin.com"] {
+  border-color: rgba(0,0,0,.1) !important;
+}
+
+@media (min-width: 1200px) {
+  .jsbin-wide {
+    margin-left: -226px;
+    margin-right: -226px;
+  }
+}
