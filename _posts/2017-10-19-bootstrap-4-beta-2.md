@@ -53,7 +53,7 @@ We'll be updating this page again for Beta 3 in the same way.
 
 - Introduced new `pointer-events` usage on modals. The outer `.modal-dialog` passes through events with `pointer-events: none` for custom click handling (making it possible to just listen on the `.modal-backdrop` for any clicks), and then counteracts it for the actual `.modal-content` with `pointer-events: auto`.
 - Responsive tables now generate classes for each grid breakpoint, meaning we've added `.table-responsive-{sm,md,lg,xl}` to the already present `.table-responsive`. You might need to adjust your usage depending on when you want a table to resize.
-- Remove unnecessary `color` from `.badge`, and it's associated `$badge-color` variable.
+- Remove unnecessary `color` from `.badge`, and its associated `$badge-color` variable.
 - Include two new dist files which contain Popper.js inside `bootstrap.bundle.js` and `bootstrap.bundle.min.js`.
 - Dropped support for Bower as they've deprecated the package manager.
 - Switched breadcrumbs from `float` to flexbox.
