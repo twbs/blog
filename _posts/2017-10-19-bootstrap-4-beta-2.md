@@ -25,7 +25,7 @@ We have a brand [new Theming docs page](http://getbootstrap.com/docs/4.0/getting
 
 In addition to the documentation changes, we've made a few CSS changes to improve how folks interact with our theming options.
 
-- We've added new theme color variables in addition to the map. Instead of Now you can use `$primary` or `theme-color("primary")` as needed. The values in `$theme-colors` are also now mapped to these new variables instead of their direct color.
+- We've added new theme color variables in addition to the map. Now you can use `$primary` or `theme-color("primary")` as needed. The values in `$theme-colors` are also now mapped to these new variables instead of their direct color.
 
 - We've improved the ability to customize Sass maps. With Beta 1, we didn't have a setup in place to modify your `$theme-colors` map without replacing it wholesale. That's been fixed in Beta 2—override existing values and add more as needed. Our new Theming docs page will show you how it's done.
 
@@ -63,7 +63,7 @@ We'll be updating this page again for Beta 3 in the same way.
 
 ## Coming in Beta 3
 
-Beta 3 is up next for us and already have a [GitHub project board](https://github.com/twbs/bootstrap/projects/10) setup to track issues and PRs. Beyond the standard docs improvements and bug fixes, there are a few issues and PRs that are of mind for us:
+Beta 3 is up next for us and already has a [GitHub project board](https://github.com/twbs/bootstrap/projects/10) setup to track issues and PRs. Beyond the standard docs improvements and bug fixes, there are a few issues and PRs that are of mind for us:
 
 - [Revisiting form checkbox and radio markup](https://github.com/twbs/bootstrap/pull/23444) to ensure we can customize validation messaging (while also making the markup match our custom form checks).
 - More control over [input and button variables](https://github.com/twbs/bootstrap/pull/24430).
@@ -74,7 +74,7 @@ Be sure to follow those issues and PRs if you're interested in when the merge to
 
 ## Getting to v4 Final
 
-After Beta 3, we're hoping to quickly move into a final v4 release. Ideally it'll also be a smoother and more focused release than the Alpha 6 to Beta 1 move. We heard from a lot of you that the delta between those two releases was too great.
+After Beta 3, we're hoping to quickly move into a final v4 release. Ideally, it'll also be a smoother and more focused release than the Alpha 6 to Beta 1 move. We heard from a lot of you that the delta between those two releases was too great.
 
 ---
 
