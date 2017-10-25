@@ -9,7 +9,7 @@ kramdown:
 permalink:        pretty
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
 
 # Setup
