@@ -2,12 +2,8 @@
 layout: post
 title: Bootstrap 3.3.4 released
 version: 3.3.4
-video: real mccoy run away
+video: _dx0qWHL7dc
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/_dx0qWHL7dc?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Bootstrap 3.3.4 is here! This release has been focused on bug fixes and documentation improvements. We've had over 325 commits from 29 contributors since our last release! Nice.
 

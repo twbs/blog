@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Bootstrap 4 Beta 3
+video: 9jK-NcRmVcw
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/9jK-NcRmVcw?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Welcome to the final beta of v4! It's been over two months since we shipped our second beta and we've been busy making the last breaking changes before moving to our next stable release, v4.0.0! We have a few more breaking changes than we were planning, but fret not, we've detailed them all.
 

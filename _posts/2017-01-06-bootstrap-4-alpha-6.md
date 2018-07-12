@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Bootstrap 4 Alpha 6
+video: V44HiAX91Hs
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/V44HiAX91Hs?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 [Alpha 6 has landed](http://v4-alpha.getbootstrap.com), and it's one of our biggest ships to date. We've rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.
 

@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Bootstrap 4 Alpha 4
+video: p0OX_8YvFxA
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/p0OX_8YvFxA?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 [Alpha 4 is here](http://v4-alpha.getbootstrap.com) to address those pesky build and package errors, a few CSS bugs, and some documentation inconsistencies we introduced in our last release.
 

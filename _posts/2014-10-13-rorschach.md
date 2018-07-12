@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Introducing Rorschach
-video: real mccoy another night
+video: Pav2f4b-1ZE
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Pav2f4b-1ZE?rel=0" width="760" height="428" allowfullscreen></iframe>
-</div>
 
 Bootstrap receives tons of awesome pull requests every week. Many of them come from folks new to contributing to the project. As such, there are a few beginner mistakes we've noticed over time.
 

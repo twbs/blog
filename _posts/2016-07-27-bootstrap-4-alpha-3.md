@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Bootstrap 4 Alpha 3
+video: xFrGuyw1V8s
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/xFrGuyw1V8s?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Alpha 3 has landed! We have an overhauled grid, updated form controls, a new font stack, tons of bug fixes, and more. It's been several months since our last update, but the size of this update should help get us back on track.
 

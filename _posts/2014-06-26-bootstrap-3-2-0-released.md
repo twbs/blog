@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Bootstrap 3.2.0 released
-video: c&c music factory gonna make you sweat
+video: LaTGrV58wec
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/LaTGrV58wec?rel=0" width="760" height="428" allowfullscreen></iframe>
-</div>
 
 Today we're shipping Bootstrap v3.2.0, a monster of a release that's been in the works for four months. There's lots of new hotness, hundreds of bug fixes, plenty of documentation improvements, and some build tool improvements. All told, there have been over 1,000 commits since our last release.
 

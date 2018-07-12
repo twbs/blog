@@ -1,11 +1,8 @@
 ---
 layout: post
 title: New Bootstrap 4 alpha
+video: J_kokTee01k
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/J_kokTee01k?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Bootstrap 4 alpha 2 is now available. Since [our last release]({% post_url 2015-08-19-bootstrap-4-alpha %}), nearly 100 people have pushed over 900 commits to v4 and we've closed over 400 issues and pull requests. Those numbers are outrageously awesome to see, and we've still got a ton of work ahead of us this year for v4.
 

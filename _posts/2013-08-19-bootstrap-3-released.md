@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Bootstrap 3 released
-video: montell jordan this is how we do it
+video: 0hiUuL5uTKc
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/0hiUuL5uTKc?rel=0" width="760" height="428" allowfullscreen></iframe>
-</div>
 
 Today, on [the two year anniversary](https://twitter.com/mdo/statuses/104620039650557952) of releasing Bootstrap to the world, we're shipping Bootstrap 3.0. It's been a crazy long ride to say the least and we're stoked to finally have this out in the wild. Thanks to everyone who's tested our RCs (er, betas), reported bugs, and contributed code. We couldn't have done it without you beautiful nerds.
 

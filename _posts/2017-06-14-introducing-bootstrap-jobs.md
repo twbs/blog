@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Introducing Bootstrap Jobs
+video: K1b8AhIsSYQ
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/K1b8AhIsSYQ?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Every month, millions of developers across the world visit Bootstrap’s documentation, reading up on features, implementing components, and learning new techniques. Millions more use it daily in their projects, extending and customizing it through the massive ecosystem of themes, extensions, and tools.
 

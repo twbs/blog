@@ -16,6 +16,12 @@ slug: home
 
     {% include tweet-button.html %}
 
+    {% if post.video %}
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="//youtube.com/embed/{{ post.video }}?rel=0" width="760" height="570" allowfullscreen></iframe>
+    </div>
+    {% endif %}
+
     {{ post.content }}
   </div>
   {% endfor %}

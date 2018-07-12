@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Bootstrap 4 Beta 2
+video: MqnZ1RpmxBg
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/MqnZ1RpmxBg?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Just over two months ago we shipped our first beta for Bootstrap 4, and now we're ready to share our second with you. We've improved customization, documentation, build tooling, and naming inconsistencies all while fixing hella bugs.
 
