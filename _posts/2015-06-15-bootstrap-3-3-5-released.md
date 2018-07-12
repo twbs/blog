@@ -2,11 +2,8 @@
 layout: post
 title: Bootstrap 3.3.5 released
 version: 3.3.5
+video: vCadcBR95oU
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/vCadcBR95oU?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Bootstrap 3.3.5 is here! This release has focused on bug fixes, accessibility improvements, and documentation updates. We've had over 330 commits and 160 closed issues and pull requests from over 40 contributors since our last release! Hell yeah.
 

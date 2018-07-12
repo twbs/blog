@@ -2,11 +2,8 @@
 layout: post
 title: Bootstrap 3.3.7 released
 version: 3.3.7
+video: Kr0tTbTbmVA
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Kr0tTbTbmVA?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Bootstrap 3.3.7 is here! We've had over 220 commits and 80 closed issues and pull requests from nearly 30 contributors since our last release. Woohoo!
 

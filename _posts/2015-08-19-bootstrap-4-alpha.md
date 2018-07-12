@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Bootstrap 4 alpha
+video: 4PdU6migsqQ
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/4PdU6migsqQ?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Today is a special day for Bootstrap. Not only is it [our fourth birthday](https://twitter.com/mdo/statuses/104620039650557952), but after a year of development, we're finally shipping the first alpha release of Bootstrap 4. Hell yeah!
 

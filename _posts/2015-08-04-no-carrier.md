@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Introducing No Carrier
+video: rog8ou-ZepE
 ---
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/rog8ou-ZepE?rel=0" width="760" height="570" allowfullscreen></iframe>
-</div>
 
 Say hello to our newest bot, **No Carrier**. Inspired by the classic modem disconnection error message of yesteryear, No Carrier helps us track issues that appear to have been abandoned by the original poster. Issues that go without a reply to our questions for two weeks are closed with a friendly explanation by No Carrier.
 
