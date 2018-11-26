@@ -15,7 +15,7 @@ plugins:
 # Setup
 name:           Bootstrap Blog
 description:    Official blog for the Bootstrap framework.
-url:            http://blog.getbootstrap.com
+url:            https://blog.getbootstrap.com
 
 paginate:       5
 encoding:       UTF-8
@@ -24,9 +24,9 @@ future:         true
 exclude:        ["README.md"]
 
 # Links
-blog:             http://blog.getbootstrap.com
-expo:             http://expo.getbootstrap.com
-themes:           http://themes.getbootstrap.com
+blog:             https://blog.getbootstrap.com
+expo:             https://expo.getbootstrap.com
+themes:           https://themes.getbootstrap.com
 
 # Social
 title: Bootstrap
