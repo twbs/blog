@@ -2,3 +2,5 @@
 /_site/
 .DS_Store
 .ruby-version
+/netlify.toml
+/netlifyctl-debug.log
