@@ -1,6 +1,3 @@
----
----
-
 /*
  * Body resets
  *
@@ -375,8 +372,8 @@ a.pagination-item:hover {
   padding-bottom: 56.25%;
 }
 
-{% include css/pygments-manni.css %}
-{% include css/theme.css %}
+@import "pygments-manni";
+@import "theme";
 
 iframe[data-url^="https://jsbin.com"] {
   border-color: rgba(0,0,0,.1) !important;

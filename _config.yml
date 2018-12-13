@@ -1,18 +1,21 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown:           kramdown
+highlighter:        rouge
 
 kramdown:
-  auto_ids: true
+  auto_ids:         true
 
 # Permalinks
-permalink:        pretty
+permalink:          pretty
 
 # Gems
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+
+sass:
+    style:          compressed
 
 # Setup
 name:               Bootstrap Blog
@@ -24,6 +27,8 @@ encoding:           UTF-8
 future:             true
 
 exclude:
+  - .sass-cache/
+  - vendor/
   - Gemfile
   - Gemfile.lock
   - README.md
