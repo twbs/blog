@@ -25,7 +25,7 @@ Here's a look at a handful of the changes since our last alpha:
 
 We highly encourage folks to skim through [the second alpha's milestone on GitHub](https://github.com/twbs/bootstrap/issues?q=milestone%3Av4.0.0-alpha.2+is%3Aclosed) for a better idea of what's changed across the board. You can also follow along with other v4 efforts with the [`v4` label](https://github.com/twbs/bootstrap/labels/v4) on our issue tracker.
 
-**Ready to dive in? Then [head to the v4 alpha docs!](http://v4-alpha.getbootstrap.com)**
+**Ready to dive in? Then [head to the v4 alpha docs!](https://v4-alpha.getbootstrap.com/)**
 
 Be sure to [join our official Slack room!](https://bootstrap-slack.herokuapp.com) and dive into [our issue tracker](https://github.com/twbs/bootstrap/issues/) with bug reports, questions, and general feedback whenever possible.
 

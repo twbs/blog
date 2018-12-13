@@ -6,7 +6,7 @@ video: Zr9R7hN1YSs
 ---
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/?rel=0" width="760" height="428" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?rel=0" width="760" height="428" allowfullscreen></iframe>
 </div>
 
 Bootstrap 3.3.0 is here! This release has been all about bug fixes, accessibility improvements, and documentation updates. We've had over 700 commits from 28 contributors since our last release. Woohoo!
@@ -29,7 +29,7 @@ Download the latest release—source code, compiled assets, and documentation—
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.0.zip">Download Bootstrap 3.3.0</a>
 
-Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.org/package/bootstrap), too.
+Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.com/package/bootstrap), too.
 
 *An update for the Bootstrap CDN will be available shortly.*
 

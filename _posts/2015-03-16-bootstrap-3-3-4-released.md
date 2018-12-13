@@ -13,7 +13,7 @@ Here are some of the highlights:
 - Fixes for a couple annoying bugs in the ScrollSpy plugin.
 - [Bootstrap is now also available as a Meteor package in the Atmosphere package index.](https://atmospherejs.com/twbs/bootstrap)
 - Convenience aliases have been added for currency symbol Glyphicons based on their related 3-letter ISO currency codes. For example, `.glyphicon-rub` is a new alias for `.glyphicon-ruble`, the currency symbol for the Russian ruble (RUB).
-- We have deployed [AnchorJS](http://bryanbraun.github.io/anchorjs/) in our documentation to make it easier to link to specific sections within the docs.
+- We have deployed [AnchorJS](https://www.bryanbraun.com/anchorjs/) in our documentation to make it easier to link to specific sections within the docs.
 
 For a complete breakdown, [read the release changelog](https://github.com/twbs/bootstrap/releases/tag/v3.3.4) or the [v3.3.4 milestone](https://github.com/twbs/bootstrap/issues?q=milestone%3Av3.3.4+is%3Aclosed).
 
@@ -29,7 +29,7 @@ Download the latest release—source code, compiled assets, and documentation—
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.4.zip">Download Bootstrap 3.3.4</a>
 
-Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.org/package/bootstrap), too.
+Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.com/package/bootstrap), too.
 
 ## Bootstrap CDN
 
@@ -37,13 +37,13 @@ After reviewing the changelog, update your CDN links to point to the v3.3.4 file
 
 {% highlight html %}
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 {% endhighlight %}
 
 <3,

@@ -4,7 +4,7 @@ title: Bootstrap 4 Alpha 4
 video: p0OX_8YvFxA
 ---
 
-[Alpha 4 is here](http://v4-alpha.getbootstrap.com) to address those pesky build and package errors, a few CSS bugs, and some documentation inconsistencies we introduced in our last release.
+[Alpha 4 is here](https://v4-alpha.getbootstrap.com/) to address those pesky build and package errors, a few CSS bugs, and some documentation inconsistencies we introduced in our last release.
 
 This is a super small release compared to our previous alphas, so here's the rundown on what's changed:
 

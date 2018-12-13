@@ -21,11 +21,11 @@ Aww yeah, our first release since leaving Twitter is here with Bootstrap 2.2.0! 
 - Hero unit now sets basic type styles for the entire component, rather than on `.hero-unit p { ... }`.
 - Updated JavaScript plugins and docs to jQuery 1.8.1.
 - Added Contributing.md file.
-- Added support for installing Bootstrap via [Bower](http://twitter.github.com/bower).
+- Added support for installing Bootstrap via [Bower](https://bower.io/).
 - Miscellaneous variable improvements across the board.
 - Miscellaneous documentation typos fixed.
 
-For the full list of issues included in this release, visit the [2.2.0 milestone on GitHub](https://github.com/twbs/bootstrap/issues?milestone=15&page=1&state=closed). Otherwise, be sure to [visit the docs](http://getbootstrap.com) or download the latest to get your hands on 2.2.0.
+For the full list of issues included in this release, visit the [2.2.0 milestone on GitHub](https://github.com/twbs/bootstrap/issues?milestone=15&page=1&state=closed). Otherwise, be sure to [visit the docs](https://getbootstrap.com/) or download the latest to get your hands on 2.2.0.
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/zipball/master">Download Bootstrap 2.2.0</a> <span class="muted">(latest master ZIP)</span>
 

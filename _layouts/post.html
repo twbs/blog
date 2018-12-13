@@ -6,13 +6,13 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
 
-  {% include tweet-button.html %}
+  {%- include tweet-button.html -%}
 
-  {% if page.video %}
+  {%- if page.video -%}
   <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//youtube.com/embed/{{ page.video }}?rel=0" width="760" height="570" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.video }}?rel=0" width="760" height="570" allowfullscreen></iframe>
   </div>
-  {% endif %}
+  {%- endif -%}
 
   {{ content }}
 </div>
@@ -20,7 +20,7 @@ layout: default
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
+    {%- for post in site.related_posts limit:3 -%}
       <li>
         <h3>
           <a href="{{ post.url }}">
@@ -29,6 +29,6 @@ layout: default
           </a>
         </h3>
       </li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </div>

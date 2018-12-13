@@ -7,7 +7,7 @@ After a smaller 2.0.4 release, we've got another huge update that resolves tons 
 
 ## tl;dr
 
-New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120+ closed bugs, and more. [Go get it.](http://getbootstrap.com)
+New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120+ closed bugs, and more. [Go get it.](https://getbootstrap.com/)
 
 ## Improved documentation
 
@@ -38,4 +38,4 @@ Once again, we couldn't have done this without all you nerds out there supportin
 
 -----
 
-For the full changelog, visit the [GitHub wiki page](https://github.com/twbs/bootstrap/wiki/Changelog) and the [2.1.0 milestone](https://github.com/twbs/bootstrap/issues?milestone=7&page=1&state=closed). We've already begun slating things for 2.2, but currently have no estimates on when that will be released or what exactly will make it in. We also may do a 2.1.1, but again, no promises at this point. [Live in the now!](http://youtu.be/1vaQ-Y6kLOM?t=4s)
+For the full changelog, visit the [GitHub wiki page](https://github.com/twbs/bootstrap/wiki/Changelog) and the [2.1.0 milestone](https://github.com/twbs/bootstrap/issues?milestone=7&page=1&state=closed). We've already begun slating things for 2.2, but currently have no estimates on when that will be released or what exactly will make it in. We also may do a 2.1.1, but again, no promises at this point. [Live in the now!](https://www.youtube.com/watch?v=1vaQ-Y6kLOM&t=4s)

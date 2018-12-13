@@ -18,7 +18,7 @@ slug: home
 
     {% if post.video %}
     <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="//youtube.com/embed/{{ post.video }}?rel=0" width="760" height="570" allowfullscreen></iframe>
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ post.video }}?rel=0" width="760" height="570" allowfullscreen></iframe>
     </div>
     {% endif %}
 
@@ -29,7 +29,7 @@ slug: home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href="/page{{paginator.next_page}}/">Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
@@ -37,7 +37,7 @@ slug: home
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="/">Newer</a>
     {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}/">Newer</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Newer</span>

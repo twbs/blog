@@ -10,7 +10,7 @@ Bootstrap 4 has been a massive undertaking that touches nearly every line of cod
 
 ## What's new
 
-[![Bootstrap 4 alpha](/assets/img/2015/bs4-alpha.png)](http://v4-alpha.getbootstrap.com)
+[![Bootstrap 4 alpha](/assets/img/2015/bs4-alpha.png)](https://v4-alpha.getbootstrap.com/)
 
 There are a ton of major changes to Bootstrap and it's impossible to cover them all in detail here, so here are some of our favorite highlights:
 
@@ -22,13 +22,13 @@ There are a ton of major changes to Bootstrap and it's impossible to cover them 
 - **Brand new customization options.** Instead of relegating style embellishments like gradients, transitions, shadows, and more to a separate stylesheet like v3, we've moved all those options into Sass variables. Want default transitions on everything or to disable rounded corners? Simply update a variable and recompile.
 - **Dropped IE8 support and moved to rem and em units.** Dropping support for IE8 means we can take advantage of the best parts of CSS without being held back with CSS hacks or fallbacks. Pixels have been swapped for rems and ems where appropriate to make responsive typography and component sizing even easier. If you need IE8 support, keep using Bootstrap 3.
 - **Rewrote all our JavaScript plugins.** Every plugin has been rewritten in ES6 to take advantage of the newest JavaScript enhancements. They also now come with UMD support, generic teardown methods, option type checking, and tons more.
-- **Improved auto-placement of tooltips and popovers** thanks to the help of a library called [Tether](http://github.hubspot.com/tether/).
+- **Improved auto-placement of tooltips and popovers** thanks to the help of a library called [Tether](http://tether.io/).
 - **Improved documentation.** We rewrote it all in Markdown and added a few handy plugins to streamline examples and code snippets to make working with our docs way easier. Improved search is also on its way.
 - **And tons more!** Custom form controls, margin and padding classes, new utility classes, and more have also been included.
 
 And that barely scratches the surface of the 1,100 commits and 120,000 lines of changes in v4 so far. Plus, we're not even done yet!
 
-Ready to check it out? Then [head to the v4 alpha docs!](http://v4-alpha.getbootstrap.com)
+Ready to check it out? Then [head to the v4 alpha docs!](https://v4-alpha.getbootstrap.com/)
 
 ## Development plan
 
@@ -51,17 +51,17 @@ When we shipped Bootstrap 3, we immediately discontinued all support for v2.x, c
 
 ## One more thing...
 
-In addition to shipping the first Bootstrap 4 alpha today, we're also launching our latest side project, [Official Bootstrap Themes](http://themes.getbootstrap.com).
+In addition to shipping the first Bootstrap 4 alpha today, we're also launching our latest side project, [Official Bootstrap Themes](https://themes.getbootstrap.com/).
 
-[![Official Bootstrap Themes](/assets/img/2015/bs-themes.png)](http://themes.getbootstrap.com)
+[![Official Bootstrap Themes](/assets/img/2015/bs-themes.png)](https://themes.getbootstrap.com/)
 
 We've talked about building premium themes for Bootstrap since our earliest releases, but never quite found the time or ideal approach until earlier this year. We've poured hundreds of hours into these themes and consider them to be much more than traditional re-skins of Bootstrap. They've very much their own toolkits, just like Bootstrap.
 
-To start, we’re launching with three themes built on Bootstrap 3: a [dashboard](http://themes.getbootstrap.com/products/dashboard), an [application](http://themes.getbootstrap.com/products/application), and a [marketing](http://themes.getbootstrap.com/products/marketing) site. Each theme contains everything you'd find in Bootstrap, plus stunning real world examples, brand new components and plugins, custom documentation, and simple build tools.
+To start, we’re launching with three themes built on Bootstrap 3: a [dashboard](https://themes.getbootstrap.com/product/dashboard/), an [application](https://themes.getbootstrap.com/product/application/), and a [marketing](https://themes.getbootstrap.com/product/marketing/) site. Each theme contains everything you'd find in Bootstrap, plus stunning real world examples, brand new components and plugins, custom documentation, and simple build tools.
 
-All themes include a [multiple-use license](http://themes.getbootstrap.com/pages/our-license) for the purchaser and free updates for bug fixes and documentation updates for the life of the themes.
+All themes include a [multiple-use license](https://themes.getbootstrap.com/licenses/) for the purchaser and free updates for bug fixes and documentation updates for the life of the themes.
 
-[Head to the Bootstrap themes site](http://themes.getbootstrap.com) to check them out.
+[Head to the Bootstrap themes site](https://themes.getbootstrap.com/) to check them out.
 
 <3,
 

@@ -13,9 +13,9 @@ Without listing all the minor changes (there have been over 500 commits since RC
 
 * **Docs changes:**
   * The Customizer is back! Still needs some work, but functionality has been rewritten and will be improved as we head to final release.
-  * Added new mention to our [browser compatibility docs](http://getbootstrap.com/getting-started/#browsers) to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. [See #9171.](https://github.com/twbs/bootstrap/pull/9171)
-  * Added new section to the Getting Started page for documenting [third party and addon compatibility](http://getbootstrap.com/getting-started/#third-parties) issues. [See #9175.](https://github.com/twbs/bootstrap/pull/9175)
-  * Added [new Accessibility section](http://getbootstrap.com/getting-started/#accessibility), lots of new aria and role attributes, and more for improved 508 and WCAG compliancy. [See #9186.](https://github.com/twbs/bootstrap/pull/9186) Also improved used of more semantic HTML5 elements in docs per [#9332](https://github.com/twbs/bootstrap/pull/9332), [#9347](https://github.com/twbs/bootstrap/pull/9347), and [#9352](https://github.com/twbs/bootstrap/pull/9352).
+  * Added new mention to our [browser compatibility docs](https://getbootstrap.com/getting-started/#browsers) to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. [See #9171.](https://github.com/twbs/bootstrap/pull/9171)
+  * Added new section to the Getting Started page for documenting [third party and addon compatibility](https://getbootstrap.com/getting-started/#third-parties) issues. [See #9175.](https://github.com/twbs/bootstrap/pull/9175)
+  * Added [new Accessibility section](https://getbootstrap.com/getting-started/#accessibility), lots of new aria and role attributes, and more for improved 508 and WCAG compliancy. [See #9186.](https://github.com/twbs/bootstrap/pull/9186) Also improved used of more semantic HTML5 elements in docs per [#9332](https://github.com/twbs/bootstrap/pull/9332), [#9347](https://github.com/twbs/bootstrap/pull/9347), and [#9352](https://github.com/twbs/bootstrap/pull/9352).
   * Added HTML validation tests, and made any existing failures pass. [See #9396.](https://github.com/twbs/bootstrap/pull/9396)
 
 * **Global CSS changes:**
@@ -70,6 +70,6 @@ RC2 takes care of nearly all our bugs that have been filed thus far, but we have
 
 -----
 
-[Head on over to the docs](http://getbootstrap.com) to download and explore the new hotness in RC2.
+[Head on over to the docs](https://getbootstrap.com/) to download and explore the new hotness in RC2.
 
 <3
