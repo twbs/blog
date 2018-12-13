@@ -50,7 +50,7 @@ Padding for grid containers can now be configured across breakpoints with the ne
 
 As mentioned in our last release, the Alpha 5 navbar was a little half baked. This time around, we're completely baked. No, but seriously, the navbar has been rewritten to provide better built-in responsive behaviors and improved layout customization thanks to our move to flexbox.
 
-[![Bootstrap 4 navbars](/img/2017/alpha6-navbar.png)](https://v4-alpha.getbootstrap.com/components/navbar/)
+[![Bootstrap 4 navbars](/assets/img/2017/alpha6-navbar.png)](https://v4-alpha.getbootstrap.com/components/navbar/)
 
 Here's the rundown on what's changed:
 

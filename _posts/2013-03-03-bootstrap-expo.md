@@ -3,7 +3,7 @@ layout: post
 title: Welcome to the Bootstrap Expo
 ---
 
-[![Bootstrap Expo](/img/2013/03/bootstrap-expo.jpg)](http://expo.getbootstrap.com)
+[![Bootstrap Expo](/assets/img/2013/03/bootstrap-expo.jpg)](http://expo.getbootstrap.com)
 
 Today we're launching a new project to showcase the absolute best projects built on Bootstrap, the [Bootstrap Expo](http://expo.getbootstrap.com).
 
