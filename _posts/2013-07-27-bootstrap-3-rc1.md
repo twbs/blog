@@ -12,11 +12,11 @@ We've mentioned it a few times in previous updates, but today it's *Facebook Off
 
 ## Docs for v3 and v2.3.2
 
-With today's release we're pushing forward 100% on Bootstrap 3, meaning when you head to [http://getbootstrap.com](http://getbootstrap.com) you'll see the v3 RC1 documentation. Our intention is to make BS3's testing and development as widespread as possible so we get the best final release possible.
+With today's release we're pushing forward 100% on Bootstrap 3, meaning when you head to [https://getbootstrap.com/](https://getbootstrap.com/) you'll see the v3 RC1 documentation. Our intention is to make BS3's testing and development as widespread as possible so we get the best final release possible.
 
-**Head on over to [http://getbootstrap.com](http://getbootstrap.com) to check it out.** If you're running into any broken links on the downloads, give it a bit for the DNS to sort itself out.
+**Head on over to [https://getbootstrap.com/](https://getbootstrap.com/) to check it out.** If you're running into any broken links on the downloads, give it a bit for the DNS to sort itself out.
 
-We're fully aware everyone cannot simply jump right into BS3 yet, so we've kept the docs for 2.3.2 around for easy access. You'll find a prominent link to the old docs in all of BS3's documentation. If you're in need, head over to [http://getbootstrap.com/2.3.2/](http://getbootstrap.com/2.3.2/).
+We're fully aware everyone cannot simply jump right into BS3 yet, so we've kept the docs for 2.3.2 around for easy access. You'll find a prominent link to the old docs in all of BS3's documentation. If you're in need, head over to [https://getbootstrap.com/2.3.2/](https://getbootstrap.com/2.3.2/).
 
 ## What's changed!?
 

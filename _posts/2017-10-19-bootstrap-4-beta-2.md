@@ -18,7 +18,7 @@ We've pushed over 500 commits in our two months, so we have a few changes since 
 
 [![Bootstrap Theming docs page](/assets/img/2017/v4-beta2-theming-docs.png)](https://getbootstrap.com/docs/4.0/getting-started/theming/)
 
-We have a brand [new Theming docs page](http://getbootstrap.com/docs/4.0/getting-started/theming/) to replace our old Options page (we'll automatically redirect folks from the old page). This new page delves into the structure of our Sass files, default variables and customizing them, maps and loops we use, functions, colors, and of course or global Sass options. It also includes a new section to explain how we build our components via Sass maps and loops, specifically our modifier classes (e.g., `.btn-danger`).
+We have a brand [new Theming docs page](https://getbootstrap.com/docs/4.0/getting-started/theming/) to replace our old Options page (we'll automatically redirect folks from the old page). This new page delves into the structure of our Sass files, default variables and customizing them, maps and loops we use, functions, colors, and of course or global Sass options. It also includes a new section to explain how we build our components via Sass maps and loops, specifically our modifier classes (e.g., `.btn-danger`).
 
 In addition to the documentation changes, we've made a few CSS changes to improve how folks interact with our theming options.
 
@@ -42,7 +42,7 @@ We brought them back! Prematurely removed ahead of Beta 1, we underestimated the
 
 ### Updated migration docs
 
-Given our handful of breaking changes since Beta 1, we added a new section to [our migration docs page](http://getbootstrap.com/docs/4.0/migration/#beta-2-changes) to detail exactly what we changed that might be broken for you. We had to rename a few classes here and there to ensure everything's consistent with the rest of the project.
+Given our handful of breaking changes since Beta 1, we added a new section to [our migration docs page](https://getbootstrap.com/docs/4.0/migration/#beta-2-changes) to detail exactly what we changed that might be broken for you. We had to rename a few classes here and there to ensure everything's consistent with the rest of the project.
 
 We'll be updating this page again for Beta 3 in the same way.
 

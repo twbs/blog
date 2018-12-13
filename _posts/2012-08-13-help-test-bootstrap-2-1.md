@@ -15,10 +15,10 @@ We'll have a more complete list of changes with our release next week.
 
 ## How to help
 
-Just like last time, we're pushing out a [release candidate of the 2.1 code and docs](http://rc.getbootstrap.com). **Here's how you can help us out:**
+Just like last time, we're pushing out a release candidate of the 2.1 code and docs. **Here's how you can help us out:**
 
-- [Checkout the branch](https://github.com/twbs/bootstrap/tree/2.1.0-wip), `2.1.0-wip`, or [browser the release candidate docs](http://rc.getbootstrap.com) so you can easily load it up on devices and such for testing.
+- [Checkout the branch](https://github.com/twbs/bootstrap/tree/2.1.0-wip), `2.1.0-wip`, or browse the release candidate docs so you can easily load it up on devices and such for testing.
 - Load up the new docs in your favorite, or your least favorite, browser or device and start testing.
-- [Open a new issue on GitHub](https://github.com/twbs/bootstrap/issues?sort=created&direction=desc&state=open) to report bugs. Please include as much context and information as possible. If it's a visual bug, please include a screenshot. If it pertains to javascript, consider including a [jsfiddle](http://jsfiddle.net) or [jsbin](http://jsbin.com).
+- [Open a new issue on GitHub](https://github.com/twbs/bootstrap/issues?sort=created&direction=desc&state=open) to report bugs. Please include as much context and information as possible. If it's a visual bug, please include a screenshot. If it pertains to javascript, consider including a [jsfiddle](https://jsfiddle.net/) or [jsbin](https://jsbin.com/).
 
 If you're submitting a pull request against 2.1-wip, be sure to read the [Contributing to Bootstrap](https://github.com/twbs/bootstrap/wiki/Contributing-to-Bootstrap) wiki page first.

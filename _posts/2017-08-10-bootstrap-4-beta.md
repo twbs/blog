@@ -24,12 +24,12 @@ For those who haven't been using the v4 alpha releases, here are some highlights
 - **New build tools** completely rewritten in npm scripts instead of Grunt, immensely simplifying the process of developing and contributing to Bootstrap.
 - **And so much more!** Custom form controls, a redesigned carousel, an overhauled navbar, HTML5 form validation styles, hundreds of responsive utility classes, new components, and more have also been included.
 
-Okay, phew, want to learn even more? Keep reading, or jump right to [those brand new docs](https://getbootstrap.com)!
+Okay, phew, want to learn even more? Keep reading, or jump right to [those brand new docs](https://getbootstrap.com/)!
 
 ## New look
 Bootstrap 4 has been sporting a slightly updated look throughout our alpha releases, but it wasn't until recently that we gave the docs and our components a refresh, too.
 
-[![Bootstrap 4 beta docs](/assets/img/2017/bootstrap-4-beta.png)](https://getbootstrap.com)
+[![Bootstrap 4 beta docs](/assets/img/2017/bootstrap-4-beta.png)](https://getbootstrap.com/)
 
 In addition to a new color palette and new systems fonts, we have a brand new layout for our documentation. New with this beta is an amazing search form powered by Algolia's [DocSearch](https://community.algolia.com/docsearch/), an improved page layout with stickied navbar and sidebar, and a new table of contents.
 

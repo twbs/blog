@@ -4,11 +4,11 @@ title: Bootstrap 2.0.3 released
 
 ---
 
-Today we're releasing [Bootstrap 2.0.3](http://getbootstrap.com), another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the [2.0.3 milestone](https://github.com/twbs/bootstrap/issues?sort=created&direction=desc&state=closed&page=1&milestone=10) on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what's changed.
+Today we're releasing [Bootstrap 2.0.3](https://getbootstrap.com/), another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the [2.0.3 milestone](https://github.com/twbs/bootstrap/issues?sort=created&direction=desc&state=closed&page=1&milestone=10) on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what's changed.
 
 ## Makefile
 
-In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](http://jshint.com) and [Recess](http://twitter.github.com/recess), linters for javascript and CSS. To continue to run `make` via Terminal, do the following:
+In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](https://jshint.com/) and [Recess](http://twitter.github.io/recess/), linters for javascript and CSS. To continue to run `make` via Terminal, do the following:
 
 {% highlight bash %}
 $ npm install -g recess jshint
@@ -38,7 +38,7 @@ We've also removed the bootstrap.zip file from the repository, so make runs much
 - Removed excess padding on `.search-query` inputs in IE7 since it doesn't have border-radius.
 - Updated alert messages in Components to use `button` elements as close icons instead of `a`. Both can be used, but an `a` will require `href="#"` for dismissal on iOS devices.
 - Fixed an issue with prepended/appended inputs in Firefox where `select` elements required two clicks to toggle the dropdown. Resolved by moving the `position: relative` to the `select` by default instead of on `:focus`.
-- Added a new mixin, `.backface-visibility`, to help refine CSS 3D tranforms. Examples and explanation of usage can be found on [CSS Tricks](http://css-tricks.com/almanac/properties/b/backface-visibility/).
+- Added a new mixin, `.backface-visibility`, to help refine CSS 3D tranforms. Examples and explanation of usage can be found on [CSS Tricks](https://css-tricks.com/almanac/properties/b/backface-visibility/).
 - Changed specificity of grid classes in responsive layouts under 767px to accurately target `input`, `select`, and `textarea` elements that use `.span*` classes.
 - Horizontal description lists, `.dl-horizontal`, now truncate terms that are too long to fit in their fixed-width column. In the < 767px responsive layout, they change to their default stacked layout.
 - Changed tabbable tabs to prevent issues in left and right aligned tabs. `.tab-content` would not growing to its parent's full width due to `display: table`. We removed that and the `width: 100%` and instead just set `overflow: auto` to clear the left and right aligned tabs.

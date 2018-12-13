@@ -154,7 +154,7 @@ Compared to previous releases, we're going into a bit more detail here with the 
 - [#11186](https://github.com/twbs/bootstrap/issues/11186): Add `background-color` hacks so that clicking carousel indicators in IE8-9 works as intended
 - [#11188](https://github.com/twbs/bootstrap/issues/11188): Refactor `z-index` on navbars. Removes the default `z-index: 1000;` and instead only applies it to static-top, fixed-top, and fixed-bottom. Also fixes up the broken default navbar example's fubared padding.
 - [#11206](https://github.com/twbs/bootstrap/issues/11206): Remove `padding-left` from first list item within `.list-inline`
-- [#11244](https://github.com/twbs/bootstrap/issues/11244): Adds `.animation()` mixin to replace `.progress-bar`'s regular CSS animation properties (and drops the `-moz`, `-ms`, and `-o` prefies as they are not needed per http://caniuse.com/#feat=css-animation).
+- [#11244](https://github.com/twbs/bootstrap/issues/11244): Adds `.animation()` mixin to replace `.progress-bar`'s regular CSS animation properties (and drops the `-moz`, `-ms`, and `-o` prefies as they are not needed per https://caniuse.com/#feat=css-animation).
 - [#11248](https://github.com/twbs/bootstrap/issues/11248): Apply `background-color: #fff;` to `select`s in print styles to fix Chrome bug
 - Audited Customizer variables section and rearranged content
 
@@ -173,7 +173,7 @@ For even more details, see the [3.0.1 milestone](https://github.com/twbs/bootstr
 
 We've been looking to move to the MIT license for quite some time, and today's release takes us that much closer. Starting with v3.0.1, all *new* contributions to Bootstrap will be dual-licensed as Apache 2 and MIT. The intent is to move the entire project (including all prior contributions) to the MIT license in a future version (hopefully v3.1.0).
 
-To make the change, every contributor to Bootstrap must consent to relicense their changes (since we have no [CLA](http://en.wikipedia.org/wiki/Contributor_License_Agreement)). We're making excellent progress on that front with the community's help and will address holdouts as they come up.
+To make the change, every contributor to Bootstrap must consent to relicense their changes (since we have no [CLA](https://en.wikipedia.org/wiki/Contributor_License_Agreement)). We're making excellent progress on that front with the community's help and will address holdouts as they come up.
 
 As a heads up, we've placed notices in the contributing guidelines and our project readme about the pending change and transition period.
 

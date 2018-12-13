@@ -29,7 +29,7 @@ Since we last shipped a release, we made an official Slack for folks to hang out
 **[Sign up here](https://bootstrap-slack.herokuapp.com/)** to join.
 
 ## wiredep and Bower
-Due to vagueness in Bower's specification, wiredep made some questionable assumptions about how the `main` field in `bower.json` works. Recently, [Bower updated their spec to address this and clarify how `main` should work](https://github.com/bower/bower.json-spec/pull/43), and we [updated our `bower.json` accordingly](https://github.com/twbs/bootstrap/pull/16359). Unfortunately, [wiredep broke as a result](https://github.com/twbs/bootstrap/issues/16663) if you were using it with Bootstrap's vanilla precompiled CSS. Bower is [working to further update their spec](https://github.com/bower/bower.json-spec/issues/47) to address this problem and better assist tools like wiredep.
+Due to vagueness in Bower's specification, wiredep made some questionable assumptions about how the `main` field in `bower.json` works. Recently, [Bower updated their spec to address this and clarify how `main` should work](https://github.com/bower/spec/pull/43), and we [updated our `bower.json` accordingly](https://github.com/twbs/bootstrap/pull/16359). Unfortunately, [wiredep broke as a result](https://github.com/twbs/bootstrap/issues/16663) if you were using it with Bootstrap's vanilla precompiled CSS. Bower is [working to further update their spec](https://github.com/bower/spec/issues/47) to address this problem and better assist tools like wiredep.
 
 In the meantime, a quick-and-dirty workaround to get wiredep to work with Bootstrap again is to add the following to your project's `bower.json`:
 
@@ -51,7 +51,7 @@ Download the latest release—source code, compiled assets, and documentation—
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.5.zip">Download Bootstrap 3.3.5</a>
 
-Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.org/package/bootstrap), too.
+Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.com/package/bootstrap), too.
 
 ## Bootstrap CDN
 
@@ -59,15 +59,15 @@ After reviewing the changelog, update your CDN links to point to the v3.3.5 file
 
 {% highlight html %}
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 {% endhighlight %}
 
 <3,
 
-[@cvrebert](https://github.com/cvrebert) & [team](http://getbootstrap.com/about/#team)
+[@cvrebert](https://github.com/cvrebert) & [team](https://getbootstrap.com/about/#team)

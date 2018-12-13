@@ -3,11 +3,11 @@ layout: post
 title: Bootstrap 2.2.2 released
 ---
 
-Today we're launching [Bootstrap 2.2.2](http://getbootstrap.com), another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here's the rundown on what's new in this release:
+Today we're launching [Bootstrap 2.2.2](https://getbootstrap.com/), another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here's the rundown on what's new in this release:
 
 - **Docs:**
   - Assets (illustrations and examples) are now retina-ready.
-  - Replaced [Placehold.it](http://placehold.it) with [Holder.js](http://imsky.github.com/holder/), a client-side and retina-ready placeholder image tool.
+  - Replaced [Placehold.it](https://placeholder.com/) with [Holder.js](http://holderjs.com/), a client-side and retina-ready placeholder image tool.
 - **Dropdowns:** Temporary fix added for dropdowns on mobile to prevent them from closing early.
 - **Popovers:**
   - No longer inherits `font-size: 0;` when placed in button groups.

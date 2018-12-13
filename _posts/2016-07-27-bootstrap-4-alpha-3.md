@@ -8,7 +8,7 @@ Alpha 3 has landed! We have an overhauled grid, updated form controls, a new fon
 
 Work on Alpha 3 started rather broadly, addressing bug fixes and docs updates of all shapes and sizes, but finished with a narrow focus on our form controls and grid system. If you've followed the development in our `v4-dev` branch, you might already be familiar with some of these bigger changes.
 
-[Skip to the updated alpha docs site](http://v4-alpha.getbootstrap.com), or keep reading for the highlights.
+[Skip to the updated alpha docs site](https://v4-alpha.getbootstrap.com/), or keep reading for the highlights.
 
 ## Grid system
 
@@ -84,7 +84,7 @@ There were nearly 1,200 commits to Alpha 3 and this post barely scratches the su
 
 For more details on this release's changes, take a look at the [Alpha 3 ship list issue](https://github.com/twbs/bootstrap/issues/18480), as well as the [closed Alpha 3 milestone](https://github.com/twbs/bootstrap/milestone/35?closed=1).
 
-**Anxious to jump in? Then [head to the v4 alpha docs!](http://v4-alpha.getbootstrap.com)**
+**Anxious to jump in? Then [head to the v4 alpha docs!](https://v4-alpha.getbootstrap.com/)**
 
 Be sure to [join our official Slack room!](https://bootstrap-slack.herokuapp.com) and dive into [our issue tracker](https://github.com/twbs/bootstrap/issues/) with bug reports, questions, and general feedback whenever possible.
 

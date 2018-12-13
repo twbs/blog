@@ -8,14 +8,14 @@ title: Bootstrap 2.1.1 released
 
 ## Get it
 
-Head on over to [http://getbootstrap.com](http://getbootstrap.com) and get your fix, or download the [latest master ZIP right from GitHub](https://github.com/twbs/bootstrap/zipball/master).
+Head on over to [https://getbootstrap.com/](https://getbootstrap.com/) and get your fix, or download the [latest master ZIP right from GitHub](https://github.com/twbs/bootstrap/zipball/master).
 
 
 ## What's changed
 
 Here's the rundown:
 
-* New feature: alert text. We documented these new classes, like `.text-success`, at the bottom of the [Typography section](http://twitter.github.com/bootstrap/base-css.html#typography) along with the long undocumented `.muted`.
+* New feature: alert text. We documented these new classes, like `.text-success`, at the bottom of the [Typography section](http://getbootstrap.com/2.3.2/base-css.html#typography) along with the long undocumented `.muted`.
 * Fixed a lot of typos in the docs. Spelling is hard.
 * Made the `.box-shadow()` mixin more durable. It no longer requires escaping for multiple shadows, meaning you can easily use variables and functions in them once again.
 * Widened `.dl-horizontal dt` and `.horizontal-form .control-group` to better handle the increased font-size.

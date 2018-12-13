@@ -8,7 +8,7 @@ Today we're stoked to ship Bootstrap v3.1. We've got a handful of new features, 
 
 ### New docs
 
-[![New Bootstrap docs](https://f.cloud.github.com/assets/98681/2042089/1229e80e-89cd-11e3-9829-0c9ce4db29cb.png)](http://getbootstrap.com/getting-started)
+[![New Bootstrap docs](https://f.cloud.github.com/assets/98681/2042089/1229e80e-89cd-11e3-9829-0c9ce4db29cb.png)](https://getbootstrap.com/getting-started/)
 
 We've made tons of changes across the board, most notably to our documentation. Just like v2.1 brought a brand new design, v3.1 overhauls the docs to refocus on the actual documentation rather than the chrome around it. Our new homepage restores the quick run through of key features and showcases some awesome examples from the Expo.
 
@@ -50,7 +50,7 @@ We've been talking about it for what seems like forever, but thanks to all our c
 We're constantly trying to improve our tools for developing Bootstrap and v3.1 brings a slew of updates to do just that.
 
 * We've switched from Recess to grunt-contrib-less for our compiler, giving us access to Less 1.6.x (as opposed to 1.3.x with Recess).
-* Our compiled code is virtually identical in formatting and organization thanks to [CSScomb](http://csscomb.com) and some other Grunt-fu.
+* Our compiled code is virtually identical in formatting and organization thanks to [CSScomb](http://csscomb.com/) and some other Grunt-fu.
 * Tests also run a tad faster with the help of some magical caching and parallelization.
 * The web Customizer is now generated from a Grunt task, meaning we'll never miss updating or adding a variable again. If you contribute to Bootstrap regularly, just run `grunt` and commit to update the page.
 
@@ -66,13 +66,13 @@ Or, hit the [project repository](https://github.com/twbs/bootstrap) or [Sass rep
 
 {% highlight html %}
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 {% endhighlight %}
 
 -----
@@ -213,7 +213,7 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#12311](https://github.com/twbs/bootstrap/issues/12311): Expand information on how to handle overflowing content in navbars.
 - [#12314](https://github.com/twbs/bootstrap/issues/12314): Add warning about modal markup placement affecting modal appearance/functionality.
 - [#12345](https://github.com/twbs/bootstrap/issues/12345): Add note about printer viewport weirdness.
-- [#12380](https://github.com/twbs/bootstrap/issues/12380): Add link to unofficial German translation, <http://holdirbootstrap.de>.
+- [#12380](https://github.com/twbs/bootstrap/issues/12380): Add link to unofficial German translation, <http://holdirbootstrap.de/>.
 - Updated browser and device support documentation:
   * [#11055](https://github.com/twbs/bootstrap/issues/11055): add mention of select menu styling on Android stock browsers with included optional fix.
   * Update IDs and docs nav to include bookmark links to each section.
