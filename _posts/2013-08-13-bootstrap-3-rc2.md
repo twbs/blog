@@ -38,7 +38,8 @@ Without listing all the minor changes (there have been over 500 commits since RC
 
 * **Forms:**
   * Similar to the new button classes, we have new input size classes: `.input-sm` and `.input-lg`. [See #9056.](https://github.com/twbs/bootstrap/pull/9056)
-  * Input focus states now generated via variable and mixin. Use the `@input-focus-border` variable and `.form-control-focus` mixin to generate a custom `border-color` and `box-shadow`. [See commit .](http://) * Size modifier classes for large and small components—including buttons, form inputs, pagination, and wells—have all been standardized to use `-sm` or `-lg`. [See #9056.](https://github.com/twbs/bootstrap/pull/9056)
+  * Input focus states now generated via variable and mixin. Use the `@input-focus-border` variable and `.form-control-focus` mixin to generate a custom `border-color` and `box-shadow`.
+  * Size modifier classes for large and small components—including buttons, form inputs, pagination, and wells—have all been standardized to use `-sm` or `-lg`. [See #9056.](https://github.com/twbs/bootstrap/pull/9056)
   * Inline forms now require the use of `.form-group`, [per #9382](https://github.com/twbs/bootstrap/issues/9382), to properly align and size all (native and custom) form controls. This also helps make form markup more consistent and flexible (just swap a class), so woohoo!
   * Added `.static-form-control` to account for static, placeholder text in horizontal form layouts. [Fixes #8150.](https://github.com/twbs/bootstrap/issues/8150)
   * New input group sizing classes: just add `.input-group-sm` or `.input-group-lg` to any `.input-group` and you're good to go. [See #9295.](https://github.com/twbs/bootstrap/pull/9295)

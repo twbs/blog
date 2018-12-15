@@ -4,7 +4,7 @@ title: Bootstrap 4 alpha
 video: 4PdU6migsqQ
 ---
 
-Today is a special day for Bootstrap. Not only is it [our fourth birthday](https://twitter.com/mdo/statuses/104620039650557952), but after a year of development, we're finally shipping the first alpha release of Bootstrap 4. Hell yeah!
+Today is a special day for Bootstrap. Not only is it our fourth birthday, but after a year of development, we're finally shipping the first alpha release of Bootstrap 4. Hell yeah!
 
 Bootstrap 4 has been a massive undertaking that touches nearly every line of code. We're stoked to share it with you and hear your feedback. We've got a lot of news to share with you, so let's jump right into it.
 

@@ -3,7 +3,7 @@ layout: post
 title: Help test Bootstrap 2.1
 ---
 
-We're stoked to release Bootstrap 2.1 next week Monday at our [first birthday party](http://twitter-bootstrap-birthday.eventbrite.com/), but to make it a great release, we need your help testing it out.
+We're stoked to release Bootstrap 2.1 next week Monday at our [first birthday party](https://twitter-bootstrap-birthday.eventbrite.com/), but to make it a great release, we need your help testing it out.
 
 While 2.0.4 was a smaller release, 2.1 is a much larger effort that closes nearly 100 issues and adds a handful of great features. You can see the full list of changes changes in 2.1 thus far by browsing the [milestone on GitHub](https://github.com/twbs/bootstrap/issues?milestone=7&page=1&state=closed).
 
