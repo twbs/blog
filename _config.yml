@@ -28,7 +28,7 @@ encoding:           UTF-8
 future:             true
 
 exclude:
-  - .sass-cache/
+  - .sass-cache
   - vendor/
   - Gemfile
   - Gemfile.lock
