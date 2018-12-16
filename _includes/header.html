@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://gmpg.org/xfn/11" rel="profile">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.authors }}">
     <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <link href="/assets/css/style.css" rel="stylesheet">
 
     <title>
       {%- if page.title -%}
-        {{ page.title }} &middot; {{ site.title }}
+        {{ page.title | smartify }} · {{ site.title | smartify }}
       {%- else -%}
-        {{ site.title }} &middot; {{ site.description }}
+        {{ site.title | smartify }} · {{ site.description | smartify }}
       {%- endif -%}
     </title>
 
@@ -42,49 +42,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- RSS -->
     {% feed_meta %}
 
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-    <!-- Twitter -->
-    <meta name="twitter:site" content="@{{ site.twitter }}">
-    <meta name="twitter:creator" content="@{{ site.twitter }}">
+    {% include social.html %}
+    {% include analytics.html %}
 
-    {% if page.title %}
-      <meta name="twitter:card" content="summary">
-      <meta name="twitter:title" content="{{ page.title }}">
-      <meta name="twitter:description" content="{{ page.description }}">
-      <meta name="twitter:image" content="{{ site.url }}{{ site.social_logo_path }}">
-    {% else %}
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:title" content="{{ site.title }}">
-      <meta name="twitter:description" content="{{ site.description }}">
-      <meta name="twitter:image" content="{{ site.url }}{{ site.social_image_path }}">
-    {% endif %}
-
-    <!-- Facebook -->
-    {% if page.title %}
-      <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-      <meta property="og:title" content="{{ page.title }}">
-      <meta property="og:description" content="{{ page.description }}">
-    {% else %}
-      <meta property="og:url" content="{{ site.url }}">
-      <meta property="og:title" content="{{ site.title }}">
-      <meta property="og:description" content="{{ site.description }}">
-    {% endif %}
-    <meta property="og:image" content="{{ site.url }}{{ site.social_image_path }}">
-
-    <!-- Meta -->
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="{{ site.authors }}">
-
-    <!-- Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-146052-12', 'getbootstrap.com');
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
   </head>
   {% capture body_class %}{{ page.layout }}{% if page.body_class %} page-{{ page.body_class }}{% elsif page.slug %} page-{{ page.slug | slugify }}{% elsif page.dir %} page-{{ page.dir | slugify }}{% endif %}{% endcapture %}
   <body class="{{ body_class }}">
@@ -101,16 +63,4 @@
 
     <div class="container">
 
-      <div id="carbonads-container">
-        <div class="carbonad">
-          <div id="azcarbon"></div>
-          <script>
-            var z = document.createElement("script");
-            z.type = "text/javascript";
-            z.async = true;
-            z.src = "https://engine.carbonads.com/z/32340/azcarbon_2_1_0_VERT";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(z, s);
-          </script>
-        </div>
-      </div>
+      {% include carbonads.html %}
