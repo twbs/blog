@@ -28,21 +28,12 @@ h2, h3, h4 {
 /* Bootstrap "B" icon */
 .bs-docs-booticon {
   display: block;
-  width: 6rem;
-  height: 6rem;
-  margin: 0 auto 1rem;
-  font-size: 4.5rem;
-  font-weight: 500;
-  line-height: 6rem;
-  color: #fff;
-  text-align: center;
-  background-color: transparent;
-  border: 1px solid #cdbfe3;
-  border-radius: 15%;
-}
-.bs-docs-booticon:hover,
-.bs-docs-booticon:focus {
-  text-decoration: none;
+  margin-bottom: 1rem;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 /* Header */
