@@ -9,7 +9,7 @@ name: "list"
     <span>{{ post.date | date_to_string }}</span>
     <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
     {% if post.video %}
-    <div class="embed-responsive embed-responsive-16by9" style="margin-top: .5rem;">
+    <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ post.video }}?rel=0" width="760" height="570" allowfullscreen></iframe>
     </div>
     {% endif %}

@@ -19,6 +19,10 @@ h2, h3, h4 {
 
 .embed-responsive {
   margin-bottom: 1rem;
+
+  .page-videos & {
+    margin-top: .5rem;
+  }
 }
 
 .post li {
