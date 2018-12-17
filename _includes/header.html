@@ -3,39 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.authors }}">
     <meta name="generator" content="Jekyll v{{ jekyll.version }}">
-
     <link href="https://gmpg.org/xfn/11" rel="profile">
-    <link href="/assets/css/style.css" rel="stylesheet">
 
-    <title>
-      {%- if page.title -%}
-        {{ page.title | smartify }} · {{ site.title | smartify }}
-      {%- else -%}
-        {{ site.title | smartify }} · {{ site.description | smartify }}
-      {%- endif -%}
-    </title>
+    <link href="/assets/css/style.css" rel="stylesheet">
 
     {% include favicons.html %}
 
-    {% if paginator.total_pages > 1 -%}
-    {%- if paginator.page == 1 -%}
-    <link rel="next" href="{{ paginator.next_page_path | append: '/' | replace: '//', '/' }}">
-    {%- else if paginator.page > 1 -%}
-    <link rel="prev" href="{{ paginator.previous_page_path | append: '/' | replace: '//', '/' }}">
-    {%- if paginator.next_page -%}
-    <link rel="next" href="{{ paginator.next_page_path | append: '/' | replace: '//', '/' }}">
-    {%- endif -%}
-    {%- else -%}
-    <link rel="prev" href="{{ paginator.previous_page_path | append: '/' | replace: '//', '/' }}">
-    {%- endif -%}
-    {%- endif %}
-
     {% feed_meta %}
 
-    {% include social.html %}
+    {% seo %}
+
     {% include analytics.html %}
     {% include no-js.html %}
   </head>

@@ -36,6 +36,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-seo-tag (2.5.0)
+      jekyll (~> 3.3)
     jekyll-sitemap (1.2.0)
       jekyll (~> 3.3)
     jekyll-watch (2.1.2)
@@ -72,6 +74,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.11.0)
   jekyll-paginate (~> 1.1.0)
   jekyll-redirect-from (~> 0.14.0)
+  jekyll-seo-tag (~> 2.5.0)
   jekyll-sitemap (~> 1.2.0)
   wdm (~> 0.1.1)
 
