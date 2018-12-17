@@ -8,7 +8,7 @@ Today we're stoked to ship Bootstrap v3.1. We've got a handful of new features, 
 
 ### New docs
 
-[![New Bootstrap docs](/assets/img/2014/01/docs.png)](https://getbootstrap.com/getting-started/)
+[![New Bootstrap docs](/assets/img/2014/01/docs.png)]({{ site.main }}/getting-started/)
 
 We've made tons of changes across the board, most notably to our documentation. Just like v2.1 brought a brand new design, v3.1 overhauls the docs to refocus on the actual documentation rather than the chrome around it. Our new homepage restores the quick run through of key features and showcases some awesome examples from the Expo.
 

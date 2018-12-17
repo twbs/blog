@@ -35,7 +35,7 @@ Here's a look at some of the highlights of this release.
 
 ### Responsive embeds
 
-As seen in [SUIT CSS](http://suitcss.github.io/), we've added a few classes for creating responsive embeds. They're great for proportionally scaling down YouTube videos and other `iframe` or `embed` elements. [Head to the docs](https://getbootstrap.com/components/#responsive-embed) to check them out.
+As seen in [SUIT CSS](http://suitcss.github.io/), we've added a few classes for creating responsive embeds. They're great for proportionally scaling down YouTube videos and other `iframe` or `embed` elements. [Head to the docs]({{ site.main }}/components/#responsive-embed) to check them out.
 
 ### New responsive utility classes
 
@@ -51,7 +51,7 @@ Our documentation snippets just got an upgrade with the help of [ZeroClipboard](
 
 ### Browser bugs
 
-We've also begun tracking unresolved browser bugs that currently impact Bootstrap's development in some way. We call it the [Wall of browser bugs](https://getbootstrap.com/browser-bugs/). One of the coolest parts of developing Bootstrap is finding and reporting browser bugs to their developers. We're literally helping to make the web a better place, and that's pretty awesome in our book.
+We've also begun tracking unresolved browser bugs that currently impact Bootstrap's development in some way. We call it the [Wall of browser bugs]({{ site.main }}/browser-bugs/). One of the coolest parts of developing Bootstrap is finding and reporting browser bugs to their developers. We're literally helping to make the web a better place, and that's pretty awesome in our book.
 
 ### And dozens more...
 

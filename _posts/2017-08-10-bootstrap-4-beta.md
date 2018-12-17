@@ -14,7 +14,7 @@ For those who haven't been using the v4 alpha releases, here are some highlights
 
 - **Moved from Less to Sass.** Bootstrap now compiles faster than ever thanks to Libsass, and we join an increasingly large community of Sass developers.
 - **Flexbox and an improved grid system.** We've moved nearly everything to flexbox, added a new grid tier to better target mobile devices, and completely overhauled our source Sass with better variables, mixins, and now maps, too.
-- **Dropped wells, thumbnails, and panels for cards.** [Cards](https://getbootstrap.com/docs/4.0/components/card/) are a brand new component to Bootstrap, but they'll feel super familiar as they do nearly everything wells, thumbnails, and panels did, only better.
+- **Dropped wells, thumbnails, and panels for cards.** [Cards]({{ site.main }}/docs/4.0/components/card/) are a brand new component to Bootstrap, but they'll feel super familiar as they do nearly everything wells, thumbnails, and panels did, only better.
 - **Forked Normalize.css and consolidated all our HTML resets into a new CSS module, Reboot.** Normalize.css has taken a different path than we'd prefer, dropping some core CSS tweaks we've long depended upon. Reboot takes the core of Normalize.css and expands it to include more opinionated resets like `box-sizing: border-box`, margin tweaks, and more all in a single Sass file.
 - **Brand new customization options.** Instead of relegating style embellishments like gradients, transitions, shadows, grid classes, and more to a separate stylesheet like v3, we've moved all those options into Sass variables. Want default transitions on everything or to disable rounded corners? Simply update a variable and recompile.
 - **Dropped IE8 and IE9 support, dropped older browser versions, and moved to rem units for component sizing** to take advantage of newer CSS support. Aside from our grid, pixels have been swapped for rems and ems where appropriate to make responsive typography and component sizing even easier. Need support for IE8/IE9, Safari 8-, iOS 8-, etc? Keep using Bootstrap 3.
@@ -24,12 +24,12 @@ For those who haven't been using the v4 alpha releases, here are some highlights
 - **New build tools** completely rewritten in npm scripts instead of Grunt, immensely simplifying the process of developing and contributing to Bootstrap.
 - **And so much more!** Custom form controls, a redesigned carousel, an overhauled navbar, HTML5 form validation styles, hundreds of responsive utility classes, new components, and more have also been included.
 
-Okay, phew, want to learn even more? Keep reading, or jump right to [those brand new docs](https://getbootstrap.com/)!
+Okay, phew, want to learn even more? Keep reading, or jump right to [those brand new docs]({{ site.main }}/)!
 
 ## New look
 Bootstrap 4 has been sporting a slightly updated look throughout our alpha releases, but it wasn't until recently that we gave the docs and our components a refresh, too.
 
-[![Bootstrap 4 beta docs](/assets/img/2017/bootstrap-4-beta.png)](https://getbootstrap.com/)
+[![Bootstrap 4 beta docs](/assets/img/2017/bootstrap-4-beta.png)]({{ site.main }}/)
 
 In addition to a new color palette and new systems fonts, we have a brand new layout for our documentation. New with this beta is an amazing search form powered by Algolia's [DocSearch](https://community.algolia.com/docsearch/), an improved page layout with stickied navbar and sidebar, and a new table of contents.
 

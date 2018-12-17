@@ -10,7 +10,7 @@ With 2.2.2 out the door, our attention has shifted almost entirely to the next m
 Overall, **Bootstrap 3 will be rather narrow in focus** compared to the last major update. In short, we'll drop legacy code, improve responsive CSS, and centralize community efforts. **Specifically, v3 will address the following:**
 
 - Migrate [twitter/bootstrap](https://github.com/twbs/bootstrap/), [twitter/bootstrap-server](https://github.com/twbs/bootstrap-server/), and mdo/bootstrap-blog (currently a private repo) to the [twbs](https://github.com/twbs) organization.
-- Change site URLs to [https://getbootstrap.com/](https://getbootstrap.com/) (more on that below).
+- Change site URLs to <{{ site.main }}/> (more on that below).
 - Compile all Less code, including responsive styles, into a single CSS file.
 - Drop IE7/FF3x support entirely.
 - Use the `@font-face` version of Glyphicons instead of the current PNGs.
@@ -30,7 +30,7 @@ We mentioned this a few times in recent months, but with 3.0 we'll be transition
 
 ## New URLs
 
-With the move to the new organization, the URLs of the Bootstrap docs must change. We host our docs on GitHub Pages and those URLs are based on user or organization names. To better future-proof things, we'll be making [https://getbootstrap.com/](https://getbootstrap.com/) our base URL instead of just a redirect.
+With the move to the new organization, the URLs of the Bootstrap docs must change. We host our docs on GitHub Pages and those URLs are based on user or organization names. To better future-proof things, we'll be making <{{ site.main }}/> our base URL instead of just a redirect.
 
 For us, this will be the most painful part of the move. Given how prolific links are, we'll also try to setup something at the old URLs to redirect folks, but we're unsure how we will do that just yet. Perhaps a shell repository with dummy pages pointing to their replacements? Time will tell.
 

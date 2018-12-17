@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap 2.3 released
 ---
 
-It has been far too long, friends. Nearly three months has gone by since we pushed out a new version of Bootstrap, but fret not, for that void comes to a most excellent halt tonight. After numerous delays, including a bout with the flu, we're happy to announce the release of [Bootstrap 2.3](https://getbootstrap.com/).
+It has been far too long, friends. Nearly three months has gone by since we pushed out a new version of Bootstrap, but fret not, for that void comes to a most excellent halt tonight. After numerous delays, including a bout with the flu, we're happy to announce the release of [Bootstrap 2.3]({{ site.main }}/).
 
 ## Oh shit what
 

@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap 2.2.2 released
 ---
 
-Today we're launching [Bootstrap 2.2.2](https://getbootstrap.com/), another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here's the rundown on what's new in this release:
+Today we're launching [Bootstrap 2.2.2]({{ site.main }}/), another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here's the rundown on what's new in this release:
 
 - **Docs:**
   - Assets (illustrations and examples) are now retina-ready.

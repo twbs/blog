@@ -41,4 +41,4 @@ After reviewing the changelog, update your CDN links to point to the v3.3.6 file
 
 <3,
 
-[@mdo](https://twitter.com/mdo) & [team](https://getbootstrap.com/about/#team)
+[@mdo](https://twitter.com/mdo) & [team]({{ site.main }}/about/#team)

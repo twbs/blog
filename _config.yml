@@ -43,7 +43,7 @@ exclude:
   - README.md
 
 # Links
-blog:               "https://blog.getbootstrap.com"
+main:               "https://getbootstrap.com"
 expo:               "https://expo.getbootstrap.com"
 themes:             "https://themes.getbootstrap.com"
 

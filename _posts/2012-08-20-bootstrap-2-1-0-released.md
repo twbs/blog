@@ -7,7 +7,7 @@ After a smaller 2.0.4 release, we've got another huge update that resolves tons 
 
 ## tl;dr
 
-New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120+ closed bugs, and more. [Go get it.](https://getbootstrap.com/)
+New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120+ closed bugs, and more. [Go get it.]({{ site.main }}/)
 
 ## Improved documentation
 

@@ -40,4 +40,4 @@ After reviewing the changelog, update your CDN links to point to the v3.3.7 file
 
 <3,
 
-[@cvrebert](https://twitter.com/cvrebert) & [team](https://getbootstrap.com/about/#team)
+[@cvrebert](https://twitter.com/cvrebert) & [team]({{ site.main }}/about/#team)
