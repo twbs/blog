@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Bootstrap 3.3.6 released
-version: 3.3.6
 video: l-O5IHVhWj0
 ---
 

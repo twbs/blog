@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Bootstrap 3.3.2 released
-version: 3.3.2
 video: DNPjeIamsck
 ---
 
