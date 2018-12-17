@@ -1,18 +1,24 @@
 ---
 layout: default
-name: "list"
+title: Videos
+description: "A list of all blog posts with videos"
 ---
 
+{%- for post in site.posts -%}
+{%- if forloop.first == true %}
 <ul class="list">
-{% for post in site.posts %}
+{%- endif %}
+  {%- if post.video -%}
+  {%- continue -%}
+  {%- endif -%}
   <li>
     <span>{{ post.date | date_to_string }}</span>
     <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
-    {% if post.video %}
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ post.video }}?rel=0" width="760" height="570" allowfullscreen></iframe>
     </div>
-    {% endif %}
   </li>
-{% endfor %}
+{%- if forloop.last == true %}
 </ul>
+{%- endif %}
+{%- endfor -%}
