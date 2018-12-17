@@ -86,7 +86,8 @@
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
   </head>
-  <body>
+  {% capture body_class %}{{ page.layout }}{% if page.body_class %} page-{{ page.body_class }}{% elsif page.slug %} page-{{ page.slug | slugify }}{% elsif page.dir %} page-{{ page.dir | slugify }}{% endif %}{% endcapture %}
+  <body class="{{ body_class }}">
 
     <div class="masthead">
       <div class="container">
