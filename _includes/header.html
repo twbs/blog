@@ -23,6 +23,19 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+    {% if paginator.total_pages > 1 -%}
+    {%- if paginator.page == 1 -%}
+    <link rel="next" href="{{ paginator.next_page_path | append: '/' | replace: '//', '/' }}">
+    {%- else if paginator.page > 1 -%}
+    <link rel="prev" href="{{ paginator.previous_page_path | append: '/' | replace: '//', '/' }}">
+    {%- if paginator.next_page -%}
+    <link rel="next" href="{{ paginator.next_page_path | append: '/' | replace: '//', '/' }}">
+    {%- endif -%}
+    {%- else -%}
+    <link rel="prev" href="{{ paginator.previous_page_path | append: '/' | replace: '//', '/' }}">
+    {%- endif -%}
+    {%- endif %}
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
