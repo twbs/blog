@@ -17,7 +17,7 @@
             <a href="https://twitter.com/getbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @getbootstrap</a>
           </li>
           <li>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://getbootstrap.com/bootstrap/" data-count="horizontal" data-via="getbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+            <a href="https://twitter.com/intent/tweet" class="twitter-share-button" data-url="{{ site.url}}/" data-count="horizontal" data-via="getbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
           </li>
         </ul>
 
@@ -26,7 +26,7 @@
 
     </div> <!-- /close container -->
 
-    <script src="https://platform.twitter.com/widgets.js" async></script>
+    {% include twitter-js.html %}
 
   </body>
 </html>
