@@ -13,6 +13,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 sass:
@@ -48,7 +49,22 @@ expo:               "https://expo.getbootstrap.com"
 themes:             "https://themes.getbootstrap.com"
 
 # Social
-twitter:            getbootstrap
 authors:            "Mark Otto, Jacob Thornton, and Bootstrap contributors"
-social_logo_path:   /assets/img/bootstrap-social-logo.png
-social_image_path:  /assets/img/bootstrap-social.png
+author:
+  twitter:          "getbootstrap"
+
+twitter:
+  card:             "summary_large_image"
+  username:         "getbootstrap"
+
+logo:               "/assets/img/bootstrap-social.png"
+
+# Output
+defaults:
+  - scope:
+      path:         ""
+    values:
+      image:
+        path:       "/assets/img/bootstrap-social.png" # default image
+        width:      1200
+        height:     630
