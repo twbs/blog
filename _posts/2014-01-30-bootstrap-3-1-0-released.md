@@ -8,19 +8,19 @@ Today we're stoked to ship Bootstrap v3.1. We've got a handful of new features, 
 
 ### New docs
 
-[![New Bootstrap docs](https://f.cloud.github.com/assets/98681/2042089/1229e80e-89cd-11e3-9829-0c9ce4db29cb.png)](https://getbootstrap.com/getting-started/)
+[![New Bootstrap docs](/assets/img/2014/01/docs.png)](https://getbootstrap.com/getting-started/)
 
 We've made tons of changes across the board, most notably to our documentation. Just like v2.1 brought a brand new design, v3.1 overhauls the docs to refocus on the actual documentation rather than the chrome around it. Our new homepage restores the quick run through of key features and showcases some awesome examples from the Expo.
 
 ### Official Sass port
 
-[![Bootstrap for Sass](https://f.cloud.github.com/assets/98681/2041999/ec0664be-89cb-11e3-85cc-388a952e1ee0.png)](https://github.com/twbs/bootstrap-sass)
+[![Bootstrap for Sass](/assets/img/2014/01/sass.png)](https://github.com/twbs/bootstrap-sass)
 
 The best part about v3.1 is that we're shipping with an official Sass port. A few weeks ago we moved over the most popular port on GitHub and made it official—Bootstrap is now available in Sass. Rather than bloat the main project with support for Less and Sass—and all the documentation for both—we've kept them separate for the time being. Prominent links in the docs are included though, so enjoy!
 
 ### New examples
 
-![New examples](https://f.cloud.github.com/assets/98681/1796777/3a111d22-6a8a-11e3-8587-77dc46197a57.jpg)
+![New examples](/assets/img/2014/01/examples.jpg)
 
 We've added three new examples: Blog, Cover, and Dashboard. Each example provides a single page of awesomeness for you to quickly get started on a project built with Bootstrap. They're responsive and ready to go.
 

@@ -32,7 +32,7 @@ We hope this will make it a little easier for those looking to contribute to Boo
 
 Recess is a project developed at Twitter to help support our internal style guide.
 
-![Recess screenshot](https://i.imgur.com/GkL1QAe.png)
+![Recess screenshot](/assets/img/2012/04/recess.png)
 
 At it’s core, Recess is a linter, but with the added ability to compile and/or reformat your css/less files: normalizing whitespace, stripping 0 values, reordering properties, and any other safe stylistic optimizations it can find.
 
@@ -41,7 +41,7 @@ What this means is that instead of just telling you where you have problems, you
 To begin with, we're only using Recess in this manner — as a compiler for our Less (rather than the lessc compiler directly). This gives us strict control over the output of Bootstrap and let's Mark and I really geekout, which we're super excited about (we like things to be perfect... we're nerds like that).
 
 
-### [The Future](https://i.imgur.com/LnriU.gif)
+### [The Future](/assets/img/2012/04/LnriU.gif)
 
 Eventually we'd like to try to roll these tools (along with our unit tests) into some sort of continuous integration service. At Twitter, we're already using travis-ci on a number of our other projects (Hogan.js, Recess), so we may follow suit with Bootstrap soon. This will make it even easier for us to accept pull requests from the community, as we'll be able to see all our tests passing! :)
 

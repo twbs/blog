@@ -25,7 +25,7 @@ Bootstrap 2.3 includes some new features, as well as the standard bunch of bug f
   - Added `.text-left`, `.text-center`, and `.text-right` utility classes for easy typographic alignment.
   - Added `@ms-viewport` so IE10 can use responsive CSS when in split-screen mode.
 - **Docs changes:**
-  - Added [new justified navigation example](https://f.cloud.github.com/assets/98681/25869/5e2f812c-4afa-11e2-9293-501cd689232d.png).
+  - Added [new justified navigation example](/assets/img/2013/02/justified-nav.png).
   - Added sticky footer with fixed navbar example.
 
 As always, you can see a more complete list of changes by viewing the [2.3.0 milestone](https://github.com/twbs/bootstrap/issues?milestone=18&state=closed) or [2.3.0 pull request](https://github.com/twbs/bootstrap/pull/6346) on GitHub. Most of the issues not mentioned above are minor CSS tweaks and documentation typos.
