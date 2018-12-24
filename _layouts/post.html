@@ -9,9 +9,7 @@ layout: default
   {%- include tweet-button.html -%}
 
   {%- if page.video -%}
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.video }}?rel=0" width="760" height="570" allowfullscreen></iframe>
-  </div>
+  {%- include video.html -%}
   {%- endif -%}
 
   {{ content }}
