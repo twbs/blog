@@ -36,7 +36,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #167bc2;
   text-decoration: none;
 }
 a strong {
@@ -113,7 +113,7 @@ pre {
 }
 code {
   font-size: 90%;
-  color: #bf616a;
+  color: #b85861;
 }
 pre {
   display: block;
@@ -256,7 +256,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: #767676;
 }
 
 /* Break long links */
@@ -309,7 +309,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  color: #ccc;
+  color: #767676;
   text-align: center;
 }
 
