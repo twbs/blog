@@ -259,6 +259,11 @@ tbody tr:nth-child(odd) th {
   color: #9a9a9a;
 }
 
+/* Break long links */
+.post a {
+  word-break: break-word;
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;
