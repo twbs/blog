@@ -4,10 +4,6 @@ title: Bootstrap 3.3.0 released
 video: Zr9R7hN1YSs
 ---
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?rel=0" width="760" height="428" allowfullscreen></iframe>
-</div>
-
 Bootstrap 3.3.0 is here! This release has been all about bug fixes, accessibility improvements, and documentation updates. We've had over 700 commits from 28 contributors since our last release. Woohoo!
 
 Here are some of the highlights:

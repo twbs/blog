@@ -4,10 +4,6 @@ title: Bootstrap 3.3.1 released
 video: ydd9Dn3bJlI
 ---
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/?rel=0" width="760" height="428" allowfullscreen></iframe>
-</div>
-
 Say hello to Bootstrap 3.3.1. As one of our fastest follow up releases, the changelog is focused around a small set of bug fixes for our CSS and JS, loads of accessibility improvements, and several documentation improvements.
 
 For a complete breakdown, [read the release changelog](https://github.com/twbs/bootstrap/releases/tag/v3.3.1) or the [v3.3.1 milestone](https://github.com/twbs/bootstrap/issues?q=milestone%3Av3.3.1+is%3Aclosed).
