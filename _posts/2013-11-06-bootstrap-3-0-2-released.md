@@ -14,21 +14,21 @@ Today we're shipping a quick v3.0.2 patch to fix incorrect version numbers in ou
 
 Here's the rundown on what's changed:
 
-* [#10039](https://github.com/twbs/bootstrap/issues/10039): Remove `window.jQuery` for `jQuery`.
-* [#11273](https://github.com/twbs/bootstrap/issues/11273): Add branch alias for `composer.json`.
-* [#11295](https://github.com/twbs/bootstrap/issues/11295): Restore offset, push, and pull zero classes (e.g., `.col-md-offset-0`)
-* [#11315](https://github.com/twbs/bootstrap/issues/11315): Add navigation role to example navbars.
-* [#11327](https://github.com/twbs/bootstrap/issues/11327): Improve nesting of `.thumbnail` styles.
-* [#11334](https://github.com/twbs/bootstrap/issues/11334): Remove unnecessary `&` from CSS nesting for panels.
-* [#11335](https://github.com/twbs/bootstrap/issues/11335): Add Grunt task to update version numbers across entire project. (**Note:** If you run our docs locally, you'll need to run `npm install` in order to run `grunt`).
-* [#11336](https://github.com/twbs/bootstrap/issues/11336): Don't use nonstandard `window.location.origin` in Customizer.
-* [#11345](https://github.com/twbs/bootstrap/issues/11345): Remove duplicate class changes in migration instructions.
-* [#11349](https://github.com/twbs/bootstrap/issues/11349): Add screen reader text for navbar toggles.
-* [#11378](https://github.com/twbs/bootstrap/issues/11378): Use `.navbar-*` alignment classes in `.navbar-text` example.
-* Update Node to v0.10.x (current stable)
-* Fix links to same-page anchors
-* Drop `media` type on basic template example
-* Correct download links in readme
+- [#10039](https://github.com/twbs/bootstrap/issues/10039): Remove `window.jQuery` for `jQuery`.
+- [#11273](https://github.com/twbs/bootstrap/issues/11273): Add branch alias for `composer.json`.
+- [#11295](https://github.com/twbs/bootstrap/issues/11295): Restore offset, push, and pull zero classes (e.g., `.col-md-offset-0`)
+- [#11315](https://github.com/twbs/bootstrap/issues/11315): Add navigation role to example navbars.
+- [#11327](https://github.com/twbs/bootstrap/issues/11327): Improve nesting of `.thumbnail` styles.
+- [#11334](https://github.com/twbs/bootstrap/issues/11334): Remove unnecessary `&` from CSS nesting for panels.
+- [#11335](https://github.com/twbs/bootstrap/issues/11335): Add Grunt task to update version numbers across entire project. (**Note:** If you run our docs locally, you'll need to run `npm install` in order to run `grunt`).
+- [#11336](https://github.com/twbs/bootstrap/issues/11336): Don't use nonstandard `window.location.origin` in Customizer.
+- [#11345](https://github.com/twbs/bootstrap/issues/11345): Remove duplicate class changes in migration instructions.
+- [#11349](https://github.com/twbs/bootstrap/issues/11349): Add screen reader text for navbar toggles.
+- [#11378](https://github.com/twbs/bootstrap/issues/11378): Use `.navbar-*` alignment classes in `.navbar-text` example.
+- Update Node to v0.10.x (current stable)
+- Fix links to same-page anchors
+- Drop `media` type on basic template example
+- Correct download links in readme
 
 As always, get the details from the [v3.0.2 milestone](https://github.com/twbs/bootstrap/issues?milestone=23&page=1&state=closed).
 

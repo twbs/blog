@@ -15,16 +15,16 @@ Head on over to <{{ site.main }}/> and get your fix, or download the [latest mas
 
 Here's the rundown:
 
-* New feature: alert text. We documented these new classes, like `.text-success`, at the bottom of the [Typography section]({{ site.main }}/2.3.2/base-css.html#typography) along with the long undocumented `.muted`.
-* Fixed a lot of typos in the docs. Spelling is hard.
-* Made the `.box-shadow()` mixin more durable. It no longer requires escaping for multiple shadows, meaning you can easily use variables and functions in them once again.
-* Widened `.dl-horizontal dt` and `.horizontal-form .control-group` to better handle the increased font-size.
-* Dropdown submenus improved: now you only see the next level, not all levels, on hover of the submenu toggle.
-* Clarified jQuery and Bootstrap template requirements in Getting Started section.
-* `select` now utilizes `@inputBorder`.
-* `.lead` now scales up from `@baseFontSize` instead of being a fixed font-size and line-height.
-* Fixed the vertical three color gradient in latest Firefox.
-* Reordered some variables that caused errors in certain Less compilers.
+- New feature: alert text. We documented these new classes, like `.text-success`, at the bottom of the [Typography section]({{ site.main }}/2.3.2/base-css.html#typography) along with the long undocumented `.muted`.
+- Fixed a lot of typos in the docs. Spelling is hard.
+- Made the `.box-shadow()` mixin more durable. It no longer requires escaping for multiple shadows, meaning you can easily use variables and functions in them once again.
+- Widened `.dl-horizontal dt` and `.horizontal-form .control-group` to better handle the increased font-size.
+- Dropdown submenus improved: now you only see the next level, not all levels, on hover of the submenu toggle.
+- Clarified jQuery and Bootstrap template requirements in Getting Started section.
+- `select` now utilizes `@inputBorder`.
+- `.lead` now scales up from `@baseFontSize` instead of being a fixed font-size and line-height.
+- Fixed the vertical three color gradient in latest Firefox.
+- Reordered some variables that caused errors in certain Less compilers.
 
 There's a bunch more, so do run through the [2.1.1 milestone](https://github.com/twbs/bootstrap/issues?milestone=14&state=closed) when you can, but those are the big ones.
 

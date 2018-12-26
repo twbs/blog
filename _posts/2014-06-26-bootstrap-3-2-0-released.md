@@ -57,11 +57,11 @@ We've also begun tracking unresolved browser bugs that currently impact Bootstra
 
 With over 1,000 commits, a lot has changed, and all of it for the better. A few more notable changes include:
 
-* The docs have been rearranged and updated to be more specific and easier to develop.
-* The progress bar component has been improved for increased flexibility.
-* CSS repaint performance (most notably through scrolling) has been enhanced for several components.
-* Keyboard navigation (forward and backward) is now available for the carousel.
-* Modals should no longer shift left when being opened.
+- The docs have been rearranged and updated to be more specific and easier to develop.
+- The progress bar component has been improved for increased flexibility.
+- CSS repaint performance (most notably through scrolling) has been enhanced for several components.
+- Keyboard navigation (forward and backward) is now available for the carousel.
+- Modals should no longer shift left when being opened.
 
 For a complete breakdown, [read the release changelog](https://github.com/twbs/bootstrap/releases/tag/v3.2.0) or the [v3.2.0 milestone](https://github.com/twbs/bootstrap/issues?milestone=26&page=1&state=closed).
 

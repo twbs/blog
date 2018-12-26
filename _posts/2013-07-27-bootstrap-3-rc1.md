@@ -16,7 +16,7 @@ With today's release we're pushing forward 100% on Bootstrap 3, meaning when you
 
 **Head on over to <{{ site.main }}/> to check it out.** If you're running into any broken links on the downloads, give it a bit for the DNS to sort itself out.
 
-We're fully aware everyone cannot simply jump right into BS3 yet, so we've kept the docs for 2.3.2 around for easy access. You'll find a prominent link to the old docs in all of BS3's documentation. If you're in need, head over to [{{ site.main }}/2.3.2/]({{ site.main }}/2.3.2/).
+We're fully aware everyone cannot simply jump right into BS3 yet, so we've kept the docs for 2.3.2 around for easy access. You'll find a prominent link to the old docs in all of BS3's documentation. If you're in need, head over to <{{ site.main }}/2.3.2/>.
 
 ## What's changed!?
 

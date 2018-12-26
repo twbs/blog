@@ -14,9 +14,9 @@ Today we're shipping another patch release, v3.0.3, to fix a few dozen bugs and 
 
 There are a few dozen bug fixes and changes in this release, but we've called out the ones we think matter most:
 
-* Padding of `.navbar-collapse` and alignment of `.navbar-right:last-child` elements has been reworked.
-* Added a `max-width: 100%;` to `.container`s.
-* Restored the twelfth column's `float: left;` at all grid tiers.
+- Padding of `.navbar-collapse` and alignment of `.navbar-right:last-child` elements has been reworked.
+- Added a `max-width: 100%;` to `.container`s.
+- Restored the twelfth column's `float: left;` at all grid tiers.
 
 See the list below for more information on those changes and more.
 

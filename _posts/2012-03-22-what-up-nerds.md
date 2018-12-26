@@ -9,7 +9,7 @@ Welcome one and all to the new, official Twitter Bootstrap blog. From now on, Ja
 
 ### Quick links
 
-* [Bootstrap homepage]({{ site.main }}/)
-* [GitHub project page](https://github.com/twbs/bootstrap/)
-* [Roadmap](https://github.com/twbs/bootstrap/wiki/Roadmap)
-* [Open issues](https://github.com/twbs/bootstrap/issues?state=open)
+- [Bootstrap homepage]({{ site.main }}/)
+- [GitHub project page](https://github.com/twbs/bootstrap/)
+- [Roadmap](https://github.com/twbs/bootstrap/wiki/Roadmap)
+- [Open issues](https://github.com/twbs/bootstrap/issues?state=open)
