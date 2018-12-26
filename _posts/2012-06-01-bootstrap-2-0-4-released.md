@@ -9,7 +9,7 @@ As always, here's a quick overview of some of the top changes.
 
 ## Docs
 
-- Added `type="button"` to all dismiss buttons in alerts and modals  to avoid a bug in which they prevent their parent's `form` from properly submitting.
+- Added `type="button"` to all dismiss buttons in alerts and modals to avoid a bug in which they prevent their parent's `form` from properly submitting.
 - Added simple documentation to Base CSS for `.lead`.
 - Added new CSS test to illustrate how the navbar, static and fixed, behaves.
 - Clarified grid sizing copy to include mention of responsive variations.
