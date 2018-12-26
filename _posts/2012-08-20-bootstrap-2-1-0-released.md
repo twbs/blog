@@ -21,14 +21,14 @@ We had higher expectations for the number of new features in 2.1, but we toned i
 * **Affix JavaScript plugin.** Make anything stick to the top of the viewport as you scroll with our newest plugin, built to power our new docs navigation.
 * **Block level buttons.** Add `.btn-block` to a button to make it full-width.
 * **State classes on table rows.** Better convey success, warning, and error messages in tables.
-* **Improved disabled states on navs and dropdowns.** Where by "improve" we mean actually present&mdash;just add `.disabled` to the `li`.
+* **Improved disabled states on navs and dropdowns.** Where by "improve" we mean actually present—just add `.disabled` to the `li`.
 * **The navbar component is now white by default, with an optional class to darken it.** In order to have two options for the navbar, light and dark, we needed to have better defaults. Having a lighter default navbar means fewer lines of code as we don't need to override anything for the basic navbar functionality and the override it again to restore the default styles. Missing the black? Just add `.navbar-inverse` to get the dark gray navbar back.
 * **Improved prepended and appended inputs.** No need to place the `input` and `.add-on` on the same line of code (sorry about that by the way). Break them up as you like and they'll still stick together with some crafty `font-size` working.
 * **New base font-size and line-height.** 13px/18px is out, 14px/20px is in. This also has changed the size, line-height, and margin of our heading elements, buttons, and more.
 * **Added variable for navbar collapse trigger point.** Instead of a fixed pixel width of `980px` for triggering the collapsed navbar, we now use a variable so you can customize it for your projects.
 * **Fluid grid offsets.** Thanks to our contributors, the fluid grid now has offset support to match our fixed (pixel) grid.
 * **Fluid grid system variables are no longer fixed percentages.** Instead, they are calculated in LESS with `percentage()` based on the default, fixed-width grid variables. Math!
-* **Removed LESS docs page.** We will no longer document variables and mixins in two places&mdash;rewriting that stuff was painful and took too much time. Instead, just checkout the .less files.
+* **Removed LESS docs page.** We will no longer document variables and mixins in two places—rewriting that stuff was painful and took too much time. Instead, just checkout the .less files.
 
 ## Thanks, nerds
 

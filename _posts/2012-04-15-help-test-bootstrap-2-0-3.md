@@ -3,7 +3,7 @@ layout: post
 title: Help test Bootstrap 2.0.3
 ---
 
-Our next release, [2.0.3](https://github.com/twbs/bootstrap/issues?milestone=10&state=open), is almost ready to rock, but we need your help to get the finish line in the best shape possible. Similar to what we did for the big 2.0 launch, we're asking for the community's help in testing out the release's work-in-progress branch. We have a ton of bug fixes&mdash;another 80 or so since 2.0.2&mdash;and want to have the highest quality release we can.
+Our next release, [2.0.3](https://github.com/twbs/bootstrap/issues?milestone=10&state=open), is almost ready to rock, but we need your help to get the finish line in the best shape possible. Similar to what we did for the big 2.0 launch, we're asking for the community's help in testing out the release's work-in-progress branch. We have a ton of bug fixes—another 80 or so since 2.0.2—and want to have the highest quality release we can.
 
 ## Why?
 
@@ -23,4 +23,4 @@ Just like last time, we're pushing out a release candidate of the 2.0.3 code and
 
 -----
 
-We're only human, and we're bound to make a few mistakes in our code as Bootstrap continues to grow. Thanks in advance for all your help and support&mdash;it's appreciated more than you know.
+We're only human, and we're bound to make a few mistakes in our code as Bootstrap continues to grow. Thanks in advance for all your help and support—it's appreciated more than you know.

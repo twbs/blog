@@ -7,9 +7,9 @@ There is a thread on the mailing list about [how to describe Bootstrap](https://
 
 ## Name
 
-Casually, it's just Bootstrap. That's noun and verb, for those wondering&mdash;Bootstrap the project and "to Bootstrap a project", respectively. Formally, we call it Twitter Bootstrap, a change that came with v2.0.0. Previously we called it "Bootstrap, from Twitter" to emphasize the project over our employer, but it just became too verbose and awkward to say.
+Casually, it's just Bootstrap. That's noun and verb, for those wondering—Bootstrap the project and "to Bootstrap a project", respectively. Formally, we call it Twitter Bootstrap, a change that came with v2.0.0. Previously we called it "Bootstrap, from Twitter" to emphasize the project over our employer, but it just became too verbose and awkward to say.
 
-Related, the shorthand abbreviation we use is BS&mdash;not TB, TBS, or TwBs. I don't know why, but this feels better than TB since that's the name of an infectious disease and all that.
+Related, the shorthand abbreviation we use is BS—not TB, TBS, or TwBs. I don't know why, but this feels better than TB since that's the name of an infectious disease and all that.
 
 ## Description
 
