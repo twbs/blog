@@ -51,7 +51,7 @@ a:focus {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
@@ -90,7 +90,7 @@ ul, ol, dl {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 dd {
   margin-bottom: .5rem;
@@ -195,9 +195,9 @@ tbody tr:nth-child(odd) th {
 
 .container {
   max-width: 38rem;
-  padding-left:  1rem;
+  padding-left: 1rem;
   padding-right: 1rem;
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -209,7 +209,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
-  padding-top:    1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
 }
@@ -279,7 +279,7 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li small {
   font-size: 75%;
-  color: #999;
+  color: #767676;
 }
 .related-posts li a:hover {
   color: #268bd2;
@@ -343,12 +343,12 @@ a.pagination-item:hover {
   }
   .pagination-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius:    4px;
+    border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
   }
   .pagination-item:last-child {
     margin-left: -1px;
-    border-top-right-radius:    4px;
+    border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
 }
