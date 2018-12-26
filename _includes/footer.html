@@ -6,16 +6,20 @@
         </ul>
         <ul>
           <li>
-            <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" title="Watch Bootstrap's repository" width="112" height="20"></iframe>
+            <iframe class="github-btn lazy" data-src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" title="Watch Bootstrap's repository" width="112" height="20"></iframe>
+            <noscript><iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" title="Watch Bootstrap's repository" width="112" height="20"></iframe></noscript>
           </li>
           <li>
-            <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" title="Fork Bootstrap's repository" width="105" height="20"></iframe>
+            <iframe class="github-btn lazy" data-src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" title="Fork Bootstrap's repository" width="105" height="20"></iframe>
+            <noscript><iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" title="Fork Bootstrap's repository" width="105" height="20"></iframe></noscript>
           </li>
         </ul>
         <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
       </footer>
 
     </div> <!-- /close container -->
+
+    {% include lazyload.html %}
 
   </body>
 </html>
