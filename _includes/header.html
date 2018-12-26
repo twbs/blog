@@ -19,9 +19,7 @@
       {%- endif -%}
     </title>
 
-    <!-- Favicons -->
-    <link rel="icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    {% include favicons.html %}
 
     {% if paginator.total_pages > 1 -%}
     {%- if paginator.page == 1 -%}
