@@ -34,7 +34,7 @@ Recess is a project developed at Twitter to help support our internal style guid
 
 ![Recess screenshot](/assets/img/2012/04/recess.png)
 
-At it’s core, Recess is a linter, but with the added ability to compile and/or reformat your css/less files: normalizing whitespace, stripping 0 values, reordering properties, and any other safe stylistic optimizations it can find.
+At it's core, Recess is a linter, but with the added ability to compile and/or reformat your css/less files: normalizing whitespace, stripping 0 values, reordering properties, and any other safe stylistic optimizations it can find.
 
 What this means is that instead of just telling you where you have problems, you can actually tell Recess to just go ahead and tidy your code up for you.
 

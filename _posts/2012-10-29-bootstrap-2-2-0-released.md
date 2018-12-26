@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap 2.2.0 released
 ---
 
-Aww yeah, our first release since leaving Twitter is here with Bootstrap 2.2.0! We originally planned to release this as 2.1.2, but given the timing and scope we’re bumping the version. Included in this release are dozens of bug fixes, documentation enhancements, and a few new and improved features.
+Aww yeah, our first release since leaving Twitter is here with Bootstrap 2.2.0! We originally planned to release this as 2.1.2, but given the timing and scope we're bumping the version. Included in this release are dozens of bug fixes, documentation enhancements, and a few new and improved features.
 
 ## tl;dr
 
@@ -32,7 +32,7 @@ For the full list of issues included in this release, visit the [2.2.0 milestone
 
 ## Next steps
 
-As a quick side note, we’re still working on moving Bootstrap to its own organization on GitHub. That will come with a couple other big changes, but more on that soon. We’ll be jumping on the next release shortly for more bugfixes, but until then enjoy the fixes and new hotness!
+As a quick side note, we're still working on moving Bootstrap to its own organization on GitHub. That will come with a couple other big changes, but more on that soon. We'll be jumping on the next release shortly for more bugfixes, but until then enjoy the fixes and new hotness!
 
 Lastly, thanks everyone again for submitting issues and contributing—you rock!
 

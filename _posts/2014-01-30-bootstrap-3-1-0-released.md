@@ -183,7 +183,7 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 ### Deprecations
 
 - [#10370](https://github.com/twbs/bootstrap/issues/10370): Deprecated the `.pull-right` method for aligning dropdown menus. Includes the following changes:
-  * Removed an old and unused pair of selectors that didn’t properly target the right-aligned navbar alignment of dropdown menus.
+  * Removed an old and unused pair of selectors that didn't properly target the right-aligned navbar alignment of dropdown menus.
   * Deprecates the `.pull-right` alignment in favor of a more specific and unique class name.
   * Adds `.dropdown-menu-right` as the new alignment class. This is then mixin-ed into the `.navbar-right.navbar-nav` dropdown menus for auto-alignment (keeping the current behavior we have today).
   * Adds new ability to override that auto-alignment though with the new `.dropdown-menu-left`, which is mixin-ed in the same way to provide the appropriate specificity of an override. This should never need to be used except for within right-aligned `.navbar-nav` components.
