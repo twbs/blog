@@ -7,7 +7,7 @@ Today we're releasing [Bootstrap 2.0.3]({{ site.main }}/), another bugfix releas
 
 ## Makefile
 
-In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](https://jshint.com/) and [Recess](http://twitter.github.io/recess/), linters for javascript and CSS. To continue to run `make` via Terminal, do the following:
+In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](https://jshint.com/) and [Recess](http://twitter.github.io/recess/), linters for JavaScript and CSS. To continue to run `make` via Terminal, do the following:
 
 {% highlight bash %}
 $ npm install -g recess jshint
@@ -51,7 +51,7 @@ We've also removed the bootstrap.zip file from the repository, so make runs much
 - Fixed uneditable inputs: text now cuts off and does not wrap, making it behave just like a default `input`.
 - Labels and badges are now `vertical-align: baseline;` so they line up with surrounding text.
 
-## Javascript
+## JavaScript
 
 - Add jshint support
 - Add travis-ci support w/ headless phantom integration
@@ -89,7 +89,7 @@ We've also removed the bootstrap.zip file from the repository, so make runs much
     - Remove unnecessary duplicate help text in first example
     - Added mention of required `input` class, `.search-query`, for the search form variation
     - Removed incorrect mention of form fields being `display: block;` to start as fields are `inline-block` to start.
-- Added mention of `data-target` attribute for the dropdowns javascript plugin to show how to keep custom URLs intact on links with `.dropdown-toggle` class.
+- Added mention of `data-target` attribute for the dropdowns JavaScript plugin to show how to keep custom URLs intact on links with `.dropdown-toggle` class.
 - Updated the Kippt screenshot on the homepage to reflect their recent responsive redesign and upgrade to 2.0.2.
 
 -----

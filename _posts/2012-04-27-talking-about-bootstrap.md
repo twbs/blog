@@ -13,7 +13,7 @@ Related, the shorthand abbreviation we use is BS&mdash;not TB, TBS, or TwBs. I d
 
 ## Description
 
-We worked at this for a good bit before setting on our current tagline, "Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions." Previously, it was much more descriptive to the framework's contents, and thus quite long and wordy. We wanted to convey the technical details properly heading into 2.0.0 (when we changed the tagline), but without the bulk. Instead, we focus on the roles Bootstrap can assist folks with: HTML, CSS, and Javascript. Any other description is fine, but I wanted to share some insight into the official tagline just for context.
+We worked at this for a good bit before setting on our current tagline, "Simple and flexible HTML, CSS, and JavaScript for popular user interface components and interactions." Previously, it was much more descriptive to the framework's contents, and thus quite long and wordy. We wanted to convey the technical details properly heading into 2.0.0 (when we changed the tagline), but without the bulk. Instead, we focus on the roles Bootstrap can assist folks with: HTML, CSS, and JavaScript. Any other description is fine, but I wanted to share some insight into the official tagline just for context.
 
 ## Framework
 
