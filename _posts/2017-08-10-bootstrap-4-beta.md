@@ -27,6 +27,7 @@ For those who haven't been using the v4 alpha releases, here are some highlights
 Okay, phew, want to learn even more? Keep reading, or jump right to [those brand new docs]({{ site.main }}/)!
 
 ## New look
+
 Bootstrap 4 has been sporting a slightly updated look throughout our alpha releases, but it wasn't until recently that we gave the docs and our components a refresh, too.
 
 [![Bootstrap 4 beta docs](/assets/img/2017/bootstrap-4-beta.png)]({{ site.main }}/)

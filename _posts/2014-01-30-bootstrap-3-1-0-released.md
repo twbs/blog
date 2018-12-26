@@ -49,10 +49,10 @@ We've been talking about it for what seems like forever, but thanks to all our c
 
 We're constantly trying to improve our tools for developing Bootstrap and v3.1 brings a slew of updates to do just that.
 
-* We've switched from Recess to grunt-contrib-less for our compiler, giving us access to Less 1.6.x (as opposed to 1.3.x with Recess).
-* Our compiled code is virtually identical in formatting and organization thanks to [CSScomb](http://csscomb.com/) and some other Grunt-fu.
-* Tests also run a tad faster with the help of some magical caching and parallelization.
-* The web Customizer is now generated from a Grunt task, meaning we'll never miss updating or adding a variable again. If you contribute to Bootstrap regularly, just run `grunt` and commit to update the page.
+- We've switched from Recess to grunt-contrib-less for our compiler, giving us access to Less 1.6.x (as opposed to 1.3.x with Recess).
+- Our compiled code is virtually identical in formatting and organization thanks to [CSScomb](http://csscomb.com/) and some other Grunt-fu.
+- Tests also run a tad faster with the help of some magical caching and parallelization.
+- The web Customizer is now generated from a Grunt task, meaning we'll never miss updating or adding a variable again. If you contribute to Bootstrap regularly, just run `grunt` and commit to update the page.
 
 **Heads up!** If you develop Bootstrap locally, be sure to nuke your `node_modules/` directory and run `npm install` before getting started with v3.1.
 
@@ -118,9 +118,9 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#11817](https://github.com/twbs/bootstrap/issues/11817): Rework input groups to use the `font-size: 0;` and `white-space: nowrap` hack for a more durable component with regards to code formatting and custom font size changes.
 - [#11829](https://github.com/twbs/bootstrap/issues/11829): Add `.make-xs-column` mixins to complement the recently added extra small predefined grid classes.
 - [#11836](https://github.com/twbs/bootstrap/issues/11836): Along with the form validation update, we reset some key form and icon styles:
-  * All `.form-control`s within inline forms are set to `width: auto;` to prevent stacking of `.form-label` within a `.form-group`.
-  * Removes all `select.form-control` settings since those are now inherited by the above change
-  * Removes the `width: 1em;` from the Glyphicons because it was virtually impossible to override.
+  - All `.form-control`s within inline forms are set to `width: auto;` to prevent stacking of `.form-label` within a `.form-group`.
+  - Removes all `select.form-control` settings since those are now inherited by the above change
+  - Removes the `width: 1em;` from the Glyphicons because it was virtually impossible to override.
 - [#11841](https://github.com/twbs/bootstrap/issues/11841): Breadcrumb padding values now use variables.
 - [#11859](https://github.com/twbs/bootstrap/issues/11859): Restore `@dropdown-caret-color` variable, but deprecate it.
 - [#11861](https://github.com/twbs/bootstrap/issues/11861): Add `@list-group-active-text-color` variable for improved customization on active list group items.
@@ -183,10 +183,10 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 ### Deprecations
 
 - [#10370](https://github.com/twbs/bootstrap/issues/10370): Deprecated the `.pull-right` method for aligning dropdown menus. Includes the following changes:
-  * Removed an old and unused pair of selectors that didn't properly target the right-aligned navbar alignment of dropdown menus.
-  * Deprecates the `.pull-right` alignment in favor of a more specific and unique class name.
-  * Adds `.dropdown-menu-right` as the new alignment class. This is then mixin-ed into the `.navbar-right.navbar-nav` dropdown menus for auto-alignment (keeping the current behavior we have today).
-  * Adds new ability to override that auto-alignment though with the new `.dropdown-menu-left`, which is mixin-ed in the same way to provide the appropriate specificity of an override. This should never need to be used except for within right-aligned `.navbar-nav` components.
+  - Removed an old and unused pair of selectors that didn't properly target the right-aligned navbar alignment of dropdown menus.
+  - Deprecates the `.pull-right` alignment in favor of a more specific and unique class name.
+  - Adds `.dropdown-menu-right` as the new alignment class. This is then mixin-ed into the `.navbar-right.navbar-nav` dropdown menus for auto-alignment (keeping the current behavior we have today).
+  - Adds new ability to override that auto-alignment though with the new `.dropdown-menu-left`, which is mixin-ed in the same way to provide the appropriate specificity of an override. This should never need to be used except for within right-aligned `.navbar-nav` components.
 - [#11660](https://github.com/twbs/bootstrap/issues/11660): Deprecate `small` and `.small` in `blockquote` citation in favor of `footer` element.
 - [#12398](https://github.com/twbs/bootstrap/issues/12398): Deprecate `.box-shadow()` mixin.
 
@@ -215,9 +215,9 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#12345](https://github.com/twbs/bootstrap/issues/12345): Add note about printer viewport weirdness.
 - [#12380](https://github.com/twbs/bootstrap/issues/12380): Add link to unofficial German translation, <http://holdirbootstrap.de/>.
 - Updated browser and device support documentation:
-  * [#11055](https://github.com/twbs/bootstrap/issues/11055): add mention of select menu styling on Android stock browsers with included optional fix.
-  * Update IDs and docs nav to include bookmark links to each section.
-  * Add callout to navbar docs about fixed position, inputs, and virtual keyboard.
+  - [#11055](https://github.com/twbs/bootstrap/issues/11055): add mention of select menu styling on Android stock browsers with included optional fix.
+  - Update IDs and docs nav to include bookmark links to each section.
+  - Add callout to navbar docs about fixed position, inputs, and virtual keyboard.
 
 ### Build system & packaging
 
@@ -225,10 +225,10 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#11739](https://github.com/twbs/bootstrap/issues/11739): Lint `docs-assets/js/application.js` and `docs-assets/js/customizer.js`.
 - [#11780](https://github.com/twbs/bootstrap/issues/11780): Don't ignore `Gruntfile.js` or `package.json` in `bower.json` as they're required for compilation.
 - [#11790](https://github.com/twbs/bootstrap/issues/11790): Switch from Recess to grunt-contrib-less.
-  * Dropped `grunt-recess` for `grunt-contrib-less` to get the latest version of Less (v1.6.x) since Recess was still quite behind.
-  * Adds CSScomb to take place of Recess's CSS linting. Includes custom `.csscomb.json` in project root with basically the same property order as Recess.
-  * Fixes duplicate CSS generation from the nested `.clearfix` class and mixin by switching to `&:extend(.mixin all)` (also mentioned in changes section).
-  * Compiled CSS looks only slightly different—yay!
+  - Dropped `grunt-recess` for `grunt-contrib-less` to get the latest version of Less (v1.6.x) since Recess was still quite behind.
+  - Adds CSScomb to take place of Recess's CSS linting. Includes custom `.csscomb.json` in project root with basically the same property order as Recess.
+  - Fixes duplicate CSS generation from the nested `.clearfix` class and mixin by switching to `&:extend(.mixin all)` (also mentioned in changes section).
+  - Compiled CSS looks only slightly different—yay!
 - [#11804](https://github.com/twbs/bootstrap/issues/11804): Enable CSS source maps in `grunt-contrib-less`.
 - [#12003](https://github.com/twbs/bootstrap/issues/12003): Customizer now compiles `theme.less` with updated values.
 - [#12315](https://github.com/twbs/bootstrap/issues/12315): Add npm caching based on `npm-shrinkwrap.canonical.json`.

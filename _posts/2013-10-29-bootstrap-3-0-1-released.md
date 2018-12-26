@@ -154,7 +154,7 @@ Compared to previous releases, we're going into a bit more detail here with the 
 - [#11186](https://github.com/twbs/bootstrap/issues/11186): Add `background-color` hacks so that clicking carousel indicators in IE8-9 works as intended
 - [#11188](https://github.com/twbs/bootstrap/issues/11188): Refactor `z-index` on navbars. Removes the default `z-index: 1000;` and instead only applies it to static-top, fixed-top, and fixed-bottom. Also fixes up the broken default navbar example's fubared padding.
 - [#11206](https://github.com/twbs/bootstrap/issues/11206): Remove `padding-left` from first list item within `.list-inline`
-- [#11244](https://github.com/twbs/bootstrap/issues/11244): Adds `.animation()` mixin to replace `.progress-bar`'s regular CSS animation properties (and drops the `-moz`, `-ms`, and `-o` prefixes as they are not needed per https://caniuse.com/#feat=css-animation).
+- [#11244](https://github.com/twbs/bootstrap/issues/11244): Adds `.animation()` mixin to replace `.progress-bar`'s regular CSS animation properties (and drops the `-moz`, `-ms`, and `-o` prefixes as they are not needed per <https://caniuse.com/#feat=css-animation>).
 - [#11248](https://github.com/twbs/bootstrap/issues/11248): Apply `background-color: #fff;` to `select`s in print styles to fix Chrome bug
 - Audited Customizer variables section and rearranged content
 

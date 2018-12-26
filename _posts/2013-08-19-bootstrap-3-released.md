@@ -11,52 +11,52 @@ Today, on the two year anniversary of releasing Bootstrap to the world, we're sh
 
 For those who haven't been following along too closely, here's a recap of all the biggest changes shipping with Bootstrap 3:
 
-* **New design and an optional theme!** With v3, we've gone flat. Don't call it a trend—it's all about customization, folks. Since we simplified the aesthetics though, we thought it'd help to have an optional theme. To use it, check out the [Bootstrap theme example]({{ site.main }}/examples/theme/).
-* **Mobile first and always responsive!** Nearly everything has been redesigned and rebuilt to start from your handheld devices and scale up.
-* **Brand new Customizer!** It's been redesigned, is now compiled in the browser instead of Heroku, has better dependency support, and even has built-in error handling. Better yet, we now save your customizations to an anonymous Gist for easy reuse, sharing, and modifications.
-* **Better box model by default.** Everything in Bootstrap gets `box-sizing: border-box`, making for easier sizing options and an enhanced grid system.
-* **Super-powered grid system.** With four tiers of grid classes—phones, tablets, desktops, and large desktops—you can do some super crazy awesome layouts.
-* **Rewritten JavaScript plugins.** All events are now namespaced, no-conflict stuff works way better, and more.
-* **New Glyphicons icon font!** While they were gone for a while, we've since restored the Glyphicons to the main repo. In 2.x, they were images, but now they're in font format and include 40 new glyphs.
-* **Overhauled navbar.** It's now always responsive and comes with some super handy and re-arrangable subcomponents.
-* **Modals are way more responsive.** We've overhauled the modal code to make it way more responsive on mobile devices. They now scroll the entire viewport instead of having a max-height.
-* **Added some components!** New to the mix are panels and list groups.
-* **Removed some components!** We've dropped the accordion (replaced with collapsible panels), submenus, typeahead, and a few more small items. (Worth celebrating as much as adding new ones.)
-* **More consistent base and sizing classes.** Buttons, tables, forms, alerts, and more have been updated to have more consistent classes for easier customizer and extensibility.
-* **Docs have been blown up, yo.** We've added a lot of new documentation, not only for our components, but for browser support (including gotchas and bugs), license FAQs, third party support (and workarounds), accessibility, and more.
-* **Dropped Internet Explorer 7 and Firefox 3.6 support.** For Internet Explorer 8, you'll need to include [Respond.js](https://github.com/scottjehl/Respond) for all the media queries to work correctly. You can read more about [browser support]({{ site.main }}/getting-started/#browser-support) in the docs.
+- **New design and an optional theme!** With v3, we've gone flat. Don't call it a trend—it's all about customization, folks. Since we simplified the aesthetics though, we thought it'd help to have an optional theme. To use it, check out the [Bootstrap theme example]({{ site.main }}/examples/theme/).
+- **Mobile first and always responsive!** Nearly everything has been redesigned and rebuilt to start from your handheld devices and scale up.
+- **Brand new Customizer!** It's been redesigned, is now compiled in the browser instead of Heroku, has better dependency support, and even has built-in error handling. Better yet, we now save your customizations to an anonymous Gist for easy reuse, sharing, and modifications.
+- **Better box model by default.** Everything in Bootstrap gets `box-sizing: border-box`, making for easier sizing options and an enhanced grid system.
+- **Super-powered grid system.** With four tiers of grid classes—phones, tablets, desktops, and large desktops—you can do some super crazy awesome layouts.
+- **Rewritten JavaScript plugins.** All events are now namespaced, no-conflict stuff works way better, and more.
+- **New Glyphicons icon font!** While they were gone for a while, we've since restored the Glyphicons to the main repo. In 2.x, they were images, but now they're in font format and include 40 new glyphs.
+- **Overhauled navbar.** It's now always responsive and comes with some super handy and re-arrangable subcomponents.
+- **Modals are way more responsive.** We've overhauled the modal code to make it way more responsive on mobile devices. They now scroll the entire viewport instead of having a max-height.
+- **Added some components!** New to the mix are panels and list groups.
+- **Removed some components!** We've dropped the accordion (replaced with collapsible panels), submenus, typeahead, and a few more small items. (Worth celebrating as much as adding new ones.)
+- **More consistent base and sizing classes.** Buttons, tables, forms, alerts, and more have been updated to have more consistent classes for easier customizer and extensibility.
+- **Docs have been blown up, yo.** We've added a lot of new documentation, not only for our components, but for browser support (including gotchas and bugs), license FAQs, third party support (and workarounds), accessibility, and more.
+- **Dropped Internet Explorer 7 and Firefox 3.6 support.** For Internet Explorer 8, you'll need to include [Respond.js](https://github.com/scottjehl/Respond) for all the media queries to work correctly. You can read more about [browser support]({{ site.main }}/getting-started/#browser-support) in the docs.
 
 For our pre-release testers and others who have been following along with the RCs, here's a list of some of the more prominent changes made since RC2:
 
-* Hella bugs have been fixed (duh, right?).
-* Restored the Glyphicons icon font.
-* Navbars now require a `.navbar-default` for the standard version.
-* Panels now require a `.panel-default` for the standard gray variation.
-* Alerts now require a modifier class (e.g., `.alert.alert-warning` for the previously default yellow alert).
-* Multiple responsive utilities can now be applied to the same element.
-* Examples are back in the main repo and have been fully updated.
-* Docs have been updated for more consistent placement, naming, etc.
-* Customizer compiling bugs have all been fixed.
-* The optional theme has been added and is demonstrated in an example.
-* Jumbotrons are now made to extend the full width of the viewport with a container inside, but if you reverse that, the jumbotron in a container will be rounded and padded.
-* The navbar components have been updated to better account for the presence of containers and more. You'll see some new margin and padding changes, but no markup changes should be required.
+- Hella bugs have been fixed (duh, right?).
+- Restored the Glyphicons icon font.
+- Navbars now require a `.navbar-default` for the standard version.
+- Panels now require a `.panel-default` for the standard gray variation.
+- Alerts now require a modifier class (e.g., `.alert.alert-warning` for the previously default yellow alert).
+- Multiple responsive utilities can now be applied to the same element.
+- Examples are back in the main repo and have been fully updated.
+- Docs have been updated for more consistent placement, naming, etc.
+- Customizer compiling bugs have all been fixed.
+- The optional theme has been added and is demonstrated in an example.
+- Jumbotrons are now made to extend the full width of the viewport with a container inside, but if you reverse that, the jumbotron in a container will be rounded and padded.
+- The navbar components have been updated to better account for the presence of containers and more. You'll see some new margin and padding changes, but no markup changes should be required.
 
 
 ## The numbers game
 
 For those keeping track, Bootstrap 3 took nearly nine months to design, develop, and ship. In that time we've had:
 
-* Over 2,700 commits from 319 contributors
-* 379 files changed, meaning 84,000 additions and deletions
-* Over 900 comments in the pull request
-* Over a 20% reduction in minified CSS (from 127kb to 97kb)
+- Over 2,700 commits from 319 contributors
+- 379 files changed, meaning 84,000 additions and deletions
+- Over 900 comments in the pull request
+- Over a 20% reduction in minified CSS (from 127kb to 97kb)
 
 Beyond this release, numbers everywhere else are looking amazing. It's been staggering to watch these grow.
 
-* Over 56,000 stars and 19,000 forks on GitHub (still number one, baby!).
-* Over 9,800 closed issues (that's over 13 a day since we released Bootstrap).
-* Last month, we had nearly 15 million pageviews on our docs (and that barely includes anything from our v3 pre-releases).
-* In the last year, we've logged over 3 million downloads just from the docs, 40% of which are from the Customizer.
+- Over 56,000 stars and 19,000 forks on GitHub (still number one, baby!).
+- Over 9,800 closed issues (that's over 13 a day since we released Bootstrap).
+- Last month, we had nearly 15 million pageviews on our docs (and that barely includes anything from our v3 pre-releases).
+- In the last year, we've logged over 3 million downloads just from the docs, 40% of which are from the Customizer.
 
 This was a massive undertaking and it couldn't have come out better. Thanks once again to all our contributors and the rest of the community for helping us make this a reality.
 

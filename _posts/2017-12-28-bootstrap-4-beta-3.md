@@ -16,7 +16,7 @@ As mentioned in [our Beta 2 release]({% post_url 2017-10-19-bootstrap-4-beta-2 %
 
 - **Rewrote native and custom check controls.** Both browser default and custom checkboxes and radios now have simpler markup after removing the `<input>` from the `<label>`. Now, all checkboxes and radios have a parent `<div>` and sibling `<input>` and `<label>` pair. This is essential for form validation and disabled inputs because we can use the input's state to style the label.
 
-    In addition, custom checkbox and radio elements no longer have a `.custom-control-indicator`. This is generated from the new `.custom-control-label`.
+  In addition, custom checkbox and radio elements no longer have a `.custom-control-indicator`. This is generated from the new `.custom-control-label`.
 
 - **Input groups were rewritten** with specific `.input-group-{prepend|append}` classes. The new approach allows us to support validation styles and messages within input groups, while also adding support for custom selects, custom file inputs, and multiple `.form-control`s.
 

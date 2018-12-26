@@ -57,4 +57,3 @@ Please reach out to us on Twitter or GitHub with any questions or feedback.
 <3,
 
 @mdo and @fat
-
