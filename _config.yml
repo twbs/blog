@@ -36,10 +36,10 @@ future:             true
 
 exclude:
   - .sass-cache
+  - .netlify
   - vendor/
   - Gemfile
   - Gemfile.lock
-  - netlify.toml
   - README.md
 
 # Links
