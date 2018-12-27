@@ -16,8 +16,6 @@ redirect_from:
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {% include tweet-button.html %}
-
     {% if post.video %}
     {%- include video.html -%}
     {% endif %}

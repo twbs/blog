@@ -1,5 +1,0 @@
-{%- assign page_title = post.title | default: page.title -%}
-{%- assign page_url = post.url | default: page.url -%}
-<div class="twitter-btn">
-  <a href="https://twitter.com/intent/tweet?text={{ page_title | url_encode }}&via=getbootstrap&url={{ site.url | append: page_url | url_encode }}" rel="noopener" target="_blank" onclick="window.open(this.href,null,'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=550,width=500');return false;">Tweet</a>
-</div>
