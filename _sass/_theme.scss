@@ -163,6 +163,7 @@ h2, h3, h4 {
   line-height: 1.3;
 }
 .carbonad-tag {
+  color: #707070 !important;
   float: none !important;
   display: block !important;
   width: auto !important;
@@ -171,6 +172,10 @@ h2, h3, h4 {
   margin-bottom: 0;
   text-align: left !important;
   font-family: inherit !important;
+
+  a {
+    color: inherit !important;
+  }
 }
 #azcarbon img:last-child {
   margin-bottom: 0; /* undo phantom image margin */
