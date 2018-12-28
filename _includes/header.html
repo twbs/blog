@@ -40,7 +40,14 @@
     {% include analytics.html %}
 
   </head>
-  {% capture body_class %}{{ page.layout }}{% if page.body_class %} page-{{ page.body_class }}{% elsif page.slug %} page-{{ page.slug | slugify }}{% elsif page.dir %} page-{{ page.dir | slugify }}{% endif %}{% endcapture %}
+
+  {% capture body_class -%}
+    {{ page.layout }} {% if page.body_class -%} page-{{ page.body_class }}
+                      {%- elsif page.slug -%} page-{{ page.slug | slugify }}
+                      {%- elsif page.dir -%} page-{{ page.dir | slugify }}
+                      {%- endif -%}
+  {%- endcapture -%}
+
   <body class="{{ body_class }}">
 
     <div class="masthead">
