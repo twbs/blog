@@ -6,15 +6,18 @@ description: "A list of all blog posts with videos"
 
 {%- assign posts_with_videos = site.posts | where_exp: "post", "post.video != nil" -%}
 {%- for post in posts_with_videos -%}
-{%- if forloop.first == true %}
-<ul class="list">
-{%- endif %}
-  <li>
-    <span>{{ post.date | date_to_string }}</span>
-    <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
-    {%- include video.html -%}
-  </li>
-{%- if forloop.last == true %}
-</ul>
-{%- endif %}
+  {%- assign lazyload = true -%}
+
+  {%- if forloop.first == true %}
+  {%- assign lazyload = false -%}
+  <ul class="list">
+  {%- endif %}
+    <li>
+      <span>{{ post.date | date_to_string }}</span>
+      <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+      {%- include video.html do_lazyload=lazyload -%}
+    </li>
+  {%- if forloop.last == true %}
+  </ul>
+  {%- endif %}
 {%- endfor -%}

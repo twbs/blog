@@ -359,6 +359,10 @@ a.pagination-item:hover {
   height: 0;
   padding: 0;
   overflow: hidden;
+
+  .no-js & {
+    display: none;
+  }
 }
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
