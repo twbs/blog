@@ -29,7 +29,10 @@ h2, h3, h4 {
 /* Bootstrap "B" icon */
 .bs-docs-booticon {
   display: inline-block;
-  margin-bottom: 1rem;
+
+  svg {
+    margin-bottom: 1rem;
+  }
 
   &:hover,
   &:focus {
