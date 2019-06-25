@@ -19,7 +19,7 @@ Just like last time, we're pushing out a release candidate of the 2.0.3 code and
 - Don't want to check out any code? [We're hosting the latest version of the docs here (`http://203rc1.getbootstrap.com`) so you can easily load it up on devices and such for testing.
 - Load up the new docs in your favorite, or your least favorite, browser or device and start testing.
 - When you find a bug or have feedback, [open a new issue on GitHub](https://github.com/twbs/bootstrap/issues?sort=created&direction=desc&state=open). Please include as much context and information as possible. If it's a visual bug, please include a screenshot. If it pertains to JavaScript, consider including a [jsfiddle](https://jsfiddle.net/) or [jsbin](https://jsbin.com/).
-- If it's a code fix you can make yourself, go ahead and submit a pull request against `2.0.3-wip`. Be sure to read the [Contributing to Bootstrap](https://github.com/twbs/bootstrap/wiki/Contributing-to-Bootstrap) wiki page first though for a bit of insight into our code practices. (Unsure how to submit a pull request? [Learn more here](https://help.github.com/articles/using-pull-requests/).)
+- If it's a code fix you can make yourself, go ahead and submit a pull request against `2.0.3-wip`. Be sure to read the [Contributing to Bootstrap](https://github.com/twbs/bootstrap/wiki/Contributing-to-Bootstrap) wiki page first though for a bit of insight into our code practices. (Unsure how to submit a pull request? [Learn more here](https://help.github.com/en/articles/about-pull-requests).)
 
 -----
 
