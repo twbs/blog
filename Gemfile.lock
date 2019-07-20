@@ -61,8 +61,16 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    mdl (0.8.0)
+      kramdown (~> 2.0)
+      kramdown-parser-gfm (~> 1.0)
+      mixlib-cli (~> 2.1, >= 2.1.1)
+      mixlib-config (>= 2.2.1, < 4)
     mercenary (0.3.6)
     mini_portile2 (2.4.0)
+    mixlib-cli (2.1.1)
+    mixlib-config (3.0.5)
+      tomlrb
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.7-x64-mingw32)
@@ -85,6 +93,7 @@ GEM
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    tomlrb (1.2.9)
     typhoeus (1.3.1)
       ethon (>= 0.9.0)
     unicode-display_width (1.6.0)
@@ -103,6 +112,7 @@ DEPENDENCIES
   jekyll-redirect-from (~> 0.15.0)
   jekyll-seo-tag (~> 2.6.1)
   jekyll-sitemap (~> 1.4.0)
+  mdl (~> 0.8.0)
   wdm (~> 0.1.1)
 
 BUNDLED WITH
