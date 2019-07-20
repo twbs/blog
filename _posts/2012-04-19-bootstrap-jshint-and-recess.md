@@ -26,7 +26,7 @@ To begin with, Bootstrap's JS will use the following options (stored in a .jshin
 }
 {% endhighlight %}
 
-We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven't played with JSHint, you should definitely take a moment to <a href="https://jshint.com/">check it out right now</a>!
+We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven't played with JSHint, you should definitely take a moment to [check it out right now](https://jshint.com/)!
 
 ### [Recess](http://twitter.github.io/recess/)
 
