@@ -1,9 +1,9 @@
   <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
     <div class="container d-flex align-items-md-center py-2">
       <nav class="nav mx-auto">
-        <a class="text-dark fw-500 py-1 mr-3" href="#">All posts</a>
-        <a class="text-dark py-1 mr-3" href="#">Archive</a>
-        <a class="text-dark py-1 mr-3" href="#">Videos</a>
+        <a class="text-dark fw-500 py-1 mr-3" href="/">All posts</a>
+        <a class="text-dark py-1 mr-3" href="{{ "archive/" | relative_url }}">Archive</a>
+        <a class="text-dark py-1 mr-3" href="{{ "videos/" | relative_url }}">Videos</a>
         <a class="text-dark py-1" href="{{ "/feed.xml" | relative_url }}">Subscribe</a>
       </nav>
     </div>
