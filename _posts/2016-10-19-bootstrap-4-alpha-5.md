@@ -54,7 +54,7 @@ The navbar is a tricky one—there's so much functionality and styling that can 
 
 ### Getting to Alpha 6
 
-We're planning on one more major alpha release before getting into the slightly more stable beta ships. There's still more to do around our major components—the navbar, flexbox variants, utilities, and accessibilty—before we button things up.
+We're planning on one more major alpha release before getting into the slightly more stable beta ships. There's still more to do around our major components—the navbar, flexbox variants, utilities, and accessibility—before we button things up.
 
 Once done, we'll review all on our docs and update all our example templates to the latest and greatest. From there we'll need your help to test these changes and report bugs. Stay tuned for more updates as we get closer to that release.
 
