@@ -1,14 +1,20 @@
 ---
 layout: default
-title: Posts List
-description: "A list of all blog posts"
+title: Archive
+description: "All Bootstrap Blog posts by year"
 ---
 
-<ul class="list">
-{%- for post in site.posts %}
-  <li>
-    <span>{{ post.date | date_to_string }}</span>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor -%}
-</ul>
+<div class="posts-container mx-auto px-3 py-5">
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
+  {% for year in postsByYear %}
+  <h3>{{ year.name }}</h3>
+  <ul class="list mb-5">
+    {% for post in year.items %}
+    <li>
+      <span>{{ post.date | date: '%b %d, %Y' }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
