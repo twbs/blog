@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Videos
-description: "A list of all blog posts with videos"
+description: "Every music video from Bootstrap Blog posts"
 ---
 
 {%- assign posts_with_videos = site.posts | where_exp: "post", "post.video != nil" -%}
@@ -10,14 +10,16 @@ description: "A list of all blog posts with videos"
 
   {%- if forloop.first == true %}
   {%- assign lazyload = false -%}
-  <ul class="list">
+  <div class="row my-5">
   {%- endif %}
-    <li>
-      <span>{{ post.date | date_to_string }}</span>
-      <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+    <div class="col-sm-6 col-md-4 mb-4">
       {%- include video.html do_lazyload=lazyload -%}
-    </li>
+      <h2 class="h5 mb-0">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <small class="text-muted">{{ post.date | date_to_string }}</small>
+    </div>
   {%- if forloop.last == true %}
-  </ul>
+  </div>
   {%- endif %}
 {%- endfor -%}
