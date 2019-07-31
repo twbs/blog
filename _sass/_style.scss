@@ -1,140 +1,20 @@
-/*
- * Body resets
- *
- * Update the foundational and global aspects of the page.
- */
+// Body resets
+//
+// Update the foundational and global aspects of the page.
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+@import "variables";
+@import "buttons";
+@import "navbar";
+@import "subnav";
+@import "footer";
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+.f0 { font-size: 3rem; }
+.f2 { font-size: 2rem; }
+.f3 { font-size: 1.75rem; }
+.f5 { font-size: 1.25rem; }
+.fw-500 { font-weight: 500; }
 
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-
-  @media (min-width: 40em) {
-    font-size: 18px;
-  }
-}
-
-body {
-  color: #515151;
-  background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-
-/* No `:visited` state is required by default (browsers will use `a`) */
-a {
-  color: #167bc2;
-  text-decoration: none;
-}
-a strong {
-  color: inherit;
-}
-/* `:focus` is linked to `:hover` for basic accessibility */
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-weight: 700;
-  line-height: 1.25;
-  color: #313131;
-  text-rendering: optimizeLegibility;
-}
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-}
-h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
-}
-h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-/* Body text */
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-strong {
-  color: #303030;
-}
-
-
-/* Lists */
-ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-dt {
-  font-weight: 700;
-}
-dd {
-  margin-bottom: .5rem;
-}
-
-/* Misc */
-hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
-}
-
-
-/* Code */
-code,
-pre {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-code {
-  font-size: 90%;
-  color: #b85861;
-}
-pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: .8rem;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f9f9f9;
-}
-pre code {
-  padding: 0;
-  font-size: 100%;
-  color: inherit;
-  background-color: transparent;
-}
-
-/* Pygments via Jekyll */
+// Pygments via Jekyll
 .highlight {
   margin: 0 0 1rem;
   border-radius: .25rem;
@@ -144,7 +24,7 @@ pre code {
 }
 
 
-/* Quotes */
+// Quotes
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
@@ -168,7 +48,7 @@ img {
   border-radius: 5px;
 }
 
-/* Tables */
+// Tables
 table {
   margin-bottom: 1rem;
   width: 100%;
@@ -186,34 +66,30 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Container
- *
- * Center the page content.
- */
+// Container
+//
+// Center the page content.
 
-.container {
-  max-width: 40rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  margin-left: auto;
-  margin-right: auto;
+.posts-container {
+  max-width: 760px;
+
+  @media (min-width: 40em) {
+    font-size: 18px;
+  }
 }
 
 
-/*
- * Posts and pages
- *
- * Each post is wrapped in `.post` and is used on default and post layouts. Each
- * page is wrapped in `.page` and is only used on the page layout.
- */
+// Posts and pages
+//
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
 
 .page,
 .post {
   margin-bottom: 4em;
 }
 
-/* Blog post or page title */
+// Blog post or page title
 .page-title,
 .post-title,
 .post-title a {
@@ -224,7 +100,7 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
 }
 
-/* Meta data line below post title */
+// Meta data line below post title
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -232,12 +108,12 @@ tbody tr:nth-child(odd) th {
   color: #767676;
 }
 
-/* Break long links */
+// Break long links
 .post a {
   word-break: break-word;
 }
 
-/* Related posts */
+// Related posts
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -262,31 +138,31 @@ tbody tr:nth-child(odd) th {
   color: inherit;
 }
 
-/* Special case the opening paragraph */
-.post > .embed-responsive + p {
-  margin-top: 2rem;
-  font-size: 125%;
-  font-weight: 300;
-  color: #222;
+// Special case the opening paragraph
+.post > p:first-of-type {
+  font-size: 130%;
+  color: $gray-700;
+}
+
+.post .embed-responsive {
+  margin-bottom: 2rem;
 }
 
 
-/*
- * Pagination
- *
- * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
- * there are no more previous or next posts to show.
- */
+// Pagination
+//
+// Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+// there are no more previous or next posts to show.
 
 .pagination {
-  overflow: hidden; /* clearfix */
+  overflow: hidden; // clearfix
   margin-left: -1rem;
   margin-right: -1rem;
   color: #767676;
   text-align: center;
 }
 
-/* Pagination items can be `span`s or `a`s */
+// Pagination items can be `span`s or `a`s
 .pagination-item {
   position: relative;
   display: block;
@@ -297,13 +173,13 @@ tbody tr:nth-child(odd) th {
   margin-bottom: -1px;
 }
 
-/* Only provide a hover state for linked pagination items */
+// Only provide a hover state for linked pagination items
 a.pagination-item:hover {
   z-index: 2;
   color: #fff;
   text-decoration: none;
-  background-color: #268bd2;
-  border-color: #268bd2;
+  background-color: $blue-500;
+  border-color: $blue-500;
 }
 
 @media (min-width: 30em) {
@@ -336,22 +212,24 @@ a.pagination-item:hover {
   .no-js & {
     display: none;
   }
-}
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-.embed-responsive.embed-responsive-16by9 {
-  padding-bottom: 56.25%;
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  &.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+  }
 }
 
 iframe[data-url^="https://jsbin.com"] {

@@ -1,5 +1,49 @@
-{% include header.html %}
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.authors }}">
+    <link href="https://gmpg.org/xfn/11" rel="profile">
 
-{{ content }}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="/assets/css/style.css" rel="stylesheet">
 
-{% include footer.html %}
+    {% include favicons.html %}
+
+    {% feed_meta %}
+
+    {% seo %}
+
+    {% include analytics.html %}
+    {% include no-js.html %}
+  </head>
+
+  {% capture body_class -%}
+    {{ page.layout }} {% if page.body_class -%} page-{{ page.body_class }}
+                      {%- elsif page.slug -%} page-{{ page.slug | slugify }}
+                      {%- elsif page.dir -%} page-{{ page.dir | slugify }}
+                      {%- endif -%}
+  {%- endcapture -%}
+
+  <body>
+    {% include navbar.html %}
+    {% include hero.html %}
+    {% include subnav.html %}
+
+    <div class="container">
+      <div id="carbonads-container">
+        <div class="carbonad">
+          <div id="azcarbon"></div>
+        </div>
+      </div>
+
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    {% include lazyload.html %}
+    {% include carbonads.html %}
+  </body>
+</html>

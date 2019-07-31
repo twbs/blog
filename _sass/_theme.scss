@@ -1,17 +1,6 @@
-/* Resets
--------------------------------------------------- */
-
-iframe {
-  border: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
-
-h2, h3, h4 {
-  font-weight: 500;
-}
+//
+// Resets
+//
 
 .embed-responsive {
   background-color: #000;
@@ -26,34 +15,22 @@ h2, h3, h4 {
   margin-bottom: .25rem;
 }
 
-/* Bootstrap "B" icon */
-.bs-docs-booticon {
-  display: inline-block;
 
-  svg {
-    margin-bottom: 1rem;
-  }
+//
+// Header
+//
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
-}
-
-/* Header */
 .masthead {
   position: relative;
   padding: 2rem 1.25rem;
-  margin-bottom: 1.25rem;
   font-weight: 300;
   color: #cdbfe3;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-image: linear-gradient(#563d7c, #6f5499);
+  background-image: linear-gradient(darken($bd-purple-bright, 10%), $bd-purple-bright);
 
   @media (min-width: 40em) {
     padding: 3rem 0 4rem;
-    margin-bottom: 3rem;
   }
 
   a,
@@ -63,50 +40,19 @@ h2, h3, h4 {
   }
 
   h1 {
-    margin-top: 0;
     margin-bottom: .25rem;
-    font-size: 1.5rem;
   }
 
   p {
-    max-width: 26rem;
+    max-width: 640px;
     margin: 0 auto;
   }
 }
 
 
-/* Footer
--------------------------------------------------- */
-
-.colophon:before {
-  display: block;
-  content: '';
-  width: 100px;
-  height: 1px;
-  margin: 4rem auto;
-  background-color: #eee;
-}
-.colophon ul,
-.colophon p {
-  text-align: center;
-  font-size: .75rem;
-  color: #767676;
-}
-.colophon ul {
-  margin-left: 0;
-  padding-left: 0;
-}
-.colophon ul li {
-  display: inline;
-  padding: 0 .75rem;
-}
-.colophon ul a {
-  white-space: nowrap;
-}
-
-
-/* Download buttons
--------------------------------------------------- */
+//
+// Download buttons
+//
 
 .btn-link {
   display: inline-block;
@@ -117,23 +63,26 @@ h2, h3, h4 {
   background-color: #08c;
   border-radius: .2rem;
   transition: all .2s linear;
-}
-.btn-link:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: #005580;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #005580;
+  }
 }
 
 .btn-link-ratchet {
   background-color: #b60c32;
-}
-.btn-link-ratchet:hover {
-  background-color: #0f1953;
+
+  &:hover {
+    background-color: #0f1953;
+  }
 }
 
 
-/* List page
--------------------------------------------------- */
+//
+// List page
+//
 .list {
   padding-left: 0;
   list-style: none;
