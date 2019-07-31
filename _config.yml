@@ -16,9 +16,17 @@ sass:
 host:           localhost # same as default value '127.0.0.1' but reads better
 
 # Links
-main:           "https://getbootstrap.com"
-expo:           "https://expo.getbootstrap.com"
-themes:         "https://themes.getbootstrap.com"
+current_version: "4.4.1"
+docs_version:    "4.4"
+
+main:            "https://getbootstrap.com/"
+repo:            "https://github.com/twbs/bootstrap"
+twitter:         "getbootstrap"
+slack:           "https://bootstrap-slack.herokuapp.com"
+blog:            "https://blog.getbootstrap.com/"
+expo:            "https://expo.getbootstrap.com/"
+icons:           "https://icons.getbootstrap.com/"
+themes:          "https://themes.getbootstrap.com/"
 
 # Social
 authors:        "Mark Otto, Jacob Thornton, and Bootstrap contributors"
