@@ -32,22 +32,22 @@
 
     <ul class="navbar-nav ml-sm-auto">
       <li class="nav-item">
-        <a class="nav-link p-2" href="{{ .Site.Params.repo }}" target="_blank" rel="noopener" aria-label="GitHub">
+        <a class="nav-link p-2" href="{{ site.repo }}" target="_blank" rel="noopener" aria-label="GitHub">
           {% include icons/github.html class="navbar-nav-svg" width="36" height="36" %}
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2" href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
+        <a class="nav-link p-2" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
           {% include icons/twitter.html class="navbar-nav-svg" width="36" height="36" %}
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2" href="{{ .Site.Params.slack }}/" target="_blank" rel="noopener" aria-label="Slack">
+        <a class="nav-link p-2" href="{{ site.slack }}/" target="_blank" rel="noopener" aria-label="Slack">
           {% include icons/slack.html class="navbar-nav-svg" width="36" height="36" %}
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2" href="{{ .Site.Params.opencollective }}/" target="_blank" rel="noopener" aria-label="Open Collective">
+        <a class="nav-link p-2" href="{{ site.opencollective }}/" target="_blank" rel="noopener" aria-label="Open Collective">
           {% include icons/opencollective.html class="navbar-nav-svg" width="36" height="36" %}
         </a>
       </li>
