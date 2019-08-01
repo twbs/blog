@@ -19,9 +19,8 @@ host:           localhost # same as default value '127.0.0.1' but reads better
 current_version: "4.4.1"
 docs_version:    "4.4"
 
-main:            "https://getbootstrap.com/"
+main:            "https://getbootstrap.com"
 repo:            "https://github.com/twbs/bootstrap"
-twitter:         "getbootstrap"
 slack:           "https://bootstrap-slack.herokuapp.com"
 blog:            "https://blog.getbootstrap.com/"
 expo:            "https://expo.getbootstrap.com/"

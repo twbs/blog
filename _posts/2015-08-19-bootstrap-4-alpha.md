@@ -51,17 +51,17 @@ When we shipped Bootstrap 3, we immediately discontinued all support for v2.x, c
 
 ## One more thing...
 
-In addition to shipping the first Bootstrap 4 alpha today, we're also launching our latest side project, [Official Bootstrap Themes]({{ site.themes }}/).
+In addition to shipping the first Bootstrap 4 alpha today, we're also launching our latest side project, [Official Bootstrap Themes]({{ site.themes }}).
 
-[![Official Bootstrap Themes](/assets/img/2015/bs-themes.png)]({{ site.themes }}/)
+[![Official Bootstrap Themes](/assets/img/2015/bs-themes.png)]({{ site.themes }})
 
 We've talked about building premium themes for Bootstrap since our earliest releases, but never quite found the time or ideal approach until earlier this year. We've poured hundreds of hours into these themes and consider them to be much more than traditional re-skins of Bootstrap. They've very much their own toolkits, just like Bootstrap.
 
-To start, we're launching with three themes built on Bootstrap 3: a [dashboard]({{ site.themes }}/product/dashboard/), an [application]({{ site.themes }}/product/application/), and a [marketing]({{ site.themes }}/product/marketing/) site. Each theme contains everything you'd find in Bootstrap, plus stunning real world examples, brand new components and plugins, custom documentation, and simple build tools.
+To start, we're launching with three themes built on Bootstrap 3: a [dashboard]({{ site.themes }}product/dashboard/), an [application]({{ site.themes }}product/application/), and a [marketing]({{ site.themes }}product/marketing/) site. Each theme contains everything you'd find in Bootstrap, plus stunning real world examples, brand new components and plugins, custom documentation, and simple build tools.
 
-All themes include a [multiple-use license]({{ site.themes }}/licenses/) for the purchaser and free updates for bug fixes and documentation updates for the life of the themes.
+All themes include a [multiple-use license]({{ site.themes }}licenses/) for the purchaser and free updates for bug fixes and documentation updates for the life of the themes.
 
-[Head to the Bootstrap themes site]({{ site.themes }}/) to check them out.
+[Head to the Bootstrap themes site]({{ site.themes }}) to check them out.
 
 <3,
 

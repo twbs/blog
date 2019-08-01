@@ -7,13 +7,13 @@
     <div class="navbar-nav-scroll order-3 order-md-0 d-flex justify-content-center justify-content-md-start">
       <ul class="navbar-nav bd-navbar-nav flex-row">
         <li class="nav-item">
-          <a class="nav-link " href="https://getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+          <a class="nav-link " href="{{ site.main }}/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://getbootstrap.com/docs/{{ site.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a>
+          <a class="nav-link" href="{{ site.main }}/docs/{{ site.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://getbootstrap.com/docs/{{ site.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+          <a class="nav-link" href="{{ site.main }}/docs/{{ site.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ site.icons }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');">Icons</a>
@@ -22,10 +22,10 @@
           <a class="nav-link" href="{{ site.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ site.expo }}/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
+          <a class="nav-link" href="{{ site.expo }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="{{ site.blog }}/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+          <a class="nav-link active" href="{{ site.blog }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
         </li>
       </ul>
     </div>
@@ -37,22 +37,22 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
+        <a class="nav-link p-2" href="https://twitter.com/{{ site.twitter.username }}" target="_blank" rel="noopener" aria-label="Twitter">
           {% include icons/twitter.html class="navbar-nav-svg" width="36" height="36" %}
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2" href="{{ site.slack }}/" target="_blank" rel="noopener" aria-label="Slack">
+        <a class="nav-link p-2" href="{{ site.slack }}" target="_blank" rel="noopener" aria-label="Slack">
           {% include icons/slack.html class="navbar-nav-svg" width="36" height="36" %}
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link p-2" href="{{ site.opencollective }}/" target="_blank" rel="noopener" aria-label="Open Collective">
+        <a class="nav-link p-2" href="{{ site.opencollective }}" target="_blank" rel="noopener" aria-label="Open Collective">
           {% include icons/opencollective.html class="navbar-nav-svg" width="36" height="36" %}
         </a>
       </li>
     </ul>
 
-    <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/docs/{{ site.docs_version }}/getting-started/download/">Download</a>
+    <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="{{ site.main }}/docs/{{ site.docs_version }}/getting-started/download/">Download</a>
   </div>
 </header>
