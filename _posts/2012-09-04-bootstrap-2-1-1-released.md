@@ -15,7 +15,7 @@ Head on over to <{{ site.main }}/> and get your fix, or download the [latest mas
 
 Here's the rundown:
 
-* New feature: alert text. We documented these new classes, like `.text-success`, at the bottom of the [Typography section](https://getbootstrap.com/2.3.2/base-css.html#typography) along with the long undocumented `.muted`.
+* New feature: alert text. We documented these new classes, like `.text-success`, at the bottom of the [Typography section]({{ site.main }}/2.3.2/base-css.html#typography) along with the long undocumented `.muted`.
 * Fixed a lot of typos in the docs. Spelling is hard.
 * Made the `.box-shadow()` mixin more durable. It no longer requires escaping for multiple shadows, meaning you can easily use variables and functions in them once again.
 * Widened `.dl-horizontal dt` and `.horizontal-form .control-group` to better handle the increased font-size.
