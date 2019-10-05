@@ -50,9 +50,5 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  - .sass-cache
   - .netlify
-  - vendor/
-  - Gemfile
-  - Gemfile.lock
   - README.md
