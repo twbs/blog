@@ -1,4 +1,4 @@
-# Bootstrap blog
+# Bootstrap blog [![Build Status](https://github.com/twbs/blog/workflows/Tests/badge.svg)](https://github.com/twbs/blog/actions?workflow=Tests)
 
 All content within `_posts/` is copyright Bootstrap. Do not reuse any part without written permission.
 

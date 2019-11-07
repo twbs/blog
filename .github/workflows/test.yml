@@ -1,0 +1,40 @@
+name: Tests
+on: [push, pull_request]
+env:
+  CI: true
+
+jobs:
+  run:
+    name: Ruby 2.6.x
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 3
+
+      - name: Set up Ruby 2.6
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6.x
+
+      - name: Disable gem docs
+        run: 'echo "gem: --no-document" > ~/.gemrc'
+
+      - name: Set up Bundler
+        run: gem install bundler -v "~> 1.17"
+
+      - name: Update rubygems
+        run: gem update --system
+
+      - run: ruby --version
+      - run: gem --version
+      - run: bundle --version
+
+      - name: Install bundler dependencies
+        run: bundle install --deployment --jobs=3 --retry=3 --clean
+
+      - run: bundle exec jekyll build
+
+      - run: bundle exec jekyll doctor
