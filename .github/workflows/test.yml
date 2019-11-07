@@ -38,3 +38,6 @@ jobs:
       - run: bundle exec jekyll build
 
       - run: bundle exec jekyll doctor
+
+      - name: Run html-proofer
+        run: bundle exec htmlproofer ./_site --allow-hash-href --assume-extension --check-external-hash --check-favicon --check-html --check-img-http --check-opengraph --disable-external --empty-alt-ignore --internal-domains "blog.getbootstrap.com"
