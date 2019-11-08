@@ -6,14 +6,12 @@ description: "Every music video from Bootstrap Blog posts"
 
 {%- assign posts_with_videos = site.posts | where_exp: "post", "post.video != nil" -%}
 {%- for post in posts_with_videos -%}
-  {%- assign lazyload = true -%}
 
   {%- if forloop.first == true %}
-  {%- assign lazyload = false -%}
   <div class="row my-5">
   {%- endif %}
     <div class="col-sm-6 col-md-4 mb-4">
-      {%- include video.html do_lazyload=lazyload -%}
+      {%- include video.html do_lazyload=true -%}
       <h2 class="h5 mb-0">
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h2>
