@@ -47,7 +47,7 @@ Our documentation snippets just got an upgrade with the help of [ZeroClipboard](
 
 ### LMVTFY
 
-[We blogged about this yesterday](/2014/06/25/lmvtfy/), but we have a new bot hanging out in our issues and pull requests on GitHub. Whenever someone pastes in a live example—like those from JS Bin or jsFiddle—we now validate their HTML. If it's invalid, we tell folks what's wrong so they can fix it.
+[We blogged about this yesterday]({% post_url 2014-06-25-lmvtfy %}), but we have a new bot hanging out in our issues and pull requests on GitHub. Whenever someone pastes in a live example—like those from JS Bin or jsFiddle—we now validate their HTML. If it's invalid, we tell folks what's wrong so they can fix it.
 
 ### Browser bugs
 
