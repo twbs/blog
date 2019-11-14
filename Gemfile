@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 group :development, :test do
   gem 'html-proofer', '~> 3.13.0'
   gem 'jekyll', '~> 4.0.0'
-  gem 'jekyll-feed', '~> 0.12.1'
+  gem 'jekyll-feed', '~> 0.13.0'
   gem 'jekyll-paginate', '~> 1.1.0'
   gem 'jekyll-redirect-from', '~> 0.15.0'
   gem 'jekyll-seo-tag', '~> 2.6.1'
