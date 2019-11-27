@@ -4,9 +4,9 @@ title: Introducing Bootstrap Icons
 video: eM8Ss28zjcE
 ---
 
-Say hello to [Bootstrap Icons](https://icons.getbootstrap.com), our very first icon set that's designed entirely by our team and open sourced for everyone to use, with or without Bootstrap. It's still in alpha, but we're incredibly excited to share it with y'all ahead of our v5 alpha.
+Say hello to [Bootstrap Icons](https://icons.getbootstrap.com/), our very first icon set that's designed entirely by our team and open sourced for everyone to use, with or without Bootstrap. It's still in alpha, but we're incredibly excited to share it with y'all ahead of our v5 alpha.
 
-[![Bootstrap Icons docs](/assets/img/2019/11/bi-docs.png)](https://icons.getbootstrap.com)
+[![Bootstrap Icons docs](/assets/img/2019/11/bi-docs.png)](https://icons.getbootstrap.com/)
 
 For the longest time, I've wanted to design an icon set to better lean how to better draw with different pen tools and to better understand SVGs. In the last several months I've used a few different applications, done nearly five style iterations, and finally settled on a single direction. The result? Over 200 icons to start.
 
