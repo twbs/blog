@@ -22,6 +22,14 @@ jobs:
       - name: Disable gem docs
         run: 'echo "gem: --no-document" > ~/.gemrc'
 
+      - name: Set up Ruby cache
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gem-${{ hashFiles('Gemfile') }}-${{ hashFiles('Gemfile.lock') }}-${{ hashFiles('.github/workflows/test.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-gem-
+
       - name: Set up Bundler
         run: gem install bundler -v "~> 1.17"
 
