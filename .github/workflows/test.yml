@@ -10,9 +10,7 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v1
-        with:
-          fetch-depth: 3
+        uses: actions/checkout@v2
 
       - name: Set up Ruby 2.6
         uses: actions/setup-ruby@v1
