@@ -14,7 +14,7 @@ With over 120 new and updated icons, this is likely going to be our largest upda
 
 ## Highlights
 
-Here's a summary of what's been fixed, updated, or renamed in this release. For a full summary of what's new, head to the [GitHub release]() or [Alpha 2 pull request](https://github.com/twbs/icons/pull/78).
+Here's a summary of what's been fixed, updated, or renamed in this release. For a full summary of what's new, head to the [GitHub release](https://github.com/twbs/icons/releases/tag/v1.0.0-alpha2) or [Alpha 2 pull request](https://github.com/twbs/icons/pull/78).
 
 - **Fixed:**
   - Bootstrap icon stroke now 1px instead of 1.5px
