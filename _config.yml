@@ -26,6 +26,7 @@ blog:            "https://blog.getbootstrap.com/"
 expo:            "https://expo.getbootstrap.com/"
 icons:           "https://icons.getbootstrap.com/"
 themes:          "https://themes.getbootstrap.com/"
+opencollective:  "https://opencollective.com/bootstrap"
 
 # Social
 authors:        "Mark Otto, Jacob Thornton, and Bootstrap contributors"
