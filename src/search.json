@@ -1,0 +1,16 @@
+---
+---
+
+[
+{%- assign sorted_pages = site.posts | sort: 'date' | reverse -%}
+{%- for page in sorted_pages -%}
+
+{%- assign content = page.content | split: '<h1 class="post-title"' -%}
+
+{
+  "content": {{ content[0] | split: '</h1>' | last | strip_html | normalize_whitespace | jsonify }},
+  "title": {{ page.title | strip_html | normalize_whitespace | jsonify }},
+  "url": {{ page.url | jsonify }}
+}{% unless forloop.last %}, {% endunless %}
+{%- endfor -%}
+]

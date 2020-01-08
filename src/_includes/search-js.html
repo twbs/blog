@@ -1,0 +1,18 @@
+<script>
+  (function() {
+    {% include js/simple-jekyll-search.min.js %}
+
+    var searchInput = document.querySelector('.search-input');
+    var searchResults = document.querySelector('.search-results');
+
+    if (searchInput && searchResults) {
+      window.SimpleJekyllSearch({
+        json: '/search.json',
+        noResultsText: '<li class="no-results">Sorry, there are no results for that search.</li>',
+        resultsContainer: searchResults,
+        searchInput: searchInput,
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>'
+      });
+    }
+  })();
+</script>
