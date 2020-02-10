@@ -6,7 +6,14 @@ future:         true
 permalink:      pretty
 
 # Pagination
-paginate:       5
+pagination:
+  enabled:      true
+  per_page:     5
+  permalink:    "/page:num/"
+  title:        "Archive"
+  limit:        0
+  sort_field:   "date"
+  sort_reverse: true
 
 source:         src
 
@@ -62,7 +69,7 @@ defaults:
 # Gems
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap

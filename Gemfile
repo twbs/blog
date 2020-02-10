@@ -4,7 +4,7 @@ group :development, :test do
   gem 'html-proofer', '~> 3.17.0'
   gem 'jekyll', '~> 4.1.1'
   gem 'jekyll-feed', '~> 0.15.1'
-  gem 'jekyll-paginate', '~> 1.1.0'
+  gem 'jekyll-paginate-v2', '~> 3.0.0'
   gem 'jekyll-redirect-from', '~> 0.16.0'
   gem 'jekyll-seo-tag', '~> 2.7.1'
   gem 'jekyll-sitemap', '~> 1.4.0'
