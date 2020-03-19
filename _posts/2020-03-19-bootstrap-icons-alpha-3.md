@@ -30,7 +30,7 @@ Since this is still an alpha, some features are still missing from our docs. Thi
 
 ## Download
 
-Alpha 3 has been published to GitHub and npm (package name `bootstrap-icons`). Get your hands on it [from GitHub](https://github.com/twbs/icons/releases), by updating to `v1.0.0-alpha3`, or by snagging the [icons from Figma]().
+Alpha 3 has been published to GitHub and npm (package name `bootstrap-icons`). Get your hands on it [from GitHub](https://github.com/twbs/icons/releases), by updating to `v1.0.0-alpha3`, or by snagging the [icons from Figma](https://www.figma.com/file/NKZWcfR2T3FU0I7fNLqFvI/Bootstrap-Icons-v1.0.0-alpha3).
 
 <3,<br>
 
