@@ -12,7 +12,7 @@ We've cleaned up existing icons, created new permalink pages for each and every 
 
 I've added 221 new icons in our third alpha, the most ever in an alpha release thus far. And while I was drawing all these new awesome icons, I also cleaned up the existing ones by changing their `viewBox` size and redrew many to ensure more pixel perfect icons.
 
-![All Bootstrap Icons](https://user-images.githubusercontent.com/98681/77025215-bea36900-694d-11ea-9f2d-68485c4a2543.png)
+![All Bootstrap Icons](/assets/img/2020/03/bootstrap-icons-alpha3-all.png)
 
 Why change the `viewBox`? In the first two alphas, I was drawing icons on 20x20 artboards in Figma. This seemed like a good idea, but every icon was roughly 16x16, so it ended up being dead space. Now, every icon has been updated to eliminate the 2px inner padding, making the `viewBox`s `0 0 16 16` instead of `0 0 20 20`.
 
@@ -24,7 +24,7 @@ Looking for a particular icon, but don't want to download the entire project to 
 
 From the Bootstrap Icons homepage, click any icon and you'll be taken to a page dedicated to just that icon. It features the icon in various sizes and renders the source code like you're used to seeing in Bootstrap's docs.
 
-![Bootstrap Icons permalink](https://user-images.githubusercontent.com/98681/77024512-f8737000-694b-11ea-8e3f-791b6fe9db83.png)
+![Bootstrap Icons permalink](/assets/img/2020/03/bootstrap-icons-alpha3-permalink.png)
 
 Since this is still an alpha, some features are still missing from our docs. This includes unlinked tags, no category listing, and no copy to clipboard. I hope to see those added before our stable v1.0.0 release. PRs are very much welcome if you'd like to contribute!
 
