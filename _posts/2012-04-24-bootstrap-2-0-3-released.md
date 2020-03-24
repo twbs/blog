@@ -7,7 +7,7 @@ Today we're releasing [Bootstrap 2.0.3]({{ site.main }}/), another bugfix releas
 
 ## Makefile
 
-In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](https://jshint.com/) and [Recess](http://twitter.github.io/recess/), linters for JavaScript and CSS. To continue to run `make` via Terminal, do the following:
+In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](https://jshint.com/) and [Recess](https://twitter.github.io/recess/), linters for JavaScript and CSS. To continue to run `make` via Terminal, do the following:
 
 {% highlight bash %}
 $ npm install -g recess jshint

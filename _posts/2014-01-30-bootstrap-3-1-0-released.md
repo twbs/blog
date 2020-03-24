@@ -50,7 +50,7 @@ We've been talking about it for what seems like forever, but thanks to all our c
 We're constantly trying to improve our tools for developing Bootstrap and v3.1 brings a slew of updates to do just that.
 
 - We've switched from Recess to grunt-contrib-less for our compiler, giving us access to Less 1.6.x (as opposed to 1.3.x with Recess).
-- Our compiled code is virtually identical in formatting and organization thanks to [CSScomb](http://csscomb.com/) and some other Grunt-fu.
+- Our compiled code is virtually identical in formatting and organization thanks to [CSScomb](https://github.com/csscomb/csscomb.js) and some other Grunt-fu.
 - Tests also run a tad faster with the help of some magical caching and parallelization.
 - The web Customizer is now generated from a Grunt task, meaning we'll never miss updating or adding a variable again. If you contribute to Bootstrap regularly, just run `grunt` and commit to update the page.
 
