@@ -35,7 +35,7 @@ Here's a look at some of the highlights of this release.
 
 ### Responsive embeds
 
-As seen in [SUIT CSS](http://suitcss.github.io/), we've added a few classes for creating responsive embeds. They're great for proportionally scaling down YouTube videos and other `iframe` or `embed` elements. [Head to the docs]({{ site.main }}/components/#responsive-embed) to check them out.
+As seen in [SUIT CSS](https://suitcss.github.io/), we've added a few classes for creating responsive embeds. They're great for proportionally scaling down YouTube videos and other `iframe` or `embed` elements. [Head to the docs]({{ site.main }}/components/#responsive-embed) to check them out.
 
 ### New responsive utility classes
 
