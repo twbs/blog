@@ -58,6 +58,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+redirect_from:
+  json: false
+
 exclude:
   - .netlify
   - mdl-style.rb
