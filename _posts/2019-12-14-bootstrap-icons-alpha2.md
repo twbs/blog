@@ -10,7 +10,7 @@ There's a brand new update of Bootstrap Icons today with our second alpha releas
 
 With over 120 new and updated icons, this is likely going to be our largest update before we our first stable release. We have some renamed icons, fixed bugs, new tools icons, new typography icons, tons of new arrows, and so much more.
 
-[![New icons in Alpha 2](/assets/img/2019/12/bootstrap-icons-alpha2-new.png)](https://icons.getbootstrap.com/)
+[![New icons in Alpha 2](/assets/img/2019/12/bootstrap-icons-alpha2-new.png){: class="lazy" }](https://icons.getbootstrap.com/)
 
 ## Highlights
 

@@ -8,7 +8,7 @@ Just over a month ago, we shipped the long awaited Bootstrap 4 stable release. W
 
 ## 10 new themes
 
-[![Bootstrap themes grid](/assets/img/2018/02/themes-grid.png)]({{ site.themes }})
+[![Bootstrap themes grid](/assets/img/2018/02/themes-grid.png){: class="lazy" }]({{ site.themes }})
 
 Over the last several months, we've been hard at work with theme creators to build the best themes for you. When we created our original three Bootstrap themes, our goal was to provide the best themes, build tools, documentation, and support to everyone building with Bootstrap. With today's update, we're adding 10 new themes to the mix from a global community of designers and developers.
 

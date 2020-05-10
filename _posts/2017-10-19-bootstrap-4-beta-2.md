@@ -16,7 +16,7 @@ We've pushed over 500 commits in our two months, so we have a few changes since 
 
 ### Improved theming
 
-[![Bootstrap Theming docs page](/assets/img/2017/v4-beta2-theming-docs.png)]({{ site.main }}/docs/4.0/getting-started/theming/)
+[![Bootstrap Theming docs page](/assets/img/2017/v4-beta2-theming-docs.png){: class="lazy" }]({{ site.main }}/docs/4.0/getting-started/theming/)
 
 We have a brand [new Theming docs page]({{ site.main }}/docs/4.0/getting-started/theming/) to replace our old Options page (we'll automatically redirect folks from the old page). This new page delves into the structure of our Sass files, default variables and customizing them, maps and loops we use, functions, colors, and of course or global Sass options. It also includes a new section to explain how we build our components via Sass maps and loops, specifically our modifier classes (e.g., `.btn-danger`).
 
@@ -28,11 +28,11 @@ In addition to the documentation changes, we've made a few CSS changes to improv
 
 Lastly, our `$enable-shadows` and `$enable-gradients` Sass variables have finally been updated and integrated into several of our components. Now, when you enable those variables (both are `false` by default) and recompile, you'll see subtle gradients and shadows across alerts, buttons, carousels, custom form controls, and dropdown items.
 
-![Themed buttons](/assets/img/2017/v4-beta2-buttons.png)
+![Themed buttons](/assets/img/2017/v4-beta2-buttons.png){: class="lazy" }
 
 And when you use `$enable-gradients`, you'll enable the new `.bg-gradient-` utilities (disabled by default) for use in navbars and more.
 
-![Themed backgrounds](/assets/img/2017/v4-beta2-bgs.png)
+![Themed backgrounds](/assets/img/2017/v4-beta2-bgs.png){: class="lazy" }
 
 Check it out and please share any feedback in an issue.
 

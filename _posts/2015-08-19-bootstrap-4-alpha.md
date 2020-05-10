@@ -10,7 +10,7 @@ Bootstrap 4 has been a massive undertaking that touches nearly every line of cod
 
 ## What's new
 
-[![Bootstrap 4 alpha](/assets/img/2015/bs4-alpha.png)](https://v4-alpha.getbootstrap.com/)
+[![Bootstrap 4 alpha](/assets/img/2015/bs4-alpha.png){: class="lazy" }](https://v4-alpha.getbootstrap.com/)
 
 There are a ton of major changes to Bootstrap and it's impossible to cover them all in detail here, so here are some of our favorite highlights:
 
@@ -53,7 +53,7 @@ When we shipped Bootstrap 3, we immediately discontinued all support for v2.x, c
 
 In addition to shipping the first Bootstrap 4 alpha today, we're also launching our latest side project, [Official Bootstrap Themes]({{ site.themes }}).
 
-[![Official Bootstrap Themes](/assets/img/2015/bs-themes.png)]({{ site.themes }})
+[![Official Bootstrap Themes](/assets/img/2015/bs-themes.png){: class="lazy" }]({{ site.themes }})
 
 We've talked about building premium themes for Bootstrap since our earliest releases, but never quite found the time or ideal approach until earlier this year. We've poured hundreds of hours into these themes and consider them to be much more than traditional re-skins of Bootstrap. They've very much their own toolkits, just like Bootstrap.
 

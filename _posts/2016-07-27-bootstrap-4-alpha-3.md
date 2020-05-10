@@ -26,7 +26,7 @@ These changes are available in our standard grid, as well as our flexbox grid. M
 
 ## Flexbox
 
-<img alt="Flexbox auto-layout" src="/assets/img/2016/07/flex-cols.png" style="padding: 4px; border: 1px solid #eee;">
+<img alt="Flexbox auto-layout" src="/assets/img/2016/07/flex-cols.png" class="lazy" style="padding: 4px; border: 1px solid #eee;">
 
 Flexbox mode has been updated across the board in Alpha 3, starting from the grid system (it uses the same variable and the updated Sass mixins) and moving through our utilities and components.
 
@@ -38,7 +38,7 @@ Flexbox mode has been updated across the board in Alpha 3, starting from the gri
 
 ## Forms
 
-<img alt="Form validation states" src="/assets/img/2016/07/forms.png" style="padding: 4px; border: 1px solid #eee;">
+<img alt="Form validation states" src="/assets/img/2016/07/forms.png" class="lazy" style="padding: 4px; border: 1px solid #eee;">
 
 Forms saw a ton of activity early on in Alpha 3's development. Documentation, class names, layout options, and validation styles have all been drastically improved.
 
