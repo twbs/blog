@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 group :development, :test do
-  gem 'html-proofer', '~> 3.15.1'
-  gem 'jekyll', '~> 4.0.0'
+  gem 'html-proofer', '~> 3.15.3'
+  gem 'jekyll', '~> 4.0.1'
   gem 'jekyll-feed', '~> 0.13.0'
   gem 'jekyll-paginate', '~> 1.1.0'
   gem 'jekyll-redirect-from', '~> 0.16.0'
