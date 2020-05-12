@@ -16,8 +16,8 @@ sass:
 host:           localhost # same as default value '127.0.0.1' but reads better
 
 # Links
-current_version: "4.4.1"
-docs_version:    "4.4"
+current_version: "4.5.0"
+docs_version:    "4.5"
 
 main:            "https://getbootstrap.com"
 github_org:      "https://github.com/twbs"
