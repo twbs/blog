@@ -11,7 +11,7 @@ We've shipped tons of new commerce icons for all your shopping cart needs, added
 
 ## ~700 icons!
 
-With 140 new icons in this release, we've almost hit 700 icons. We're likely to fly by that in our next release, but in the mean time, have a look for yourself at the breadth of icons. Every icon has also been reprocessed to resolve SVGO issues that prevented them from being opened in some apps.
+With 140 new icons in this release, we've almost hit 700 icons. We're likely to fly by that in our next release, but in the meantime, have a look for yourself at the breadth of icons. Every icon has also been reprocessed to resolve SVGO issues that prevented them from being opened in some apps.
 
 ![All Bootstrap Icons](/assets/img/2020/05/bootstrap-icons-alpha4-all.png)
 
