@@ -203,6 +203,10 @@ There's a ton yet to come, including more documentation improvements, bug fixes,
 
 **Head to <https://v5.getbootstrap.com> to explore the new release.** We've also published this updated as a pre-release to npm, so if you're feeling bold or are curious about what's new, you can pull the latest in that way.
 
+```sh
+npm i bootstrap@next
+```
+
 ## What's next
 
 We still have more work to do in v5, including some breaking changes, but we're incredibly excited about this release. Let the feedback rip and we'll do our best to keep up with y'all. Our goal is to ship another alpha within 3-4 weeks, and likely a couple more after that. We'll also be shipping a v4.5.1 release to fix a couple of regressions and continue to bridge the gap between v4 and v5.
