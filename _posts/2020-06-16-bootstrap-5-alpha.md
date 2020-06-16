@@ -156,7 +156,7 @@ Here's a rundown of what's changed in our grid:
 - `.gutter` classes have been replaced with `.g*` utilities, much like our margin/padding utilities. We've also added [options to your grid gutter spacing](https://v5.getbootstrap.com/docs/5.0/layout/gutters/) that matches the spacing utilities you're already familiar with.
 - Form layout options have been replaced with the new grid system.
 - Vertical spacing classes have been added.
-- Columns are no longer position: relative` by default.
+- Columns are no longer `position: relative` by default.
 
 Here's a quick example of how to use the new grid gutter classes:
 
