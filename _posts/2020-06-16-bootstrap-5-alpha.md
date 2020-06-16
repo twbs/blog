@@ -5,7 +5,7 @@ video: 3GwjfUFyY6M
 date: 2020-06-16 11:00:00
 ---
 
-**Bootstrap 5's very first alpha has arrived!** We've been working hard for several months to refine the work we started in v4, and while we're feeling great about our progress, there's still even more to do.
+[**Bootstrap 5's very first alpha has arrived!**](https://v5.getbootstrap.com) We've been working hard for several months to refine the work we started in v4, and while we're feeling great about our progress, there's still even more to do.
 
 We've been focused on making the migration from v4 to v5 more approachable, but we've also not been afraid to step away from what's outdated or no longer appropriate. As such, we're very happy to say that with v5, **Bootstrap no longer depends on jQuery** and **we've dropped support for Internet Explorer**. We're sharpening our focus on building tools that are more future-friendly, and while we're not fully there yet, the promise of CSS variables, faster JavaScript, fewer dependencies, and better APIs certainly feel right to us.
 
