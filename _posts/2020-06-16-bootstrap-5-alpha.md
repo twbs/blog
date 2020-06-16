@@ -23,7 +23,7 @@ We're also sporting a brand new logo! More on that when v5 goes stable, but suff
 
 ![New Bootstrap logo](/assets/img/2020/06/v5-new-logo.png)
 
-Inspired by the CSS that created the very beginnings of this project, our logo eschews the feeling of a rule set—style bounded by curly braces. We love it and think you will, too. Expect to see it roll out to v4's documentation, our blog, and more over time as we continue to refine things and ship new releases.
+Inspired by the CSS that created the very beginnings of this project, our logo embodies the feeling of a rule set—style bounded by curly braces. We love it and think you will, too. Expect to see it roll out to v4's documentation, our blog, and more over time as we continue to refine things and ship new releases.
 
 ## jQuery and JavaScript
 
