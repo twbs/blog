@@ -49,6 +49,13 @@
   }
 }
 
+.bs-docs-booticon {
+  transform: rotate(-5deg);
+  filter: drop-shadow(0 .25em .25em rgba(0,0,0,.05))
+         drop-shadow(0 .5em 1em rgba(0,0,0,.125))
+         drop-shadow(0 .75em 1.5em rgba(0,0,0,.25));
+}
+
 
 //
 // Download buttons
