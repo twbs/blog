@@ -8,6 +8,8 @@ permalink:      pretty
 # Pagination
 paginate:       5
 
+source:         src
+
 # Sass converter configuration
 sass:
   style:        compressed
@@ -60,8 +62,3 @@ plugins:
 
 redirect_from:
   json: false
-
-exclude:
-  - .netlify
-  - mdl-style.rb
-  - README.md
