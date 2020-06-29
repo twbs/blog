@@ -43,7 +43,7 @@ jobs:
       - run: bundle exec jekyll doctor
 
       - name: Run markdownlint
-        run: bundle exec mdl --style mdl-style.rb _posts
+        run: bundle exec mdl --style mdl-style.rb src
 
       - name: Run html-proofer
         run: bundle exec htmlproofer ./_site --allow-hash-href --assume-extension --check-external-hash --check-favicon --check-img-http --check-opengraph --disable-external --empty-alt-ignore --internal-domains "blog.getbootstrap.com"
