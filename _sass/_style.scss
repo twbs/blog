@@ -2,34 +2,43 @@
 //
 // Update the foundational and global aspects of the page.
 
-@import "variables";
-@import "buttons";
-@import "navbar";
-@import "subnav";
-@import "footer";
+@import 'variables';
+@import 'buttons';
+@import 'navbar';
+@import 'subnav';
+@import 'footer';
 
-.f0 { font-size: 3rem; }
-.f2 { font-size: 2rem; }
-.f3 { font-size: 1.75rem; }
-.f5 { font-size: 1.25rem; }
-.fw-500 { font-weight: 500; }
+.f0 {
+  font-size: 3rem;
+}
+.f2 {
+  font-size: 2rem;
+}
+.f3 {
+  font-size: 1.75rem;
+}
+.f5 {
+  font-size: 1.25rem;
+}
+.fw-500 {
+  font-weight: 500;
+}
 
 // Pygments via Jekyll
 .highlight {
   margin: 0 0 1rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 .highlight pre {
   margin-bottom: 0;
 }
 
-
 // Quotes
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
   color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  border-left: 0.25rem solid #e5e5e5;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -57,14 +66,13 @@ table {
 }
 td,
 th {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid #e5e5e5;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-
 
 // Container
 //
@@ -77,7 +85,6 @@ tbody tr:nth-child(odd) th {
     font-size: 18px;
   }
 }
-
 
 // Posts and pages
 //
@@ -103,15 +110,16 @@ tbody tr:nth-child(odd) th {
 // Meta data line below post title
 .post-date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
   margin-bottom: 1rem;
   color: #767676;
 }
 
 // Break long links
-.post a {
-  word-break: break-word;
-}
+// Issue: #151 This causes the text to overflow to the next line in some browsers
+// .post a {
+//   word-break: break-word;
+// }
 
 // Related posts
 .related {
@@ -147,7 +155,6 @@ tbody tr:nth-child(odd) th {
 .post .embed-responsive {
   margin-bottom: 2rem;
 }
-
 
 // Pagination
 //
@@ -232,8 +239,9 @@ a.pagination-item:hover {
   }
 }
 
-iframe[data-url^="https://jsbin.com"] {
-  border-color: rgba(0,0,0,.1) !important;
+iframe[data-url^="https://jsbin.com"]
+{
+  border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 @media (min-width: 1200px) {
