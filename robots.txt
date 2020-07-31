@@ -1,9 +1,6 @@
----
----
-
 # www.robotstxt.org/
 
 # Allow crawling of all content
 User-agent: *
-Disallow:{% if jekyll.environment == "netlify" %} /{% endif %}
-Sitemap: {{ site.url }}/sitemap.xml
+Disallow:
+Sitemap: https://blog.getbootstrap.com/sitemap.xml

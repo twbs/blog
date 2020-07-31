@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Bootstrap 4.3.0 | Bootstrap Blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Bootstrap 4.3.0" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Bootstrap v4.3 has landed with over 120 combined closed issues and merged pull requests. This release brings improvements to our utilities, some prep work for moving on to v5’s development, and the standard bug fixes and documentation updates." />
+<meta property="og:description" content="Bootstrap v4.3 has landed with over 120 combined closed issues and merged pull requests. This release brings improvements to our utilities, some prep work for moving on to v5’s development, and the standard bug fixes and documentation updates." />
+<link rel="canonical" href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/" />
+<meta property="og:site_name" content="Bootstrap Blog" />
+<meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-11T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
+<meta property="twitter:title" content="Bootstrap 4.3.0" />
+<meta name="twitter:site" content="@getbootstrap" />
+<meta name="twitter:creator" content="@getbootstrap" />
+<script type="application/ld+json">
+{"description":"Bootstrap v4.3 has landed with over 120 combined closed issues and merged pull requests. This release brings improvements to our utilities, some prep work for moving on to v5’s development, and the standard bug fixes and documentation updates.","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"}},"url":"https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/","headline":"Bootstrap 4.3.0","dateModified":"2019-02-11T00:00:00+00:00","datePublished":"2019-02-11T00:00:00+00:00","image":{"width":1200,"height":630,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-146052-12', 'getbootstrap.com');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script>
+  (function(html) {
+    html.className = html.className.replace(/\bno-js\b/, '');
+  })(document.documentElement);
+</script>
+
+  </head>
+
+  <body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar px-0">
+  <div class="container flex-wrap flex-md-nowrap py-0 px-3">
+    <a class="navbar-brand py-0 mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+    </a>
+
+    <div class="navbar-nav-scroll order-3 order-md-0 d-flex justify-content-center justify-content-md-start">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+        <li class="nav-item">
+          <a class="nav-link " href="https://getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');" target="_blank" rel="noopener">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');" target="_blank" rel="noopener">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://icons.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://themes.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://expo.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://blog.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="navbar-nav ml-sm-auto">
+      <li class="nav-item">
+        <a class="nav-link p-2" href="https://github.com/twbs" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img"><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg>
+
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img"><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg>
+
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com" target="_blank" rel="noopener" aria-label="Slack">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 512" role="img"><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path fill="currentColor" d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z"/></svg>
+
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="https://opencollective.com/bootstrap" target="_blank" rel="noopener" aria-label="Open Collective">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" fill="currentColor" fill-rule="evenodd" viewBox="0 0 40 41" role="img"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"/><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"/></svg>
+
+        </a>
+      </li>
+    </ul>
+
+    <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://getbootstrap.com/docs/4.5/getting-started/download/">Download</a>
+  </div>
+</header>
+
+    <div class="masthead bg-light">
+  <div class="container">
+    <a href="/" aria-label="Bootstrap">
+      <svg xmlns="http://www.w3.org/2000/svg" width="90" height="72" class="bs-docs-booticon mb-3" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+      <h1 class="f2">The Bootstrap Blog</h1>
+    </a>
+    <p class="f5">
+      News and announcements for all things <a href="https://getbootstrap.com/" title="Visit the Bootstrap docs">Bootstrap</a>, including new releases, <a href="https://themes.getbootstrap.com/" title="Browse the official Bootstrap themes">Bootstrap Themes</a>, and <a href="https://icons.getbootstrap.com/" title="Official open source Bootstrap Icons">Bootstrap Icons</a>.
+    </p>
+  </div>
+</div>
+
+      <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
+    <div class="container d-flex align-items-md-center py-2">
+      <nav class="nav mx-auto">
+        <a class="text-dark py-1 mr-3" href="/">All posts</a>
+        <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
+        <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
+        <a class="text-dark py-1" href="/feed.xml">Subscribe</a>
+      </nav>
+    </div>
+  </nav>
+
+
+    <div class="container">
+      <div id="carbonads-container">
+        <div class="carbonad">
+          <div id="azcarbon"></div>
+        </div>
+      </div>
+
+      <div class="posts-container px-3 mx-auto my-5">
+  <div class="post">
+    <h1 class="post-title fw-500">Bootstrap 4.3.0</h1>
+    <span class="post-date">11 Feb 2019</span><div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/htgr3pvBr-I?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+<p>Bootstrap v4.3 has landed with over 120 combined closed issues and merged pull requests. This release brings improvements to our utilities, some prep work for moving on to v5’s development, and the standard bug fixes and documentation updates.</p>
+
+<p>During our last release, we shared a small preview of where we’re taking the project next. That’s getting clearer in the coming weeks as our attention turns towards embracing Hugo for ultra fast docs development, removing jQuery in favor of regular JavaScript, and addressing our growing code base.</p>
+
+<p>Keep reading for v4.3 highlights, and see you soon with more details on v5!</p>
+
+<h2 id="highlights">Highlights</h2>
+
+<p>We’ve added some new utilities and deprecated some unused code. Here are the key changes in v4.3, broken down by new, improved, fixed, and deprecated.</p>
+
+<ul>
+  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.stretched-link</code> utility to make any anchor the size of it’s nearest <code class="language-plaintext highlighter-rouge">position: relative</code> parent, perfect for entirely clickable cards!</li>
+  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.text-break</code> utility for applying <code class="language-plaintext highlighter-rouge">word-break: break-word</code></li>
+  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.rounded-sm</code> and <code class="language-plaintext highlighter-rouge">.rounded-lg</code> for small and large <code class="language-plaintext highlighter-rouge">border-radius</code>.</li>
+  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.modal-dialog-scrollable</code> modifier class for scrolling content <em>within</em> a modal.</li>
+  <li><strong>New:</strong> Added responsive <code class="language-plaintext highlighter-rouge">.list-group-horizontal</code> modifier classes for displaying list groups as a horizontal row.</li>
+  <li><strong>Improved:</strong> Reduced our compiled CSS by using <code class="language-plaintext highlighter-rouge">null</code> for variables that by default inherit their values from other elements (e.g., <code class="language-plaintext highlighter-rouge">$headings-color</code> was <code class="language-plaintext highlighter-rouge">inherit</code> and is now <code class="language-plaintext highlighter-rouge">null</code> until you modifier it in your custom CSS).</li>
+  <li><strong>Improved:</strong> Badge focus styles now match their <code class="language-plaintext highlighter-rouge">background-color</code> like our buttons.</li>
+  <li><strong>Fixed:</strong> Silenced bad selectors in our JS plugins for the <code class="language-plaintext highlighter-rouge">href</code> HTML attribute to avoid JavaScript errors. Please try to use <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a> or the <code class="language-plaintext highlighter-rouge">data-target</code> HTML attribute/<code class="language-plaintext highlighter-rouge">target</code> option where available.</li>
+  <li><strong>Fixed:</strong> Reverted v4.2.1’s change to the breakpoint and grid container Sass maps that blocked folks from upgrading when modifying those default variables.</li>
+  <li><strong>Fixed:</strong> Restored <code class="language-plaintext highlighter-rouge">white-space: nowrap</code> to <code class="language-plaintext highlighter-rouge">.dropdown-toggle</code> (before v4.2.1 it was on all <code class="language-plaintext highlighter-rouge">.btn</code>s) so carets don’t wrap to new lines.</li>
+  <li><strong>Deprecated:</strong> <code class="language-plaintext highlighter-rouge">img-retina</code>, <code class="language-plaintext highlighter-rouge">invisible</code>, <code class="language-plaintext highlighter-rouge">float</code>, and <code class="language-plaintext highlighter-rouge">size</code> mixins are now deprecated and will be removed in v5.</li>
+</ul>
+
+<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/27893">v4.3.0 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/16">GitHub project</a> for the full details.</p>
+
+<p><a href="https://getbootstrap.com/docs/4.3/">Head to to the v4.3.x docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.</p>
+
+<h2 id="introducing-responsive-font-sizes">Introducing responsive font sizes</h2>
+
+<p><img src="/assets/img/2019/02/rfs.png" alt="Responsive font-sizes" /></p>
+
+<p>Our biggest new addition to Bootstrap in v4.3 is responsive font sizes, a <a href="https://github.com/twbs/rfs">new project in the Bootstrap GitHub org</a> to automate calculate an appropriate <code class="language-plaintext highlighter-rouge">font-size</code> based on the dimensions of a visitor’s device or browser viewport. Here’s how it works:</p>
+
+<ul>
+  <li>
+    <p>All <code class="language-plaintext highlighter-rouge">font-size</code> properties have been switched to the <code class="language-plaintext highlighter-rouge">@include font-size()</code> mixin. Our Stylelint configuration now prevents the usage of <code class="language-plaintext highlighter-rouge">font-size</code> property.</p>
+  </li>
+  <li>
+    <p>Disabled by default, you can opt into this new behavior by toggling the <code class="language-plaintext highlighter-rouge">$enable-responsive-font-sizes</code> boolean variable.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">font-size</code>s are entirely configurable via Sass. Be sure to read the docs for how to modify the scales, variables, and more.</p>
+  </li>
+</ul>
+
+<p>While responsive font-sizes are disabled by default, we’ve enabled them in the custom CSS that powers our docs starting with v4.3. Please share feedback with us via GitHub issues or on Twitter. We’ve added some light guidance to <a href="https://getbootstrap.com/docs/4.3/content/typography/#responsive-font-sizes">our Typography docs</a> to explain the feature. You can also learn more by <a href="https://github.com/twbs/rfs">reading the rfs project documentation</a>.</p>
+
+<h2 id="open-collective">Open Collective</h2>
+
+<p>Last December we launched our <a href="https://opencollective.com/bootstrap">Open Collective page</a> with our <a href="/2018/12/13/bootstrap-3-4-0/">v3.4 release</a> to help support the maintainers contributing to Bootstrap. The team has been very excited about this as a way to be transparent about maintainer costs (both time and money), as well as recognition of efforts.</p>
+
+<h2 id="branches-hugo-and-jquery">Branches, Hugo, and jQuery</h2>
+
+<p>Right after shipping v4.3, we’ll be tackling a few key changes on our road to active v5 development. These are larger changes to how we maintain and develop Bootstrap and are considered foundational for v5.</p>
+
+<ul>
+  <li>
+    <p><strong>Improving our branches for development.</strong> <code class="language-plaintext highlighter-rouge">master</code> will become our new <code class="language-plaintext highlighter-rouge">v3-dev</code> branch. <code class="language-plaintext highlighter-rouge">v4-dev</code> will stay as-is, but we’ll cut a new <code class="language-plaintext highlighter-rouge">master</code> branch from there to develop v5.</p>
+  </li>
+  <li>
+    <p><strong>We’re moving to Hugo!</strong> Jekyll has been great, but it’s starting to slow us down in local development. We’ll be making changes to our dependencies to support this move, and there’s already a pull request in progress and near completion for the change. <a href="https://github.com/twbs/bootstrap/pull/28014">Follow along</a> to see what’s changing.</p>
+  </li>
+  <li>
+    <p><strong>We’re dropping jQuery for regular JavaScript.</strong> The cat is out of the bag—we’re dropping our largest client-side dependency for regular JavaScript. Similar to the Hugo move, we’ve been working on this for a long time and have a <a href="https://github.com/twbs/bootstrap/pull/23586">pull request in progress</a> and near completion.</p>
+  </li>
+</ul>
+
+<p>We’ll have even more to share soon around v5’s plans after we tackle these bigger items. In the meantime, keep the feedback coming on GitHub and Twitter!</p>
+
+<p>&lt;3,<br />
+<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+  </div>
+
+  <div class="related">
+    <h2>Recent posts</h2>
+    <ul class="related-posts"><li>
+          <h4>
+            <a href="/2020/06/26/bootstrap-icons-alpha5/">
+              Bootstrap Icons Alpha 5
+              <small>26 Jun 2020</small>
+            </a>
+          </h4>
+        </li><li>
+          <h4>
+            <a href="/2020/06/16/bootstrap-5-alpha/">
+              Bootstrap 5 alpha!
+              <small>16 Jun 2020</small>
+            </a>
+          </h4>
+        </li><li>
+          <h4>
+            <a href="/2020/05/21/bootstrap-icons-alpha4/">
+              Bootstrap Icons Alpha 4
+              <small>21 May 2020</small>
+            </a>
+          </h4>
+        </li></ul>
+  </div>
+</div>
+
+    </div>
+
+    <footer class="bd-footer p-3 p-md-5 mt-5 text-center text-muted bg-light">
+  <div class="container">
+    <ul class="bd-footer-links">
+      <li><a href="https://github.com/twbs">GitHub</a></li>
+      <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
+      <li><a href="https://getbootstrap.com/docs/4.5/examples/">Examples</a></li>
+      <li><a href="https://getbootstrap.com/docs/4.5/about/overview/">About</a></li>
+    </ul>
+    <p class="mb-0">Designed and built with all the love in the world by the <a href="https://getbootstrap.com/docs/4.5/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/blog/graphs/contributors">our contributors</a>.</p>
+    <p class="mb-0">Currently v4.5.0. The Bootstrap Blog is open source under the MIT license.</p>
+  </div>
+</footer>
+
+
+    <script>
+  (function(w, d) {
+      var b = d.getElementsByTagName('body')[0];
+      var s = d.createElement('script');
+      var io = 'IntersectionObserver' in w && 'IntersectionObserverEntry' in w &&
+                 'intersectionRatio' in w.IntersectionObserverEntry.prototype &&
+                 'isIntersecting' in w.IntersectionObserverEntry.prototype;
+      var v = io ? '13.x' : '8.x';
+      s.async = true;
+      s.src = '/assets/js/vendor/lazyload.' + v + '.iife.min.js';
+      w.lazyLoadOptions = {
+        elements_selector: '.lazy',
+        threshold: 150
+      };
+      b.appendChild(s);
+  }(window, document));
+</script>
+
+    <script>
+  var z = document.createElement('script');
+  z.type = 'text/javascript';
+  z.async = true;
+  z.src = 'https://engine.carbonads.com/z/32340/azcarbon_2_1_0_VERT';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(z, s);
+</script>
+
+  </body>
+</html>

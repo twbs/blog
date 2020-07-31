@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Bootstrap 3.0.3 released | Bootstrap Blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Bootstrap 3.0.3 released" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Today we’re shipping another patch release, v3.0.3, to fix a few dozen bugs and improve our documentation." />
+<meta property="og:description" content="Today we’re shipping another patch release, v3.0.3, to fix a few dozen bugs and improve our documentation." />
+<link rel="canonical" href="https://blog.getbootstrap.com/2013/12/05/bootstrap-3-0-3-released/" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2013/12/05/bootstrap-3-0-3-released/" />
+<meta property="og:site_name" content="Bootstrap Blog" />
+<meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-12-05T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
+<meta property="twitter:title" content="Bootstrap 3.0.3 released" />
+<meta name="twitter:site" content="@getbootstrap" />
+<meta name="twitter:creator" content="@getbootstrap" />
+<script type="application/ld+json">
+{"description":"Today we’re shipping another patch release, v3.0.3, to fix a few dozen bugs and improve our documentation.","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"}},"url":"https://blog.getbootstrap.com/2013/12/05/bootstrap-3-0-3-released/","headline":"Bootstrap 3.0.3 released","dateModified":"2013-12-05T00:00:00+00:00","datePublished":"2013-12-05T00:00:00+00:00","image":{"width":1200,"height":630,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2013/12/05/bootstrap-3-0-3-released/"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-146052-12', 'getbootstrap.com');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script>
+  (function(html) {
+    html.className = html.className.replace(/\bno-js\b/, '');
+  })(document.documentElement);
+</script>
+
+  </head>
+
+  <body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar px-0">
+  <div class="container flex-wrap flex-md-nowrap py-0 px-3">
+    <a class="navbar-brand py-0 mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+    </a>
+
+    <div class="navbar-nav-scroll order-3 order-md-0 d-flex justify-content-center justify-content-md-start">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+        <li class="nav-item">
+          <a class="nav-link " href="https://getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');" target="_blank" rel="noopener">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');" target="_blank" rel="noopener">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://icons.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://themes.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://expo.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://blog.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="navbar-nav ml-sm-auto">
+      <li class="nav-item">
+        <a class="nav-link p-2" href="https://github.com/twbs" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img"><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg>
+
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img"><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg>
+
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com" target="_blank" rel="noopener" aria-label="Slack">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 512" role="img"><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path fill="currentColor" d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z"/></svg>
+
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="https://opencollective.com/bootstrap" target="_blank" rel="noopener" aria-label="Open Collective">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" fill="currentColor" fill-rule="evenodd" viewBox="0 0 40 41" role="img"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"/><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"/></svg>
+
+        </a>
+      </li>
+    </ul>
+
+    <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://getbootstrap.com/docs/4.5/getting-started/download/">Download</a>
+  </div>
+</header>
+
+    <div class="masthead bg-light">
+  <div class="container">
+    <a href="/" aria-label="Bootstrap">
+      <svg xmlns="http://www.w3.org/2000/svg" width="90" height="72" class="bs-docs-booticon mb-3" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+      <h1 class="f2">The Bootstrap Blog</h1>
+    </a>
+    <p class="f5">
+      News and announcements for all things <a href="https://getbootstrap.com/" title="Visit the Bootstrap docs">Bootstrap</a>, including new releases, <a href="https://themes.getbootstrap.com/" title="Browse the official Bootstrap themes">Bootstrap Themes</a>, and <a href="https://icons.getbootstrap.com/" title="Official open source Bootstrap Icons">Bootstrap Icons</a>.
+    </p>
+  </div>
+</div>
+
+      <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
+    <div class="container d-flex align-items-md-center py-2">
+      <nav class="nav mx-auto">
+        <a class="text-dark py-1 mr-3" href="/">All posts</a>
+        <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
+        <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
+        <a class="text-dark py-1" href="/feed.xml">Subscribe</a>
+      </nav>
+    </div>
+  </nav>
+
+
+    <div class="container">
+      <div id="carbonads-container">
+        <div class="carbonad">
+          <div id="azcarbon"></div>
+        </div>
+      </div>
+
+      <div class="posts-container px-3 mx-auto my-5">
+  <div class="post">
+    <h1 class="post-title fw-500">Bootstrap 3.0.3 released</h1>
+    <span class="post-date">05 Dec 2013</span><div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/xy4FXhkm6Nw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+<p>Today we’re shipping another patch release, v3.0.3, to fix a few dozen bugs and improve our documentation.</p>
+
+<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.3.zip">Download Bootstrap 3.0.3</a> or hit the <a href="https://github.com/twbs/bootstrap">GitHub repository</a></p>
+
+<hr />
+
+<h3 id="key-changes">Key changes</h3>
+
+<p>There are a few dozen bug fixes and changes in this release, but we’ve called out the ones we think matter most:</p>
+
+<ul>
+  <li>Padding of <code class="language-plaintext highlighter-rouge">.navbar-collapse</code> and alignment of <code class="language-plaintext highlighter-rouge">.navbar-right:last-child</code> elements has been reworked.</li>
+  <li>Added a <code class="language-plaintext highlighter-rouge">max-width: 100%;</code> to <code class="language-plaintext highlighter-rouge">.container</code>s.</li>
+  <li>Restored the twelfth column’s <code class="language-plaintext highlighter-rouge">float: left;</code> at all grid tiers.</li>
+</ul>
+
+<p>See the list below for more information on those changes and more.</p>
+
+<h3 id="specific-bug-fixes-and-changes">Specific bug fixes and changes</h3>
+
+<ul>
+  <li><a href="https://github.com/twbs/bootstrap/issues/9927">#9927</a>: Update non-responsive example to prevent <code class="language-plaintext highlighter-rouge">.navbar-collapse</code> border from increasing height and increase specificity of nav selectors to keep dropdowns looking the same.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10147">#10147</a>: Remove outline from carousel controls on focus.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10353">#10353</a>: Tell Bower to ignore development and documentation files.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10483">#10483</a>, <a href="https://github.com/twbs/bootstrap/issues/10357">#10357</a>: Make .container mixin-friendly by moving the width declarations within one class.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10662">#10662</a>: Enable individually linked images within thumbnails.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10744">#10744</a>: Use <code class="language-plaintext highlighter-rouge">border-style: solid;</code> on <code class="language-plaintext highlighter-rouge">.caret</code>s to undo a previous Firefox fix that appears to no longer work.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10936">#10936</a>: Increase height of large inputs to fix Firefox inconsistencies by using <code class="language-plaintext highlighter-rouge">ceil()</code> instead of <code class="language-plaintext highlighter-rouge">floor()</code>.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10941">#10941</a>: Fix Glyphicons path for those importing <code class="language-plaintext highlighter-rouge">bootstrap.less</code> from another directory.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10979">#10979</a>: Don’t use <code class="language-plaintext highlighter-rouge">.img-thumbnail</code> as a mixin for <code class="language-plaintext highlighter-rouge">.thumbnail</code> to avoid duplicate and unnecessary styles.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11217">#11217</a>: Fix vertical alignment of labels within buttons, just like badges in buttons.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11268">#11268</a>: Account for badges within buttons by matching background to text color and text color to background.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11277">#11277</a>: Drop the <code class="language-plaintext highlighter-rouge">abbr</code> element from the <code class="language-plaintext highlighter-rouge">.initialism</code> selector.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11299">#11299</a>: Support <code class="language-plaintext highlighter-rouge">.h1</code> in jumbotrons.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11351">#11351</a>: Correct grid class reset on input groups by using attribute selector, not an old class from v3 betas.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11357">#11357</a>: Vertically center <code class="language-plaintext highlighter-rouge">.btn-sm</code> and <code class="language-plaintext highlighter-rouge">.btn-xs</code> variations of <code class="language-plaintext highlighter-rouge">.navbar-btn</code>s in the navbar.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11376">#11376</a>: Don’t deselect radio buttons when double clicking.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11387">#11387</a>: Improve nesting on table classes to enable easier use of mixins.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11388">#11388</a>: Simplify contextual table styles mixin (also drops the <code class="language-plaintext highlighter-rouge">border</code> parameter since we longer apply that anyway).</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11390">#11390</a>: Add <code class="language-plaintext highlighter-rouge">max-width: 100%;</code> to containers within jumbotrons to avoid horizontal scrollbar.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11402">#11402</a>: Set <code class="language-plaintext highlighter-rouge">width: auto;</code> on <code class="language-plaintext highlighter-rouge">select.form-control</code> within <code class="language-plaintext highlighter-rouge">.form-inline</code>.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11414">#11414</a>: Add <code class="language-plaintext highlighter-rouge">.small</code> support to blockquote citations.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11425">#11425</a>: Use <code class="language-plaintext highlighter-rouge">margin</code> instead of <code class="language-plaintext highlighter-rouge">padding</code> on <code class="language-plaintext highlighter-rouge">.modal-dialog</code> to click-thru to <code class="language-plaintext highlighter-rouge">.modal-backdrop</code>.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11432">#11432</a>: Corrected color contrast to WCAG 2.0 AA for <code class="language-plaintext highlighter-rouge">@state-</code> variables (applies to forms and labels).</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11444">#11444</a>: Use <code class="language-plaintext highlighter-rouge">@navbar-padding-vertical</code> for nav links vertical padding.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11449">#11449</a>: Prefer Menlo over Monaco for monospaced fonts.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11468">#11468</a>: Prevent default gradient <code class="language-plaintext highlighter-rouge">background-image</code> on <code class="language-plaintext highlighter-rouge">.navbar-toggle</code> in Firefox for Android.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11476">#11476</a>: Remove unnecessary prefixed keyframe declarations for animated progress bars. Given our browser support requirements, we can drop the <code class="language-plaintext highlighter-rouge">-moz-</code> prefix as the last several versions don’t require it.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11477">#11477</a>: Use namespace events for dropdowns and carousel.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11493">#11493</a>: Ensure proper width of dropdown buttons within vertical button groups.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11499">#11499</a>: Switch from <code class="language-plaintext highlighter-rouge">overflow-y: auto;</code> to <code class="language-plaintext highlighter-rouge">overflow-y: visible;</code> to prevent vertical scrollbar in some navbar situations.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11502">#11502</a>: Add missing data namespace for dropdown plugin.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11513">#11513</a>: Float <code class="language-plaintext highlighter-rouge">navbar-text</code> elements only when screen width is above <code class="language-plaintext highlighter-rouge">@grid-float-breakpoint</code>.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11515">#11515</a>: Reorder the headings with body text and text emphasis classes.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11516">#11516</a>: Invert dropdown divider border in navbars.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11530">#11530</a>: Reworked <code class="language-plaintext highlighter-rouge">padding</code> on <code class="language-plaintext highlighter-rouge">.navbar-collapse</code> and negative <code class="language-plaintext highlighter-rouge">margin</code> for right-aligned navbar content to ensure proper alignment on the right side.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11536">#11536</a>: Add support for button dropdowns within justified button groups.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11544">#11544</a>: Add <code class="language-plaintext highlighter-rouge">color: inherit;</code> to <code class="language-plaintext highlighter-rouge">.panel-title</code> to ensure proper text color when customizing <code class="language-plaintext highlighter-rouge">@headings-color</code>.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11551">#11551</a>: Remove color from <code class="language-plaintext highlighter-rouge">outline</code> reset for improved outlines on focus.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11553">#11553</a>: Prevent double border on tables in panels without <code class="language-plaintext highlighter-rouge">thead</code> content.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11598">#11598</a>: Remove line breaks in minified CSS.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11599">#11599</a>: Explicitly call out font files in <code class="language-plaintext highlighter-rouge">bower.json</code> to avoid npm errors.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11610">#11610</a>: Add <code class="language-plaintext highlighter-rouge">@grid-float-breakpoint-max</code> to better link navbar behavior across viewports and improve customization when setting <code class="language-plaintext highlighter-rouge">@grid-float-breakpoint</code>.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11614">#11614</a>: Account for responsive tables within panels.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11617">#11617</a>: Include jspm package configuration in <code class="language-plaintext highlighter-rouge">package.json</code>.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11623">#11623</a>: Reset <code class="language-plaintext highlighter-rouge">position</code> to <code class="language-plaintext highlighter-rouge">static</code> for grid columns within tables to prevent borders from hiding in IE9, IE10, and Firefox.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11648">#11648</a>: Restore twelfth column’s float.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11658">#11658</a>: Increase <code class="language-plaintext highlighter-rouge">min-height</code> of <code class="language-plaintext highlighter-rouge">.radio</code>/<code class="language-plaintext highlighter-rouge">.checkbox</code> for horizontal forms to ensure alignment of content below.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11693">#11693</a>: Adds <code class="language-plaintext highlighter-rouge">.table</code> to responsive visibility mixin.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11694">#11694</a>: Remove unnecessary prefixes for gradient mixins given our stated browser support.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11712">#11712</a>: Better support for .table-responsive within .panel’s.</li>
+  <li>Removed browser default top margin from <code class="language-plaintext highlighter-rouge">dl</code>s. <a href="https://github.com/twbs/bootstrap/commit/841da88f3fc93740cca07b6e4581a333d77964f0">Commit</a></li>
+</ul>
+
+<h3 id="docs-changes">Docs changes</h3>
+
+<p>Be sure to run <code class="language-plaintext highlighter-rouge">npm install</code> if you’re running <code class="language-plaintext highlighter-rouge">grunt</code> locally—we’ve updated our build process and have some new dependencies.</p>
+
+<ul>
+  <li><a href="https://github.com/twbs/bootstrap/issues/9898">#9898</a>: Improve scrollspy and affix plugin documentation.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/10716">#10716</a>: Update “What’s included” docs section with info on full source code download directory structure.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11303">#11303</a>: Add link to the docs site in compiled assets, and remove personal usernames.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11330">#11330</a>: Add <code class="language-plaintext highlighter-rouge">overflow-x: hidden;</code> to <code class="language-plaintext highlighter-rouge">body</code> in offcanvas example to prevent horizontal scrolling.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11369">#11369</a>: Speed up jQuery and Twitter widgets on docs pages by using Google’s CDN for jQuery and the async snippet from the Twitter dev site for the widgets.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11385">#11385</a>: Warn about Webkit bug for justified nav example.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11409">#11409</a>: Add release checklist to contributing guidelines.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11412">#11412</a>: Add <code class="language-plaintext highlighter-rouge">word-wrap: break-word;</code> to docs Glyphicons class names to ensure proper wrapping in IE10-11.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11434">#11434</a>: Mention form validation class changes in migration docs.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11534">#11534</a>: Document that modal <code class="language-plaintext highlighter-rouge">show()</code> and <code class="language-plaintext highlighter-rouge">hide()</code> return before animation finishes.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11634">#11634</a>: Add warning to docs to not combine icon classes with other elements.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11671">#11671</a>: Updated third party asset libraries (for Customizer and Holder, our thumbnail utility).</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/11701">#11701</a>: Switch to Sauce Labs for our cross-browser JS unit testing needs.</li>
+  <li>Removed mention of Chrome from Webkit rendering bug for justified nav. <a href="https://github.com/twbs/bootstrap/commit/4cbc8d49b10f707029019aaa5eba50e56390a3c5">Commit</a></li>
+</ul>
+
+<p>As always, get the details from the <a href="https://github.com/twbs/bootstrap/issues?milestone=24&amp;page=1&amp;state=closed">v3.0.3 milestone</a>.</p>
+
+<h2 id="up-next">Up next</h2>
+
+<p>Next up is v3.1.0, the first new feature release for Bootstrap 3. Stay tuned for more information on what’ll be in that release as we continue to plan out subsequent releases.</p>
+
+<hr />
+
+<p>&lt;3,</p>
+
+<p><a href="https://twitter.com/mdo">@mdo</a> and <a href="https://github.com/twbs?tab=members">team</a></p>
+
+  </div>
+
+  <div class="related">
+    <h2>Recent posts</h2>
+    <ul class="related-posts"><li>
+          <h4>
+            <a href="/2020/06/26/bootstrap-icons-alpha5/">
+              Bootstrap Icons Alpha 5
+              <small>26 Jun 2020</small>
+            </a>
+          </h4>
+        </li><li>
+          <h4>
+            <a href="/2020/06/16/bootstrap-5-alpha/">
+              Bootstrap 5 alpha!
+              <small>16 Jun 2020</small>
+            </a>
+          </h4>
+        </li><li>
+          <h4>
+            <a href="/2020/05/21/bootstrap-icons-alpha4/">
+              Bootstrap Icons Alpha 4
+              <small>21 May 2020</small>
+            </a>
+          </h4>
+        </li></ul>
+  </div>
+</div>
+
+    </div>
+
+    <footer class="bd-footer p-3 p-md-5 mt-5 text-center text-muted bg-light">
+  <div class="container">
+    <ul class="bd-footer-links">
+      <li><a href="https://github.com/twbs">GitHub</a></li>
+      <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
+      <li><a href="https://getbootstrap.com/docs/4.5/examples/">Examples</a></li>
+      <li><a href="https://getbootstrap.com/docs/4.5/about/overview/">About</a></li>
+    </ul>
+    <p class="mb-0">Designed and built with all the love in the world by the <a href="https://getbootstrap.com/docs/4.5/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/blog/graphs/contributors">our contributors</a>.</p>
+    <p class="mb-0">Currently v4.5.0. The Bootstrap Blog is open source under the MIT license.</p>
+  </div>
+</footer>
+
+
+    <script>
+  (function(w, d) {
+      var b = d.getElementsByTagName('body')[0];
+      var s = d.createElement('script');
+      var io = 'IntersectionObserver' in w && 'IntersectionObserverEntry' in w &&
+                 'intersectionRatio' in w.IntersectionObserverEntry.prototype &&
+                 'isIntersecting' in w.IntersectionObserverEntry.prototype;
+      var v = io ? '13.x' : '8.x';
+      s.async = true;
+      s.src = '/assets/js/vendor/lazyload.' + v + '.iife.min.js';
+      w.lazyLoadOptions = {
+        elements_selector: '.lazy',
+        threshold: 150
+      };
+      b.appendChild(s);
+  }(window, document));
+</script>
+
+    <script>
+  var z = document.createElement('script');
+  z.type = 'text/javascript';
+  z.async = true;
+  z.src = 'https://engine.carbonads.com/z/32340/azcarbon_2_1_0_VERT';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(z, s);
+</script>
+
+  </body>
+</html>
