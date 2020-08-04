@@ -1,5 +1,6 @@
 # https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
 all
+exclude_rule "MD001"
 exclude_rule "MD002"
 exclude_rule "MD012"
 exclude_rule "MD013"
