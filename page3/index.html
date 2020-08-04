@@ -161,6 +161,35 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2019/07/24/lts-plan/">
+            Introducing our Long Term Support plan
+          </a>
+        </h1>
+
+        <span class="post-date">24 Jul 2019</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/2HuiH-0R6a0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Today we’re formally announcing our <a href="https://github.com/twbs/release">Long Term Support plan</a>, a documented approach aimed at strengthening the stability and frequency of releases. As part of this initiative, each major version of Bootstrap will receive at least six months of support after it is retired, followed by six months of critical bug fixes and security updates.</p>
+
+<p>Starting today, Bootstrap 3 will move to end of life, and will no longer receive critical security updates.</p>
+
+<p>Bootstrap 4 will move to Long Term Support after we release <code class="language-plaintext highlighter-rouge">v4.4</code> and will no longer receive new features from then on. It will continue to receive bug fixes, security updates, and documentation updates.</p>
+
+<p>Bootstrap 5 is under active development. You can follow our progress <a href="https://github.com/twbs/bootstrap">on GitHub</a>.</p>
+
+<p>A special thanks to <a href="https://github.com/XhmikosR">@XhmikosR</a> for his tireless work in pushing us forward.</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2019/02/13/bootstrap-4-3-1-and-3-4-1/">
             Bootstrap 3.4.1 and 4.3.1
           </a>
@@ -398,41 +427,6 @@
 <p>We’ve been working on a <a href="https://github.com/twbs/bootstrap/projects/6?fullscreen=true">huge v4.2 update</a> for several months now. Our attention has largely been on advancing the project and simplifying it’s dependencies, namely by removing our jQuery dependency. That work has sparked a keen interest in a moderately scoped v5 release, so we’ve been taking our sweet time with v4.2 to sneak in as many new features as we can.</p>
 
 <p>After we ship v4.2, we’ll plan for point releases to address any bugs and improvements as y’all start to use the new version. From there, we’ll start to share more plans on v5 to remove jQuery, drop support for older browsers, and clear up some cruft. This won’t be a sweeping rewrite, but rather an iterative improvement on v4. Stay tuned!</p>
-
-<p>&lt;3,<br />
-<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2018/07/24/bootstrap-4-1-3/">
-            Bootstrap 4.1.3
-          </a>
-        </h1>
-
-        <span class="post-date">24 Jul 2018</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/LqB9lhHqmsE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Hot on the heels of v4.1.2, we’re shipping another patch release to address an issue with our browserslist config, fix some CSS bugs, make JavaScript plugins UMD ready, and improve form control rendering. Up next will be v4.2, our second minor release where we add some new features.</p>
-
-<p>But first, here are the highlights for v4.1.3. Pay attention to the change to <code class="language-plaintext highlighter-rouge">.form-control</code>s which adds a new fixed <code class="language-plaintext highlighter-rouge">height</code>.</p>
-
-<ul>
-  <li><strong>Fixed:</strong> Moved the browserslist config from our <code class="language-plaintext highlighter-rouge">package.json</code> to a separate file to avoid unintended inherited browser settings across npm projects.</li>
-  <li><strong>Fixed:</strong> Removed the <code class="language-plaintext highlighter-rouge">:not(:root)</code> selector from our <code class="language-plaintext highlighter-rouge">svg</code> Reboot styles, resolving an issue that caused all inline SVGs ignore <code class="language-plaintext highlighter-rouge">vertical-align</code> styles via single class due to higher specificity.</li>
-  <li><strong>Fixed:</strong> Buttons in custom file inputs are once again clickable when focused.</li>
-  <li><strong>Improved:</strong> Bootstrap’s plugins can now be imported separately in any contexts because they are now UMD ready.</li>
-  <li><strong>Improved:</strong> <code class="language-plaintext highlighter-rouge">.form-control</code>s now have a fixed <code class="language-plaintext highlighter-rouge">height</code> to compensate for differences in computed height across different <code class="language-plaintext highlighter-rouge">type</code>s. This also fixes some IE alignment issues.</li>
-  <li><strong>Improved:</strong> Added <code class="language-plaintext highlighter-rouge">Noto Color Emoji</code> to our system font stack for better rendering in Linux OSes.</li>
-</ul>
-
-<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/26867">v4.1.3 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/15">GitHub project</a> for the full details. Up next is <a href="https://github.com/twbs/bootstrap/projects/6">v4.2</a>, so stay tuned for some awesome new features like toasts, dismissible badges, negative margins (responsive grid gutters!), spinners, and more!</p>
-
-<p><a href="https://getbootstrap.com/docs/4.1/">Head to the v4.1.x docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.</p>
 
 <p>&lt;3,<br />
 <a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>

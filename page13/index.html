@@ -161,6 +161,54 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/12/08/bootstrap-2-2-2-released/">
+            Bootstrap 2.2.2 released
+          </a>
+        </h1>
+
+        <span class="post-date">08 Dec 2012</span>
+
+        
+
+        <p>Today we’re launching <a href="https://getbootstrap.com/">Bootstrap 2.2.2</a>, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here’s the rundown on what’s new in this release:</p>
+
+<ul>
+  <li><strong>Docs:</strong>
+    <ul>
+      <li>Assets (illustrations and examples) are now retina-ready.</li>
+      <li>Replaced <a href="https://placeholder.com/">Placehold.it</a> with <a href="http://holderjs.com/">Holder.js</a>, a client-side and retina-ready placeholder image tool.</li>
+    </ul>
+  </li>
+  <li><strong>Dropdowns:</strong> Temporary fix added for dropdowns on mobile to prevent them from closing early.</li>
+  <li><strong>Popovers:</strong>
+    <ul>
+      <li>No longer inherits <code class="language-plaintext highlighter-rouge">font-size: 0;</code> when placed in button groups.</li>
+      <li>Arrows refactored to work in IE8, and use less code.</li>
+      <li>Plugin no longer inserts popover content into a <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>, but rather directly into <code class="language-plaintext highlighter-rouge">.popover-content</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Labels and badges:</strong> Now <a href="https://github.com/twbs/bootstrap/commit/ead5dbeba5cd7acfa560bfb353f5e7c4f4a19256">automatically collapse</a> if they have no content.</li>
+  <li><strong>Tables:</strong> Nesting support with <code class="language-plaintext highlighter-rouge">.table-bordered</code> and <code class="language-plaintext highlighter-rouge">.table-striped</code> greatly improved.</li>
+  <li><strong>Typeahead:</strong>
+    <ul>
+      <li>Now <a href="https://github.com/twbs/bootstrap/commit/1747caf19d59cad7fdc90ae56a00e0e2849f95f4">inserts dropdown menu after the input</a> instead of at the close of the document.</li>
+      <li>Hitting escape will place focus back on the <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>.</li>
+    </ul>
+  </li>
+  <li>Print styles, from HTML5 Boilerplate, have been added.</li>
+</ul>
+
+<p>Get a more complete list by viewing the <a href="https://github.com/twbs/bootstrap/issues?milestone=17&amp;state=closed">2.2.2 milestone on GitHub</a>. Most of the issues not mentioned above are minor CSS tweaks and documentation typos.</p>
+
+<p><a class="btn-link" href="https://github.com/twbs/bootstrap/zipball/master">Download Bootstrap 2.2.2</a> <span class="muted">(latest master ZIP)</span></p>
+
+<hr />
+
+<p>We have a 2.2.3 release slated for further bugs and improvements we couldn’t tackle in this version, but most of our ongoing efforts are going to transition to development on 3.0.0. More details on that will come next week.</p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/12/02/help-test-2.2.2/">
             Help test Bootstrap 2.2.2
           </a>
@@ -289,30 +337,6 @@
 <p>As a quick side note, we’re still working on moving Bootstrap to its own organization on GitHub. That will come with a couple other big changes, but more on that soon. We’ll be jumping on the next release shortly for more bugfixes, but until then enjoy the fixes and new hotness!</p>
 
 <p>Lastly, thanks everyone again for submitting issues and contributing—you rock!</p>
-
-<p>&lt;3,</p>
-
-<p><a href="https://twitter.com/mdo">@mdo</a> and <a href="https://twitter.com/fat">@fat</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/09/29/onward/">
-            Onward
-          </a>
-        </h1>
-
-        <span class="post-date">29 Sep 2012</span>
-
-        
-
-        <p>Working at Twitter the last two and a half years has been incredible. Both Jacob and I have worked with a lot of amazing people on some pretty amazing projects, but nothing has been more enjoyable or rewarding than working on Bootstrap. Despite us leaving Twitter to go our <a href="https://www.youtube.com/watch?v=LatorN4P9aA">separate ways</a>, we’ll both be continuing our work on the project.</p>
-
-<p>Bootstrap will remain a Twitter project on GitHub for the time being, but we’ve realized the project has grown beyond us and the Twitter brand. It’s a huge project playing a pretty awesome role in the web development industry, and we’re excited to see it continue to grow. To that end, we’ve begun working to move Bootstrap into its own open source organization. It will take time, but we’re dedicated to making it happen.</p>
-
-<p>In the coming weeks, we’ll release another bugfix update (2.1.2) to address a few things, and then it’s full steam ahead on improving some key areas of the framework (modals, carousels, customizer, etc). We’ll share more info on those updates as plans take shape.</p>
-
-<p>Until then, we have nothing but love for Twitter and the web development community. Thank you all so much for everything.</p>
 
 <p>&lt;3,</p>
 

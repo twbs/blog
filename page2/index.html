@@ -161,6 +161,53 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2020/03/19/bootstrap-icons-alpha-3/">
+            Bootstrap Icons Alpha 3
+          </a>
+        </h1>
+
+        <span class="post-date">19 Mar 2020</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/kijpcUv-b8M?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>While we continue to work on Bootstrap 5, I’ve been jamming away on the Bootstrap Icons library, continuing to create as many icons as time allows. Today marks the third alpha, and massive update to the project. We’ve officially crossed 500 icons!</p>
+
+<p>We’ve cleaned up existing icons, created new permalink pages for each and every icon, and added hundreds of new icons—all in one release.</p>
+
+<h2 id="500-icons">500+ icons!</h2>
+
+<p>I’ve added 221 new icons in our third alpha, the most ever in an alpha release thus far. And while I was drawing all these new awesome icons, I also cleaned up the existing ones by changing their <code class="language-plaintext highlighter-rouge">viewBox</code> size and redrew many to ensure more pixel perfect icons.</p>
+
+<p><img src="/assets/img/2020/03/bootstrap-icons-alpha3-all.png" alt="All Bootstrap Icons" /></p>
+
+<p>Why change the <code class="language-plaintext highlighter-rouge">viewBox</code>? In the first two alphas, I was drawing icons on 20x20 artboards in Figma. This seemed like a good idea, but every icon was roughly 16x16, so it ended up being dead space. Now, every icon has been updated to eliminate the 2px inner padding, making the <code class="language-plaintext highlighter-rouge">viewBox</code>s <code class="language-plaintext highlighter-rouge">0 0 16 16</code> instead of <code class="language-plaintext highlighter-rouge">0 0 20 20</code>.</p>
+
+<p>This change has some slight file size improvements, and should help with sizing and positioning as well.</p>
+
+<h2 id="permalink-pages">Permalink pages</h2>
+
+<p>Looking for a particular icon, but don’t want to download the entire project to snag the SVG source code? Need to send someone a link to an icon? Look no further than the new icon permalink pages!</p>
+
+<p>From the Bootstrap Icons homepage, click any icon and you’ll be taken to a page dedicated to just that icon. It features the icon in various sizes and renders the source code like you’re used to seeing in Bootstrap’s docs.</p>
+
+<p><img src="/assets/img/2020/03/bootstrap-icons-alpha3-permalink.png" alt="Bootstrap Icons permalink" /></p>
+
+<p>Since this is still an alpha, some features are still missing from our docs. This includes unlinked tags, no category listing, and no copy to clipboard. I hope to see those added before our stable v1.0.0 release. PRs are very much welcome if you’d like to contribute!</p>
+
+<h2 id="download">Download</h2>
+
+<p>Alpha 3 has been published to GitHub and npm (package name <code class="language-plaintext highlighter-rouge">bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code class="language-plaintext highlighter-rouge">v1.0.0-alpha3</code>, or by snagging the <a href="https://www.figma.com/file/NKZWcfR2T3FU0I7fNLqFvI/Bootstrap-Icons-v1.0.0-alpha3">icons from Figma</a>.</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2019/12/14/bootstrap-icons-alpha2/">
             Bootstrap Icons Alpha 2
           </a>
@@ -169,7 +216,7 @@
         <span class="post-date">14 Dec 2019</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/HgzGwKwLmgM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/HgzGwKwLmgM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -323,35 +370,6 @@
 <h2 id="support-the-team">Support the team</h2>
 
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>’ GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-<p>&lt;3,<br /></p>
-
-<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2019/07/24/lts-plan/">
-            Introducing our Long Term Support plan
-          </a>
-        </h1>
-
-        <span class="post-date">24 Jul 2019</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/2HuiH-0R6a0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Today we’re formally announcing our <a href="https://github.com/twbs/release">Long Term Support plan</a>, a documented approach aimed at strengthening the stability and frequency of releases. As part of this initiative, each major version of Bootstrap will receive at least six months of support after it is retired, followed by six months of critical bug fixes and security updates.</p>
-
-<p>Starting today, Bootstrap 3 will move to end of life, and will no longer receive critical security updates.</p>
-
-<p>Bootstrap 4 will move to Long Term Support after we release <code class="language-plaintext highlighter-rouge">v4.4</code> and will no longer receive new features from then on. It will continue to receive bug fixes, security updates, and documentation updates.</p>
-
-<p>Bootstrap 5 is under active development. You can follow our progress <a href="https://github.com/twbs/bootstrap">on GitHub</a>.</p>
-
-<p>A special thanks to <a href="https://github.com/XhmikosR">@XhmikosR</a> for his tireless work in pushing us forward.</p>
 
 <p>&lt;3,<br /></p>
 
