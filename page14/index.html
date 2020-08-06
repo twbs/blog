@@ -161,6 +161,56 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/10/29/bootstrap-2-2-0-released/">
+            Bootstrap 2.2.0 released
+          </a>
+        </h1>
+
+        <span class="post-date">29 Oct 2012</span>
+
+        
+
+        <p>Aww yeah, our first release since leaving Twitter is here with Bootstrap 2.2.0! We originally planned to release this as 2.1.2, but given the timing and scope we’re bumping the version. Included in this release are dozens of bug fixes, documentation enhancements, and a few new and improved features.</p>
+
+<h2 id="tldr">tl;dr</h2>
+
+<p>2.1.2 is now 2.2.0: four new example templates, added media component, new typographic scale, fixed that box-shadow mixin bug, fixed z-index issues, and <a href="https://github.com/twbs/bootstrap/issues?milestone=15&amp;page=1&amp;state=closed">more</a>.</p>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+  <li><strong>Added four new example templates</strong> to the docs, including a narrow marketing page, sign in form, sticky footer, and a fancy carousel (created for an upcoming .net magazine article).</li>
+  <li><strong>Added the media component</strong>, to create larger common components like comments, Tweets, etc.</li>
+  <li><strong>New variable-driven typographic scale</strong> based on <code class="language-plaintext highlighter-rouge">@baseFontSize</code> and <code class="language-plaintext highlighter-rouge">@baseLineHeight</code>.</li>
+  <li>Revamped mini, small, and large padding via new variables for inputs and buttons so everything is the same size.</li>
+  <li>Reverted 2.1.1’s <code class="language-plaintext highlighter-rouge">.box-shadow();</code> mixin change that caused compiler errors.</li>
+  <li>Improved dropdown submenus to support dropups and left-aligned submenus.</li>
+  <li>Fixed z-index issues with tooltips and popovers in modals.</li>
+  <li>Hero unit now sets basic type styles for the entire component, rather than on <code class="language-plaintext highlighter-rouge">.hero-unit p { ... }</code>.</li>
+  <li>Updated JavaScript plugins and docs to jQuery 1.8.1.</li>
+  <li>Added Contributing.md file.</li>
+  <li>Added support for installing Bootstrap via <a href="https://bower.io/">Bower</a>.</li>
+  <li>Miscellaneous variable improvements across the board.</li>
+  <li>Miscellaneous documentation typos fixed.</li>
+</ul>
+
+<p>For the full list of issues included in this release, visit the <a href="https://github.com/twbs/bootstrap/issues?milestone=15&amp;page=1&amp;state=closed">2.2.0 milestone on GitHub</a>. Otherwise, be sure to <a href="https://getbootstrap.com/">visit the docs</a> or download the latest to get your hands on 2.2.0.</p>
+
+<p><a class="btn-link" href="https://github.com/twbs/bootstrap/zipball/master">Download Bootstrap 2.2.0</a> <span class="muted">(latest master ZIP)</span></p>
+
+<h2 id="next-steps">Next steps</h2>
+
+<p>As a quick side note, we’re still working on moving Bootstrap to its own organization on GitHub. That will come with a couple other big changes, but more on that soon. We’ll be jumping on the next release shortly for more bugfixes, but until then enjoy the fixes and new hotness!</p>
+
+<p>Lastly, thanks everyone again for submitting issues and contributing—you rock!</p>
+
+<p>&lt;3,</p>
+
+<p><a href="https://twitter.com/mdo">@mdo</a> and <a href="https://twitter.com/fat">@fat</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/09/29/onward/">
             Onward
           </a>
@@ -295,40 +345,6 @@
 <hr />
 
 <p>For the full changelog, visit the <a href="https://github.com/twbs/bootstrap/wiki/Changelog">GitHub wiki page</a> and the <a href="https://github.com/twbs/bootstrap/issues?milestone=7&amp;page=1&amp;state=closed">2.1.0 milestone</a>. We’ve already begun slating things for 2.2, but currently have no estimates on when that will be released or what exactly will make it in. We also may do a 2.1.1, but again, no promises at this point. <a href="https://www.youtube.com/watch?v=1vaQ-Y6kLOM&amp;t=4s">Live in the now!</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/08/13/help-test-bootstrap-2-1/">
-            Help test Bootstrap 2.1
-          </a>
-        </h1>
-
-        <span class="post-date">13 Aug 2012</span>
-
-        
-
-        <p>We’re stoked to release Bootstrap 2.1 next week Monday at our <a href="https://twitter-bootstrap-birthday.eventbrite.com/">first birthday party</a>, but to make it a great release, we need your help testing it out.</p>
-
-<p>While 2.0.4 was a smaller release, 2.1 is a much larger effort that closes nearly 100 issues and adds a handful of great features. You can see the full list of changes changes in 2.1 thus far by browsing the <a href="https://github.com/twbs/bootstrap/issues?milestone=7&amp;page=1&amp;state=closed">milestone on GitHub</a>.</p>
-
-<h2 id="whats-included">What’s included</h2>
-
-<p>At a broad level, we’ve got overhauled docs. They’re drastically streamlined, redesigned, and better than ever. They even include a new page for getting started with an overview of the framework. New framework features include <strong>submenu support on dropdowns</strong>, <strong>block level buttons</strong>, and the <strong>affix plugin</strong>. We’ve made many other key changes, so be sure to check it out.</p>
-
-<p>We’ll have a more complete list of changes with our release next week.</p>
-
-<h2 id="how-to-help">How to help</h2>
-
-<p>Just like last time, we’re pushing out a release candidate of the 2.1 code and docs. <strong>Here’s how you can help us out:</strong></p>
-
-<ul>
-  <li>Checkout the <code class="language-plaintext highlighter-rouge">2.1.0-wip</code> branch, or browse the release candidate docs so you can easily load it up on devices and such for testing.</li>
-  <li>Load up the new docs in your favorite, or your least favorite, browser or device and start testing.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues?sort=created&amp;direction=desc&amp;state=open">Open a new issue on GitHub</a> to report bugs. Please include as much context and information as possible. If it’s a visual bug, please include a screenshot. If it pertains to JavaScript, consider including a <a href="https://jsfiddle.net/">jsfiddle</a> or <a href="https://jsbin.com/">jsbin</a>.</li>
-</ul>
-
-<p>If you’re submitting a pull request against 2.1-wip, be sure to read the <a href="https://github.com/twbs/bootstrap/wiki/Contributing-to-Bootstrap">Contributing to Bootstrap</a> wiki page first.</p>
 
       </div>
     

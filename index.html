@@ -160,6 +160,44 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2020/08/06/bootstrap-4-5-2/">
+            Bootstrap 4.5.2
+          </a>
+        </h1>
+
+        <span class="post-date">06 Aug 2020</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/ccenFp_3kq8?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Today’s patch release is aimed at addressing some small issues introduced over the last few versions of Bootstrap 4. Read on for details and update when you’re ready.</p>
+
+<p>From the addition of responsive containers in v4.4.0 to the most recent row and column adjustments, we had been making incremental changes to our grid system. While our changes have solved some issues, they’ve broken other behaviors and introduced new complexities.</p>
+
+<p>Today’s release rolls back and restores a few things:</p>
+
+<ul>
+  <li>
+    <p><strong><a href="https://github.com/twbs/bootstrap/pull/31438">#31438</a> restores the <code class="language-plaintext highlighter-rouge">make-container-max-widths</code> mixin.</strong> We won’t be using the mixin ourselves, but it will remain in the codebase for the rest of v4 with today’s release. We’ve added a deprecation notice as well.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://github.com/twbs/bootstrap/pull/31439">#31439</a> removes <code class="language-plaintext highlighter-rouge">flex: 1 0 100%</code> from <code class="language-plaintext highlighter-rouge">.row</code>s.</strong> This was added to address shrinking rows inside the navbar component after our responsive containers were added in v4.4.0. Removing this rolls us back to the expected grid and flex behavior—your row will shrink unfortunately without further changes. We could add extra custom CSS to address this, but it seems shortsighted to rush into that. Instead, apply <code class="language-plaintext highlighter-rouge">.flex-fill</code> to the <code class="language-plaintext highlighter-rouge">.row</code> and your row will behave as usual.</p>
+  </li>
+</ul>
+
+<p>Similarly, <strong>v4.5.1 already removed the <code class="language-plaintext highlighter-rouge">min-width: 0</code> on <code class="language-plaintext highlighter-rouge">.col</code>s</strong>. This change was introduced to fix <code class="language-plaintext highlighter-rouge">&lt;pre&gt;</code> elements not fitting to a column. This an issue with how flexbox works, where a flex container cannot shrink beyond its children’s content. Rather than force this on every column, we recommend you apply this as needed with a custom utility. (We’ll also aim to add this as a new utility in v5.)</p>
+
+<p>We know this kind of hiccups set you back, so please accept our apologies for the bugs. Be sure to read the referenced pull requests above to get up to speed on what happened and how we fixed it. <a href="https://codepen.io/emdeoh/pen/LYNYmPR?editors=1100">This CodePen demo</a> has all the known grid issues and fixes implemented in it.</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2020/08/04/bootstrap-4-5-1/">
             Bootstrap 4.5.1
           </a>
@@ -168,7 +206,7 @@
         <span class="post-date">04 Aug 2020</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/iIpfWORQWhU?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/iIpfWORQWhU?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -578,50 +616,6 @@
 <h2 id="download">Download</h2>
 
 <p>Alpha 4 has been published to GitHub and npm (package name <code class="language-plaintext highlighter-rouge">bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code class="language-plaintext highlighter-rouge">v1.0.0-alpha4</code>, or by snagging the <a href="https://www.figma.com/file/XDj1VewxEtXzkDDMAvWx2W/Bootstrap-Icons-v1.0.0-alpha4">icons from Figma</a>.</p>
-
-<p>&lt;3,<br /></p>
-
-<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2020/05/12/bootstrap-4-5-0/">
-            Bootstrap 4.5.0
-          </a>
-        </h1>
-
-        <span class="post-date">12 May 2020</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/tNG62fULYgI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Bootstrap v4.5.0 has landed with dozens of bug fixes, some small new features, and some changes to our development. Originally planned as a v4.4.2 patch release, we’ve bumped this to a minor release on account of our new features that help bridge the gap between v4 and our upcoming v5.</p>
-
-<h2 id="highlights">Highlights</h2>
-
-<p>Here’s what you need to know about v4.5.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work.</p>
-
-<ul>
-  <li><strong>New interaction utilities.</strong> Quickly set <code class="language-plaintext highlighter-rouge">user-select</code> with the new utilities and Sass map.</li>
-  <li><strong>New Reboot style for pointer cursors.</strong> We now include a <code class="language-plaintext highlighter-rouge">role="button"</code> selector in Reboot to set <code class="language-plaintext highlighter-rouge">cursor: pointer</code> on non-<code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> element buttons.</li>
-  <li><strong>Examples are now downloadable.</strong> We’ve added a script to zip up and offer all our Examples as their own download from the docs.</li>
-  <li><strong>Saved ~5%</strong> from the compressed minified JS builds.</li>
-  <li>Added guidance to our docs for how to work around our longstanding input group rounded corner bug.</li>
-  <li>Redesigned docs homepage and navbar to increment us towards v5’s new docs design.</li>
-  <li>Deprecated <code class="language-plaintext highlighter-rouge">bg-gradient-variant</code> mixin as it’s being removed in v5.</li>
-  <li>Updated to jQuery v3.5.1, Jekyll v4, and dropped Node.js &lt; 10 for development.</li>
-</ul>
-
-<p>We’ve shipped a lot more in this release, so be sure to check out the <a href="https://github.com/twbs/bootstrap/releases/tag/v4.5.0">v4.5.0 GitHub release</a> and the <a href="https://github.com/twbs/bootstrap/projects/20">v4.5.0 project for closed issues and merged pull requests</a> for more details.</p>
-
-<p><a href="https://getbootstrap.com/docs/4.5/">Head to the v4.5.0 docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the BootstrapCDN and Rubygems.</p>
-
-<h2 id="support-the-team">Support the team</h2>
-
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>’ GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
 <p>&lt;3,<br /></p>
 
