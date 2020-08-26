@@ -3,8 +3,9 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    chef-utils (16.4.41)
     colorator (1.1.0)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -62,16 +63,23 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    mdl (0.9.0)
-      kramdown (~> 2.0)
-      kramdown-parser-gfm (~> 1.0)
+    mdl (0.11.0)
+      kramdown (~> 2.3)
+      kramdown-parser-gfm (~> 1.1)
       mixlib-cli (~> 2.1, >= 2.1.1)
       mixlib-config (>= 2.2.1, < 4)
+      mixlib-shellout
     mercenary (0.4.0)
     mini_portile2 (2.4.0)
-    mixlib-cli (2.1.6)
-    mixlib-config (3.0.6)
+    mixlib-cli (2.1.8)
+    mixlib-config (3.0.9)
       tomlrb
+    mixlib-shellout (3.1.4)
+      chef-utils
+    mixlib-shellout (3.1.4-universal-mingw32)
+      chef-utils
+      win32-process (~> 0.8.2)
+      wmi-lite (~> 1.0)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.10-x64-mingw32)
@@ -87,7 +95,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.4)
-    rouge (3.21.0)
+    rouge (3.22.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -100,6 +108,9 @@ GEM
       ethon (>= 0.9.0)
     unicode-display_width (1.7.0)
     wdm (0.1.1)
+    win32-process (0.8.3)
+      ffi (>= 1.0.0)
+    wmi-lite (1.0.5)
     yell (2.2.2)
 
 PLATFORMS
@@ -114,7 +125,7 @@ DEPENDENCIES
   jekyll-redirect-from (~> 0.16.0)
   jekyll-seo-tag (~> 2.6.1)
   jekyll-sitemap (~> 1.4.0)
-  mdl (~> 0.9.0)
+  mdl (~> 0.11.0)
   wdm (~> 0.1.1)
 
 BUNDLED WITH
