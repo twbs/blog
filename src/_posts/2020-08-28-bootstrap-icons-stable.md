@@ -2,7 +2,7 @@
 layout: post
 title: Bootstrap Icons v1.0.0
 video: azdwsXLmrHE
-date: 2020-08-25 21:30:00
+date: 2020-08-28 21:30:00
 ---
 
 After five alphas over the last nine months, Bootstrap Icons has officially gone stable with our v1.0.0 release! We're now over 1,100 icons and are on track to add hundreds more in our upcoming minor releases. This has been a labor of love and I'm thrilled to ship this latest update.
