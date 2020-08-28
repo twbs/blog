@@ -29,7 +29,7 @@ To get started, install via npm:
 npm i bootstrap-icons
 ```
 
-You can also [download the release from GitHub](https://github.com/twbs/icons/releases/), or [download just the SVGs]() (without the rest of the repository files).
+You can also [download the release from GitHub](https://github.com/twbs/icons/releases/tag/v1.0.0), or [download just the SVGs](https://github.com/twbs/icons/releases/download/untagged-9f0a3c3ae2b3d6aff334/bootstrap-icons-1.0.0.zip) (without the rest of the repository files).
 
 ## Figma
 
