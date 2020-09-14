@@ -16,7 +16,7 @@ GEM
     ffi (1.13.1)
     ffi (1.13.1-x64-mingw32)
     forwardable-extended (2.6.0)
-    html-proofer (3.15.3)
+    html-proofer (3.16.0)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -74,9 +74,9 @@ GEM
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
       tomlrb
-    mixlib-shellout (3.1.4)
+    mixlib-shellout (3.1.6)
       chef-utils
-    mixlib-shellout (3.1.4-universal-mingw32)
+    mixlib-shellout (3.1.6-universal-mingw32)
       chef-utils
       win32-process (~> 0.8.2)
       wmi-lite (~> 1.0)
@@ -89,13 +89,13 @@ GEM
     parallel (1.19.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.5)
+    public_suffix (4.0.6)
     rainbow (3.0.0)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.4)
-    rouge (3.22.0)
+    rouge (3.23.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -118,7 +118,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  html-proofer (~> 3.15.3)
+  html-proofer (~> 3.16.0)
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.15.0)
   jekyll-paginate (~> 1.1.0)
