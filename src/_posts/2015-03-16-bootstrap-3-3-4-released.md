@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.3.4 released
 video: _dx0qWHL7dc
+author: cvrebert
 ---
 
 Bootstrap 3.3.4 is here! This release has been focused on bug fixes and documentation improvements. We've had over 325 commits from 29 contributors since our last release! Nice.

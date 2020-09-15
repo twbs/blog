@@ -2,6 +2,7 @@
 layout: post
 title: Introducing No Carrier
 video: rog8ou-ZepE
+author: cvrebert
 ---
 
 Say hello to our newest bot, **No Carrier**. Inspired by the classic modem disconnection error message of yesteryear, No Carrier helps us track issues that appear to have been abandoned by the original poster. Issues that go without a reply to our questions for two weeks are closed with a friendly explanation by No Carrier.

@@ -2,6 +2,7 @@
 layout: post
 title: Introducing Rorschach
 video: Pav2f4b-1ZE
+author: cvrebert
 ---
 
 Bootstrap receives tons of awesome pull requests every week. Many of them come from folks new to contributing to the project. As such, there are a few beginner mistakes we've noticed over time.
