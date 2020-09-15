@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.3.7 released
 video: Kr0tTbTbmVA
+author: cvrebert
 ---
 
 Bootstrap 3.3.7 is here! We've had over 220 commits and 80 closed issues and pull requests from nearly 30 contributors since our last release. Woohoo!
