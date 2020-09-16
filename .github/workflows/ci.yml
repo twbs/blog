@@ -37,7 +37,7 @@ jobs:
       - run: bundle --version
 
       - name: Install bundler dependencies
-        run: bundle install --deployment --jobs=4 --retry=3 --clean
+        run: bundle install --jobs=4 --retry=3
 
       - run: bundle exec jekyll build
       - run: bundle exec jekyll doctor
