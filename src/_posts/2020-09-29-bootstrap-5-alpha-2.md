@@ -21,25 +21,29 @@ We've redesigned the main navbar to hide links on small devices, and when expand
 
 ![]()
 
-...
+Add `.carousel-dark` to any `.carousel` to switch from the default white text, controls, and indicators to black. Values are configurable via Sass variables. To save on filesize, we're using a CSS `filter` to invert out SVGs for the carouse controls. Pretty neat if you ask us!
 
 ## Dark dropdowns
 
 ![]()
 
-...
+For the first time since Bootstrap v1 nearly nine years ago, we have dark dropdown menus! Add `.dropdown-menu-dark` to any dropdown menu to change the appearance. Dark dropdowns are opt-in, so you'll need to add the class as you go.
+
+We'd like to revisit some of this later in v5 with minor releases that advance dark mode throughout the entire project. Until then, enjoy the new classes!
 
 ## Redesigned close button
 
 ![]()
 
-Close button revamped, now featuring an SVG background-image instead of a multiplication sign, with new focus styles, and a white variant.
+Our close button has been redesigned! We've renames the class from the rather generic `.close` to `.btn-close`. In addition, we've dropped the use of `&times;` in our HTML for an SVG `background-image` via CSS. With updated styling all around, the close button has a clearer focus state and even an all new white variant (also powered by a CSS `filter`).
 
 ## Position utilities
 
 ![]()
 
-...
+Thanks to our contributors, we've added new directional positioning utilities. Quickly position an element with our new top, right, bottom, and left utilities with support for 0, 50%, and 100% by default. Combine with new translate utilities to center elements on an edge or corner, too!
+
+The new utilities are configurable and extensible thanks to the utilities API and some smart Sass map defaults.
 
 ## More highlights
 
