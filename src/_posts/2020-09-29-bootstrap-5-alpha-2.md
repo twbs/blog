@@ -43,7 +43,7 @@ Our close button has been renamed, redesigned, new focus state, and a new color 
 
 [![Example close button](/assets/img/2020/09/v5a2-close-btn.png)](https://v5.getbootstrap.com/docs/5.0/components/close-button/)
 
-We've renamed the class from the rather generic `.close` to `.btn-close`. In addition, we've dropped the use of `&times;` in our HTML for an SVG `background-image` via CSS. With updated styling all around, the close button has a clearer focus state and even an all new white variant (also powered by a CSS `filter`).
+We've renamed the class from the rather generic `.close` to `.btn-close`. In addition, we've dropped the use of `&times;` in our HTML for an SVG `background-image` via CSS. With updated styling all around, the close button has a clearer focus state and even an all-new white variant (also powered by a CSS `filter`).
 
 ## Position utilities
 
@@ -73,7 +73,7 @@ See all the changes in the [v5 Alpha 2 project board](https://github.com/twbs/bo
 We've pushed some additional breaking changes and important component updates to Alpha 3. To give you a heads up, here are some important upcoming moves:
 
 - Offcanvas support is coming thanks to [new side modals](https://github.com/twbs/bootstrap/pull/31285)!
-- We're [revamping the input group component](https://github.com/twbs/bootstrap/pull/31666), dropping support for quite a few variations. It's too complex, supports too many variations, and has had the most annoying `border-radius` bug through all of v4. (I'm so sorry for that!)
+- We're [revamping the input group component](https://github.com/twbs/bootstrap/pull/31666), dropping support for quite a few variations. It's too complex, supports too many variations, and has had the most annoying `border-radius` bug through all of v4. (I'm so sorry about that!)
 - We're [upgrading floating labels](https://github.com/twbs/bootstrap/pull/30449) from a docs Example into a fully fledge form layout option, with support for textual inputs, selects, and textareas.
 - We're [adding font-size utilities](https://github.com/twbs/bootstrap/pull/30571) and updating our font-weight utilities.
 - [RTL is still coming!](https://github.com/twbs/bootstrap/pull/30980) The PR is being reviewed by our team and we're hoping to land it in Alpha 3 so we can get some folks testing with it.
