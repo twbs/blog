@@ -161,6 +161,40 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2018/04/30/bootstrap-4-1-1/">
+            Bootstrap 4.1.1
+          </a>
+        </h1>
+
+        <span class="post-date">30 Apr 2018</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/9jNt7ZGCW-o?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>We’re a few weeks out from v4.1 and we have our first patch release of Bootstrap 4! It’s a straightforward set of bug fixes and build tool quality of life updates.</p>
+
+<p>Here’s a quick rundown of some of the changes:</p>
+
+<ul>
+  <li>Added validation styles for file inputs</li>
+  <li>Improved printing of dark tables</li>
+  <li>Suppressed that <code class="language-plaintext highlighter-rouge">text-hide</code> deprecation notice by default</li>
+  <li>Fixed an issue where Collapse wasn’t working in Internet Explorer</li>
+  <li>Cleaned up some JS globals and improve coverage</li>
+  <li>Bumped dependencies, namely Jekyll</li>
+  <li>Fixed docs issue with incorrect name for our monospace font utility</li>
+</ul>
+
+<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/25971">v4.1.1 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/13">GitHub project</a> for the full details. Up next will be <a href="https://github.com/twbs/bootstrap/projects/14">v4.1.2</a>, another patch release to address the next set of CSS and JS bugs you’ve help share with us since v4 launched.</p>
+
+<p>&lt;3,<br />
+<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2018/04/09/bootstrap-4-1/">
             Bootstrap 4.1
           </a>
@@ -169,7 +203,7 @@
         <span class="post-date">09 Apr 2018</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/3wxyN3z9PL4?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/3wxyN3z9PL4?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -452,106 +486,6 @@
 <p>With our next release, the <code class="language-plaintext highlighter-rouge">master</code> branch will once again become our default branch. We’ll merge <code class="language-plaintext highlighter-rouge">v4-dev</code> into <code class="language-plaintext highlighter-rouge">master</code>, meaning v3’s source code will only be in our <code class="language-plaintext highlighter-rouge">v3-dev</code> branch and <a href="https://github.com/twbs/bootstrap/releases">past releases</a>.</p>
 
 <p>See you again real soon!</p>
-
-<p>&lt;3,<br />
-<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2017/10/19/bootstrap-4-beta-2/">
-            Bootstrap 4 Beta 2
-          </a>
-        </h1>
-
-        <span class="post-date">19 Oct 2017</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/MqnZ1RpmxBg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Just over two months ago we shipped our first beta for Bootstrap 4, and now we’re ready to share our second with you. We’ve improved customization, documentation, build tooling, and naming inconsistencies all while fixing hella bugs.</p>
-
-<p>We’ve done our best to prevent breaking changes, but we had to sneak some in. Regrettably, we’ll also have a few more coming in Beta 3, too. However, we’re clearly outlining all of them for you to make the upgrade and testing process as easy as possible.</p>
-
-<p>Let’s start with the good news though—Beta 2 is here!</p>
-
-<h2 id="highlights">Highlights</h2>
-
-<p>We’ve pushed over 500 commits in our two months, so we have a few changes since Beta 1 to highlights to share with you.</p>
-
-<h3 id="improved-theming">Improved theming</h3>
-
-<p><a href="https://getbootstrap.com/docs/4.0/getting-started/theming/"><img src="/assets/img/2017/v4-beta2-theming-docs.png" alt="Bootstrap Theming docs page" /></a></p>
-
-<p>We have a brand <a href="https://getbootstrap.com/docs/4.0/getting-started/theming/">new Theming docs page</a> to replace our old Options page (we’ll automatically redirect folks from the old page). This new page delves into the structure of our Sass files, default variables and customizing them, maps and loops we use, functions, colors, and of course or global Sass options. It also includes a new section to explain how we build our components via Sass maps and loops, specifically our modifier classes (e.g., <code class="language-plaintext highlighter-rouge">.btn-danger</code>).</p>
-
-<p>In addition to the documentation changes, we’ve made a few CSS changes to improve how folks interact with our theming options.</p>
-
-<ul>
-  <li>
-    <p>We’ve added new theme color variables in addition to the map. Now you can use <code class="language-plaintext highlighter-rouge">$primary</code> or <code class="language-plaintext highlighter-rouge">theme-color("primary")</code> as needed. The values in <code class="language-plaintext highlighter-rouge">$theme-colors</code> are also now mapped to these new variables instead of their direct color.</p>
-  </li>
-  <li>
-    <p>We’ve improved the ability to customize Sass maps. With Beta 1, we didn’t have a setup in place to modify your <code class="language-plaintext highlighter-rouge">$theme-colors</code> map without replacing it wholesale. That’s been fixed in Beta 2—override existing values and add more as needed. Our new Theming docs page will show you how it’s done.</p>
-  </li>
-</ul>
-
-<p>Lastly, our <code class="language-plaintext highlighter-rouge">$enable-shadows</code> and <code class="language-plaintext highlighter-rouge">$enable-gradients</code> Sass variables have finally been updated and integrated into several of our components. Now, when you enable those variables (both are <code class="language-plaintext highlighter-rouge">false</code> by default) and recompile, you’ll see subtle gradients and shadows across alerts, buttons, carousels, custom form controls, and dropdown items.</p>
-
-<p><img src="/assets/img/2017/v4-beta2-buttons.png" alt="Themed buttons" /></p>
-
-<p>And when you use <code class="language-plaintext highlighter-rouge">$enable-gradients</code>, you’ll enable the new <code class="language-plaintext highlighter-rouge">.bg-gradient-</code> utilities (disabled by default) for use in navbars and more.</p>
-
-<p><img src="/assets/img/2017/v4-beta2-bgs.png" alt="Themed backgrounds" /></p>
-
-<p>Check it out and please share any feedback in an issue.</p>
-
-<h3 id="offset-grid-classes">Offset grid classes</h3>
-
-<p>We brought them back! Prematurely removed ahead of Beta 1, we underestimated the appeal of the <code class="language-plaintext highlighter-rouge">.offset-</code> classes for our grid system. Auto margins are simply not enough for y’all. The styles have been restored and our grid docs have been updated. Enjoy!</p>
-
-<h3 id="updated-migration-docs">Updated migration docs</h3>
-
-<p>Given our handful of breaking changes since Beta 1, we added a new section to <a href="https://getbootstrap.com/docs/4.0/migration/#beta-2-changes">our migration docs page</a> to detail exactly what we changed that might be broken for you. We had to rename a few classes here and there to ensure everything’s consistent with the rest of the project.</p>
-
-<p>We’ll be updating this page again for Beta 3 in the same way.</p>
-
-<h3 id="and-more">And more!</h3>
-
-<ul>
-  <li>Introduced new <code class="language-plaintext highlighter-rouge">pointer-events</code> usage on modals. The outer <code class="language-plaintext highlighter-rouge">.modal-dialog</code> passes through events with <code class="language-plaintext highlighter-rouge">pointer-events: none</code> for custom click handling (making it possible to just listen on the <code class="language-plaintext highlighter-rouge">.modal-backdrop</code> for any clicks), and then counteracts it for the actual <code class="language-plaintext highlighter-rouge">.modal-content</code> with <code class="language-plaintext highlighter-rouge">pointer-events: auto</code>.</li>
-  <li>Responsive tables now generate classes for each grid breakpoint, meaning we’ve added <code class="language-plaintext highlighter-rouge">.table-responsive-{sm,md,lg,xl}</code> to the already present <code class="language-plaintext highlighter-rouge">.table-responsive</code>. You might need to adjust your usage depending on when you want a table to resize.</li>
-  <li>Remove unnecessary <code class="language-plaintext highlighter-rouge">color</code> from <code class="language-plaintext highlighter-rouge">.badge</code>, and its associated <code class="language-plaintext highlighter-rouge">$badge-color</code> variable.</li>
-  <li>Include two new dist files which contain Popper.js inside <code class="language-plaintext highlighter-rouge">bootstrap.bundle.js</code> and <code class="language-plaintext highlighter-rouge">bootstrap.bundle.min.js</code>.</li>
-  <li>Dropped support for Bower as they’ve deprecated the package manager.</li>
-  <li>Switched breadcrumbs from <code class="language-plaintext highlighter-rouge">float</code> to flexbox.</li>
-  <li>Switched to Stylelint for our CSS linting needs.</li>
-  <li>We’re now outputting a handful of CSS variables in our compiled CSS for easy prototyping and customizing with our dist files.</li>
-  <li>Changed the <code class="language-plaintext highlighter-rouge">color-yiq</code> from a mixin that included the <code class="language-plaintext highlighter-rouge">color</code> property to a function that returns a value, allowing you to use it for any CSS property.</li>
-</ul>
-
-<h2 id="coming-in-beta-3">Coming in Beta 3</h2>
-
-<p>Beta 3 is up next for us and already has a <a href="https://github.com/twbs/bootstrap/projects/10">GitHub project board</a> setup to track issues and PRs. Beyond the standard docs improvements and bug fixes, there are a few issues and PRs that are of mind for us:</p>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/pull/23444">Revisiting form checkbox and radio markup</a> to ensure we can customize validation messaging (while also making the markup match our custom form checks).</li>
-  <li>More control over <a href="https://github.com/twbs/bootstrap/pull/24430">input and button variables</a>.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/24401">Improved focus styling for validated custom checks and radios.</a></li>
-  <li>Addressing form <a href="https://github.com/twbs/bootstrap/issues/23454">validation feedback in input groups</a>.</li>
-</ul>
-
-<p>Be sure to follow those issues and PRs if you’re interested in when the merge to our <code class="language-plaintext highlighter-rouge">v4-dev</code> branch.</p>
-
-<h2 id="getting-to-v4-final">Getting to v4 Final</h2>
-
-<p>After Beta 3, we’re hoping to quickly move into a final v4 release. Ideally, it’ll also be a smoother and more focused release than the Alpha 6 to Beta 1 move. We heard from a lot of you that the delta between those two releases was too great.</p>
-
-<hr />
-
-<p>For more details on this release’s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/23278">Beta 2 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/projects/4">Beta 2 project</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
 
 <p>&lt;3,<br />
 <a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
