@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bootstrap 5 Alpha 2
-video:
+video: Gs069dndIYk
 date: 2020-09-29 11:00:00
 ---
 
@@ -11,39 +11,47 @@ Check out the latest in the docs at <https://v5.getbootstrap.com>. [Read the rel
 
 ## Updated docs nav
 
-We've cleaned up the navigation in our docs to make things a little easier to use while on a mobile device or a narrow viewport.
+We've cleaned up the navigation in our docs to make things a little easier to use while on a mobile device or a narrow viewport. We've redesigned the main navbar to hide links on small devices, and when expanded, those navigation links now have larger tap targets.
 
-![Updated Bootstrap docs]()
+![Updated Bootstrap nav home](/assets/img/2020/09/v5a2-nav-home.png)
 
-We've redesigned the main navbar to hide links on small devices, and when expanded, those navigation links now have larger tap targets. Our subnav has also be streamlined to take up a single horizontal bad on mobile, giving more space for documentation.
+Our subnav has also be streamlined to take up a single horizontal bad on mobile, giving more space for documentation. We've also differentiated the expanding and collapsing menu icons between the two navs.
+
+![Updated Bootstrap nav docs](/assets/img/2020/09/v5a2-nav-docs.png)
+
+Together this should make it a little faster and easier to navigate our docs, and serve as a fun little demo for others.
 
 ## Dark carousel
 
-![]()
+Add `.carousel-dark` to any `.carousel` to switch from the default white text, controls, and indicators to black.
 
-Add `.carousel-dark` to any `.carousel` to switch from the default white text, controls, and indicators to black. Values are configurable via Sass variables. To save on filesize, we're using a CSS `filter` to invert out SVGs for the carouse controls. Pretty neat if you ask us!
+[![Example dark carousel](/assets/img/2020/09/v5a2-carousel-dark.png)](https://v5.getbootstrap.com/docs/5.0/components/carousel/#dark-variant)
+
+Values are configurable via Sass variables. To save on filesize, we're using a CSS `filter` to invert out SVGs for the carouse controls. Pretty neat if you ask us!
 
 ## Dark dropdowns
 
-![]()
-
 For the first time since Bootstrap v1 nearly nine years ago, we have dark dropdown menus! Add `.dropdown-menu-dark` to any dropdown menu to change the appearance. Dark dropdowns are opt-in, so you'll need to add the class as you go.
+
+[![Example dark dropdowns](/assets/img/2020/09/v5a2-dropdowns-dark.png)](https://v5.getbootstrap.com/docs/5.0/components/dropdowns/#dark-dropdowns)
 
 We'd like to revisit some of this later in v5 with minor releases that advance dark mode throughout the entire project. Until then, enjoy the new classes!
 
 ## Redesigned close button
 
-![]()
+Our close button has been renamed, redesigned, new focus state, and a new color option.
 
-Our close button has been redesigned! We've renames the class from the rather generic `.close` to `.btn-close`. In addition, we've dropped the use of `&times;` in our HTML for an SVG `background-image` via CSS. With updated styling all around, the close button has a clearer focus state and even an all new white variant (also powered by a CSS `filter`).
+[![Example close button](/assets/img/2020/09/v5a2-close-btn.png)](https://v5.getbootstrap.com/docs/5.0/components/close-button/)
+
+We've renamed the class from the rather generic `.close` to `.btn-close`. In addition, we've dropped the use of `&times;` in our HTML for an SVG `background-image` via CSS. With updated styling all around, the close button has a clearer focus state and even an all new white variant (also powered by a CSS `filter`).
 
 ## Position utilities
 
-![]()
+Thanks to our contributors, we've added new directional positioning utilities. Quickly position an element with our new `top`, `right`, `bottom`, and `left` utilities with support for `0`, `50%`, and `100%` by default.
 
-Thanks to our contributors, we've added new directional positioning utilities. Quickly position an element with our new top, right, bottom, and left utilities with support for 0, 50%, and 100% by default. Combine with new translate utilities to center elements on an edge or corner, too!
+[![Example position utilities](/assets/img/2020/09/v5a2-position-utils.png)](https://v5.getbootstrap.com/docs/5.0/utilities/position/)
 
-The new utilities are configurable and extensible thanks to the utilities API and some smart Sass map defaults.
+Combine with new translate utilities to center elements on an edge or corner, too! The new utilities are configurable and extensible thanks to the utilities API and some smart Sass map defaults.
 
 ## More highlights
 
