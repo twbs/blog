@@ -7,7 +7,7 @@ date: 2020-09-29 11:00:00
 
 We're back at it again with a brand new alpha release of Bootstrap 5! Our second alpha has brought some new and improved features, color contrast improvements, improved helpers and utilities, and some documentation design updates.
 
-Check out the latest in the docs at <https://v5.getbootstrap.com>. [Read the release notes]() for a full list of changes since Alpha 1. Our [migration guide](https://v5.getbootstrap.com/docs/5.0/migration) has also been updated with a new section for Alpha 2.
+Check out the latest in the docs at <https://v5.getbootstrap.com>. [Read the release notes](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-alpha2) for a full list of changes since Alpha 1. Our [migration guide](https://v5.getbootstrap.com/docs/5.0/migration) has also been updated with a new section for Alpha 2.
 
 ## Updated docs nav
 
@@ -66,7 +66,7 @@ Some other incremental changes to a few components and changes include:
 - Screen reader classes are now "visually hidden" classes.
 - New `.border-width` utility.
 
-See all the changes in the [v5 Alpha 2 project board](https://github.com/twbs/bootstrap/projects/21) and be sure to [read the Migration guide]() for details on what's changed since Alpha 1.
+See all the changes in the [v5 Alpha 2 project board](https://github.com/twbs/bootstrap/projects/21) and be sure to [read the Migration guide](https://v5.getbootstrap.com/docs/5.0/migration/) for details on what's changed since Alpha 1.
 
 ## Coming in Alpha 3
 
