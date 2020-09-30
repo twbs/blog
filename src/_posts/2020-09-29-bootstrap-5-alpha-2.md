@@ -7,7 +7,7 @@ date: 2020-09-29 11:00:00
 
 We're back at it again with a brand new alpha release of Bootstrap 5! Our second alpha has brought some new and improved features, color contrast improvements, improved helpers and utilities, and some documentation design updates.
 
-Check out the latest in the docs at <https://v5.getbootstrap.com>. [Read the release notes](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-alpha2) for a full list of changes since Alpha 1. Our [migration guide](https://v5.getbootstrap.com/docs/5.0/migration) has also been updated with a new section for Alpha 2.
+Check out the latest in the docs at <https://v5.getbootstrap.com>. [Read the release notes](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-alpha2) for a full list of changes since Alpha 1. Our [migration guide](https://v5.getbootstrap.com/docs/5.0/migration/) has also been updated with a new section for Alpha 2.
 
 ## Updated docs nav
 
