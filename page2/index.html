@@ -22,7 +22,7 @@
     <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
 
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Page 2 of 17 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
+<title>Page 2 of 18 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Bootstrap Blog" />
 <meta property="og:locale" content="en_US" />
@@ -161,6 +161,68 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2020/06/26/bootstrap-icons-alpha5/">
+            Bootstrap Icons Alpha 5
+          </a>
+        </h1>
+
+        <span class="post-date">26 Jun 2020</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/HgzGwKwLmgM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Today we’re shipping our fifth and final alpha release of <a href="https://icons.getbootstrap.com">Bootstrap Icons</a>. After today’s alpha release, we’ll be moving onto final touch ups of existing icons, closing out some more requests, and buttoning things up for a stable v1 release. Stay tuned!</p>
+
+<h2 id="1000-icons">1,000+ icons</h2>
+
+<p>This release adds nearly 300 new glyphs, taking us right past 1,000 icons. We’ve fleshed out all our calendar icons to add ranges and events, added a suite of new phone icons, added tons of new devices and hardware icons, dozens of badges, and so much more.</p>
+
+<p><a href="https://icons.getbootstrap.com"><img src="/assets/img/2020/06/bootstrap-icons-alpha5-all.png" alt="All Bootstrap Icons" /></a></p>
+
+<p>As was the case with our previous alpha releases, not only do we have tons of brand new icons, but also dozens of fixes and refinements to existing ones. We’ve improved our paths to reduce icon file sizes, spending more time making things pixel perfect and with fewer vector hacks in our Figma files. In addition, we’ve updated our icon processing script to read the <code class="language-plaintext highlighter-rouge">viewBox</code> dimensions of each SVG individually to set their <code class="language-plaintext highlighter-rouge">width</code> and <code class="language-plaintext highlighter-rouge">height</code>. In future updates, this will allow us to create icons of various dimensions instead of our default 16x16.</p>
+
+<h2 id="new-svg-sprite">New SVG sprite</h2>
+
+<p>In addition to hundreds of new icons, we’ve added a new <code class="language-plaintext highlighter-rouge">bootstrap-icons.svg</code> sprite. For those new to SVG sprites, it allows you to load a single asset and reference fragments of it across your project without inserting the entire HTML for the SVG.</p>
+
+<p>Here’s a quick look at how it works once imported:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"bi"</span> <span class="na">width=</span><span class="s">"32"</span> <span class="na">height=</span><span class="s">"32"</span> <span class="na">fill=</span><span class="s">"currentColor"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"bootstrap-icons.svg#heart-fill"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"bi"</span> <span class="na">width=</span><span class="s">"32"</span> <span class="na">height=</span><span class="s">"32"</span> <span class="na">fill=</span><span class="s">"currentColor"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"bootstrap-icons.svg#toggles"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"bi"</span> <span class="na">width=</span><span class="s">"32"</span> <span class="na">height=</span><span class="s">"32"</span> <span class="na">fill=</span><span class="s">"currentColor"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"bootstrap-icons.svg#shop"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</code></pre></div></div>
+
+<p>We hope to include some optimizations around this in the future as it’s our first endeavor into an SVG sprite system. Feedback and ideas are always welcome in our issues!</p>
+
+<h2 id="coming-in-v1-stable">Coming in v1 stable</h2>
+
+<p>The single biggest feature coming in v1’s stable release will be <a href="https://github.com/twbs/icons/pull/287">icon web fonts</a>. There’s a PR underway that requires further SVG path cleanup, as well as some tooling improvements. Overall it feels pretty promising!</p>
+
+<p>While icon fonts are great for a handful of implementation reasons, please be aware that they are not inherently the most accessible option for your visitors. SVGs provide more control and styling options, and allow you to be accessible from the start with <code class="language-plaintext highlighter-rouge">aria</code> roles and <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code>s.</p>
+
+<p>If you have additional tips for how we can improve our icons, documentation, or tooling to be more accessible and approachable, don’t hesitate to share.</p>
+
+<p>Beyond that, we’ll continue to clean up and improve existing icons and then aim to add a handful of new icons.</p>
+
+<h2 id="download">Download</h2>
+
+<p>Alpha 5 has been published to GitHub and npm (package name <code class="language-plaintext highlighter-rouge">bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code class="language-plaintext highlighter-rouge">v1.0.0-alpha5</code>, or by snagging the <a href="https://www.figma.com/file/hTJtQ2MrMTeNVmYrVBqNZZ/Bootstrap-Icons-v1.0.0-alpha5">icons from Figma</a>.</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2020/06/16/bootstrap-5-alpha/">
             Bootstrap 5 alpha!
           </a>
@@ -169,7 +231,7 @@
         <span class="post-date">16 Jun 2020</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/3GwjfUFyY6M?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/3GwjfUFyY6M?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -513,70 +575,6 @@
 <h2 id="download">Download</h2>
 
 <p>Alpha 3 has been published to GitHub and npm (package name <code class="language-plaintext highlighter-rouge">bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code class="language-plaintext highlighter-rouge">v1.0.0-alpha3</code>, or by snagging the <a href="https://www.figma.com/file/NKZWcfR2T3FU0I7fNLqFvI/Bootstrap-Icons-v1.0.0-alpha3">icons from Figma</a>.</p>
-
-<p>&lt;3,<br /></p>
-
-<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2019/12/14/bootstrap-icons-alpha2/">
-            Bootstrap Icons Alpha 2
-          </a>
-        </h1>
-
-        <span class="post-date">14 Dec 2019</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/HgzGwKwLmgM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>There’s a brand new update of Bootstrap Icons today with our second alpha release! We’ve updated nearly 20 icons and added over 100 new icons since our last release just a few weeks ago.</p>
-
-<h2 id="new-icons">New icons</h2>
-
-<p>With over 120 new and updated icons, this is likely going to be our largest update before we our first stable release. We have some renamed icons, fixed bugs, new tools icons, new typography icons, tons of new arrows, and so much more.</p>
-
-<p><a href="https://icons.getbootstrap.com/"><img src="/assets/img/2019/12/bootstrap-icons-alpha2-new.png" alt="New icons in Alpha 2" /></a></p>
-
-<h2 id="highlights">Highlights</h2>
-
-<p>Here’s a summary of what’s been fixed, updated, or renamed in this release. For a full summary of what’s new, head to the <a href="https://github.com/twbs/icons/releases/tag/v1.0.0-alpha2">GitHub release</a> or <a href="https://github.com/twbs/icons/pull/78">Alpha 2 pull request</a>.</p>
-
-<ul>
-  <li><strong>Fixed:</strong>
-    <ul>
-      <li>Bootstrap icon stroke now 1px instead of 1.5px</li>
-      <li>tv-fill icon no longer has graphical glitch</li>
-      <li>circle-slash icon strokes now connect</li>
-      <li>trash icons now use a single shape</li>
-      <li>trash-fill icon no longer has a gap between lid and bin</li>
-      <li>layout-split no longer has space between vertical divide</li>
-    </ul>
-  </li>
-  <li><strong>Updated:</strong>
-    <ul>
-      <li>blockquote icons now feature more legible quotation marks</li>
-      <li>command icon now 1px smaller, no longer sitting on half pixel</li>
-      <li>gear icons now have rounded corners</li>
-      <li>eye is now outline by default (use new eye-fill variant if needed)</li>
-      <li>redrew sound waves on volume icons</li>
-      <li>corrected (reversed) the direction of backspace icon</li>
-    </ul>
-  </li>
-  <li><strong>Renamed:</strong>
-    <ul>
-      <li>changed microphone to mic</li>
-      <li>existing expand/contract icons are now angle-expand and angle-contract</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="get-em">Get ‘em</h2>
-
-<p>Alpha 2 has been published to GitHub and npm (package name <code class="language-plaintext highlighter-rouge">bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code class="language-plaintext highlighter-rouge">v1.0.0-alpha2</code>, or by snagging the <a href="https://www.figma.com/file/0xfDVFogWu6g15bVOvBzxS/Bootstrap-Icons-v1.0.0-alpha2">icons from Figma</a>.</p>
 
 <p>&lt;3,<br /></p>
 

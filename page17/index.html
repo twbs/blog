@@ -22,7 +22,7 @@
     <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
 
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Page 17 of 17 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
+<title>Page 17 of 18 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Bootstrap Blog" />
 <meta property="og:locale" content="en_US" />
@@ -35,6 +35,7 @@
 <meta property="og:image:height" content="630" />
 <meta property="og:image:width" content="1200" />
 <link rel="prev" href="https://blog.getbootstrap.com/page16" />
+<link rel="next" href="https://blog.getbootstrap.com/page18" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
 <meta property="twitter:title" content="Bootstrap Blog" />
@@ -160,6 +161,42 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/04/15/help-test-bootstrap-2-0-3/">
+            Help test Bootstrap 2.0.3
+          </a>
+        </h1>
+
+        <span class="post-date">15 Apr 2012</span>
+
+        
+
+        <p>Our next release, <a href="https://github.com/twbs/bootstrap/issues?milestone=10&amp;state=open">2.0.3</a>, is almost ready to rock, but we need your help to get the finish line in the best shape possible. Similar to what we did for the big 2.0 launch, we’re asking for the community’s help in testing out the release’s work-in-progress branch. We have a ton of bug fixes—another 80 or so since 2.0.2—and want to have the highest quality release we can.</p>
+
+<h2 id="why">Why?</h2>
+
+<p>Good question. 2.0.2 introduced some bad bugs in component behavior, publicized outdated documentation, and introduced some ugly regressions. That sucks, and when those things happen, we get held up tracking them down because we missed something in our haste to get a release out the door. We want to focus all our efforts on the 2.1 release after 2.0.3, and to do that we need to get as bug free as we can with this one.</p>
+
+<p>We’ll leave 2.0.3-wip open for widespread testing all this week (April 16-20) and then push a release while Jacob and I are in London on April 24. That should give folks, including us, enough time to test the waters and report any back on any issues.</p>
+
+<h2 id="how">How?</h2>
+
+<p>Just like last time, we’re pushing out a release candidate of the 2.0.3 code and docs. Here’s how you can help us out:</p>
+
+<ul>
+  <li>Head to GitHub and checkout the <code class="language-plaintext highlighter-rouge">2.0.3-wip</code> branch.</li>
+  <li>Don’t want to check out any code? [We’re hosting the latest version of the docs here (<code class="language-plaintext highlighter-rouge">http://203rc1.getbootstrap.com</code>) so you can easily load it up on devices and such for testing.</li>
+  <li>Load up the new docs in your favorite, or your least favorite, browser or device and start testing.</li>
+  <li>When you find a bug or have feedback, <a href="https://github.com/twbs/bootstrap/issues?sort=created&amp;direction=desc&amp;state=open">open a new issue on GitHub</a>. Please include as much context and information as possible. If it’s a visual bug, please include a screenshot. If it pertains to JavaScript, consider including a <a href="https://jsfiddle.net/">jsfiddle</a> or <a href="https://jsbin.com/">jsbin</a>.</li>
+  <li>If it’s a code fix you can make yourself, go ahead and submit a pull request against <code class="language-plaintext highlighter-rouge">2.0.3-wip</code>. Be sure to read the <a href="https://github.com/twbs/bootstrap/wiki/Contributing-to-Bootstrap">Contributing to Bootstrap</a> wiki page first though for a bit of insight into our code practices. (Unsure how to submit a pull request? <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">Learn more here</a>.)</li>
+</ul>
+
+<hr />
+
+<p>We’re only human, and we’re bound to make a few mistakes in our code as Bootstrap continues to grow. Thanks in advance for all your help and support—it’s appreciated more than you know.</p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/04/14/bootstraps-first-international-release/">
             Bootstrap's first intercontinental release
           </a>
@@ -257,55 +294,12 @@
 <p>We don’t have specific dates in mind, but we know we want 2.0.3 out by the end of the month to address those key bugs. 2.1 will follow, but not for at least a month or two after 2.0.3.</p>
 
       </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/03/22/combining-badges-less-and-labels-less-in-2-0-3/">
-            Combining badges.less and labels.less in 2.0.3
-          </a>
-        </h1>
-
-        <span class="post-date">22 Mar 2012</span>
-
-        
-
-        <p>For one reason or another, in 2.0.2 we made badges have separate LESS files. The CSS is 95% the same, but we knew that some folks might need one or the other, or even both. With <a href="https://github.com/twbs/bootstrap/issues?milestone=10&amp;state=open">2.0.3</a>, we’ll be simplifying some of those styles into a single .less file and scoping the <code class="language-plaintext highlighter-rouge">:hover</code> state to anchors only.</p>
-
-<p>Moving forward, we’ll have the following as a shared set of base styles. As you can see, when combined, there isn’t much extra weight at all for those who want just badges or labels.</p>
-
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.label</span><span class="o">,</span>
-<span class="nc">.badge</span> <span class="p">{</span>
-  <span class="nl">font-size</span><span class="p">:</span> <span class="o">@</span><span class="n">baseFontSize</span> <span class="o">*</span> <span class="mi">.846</span><span class="p">;</span>
-  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
-  <span class="nl">line-height</span><span class="p">:</span> <span class="m">13px</span><span class="p">;</span> <span class="c1">// ensure proper line-height if floated</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="o">@</span><span class="no">white</span><span class="p">;</span>
-  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span>
-  <span class="nl">white-space</span><span class="p">:</span> <span class="nb">nowrap</span><span class="p">;</span>
-  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">-1px</span> <span class="m">0</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">25</span><span class="p">);</span>
-  <span class="nl">background-color</span><span class="p">:</span> <span class="o">@</span><span class="n">grayLight</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
-
-<p>One file, multiple components. We’ve done it before with our multiple types of navigation, so it’s nothing folks familiar with Bootstrap haven’t seen before.</p>
-
-<p>On a related note, we’ve changed how we handle hover states for badges and labels. Instead of having a default hover state on an inherently static element, one made with say a <code class="language-plaintext highlighter-rouge">span</code>, we relegate the hover state (a cursor and background change) to anchors only.</p>
-
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nt">a</span> <span class="p">{</span>
-  <span class="k">&amp;</span><span class="nc">.label</span><span class="nd">:hover</span><span class="o">,</span>
-  <span class="k">&amp;</span><span class="nc">.badge</span><span class="nd">:hover</span> <span class="p">{</span>
-    <span class="nl">color</span><span class="p">:</span> <span class="o">@</span><span class="no">white</span><span class="p">;</span>
-    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
-    <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span></code></pre></figure>
-
-<p>For the alternate colors on badges and labels, we’ve also relegated those styles to anchors only (those with an <code class="language-plaintext highlighter-rouge">href</code> attribute).</p>
-
-      </div>
     
   </div>
 
   <div class="pagination">
     
-      <span class="pagination-item older">Older</span>
+      <a class="pagination-item older" href="/page18/">Older</a>
     
     
       
