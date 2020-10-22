@@ -22,7 +22,7 @@ Today we're launching [Bootstrap 2.2.2]({{ site.main }}/), another larger bugfix
 
 Get a more complete list by viewing the [2.2.2 milestone on GitHub](https://github.com/twbs/bootstrap/issues?milestone=17&state=closed). Most of the issues not mentioned above are minor CSS tweaks and documentation typos.
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/zipball/master">Download Bootstrap 2.2.2</a> <span class="muted">(latest master ZIP)</span>
+<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.2.2.zip">Download Bootstrap 2.2.2</a> <span class="muted">(latest master ZIP)</span>
 
 -----
 

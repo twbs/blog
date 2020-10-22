@@ -8,7 +8,7 @@ title: Bootstrap 2.1.1 released
 
 ## Get it
 
-Head on over to <{{ site.main }}/> and get your fix, or download the [latest master ZIP right from GitHub](https://github.com/twbs/bootstrap/zipball/master).
+Head on over to <{{ site.main }}/> and get your fix, or download the [latest master ZIP right from GitHub](https://github.com/twbs/bootstrap/archive/v2.1.1.zip).
 
 
 ## What's changed

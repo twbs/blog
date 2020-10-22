@@ -7,7 +7,7 @@ This morning we pushed out a 2.3.2 patch release to address a single bug (<a hre
 
 Work on Bootstrap 3 continues and we're almost ready to do an official release candidate. We've addressed nearly all our chosen changes and are now at a point where we're smoothing things out as much as possible. We'll share more information on the RC and v3 in the coming weeks.
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/zipball/v2.3.2">Download Bootstrap 2.3.2</a> <span class="muted">(latest master ZIP)</span>
+<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.3.2.zip">Download Bootstrap 2.3.2</a> <span class="muted">(latest master ZIP)</span>
 
 <3,
 
