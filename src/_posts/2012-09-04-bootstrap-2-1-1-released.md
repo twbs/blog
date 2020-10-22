@@ -26,7 +26,7 @@ Here's the rundown:
 - Fixed the vertical three color gradient in latest Firefox.
 - Reordered some variables that caused errors in certain Less compilers.
 
-There's a bunch more, so do run through the [2.1.1 milestone](https://github.com/twbs/bootstrap/issues?milestone=14&state=closed) when you can, but those are the big ones.
+There's a bunch more, so do run through the [2.1.1 milestone](https://github.com/twbs/bootstrap/issues?milestone=14&q=is%3Aclosed) when you can, but those are the big ones.
 
 
 ## Next up

@@ -33,4 +33,4 @@ As always, here's a quick overview of some of the top changes.
 - Added CSS3 hyphens mixin.
 - Fixed a bug in IE7/8 where certain form controls would not show text if the parent had a filter opacity set.
 
-For a full changelog, visit the now complete [2.0.4 milestone on GitHub](https://github.com/twbs/bootstrap/issues?milestone=11&state=closed).
+For a full changelog, visit the now complete [2.0.4 milestone on GitHub](https://github.com/twbs/bootstrap/issues?milestone=11&q=is%3Aclosed).

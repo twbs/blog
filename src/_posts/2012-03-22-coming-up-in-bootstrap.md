@@ -9,7 +9,7 @@ But, what's next?
 
 ## 2.0.3
 
-To start, we'll take a good hard look at the docs and current components to get a strong base and iron out additional bugs we introduced in 2.0.2. This release will not include any new features at all. Key bugs to fix include the static navbar regression and tabbed content alignment, but you can see a more thorough list on the [2.0.3 milestone](https://github.com/twbs/bootstrap/issues?milestone=10&state=open).
+To start, we'll take a good hard look at the docs and current components to get a strong base and iron out additional bugs we introduced in 2.0.2. This release will not include any new features at all. Key bugs to fix include the static navbar regression and tabbed content alignment, but you can see a more thorough list on the [2.0.3 milestone](https://github.com/twbs/bootstrap/issues?milestone=10&q=is%3Aopen).
 
 ## 2.1.0
 

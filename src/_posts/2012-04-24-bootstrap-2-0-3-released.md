@@ -13,7 +13,7 @@ In the spirit of always improving the LESS functionality and build tools, we've 
 $ npm install -g recess jshint
 {% endhighlight %}
 
-We've also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the [updated readme](https://github.com/twbs/bootstrap/blob/master/README.md).
+We've also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the [updated readme](https://github.com/twbs/bootstrap/blob/v2.0.3/README.md).
 
 ## HTML and CSS
 
@@ -94,4 +94,4 @@ We've also removed the bootstrap.zip file from the repository, so make runs much
 
 -----
 
-We're continually updating issues and tracking them for our next release in the [2.1 milestone](https://github.com/twbs/bootstrap/issues?milestone=7&state=open), which will focus on adding a few new features and tackle the inevitable bugs and edge cases from this release.
+We're continually updating issues and tracking them for our next release in the [2.1 milestone](https://github.com/twbs/bootstrap/issues?milestone=7&q=is%3Aopen), which will focus on adding a few new features and tackle the inevitable bugs and edge cases from this release.

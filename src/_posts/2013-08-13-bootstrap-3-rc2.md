@@ -20,7 +20,7 @@ Without listing all the minor changes (there have been over 500 commits since RC
 
 - **Global CSS changes:**
   - Update vertical and horizontal gradients to make start and end color parameters come first, then start and end positions. [Fixes #9049.](https://github.com/twbs/bootstrap/issues/9049)
-  - Make `.pull-right` and `.pull-left` classes use `!important` to avoid needing overrides due to specificity (like in navbar, button groups, etc). [See #8697.](https://github.com/twbs/bootstrap/issues/8697)
+  - Make `.pull-right` and `.pull-left` classes use `!important` to avoid needing overrides due to specificity (like in navbar, button groups, etc). [See #8697.](https://github.com/twbs/bootstrap/pull/8697)
   - Lots of variable additions to components.
   - Updated gradients to not include `background-color` for improved use of `rgba()` colors within mixins. [See #8877](https://github.com/twbs/bootstrap/pull/8877)
 
@@ -57,7 +57,7 @@ Without listing all the minor changes (there have been over 500 commits since RC
 
 - **Miscellaneous component changes:**
   - Alerts that are to be dismissed now require `.alert-dismissable` to properly pad the alert and align the close button. [See #9310](https://github.com/twbs/bootstrap/issues/9310).
-  - Responsive utilities are now mixin-able thanks to [#9211](https://github.com/twbs/bootstrap/issues/9211).
+  - Responsive utilities are now mixin-able thanks to [#9211](https://github.com/twbs/bootstrap/pull/9211).
   - Dropped `.alert-block` for a simpler `.alert`.
   - Linked panel titles now inherit their color. Fixes [#9061](https://github.com/twbs/bootstrap/issues/9061).
   - List groups in panels no longer require `.list-group-flush`.

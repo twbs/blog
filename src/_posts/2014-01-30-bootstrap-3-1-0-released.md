@@ -38,7 +38,7 @@ All-in-all these make components more focused, more durable, and easier to work 
 
 One of the more important improved features is for our modals. If you currently use the modal's `remote` option, be aware this release may break your modals. Yes, this is a breaking change, but it's first and foremost a **bug fix** that corrects a rather longstanding and overlooked error. Our apologies for any headaches it may cause, but it's been missed in the last few patch releases.
 
-See the [#11933](https://github.com/twbs/bootstrap/issues/11933) pull request for details on the code changes.
+See the [#11933](https://github.com/twbs/bootstrap/pull/11933) pull request for details on the code changes.
 
 
 ### New license
@@ -84,7 +84,7 @@ Or, hit the [project repository](https://github.com/twbs/bootstrap) or [Sass rep
 
 - Three new templates: Blog, Cover, and Dashboard.
 - [#10884](https://github.com/twbs/bootstrap/issues/10884): Add `.info` variant to contextual table classes.
-- [#11138](https://github.com/twbs/bootstrap/issues/11138): Add contextual styles to list groups.
+- [#11138](https://github.com/twbs/bootstrap/pull/11138): Add contextual styles to list groups.
 - [#11162](https://github.com/twbs/bootstrap/issues/11162): Add new sizes, `.modal-lg` and `.modal-sm`, to modals for quicker settings on modals. Only applies to modals above the small breakpoint.
 - [#11193](https://github.com/twbs/bootstrap/issues/11193): Add `<kbd>` element styles to indicate user input via keyboard.
 - [#11244](https://github.com/twbs/bootstrap/issues/11244): Add `.animation()` mixins.
@@ -207,13 +207,13 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#11830](https://github.com/twbs/bootstrap/issues/11830), [#11832](https://github.com/twbs/bootstrap/issues/11832): More help for Windows users installing Jekyll with requirement of Python and link to [@juthilo](https://github.com/juthilo)'s guide, [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows/).
 - [#11876](https://github.com/twbs/bootstrap/issues/11876): Enable `failHard` grunt-html-validation option.
 - [#11977](https://github.com/twbs/bootstrap/issues/11977): Concatenate and minify all docs assets.
-- [#12037](https://github.com/twbs/bootstrap/issues/12037): Move docs `.html` pages and assets into `docs/` subfolder to clean up project root directory. Also moves `.csscomb.json` and `.csslintrc` to `less/` to further clean up project root.
+- [#12037](https://github.com/twbs/bootstrap/pull/12037): Move docs `.html` pages and assets into `docs/` subfolder to clean up project root directory. Also moves `.csscomb.json` and `.csslintrc` to `less/` to further clean up project root.
 - [#12073](https://github.com/twbs/bootstrap/issues/12073): Make order of component variations consistent throughout the repo.
 - [#12244](https://github.com/twbs/bootstrap/issues/12244): Move v2.x to v3.x migration docs to a separate page.
 - [#12311](https://github.com/twbs/bootstrap/issues/12311): Expand information on how to handle overflowing content in navbars.
 - [#12314](https://github.com/twbs/bootstrap/issues/12314): Add warning about modal markup placement affecting modal appearance/functionality.
-- [#12345](https://github.com/twbs/bootstrap/issues/12345): Add note about printer viewport weirdness.
-- [#12380](https://github.com/twbs/bootstrap/issues/12380): Add link to unofficial German translation, <http://holdirbootstrap.de/>.
+- [#12345](https://github.com/twbs/bootstrap/pull/12345): Add note about printer viewport weirdness.
+- [#12380](https://github.com/twbs/bootstrap/pull/12380): Add link to unofficial German translation, <http://holdirbootstrap.de/>.
 - Updated browser and device support documentation:
   - [#11055](https://github.com/twbs/bootstrap/issues/11055): add mention of select menu styling on Android stock browsers with included optional fix.
   - Update IDs and docs nav to include bookmark links to each section.
@@ -221,9 +221,9 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 
 ### Build system & packaging
 
-- [#11761](https://github.com/twbs/bootstrap/issues/11761): Add JavaScript Code Style checker integration.
-- [#11739](https://github.com/twbs/bootstrap/issues/11739): Lint `docs-assets/js/application.js` and `docs-assets/js/customizer.js`.
-- [#11780](https://github.com/twbs/bootstrap/issues/11780): Don't ignore `Gruntfile.js` or `package.json` in `bower.json` as they're required for compilation.
+- [#11761](https://github.com/twbs/bootstrap/pull/11761): Add JavaScript Code Style checker integration.
+- [#11739](https://github.com/twbs/bootstrap/pull/11739): Lint `docs-assets/js/application.js` and `docs-assets/js/customizer.js`.
+- [#11780](https://github.com/twbs/bootstrap/pull/11780): Don't ignore `Gruntfile.js` or `package.json` in `bower.json` as they're required for compilation.
 - [#11790](https://github.com/twbs/bootstrap/issues/11790): Switch from Recess to grunt-contrib-less.
   - Dropped `grunt-recess` for `grunt-contrib-less` to get the latest version of Less (v1.6.x) since Recess was still quite behind.
   - Adds CSScomb to take place of Recess's CSS linting. Includes custom `.csscomb.json` in project root with basically the same property order as Recess.

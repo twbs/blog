@@ -35,15 +35,15 @@ Update your CDN links to point to the v3.1.1 files:
 ### CSS
 
 - [#11659](https://github.com/twbs/bootstrap/issues/11659), [#12349](https://github.com/twbs/bootstrap/issues/12349), [#12698](https://github.com/twbs/bootstrap/issues/12698): Always show the input above appended buttons in input groups for proper focus and disabled state borders.
-- [#12025](https://github.com/twbs/bootstrap/issues/12025): Ensure responsive utility classes can be combined with one another.
-- [#12195](https://github.com/twbs/bootstrap/issues/12195): Apply `.btn:focused` styles to `.btn.active:focused` for improved accessibility.
-- [#12412](https://github.com/twbs/bootstrap/issues/12412): Refactored and renamed our internal grid mixins for generating custom number of grid columns.
-- [#12433](https://github.com/twbs/bootstrap/issues/12433): Use negative `margin` on `.list-inline`s so we don't override the `padding-left` on the first list item.
-- [#12448](https://github.com/twbs/bootstrap/issues/12448): Use `@navbar-height` instead on `.navbar-brand` to prevent element from being shorter than navbar height. Corrects a change introduced in v3.1.0.
-- [#12462](https://github.com/twbs/bootstrap/issues/12462): Add `border-radius` to tables when in panels for proper rounding with all background settings.
-- [#12470](https://github.com/twbs/bootstrap/issues/12470): Scope large modal styles to minimum viewport width.
+- [#12025](https://github.com/twbs/bootstrap/pull/12025): Ensure responsive utility classes can be combined with one another.
+- [#12195](https://github.com/twbs/bootstrap/pull/12195): Apply `.btn:focused` styles to `.btn.active:focused` for improved accessibility.
+- [#12412](https://github.com/twbs/bootstrap/pull/12412): Refactored and renamed our internal grid mixins for generating custom number of grid columns.
+- [#12433](https://github.com/twbs/bootstrap/pull/12433): Use negative `margin` on `.list-inline`s so we don't override the `padding-left` on the first list item.
+- [#12448](https://github.com/twbs/bootstrap/pull/12448): Use `@navbar-height` instead on `.navbar-brand` to prevent element from being shorter than navbar height. Corrects a change introduced in v3.1.0.
+- [#12462](https://github.com/twbs/bootstrap/pull/12462): Add `border-radius` to tables when in panels for proper rounding with all background settings.
+- [#12470](https://github.com/twbs/bootstrap/pull/12470): Scope large modal styles to minimum viewport width.
 - [#12486](https://github.com/twbs/bootstrap/issues/12486): Restore full-width inputs for input groups in inline forms and navbars.
-- [#12502](https://github.com/twbs/bootstrap/issues/12502): Remove long-deprecated `:-moz-placeholder` styles.
+- [#12502](https://github.com/twbs/bootstrap/pull/12502): Remove long-deprecated `:-moz-placeholder` styles.
 - [#12532](https://github.com/twbs/bootstrap/issues/12532): Scope popover arrow styles to immediate children.
 - [#12552](https://github.com/twbs/bootstrap/issues/12552): Fixes two typos in `carousel.less` for the Glyphicon classes.
 - [#12620](https://github.com/twbs/bootstrap/issues/12620), [#12621](https://github.com/twbs/bootstrap/issues/12621): Use `:extend(.img-responsive)` instead of mixin in thumbnail and carousel.
@@ -70,7 +70,7 @@ Update your CDN links to point to the v3.1.1 files:
 - [#12437](https://github.com/twbs/bootstrap/issues/12437): Note specific versions of IE where progress bar animation is supported.
 - [#12439](https://github.com/twbs/bootstrap/issues/12439): Correct docs error about available grid resets.
 - [#12477](https://github.com/twbs/bootstrap/issues/12477): Clarify supported versions of Internet Explorer (we do v8-11) in browser support docs.
-- [#12494](https://github.com/twbs/bootstrap/issues/12494): Update docs to reflect modal remote change from #11933.
+- [#12494](https://github.com/twbs/bootstrap/issues/12494): Update docs to reflect modal remote change from [#11933](https://github.com/twbs/bootstrap/pull/11933).
 - [#12497](https://github.com/twbs/bootstrap/issues/12497): Remove manual full-width container callout now that there's `.container-fluid`.
 - [#12512](https://github.com/twbs/bootstrap/issues/12512): Improve alignment of the Dashboard example placeholder images.
 - [#12519](https://github.com/twbs/bootstrap/issues/12519): Add Bower badge to README.
