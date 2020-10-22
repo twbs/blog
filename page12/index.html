@@ -299,7 +299,7 @@
   <li><strong>Global CSS changes:</strong>
     <ul>
       <li>Update vertical and horizontal gradients to make start and end color parameters come first, then start and end positions. <a href="https://github.com/twbs/bootstrap/issues/9049">Fixes #9049.</a></li>
-      <li>Make <code class="language-plaintext highlighter-rouge">.pull-right</code> and <code class="language-plaintext highlighter-rouge">.pull-left</code> classes use <code class="language-plaintext highlighter-rouge">!important</code> to avoid needing overrides due to specificity (like in navbar, button groups, etc). <a href="https://github.com/twbs/bootstrap/issues/8697">See #8697.</a></li>
+      <li>Make <code class="language-plaintext highlighter-rouge">.pull-right</code> and <code class="language-plaintext highlighter-rouge">.pull-left</code> classes use <code class="language-plaintext highlighter-rouge">!important</code> to avoid needing overrides due to specificity (like in navbar, button groups, etc). <a href="https://github.com/twbs/bootstrap/pull/8697">See #8697.</a></li>
       <li>Lots of variable additions to components.</li>
       <li>Updated gradients to not include <code class="language-plaintext highlighter-rouge">background-color</code> for improved use of <code class="language-plaintext highlighter-rouge">rgba()</code> colors within mixins. <a href="https://github.com/twbs/bootstrap/pull/8877">See #8877</a></li>
     </ul>
@@ -350,7 +350,7 @@
   <li><strong>Miscellaneous component changes:</strong>
     <ul>
       <li>Alerts that are to be dismissed now require <code class="language-plaintext highlighter-rouge">.alert-dismissable</code> to properly pad the alert and align the close button. <a href="https://github.com/twbs/bootstrap/issues/9310">See #9310</a>.</li>
-      <li>Responsive utilities are now mixin-able thanks to <a href="https://github.com/twbs/bootstrap/issues/9211">#9211</a>.</li>
+      <li>Responsive utilities are now mixin-able thanks to <a href="https://github.com/twbs/bootstrap/pull/9211">#9211</a>.</li>
       <li>Dropped <code class="language-plaintext highlighter-rouge">.alert-block</code> for a simpler <code class="language-plaintext highlighter-rouge">.alert</code>.</li>
       <li>Linked panel titles now inherit their color. Fixes <a href="https://github.com/twbs/bootstrap/issues/9061">#9061</a>.</li>
       <li>List groups in panels no longer require <code class="language-plaintext highlighter-rouge">.list-group-flush</code>.</li>
