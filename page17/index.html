@@ -161,6 +161,61 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/04/19/bootstrap-jshint-and-recess/">
+            Bootstrap, JSHint, and Recess
+          </a>
+        </h1>
+
+        <span class="post-date">19 Apr 2012</span>
+
+        
+
+        <p>This last week we’ve added two new developer tools to the Bootstrap tool chain and I wanted to take a minute to let you know a little bit more about what they are, why we’ve added them, and why it matters.</p>
+
+<h3 id="jshint"><a href="https://jshint.com/">JSHint</a></h3>
+
+<p>JSHint is an awesome community-driven linting tool, used to detect errors and potential problems in your JS, and to enforce coding conventions. It’s super flexible and can easily adapt to whichever coding guidelines and environment you expect your code to execute in.</p>
+
+<p>As of 2.0.3, all JS (including tests) will be run through JSHint as a part of the build process.
+We’re hoping that this will both catch potentially unsafe syntax as well as encourage a convention around Bootstap’s JavaScript style.</p>
+
+<p>To begin with, Bootstrap’s JS will use the following options (stored in a .jshintrc file in the js dir):</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nl">"validthis"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">,</span><span class="w"> </span><span class="nl">"laxcomma"</span><span class="w">  </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">,</span><span class="w"> </span><span class="nl">"laxbreak"</span><span class="w">  </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">,</span><span class="w"> </span><span class="nl">"browser"</span><span class="w">   </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">,</span><span class="w"> </span><span class="nl">"boss"</span><span class="w">      </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">,</span><span class="w"> </span><span class="nl">"expr"</span><span class="w">      </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+  </span><span class="p">,</span><span class="w"> </span><span class="nl">"asi"</span><span class="w">       </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven’t played with JSHint, you should definitely take a moment to <a href="https://jshint.com/">check it out right now</a>!</p>
+
+<h3 id="recess"><a href="https://twitter.github.io/recess/">Recess</a></h3>
+
+<p>Recess is a project developed at Twitter to help support our internal style guide.</p>
+
+<p><img src="/assets/img/2012/04/recess.png" alt="Recess screenshot" /></p>
+
+<p>At it’s core, Recess is a linter, but with the added ability to compile and/or reformat your css/less files: normalizing whitespace, stripping 0 values, reordering properties, and any other safe stylistic optimizations it can find.</p>
+
+<p>What this means is that instead of just telling you where you have problems, you can actually tell Recess to just go ahead and tidy your code up for you.</p>
+
+<p>To begin with, we’re only using Recess in this manner — as a compiler for our Less (rather than the lessc compiler directly). This gives us strict control over the output of Bootstrap and let’s Mark and I really geekout, which we’re super excited about (we like things to be perfect… we’re nerds like that).</p>
+
+<h3 id="the-future"><a href="/assets/img/2012/04/LnriU.gif">The Future</a></h3>
+
+<p>Eventually we’d like to try to roll these tools (along with our unit tests) into some sort of continuous integration service. At Twitter, we’re already using travis-ci on a number of our other projects (Hogan.js, Recess), so we may follow suit with Bootstrap soon. This will make it even easier for us to accept pull requests from the community, as we’ll be able to see all our tests passing! :)</p>
+
+<p>Anyways — that’s all for now. As always, if you have any questions or feedback, let us know! thanks!</p>
+
+<p>&lt;3</p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/04/15/help-test-bootstrap-2-0-3/">
             Help test Bootstrap 2.0.3
           </a>
@@ -262,36 +317,6 @@
   <li><a href="https://github.com/twbs/bootstrap/wiki/Roadmap">Roadmap</a></li>
   <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Open issues</a></li>
 </ul>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/03/22/coming-up-in-bootstrap/">
-            Coming up in Bootstrap
-          </a>
-        </h1>
-
-        <span class="post-date">22 Mar 2012</span>
-
-        
-
-        <p>We’ve been mum on the next few releases for Bootstrap the last couple weeks, and with good reason: both Jacob and I have been super busy at work and we’re uncertain of what features to add next. That said, we know we have some bugs and docs fixes to make and know we can slip in a few small features if time allows. I’ve updated <a href="https://github.com/twbs/bootstrap/wiki/Roadmap">the roadmap</a> to reflect the last two releases and a general outline for the next two.</p>
-
-<p>But, what’s next?</p>
-
-<h2 id="203">2.0.3</h2>
-
-<p>To start, we’ll take a good hard look at the docs and current components to get a strong base and iron out additional bugs we introduced in 2.0.2. This release will not include any new features at all. Key bugs to fix include the static navbar regression and tabbed content alignment, but you can see a more thorough list on the <a href="https://github.com/twbs/bootstrap/issues?milestone=10&amp;q=is%3Aopen">2.0.3 milestone</a>.</p>
-
-<h2 id="210">2.1.0</h2>
-
-<p>After 2.0.3, we have a small feature and (as required) bugfix release to push out. So far, the only features we’re planning on adding include an official addition of the subnav, Growl-style notifications, and an OOCSS-style media component. The first two are some of oldest feature requests, and honestly are fairly easy to add and document compared to some of the other requests.</p>
-
-<p>We haven’t slated anything else because of other time commitments, but we’re open to hearing your feedback if you have top requests. Feel free to weigh in on <a href="https://twitter.com/getbootstrap">Twitter</a> or on <a href="https://github.com/twbs/bootstrap">GitHub</a>.</p>
-
-<h2 id="timing">Timing</h2>
-
-<p>We don’t have specific dates in mind, but we know we want 2.0.3 out by the end of the month to address those key bugs. 2.1 will follow, but not for at least a month or two after 2.0.3.</p>
 
       </div>
     

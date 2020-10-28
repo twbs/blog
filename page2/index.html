@@ -161,6 +161,100 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2020/08/04/bootstrap-4-5-1/">
+            Bootstrap 4.5.1
+          </a>
+        </h1>
+
+        <span class="post-date">04 Aug 2020</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/iIpfWORQWhU?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>We’re shipping our latest patch release today to fix a handful of bugs in Bootstrap 4. While our focus remains on v5’s second alpha release (coming in the next couple weeks), we want to keep v4 as stable and reliable as possible.</p>
+
+<p>Our next couple releases for Bootstrap 4 will continue this trend, focusing on bug fixes, documentation improvements, and (later on) features that help bridge the gap to v5.</p>
+
+<h2 id="changes">Changes</h2>
+
+<p>Also available in the <a href="https://github.com/twbs/bootstrap/releases/tag/v4.5.1">v4.5.1 release on GitHub</a>.</p>
+
+<h3 id="css">CSS</h3>
+
+<ul>
+  <li>#30808: Simplify <code class="language-plaintext highlighter-rouge">list-group</code> borders in cards</li>
+  <li>#30810: Add <code class="language-plaintext highlighter-rouge">z-index</code> to <code class="language-plaintext highlighter-rouge">.custom-check</code> to fix their rendering in CSS columns</li>
+  <li>#30817: Add <code class="language-plaintext highlighter-rouge">border-radius</code> to <code class="language-plaintext highlighter-rouge">.card-img-overlay</code></li>
+  <li>#30830: Prevent conflicts with components with classes</li>
+  <li>#30922: Fix color on disabled checked state for custom controls</li>
+  <li>#30932: Restore <code class="language-plaintext highlighter-rouge">word-break: break-word;</code> on <code class="language-plaintext highlighter-rouge">.text-break</code> utility.</li>
+  <li>#30940: Prevent <code class="language-plaintext highlighter-rouge">.row</code> from shrinking in flex containers</li>
+  <li>#30957: Nullify custom form states’ <code class="language-plaintext highlighter-rouge">box-shadow</code></li>
+  <li>#30959: Toasts in IE11</li>
+  <li>#30960: Fix IE11 validation tooltip alignment in input groups</li>
+  <li>#30965: Improve floating labels example in IE</li>
+  <li>#30966: Improve floating labels with Edge and a general refactor</li>
+  <li>#30969: Remove duplicated container breakpoints in compiled CSS</li>
+  <li>#30999: Revert <code class="language-plaintext highlighter-rouge">min-width: 0</code> on <code class="language-plaintext highlighter-rouge">.col</code> due to unforeseen side effects</li>
+  <li>#31148: Remove duplicate properties on custom controls</li>
+  <li>#31165: Remove <code class="language-plaintext highlighter-rouge">backdrop-filter</code> from docs subnav and toasts</li>
+  <li>#31339: Add link to view docs pages on GitHub</li>
+  <li>#31347: Turn off scroll anchoring for accordions</li>
+  <li>#31381: Remove <code class="language-plaintext highlighter-rouge">overflow: hidden</code> from toasts</li>
+</ul>
+
+<h3 id="javascript">JavaScript</h3>
+
+<ul>
+  <li>#30326: Prevent overflowing static backdrop modal animation</li>
+  <li>#30936: Add <code class="language-plaintext highlighter-rouge">role="dialog"</code> in modals via JavaScript</li>
+  <li>#30992: Avoid preventing input event onclick</li>
+  <li>#31155: Clear timeout before showing the toast</li>
+</ul>
+
+<h3 id="build">Build</h3>
+
+<ul>
+  <li>#30797: Fix release script docs</li>
+  <li>#31011: Updated Babel config</li>
+  <li>#31296: Update to Ruby 2.7 and Bundler 2.x</li>
+</ul>
+
+<h3 id="docs">Docs</h3>
+
+<ul>
+  <li>#30809: Update docs callout for responsive SVG images</li>
+  <li>#30813: Mention Bootstrap Icons in <code class="language-plaintext highlighter-rouge">extend/icons.md</code> page</li>
+  <li>#30896: Improve wording on Downloads page</li>
+  <li>#30897: Prevent skip links from overlapping header in docs</li>
+  <li>#30973: Update some nav examples by removing <code class="language-plaintext highlighter-rouge">.nav-item</code> from <code class="language-plaintext highlighter-rouge">.nav-link</code> to be more consistent</li>
+  <li>#31070: Fix some broken examples and typos</li>
+  <li>#31135: Move color utility callouts to start of page</li>
+  <li>#31234: Clean up docs forms for accessibility</li>
+  <li>#31344: Mention toasts in the <em>components requiring JavaScript</em> page</li>
+</ul>
+
+<p><a href="https://getbootstrap.com/docs/4.5/">Head to the v4.5 docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the BootstrapCDN and Rubygems.</p>
+
+<h2 id="next-up">Next up</h2>
+
+<p>We’ll be shipping our second alpha of v5 in the next few weeks. We’ve been a little delayed as we focus on ourselves during these unprecedented times and have all been taking a bit of time off here and there. We’re sorry to keep y’all waiting on v5 and hope you can understand.</p>
+
+<p>After v5’s second alpha, we’ll be targeting a final alpha before our first beta, as well as more patches for v4. We’ll also be releasing the Bootstrap Icons soon. So stay tuned for more!</p>
+
+<h2 id="support-the-team">Support the team</h2>
+
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>’ GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2020/06/26/bootstrap-icons-alpha5/">
             Bootstrap Icons Alpha 5
           </a>
@@ -169,7 +263,7 @@
         <span class="post-date">26 Jun 2020</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/HgzGwKwLmgM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/HgzGwKwLmgM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -528,53 +622,6 @@
 <h2 id="support-the-team">Support the team</h2>
 
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>’ GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-<p>&lt;3,<br /></p>
-
-<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2020/03/19/bootstrap-icons-alpha-3/">
-            Bootstrap Icons Alpha 3
-          </a>
-        </h1>
-
-        <span class="post-date">19 Mar 2020</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/kijpcUv-b8M?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>While we continue to work on Bootstrap 5, I’ve been jamming away on the Bootstrap Icons library, continuing to create as many icons as time allows. Today marks the third alpha, and massive update to the project. We’ve officially crossed 500 icons!</p>
-
-<p>We’ve cleaned up existing icons, created new permalink pages for each and every icon, and added hundreds of new icons—all in one release.</p>
-
-<h2 id="500-icons">500+ icons!</h2>
-
-<p>I’ve added 221 new icons in our third alpha, the most ever in an alpha release thus far. And while I was drawing all these new awesome icons, I also cleaned up the existing ones by changing their <code class="language-plaintext highlighter-rouge">viewBox</code> size and redrew many to ensure more pixel perfect icons.</p>
-
-<p><img src="/assets/img/2020/03/bootstrap-icons-alpha3-all.png" alt="All Bootstrap Icons" /></p>
-
-<p>Why change the <code class="language-plaintext highlighter-rouge">viewBox</code>? In the first two alphas, I was drawing icons on 20x20 artboards in Figma. This seemed like a good idea, but every icon was roughly 16x16, so it ended up being dead space. Now, every icon has been updated to eliminate the 2px inner padding, making the <code class="language-plaintext highlighter-rouge">viewBox</code>s <code class="language-plaintext highlighter-rouge">0 0 16 16</code> instead of <code class="language-plaintext highlighter-rouge">0 0 20 20</code>.</p>
-
-<p>This change has some slight file size improvements, and should help with sizing and positioning as well.</p>
-
-<h2 id="permalink-pages">Permalink pages</h2>
-
-<p>Looking for a particular icon, but don’t want to download the entire project to snag the SVG source code? Need to send someone a link to an icon? Look no further than the new icon permalink pages!</p>
-
-<p>From the Bootstrap Icons homepage, click any icon and you’ll be taken to a page dedicated to just that icon. It features the icon in various sizes and renders the source code like you’re used to seeing in Bootstrap’s docs.</p>
-
-<p><img src="/assets/img/2020/03/bootstrap-icons-alpha3-permalink.png" alt="Bootstrap Icons permalink" /></p>
-
-<p>Since this is still an alpha, some features are still missing from our docs. This includes unlinked tags, no category listing, and no copy to clipboard. I hope to see those added before our stable v1.0.0 release. PRs are very much welcome if you’d like to contribute!</p>
-
-<h2 id="download">Download</h2>
-
-<p>Alpha 3 has been published to GitHub and npm (package name <code class="language-plaintext highlighter-rouge">bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code class="language-plaintext highlighter-rouge">v1.0.0-alpha3</code>, or by snagging the <a href="https://www.figma.com/file/NKZWcfR2T3FU0I7fNLqFvI/Bootstrap-Icons-v1.0.0-alpha3">icons from Figma</a>.</p>
 
 <p>&lt;3,<br /></p>
 

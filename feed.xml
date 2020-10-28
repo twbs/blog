@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2020-10-25T16:08:01+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;getbootstrap&quot;}</name></author><entry><title type="html">Bootstrap 4.5.3</title><link href="https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/" rel="alternate" type="text/html" title="Bootstrap 4.5.3" /><published>2020-10-13T00:00:00+00:00</published><updated>2020-10-13T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/">&lt;p&gt;We’ve updated Bootstrap 4 with a new patch release to fix some bugs, backport some iterative changes from v5, and more. Enjoy!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2020-10-28T16:22:36+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;getbootstrap&quot;}</name></author><entry><title type="html">Bootstrap Icons v1.1.0</title><link href="https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.1.0" /><published>2020-10-28T21:30:00+00:00</published><updated>2020-10-28T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0/">&lt;p&gt;Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.&lt;/p&gt;
+
+&lt;h2 id=&quot;30-new-icons&quot;&gt;30+ new icons&lt;/h2&gt;
+
+&lt;p&gt;Here’s a look at our file and emoji icons as of v1.1.0. New in this release for emojis are the wink and heart eyes, along with fill versions for the full set. In addition, we’ve added icons for Word, Excel, PowerPoint, and a general bar chart file type.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2020/10/icons-emoji.png&quot; alt=&quot;Emoji icons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2020/10/icons-files-folders.png&quot; alt=&quot;File and folder icons&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
+
+&lt;p&gt;Here’s a more complete look at what’s changed in this release.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/415&quot;&gt;#415&lt;/a&gt;: Properly name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grip-horizontal&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grip-vertical&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/423&quot;&gt;#423&lt;/a&gt;: Update &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arrow-up-square-fill&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/437&quot;&gt;#437&lt;/a&gt;: Make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;file-earmark&lt;/code&gt; variations consistent&lt;/li&gt;
+  &lt;li&gt;New: Added 18 filetype icons &lt;a href=&quot;https://github.com/twbs/icons/pull/465&quot;&gt;#465&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;New: Added 13 emoji icons &lt;a href=&quot;https://github.com/twbs/icons/pull/466&quot;&gt;#66&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;To get started, install via npm:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.1.0&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip&quot;&gt;download just the SVGs&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+
+&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
+
+&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/6jIgJymnRpMjGSMG2BKNRe/Bootstrap-Icons-v1.1.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;3,&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/twbs&quot;&gt;team&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;getbootstrap&quot;}</name></author><summary type="html">Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 4.5.3</title><link href="https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/" rel="alternate" type="text/html" title="Bootstrap 4.5.3" /><published>2020-10-13T00:00:00+00:00</published><updated>2020-10-13T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/">&lt;p&gt;We’ve updated Bootstrap 4 with a new patch release to fix some bugs, backport some iterative changes from v5, and more. Enjoy!&lt;/p&gt;
 
 &lt;p&gt;As you may already know, we’re alternating between v4 and v5 releases to keep both versions moving in tandem. This helps us close the gap between v4 and v5 and make updating to v5 as easy as possible.&lt;/p&gt;
 
@@ -596,34 +633,4 @@
 
 &lt;p&gt;&amp;lt;3,&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/twbs&quot;&gt;team&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;getbootstrap&quot;}</name></author><summary type="html">Bootstrap v4.5.0 has landed with dozens of bug fixes, some small new features, and some changes to our development. Originally planned as a v4.4.2 patch release, we’ve bumped this to a minor release on account of our new features that help bridge the gap between v4 and our upcoming v5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons Alpha 3</title><link href="https://blog.getbootstrap.com/2020/03/19/bootstrap-icons-alpha-3/" rel="alternate" type="text/html" title="Bootstrap Icons Alpha 3" /><published>2020-03-19T00:00:00+00:00</published><updated>2020-03-19T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2020/03/19/bootstrap-icons-alpha-3</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/03/19/bootstrap-icons-alpha-3/">&lt;p&gt;While we continue to work on Bootstrap 5, I’ve been jamming away on the Bootstrap Icons library, continuing to create as many icons as time allows. Today marks the third alpha, and massive update to the project. We’ve officially crossed 500 icons!&lt;/p&gt;
-
-&lt;p&gt;We’ve cleaned up existing icons, created new permalink pages for each and every icon, and added hundreds of new icons—all in one release.&lt;/p&gt;
-
-&lt;h2 id=&quot;500-icons&quot;&gt;500+ icons!&lt;/h2&gt;
-
-&lt;p&gt;I’ve added 221 new icons in our third alpha, the most ever in an alpha release thus far. And while I was drawing all these new awesome icons, I also cleaned up the existing ones by changing their &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewBox&lt;/code&gt; size and redrew many to ensure more pixel perfect icons.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/03/bootstrap-icons-alpha3-all.png&quot; alt=&quot;All Bootstrap Icons&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Why change the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewBox&lt;/code&gt;? In the first two alphas, I was drawing icons on 20x20 artboards in Figma. This seemed like a good idea, but every icon was roughly 16x16, so it ended up being dead space. Now, every icon has been updated to eliminate the 2px inner padding, making the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;viewBox&lt;/code&gt;s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0 0 16 16&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0 0 20 20&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;This change has some slight file size improvements, and should help with sizing and positioning as well.&lt;/p&gt;
-
-&lt;h2 id=&quot;permalink-pages&quot;&gt;Permalink pages&lt;/h2&gt;
-
-&lt;p&gt;Looking for a particular icon, but don’t want to download the entire project to snag the SVG source code? Need to send someone a link to an icon? Look no further than the new icon permalink pages!&lt;/p&gt;
-
-&lt;p&gt;From the Bootstrap Icons homepage, click any icon and you’ll be taken to a page dedicated to just that icon. It features the icon in various sizes and renders the source code like you’re used to seeing in Bootstrap’s docs.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/03/bootstrap-icons-alpha3-permalink.png&quot; alt=&quot;Bootstrap Icons permalink&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Since this is still an alpha, some features are still missing from our docs. This includes unlinked tags, no category listing, and no copy to clipboard. I hope to see those added before our stable v1.0.0 release. PRs are very much welcome if you’d like to contribute!&lt;/p&gt;
-
-&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
-
-&lt;p&gt;Alpha 3 has been published to GitHub and npm (package name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bootstrap-icons&lt;/code&gt;). Get your hands on it &lt;a href=&quot;https://github.com/twbs/icons/releases&quot;&gt;from GitHub&lt;/a&gt;, by updating to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v1.0.0-alpha3&lt;/code&gt;, or by snagging the &lt;a href=&quot;https://www.figma.com/file/NKZWcfR2T3FU0I7fNLqFvI/Bootstrap-Icons-v1.0.0-alpha3&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;3,&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/twbs&quot;&gt;team&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;getbootstrap&quot;}</name></author><summary type="html">While we continue to work on Bootstrap 5, I’ve been jamming away on the Bootstrap Icons library, continuing to create as many icons as time allows. Today marks the third alpha, and massive update to the project. We’ve officially crossed 500 icons!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/twbs&quot;&gt;team&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;getbootstrap&quot;}</name></author><summary type="html">Bootstrap v4.5.0 has landed with dozens of bug fixes, some small new features, and some changes to our development. Originally planned as a v4.4.2 patch release, we’ve bumped this to a minor release on account of our new features that help bridge the gap between v4 and our upcoming v5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
