@@ -66,7 +66,7 @@ Ahead of some larger and necessary JavaScript changes in Beta 1, we've shipped a
 
 ## Utilities
 
-Utility classes are incredibly powerful in Bootstrap, especially with our new [utilities API]().
+Utility classes are incredibly powerful in Bootstrap, especially with our new [utilities API](https://v5.getbootstrap.com/docs/5.0/utilities/api/).
 
 ![New utilities API docs](/assets/img/2020/11/utilities-api-docs.png)
 
@@ -90,13 +90,13 @@ Forms have some exciting changes thanks to the addition of floating labels as a 
 
 ![New floating labels](/assets/img/2020/11/floating-forms.png)
 
-[Floating labels]() include support for textual inputs, selects, and textareas. We have one limitation with textareas where multiple lines of text can be obscured by the floating label. We're working on fixes for this, so if you have ideas, please let us know!
+[Floating labels](https://v5.getbootstrap.com/docs/5.0/forms/floating-labels/) include support for textual inputs, selects, and textareas. We have one limitation with textareas where multiple lines of text can be obscured by the floating label. We're working on fixes for this, so if you have ideas, please let us know!
 
 ### New file input
 
 ![New file input](/assets/img/2020/11/file-input.png)
 
-We've dropped our custom `.form-file` class for additional styles on the `.form-control` class. This means we no longer require additional JavaScript to make our file input styles functional—the [new form file]() is all CSS!
+We've dropped our custom `.form-file` class for additional styles on the `.form-control` class. This means we no longer require additional JavaScript to make our file input styles functional—the [new form file](https://v5.getbootstrap.com/docs/5.0/forms/form-control/#file-input) is all CSS!
 
 ### Input group rounded corners
 
