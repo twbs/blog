@@ -161,6 +161,71 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2018/12/13/bootstrap-3-4-0/">
+            Bootstrap 3.4.0
+          </a>
+        </h1>
+
+        <span class="post-date">13 Dec 2018</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/8WEtxJ4-sh4?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>That’s not a typo—today we’re shipping Bootstrap 3.4.0, a long overdue update to address some quality of life issues, XSS fixes, and build tooling updates to make it easier for us, and you, to develop.</p>
+
+<p>While we’d planned for ages to do a fresh v3.x update, we lost steam as energy was focused on all the work in v4. Early this year, <a href="https://github.com/twbs/bootstrap/issues/25679">one issue in particular</a> gained a ton of momentum from the community and the core team decided to do a huge push to pull together a solid release. I regret the time it took to pull this release together, especially given the security fixes, but with the improvements under the hood, v3 has never been easier to develop and maintain. Thanks for your continued support along the way!</p>
+
+<p>Keep reading for what’s changed and a look ahead at what’s coming in v4.2.0.</p>
+
+<h2 id="whats-new">What’s new</h2>
+
+<p>While we haven’t publicly worked on v3.x in years, we’ve heard from all of you during that time that we needed to do a new release to address</p>
+
+<ul>
+  <li><strong>New:</strong> Added a <code class="language-plaintext highlighter-rouge">.row-no-gutters</code> class.</li>
+  <li><strong>New:</strong> Added docs searching via Algolia.</li>
+  <li><strong>Fixed:</strong> Resolved an XSS issue in Alert, Carousel, Collapse, Dropdown, Modal, and Tab components. See <a href="https://snyk.io/vuln/npm:bootstrap:20160627">https://snyk.io/vuln/npm:bootstrap:20160627</a> for details.</li>
+  <li><strong>Fixed:</strong> Added padding to <code class="language-plaintext highlighter-rouge">.navbar-fixed-*</code> on modal open</li>
+  <li><strong>Fixed:</strong> Removed the double border on <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code> elements.</li>
+  <li>Removed Gist creation in web-based Customizer since anonymous gists were disabled long ago by GitHub.</li>
+  <li>Removed drag and drop support from Customizer since it didn’t work anymore.</li>
+</ul>
+
+<p>Our documentation and tooling saw massive updates as well to make it easier to work on v3.x, for ourselves and for you.</p>
+
+<ul>
+  <li>Added a dropdown to the docs nav for newer and previous versions.</li>
+  <li>Update the docs to use a new <code class="language-plaintext highlighter-rouge">baseurl</code>, <code class="language-plaintext highlighter-rouge">/docs/3.4/</code>, to version the v3.x documentation like we do with v4.</li>
+  <li>Reorganized the v3 docs CSS to use Less.</li>
+  <li>Switched to BrowserStack for tests.</li>
+  <li>Updated links to always use https and fix broken URLs.</li>
+  <li>Replaced ZeroClipboard with clipboard.js</li>
+</ul>
+
+<p><a href="https://getbootstrap.com/docs/3.4/">Head to the Bootstrap 3.4 docs</a> to see the latest in action. <a href="https://github.com/twbs/bootstrap/pull/27288">Check out the v3.4.0 pull request</a> for even more context on what’s changed.</p>
+
+<h2 id="upgrading">Upgrading</h2>
+
+<p>Upgrade your Bootstrap 3 projects to v3.4.0 with <code class="language-plaintext highlighter-rouge">npm i bootstrap@previous</code> or <code class="language-plaintext highlighter-rouge">npm i bootstrap@3.4.0</code>. This release won’t be available via Bower to start given the package manager was deprecated and has largely been unused by us in v4 for well over a year. Stay tuned for CDN and Rubygem updates.</p>
+
+<h2 id="open-collective">Open Collective</h2>
+
+<p>Also new with our v3.4 is the creation of an <a href="https://opencollective.com/bootstrap">Open Collective page</a> to help support the maintainers contributing to Bootstrap. The team has been very excited about this as a way to be transparent about maintainer costs (both time and money), as well as recognition of efforts.</p>
+
+<h2 id="v42-and-beyond">v4.2 and beyond</h2>
+
+<p>We’ve been working on a <a href="https://github.com/twbs/bootstrap/projects/6?fullscreen=true">huge v4.2 update</a> for several months now. Our attention has largely been on advancing the project and simplifying it’s dependencies, namely by removing our jQuery dependency. That work has sparked a keen interest in a moderately scoped v5 release, so we’ve been taking our sweet time with v4.2 to sneak in as many new features as we can.</p>
+
+<p>After we ship v4.2, we’ll plan for point releases to address any bugs and improvements as y’all start to use the new version. From there, we’ll start to share more plans on v5 to remove jQuery, drop support for older browsers, and clear up some cruft. This won’t be a sweeping rewrite, but rather an iterative improvement on v4. Stay tuned!</p>
+
+<p>&lt;3,<br />
+<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2018/07/24/bootstrap-4-1-3/">
             Bootstrap 4.1.3
           </a>
@@ -169,7 +234,7 @@
         <span class="post-date">24 Jul 2018</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/LqB9lhHqmsE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/LqB9lhHqmsE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -315,42 +380,6 @@
 
 <p>&lt;3,<br />
 <a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2018/02/21/new-bootstrap-themes/">
-            New Bootstrap themes
-          </a>
-        </h1>
-
-        <span class="post-date">21 Feb 2018</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/atxUuldUcfI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Just over a month ago, we shipped the long awaited Bootstrap 4 stable release. With a brand new codebase designed to better support customization with all new components and documentation, it was the perfect time to debut some brand new themes built. Today, we’d like to introduce you to our brand new <a href="https://themes.getbootstrap.com/">Bootstrap Themes marketplace</a>.</p>
-
-<h2 id="10-new-themes">10 new themes</h2>
-
-<p><a href="https://themes.getbootstrap.com/"><img src="/assets/img/2018/02/themes-grid.png" alt="Bootstrap themes grid" /></a></p>
-
-<p>Over the last several months, we’ve been hard at work with theme creators to build the best themes for you. When we created our original three Bootstrap themes, our goal was to provide the best themes, build tools, documentation, and support to everyone building with Bootstrap. With today’s update, we’re adding 10 new themes to the mix from a global community of designers and developers.</p>
-
-<p>Every theme is built on Bootstrap 4 (stable, no beta or alpha here!) and comes with its own build tools and customer support. Prices are set by creators with pricing that incentivizes unique and well supported themes. Collectively, this inaugural batch of theme developers have built themes used by over 500,000 people. We’re excited to grow our Themes user base, push the boundaries of premium themes, and help everyone bring their ideas to life on the web.</p>
-
-<p><a href="https://themes.getbootstrap.com/">Explore Bootstrap Themes »</a></p>
-
-<h2 id="sell-your-themes">Sell your themes</h2>
-
-<p>Our <a href="https://themes.getbootstrap.com/">new marketplace</a> isn’t just for buying themes. If you’re a theme creator, we’d love to work with you to include your themes or to build new exclusive themes. We’re looking for new creators to design and build high quality themes, provide first class documentation and support, and help create unique experiences built on Bootstrap.</p>
-
-<p>Learn more at <a href="https://themes.getbootstrap.com/sell/">https://themes.getbootstrap.com/sell/</a>.</p>
-
-<p>Happy theming,<br />
-<a href="https://twitter.com/mdo">@mdo</a>, <a href="https://twitter.com/dhg">@dhg</a>, &amp; <a href="https://twitter.com/fat">@fat</a></p>
 
       </div>
     
