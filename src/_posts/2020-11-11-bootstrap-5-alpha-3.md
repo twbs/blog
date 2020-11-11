@@ -112,6 +112,22 @@ In addition, we've made a few other form related improvements:
 
 Have some form feature requests or improvements we should consider? Please open an issue!
 
+## Quality of life
+
+Lastly, across the board we've made some minor updates to browser support, Reboot styling, components, and more
+
+- Moved our preferred CDN from BootstrapCDN to jsDelivr
+- Dropped support for Legacy Edge (woohoo!)
+- Updated to Node.js 14 and PostCSS 8.x
+- Removed obsolete prefixes in our CSS
+- Added `cursor: pointer` and heights to color inputs
+- Removed `background-clip` on `.btn-close` so the `background-image` is no longer clipped
+- Improved `sans-serif` font selection in Ubuntu
+- Spinners now slow down when reduced motion is enabled rather than stopping outright
+- Fix inconsistent whitespace in breadcrumbs
+
+See all the changes in the [v5 Alpha 3 project board](https://github.com/twbs/bootstrap/projects/22) and be sure to [read the Migration guide](https://v5.getbootstrap.com/docs/5.0/migration/) for details on what's changed since Alpha 2.
+
 ## Coming in Beta 1
 
 Beta 1 will be a more narrowly focused release and we're hoping to ship these final breaking changes as part of it.
@@ -125,8 +141,6 @@ Beta 1 will be a more narrowly focused release and we're hoping to ship these fi
 - **Updated utilities API with pseudo-classes support via a `state` option.** Add any space-separated list of states to get additional utilities for that pseudo-class. [See the work-in-progress PR for details.](https://github.com/twbs/bootstrap/pull/31643)
 
 For a more up to date list of changes, be sure to follow along with the [v5 Beta project board](https://github.com/twbs/bootstrap/projects/26).
-
-See all the changes in the [v5 Alpha 3 project board](https://github.com/twbs/bootstrap/projects/22) and be sure to [read the Migration guide](https://v5.getbootstrap.com/docs/5.0/migration/) for details on what's changed since Alpha 2.
 
 ## Get started
 
