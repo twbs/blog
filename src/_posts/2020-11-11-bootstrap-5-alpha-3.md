@@ -7,7 +7,7 @@ date: 2020-11-11 11:00:00
 
 Our third alpha release has landed with tons of updates to our components, utilities, docs, forms, JavaScript, and more. This is a larger alpha release for us and sets us up for our first beta where we'll introduce some final breaking changes and features.
 
-We're trying to move fast and keep the future of the project and the web in general in mind, so this release is an important milestone for us. We're balancing practical migration from v4 with meaningful changes that reflect the ever changing front-end community.
+We're trying to move fast and keep the future of the project and the web in general in mind, so this release is an important milestone for us. We're balancing practical migration from v4 with meaningful changes that reflect the ever-changing front-end community.
 
 We think you'll love this release, so keep on reading and let us know what you think!
 
@@ -49,7 +49,7 @@ Content-wise, we've renamed the "Navs" page to "Navs & Tabs" to help folks find 
 
 Three important and helpful changes to our Sass source code:
 
-- We've switched to Dart Sass with LibSass being deprecated. We've been testing our builds with Dart Sass for awhile and decided to make the switch with LibSass being deprecated just a couple weeks ago. We're holding on the Sass modules for now.
+- We've switched to Dart Sass with LibSass being deprecated. We've been testing our builds with Dart Sass for a while and decided to make the switch with LibSass being deprecated just a couple of weeks ago. We're holding on the Sass modules for now.
 
 - The color system which worked with `color-level()` and `$theme-color-interval` was removed in favor of a new color system. All `lighten()` and `darken()` functions in our codebase are replaced by `tint-color()` and `shade-color()`. These functions will mix the color with either white or black instead of changing its lightness by a fixed amount. The `scale-color()` will either tint or shade a color depending on whether its weight parameter is positive or negative. [See #30622](https://github.com/twbs/bootstrap/pull/30622) for more details.
 
@@ -84,7 +84,7 @@ Our next release will also add another powerful feature to our utilities, pseudo
 
 ## Forms
 
-Forms have some exciting changes thanks to the addition of floating labels as a fully fledged form layout option and a new file input.
+Forms have some exciting changes thanks to the addition of floating labels as a fully-fledged form layout option and a new file input.
 
 ### Floating labels
 
