@@ -126,7 +126,7 @@ Lastly, across the board we've made some minor updates to browser support, Reboo
 - Spinners now slow down when reduced motion is enabled rather than stopping outright
 - Fix inconsistent whitespace in breadcrumbs
 
-See all the changes in the [v5 Alpha 3 project board](https://github.com/twbs/bootstrap/projects/22) and be sure to [read the Migration guide](https://v5.getbootstrap.com/docs/5.0/migration/) for details on what's changed since Alpha 2.
+See all the changes in the [v5 Alpha 3 project board](https://github.com/twbs/bootstrap/projects/22) and [v5 alpha 3 release changelog](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-alpha3). Be sure to [read the Migration guide](https://v5.getbootstrap.com/docs/5.0/migration/) for details on what's changed since Alpha 2.
 
 ## Coming in Beta 1
 
