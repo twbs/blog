@@ -104,7 +104,7 @@ Beyond that, we've finally resolved ourselves to adding a new class to fix the r
 
 ### And more
 
-In addition, we've made a few other form related improvements:
+In addition, we've made a few other form-related improvements:
 
 - Removed explicit `height` from most of our form controls.
 - Fixed the disabled checkbox toggle buttons
