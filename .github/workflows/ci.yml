@@ -39,6 +39,7 @@ jobs:
         with:
           name: docs
           path: ./_site/
+          if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
