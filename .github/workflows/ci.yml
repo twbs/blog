@@ -18,9 +18,11 @@ jobs:
           ruby-version: "${{ env.RUBY }}"
           bundler-cache: true
 
-      - run: ruby --version
-      - run: gem --version
-      - run: bundle --version
+      - name: Version info
+        run: |
+          ruby --version
+          gem --version
+          bundle --version
 
       - run: bundle exec jekyll build
       - run: bundle exec jekyll doctor
