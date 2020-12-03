@@ -2,7 +2,7 @@ name: CI
 on: [push, pull_request]
 env:
   CI: true
-  RUBY: 2.7.x
+  RUBY: 2.7
 
 jobs:
   test:
@@ -13,31 +13,14 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: "${{ env.RUBY }}"
-
-      - name: Set up Ruby env
-        run: |
-          echo "gem: --no-document" > ~/.gemrc # Disable gem docs
-          bundle config set clean 'true'
-          bundle config set deployment 'true'
-
-      - name: Set up Ruby cache
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gem-${{ env.RUBY }}-${{ hashFiles('Gemfile') }}-${{ hashFiles('Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-${{ env.RUBY }}-${{ hashFiles('Gemfile') }}-${{ hashFiles('Gemfile.lock') }}
-            ${{ runner.os }}-gem-${{ env.RUBY }}-
+          bundler-cache: true
 
       - run: ruby --version
       - run: gem --version
       - run: bundle --version
-
-      - name: Install bundler dependencies
-        run: bundle install --jobs=4 --retry=3
 
       - run: bundle exec jekyll build
       - run: bundle exec jekyll doctor
