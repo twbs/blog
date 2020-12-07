@@ -161,6 +161,39 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2019/11/26/bootstrap-icons/">
+            Introducing Bootstrap Icons
+          </a>
+        </h1>
+
+        <span class="post-date">26 Nov 2019</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/eM8Ss28zjcE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Say hello to <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, our very first icon set that’s designed entirely by our team and open sourced for everyone to use, with or without Bootstrap. It’s still in alpha, but we’re incredibly excited to share it with y’all ahead of our v5 alpha.</p>
+
+<p><a href="https://icons.getbootstrap.com/"><img src="/assets/img/2019/11/bi-docs.png" alt="Bootstrap Icons docs" /></a></p>
+
+<p>For the longest time, I’ve wanted to design an icon set to better lean how to better draw with different pen tools and to better understand SVGs. In the last several months I’ve used a few different applications, done nearly five style iterations, and finally settled on a single direction. The result? Over 200 icons to start.</p>
+
+<p><img src="/assets/img/2019/11/bi-icons.png" alt="Bootstrap Icons full list" width="300" style="margin: 0 auto;" /></p>
+
+<p>I’ve designed these initial icons in Figma and exported them as SVGs. The plan is to share that Figma file publicly once it’s cleaned up and the icon set is  more stable. While Bootstrap Icons are first and foremost designed to work with Bootstrap’s components, they can be used anywhere. They’re an entirely <a href="https://github.com/twbs/icons">separate project</a> and package from Bootstrap, so you can easily use them in any project, or use any other icon set alongside Bootstrap’s CSS and JavaScript.</p>
+
+<p>They’re also open sourced under the MIT license, so you’re free to download, use, and customize as you need. This is an alpha release for now, so bear with us as we get familiar with creating and managing hundreds of SVGs. and more icons will be added over time.</p>
+
+<p>Head to <a href="https://icons.getbootstrap.com">https://icons.getbootstrap.com</a> to explore and download!</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2019/11/26/bootstrap-4-4-0/">
             Bootstrap 4.4.0
           </a>
@@ -169,7 +202,7 @@
         <span class="post-date">26 Nov 2019</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/P5ZJui3aPoQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/P5ZJui3aPoQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -346,70 +379,6 @@
 </ul>
 
 <p>We’ll have even more to share soon around v5’s plans after we tackle these bigger items. In the meantime, keep the feedback coming on GitHub and Twitter!</p>
-
-<p>&lt;3,<br />
-<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2018/12/21/bootstrap-4-2-1/">
-            Bootstrap 4.2.1
-          </a>
-        </h1>
-
-        <span class="post-date">21 Dec 2018</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/4N1iwQxiHrs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Look out world, we’re shipping Bootstrap v4.2.1 with a slew of new features, bug fixes, and docs updates. On the new features side, we have spinners, toasts, switches, and (finally!) touch support in the carousel. That’s just the tip of the iceberg though.</p>
-
-<p><strong>Heads up!</strong> v4.2.0 was incorrectly published to npm, so we’ve had to immediately turnaround a v4.2.1 release. <code class="language-plaintext highlighter-rouge">npm i bootstrap@latest</code> should now return <code class="language-plaintext highlighter-rouge">4.2.1</code>. Apologies for the inconvenience!</p>
-
-<p>We’ve crammed months of work into v4.2.1 with over 400 commits since our last v4.1.3 release. As mentioned in our v3.4.0 release last week, we’re working to decouple our releases from my direct involvement to improve the shipping cadence. Expect more improvements there in 2019.</p>
-
-<p>Keep reading for highlights and some insight into how we’re getting to v4.3 quickly, and then into v5 (woo!).</p>
-
-<h2 id="whats-new">What’s new</h2>
-
-<p>Here are the highlights of what’s new and updated in v4.2.1.</p>
-
-<p><img src="/assets/img/2018/12/toasts.png" alt="Bootstrap toasts" /></p>
-
-<ul>
-  <li><strong>New:</strong> Added a new <a href="https://getbootstrap.com/docs/4.2/components/spinners/">spinner loading component</a>.</li>
-  <li><strong>New:</strong> Added new <a href="https://getbootstrap.com/docs/4.2/components/toasts/">toast component</a> for displaying notifications.</li>
-  <li><strong>New:</strong> Added a new <a href="https://getbootstrap.com/docs/4.2/components/forms/#switches">iOS style switch</a> (a modifier class to our custom checkboxes).</li>
-  <li><strong>New:</strong> Added touch support in our carousel component.</li>
-  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.font-weight-lighter</code> and <code class="language-plaintext highlighter-rouge">.font-weight-bolder</code> utilities.</li>
-  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.text-decoration-none</code> utility class.</li>
-  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.modal-xl</code> modifier class for our modals.</li>
-  <li><strong>New:</strong> Added new negative margin utility classes (e.g., <code class="language-plaintext highlighter-rouge">.mb-n3</code>). These rad new classes not only allow you more control over your general spacing needs, but also allow you to create responsive grid gutters at each breakpoint.</li>
-  <li><strong>New:</strong> Validated form fields now have feedback icons on <code class="language-plaintext highlighter-rouge">:invalid</code> and <code class="language-plaintext highlighter-rouge">:valid</code> fields. Disable them with the <code class="language-plaintext highlighter-rouge">$enable-validation-icons</code> boolean Sass variable (defaults to <code class="language-plaintext highlighter-rouge">true</code>).</li>
-  <li><strong>New:</strong> Added a new <a href="https://getbootstrap.com/docs/versions/">versions page</a> to our docs.</li>
-  <li><strong>New:</strong> Tooltips/Popovers work with Shadow DOM.</li>
-  <li><strong>Updated:</strong> Redesigned the custom checkboxes and radios for more obvious states.</li>
-  <li><strong>Updated:</strong> <code class="language-plaintext highlighter-rouge">bootstrap-grid.css</code> now includes our <code class="language-plaintext highlighter-rouge">margin</code> and <code class="language-plaintext highlighter-rouge">padding</code> utilities for full control of our grid system.</li>
-  <li><strong>Updated:</strong> Changed auto columns (e.g., <code class="language-plaintext highlighter-rouge">.col-auto</code>) from <code class="language-plaintext highlighter-rouge">max-width: none</code> to <code class="language-plaintext highlighter-rouge">max-width: 100%</code> to prevent content from causing a column to overflow the parent.</li>
-  <li><strong>Updated:</strong> Improved rendering of custom selects, ranges, file input, and more.</li>
-</ul>
-
-<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/26952">v4.2.0 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/6">GitHub project</a> for the full details. Up next is <a href="https://github.com/twbs/bootstrap/projects/16">v4.3</a> with some bugfixes, a few new modifier classes and variables, and some new utilities.</p>
-
-<p><a href="https://getbootstrap.com/docs/4.2/">Head to the v4.2 docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.</p>
-
-<h2 id="whats-next">What’s next</h2>
-
-<p>We have <a href="https://github.com/twbs/bootstrap/projects/16">v4.3</a> already planned, so that’s our immediate focus. However, while we’re developing that in the <code class="language-plaintext highlighter-rouge">v4-dev</code> branch, we’ll be getting our plans in order for a v5 release.</p>
-
-<p>Bootstrap 5 will not feature drastic changes to the codebase. While I tweeted about the earnestness to move to PostCSS years ago, we’ll still be on Sass for v5. Instead, we’ll focus our efforts on removing cruft, improving existing components, and dropping old browsers and our jQuery dependency. There are also some updates to our v4.x components we cannot make without causing breaking changes, so v5 feels like it’s coming at the right time for us.</p>
-
-<p>Stay tuned for a preview of the plans for v5 in the new year. We’ll share via an issue, ask for feedback, and then settle in to development mode.</p>
-
-<p>Happy holidays, and happy new year to everyone! Thanks for continuing to make Bootstrap an amazing project and community.</p>
 
 <p>&lt;3,<br />
 <a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
