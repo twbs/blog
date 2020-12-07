@@ -5,7 +5,9 @@ video: y2bVIBwpCTA
 date: 2020-12-07 11:00:00
 ---
 
-With our first beta release of Bootstrap 5, we're calling it on new features and breaking changes. From here on out, we're fine-tuning the release on our march to a stable v5 release. Woohoo!
+With our first beta release of Bootstrap 5, we're calling it on new features and breaking changes. From here on out, we're only fine-tuning features, bugs, and documentation on our way to a stable v5 release. Woohoo!
+
+Just like with the v4 development process, our docs for v5 have been temporarily hosted on a subdomain for the next major release. Starting today, those docs are being moved to the main domain. We'll leave the old docs up for the time being and eventually redirect them all to the new URLs.
 
 There are some really awesome new features—RTL!—that have been added in this release, and they've come with some important changes. Keep reading for the lowdown and let us know what you think!
 
