@@ -5,15 +5,15 @@ video: y2bVIBwpCTA
 date: 2020-12-07 11:00:00
 ---
 
-With our first beta release of Bootstrap 5, we're calling it on new features and breaking changes. From here on out, we're fine-tuning the release on our march to a stable v5 release.
+With our first beta release of Bootstrap 5, we're calling it on new features and breaking changes. From here on out, we're fine-tuning the release on our march to a stable v5 release. Woohoo!
 
 There are some really awesome new features—RTL!—that have been added in this release, and they've come with some important changes. Keep reading for the lowdown and let us know what you think!
 
 ## RTL
 
-![Bootstrap RTL docs](/assets/img/2020/12/rtl-docs.png)
+[![Bootstrap RTL docs](/assets/img/2020/12/rtl-docs.png)](https://getbootstrap.com/docs/5.0/getting-started/rtl/)
 
-Our biggest addition to the project in years, we've finally added RTL support to Bootstrap! Please join me in giving @ffoodd—one of our newest contributors and author of the RTL pull request—a massive thank you. [The RTL pull request](https://github.com/twbs/bootstrap/pull/30980) includes nearly 50 cross-references to existing issues and PRs that have tried to implement the feature into our core.
+Our biggest addition to the project in years, we've finally added RTL support to Bootstrap! Please join me in giving @ffoodd—one of our newest contributors and author of the RTL pull request—a massive thank you. [The pull request](https://github.com/twbs/bootstrap/pull/30980) includes nearly 50 references to existing issues and PRs that have tried to implement the feature into our core.
 
 At a high level, our RTL approach includes a handful of changes:
 
@@ -21,13 +21,13 @@ At a high level, our RTL approach includes a handful of changes:
 
 - **[New RTL documentation](https://getbootstrap.com/docs/5.0/getting-started/rtl/)** to help you get started.
 
-- **[Five new RTL Examples](https://getbootstrap.com/docs/5.0/examples/#rtl)** that show our new RTL CSS in action, converting our Album, Checkout, Carousel, Blog, and Dashboard examples into their RTL equivalents.
+- **[Five new RTL Examples](https://getbootstrap.com/docs/5.0/examples/#rtl)** that show our new RTL CSS in action, converting our Album, Checkout, Carousel, Blog, and Dashboard examples into all new right-to-left equivalents.
 
 - **Two new cheatsheet kitchen sink pages**—the [default cheatsheet](https://getbootstrap.com/docs/5.0/examples/cheatsheet/) for our standard CSS and the [RTL cheatsheet](https://getbootstrap.com/docs/5.0/examples/cheatsheet-rtl/).
 
 Our approach is built on [RTLCSS](https://rtlcss.com/), an awesome project that helps reprocess an existing LTR stylesheet for RTL. We've classified it as an experimental feature for now, anticipating that we'll get some of this wrong. We're looking to the community to help us round out the feature as we wrap up some remaining todos.
 
-[This issue](https://github.com/twbs/bootstrap/issues/32330) has some outstanding todos already planned for our team to address. If you see something else we can improve upon, please consider opening an issue or pull request.
+[This issue](https://github.com/twbs/bootstrap/issues/32330) has some outstanding todos already planned for our team to address. See something else we can improve? Please consider opening an issue or pull request.
 
 [Read up on RTL in Bootstrap in our docs](https://getbootstrap.com/docs/5.0/getting-started/rtl/), including required HTML changes, a starter template, details on our approach, and more.
 
@@ -48,11 +48,11 @@ We've upgraded [Popper.js](https://popper.js.org) from v1.x to v2.x, bringing wi
 - Removed `offset` option from our Tooltip/Popover and Dropdown plugins; this can still be achieved using the `popperConfig` parameter.
 - The `fallbackPlacement` option has become `fallbackPlacements`.
 
-Popper.js v2 also comes with a smaller file size for our primary dependency, updated positioning calculations, and much more.
+Popper.js v2 also comes with a smaller file size for our primary dependency, updated positioning calculations, and much more. Beyond that, our tooltips and popovers are unchanged and just as powerful.
 
 ## Namespaced data attributes
 
-We've renamed all our `data` attributes to include `bs` as an infix, thereby namespacing all the HTML attributes that enable JavaScript behaviors from our plugins. [See #31827](https://github.com/twbs/bootstrap/pull/31827) for details.
+We've renamed all our `data` attributes to include `bs` as an infix, thereby namespacing all the HTML attributes that enable JavaScript behaviors from our plugins. [See #31827](https://github.com/twbs/bootstrap/pull/31827) for details. It helps keep Bootstrap-required JavaScript triggers clearly identified throughout your projects.
 
 Making this change is a tad annoying, but easy enough to remedy with a find and replace. The new attributes work just like the old ones, just a little more specific. For example, here's a dropdown button and menu with the newly renamed `data-bs-toggle` attribute.
 
@@ -85,6 +85,8 @@ Beyond the namespacing, we've been chipping away at a few other JavaScript impro
 - Migrate to more modern APIs across our plugins. [See #32095.](https://github.com/twbs/bootstrap/pull/32095)
 - Tooltips and popovers can now have custom classes. [See #32217.](https://github.com/twbs/bootstrap/pull/32217)
 - Don't hide modal when `config.keyboard` is false. [See #32179.](https://github.com/twbs/bootstrap/pull/32179)
+
+More JavaScript updates are coming soon, from performance and file-size improvements to new features.
 
 ## States in the utilities API
 
