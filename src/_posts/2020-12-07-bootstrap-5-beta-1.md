@@ -139,7 +139,7 @@ Elsewhere we've made a handful of other breaking changes and improvements. The m
 
 - **Fixed:** Removed default linear gradient on some table rows that caused undesirable performance. Still more work to do here FYI. [See #32277.](https://github.com/twbs/bootstrap/pull/32277)
 
-- **Updated:** Breadcrumbs now have a simplified appearance. Use utilities to restore the `padding`, `background-color`, and `border-radius` as desired. [See #32149.](https://github.com/twbs/bootstrap/pull/32149)
+- **Updated:** Breadcrumbs now have a simplified appearance. Use utilities to restore the `padding`, `background-color`, and `border-radius` as desired. [See #32249.](https://github.com/twbs/bootstrap/pull/32249)
 
 - **Updated:** Finalized browserslist configuration to match our supported browsers. [See #30986.](https://github.com/twbs/bootstrap/pull/30986)
 
