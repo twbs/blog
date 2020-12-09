@@ -18,7 +18,7 @@ GEM
     ffi-win32-extensions (1.0.4)
       ffi
     forwardable-extended (2.6.0)
-    html-proofer (3.17.3)
+    html-proofer (3.17.4)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -98,7 +98,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.4)
-    rouge (3.25.0)
+    rouge (3.26.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
