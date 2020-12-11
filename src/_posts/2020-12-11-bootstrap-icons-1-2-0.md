@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bootstrap Icons v1.2.0
-video: 04854XqcfCY
+video: rY0WxgSXdEE
 date: 2020-12-11 21:30:00
 ---
 
