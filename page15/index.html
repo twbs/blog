@@ -161,6 +161,34 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/11/09/glyphicons-font/">
+            Update on the Glyphicons font
+          </a>
+        </h1>
+
+        <span class="post-date">09 Nov 2012</span>
+
+        
+
+        <p>Earlier this week, I was excited to announce that our next release, <code class="language-plaintext highlighter-rouge">2.2.2-wip</code>, would include the new Glyphicons icon font. In hindsight I got a little carried away and forgot about something.</p>
+
+<p><strong>IE7 doesn’t really do icon fonts.</strong></p>
+
+<p>I could put together a hack to add IE7 support, duplicating tons of code, but that doesn’t feel right as we’re dropping IE7 support in BS3. Instead of spending time on something we’ll just remove later on, we’re going to focus on things that will be here in the next major version.</p>
+
+<p>So, it’s with some sadness that I inform you <strong>we will not be including the Glyphicons font in 2.2.2-wip</strong>.</p>
+
+<p>Backwards compatibility is always a pain in the ass, and to avoid huge headaches for folks, we sometimes have to bend over, well, backwards. I hope this doesn’t screw up your plans too much and that you understand we have the community’s best interests at heart.</p>
+
+<p>There’s some good news though. For you nerds who live on the edge, I’ve been working on tons of BS3-esque changes in the <code class="language-plaintext highlighter-rouge">3.0.0-wip</code> branch on GitHub. If you really cannot wait for the Glyphicons font (and don’t mind using unsupported code), do check it out. I plan on accelerating work on it in the coming weeks. (Please don’t submit issues for it though, but rather email me or ping me on Twitter for questions.)</p>
+
+<p>Thanks for listening, and as always, &lt;3&lt;3&lt;3.</p>
+
+<p><a href="https://twitter.com/mdo">@mdo</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/10/30/2-2-1-hotfix-released/">
             2.2.1 hotfix released
           </a>
@@ -292,26 +320,6 @@
 <p><strong>More bug fixes, more feature improvements.</strong> 2.1.2 will be coming shortly and we’ll work to improve a handful of issues that we punted on for 2.1.1. Beyond that, we’ve scoped out the <a href="https://github.com/twbs/bootstrap/issues/milestones">next few releases</a> around a set of key components like modals and carousels.</p>
 
 <p>We’ll continue to add new features as appropriate, but we’re primarily focused on improving current functionality in the next few months.</p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/08/22/new-rss-feed/">
-            New RSS feed
-          </a>
-        </h1>
-
-        <span class="post-date">22 Aug 2012</span>
-
-        
-
-        <p>Roughly two weeks ago we upgraded the blog to use Jekyll and GitHub Pages instead of WordPress. When we did that, we forgot about the RSS feed. A few awesome folks noted we were missing it and so we’ve added it back. Unfortunately it’s not the same URL, but it’s there nonetheless.</p>
-
-<p>Here’s the URL for the new feed: <a href="https://blog.getbootstrap.com/feed.xml">https://blog.getbootstrap.com/feed.xml</a>.</p>
-
-<p>It’s also in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> of the blog’s pages, so entering just the root URL should resolve fine for you in most RSS apps. Again, sorry for the oversight and please continue to let us know if we can do anything else to improve the blog.</p>
-
-<p>Thanks!</p>
 
       </div>
     
