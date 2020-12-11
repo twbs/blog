@@ -5,7 +5,7 @@ video: rY0WxgSXdEE
 date: 2020-12-11 21:30:00
 ---
 
-Our latest Bootstrap Icons release includes dozens of new icons, redesigned documentation, and the most highly requested feature—icon fonts!
+Our latest Bootstrap Icons release includes dozens of new icons, redesigned documentation, and the most highly requested new feature—icon fonts!
 
 ## New social icons
 
