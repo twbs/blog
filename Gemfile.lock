@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    chef-utils (16.7.61)
+    chef-utils (16.8.14)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     em-websocket (0.5.2)
@@ -18,7 +18,7 @@ GEM
     ffi-win32-extensions (1.0.4)
       ffi
     forwardable-extended (2.6.0)
-    html-proofer (3.17.4)
+    html-proofer (3.18.0)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -121,7 +121,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  html-proofer (~> 3.17.3)
+  html-proofer (~> 3.18.0)
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.15.1)
   jekyll-paginate (~> 1.1.0)
@@ -132,4 +132,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.1.4
+   2.2.0
