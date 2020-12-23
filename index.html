@@ -160,6 +160,98 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2020/12/23/bootstrap-icons-1-2-2/">
+            Bootstrap Icons v1.2.2
+          </a>
+        </h1>
+
+        <span class="post-date">23 Dec 2020</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/hFDcoX7s6rE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.</p>
+
+<p>We also snuck in a few bug fixes to existing icons, docs, and some slight visual improvements to some existing icons. Get the details below!</p>
+
+<h2 id="font-files">Font files</h2>
+
+<p>Our icons fonts are (fingers crossed!) free of visual glitches that made so many unusable across Windows devices. For some reason macOS and iOS had no problems, but Windows butchered the font files. Turns out this was a result of inconsistent <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule">fill-rule</a> values in our icons, and some font formats and renderers only support a <code class="language-plaintext highlighter-rouge">non-zero</code> fill rule. We revisited nearly every icon and got it all sorted out.</p>
+
+<p><img src="/assets/img/2020/12/icons-font-index.png" alt="Icon fonts" /></p>
+
+<p>Massive shoutout to the <a href="https://www.figma.com/community/plugin/771155994770327940">Figma Fill Rule Editor plugin</a> that made this relatively quick and painless to update. <em>You can even see in the plugin’s image below how this rule affects rendering of SVGs.</em></p>
+
+<p><a href="https://www.figma.com/community/plugin/771155994770327940"><img src="/assets/img/2020/12/figma-fill-rule-editor.png" alt="Figma Fill Rule Editor plugin" /></a></p>
+
+<p><a href="https://github.com/twbs/icons/pull/552">Check out the PR</a> for what’s changed under the hood.</p>
+
+<h2 id="updated-icons">Updated icons</h2>
+
+<p><img src="/assets/img/2020/12/icons-realigned.png" alt="Revised icons" /></p>
+
+<p>A few icons got touched up with the work for our font files to clean up paths and make them more visually pleasing.</p>
+
+<ul>
+  <li>Locks are a little more legible—they’re taller and narrower.</li>
+  <li>Laptops now have a half pixel gap between their base and screen, making them look a little sleeker.</li>
+  <li>Shields are 1px taller now, with their inner icons now raised 1px as well. No reason to make them not take up the full viewBox.</li>
+  <li>Stopwatch icons look more like actual stopwatches with separate start/stop and lap buttons.</li>
+  <li>The bricks icon has its missing grout line restored.</li>
+  <li>Renamed patch fill icons to fix typos in their file names (<code class="language-plaintext highlighter-rouge">fll</code> to <code class="language-plaintext highlighter-rouge">fill</code>).</li>
+</ul>
+
+<p>Have some other refinements we should consider? Open an issue to tell us about it.</p>
+
+<p>Last but not least, we ironed out some docs issues. Our navbar is fully functional and inline with the v5 beta site. We also added <a href="https://github.com/twbs/icons/pull/561">new aliases</a> for icon filtering on homepage.</p>
+
+<h2 id="install">Install</h2>
+
+<p>To get started, install via npm:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i bootstrap-icons
+</code></pre></div></div>
+
+<p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.2.2">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.2.2/bootstrap-icons-1.2.2.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+
+<h2 id="figma">Figma</h2>
+
+<p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1">icons from Figma</a>.</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
+          <a href="/2020/12/12/bootstrap-icons-1-2-1/">
+            Bootstrap Icons v1.2.1
+          </a>
+        </h1>
+
+        <span class="post-date">12 Dec 2020</span>
+
+        
+
+        <p>Just a quick release to fix a typo in our <code class="language-plaintext highlighter-rouge">package.json</code> for including the font files in our published package.</p>
+
+<p>Get it via npm:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i bootstrap-icons
+</code></pre></div></div>
+
+<p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.2.1">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.2.1/bootstrap-icons-1.2.1.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2020/12/11/bootstrap-icons-1-2-0/">
             Bootstrap Icons v1.2.0
           </a>
@@ -168,7 +260,7 @@
         <span class="post-date">11 Dec 2020</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/rY0WxgSXdEE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/rY0WxgSXdEE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -589,139 +681,6 @@
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i bootstrap@next
 </code></pre></div></div>
-
-<h2 id="support-the-team">Support the team</h2>
-
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>’ GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-<p>&lt;3,<br /></p>
-
-<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2020/10/28/bootstrap-icons-1-1-0/">
-            Bootstrap Icons v1.1.0
-          </a>
-        </h1>
-
-        <span class="post-date">28 Oct 2020</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/04854XqcfCY?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.</p>
-
-<h2 id="30-new-icons">30+ new icons</h2>
-
-<p>Here’s a look at our file and emoji icons as of v1.1.0. New in this release for emojis are the wink and heart eyes, along with fill versions for the full set. In addition, we’ve added icons for Word, Excel, PowerPoint, and a general bar chart file type.</p>
-
-<p><img src="/assets/img/2020/10/icons-emoji.png" alt="Emoji icons" /></p>
-
-<p><img src="/assets/img/2020/10/icons-files-folders.png" alt="File and folder icons" /></p>
-
-<h2 id="changes">Changes</h2>
-
-<p>Here’s a more complete look at what’s changed in this release.</p>
-
-<ul>
-  <li>Fixed <a href="https://github.com/twbs/icons/issues/415">#415</a>: Properly name <code class="language-plaintext highlighter-rouge">grip-horizontal</code> and <code class="language-plaintext highlighter-rouge">grip-vertical</code></li>
-  <li>Fixed <a href="https://github.com/twbs/icons/issues/423">#423</a>: Update <code class="language-plaintext highlighter-rouge">arrow-up-square-fill</code></li>
-  <li>Fixed <a href="https://github.com/twbs/icons/issues/437">#437</a>: Make <code class="language-plaintext highlighter-rouge">file-earmark</code> variations consistent</li>
-  <li>New: Added 18 filetype icons <a href="https://github.com/twbs/icons/pull/465">#465</a></li>
-  <li>New: Added 13 emoji icons <a href="https://github.com/twbs/icons/pull/466">#66</a></li>
-</ul>
-
-<h2 id="install">Install</h2>
-
-<p>To get started, install via npm:</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i bootstrap-icons
-</code></pre></div></div>
-
-<p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.1.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip">download just the SVGs</a> (without the rest of the repository files).</p>
-
-<h2 id="figma">Figma</h2>
-
-<p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/6jIgJymnRpMjGSMG2BKNRe/Bootstrap-Icons-v1.1.0?node-id=0%3A1">icons from Figma</a>.</p>
-
-<p>&lt;3,<br /></p>
-
-<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2020/10/13/bootstrap-4-5-3/">
-            Bootstrap 4.5.3
-          </a>
-        </h1>
-
-        <span class="post-date">13 Oct 2020</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/Y3ywicffOj4?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>We’ve updated Bootstrap 4 with a new patch release to fix some bugs, backport some iterative changes from v5, and more. Enjoy!</p>
-
-<p>As you may already know, we’re alternating between v4 and v5 releases to keep both versions moving in tandem. This helps us close the gap between v4 and v5 and make updating to v5 as easy as possible.</p>
-
-<p>Read on for the highlighted changes.</p>
-
-<h2 id="changes">Changes</h2>
-
-<p>Also available in the <a href="https://github.com/twbs/bootstrap/releases/tag/v4.5.3">v4.5.3 release on GitHub</a>.</p>
-
-<h3 id="css">CSS</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31653">#31653</a>: Add a comment to our <code class="language-plaintext highlighter-rouge">escape-svg</code> function to note that data URIs must be quoted.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31693">#31693</a>: Use the <code class="language-plaintext highlighter-rouge">custom-control</code> shadow variable instead of the generic <code class="language-plaintext highlighter-rouge">input-focus-box-shadow</code>.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31793">#31793</a>: Backport some v5 changes (improved <code class="language-plaintext highlighter-rouge">th</code> styling in Reboot, custom form field styling when printing, and improvements to <code class="language-plaintext highlighter-rouge">.text-break</code>).
-    <ul>
-      <li><a href="https://github.com/twbs/bootstrap/pull/29714">#29714</a>: Keep custom check, radio, and switch theme when printing.</li>
-      <li><a href="https://github.com/twbs/bootstrap/pull/30781">#30781</a>: Reboot’s <code class="language-plaintext highlighter-rouge">th</code> updates: Inherit <code class="language-plaintext highlighter-rouge">font-weight: bold</code> that comes from user agent stylesheets.</li>
-      <li><a href="https://github.com/twbs/bootstrap/pull/30932">#30932</a>: <code class="language-plaintext highlighter-rouge">.text-break</code> changes to drop <code class="language-plaintext highlighter-rouge">overflow-wrap</code> and use <code class="language-plaintext highlighter-rouge">word-wrap</code> once again</li>
-      <li><a href="https://github.com/twbs/bootstrap/pull/31754">#31754</a>: Improve versions page rendering (also reversed the order while I was here)</li>
-    </ul>
-  </li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31846">#31846</a>: Backports the z-index change to <code class="language-plaintext highlighter-rouge">.close</code> buttons in dismissible <code class="language-plaintext highlighter-rouge">.alert</code>s.</li>
-</ul>
-
-<h3 id="js">JS</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31000">#31000</a>: Avoid multiple change event trigger in buttons plugin. <em>Not applicable to v5 since our button JS plugin has been mostly replaced with pure CSS.</em></li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31673">#31673</a>: Fix dropdown variable always evaluating to true.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31696">#31696</a>: Ensure <code class="language-plaintext highlighter-rouge">hidePrevented.bs.modal</code> can be prevented.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31718">#31718</a>: Backports new <code class="language-plaintext highlighter-rouge">$dropdown-padding-x</code> variable from v5.</li>
-</ul>
-
-<h3 id="docs">Docs</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/pull/30811">#30811</a>: Mention GPU acceleration fix in docs callout for popovers. <em>Doesn’t apply to v5 since we’re updating to Popper v2.</em></li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/30838">#30838</a>: Explain the <code class="language-plaintext highlighter-rouge">dispose</code> method more appropriately.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31706">#31706</a>: Backports updated margins for code snippets for improved readability.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31769">#31769</a>: Backports JS bundle guidance from v5.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31851">#31851</a>: Backports mention of missing <code class="language-plaintext highlighter-rouge">to</code> and <code class="language-plaintext highlighter-rouge">nextwhenvisible</code> methods.</li>
-</ul>
-
-<h3 id="misc">Misc</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/pull/31297">#31297</a>: Switch to xo ESLint config</li>
-  <li>Updated devDependencies versions</li>
-</ul>
-
-<h2 id="next-up">Next up</h2>
-
-<p>We’ll be back to v5 with our third alpha release coming in a couple of weeks. After that, we’ll ship another v4 update with v4.6.0 that continues the v5 backports and feature development. Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.</p>
 
 <h2 id="support-the-team">Support the team</h2>
 

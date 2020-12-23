@@ -21,7 +21,7 @@
     <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 5 of 18 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
+<title>Page 5 of 19 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Bootstrap Blog" />
 <meta name="author" content="Mark Otto" />
@@ -161,6 +161,62 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2019/07/24/lts-plan/">
+            Introducing our Long Term Support plan
+          </a>
+        </h1>
+
+        <span class="post-date">24 Jul 2019</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/2HuiH-0R6a0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Today we’re formally announcing our <a href="https://github.com/twbs/release">Long Term Support plan</a>, a documented approach aimed at strengthening the stability and frequency of releases. As part of this initiative, each major version of Bootstrap will receive at least six months of support after it is retired, followed by six months of critical bug fixes and security updates.</p>
+
+<p>Starting today, Bootstrap 3 will move to end of life, and will no longer receive critical security updates.</p>
+
+<p>Bootstrap 4 will move to Long Term Support after we release <code class="language-plaintext highlighter-rouge">v4.4</code> and will no longer receive new features from then on. It will continue to receive bug fixes, security updates, and documentation updates.</p>
+
+<p>Bootstrap 5 is under active development. You can follow our progress <a href="https://github.com/twbs/bootstrap">on GitHub</a>.</p>
+
+<p>A special thanks to <a href="https://github.com/XhmikosR">@XhmikosR</a> for his tireless work in pushing us forward.</p>
+
+<p>&lt;3,<br /></p>
+
+<p><a href="https://github.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
+          <a href="/2019/02/13/bootstrap-4-3-1-and-3-4-1/">
+            Bootstrap 3.4.1 and 4.3.1
+          </a>
+        </h1>
+
+        <span class="post-date">13 Feb 2019</span>
+
+        
+
+        <p>Today we’re shipping <a href="https://github.com/twbs/bootstrap/releases/tag/v4.3.1">Bootstrap v4.3.1</a> and <a href="https://github.com/twbs/bootstrap/releases/tag/v3.4.1">v3.4.1</a> to patch an XSS vulnerability, CVE-2019-8331. Also included in v4.3.1 is a small fix to some RFS (responsive font sizes) mixins that were added in v4.3.0.</p>
+
+<p>Earlier this week a developer reported an XSS issue similar to the <code class="language-plaintext highlighter-rouge">data-target</code> vulnerability that was fixed in v4.1.2 and v3.4.0: the <code class="language-plaintext highlighter-rouge">data-template</code> attribute for our tooltip and popover plugins lacked proper XSS sanitization of the HTML that can be passed into the attribute’s value.</p>
+
+<p>To resolve the issue, we’ve implemented a new JavaScript sanitizer to only allow whitelisted HTML elements in data attribute. You may modify our sanitization implementation to customize the HTML element whitelist, totally disable the sanitization, or pass your own sanitize function (useful if you use your own library). However, for added protection, there is no way to modify the sanitization via data attributes—you must modify these plugin options via the JavaScript API.</p>
+
+<p>Those who have modified the default templates, please <a href="https://getbootstrap.com/docs/4.3/getting-started/javascript/#sanitizer">read the new v4.3 sanitizer docs</a> or the <a href="https://getbootstrap.com/docs/3.4/javascript/#js-sanitizer">new v3.4 sanitizer docs</a>.</p>
+
+<p>In light of this vulnerability, we’re also auditing our security reporting workflows to ensure they’re up to date. This will include steps like adding a <code class="language-plaintext highlighter-rouge">SECURITY.md</code> file to our repository and ensuring our private channels and processes are up to date and documented with the team.</p>
+
+<p>Thank you to <a href="https://www.drupal.org/u/poiu">poiu</a> for reporting the vulnerability to the <a href="https://www.drupal.org/project/bootstrap">Bootstrap Drupal project</a> and <a href="https://www.drupal.org/u/markcarver">Mark Carver</a> from the <a href="https://www.drupal.org/project/bootstrap">Bootstrap Drupal project</a> for responsibly disclosing the issue to us. Also a massive thank you to <a href="https://github.com/johann-s">@Johann-S</a>, <a href="https://github.com/xhmikosr">@Xhmikosr</a>, and <a href="https://github.com/bardiharborow">@bardiharborow</a> on our team for the fast turnaround on today’s releases.</p>
+
+<p>&lt;3,<br />
+<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2019/02/11/bootstrap-4-3-0/">
             Bootstrap 4.3.0
           </a>
@@ -169,7 +225,7 @@
         <span class="post-date">11 Feb 2019</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/htgr3pvBr-I?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/htgr3pvBr-I?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -371,79 +427,6 @@
 <p>We’ve been working on a <a href="https://github.com/twbs/bootstrap/projects/6?fullscreen=true">huge v4.2 update</a> for several months now. Our attention has largely been on advancing the project and simplifying it’s dependencies, namely by removing our jQuery dependency. That work has sparked a keen interest in a moderately scoped v5 release, so we’ve been taking our sweet time with v4.2 to sneak in as many new features as we can.</p>
 
 <p>After we ship v4.2, we’ll plan for point releases to address any bugs and improvements as y’all start to use the new version. From there, we’ll start to share more plans on v5 to remove jQuery, drop support for older browsers, and clear up some cruft. This won’t be a sweeping rewrite, but rather an iterative improvement on v4. Stay tuned!</p>
-
-<p>&lt;3,<br />
-<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2018/07/24/bootstrap-4-1-3/">
-            Bootstrap 4.1.3
-          </a>
-        </h1>
-
-        <span class="post-date">24 Jul 2018</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/LqB9lhHqmsE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Hot on the heels of v4.1.2, we’re shipping another patch release to address an issue with our browserslist config, fix some CSS bugs, make JavaScript plugins UMD ready, and improve form control rendering. Up next will be v4.2, our second minor release where we add some new features.</p>
-
-<p>But first, here are the highlights for v4.1.3. Pay attention to the change to <code class="language-plaintext highlighter-rouge">.form-control</code>s which adds a new fixed <code class="language-plaintext highlighter-rouge">height</code>.</p>
-
-<ul>
-  <li><strong>Fixed:</strong> Moved the browserslist config from our <code class="language-plaintext highlighter-rouge">package.json</code> to a separate file to avoid unintended inherited browser settings across npm projects.</li>
-  <li><strong>Fixed:</strong> Removed the <code class="language-plaintext highlighter-rouge">:not(:root)</code> selector from our <code class="language-plaintext highlighter-rouge">svg</code> Reboot styles, resolving an issue that caused all inline SVGs ignore <code class="language-plaintext highlighter-rouge">vertical-align</code> styles via single class due to higher specificity.</li>
-  <li><strong>Fixed:</strong> Buttons in custom file inputs are once again clickable when focused.</li>
-  <li><strong>Improved:</strong> Bootstrap’s plugins can now be imported separately in any contexts because they are now UMD ready.</li>
-  <li><strong>Improved:</strong> <code class="language-plaintext highlighter-rouge">.form-control</code>s now have a fixed <code class="language-plaintext highlighter-rouge">height</code> to compensate for differences in computed height across different <code class="language-plaintext highlighter-rouge">type</code>s. This also fixes some IE alignment issues.</li>
-  <li><strong>Improved:</strong> Added <code class="language-plaintext highlighter-rouge">Noto Color Emoji</code> to our system font stack for better rendering in Linux OSes.</li>
-</ul>
-
-<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/26867">v4.1.3 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/15">GitHub project</a> for the full details. Up next is <a href="https://github.com/twbs/bootstrap/projects/6">v4.2</a>, so stay tuned for some awesome new features like toasts, dismissible badges, negative margins (responsive grid gutters!), spinners, and more!</p>
-
-<p><a href="https://getbootstrap.com/docs/4.1/">Head to the v4.1.x docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.</p>
-
-<p>&lt;3,<br />
-<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2018/07/12/bootstrap-4-1-2/">
-            Bootstrap 4.1.2
-          </a>
-        </h1>
-
-        <span class="post-date">12 Jul 2018</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/qHDy_b33cCQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>We’ve been busy these last couple months since launching v4.1.1, but we’re back with another bug fix and some sweeping changes to how we build and publish our docs after the issues stemming from our v4.1.x launches.</p>
-
-<p>When we launched v4.1, we ran into unexpected issues with having to rearrange asset paths after deploying, resulting in broken image URLs, a busted service worker, and more. Since then, we’re ironed out most of the kinks and introduced a new docs directory structure inside the repo. Nothing should change for anyone using our docs, but those contributing to the project and developing locally may need to rebase their changes or update their branches accordingly.</p>
-
-<p>Beyond the file structure changes, here are the highlights for v4.1.2:</p>
-
-<ul>
-  <li>Fixed an XSS vulnerability in tooltip, collapse, and scrollspy plugins</li>
-  <li>Improved how we query elements in our JavaScript plugins</li>
-  <li>Inline SVGs now have the same vertical alignment as images</li>
-  <li>Fixed issues with double transitions on carousels</li>
-  <li>Added Edge and IE10-11 fallbacks to our floating labels example</li>
-  <li>Various improvements to form controls, including disabled states on file inputs and unified focus styles for selects</li>
-  <li>Miscellaneous build tool improvements and documentation fixes</li>
-</ul>
-
-<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/26423">v4.1.2 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/14">GitHub project</a> for the full details. Up next will either be <a href="https://github.com/twbs/bootstrap/projects/15">v4.1.3</a> or <a href="https://github.com/twbs/bootstrap/projects/6">v4.2</a> depending on how smoothly this release goes and how well we can keep up with reviewing and merging pull requests.</p>
-
-<p>Head to the v4.1.x docs to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.</p>
 
 <p>&lt;3,<br />
 <a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>

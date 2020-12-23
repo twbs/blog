@@ -21,7 +21,7 @@
     <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 11 of 18 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
+<title>Page 11 of 19 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Bootstrap Blog" />
 <meta name="author" content="Mark Otto" />
@@ -161,6 +161,117 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2014/06/26/bootstrap-3-2-0-released/">
+            Bootstrap 3.2.0 released
+          </a>
+        </h1>
+
+        <span class="post-date">26 Jun 2014</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/LaTGrV58wec?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Today we’re shipping Bootstrap v3.2.0, a monster of a release that’s been in the works for four months. There’s lots of new hotness, hundreds of bug fixes, plenty of documentation improvements, and some build tool improvements. All told, there have been over 1,000 commits since our last release.</p>
+
+<h2 id="download-bootstrap">Download Bootstrap</h2>
+
+<p>Download the latest release—source code, compiled assets, and documentation—as a zip file directly from GitHub:</p>
+
+<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.2.0.zip">Download Bootstrap 3.2.0</a></p>
+
+<p>Hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a> for more options. Also, remember <a href="https://www.npmjs.com/package/bootstrap">we’re available on npm</a>, too.</p>
+
+<h2 id="bootstrap-cdn">Bootstrap CDN</h2>
+
+<p>After reviewing the changelog, update your CDN links to point to the v3.2.0 files:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Optional theme --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<h2 id="whats-new">What’s new</h2>
+
+<p>Here’s a look at some of the highlights of this release.</p>
+
+<h3 id="responsive-embeds">Responsive embeds</h3>
+
+<p>As seen in <a href="https://suitcss.github.io/">SUIT CSS</a>, we’ve added a few classes for creating responsive embeds. They’re great for proportionally scaling down YouTube videos and other <code class="language-plaintext highlighter-rouge">iframe</code> or <code class="language-plaintext highlighter-rouge">embed</code> elements. <a href="https://getbootstrap.com/components/#responsive-embed">Head to the docs</a> to check them out.</p>
+
+<h3 id="new-responsive-utility-classes">New responsive utility classes</h3>
+
+<p>We’ve had responsive utility classes—e.g., <code class="language-plaintext highlighter-rouge">.visible-xs</code>—for awhile now. Today, they level up a bit. We’ve added <code class="language-plaintext highlighter-rouge">block</code>, <code class="language-plaintext highlighter-rouge">inline-block</code>, and <code class="language-plaintext highlighter-rouge">inline</code> variations for each grid tier. For example, <code class="language-plaintext highlighter-rouge">.visible-xs-block</code> is now a thing.</p>
+
+<h3 id="copy-docs-snippets">Copy docs snippets</h3>
+
+<p>Our documentation snippets just got an upgrade with the help of <a href="https://github.com/zeroclipboard/zeroclipboard">ZeroClipboard</a>, the open source Flash-based copy-paste button. It’ll appear in the top right of nearly every example in the docs. Just click, and paste.</p>
+
+<h3 id="lmvtfy">LMVTFY</h3>
+
+<p><a href="/2014/06/25/lmvtfy/">We blogged about this yesterday</a>, but we have a new bot hanging out in our issues and pull requests on GitHub. Whenever someone pastes in a live example—like those from JS Bin or jsFiddle—we now validate their HTML. If it’s invalid, we tell folks what’s wrong so they can fix it.</p>
+
+<h3 id="browser-bugs">Browser bugs</h3>
+
+<p>We’ve also begun tracking unresolved browser bugs that currently impact Bootstrap’s development in some way. We call it the <a href="https://getbootstrap.com/browser-bugs/">Wall of browser bugs</a>. One of the coolest parts of developing Bootstrap is finding and reporting browser bugs to their developers. We’re literally helping to make the web a better place, and that’s pretty awesome in our book.</p>
+
+<h3 id="and-dozens-more">And dozens more…</h3>
+
+<p>With over 1,000 commits, a lot has changed, and all of it for the better. A few more notable changes include:</p>
+
+<ul>
+  <li>The docs have been rearranged and updated to be more specific and easier to develop.</li>
+  <li>The progress bar component has been improved for increased flexibility.</li>
+  <li>CSS repaint performance (most notably through scrolling) has been enhanced for several components.</li>
+  <li>Keyboard navigation (forward and backward) is now available for the carousel.</li>
+  <li>Modals should no longer shift left when being opened.</li>
+</ul>
+
+<p>For a complete breakdown, <a href="https://github.com/twbs/bootstrap/releases/tag/v3.2.0">read the release changelog</a> or the <a href="https://github.com/twbs/bootstrap/issues?milestone=26&amp;q=is%3Aclosed">v3.2.0 milestone</a>.</p>
+
+<h2 id="whats-next">What’s next</h2>
+
+<p>Well, we’ll probably have a patch release (v3.2.1), and then I imagine it’s onward to v4. We have a v3.3.0 milestone on GitHub, but it’s still unclear if we’ll ship that before jumping to v4. We’ve been building a list of things we’d like to see in the new version, but we don’t have anything ready for the public yet. We’ll share more details as we have them though. Until then, enjoy!</p>
+
+<p>&lt;3,</p>
+
+<p><a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/orgs/twbs/people">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
+          <a href="/2014/06/25/lmvtfy/">
+            Let Me Validate That For You (LMVTFY)
+          </a>
+        </h1>
+
+        <span class="post-date">25 Jun 2014</span>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/HEXWRTEbj1I?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>If you’ve been following the Bootstrap issue tracker lately, you might have noticed the launch of our new bot, <a href="https://github.com/twbs-lmvtfy">@twbs-lmvtfy</a>, on June 15th. After seeing many reports of Bootstrap bugs that ended up actually being caused by folks using invalid HTML, we decided to do what all programmers do when confronted with a repetitive task: <a href="https://github.com/twbs/bootstrap/issues/11984">Automate it!</a></p>
+
+<p>To that end, we are excited to announce the availability of <strong><a href="https://github.com/cvrebert/lmvtfy">Let Me Validate That For You (LMVTFY)</a></strong>, an open-source bot that uses the power of the <a href="https://developer.github.com/webhooks/">GitHub webhooks API</a> and the <a href="https://github.com/validator/validator">validator.nu</a> HTML5 validator to warn about HTML validity errors in live Web examples (e.g. <a href="https://jsbin.com/">JS Bins</a>) posted to GitHub issues.</p>
+
+<p>The bot is generic and can be used for any GitHub project, not just Bootstrap. If you have a front-end Web project on GitHub that gets lots of issue reports, we invite you to try out LMVTFY.</p>
+
+<p>For more details, setup instructions, or to give feedback, <a href="https://github.com/cvrebert/lmvtfy">check out the LMVTFY project on GitHub</a>.</p>
+
+<p>&lt;3,</p>
+
+<p><a href="https://twitter.com/cvrebert">@cvrebert</a> and <a href="https://github.com/twbs">team</a></p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2014/06/09/bootstrap-npm/">
             Bootstrap now available via npm
           </a>
@@ -169,7 +280,7 @@
         <span class="post-date">09 Jun 2014</span>
 
         <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/z33tH-JdPDg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/z33tH-JdPDg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -240,210 +351,6 @@
 <p>&lt;3,</p>
 
 <p><a href="https://twitter.com/connors">@connors</a> &amp; <a href="https://github.com/orgs/twbs/people">team</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2014/02/25/ratchet-2/">
-            Introducing Ratchet 2
-          </a>
-        </h1>
-
-        <span class="post-date">25 Feb 2014</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/vimZj8HW0Kg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Today we’re stoked to introduce the brand spanking new <a href="http://goratchet.com/">Ratchet 2.0</a>. The mobile-only framework for building mobile apps with HTML, CSS, and JavaScript has been overhauled with new features, documentation, and a brand new home.</p>
-
-<h2 id="new-home">New home</h2>
-
-<p>First, you’re not crazy—Ratchet has moved! It’s now a part of the <a href="https://github.com/twbs">Bootstrap organization</a> on GitHub. Ratchet 2 was lovingly crafted by <a href="https://twitter.com/connors">@connors</a>, a good friend to Bootstrap’s creators. Given our collaboration in person and the ideas we have for the future of both frameworks, it makes perfect sense.</p>
-
-<h2 id="new-docs">New docs</h2>
-
-<p>Second, the Ratchet docs have a new look!</p>
-
-<p><a href="http://goratchet.com/"><img src="/assets/img/2014/02/ratchet-docs.png" alt="Ratchet docs" /></a></p>
-
-<p>Things should seem pretty familiar, but we’ve added a bunch of new content and some key new features. Chief among them are the ability to show Ratchet on an iPhone and Android and three awesome examples to show it all off.</p>
-
-<p><a href="http://goratchet.com/examples/"><img src="/assets/img/2014/02/ratchet-examples-sm.png" alt="Ratchet examples" /></a></p>
-
-<p>See them in action on your phone:</p>
-
-<ul>
-  <li><a href="http://goratchet.com/examples/app-movies/">Movie finder</a></li>
-  <li><a href="http://goratchet.com/examples/app-ios-mail/">iOS Mail app</a></li>
-  <li><a href="http://goratchet.com/examples/app-android-notes/">Android Notes app</a></li>
-</ul>
-
-<p>Feel free to download, remix, and extend these example apps—they’re all part of the new Ratchet docs.</p>
-
-<h2 id="really-whats-new">Really, what’s new?</h2>
-
-<p>We’ve got tons of new and improved features for Ratchet. Here’s the rundown:</p>
-
-<ul>
-  <li><strong>New Ratchicons!</strong> An icon font dedicated to Ratchet, with support for both iOS and Android.</li>
-  <li><strong>New themes for iOS and Android!</strong> That’s right, Ratchet has a brand new base coat with optional themes for iOS and Android. Now your app can look right at home on either platform.</li>
-  <li><strong>New card wrapper.</strong> Wrap any content or Ratchet component in a card for that classic inset card look.</li>
-  <li>CSS has been rewritten to utilize Sass, compiled via Gruntfile.</li>
-  <li>Docs have been overhauled to run on <a href="https://jekyllrb.com/">Jekyll</a>.</li>
-  <li>Improved table views, now with support for lists featuring images and icons.</li>
-  <li>Updated class names for buttons, badges, and more to match the Bootstrap nomenclature.</li>
-</ul>
-
-<p>It’s a huge release that’s been a long time coming. <a href="http://goratchet.com/">Head to the new Ratchet docs</a> to check it all out in person, and be sure to view those new examples from your favorite iOS or Android phone.</p>
-
-<p><em>Looking for Ratchet v1.x docs? No problem—we’re hosting those at <a href="http://goratchet.com/1.0.2/">http://goratchet.com/1.0.2/</a>.</em></p>
-
-<h2 id="download">Download</h2>
-
-<p>Ratchet 2 is available today for download from GitHub.</p>
-
-<p><a class="btn-link btn-link-ratchet" href="https://github.com/twbs/ratchet/archive/v2.0.0.zip">Download Ratchet 2.0.0</a></p>
-
-<p>Be sure to check out the <a href="https://github.com/twbs/ratchet/issues?milestone=1&amp;q=is%3Aclosed">GitHub milestone</a> to see a more complete changelog of what’s new.</p>
-
-<h2 id="whats-next">What’s next?</h2>
-
-<p>Just like Bootstrap releases, up next for Ratchet will be documentation improvements and bug fixes as feedback rolls in. Without committing to a date, we also want to add support for iPad and Android tablets.</p>
-
-<p>As always, if you find a bug or want to suggest a feature, just <a href="https://github.com/twbs/ratchet/issues/new">open an issue</a> or a pull request on <a href="https://github.com/twbs/ratchet/">GitHub</a>.</p>
-
-<p>&lt;3,</p>
-
-<p><a href="https://twitter.com/mdo">@mdo</a> and <a href="https://twitter.com/connors">@connors</a></p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2014/02/13/bootstrap-3-1-1-released/">
-            Bootstrap 3.1.1 released
-          </a>
-        </h1>
-
-        <span class="post-date">13 Feb 2014</span>
-
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/WMPM1q_Uyxc?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Today we’re releasing Bootstrap v3.1.1. As our first patch release for the v3.1.x release series, we’ve focused on CSS bug fixes, documentation improvements, and further refinements to our build tools. See the included changelog for more details.</p>
-
-<h2 id="download-bootstrap">Download Bootstrap</h2>
-
-<p>Download Bootstrap directly from GitHub:</p>
-
-<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.1.1.zip">Download Bootstrap 3.1.1</a></p>
-
-<p>Hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a> for more options.</p>
-
-<h2 id="bootstrap-cdn">Bootstrap CDN</h2>
-
-<p>Update your CDN links to point to the v3.1.1 files:</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"</span><span class="nt">&gt;</span>
-
-<span class="c">&lt;!-- Optional theme --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"</span><span class="nt">&gt;</span>
-
-<span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
-
-<h2 id="full-changelog">Full changelog</h2>
-
-<h3 id="css">CSS</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/issues/11659">#11659</a>, <a href="https://github.com/twbs/bootstrap/issues/12349">#12349</a>, <a href="https://github.com/twbs/bootstrap/issues/12698">#12698</a>: Always show the input above appended buttons in input groups for proper focus and disabled state borders.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/12025">#12025</a>: Ensure responsive utility classes can be combined with one another.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/12195">#12195</a>: Apply <code class="language-plaintext highlighter-rouge">.btn:focused</code> styles to <code class="language-plaintext highlighter-rouge">.btn.active:focused</code> for improved accessibility.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/12412">#12412</a>: Refactored and renamed our internal grid mixins for generating custom number of grid columns.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/12433">#12433</a>: Use negative <code class="language-plaintext highlighter-rouge">margin</code> on <code class="language-plaintext highlighter-rouge">.list-inline</code>s so we don’t override the <code class="language-plaintext highlighter-rouge">padding-left</code> on the first list item.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/12448">#12448</a>: Use <code class="language-plaintext highlighter-rouge">@navbar-height</code> instead on <code class="language-plaintext highlighter-rouge">.navbar-brand</code> to prevent element from being shorter than navbar height. Corrects a change introduced in v3.1.0.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/12462">#12462</a>: Add <code class="language-plaintext highlighter-rouge">border-radius</code> to tables when in panels for proper rounding with all background settings.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/12470">#12470</a>: Scope large modal styles to minimum viewport width.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12486">#12486</a>: Restore full-width inputs for input groups in inline forms and navbars.</li>
-  <li><a href="https://github.com/twbs/bootstrap/pull/12502">#12502</a>: Remove long-deprecated <code class="language-plaintext highlighter-rouge">:-moz-placeholder</code> styles.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12532">#12532</a>: Scope popover arrow styles to immediate children.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12552">#12552</a>: Fixes two typos in <code class="language-plaintext highlighter-rouge">carousel.less</code> for the Glyphicon classes.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12620">#12620</a>, <a href="https://github.com/twbs/bootstrap/issues/12621">#12621</a>: Use <code class="language-plaintext highlighter-rouge">:extend(.img-responsive)</code> instead of mixin in thumbnail and carousel.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12625">#12625</a>: Only remove top and bottom borders on list groups in panels if the list group is the first or last element.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12629">#12629</a>: Override the default rounded corners in iOS’s search input with <code class="language-plaintext highlighter-rouge">-webkit-appearance: none;</code>.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12633">#12633</a>: Properly reset borders on table cells in panels.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12639">#12639</a>: Drop the unsupported by Opera <code class="language-plaintext highlighter-rouge">-o-user-select</code>.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12659">#12659</a>: Add <code class="language-plaintext highlighter-rouge">@blockquote-font-size</code> variable for calculated text size.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12673">#12673</a>: Use <code class="language-plaintext highlighter-rouge">@popover-arrow-width</code> for popover offsets.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12674">#12674</a>: Update popover <code class="language-plaintext highlighter-rouge">border</code> colors to use computed values rather than static ones.</li>
-</ul>
-
-<h3 id="sass">Sass</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap-sass/issues/523">#523</a>: Rails 3.2 compatibility</li>
-  <li><a href="https://github.com/twbs/bootstrap-sass/issues/518">#518</a>: <code class="language-plaintext highlighter-rouge">scale</code> mixin Sass compatibility issue</li>
-  <li>Updated Bower docs</li>
-</ul>
-
-<h3 id="javascript">JavaScript</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12436">#12436</a>: Update docs, examples, and tests to use jQuery v1.11.0.</li>
-</ul>
-
-<h3 id="docs">Docs</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12437">#12437</a>: Note specific versions of IE where progress bar animation is supported.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12439">#12439</a>: Correct docs error about available grid resets.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12477">#12477</a>: Clarify supported versions of Internet Explorer (we do v8-11) in browser support docs.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12494">#12494</a>: Update docs to reflect modal remote change from <a href="https://github.com/twbs/bootstrap/pull/11933">#11933</a>.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12497">#12497</a>: Remove manual full-width container callout now that there’s <code class="language-plaintext highlighter-rouge">.container-fluid</code>.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12512">#12512</a>: Improve alignment of the Dashboard example placeholder images.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12519">#12519</a>: Add Bower badge to README.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12527">#12527</a>: Clarify that dropdowns always require <code class="language-plaintext highlighter-rouge">data-toggle="dropdown"</code>.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12543">#12543</a>, <a href="https://github.com/twbs/bootstrap/issues/12544">#12544</a>, <a href="https://github.com/twbs/bootstrap/issues/12545">#12545</a>, <a href="https://github.com/twbs/bootstrap/issues/12546">#12546</a>: Various fixes to the v2.x to v3.x migration docs.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12555">#12555</a>: Rearrange variables to place grids and containers closer together in Customizer.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12564">#12564</a>: Distribution zip folder renamed to be more descriptive.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12589">#12589</a>: Add “Back to top” link to bottom of sidenav.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12590">#12590</a>: Add link to Korean translation.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12610">#12610</a>: Better and more consistent prefixing of docs CSS with <code class="language-plaintext highlighter-rouge">.bs-docs-</code>.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12611">#12611</a>: Mention limitation of one JavaScript plugin’s data attributes per element.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12614">#12614</a>: Add progress bar example with visible label.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12645">#12645</a>: Omit semicolons consistently in JS examples.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12655">#12655</a>: Upgrade holder.js to v2.3.1 so docs images are rendered properly in Internet Explorer &gt;=9.</li>
-</ul>
-
-<h3 id="examples">Examples</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12455">#12455</a>: Fix typo in Dashboard example’s CSS.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12512">#12512</a>: Improve alignment of the Dashboard example’s placeholder images.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12526">#12526</a>: Add scrollbars when necessary to the Dashboard example’s sidebar.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12579">#12579</a>: Improve sticky footer examples to avoid any wrappers and improve rendering in IE8.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12695">#12695</a>: Fixed transitions on offcanvas example by adding initial left and right values.</li>
-</ul>
-
-<h3 id="build-tools">Build tools</h3>
-
-<ul>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12466">#12466</a>: Add the examples’ CSS to the <code class="language-plaintext highlighter-rouge">csslint</code> task.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12531">#12531</a>: Add <code class="language-plaintext highlighter-rouge">/docs/dist/</code> to the <code class="language-plaintext highlighter-rouge">clean</code> task.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12534">#12534</a>: Allow the bootstrap package in npm to directly expose CSS and Less files.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12568">#12568</a>: Add the examples’ CSS to the <code class="language-plaintext highlighter-rouge">csscomb</code> task.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12581">#12581</a>, <a href="https://github.com/twbs/bootstrap/issues/12583">#12583</a>: Reorganize all Grunt tasks into one directory so that <code class="language-plaintext highlighter-rouge">grunt</code> runs properly in Bower installations.</li>
-  <li><a href="https://github.com/twbs/bootstrap/issues/12605">#12605</a>: Use license object instead of licenses array in Grunt.</li>
-</ul>
-
-<p>For an even more complete list of changes, see the <a href="https://github.com/twbs/bootstrap/issues?milestone=25&amp;page=1&amp;state=closed">v3.1.1 milestone</a>.</p>
-
-<p>&lt;3</p>
 
       </div>
     
