@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Bootstrap Icons v1.3.0
-video:
-date: 2021-01-05 21:30:00
+video: a01QQZyl-_I
+date: 2021-01-06 21:30:00
 ---
 
 Say hello to over 60 new icons with [Bootstrap Icons v1.3.0](https://icons.getbootstrap.com)! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!
 
-As usual, we also snuck in some bug fixes to existing icons and ours docs. Get the details below!
+As usual, we also snuck in some bug fixes to existing icons and ours docs. After this release, we're back to focusing on shipping updates to Bootstrap v5 and v4. More on that soon, and in the mean time, enjoy the new icons!
 
 ## 60+ new icons
 
-![New icons in v1.3.0](/assets/img/2021/01/icons-130-new.png)
+<img src="/assets/img/2021/01/icons-130-new.png" alt="New icons in v1.3.0" style="border: 1px solid rgba(0,0,0,.15);">
 
 Here's a look at the new icons in v1.3.0:
 
