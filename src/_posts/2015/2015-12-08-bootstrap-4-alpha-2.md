@@ -4,9 +4,9 @@ title: New Bootstrap 4 alpha
 video: J_kokTee01k
 ---
 
-Bootstrap 4 alpha 2 is now available. Since [our last release]({% post_url 2015-08-19-bootstrap-4-alpha %}), nearly 100 people have pushed over 900 commits to v4 and we've closed over 400 issues and pull requests. Those numbers are outrageously awesome to see, and we've still got a ton of work ahead of us this year for v4.
+Bootstrap 4 alpha 2 is now available. Since [our last release]({% post_url 2015/2015-08-19-bootstrap-4-alpha %}), nearly 100 people have pushed over 900 commits to v4 and we've closed over 400 issues and pull requests. Those numbers are outrageously awesome to see, and we've still got a ton of work ahead of us this year for v4.
 
-As mentioned in [our last post]({% post_url 2015-08-19-bootstrap-4-alpha %}), the general plan for v4's development starts with a few alpha releases. We're a little behind on that, but should be getting caught up as the year winds down. Expect another alpha or two this month to really round things out.
+As mentioned in [our last post]({% post_url 2015/2015-08-19-bootstrap-4-alpha %}), the general plan for v4's development starts with a few alpha releases. We're a little behind on that, but should be getting caught up as the year winds down. Expect another alpha or two this month to really round things out.
 
 Here's a look at a handful of the changes since our last alpha:
 
