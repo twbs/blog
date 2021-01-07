@@ -161,6 +161,75 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/12/10/bootstrap-3-plans/">
+            Bootstrap 3 plans
+          </a>
+        </h1>
+
+        <span class="post-date">10 Dec 2012</span>
+
+        
+
+        <p>With 2.2.2 out the door, our attention has shifted almost entirely to the next major update to the project, Bootstrap 3. Things are coming together and we want to give you an update on what’s next and give you a chance to share your thoughts.</p>
+
+<h2 id="specifics-of-v3">Specifics of v3</h2>
+
+<p>Overall, <strong>Bootstrap 3 will be rather narrow in focus</strong> compared to the last major update. In short, we’ll drop legacy code, improve responsive CSS, and centralize community efforts. <strong>Specifically, v3 will address the following:</strong></p>
+
+<ul>
+  <li>Migrate <a href="https://github.com/twbs/bootstrap/">twitter/bootstrap</a>, <a href="https://github.com/twbs/bootstrap-server/">twitter/bootstrap-server</a>, and mdo/bootstrap-blog (currently a private repo) to the <a href="https://github.com/twbs">twbs</a> organization.</li>
+  <li>Change site URLs to <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> (more on that below).</li>
+  <li>Compile all Less code, including responsive styles, into a single CSS file.</li>
+  <li>Drop IE7/FF3x support entirely.</li>
+  <li>Use the <code class="language-plaintext highlighter-rouge">@font-face</code> version of Glyphicons instead of the current PNGs.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues/2054">Switch to the MIT license</a> instead of Apache.</li>
+  <li>Drop the <code class="language-plaintext highlighter-rouge">*-wip</code> branch style of development.</li>
+  <li>Use tags for all versioned downloads, use smaller feature branches for dev work, and merge right into master (after 3.0 launches).</li>
+</ul>
+
+<p>To help communicate and track changes, we’ve opened a <a href="https://github.com/twbs/bootstrap/pull/6342">Bootstrap 3 pull request</a>. Follow along with what we’re working on, ask questions, or contribute by using that pull request as a reference point. We’ll be keeping it up to date as development progresses.</p>
+
+<p>In addition, we’re going to try to <strong>accelerate versioning</strong> by focusing on individual components for major releases after 3.0 (e.g., modals or the carousel could be punted to a 4.0 release). Given this approach, it’s less important for us to stuff a lot of feature work into 3.0.</p>
+
+<p>Beyond that, we’re open to addressing a couple of things with 3.0 like form styles and mobile enhancements. We want to limit these kind of changes for 3.0 though, so let us know what features are most important to you.</p>
+
+<h2 id="new-github-organization">New GitHub organization</h2>
+
+<p>We mentioned this a few times in recent months, but with 3.0 we’ll be transitioning to a new organization on GitHub, <a href="https://github.com/twbs">twbs</a>. The username is homage to <a href="https://github.com/h5bp">H5BP</a>, one of the most notable front-end tools out there, and of course, <a href="https://github.com/twitter">Twitter</a>. The move shouldn’t present any problems to you fine folks.</p>
+
+<h2 id="new-urls">New URLs</h2>
+
+<p>With the move to the new organization, the URLs of the Bootstrap docs must change. We host our docs on GitHub Pages and those URLs are based on user or organization names. To better future-proof things, we’ll be making <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> our base URL instead of just a redirect.</p>
+
+<p>For us, this will be the most painful part of the move. Given how prolific links are, we’ll also try to setup something at the old URLs to redirect folks, but we’re unsure how we will do that just yet. Perhaps a shell repository with dummy pages pointing to their replacements? Time will tell.</p>
+
+<h2 id="strengthening-the-community">Strengthening the community</h2>
+
+<p>The larger goal behind the organization move is to <strong>bolster the Bootstrap community</strong>. To start, we’ll be transferring the main Bootstrap repo, the Heroku customizer app, and the blog to the new organization. But more importantly, we want to <strong>bring community projects into the organization as official projects</strong>.</p>
+
+<p>From language ports to extensions to snippets, we want to work with leaders of key community efforts to see if this makes sense. We’re still working on the criteria for this and have yet to reach out to anyone.</p>
+
+<p>If you think your project fits, hit us up. We’ll be looking to add projects shortly after 3.0.</p>
+
+<h2 id="growing-the-team">Growing the team</h2>
+
+<p>Bringing additional projects into the fold is going to be a huge undertaking as managing the existing code is already a hefty task between Jacob and myself. To that end, we’ll be looking to add one or two people to the team to help us manage issues, pull requests, etc. This is a huge deal for us and we’ll be taking our time on figuring it all out.</p>
+
+<p>Growing the team with official contributors, other than the two of us, is also a goal. Similarly, we’re super nervous about this and have no clear timetable for it as well.</p>
+
+<h2 id="wrapping-up">Wrapping up</h2>
+
+<p>Bootstrap is still just getting started. There is so much more awesome stuff to do and we want to work with you awesome folks to do it all as best we can. We hope you’re as excited as we are.</p>
+
+<p>Please reach out to us on Twitter or GitHub with any questions or feedback.</p>
+
+<p>&lt;3,</p>
+
+<p>@mdo and @fat</p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/12/08/bootstrap-2-2-2-released/">
             Bootstrap 2.2.2 released
           </a>
@@ -291,56 +360,6 @@
 <p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.2.1.zip">Download Bootstrap 2.2.1</a> <span class="muted">(latest master ZIP)</span></p>
 
 <p>Once more, apologies for any hiccups and happy Bootstrapping!</p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/10/29/bootstrap-2-2-0-released/">
-            Bootstrap 2.2.0 released
-          </a>
-        </h1>
-
-        <span class="post-date">29 Oct 2012</span>
-
-        
-
-        <p>Aww yeah, our first release since leaving Twitter is here with Bootstrap 2.2.0! We originally planned to release this as 2.1.2, but given the timing and scope we’re bumping the version. Included in this release are dozens of bug fixes, documentation enhancements, and a few new and improved features.</p>
-
-<h2 id="tldr">tl;dr</h2>
-
-<p>2.1.2 is now 2.2.0: four new example templates, added media component, new typographic scale, fixed that box-shadow mixin bug, fixed z-index issues, and <a href="https://github.com/twbs/bootstrap/issues?milestone=15&amp;q=is%3Aclosed">more</a>.</p>
-
-<h2 id="highlights">Highlights</h2>
-
-<ul>
-  <li><strong>Added four new example templates</strong> to the docs, including a narrow marketing page, sign in form, sticky footer, and a fancy carousel (created for an upcoming .net magazine article).</li>
-  <li><strong>Added the media component</strong>, to create larger common components like comments, Tweets, etc.</li>
-  <li><strong>New variable-driven typographic scale</strong> based on <code class="language-plaintext highlighter-rouge">@baseFontSize</code> and <code class="language-plaintext highlighter-rouge">@baseLineHeight</code>.</li>
-  <li>Revamped mini, small, and large padding via new variables for inputs and buttons so everything is the same size.</li>
-  <li>Reverted 2.1.1’s <code class="language-plaintext highlighter-rouge">.box-shadow();</code> mixin change that caused compiler errors.</li>
-  <li>Improved dropdown submenus to support dropups and left-aligned submenus.</li>
-  <li>Fixed z-index issues with tooltips and popovers in modals.</li>
-  <li>Hero unit now sets basic type styles for the entire component, rather than on <code class="language-plaintext highlighter-rouge">.hero-unit p { ... }</code>.</li>
-  <li>Updated JavaScript plugins and docs to jQuery 1.8.1.</li>
-  <li>Added Contributing.md file.</li>
-  <li>Added support for installing Bootstrap via <a href="https://bower.io/">Bower</a>.</li>
-  <li>Miscellaneous variable improvements across the board.</li>
-  <li>Miscellaneous documentation typos fixed.</li>
-</ul>
-
-<p>For the full list of issues included in this release, visit the <a href="https://github.com/twbs/bootstrap/issues?milestone=15&amp;q=is%3Aclosed">2.2.0 milestone on GitHub</a>. Otherwise, be sure to <a href="https://getbootstrap.com/">visit the docs</a> or download the latest to get your hands on 2.2.0.</p>
-
-<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.2.0.zip">Download Bootstrap 2.2.0</a> <span class="muted">(latest master ZIP)</span></p>
-
-<h2 id="next-steps">Next steps</h2>
-
-<p>As a quick side note, we’re still working on moving Bootstrap to its own organization on GitHub. That will come with a couple other big changes, but more on that soon. We’ll be jumping on the next release shortly for more bugfixes, but until then enjoy the fixes and new hotness!</p>
-
-<p>Lastly, thanks everyone again for submitting issues and contributing—you rock!</p>
-
-<p>&lt;3,</p>
-
-<p><a href="https://twitter.com/mdo">@mdo</a> and <a href="https://twitter.com/fat">@fat</a></p>
 
       </div>
     

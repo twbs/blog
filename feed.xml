@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-01-07T21:53:10+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap Icons v1.2.2</title><link href="https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/" rel="alternate" type="text/html" title="Bootstrap Icons v1.2.2" /><published>2020-12-23T21:30:00+00:00</published><updated>2020-12-23T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/">&lt;p&gt;We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-01-07T21:56:01+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap Icons v1.3.0</title><link href="https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.3.0" /><published>2021-01-07T21:30:00+00:00</published><updated>2021-01-07T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0/">&lt;p&gt;Say hello to over 60 new icons with &lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.3.0&lt;/a&gt;! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!&lt;/p&gt;
+
+&lt;p&gt;As usual, we also snuck in some bug fixes to existing icons and ours docs. After this release, we’re back to focusing on shipping updates to Bootstrap v5 and v4. More on that soon, and in the mean time, enjoy the new icons!&lt;/p&gt;
+
+&lt;h2 id=&quot;60-new-icons&quot;&gt;60+ new icons&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021/01/icons-130-new.png&quot; alt=&quot;New icons in v1.3.0&quot; style=&quot;border: 1px solid rgba(0,0,0,.15);&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s a look at the new icons in v1.3.0:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added window-dock and window-sidebar&lt;/li&gt;
+  &lt;li&gt;Added two symmetry icons&lt;/li&gt;
+  &lt;li&gt;Added new stack icon&lt;/li&gt;
+  &lt;li&gt;Added two speedometer icons&lt;/li&gt;
+  &lt;li&gt;Added four save icons&lt;/li&gt;
+  &lt;li&gt;Added rulers icon&lt;/li&gt;
+  &lt;li&gt;Added filled variations for phone-vibrate, mouse, mouse2, mouse3, and four hand icons&lt;/li&gt;
+  &lt;li&gt;Added several border icons&lt;/li&gt;
+  &lt;li&gt;Added paint bucket&lt;/li&gt;
+  &lt;li&gt;Added four new badges (3D, AR, VR, WC)&lt;/li&gt;
+  &lt;li&gt;Added four lightbulb icons&lt;/li&gt;
+  &lt;li&gt;Added eyedropper&lt;/li&gt;
+  &lt;li&gt;Added mask icon&lt;/li&gt;
+  &lt;li&gt;Added three color palette icons&lt;/li&gt;
+  &lt;li&gt;Added layer-forward and layer-backward&lt;/li&gt;
+  &lt;li&gt;Added two eraser icons&lt;/li&gt;
+  &lt;li&gt;Added two megaphone icons&lt;/li&gt;
+  &lt;li&gt;Added four push pin icons&lt;/li&gt;
+  &lt;li&gt;Added Whatsapp and Telegram social icons&lt;/li&gt;
+  &lt;li&gt;Added dotted circle dash, circle plus, square dash, and square plus&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Have some ideas for new icons we should consider? Open an issue to tell us about it!&lt;/p&gt;
+
+&lt;h2 id=&quot;cdn-quickstart-with-icon-fonts&quot;&gt;CDN quickstart with icon fonts&lt;/h2&gt;
+
+&lt;p&gt;Since we added icon fonts in v1.2.0, it’s been possible to use a CDN to deliver and use Bootstrap Icons in seconds. Include the stylesheet, place short HTML snippets where you want icons, and you’re done! If you want to include it yourself, here’s how.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Include the Bootstrap Icons font stylesheet in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your website. Or, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@import&lt;/code&gt; to include the stylesheet that way.&lt;/p&gt;
+
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Option 1: Include in HTML --&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;/* Option 2: Import via CSS */&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&quot;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add HTML snippets to include Bootstrap Icons where desired.&lt;/p&gt;
+
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bi-alarm&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Want to see it in action? We’ve put together a helpful &lt;a href=&quot;https://codepen.io/emdeoh/pen/NWRzbKM&quot;&gt;CodePen demo for using Bootstrap Icons fonts via CDN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;ProTip:&lt;/strong&gt; Most browsers do not allow SVG sprites to be used across domains, which is why having icon fonts (when SVGs are the preferrable and more accessible method of delivering icons) are so useful. Whenever possible, please use SVGs over icon fonts.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;To get started, install via npm:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.3.0&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.3.0/bootstrap-icons-1.3.0.zip&quot;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+
+&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
+
+&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;3,&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/twbs&quot;&gt;team&lt;/a&gt;&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Say hello to over 60 new icons with Bootstrap Icons v1.3.0! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.2.2</title><link href="https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/" rel="alternate" type="text/html" title="Bootstrap Icons v1.2.2" /><published>2020-12-23T21:30:00+00:00</published><updated>2020-12-23T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/">&lt;p&gt;We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.&lt;/p&gt;
 
 &lt;p&gt;We also snuck in a few bug fixes to existing icons, docs, and some slight visual improvements to some existing icons. Get the details below!&lt;/p&gt;
 
@@ -679,25 +757,4 @@
 
 &lt;p&gt;&amp;lt;3,&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/twbs&quot;&gt;team&lt;/a&gt;&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">After five alphas over the last nine months, Bootstrap Icons has officially gone stable with our v1.0.0 release! We’re now over 1,100 icons and are on track to add hundreds more in our upcoming minor releases. This has been a labor of love and I’m thrilled to ship this latest update.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 4.5.2</title><link href="https://blog.getbootstrap.com/2020/08/06/bootstrap-4-5-2/" rel="alternate" type="text/html" title="Bootstrap 4.5.2" /><published>2020-08-06T00:00:00+00:00</published><updated>2020-08-06T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2020/08/06/bootstrap-4-5-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/08/06/bootstrap-4-5-2/">&lt;p&gt;Today’s patch release is aimed at addressing some small issues introduced over the last few versions of Bootstrap 4. Read on for details and update when you’re ready.&lt;/p&gt;
-
-&lt;p&gt;From the addition of responsive containers in v4.4.0 to the most recent row and column adjustments, we had been making incremental changes to our grid system. While our changes have solved some issues, they’ve broken other behaviors and introduced new complexities.&lt;/p&gt;
-
-&lt;p&gt;Today’s release rolls back and restores a few things:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31438&quot;&gt;#31438&lt;/a&gt; restores the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make-container-max-widths&lt;/code&gt; mixin.&lt;/strong&gt; We won’t be using the mixin ourselves, but it will remain in the codebase for the rest of v4 with today’s release. We’ve added a deprecation notice as well.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31439&quot;&gt;#31439&lt;/a&gt; removes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flex: 1 0 100%&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.row&lt;/code&gt;s.&lt;/strong&gt; This was added to address shrinking rows inside the navbar component after our responsive containers were added in v4.4.0. Removing this rolls us back to the expected grid and flex behavior—your row will shrink unfortunately without further changes. We could add extra custom CSS to address this, but it seems shortsighted to rush into that. Instead, apply &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.flex-fill&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.row&lt;/code&gt; and your row will behave as usual.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Similarly, &lt;strong&gt;v4.5.1 already removed the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;min-width: 0&lt;/code&gt; on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.col&lt;/code&gt;s&lt;/strong&gt;. This change was introduced to fix &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; elements not fitting to a column. This an issue with how flexbox works, where a flex container cannot shrink beyond its children’s content. Rather than force this on every column, we recommend you apply this as needed with a custom utility. (We’ll also aim to add this as a new utility in v5.)&lt;/p&gt;
-
-&lt;p&gt;We know this kind of hiccups set you back, so please accept our apologies for the bugs. Be sure to read the referenced pull requests above to get up to speed on what happened and how we fixed it. &lt;a href=&quot;https://codepen.io/emdeoh/pen/LYNYmPR?editors=1100&quot;&gt;This CodePen demo&lt;/a&gt; has all the known grid issues and fixes implemented in it.&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;3,&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/twbs&quot;&gt;team&lt;/a&gt;&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Today’s patch release is aimed at addressing some small issues introduced over the last few versions of Bootstrap 4. Read on for details and update when you’re ready.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://github.com/mdo&quot;&gt;@mdo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/twbs&quot;&gt;team&lt;/a&gt;&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">After five alphas over the last nine months, Bootstrap Icons has officially gone stable with our v1.0.0 release! We’re now over 1,100 icons and are on track to add hundreds more in our upcoming minor releases. This has been a labor of love and I’m thrilled to ship this latest update.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

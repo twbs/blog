@@ -161,6 +161,40 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/08/13/help-test-bootstrap-2-1/">
+            Help test Bootstrap 2.1
+          </a>
+        </h1>
+
+        <span class="post-date">13 Aug 2012</span>
+
+        
+
+        <p>We’re stoked to release Bootstrap 2.1 next week Monday at our <a href="https://twitter-bootstrap-birthday.eventbrite.com/">first birthday party</a>, but to make it a great release, we need your help testing it out.</p>
+
+<p>While 2.0.4 was a smaller release, 2.1 is a much larger effort that closes nearly 100 issues and adds a handful of great features. You can see the full list of changes changes in 2.1 thus far by browsing the <a href="https://github.com/twbs/bootstrap/issues?milestone=7&amp;q=is%3Aclosed">milestone on GitHub</a>.</p>
+
+<h2 id="whats-included">What’s included</h2>
+
+<p>At a broad level, we’ve got overhauled docs. They’re drastically streamlined, redesigned, and better than ever. They even include a new page for getting started with an overview of the framework. New framework features include <strong>submenu support on dropdowns</strong>, <strong>block level buttons</strong>, and the <strong>affix plugin</strong>. We’ve made many other key changes, so be sure to check it out.</p>
+
+<p>We’ll have a more complete list of changes with our release next week.</p>
+
+<h2 id="how-to-help">How to help</h2>
+
+<p>Just like last time, we’re pushing out a release candidate of the 2.1 code and docs. <strong>Here’s how you can help us out:</strong></p>
+
+<ul>
+  <li>Checkout the <code class="language-plaintext highlighter-rouge">2.1.0-wip</code> branch, or browse the release candidate docs so you can easily load it up on devices and such for testing.</li>
+  <li>Load up the new docs in your favorite, or your least favorite, browser or device and start testing.</li>
+  <li><a href="https://github.com/twbs/bootstrap/issues?sort=created&amp;direction=desc&amp;state=open">Open a new issue on GitHub</a> to report bugs. Please include as much context and information as possible. If it’s a visual bug, please include a screenshot. If it pertains to JavaScript, consider including a <a href="https://jsfiddle.net/">jsfiddle</a> or <a href="https://jsbin.com/">jsbin</a>.</li>
+</ul>
+
+<p>If you’re submitting a pull request against 2.1-wip, be sure to read the <a href="https://github.com/twbs/bootstrap/wiki/Contributing-to-Bootstrap">Contributing to Bootstrap</a> wiki page first.</p>
+
+      </div>
+    <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/08/11/now-powered-by-jekyll-and-github-pages/">
             Now powered by Jekyll and GitHub Pages
           </a>
@@ -289,118 +323,6 @@
 <hr />
 
 <p>So there you have it, a quick low-down on how we’re thinking and talking about Bootstrap. When it comes right down to it, Bootstrap is whatever you want to make of it, so dive in and see where it can help you out the most.</p>
-
-      </div>
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/04/24/bootstrap-2-0-3-released/">
-            Bootstrap 2.0.3 released
-          </a>
-        </h1>
-
-        <span class="post-date">24 Apr 2012</span>
-
-        
-
-        <p>Today we’re releasing <a href="https://getbootstrap.com/">Bootstrap 2.0.3</a>, another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the <a href="https://github.com/twbs/bootstrap/issues?sort=created&amp;direction=desc&amp;state=closed&amp;page=1&amp;milestone=10">2.0.3 milestone</a> on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what’s changed.</p>
-
-<h2 id="makefile">Makefile</h2>
-
-<p>In the spirit of always improving the LESS functionality and build tools, we’ve updated our makefile to utilize <a href="https://jshint.com/">JSHint</a> and <a href="https://twitter.github.io/recess/">Recess</a>, linters for JavaScript and CSS. To continue to run <code class="language-plaintext highlighter-rouge">make</code> via Terminal, do the following:</p>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">-g</span> recess jshint</code></pre></figure>
-
-<p>We’ve also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the <a href="https://github.com/twbs/bootstrap/blob/v2.0.3/README.md">updated readme</a>.</p>
-
-<h2 id="html-and-css">HTML and CSS</h2>
-
-<ul>
-  <li>Overhauled the responsive utility classes to simplify required CSS, add <code class="language-plaintext highlighter-rouge">!important</code> to all declarations, and use <code class="language-plaintext highlighter-rouge">display: inherit</code> in place of <code class="language-plaintext highlighter-rouge">display: block</code> to account for different types of elements.</li>
-  <li>Removed <code class="language-plaintext highlighter-rouge">&gt;</code> from fluid grid column selectors, meaning every element with a <code class="language-plaintext highlighter-rouge">.span*</code> class within a <code class="language-plaintext highlighter-rouge">.row-fluid</code> will use percentage widths instead of fixed-pixels.</li>
-  <li>Fixed regression in responsive images support as of 2.0.1. We’ve re-added <code class="language-plaintext highlighter-rouge">max-width: 100%;</code> to images by default. We removed it in our last release since we had folks complaining about Google Maps integration and other projects, but we’re taking a different stance now on these things and will require developers to make these tweaks on their end.</li>
-  <li>Added variable <code class="language-plaintext highlighter-rouge">@navbarBrandColor</code> for the brand element in navbars, which defaults to <code class="language-plaintext highlighter-rouge">@navbarLinkColor</code>.</li>
-  <li>Font-family mixins now use variables for their stacks.</li>
-  <li>Fixed an unescaped <code class="language-plaintext highlighter-rouge">filter</code> on the <code class="language-plaintext highlighter-rouge">.reset-filter()</code> mixin that was causing some errors depending on your compiler.</li>
-  <li>Fixed regression in <code class="language-plaintext highlighter-rouge">.form-actions</code> background, which was too dark, by adding a new variable <code class="language-plaintext highlighter-rouge">@formActionsBackground</code> and changing the color to <code class="language-plaintext highlighter-rouge">#f5f5f5</code> instead of <code class="language-plaintext highlighter-rouge">#eee</code>.</li>
-  <li>Fixed an issue on button group dropdowns where the background color was not using the button’s darker color when the dropdown is open.</li>
-  <li>Generalized and simplified the open dropdown classes while adding smarter defaults. Instead of <code class="language-plaintext highlighter-rouge">.dropdown.open</code>, we now use just <code class="language-plaintext highlighter-rouge">.open</code>. On the defaults side, all dropdown menus now have rounded corners to start.</li>
-  <li>Improved active <code class="language-plaintext highlighter-rouge">.dropdown-toggle</code> styles (for dropdown buttons) by darkening the background and sharpening the inset shadow to match the active state of buttons.</li>
-  <li>Direction of animation on progress bars reversed.</li>
-  <li>Fixed input-prepend/append issue with uneditable inputs: <code class="language-plaintext highlighter-rouge">.uneditable-input</code> was being floated and a missing comma meant its <code class="language-plaintext highlighter-rouge">border-radius</code> for the append option wasn’t being applied properly.</li>
-  <li>Removed <code class="language-plaintext highlighter-rouge">height: auto;</code> from <code class="language-plaintext highlighter-rouge">img</code> since it was overriding dimensions set via HTML attributes.</li>
-  <li>Fixed an issue of double borders on the top of tables with captions or colgroups.</li>
-  <li>Fixed issue with anchor buttons in the <code class="language-plaintext highlighter-rouge">.navbar-text</code>. Instead of a general styling on all anchors within an element with that class, we now have a new class to specifically apply appropriate link color.</li>
-  <li>Added support for <code class="language-plaintext highlighter-rouge">@navbarHeight</code> on the brand/project name and nav links for complete navbar height customization.</li>
-  <li>Fixed the black borders on buttons problem in IE7 by removing the border, increasing the line-height, and providing darker background colors.</li>
-  <li>Removed excess padding on <code class="language-plaintext highlighter-rouge">.search-query</code> inputs in IE7 since it doesn’t have border-radius.</li>
-  <li>Updated alert messages in Components to use <code class="language-plaintext highlighter-rouge">button</code> elements as close icons instead of <code class="language-plaintext highlighter-rouge">a</code>. Both can be used, but an <code class="language-plaintext highlighter-rouge">a</code> will require <code class="language-plaintext highlighter-rouge">href="#"</code> for dismissal on iOS devices.</li>
-  <li>Fixed an issue with prepended/appended inputs in Firefox where <code class="language-plaintext highlighter-rouge">select</code> elements required two clicks to toggle the dropdown. Resolved by moving the <code class="language-plaintext highlighter-rouge">position: relative</code> to the <code class="language-plaintext highlighter-rouge">select</code> by default instead of on <code class="language-plaintext highlighter-rouge">:focus</code>.</li>
-  <li>Added a new mixin, <code class="language-plaintext highlighter-rouge">.backface-visibility</code>, to help refine CSS 3D tranforms. Examples and explanation of usage can be found on <a href="https://css-tricks.com/almanac/properties/b/backface-visibility/">CSS Tricks</a>.</li>
-  <li>Changed specificity of grid classes in responsive layouts under 767px to accurately target <code class="language-plaintext highlighter-rouge">input</code>, <code class="language-plaintext highlighter-rouge">select</code>, and <code class="language-plaintext highlighter-rouge">textarea</code> elements that use <code class="language-plaintext highlighter-rouge">.span*</code> classes.</li>
-  <li>Horizontal description lists, <code class="language-plaintext highlighter-rouge">.dl-horizontal</code>, now truncate terms that are too long to fit in their fixed-width column. In the &lt; 767px responsive layout, they change to their default stacked layout.</li>
-  <li>Changed tabbable tabs to prevent issues in left and right aligned tabs. <code class="language-plaintext highlighter-rouge">.tab-content</code> would not growing to its parent’s full width due to <code class="language-plaintext highlighter-rouge">display: table</code>. We removed that and the <code class="language-plaintext highlighter-rouge">width: 100%</code> and instead just set <code class="language-plaintext highlighter-rouge">overflow: auto</code> to clear the left and right aligned tabs.</li>
-  <li>Updated thumbnails to support fluid grid column sizing.</li>
-  <li>Added <code class="language-plaintext highlighter-rouge">&gt;</code> to most of the button group selectors</li>
-  <li>Added new variable, <code class="language-plaintext highlighter-rouge">@inputBorderRadius</code>, to all form controls that previously made use of the static <code class="language-plaintext highlighter-rouge">3px</code> value everywhere.</li>
-  <li>Changed the way we do <code class="language-plaintext highlighter-rouge">border-radius</code> for tables. Instead of the regular mixin that zeros out all other corners, we specify one corner only so they can be combined for use on single column table headers.</li>
-  <li>Updated Glyphicons Halflings from 1.5 to 1.6, introducing 20 new icons.</li>
-  <li>Added an <code class="language-plaintext highlighter-rouge">offset</code> paramater to the <code class="language-plaintext highlighter-rouge">.makeColumn</code>.</li>
-  <li>Increased the specificity of all tabbable nav selectors to include <code class="language-plaintext highlighter-rouge">.nav-collapse</code> to appropriately scope the responsive navbar behavior.</li>
-  <li>Fixed uneditable inputs: text now cuts off and does not wrap, making it behave just like a default <code class="language-plaintext highlighter-rouge">input</code>.</li>
-  <li>Labels and badges are now <code class="language-plaintext highlighter-rouge">vertical-align: baseline;</code> so they line up with surrounding text.</li>
-</ul>
-
-<h2 id="javascript">JavaScript</h2>
-
-<ul>
-  <li>Add jshint support</li>
-  <li>Add travis-ci support w/ headless phantom integration</li>
-  <li>Replace UA sniffing in bootstrap-transitions.js</li>
-  <li>Add MSTransitionEnd event to transition plugin</li>
-  <li>Fix pause method in carousel (shouldn’t restart when hovering over controls)</li>
-  <li>Fix crazy opera bug #1776</li>
-  <li>Don’t open dropdown if target element is disabled</li>
-  <li>Always select last item in scrollspy if you’ve reached the bottom of the document or element</li>
-  <li>Typeahead should escape regexp special chars</li>
-  <li>If interval is false on carousel, do not auto-cycle</li>
-  <li>Add preventDefault support for all initial event types (show, close, hide, etc.)</li>
-  <li>Fix collapse bug in ie7+ for initial collapse in</li>
-  <li>Fix nested collapse bug</li>
-  <li>If transitioning collapse, don’t start new transition</li>
-  <li>Try to autodetect when to use html/text method in tooltip/popovers to help prevent xss</li>
-  <li>Add bootstrap + bootstrap.min.js to gh-pages for @remy and jsbin support</li>
-</ul>
-
-<h2 id="documentation-and-repo">Documentation and repo</h2>
-
-<ul>
-  <li>Combined badges and labels into a single LESS file, badges-labels.less, to reduce repeated CSS.</li>
-  <li>Separated responsive features into multiple files. We now have a file for each grouping of media queries (tablets and down, tablets to desktops, and large desktops). Additionally, the visible/hidden utility classes and the responsive navbar are in their own files. The output is the same in the compiled CSS, but this should give folks a bit more flexibility.</li>
-  <li>Added a new CSS Tests page in the docs (not in the top nav) for better testing of edge cases and extending the use of standard components.</li>
-  <li>Removed the bootstrap.zip file from the repo and the make process for faster building and a lighter repo. From now on, the zip will only be in the documentation branch.</li>
-  <li>Fixed incorrect use of class instead of ID for tabs example and added documentation for multiple ways of toggling tabs.</li>
-  <li>Fixed required markup listed for the specialized navbar search field.</li>
-  <li>Removed all mention of <code class="language-plaintext highlighter-rouge">@siteWidth</code>, a variable no longer in use.</li>
-  <li>Removed mentions of unused <code class="language-plaintext highlighter-rouge">@buttonPrimaryBackground</code> variable, which is no longer in use.</li>
-  <li>Updated LESS docs page to include all the new variables we added in previous releases.</li>
-  <li>Removed broken “dropup” menus from tabs and pills examples (shouldn’t have been there in the first place).</li>
-  <li>Replaced <code class="language-plaintext highlighter-rouge">.badge-error</code> with <code class="language-plaintext highlighter-rouge">.badge-important</code>. The error option is not a valid class and was a typo in the docs.</li>
-  <li>Fixed mention of how to add plain text to the navbar. Previously the docs stated you only needed a <code class="language-plaintext highlighter-rouge">p</code> tag, but the required HTML is any element with class <code class="language-plaintext highlighter-rouge">.navbar-text</code>.</li>
-  <li>Clarified the use of <code class="language-plaintext highlighter-rouge">.tabbable</code> for tabs. The wrapping class is only required for left and right tabs to clear their floats. Also added mention of <code class="language-plaintext highlighter-rouge">.fade</code> to fade in tabs.</li>
-  <li>Updated forms documentation:
-    <ul>
-      <li>Remove unnecessary duplicate help text in first example</li>
-      <li>Added mention of required <code class="language-plaintext highlighter-rouge">input</code> class, <code class="language-plaintext highlighter-rouge">.search-query</code>, for the search form variation</li>
-      <li>Removed incorrect mention of form fields being <code class="language-plaintext highlighter-rouge">display: block;</code> to start as fields are <code class="language-plaintext highlighter-rouge">inline-block</code> to start.</li>
-    </ul>
-  </li>
-  <li>Added mention of <code class="language-plaintext highlighter-rouge">data-target</code> attribute for the dropdowns JavaScript plugin to show how to keep custom URLs intact on links with <code class="language-plaintext highlighter-rouge">.dropdown-toggle</code> class.</li>
-  <li>Updated the Kippt screenshot on the homepage to reflect their recent responsive redesign and upgrade to 2.0.2.</li>
-</ul>
-
-<hr />
-
-<p>We’re continually updating issues and tracking them for our next release in the <a href="https://github.com/twbs/bootstrap/issues?milestone=7&amp;q=is%3Aopen">2.1 milestone</a>, which will focus on adding a few new features and tackle the inevitable bugs and edge cases from this release.</p>
 
       </div>
     
