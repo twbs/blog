@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Help test Bootstrap 2.1
+author: mdo
 ---
 
 We're stoked to release Bootstrap 2.1 next week Monday at our [first birthday party](https://twitter-bootstrap-birthday.eventbrite.com/), but to make it a great release, we need your help testing it out.

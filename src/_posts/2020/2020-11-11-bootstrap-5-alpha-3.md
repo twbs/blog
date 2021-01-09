@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap 5 Alpha 3
 video: god7hAPv8f0
 date: 2020-11-11 11:00:00
+author: mdo
 ---
 
 Our third alpha release has landed with tons of updates to our components, utilities, docs, forms, JavaScript, and more. This is a larger alpha release for us and sets us up for our first beta where we'll introduce some final breaking changes and features.
@@ -153,7 +154,3 @@ npm i bootstrap@next
 ## Support the team
 
 Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

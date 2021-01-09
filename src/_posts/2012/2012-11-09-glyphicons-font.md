@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Update on the Glyphicons font
+author: mdo
 ---
 
 Earlier this week, I was excited to announce that our next release, `2.2.2-wip`, would include the new Glyphicons icon font. In hindsight I got a little carried away and forgot about something.
@@ -16,5 +17,3 @@ Backwards compatibility is always a pain in the ass, and to avoid huge headaches
 There's some good news though. For you nerds who live on the edge, I've been working on tons of BS3-esque changes in the `3.0.0-wip` branch on GitHub. If you really cannot wait for the Glyphicons font (and don't mind using unsupported code), do check it out. I plan on accelerating work on it in the coming weeks. (Please don't submit issues for it though, but rather email me or ping me on Twitter for questions.)
 
 Thanks for listening, and as always, <3<3<3.
-
-[@mdo](https://twitter.com/mdo)

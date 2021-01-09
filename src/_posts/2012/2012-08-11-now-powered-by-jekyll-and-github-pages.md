@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Now powered by Jekyll and GitHub Pages
+author: mdo
 ---
 
 Sorry about the database connection issues some of you may have seen in the last 24 hours. We've moved off WordPress for our blog and are now using GitHub pages and Jekyll. Jekyll is an amazingly lightweight and simple site generator from Tom Preston-Werner, cofounder of GitHub. Here's why:

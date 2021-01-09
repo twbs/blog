@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap's first intercontinental release
+author: mdo
 ---
 
 As you may have heard, Jacob and I are [heading to London in a week to talk Bootstrap](https://ukengopenhouse.eventbrite.com/)—and we're pretty stoked about it! The event is already sold out, but we'll be there for a few days to be sure to chat and hang with folks in the area.

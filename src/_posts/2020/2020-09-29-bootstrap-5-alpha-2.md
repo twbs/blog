@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap 5 Alpha 2
 video: Gs069dndIYk
 date: 2020-09-29 11:00:00
+author: mdo
 ---
 
 We're back at it again with a brand new alpha release of Bootstrap 5! Our second alpha has brought some new and improved features, color contrast improvements, improved helpers and utilities, and some documentation design updates.
@@ -95,7 +96,3 @@ npm i bootstrap@next
 ## Support the team
 
 Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

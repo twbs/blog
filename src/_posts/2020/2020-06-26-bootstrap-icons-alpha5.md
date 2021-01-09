@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap Icons Alpha 5
 video: HgzGwKwLmgM
 date: 2020-06-26 21:30:00
+author: mdo
 ---
 
 Today we're shipping our fifth and final alpha release of [Bootstrap Icons](https://icons.getbootstrap.com). After today's alpha release, we'll be moving onto final touch ups of existing icons, closing out some more requests, and buttoning things up for a stable v1 release. Stay tuned!
@@ -48,7 +49,3 @@ Beyond that, we'll continue to clean up and improve existing icons and then aim 
 ## Download
 
 Alpha 5 has been published to GitHub and npm (package name `bootstrap-icons`). Get your hands on it [from GitHub](https://github.com/twbs/icons/releases), by updating to `v1.0.0-alpha5`, or by snagging the [icons from Figma](https://www.figma.com/file/hTJtQ2MrMTeNVmYrVBqNZZ/Bootstrap-Icons-v1.0.0-alpha5).
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

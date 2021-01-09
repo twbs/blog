@@ -14,7 +14,3 @@ Rorschach automatically gives instant feedback on Bootstrap pull requests that s
 Previously, these mistakes were checked for manually, which meant there was often a delay before the mistake was noticed and that pull request reviewers had to manually explain the mistake to the contributor each time. With Rorschach, everyone should have a smoother experience working on Bootstrap.
 
 Happy pull requesting!
-
-<3,
-
-[@cvrebert](https://github.com/cvrebert) and [team](https://github.com/twbs)

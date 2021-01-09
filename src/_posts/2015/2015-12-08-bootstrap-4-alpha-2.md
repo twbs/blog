@@ -2,6 +2,7 @@
 layout: post
 title: New Bootstrap 4 alpha
 video: J_kokTee01k
+author: mdo
 ---
 
 Bootstrap 4 alpha 2 is now available. Since [our last release]({% post_url 2015/2015-08-19-bootstrap-4-alpha %}), nearly 100 people have pushed over 900 commits to v4 and we've closed over 400 issues and pull requests. Those numbers are outrageously awesome to see, and we've still got a ton of work ahead of us this year for v4.
@@ -28,7 +29,3 @@ We highly encourage folks to skim through [the second alpha's milestone on GitHu
 **Ready to dive in? Then [head to the v4 alpha docs!](https://v4-alpha.getbootstrap.com/)**
 
 Be sure to [join our official Slack room!](https://bootstrap-slack.herokuapp.com) and dive into [our issue tracker](https://github.com/twbs/bootstrap/issues/) with bug reports, questions, and general feedback whenever possible.
-
-<3,
-
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/twbs)

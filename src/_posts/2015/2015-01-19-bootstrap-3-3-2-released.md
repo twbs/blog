@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.3.2 released
 video: DNPjeIamsck
+author: mdo
 ---
 
 Bootstrap 3.3.2 is here! This release has been all about bug fixes, accessibility improvements, and documentation updates. We've had over 300 commits from 19 contributors since our last release. Woohoo!
@@ -47,7 +48,3 @@ After reviewing the changelog, update your CDN links to point to the v3.3.2 file
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 {% endhighlight %}
-
-<3,
-
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/orgs/twbs/people)

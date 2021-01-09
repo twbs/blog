@@ -16,7 +16,3 @@ For a complete list of changes, see the [v2.0.2 milestone](https://github.com/tw
 ## What's next
 
 We're going to be working on the v2.1.0 release next. This will mark the first feature release for Ratchet 2. We're really looking forward to developing more components that help you build awesome apps.
-
-<3,
-
-[@connors](https://twitter.com/connors) & [team](https://github.com/orgs/twbs/people)

@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 4 alpha
 video: 4PdU6migsqQ
+author: mdo
 ---
 
 Today is a special day for Bootstrap. Not only is it our fourth birthday, but after a year of development, we're finally shipping the first alpha release of Bootstrap 4. Hell yeah!
@@ -62,7 +63,3 @@ To start, we're launching with three themes built on Bootstrap 3: a [dashboard](
 All themes include a [multiple-use license]({{ site.themes }}licenses/) for the purchaser and free updates for bug fixes and documentation updates for the life of the themes.
 
 [Head to the Bootstrap themes site]({{ site.themes }}) to check them out.
-
-<3,
-
-[@mdo](https://twitter.com/mdo), [@fat](https://twitter.com/fat), & [team](https://github.com/twbs)

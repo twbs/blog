@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 4 Alpha 4
 video: p0OX_8YvFxA
+author: mdo
 ---
 
 [Alpha 4 is here](https://v4-alpha.getbootstrap.com/) to address those pesky build and package errors, a few CSS bugs, and some documentation inconsistencies we introduced in our last release.
@@ -27,6 +28,3 @@ For more details on this release's changes, take a look at the [Alpha 4 ship lis
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
 {% endhighlight %}
-
-<3,<br>
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/twbs)

@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 4 Alpha 5
 video: MxGEVIvSFeY
+author: mdo
 ---
 
 [Alpha 5 has arrived](https://v4-alpha.getbootstrap.com/) just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we're closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.
@@ -73,6 +74,3 @@ For more details on this release's changes, take a look at the [Alpha 5 ship lis
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 {% endhighlight %}
-
-<3,<br>
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/twbs)

@@ -2,6 +2,7 @@
 layout: post
 title: Introducing Bootstrap Icons
 video: eM8Ss28zjcE
+author: mdo
 ---
 
 Say hello to [Bootstrap Icons](https://icons.getbootstrap.com/), our very first icon set that's designed entirely by our team and open sourced for everyone to use, with or without Bootstrap. It's still in alpha, but we're incredibly excited to share it with y'all ahead of our v5 alpha.
@@ -17,7 +18,3 @@ I've designed these initial icons in Figma and exported them as SVGs. The plan i
 They're also open sourced under the MIT license, so you're free to download, use, and customize as you need. This is an alpha release for now, so bear with us as we get familiar with creating and managing hundreds of SVGs. and more icons will be added over time.
 
 Head to <https://icons.getbootstrap.com> to explore and download!
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

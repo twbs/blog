@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 4 Alpha 3
 video: xFrGuyw1V8s
+author: mdo
 ---
 
 Alpha 3 has landed! We have an overhauled grid, updated form controls, a new font stack, tons of bug fixes, and more. It's been several months since our last update, but the size of this update should help get us back on track.
@@ -91,6 +92,3 @@ Be sure to [join our official Slack room!](https://bootstrap-slack.herokuapp.com
 ## What's next?
 
 More exploration, more bugfixes, more docs updates, and, best of all, more alphas. The daily grind keeps us super busy these days, but we'll do our best to keep the momentum going. Stay tuned!
-
-<3,<br>
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/twbs)

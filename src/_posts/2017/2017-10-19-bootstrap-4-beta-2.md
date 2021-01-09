@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 4 Beta 2
 video: MqnZ1RpmxBg
+author: mdo
 ---
 
 Just over two months ago we shipped our first beta for Bootstrap 4, and now we're ready to share our second with you. We've improved customization, documentation, build tooling, and naming inconsistencies all while fixing hella bugs.
@@ -76,6 +77,3 @@ After Beta 3, we're hoping to quickly move into a final v4 release. Ideally, it'
 ---
 
 For more details on this release's changes, take a look at the [Beta 2 ship list issue](https://github.com/twbs/bootstrap/issues/23278), as well as the [Beta 2 project](https://github.com/twbs/bootstrap/projects/4). Be sure to [join our official Slack room!](https://bootstrap-slack.herokuapp.com) and dive into [our issue tracker](https://github.com/twbs/bootstrap/issues/) with bug reports, questions, and general feedback whenever possible.
-
-<3,<br>
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/twbs)

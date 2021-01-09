@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap Icons Alpha 2
 video: HgzGwKwLmgM
+author: mdo
 ---
 
 There's a brand new update of Bootstrap Icons today with our second alpha release! We've updated nearly 20 icons and added over 100 new icons since our last release just a few weeks ago.
@@ -37,7 +38,3 @@ Here's a summary of what's been fixed, updated, or renamed in this release. For 
 ## Get 'em
 
 Alpha 2 has been published to GitHub and npm (package name `bootstrap-icons`). Get your hands on it [from GitHub](https://github.com/twbs/icons/releases), by updating to `v1.0.0-alpha2`, or by snagging the [icons from Figma](https://www.figma.com/file/0xfDVFogWu6g15bVOvBzxS/Bootstrap-Icons-v1.0.0-alpha2).
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

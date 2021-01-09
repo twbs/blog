@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.0.2 released
 video: -eSN8Cwit_s
+author: mdo
 ---
 
 Today we're shipping a quick v3.0.2 patch to fix incorrect version numbers in our JavaScript files, restore missing grid classes, and make a few improvements to our documentation.
@@ -36,9 +37,3 @@ As always, get the details from the [v3.0.2 milestone](https://github.com/twbs/b
 ## Up next
 
 This release was unplanned, and as such it bumps a lot of planned fixes to a v3.0.3 release. We've already updated the relevant issues to be under the new v3.0.3 milestone. Look for that release, and perhaps another patch, before v3.1.0 ships in the coming months.
-
------
-
-<3,
-
-[@mdo](https://twitter.com/mdo) and [team](https://github.com/orgs/twbs/people)

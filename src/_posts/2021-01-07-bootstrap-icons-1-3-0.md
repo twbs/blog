@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap Icons v1.3.0
 video: a01QQZyl-_I
 date: 2021-01-07 21:30:00
+author: mdo
 ---
 
 Say hello to over 60 new icons with [Bootstrap Icons v1.3.0](https://icons.getbootstrap.com)! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!
@@ -77,7 +78,3 @@ You can also [download the release from GitHub](https://github.com/twbs/icons/re
 ## Figma
 
 For the Figma users out there, you can also snag the [icons from Figma](https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1).
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

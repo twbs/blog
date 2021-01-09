@@ -45,7 +45,3 @@ After reviewing the changelog, update your CDN links to point to the v3.3.4 file
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 {% endhighlight %}
-
-<3,
-
-[@cvrebert](https://github.com/cvrebert) & [team](https://github.com/orgs/twbs/people)

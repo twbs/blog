@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.3.1 released
 video: ydd9Dn3bJlI
+author: mdo
 ---
 
 Say hello to Bootstrap 3.3.1. As one of our fastest follow up releases, the changelog is focused around a small set of bug fixes for our CSS and JS, loads of accessibility improvements, and several documentation improvements.
@@ -30,7 +31,3 @@ After reviewing the changelog, update your CDN links to point to the v3.3.1 file
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 {% endhighlight %}
-
-<3,
-
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/orgs/twbs/people)

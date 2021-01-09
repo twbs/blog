@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.1.0 released
 video: phOW-CZJWT0
+author: mdo
 ---
 
 Today we're stoked to ship Bootstrap v3.1. We've got a handful of new features, plenty of bug fixes and improvements, and updated build tools.

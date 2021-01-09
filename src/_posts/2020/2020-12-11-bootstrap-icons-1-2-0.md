@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap Icons v1.2.0
 video: rY0WxgSXdEE
 date: 2020-12-11 21:30:00
+author: mdo
 ---
 
 Our latest Bootstrap Icons release includes dozens of new icons, redesigned documentation, and the most highly requested new feature—icon fonts!
@@ -52,7 +53,3 @@ You can also [download the release from GitHub](https://github.com/twbs/icons/re
 ## Figma
 
 For the Figma users out there, you can also snag the [icons from Figma](https://www.figma.com/file/JeBqM2fRcfIe7wMDgNZG6d/Bootstrap-Icons-v1.2.0?node-id=0%3A1).
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Talking about Bootstrap
+author: mdo
 ---
 
 There is a thread on the mailing list about [how to describe Bootstrap](https://groups.google.com/forum/#!topic/twitter-bootstrap/LL75NMBGdVA) and instead of isolating our response to just one email, I'll just blog about it. As it stands, some folks are unsure how to describe Bootstrap to those unfamiliar with it. So here it is, straight from the official horse's mouth.

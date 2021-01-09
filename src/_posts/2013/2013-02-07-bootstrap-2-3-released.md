@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 2.3 released
+author: mdo
 ---
 
 It has been far too long, friends. Nearly three months has gone by since we pushed out a new version of Bootstrap, but fret not, for that void comes to a most excellent halt tonight. After numerous delays, including a bout with the flu, we're happy to announce the release of [Bootstrap 2.3]({{ site.main }}/).
@@ -57,7 +58,3 @@ As we've previously mentioned, v2.3 is our last planned release before moving on
 - And a whole mess of other changes.
 
 And that's just some of the highlights. Again, [peep the pull request](https://github.com/twbs/bootstrap/pull/6342) for the most up to date changes as we continue to chip away at this bad boy. Feel free to comment on that, or hit us up on Twitter, for feedback of any kind.
-
-<3,
-
-[@mdo](https://twitter.com/mdo) and [@fat](https://twitter.com/fat)

@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 4 Alpha 6
 video: V44HiAX91Hs
+author: mdo
 ---
 
 [Alpha 6 has landed](https://v4-alpha.getbootstrap.com/), and it's one of our biggest ships to date. We've rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.
@@ -81,7 +82,5 @@ For more details on this release's changes, take a look at the [Alpha 6 ship lis
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 {% endhighlight %}
 
-<3,<br>
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/twbs)
 
 <script src="https://static.jsbin.com/js/embed.min.js"></script>

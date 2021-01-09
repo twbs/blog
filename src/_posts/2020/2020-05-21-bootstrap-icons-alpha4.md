@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap Icons Alpha 4
 video: 2ZBtPf7FOoM
 date: 2020-05-21 9:30:00
+author: mdo
 ---
 
 We're closing in on 700 icons in Bootstrap Icons with today's release, Alpha 4! We've spent some time under the hood of our build process to improve a few things, added tons of new icons, and fixed some bugs and inconsistencies.
@@ -18,7 +19,3 @@ With 140 new icons in this release, we've almost hit 700 icons. We're likely to 
 ## Download
 
 Alpha 4 has been published to GitHub and npm (package name `bootstrap-icons`). Get your hands on it [from GitHub](https://github.com/twbs/icons/releases), by updating to `v1.0.0-alpha4`, or by snagging the [icons from Figma](https://www.figma.com/file/XDj1VewxEtXzkDDMAvWx2W/Bootstrap-Icons-v1.0.0-alpha4).
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)
