@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Help test Bootstrap 2.0.3
+author: mdo
 ---
 
 Our next release, [2.0.3](https://github.com/twbs/bootstrap/issues?milestone=10&q=is%3Aopen), is almost ready to rock, but we need your help to get the finish line in the best shape possible. Similar to what we did for the big 2.0 launch, we're asking for the community's help in testing out the release's work-in-progress branch. We have a ton of bug fixes—another 80 or so since 2.0.2—and want to have the highest quality release we can.

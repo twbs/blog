@@ -2,6 +2,7 @@
 layout: post
 title: New Bootstrap themes
 video: atxUuldUcfI
+author: mdo
 ---
 
 Just over a month ago, we shipped the long awaited Bootstrap 4 stable release. With a brand new codebase designed to better support customization with all new components and documentation, it was the perfect time to debut some brand new themes built. Today, we'd like to introduce you to our brand new [Bootstrap Themes marketplace]({{ site.themes }}).

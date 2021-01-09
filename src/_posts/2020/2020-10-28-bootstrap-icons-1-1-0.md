@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap Icons v1.1.0
 video: 04854XqcfCY
 date: 2020-10-28 21:30:00
+author: mdo
 ---
 
 Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.
@@ -38,7 +39,3 @@ You can also [download the release from GitHub](https://github.com/twbs/icons/re
 ## Figma
 
 For the Figma users out there, you can also snag the [icons from Figma](https://www.figma.com/file/6jIgJymnRpMjGSMG2BKNRe/Bootstrap-Icons-v1.1.0?node-id=0%3A1).
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

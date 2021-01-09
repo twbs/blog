@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.0.3 released
 video: xy4FXhkm6Nw
+author: mdo
 ---
 
 Today we're shipping another patch release, v3.0.3, to fix a few dozen bugs and improve our documentation.
@@ -99,9 +100,3 @@ As always, get the details from the [v3.0.3 milestone](https://github.com/twbs/b
 ## Up next
 
 Next up is v3.1.0, the first new feature release for Bootstrap 3. Stay tuned for more information on what'll be in that release as we continue to plan out subsequent releases.
-
------
-
-<3,
-
-[@mdo](https://twitter.com/mdo) and [team](https://github.com/orgs/twbs/people)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap, JSHint, and Recess
+author: mdo
 ---
 
 This last week we've added two new developer tools to the Bootstrap tool chain and I wanted to take a minute to let you know a little bit more about what they are, why we've added them, and why it matters.

@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3 RC1
 video: uB1D9wWxd2w
+author: mdo
 ---
 
 Today we're releasing the first of at least two release candidates for Bootstrap 3, and along with it a slew of updates to the project and community. Buckle up.
@@ -25,8 +26,3 @@ With over ~1,600 commits, ~72,000 additions/deletions, and ~300 files changed, *
 ## Onward to RC2
 
 Bootstrap 3 RC1 is just the start, and we need your help to get to RC2. Download it and give it a go, and most importantly, tell us what you find. If something new is all funky or you found a bug, let us know by [opening a new issue](https://github.com/twbs/bootstrap/issues/new).
-
-
-<3,
-
-@mdo and @fat

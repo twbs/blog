@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.3.0 released
 video: Zr9R7hN1YSs
+author: mdo
 ---
 
 Bootstrap 3.3.0 is here! This release has been all about bug fixes, accessibility improvements, and documentation updates. We've had over 700 commits from 28 contributors since our last release. Woohoo!
@@ -55,7 +56,3 @@ Perhaps the best part of releasing v3.3.0 today is that we can start to tell you
 - And hundreds more changes across the board.
 
 We'd love to tell you more, but the dust still has to settle before we open our first pull request with a live alpha release. In addition to launching in v4 in the coming months, we'll be maintaining v3 with small bugfixes for the first few months after the new version ships.
-
-<3,
-
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/orgs/twbs/people)

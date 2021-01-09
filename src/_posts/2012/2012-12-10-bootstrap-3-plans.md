@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 3 plans
+author: mdo
 ---
 
 With 2.2.2 out the door, our attention has shifted almost entirely to the next major update to the project, Bootstrap 3. Things are coming together and we want to give you an update on what's next and give you a chance to share your thoughts.
@@ -53,7 +54,3 @@ Growing the team with official contributors, other than the two of us, is also a
 Bootstrap is still just getting started. There is so much more awesome stuff to do and we want to work with you awesome folks to do it all as best we can. We hope you're as excited as we are.
 
 Please reach out to us on Twitter or GitHub with any questions or feedback.
-
-<3,
-
-@mdo and @fat

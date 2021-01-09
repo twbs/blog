@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 4 Beta
 video: aQUlA8Hcv4s
+author: mdo
 ---
 
 [Two years in the making]({% post_url 2015/2015-08-19-bootstrap-4-alpha %}), we finally have our first beta release of Bootstrap 4. In that time, we've broken all the things at least twenty-seven times over with nearly 5,000 commits, 650+ files changed, 67,000 lines added, and 82,000 lines deleted. We also shipped six major alpha releases, a trio of official Themes, and even a job board for good measure. Put simply? [It's about time.](https://www.youtube.com/watch?v=_J6-3l3hCm0)
@@ -37,6 +38,3 @@ In addition to a new color palette and new systems fonts, we have a brand new la
 ---
 
 For more details on this release's changes, take a look at the [Beta 1 ship list issue](https://github.com/twbs/bootstrap/issues/21568), as well as the [closed Beta 1 milestone](https://github.com/twbs/bootstrap/milestone/41?closed=1). Be sure to [join our official Slack room!](https://bootstrap-slack.herokuapp.com) and dive into [our issue tracker](https://github.com/twbs/bootstrap/issues/) with bug reports, questions, and general feedback whenever possible.
-
-<3,<br>
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/twbs)

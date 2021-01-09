@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New RSS feed
+author: mdo
 ---
 
 Roughly two weeks ago we upgraded the blog to use Jekyll and GitHub Pages instead of WordPress. When we did that, we forgot about the RSS feed. A few awesome folks noted we were missing it and so we've added it back. Unfortunately it's not the same URL, but it's there nonetheless.

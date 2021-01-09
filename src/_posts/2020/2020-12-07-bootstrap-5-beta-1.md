@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap 5 Beta 1
 video: y2bVIBwpCTA
 date: 2020-12-07 11:00:00
+author: mdo
 ---
 
 With our first beta release of Bootstrap 5, we're calling it on new features and breaking changes. From here on out, we're only fine-tuning features, bugs, and documentation on our way to a stable v5 release. Woohoo!
@@ -156,7 +157,3 @@ npm i bootstrap@next
 ## Support the team
 
 Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

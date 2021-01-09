@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3 released
 video: 0hiUuL5uTKc
+author: mdo
 ---
 
 Today, on the two year anniversary of releasing Bootstrap to the world, we're shipping Bootstrap 3.0. It's been a crazy long ride to say the least and we're stoked to finally have this out in the wild. Thanks to everyone who's tested our RCs (er, betas), reported bugs, and contributed code. We couldn't have done it without you beautiful nerds.
@@ -87,10 +88,3 @@ No dates have been set for any patch or minor release yet. As soon as we figure 
 Woo, all set? Then head to the docs and download yourself some Bootstrap 3!
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.0.zip">Download Bootstrap 3</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
-
-
------
-
-<3,
-
-[@mdo](https://twitter.com/mdo), [@fat](https://twitter.com/fat), and [team](https://github.com/twbs/bootstrap/contributors)

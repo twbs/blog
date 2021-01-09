@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.0.1 released
 video: fdKsgBNEHUU
+author: mdo
 ---
 
 Today we're shipping v3.0.1, a huge patch release with over 750 commits since v3 was released two months ago. We've outlined most of the changes below, including documentation updates, bug fixes, and even a few deprecations (our first in the history of the project).
@@ -190,9 +191,3 @@ It'll be a slow process, much like last time, but we need the help on several fr
 ## Up next
 
 We're already tracking issues for a v3.0.2 release and its changes will be along the same lines as today's release—bugs and docs. v3.1.0 will likely ship after that sometime with a few new features. As always, no dates have been set yet for any future releases.
-
------
-
-<3,
-
-[@mdo](https://twitter.com/mdo) and [team](https://github.com/orgs/twbs/people)

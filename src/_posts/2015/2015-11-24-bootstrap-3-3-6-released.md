@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 3.3.6 released
 video: l-O5IHVhWj0
+author: mdo
 ---
 
 Bootstrap 3.3.6 is here! It's a long overdue release that addresses dozens of CSS bug fixes and documentation updates. We've had over 180 commits and 100 closed issues and pull requests from nearly 30 contributors since our last release. Woohoo!
@@ -38,7 +39,3 @@ After reviewing the changelog, update your CDN links to point to the v3.3.6 file
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 {% endhighlight %}
-
-<3,
-
-[@mdo](https://twitter.com/mdo) & [team]({{ site.main }}/about/#team)

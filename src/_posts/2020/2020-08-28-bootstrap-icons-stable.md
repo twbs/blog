@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap Icons v1.0.0
 video: azdwsXLmrHE
 date: 2020-08-28 21:30:00
+author: mdo
 ---
 
 After five alphas over the last nine months, Bootstrap Icons has officially gone stable with our v1.0.0 release! We're now over 1,100 icons and are on track to add hundreds more in our upcoming minor releases. This has been a labor of love and I'm thrilled to ship this latest update.
@@ -38,7 +39,3 @@ For the Figma users out there, you can also snag the [icons from Figma](https://
 ## Up next
 
 We'll revisit the icon font hopefully in time for our next v1.1.0 release. In addition, there are already another 200+ icons drawn and plans for even more after. We'll continue to fine-tune and iterate on these icons, so keep the feedback and requests coming.
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

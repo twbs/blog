@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap 5 alpha!
 video: 3GwjfUFyY6M
 date: 2020-06-16 11:00:00
+author: mdo
 ---
 
 [**Bootstrap 5's very first alpha has arrived!**](https://v5.getbootstrap.com) We've been working hard for several months to refine the work we started in v4, and while we're feeling great about our progress, there's still even more to do.
@@ -216,7 +217,3 @@ Beyond that, keep an eye for more updates to the [Bootstrap Icons](https://icons
 ## Support the team
 
 Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

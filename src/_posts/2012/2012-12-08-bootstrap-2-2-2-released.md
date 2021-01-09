@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrap 2.2.2 released
+author: mdo
 ---
 
 Today we're launching [Bootstrap 2.2.2]({{ site.main }}/), another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here's the rundown on what's new in this release:

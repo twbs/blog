@@ -38,7 +38,3 @@ After reviewing the changelog, update your CDN links to point to the v3.3.7 file
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 {% endhighlight %}
-
-<3,
-
-[@cvrebert](https://twitter.com/cvrebert) & [team]({{ site.main }}/about/#team)

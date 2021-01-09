@@ -3,6 +3,7 @@ layout: post
 title: Bootstrap Icons v1.2.2
 video: hFDcoX7s6rE
 date: 2020-12-23 21:30:00
+author: mdo
 ---
 
 We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.
@@ -51,7 +52,3 @@ You can also [download the release from GitHub](https://github.com/twbs/icons/re
 ## Figma
 
 For the Figma users out there, you can also snag the [icons from Figma](https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1).
-
-<3,<br>
-
-[@mdo](https://github.com/mdo) & [team](https://github.com/twbs)

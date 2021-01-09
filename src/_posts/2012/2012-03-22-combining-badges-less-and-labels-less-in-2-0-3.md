@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Combining badges.less and labels.less in 2.0.3
+author: mdo
 ---
 
 For one reason or another, in 2.0.2 we made badges have separate LESS files. The CSS is 95% the same, but we knew that some folks might need one or the other, or even both. With [2.0.3](https://github.com/twbs/bootstrap/issues?milestone=10&q=is%3Aopen), we'll be simplifying some of those styles into a single .less file and scoping the `:hover` state to anchors only.

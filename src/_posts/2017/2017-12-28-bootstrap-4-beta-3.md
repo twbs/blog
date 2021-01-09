@@ -2,6 +2,7 @@
 layout: post
 title: Bootstrap 4 Beta 3
 video: 9jK-NcRmVcw
+author: mdo
 ---
 
 Welcome to the final beta of v4! It's been over two months since we shipped our second beta and we've been busy making the last breaking changes before moving to our next stable release, v4.0.0! We have a few more breaking changes than we were planning, but fret not, we've detailed them all.
@@ -50,6 +51,3 @@ With our next release, the `master` branch will once again become our default br
 
 
 See you again real soon!
-
-<3,<br>
-[@mdo](https://twitter.com/mdo) & [team](https://github.com/twbs)

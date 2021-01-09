@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New release strategy
+author: mdo
 ---
 
 After three large point releases focusing on massive amounts of bugfixes and documentation changes, we're going to change up our release strategy to push out smaller, more frequent updates.
