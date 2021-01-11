@@ -21,16 +21,7 @@ redirect_from:
           </a>
         </h1>
 
-        <div class="d-flex align-items-center mb-4 text-muted">
-          <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/{{ post.author }}" target="_blank" rel="noopener">
-            <img class="mb-0 mr-2" src="https://github.com/{{ post.author }}.png" width="32" height="32" alt="">
-            <span>@{{ post.author }}</span>
-          </a>
-          <span class="d-flex align-items-center ml-3">
-            {% include icons/calendar-event.svg class="mr-2" width="24" height="24" %}
-            {{ post.date | date: '%B %d, %Y' }}
-          </span>
-        </div>
+        {%- include author-info.html -%}
 
         {% if post.video %}
         {%- include video.html do_lazyload=lazyload -%}

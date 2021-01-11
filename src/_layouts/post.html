@@ -5,16 +5,7 @@ layout: default
 <div class="posts-container px-3 mx-auto my-5">
   <div class="post">
     <h1 class="post-title fw-500">{{ page.title }}</h1>
-    <div class="d-flex align-items-center mb-4 text-muted">
-      <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/{{ page.author }}" target="_blank" rel="noopener">
-        <img class="mb-0 mr-2" src="https://github.com/{{ page.author }}.png" width="32" height="32" alt="">
-        <span>@{{ page.author }}</span>
-      </a>
-      <span class="d-flex align-items-center ml-3">
-        {% include icons/calendar-event.svg class="mr-2" width="24" height="24" %}
-        {{ page.date | date: '%B %d, %Y' }}
-      </span>
-    </div>
+    {%- include author-info.html -%}
 
     {%- if page.video -%}
     {%- include video.html -%}
