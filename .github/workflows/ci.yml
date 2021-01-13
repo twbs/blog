@@ -36,7 +36,7 @@ jobs:
 
       - name: Upload docs
         uses: actions/upload-artifact@v2
-        if: github.ref == 'refs/heads/main'
+        if: github.repository == 'twbs/blog' && github.ref == 'refs/heads/main'
         with:
           name: docs
           path: ./_site/
