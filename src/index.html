@@ -21,7 +21,7 @@ redirect_from:
           </a>
         </h1>
 
-        {%- include author-info.html -%}
+        {%- include author-info.html do_lazyload=lazyload -%}
 
         {% if post.video %}
         {%- include video.html do_lazyload=lazyload -%}

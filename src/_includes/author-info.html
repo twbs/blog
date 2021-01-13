@@ -1,8 +1,12 @@
-{% assign author = post.author | default: page.author -%}
+{% comment -%}
+  Accepts one param, "do_lazyload"
+{%- endcomment-%}
+
+{%- assign author = post.author | default: page.author -%}
 {%- assign date = post.date | default: page.date -%}
 <div class="d-flex align-items-center mb-4 text-muted author-info">
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/{{ author }}" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" src="https://github.com/{{ author }}.png" alt="" width="32" height="32">
+    <img class="mb-0 mr-2" src="https://github.com/{{ author }}.png" alt="" width="32" height="32"{% if include.do_lazyload == true %} loading="lazy"{% endif %}>
     <span>@{{ author }}</span>
   </a>
   <span class="d-flex align-items-center ml-3">
