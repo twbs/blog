@@ -5,10 +5,10 @@ layout: default
 <div class="posts-container px-3 mx-auto my-5">
   <div class="post">
     <h1 class="post-title fw-500">{{ page.title }}</h1>
-    {%- include author-info.html -%}
+    {% include author-info.html -%}
 
     {%- if page.video -%}
-    {%- include video.html -%}
+      {%- include video.html -%}
     {%- endif -%}
 
     {{ content }}

@@ -7,12 +7,12 @@ redirect_from:
 
 <div class="posts-container mx-auto px-3 my-5">
   <div class="posts">
-    {% for post in paginator.posts %}
+    {% for post in paginator.posts -%}
       {%- assign lazyload = true -%}
 
       {%- if forloop.first == true -%}
         {%- assign lazyload = false -%}
-      {%- endif -%}
+      {%- endif %}
 
       <div class="post">
         <h1 class="post-title fw-500">
@@ -23,13 +23,13 @@ redirect_from:
 
         {%- include author-info.html do_lazyload=lazyload -%}
 
-        {% if post.video %}
+        {% if post.video -%}
         {%- include video.html do_lazyload=lazyload -%}
-        {% endif %}
+        {%- endif %}
 
         {{ post.content }}
       </div>
-    {% endfor %}
+    {%- endfor %}
   </div>
 
   <div class="pagination">

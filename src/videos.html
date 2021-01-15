@@ -11,7 +11,7 @@ description: "Every music video from Bootstrap Blog posts"
   <div class="row my-5">
   {%- endif %}
     <div class="col-sm-6 col-md-4 mb-4">
-      {%- include video.html do_lazyload=true -%}
+      {% include video.html do_lazyload=true %}
       <h2 class="h5 mb-0">
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h2>
