@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    chef-utils (16.9.16)
+    chef-utils (16.9.20)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     em-websocket (0.5.2)
@@ -62,7 +62,7 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
-    listen (3.4.0)
+    listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mdl (0.11.0)
@@ -134,4 +134,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.2.4
+   2.2.5
