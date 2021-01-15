@@ -1,7 +1,8 @@
 name: CI
+
 on: [push, pull_request]
+
 env:
-  CI: true
   RUBY: 2.7
 
 jobs:
@@ -35,7 +36,7 @@ jobs:
 
       - name: Upload docs
         uses: actions/upload-artifact@v2
-        if: success() && github.ref == 'refs/heads/main'
+        if: success() && github.repository == 'twbs/blog' && github.ref == 'refs/heads/main'
         with:
           name: docs
           path: ./_site/
@@ -44,10 +45,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: test
-    if: github.ref == 'refs/heads/main'
+    if: github.repository == 'twbs/blog' && github.ref == 'refs/heads/main'
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Clone repository
+        uses: actions/checkout@v2
 
       - name: Download docs
         uses: actions/download-artifact@v2
