@@ -17,9 +17,11 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-      day: tuesday
+      day: wednesday
       time: "12:00"
       timezone: Europe/Athens
+    reviewers:
+      - XhmikosR
     labels:
       - dependencies
       - github_actions
