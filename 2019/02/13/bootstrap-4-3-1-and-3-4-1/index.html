@@ -40,7 +40,7 @@
 <meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
 <meta property="twitter:title" content="Bootstrap 3.4.1 and 4.3.1" />
 <meta name="twitter:site" content="@getbootstrap" />
-<meta name="twitter:creator" content="@getbootstrap" />
+<meta name="twitter:creator" content="@mdo" />
 <script type="application/ld+json">
 {"description":"Today we’re shipping Bootstrap v4.3.1 and v3.4.1 to patch an XSS vulnerability, CVE-2019-8331. Also included in v4.3.1 is a small fix to some RFS (responsive font sizes) mixins that were added in v4.3.0.","url":"https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/","@type":"BlogPosting","image":{"width":1200,"height":630,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"headline":"Bootstrap 3.4.1 and 4.3.1","dateModified":"2019-02-13T00:00:00+00:00","datePublished":"2019-02-13T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/"},"author":{"@type":"Person","name":"Mark Otto"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
@@ -159,8 +159,21 @@
 
       <div class="posts-container px-3 mx-auto my-5">
   <div class="post">
-    <h1 class="post-title fw-500">Bootstrap 3.4.1 and 4.3.1</h1>
-    <span class="post-date">13 Feb 2019</span><p>Today we’re shipping <a href="https://github.com/twbs/bootstrap/releases/tag/v4.3.1">Bootstrap v4.3.1</a> and <a href="https://github.com/twbs/bootstrap/releases/tag/v3.4.1">v3.4.1</a> to patch an XSS vulnerability, CVE-2019-8331. Also included in v4.3.1 is a small fix to some RFS (responsive font sizes) mixins that were added in v4.3.0.</p>
+    <h1 class="post-title fw-500">Bootstrap 3.4.1 and 4.3.1</h1><div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" src="https://github.com/mdo.png" alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Wed, 13 Feb 2019 00:00:00 +0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    February 13, 2019
+  </span>
+</div>
+<p>Today we’re shipping <a href="https://github.com/twbs/bootstrap/releases/tag/v4.3.1">Bootstrap v4.3.1</a> and <a href="https://github.com/twbs/bootstrap/releases/tag/v3.4.1">v3.4.1</a> to patch an XSS vulnerability, CVE-2019-8331. Also included in v4.3.1 is a small fix to some RFS (responsive font sizes) mixins that were added in v4.3.0.</p>
 
 <p>Earlier this week a developer reported an XSS issue similar to the <code class="language-plaintext highlighter-rouge">data-target</code> vulnerability that was fixed in v4.1.2 and v3.4.0: the <code class="language-plaintext highlighter-rouge">data-template</code> attribute for our tooltip and popover plugins lacked proper XSS sanitization of the HTML that can be passed into the attribute’s value.</p>
 
@@ -171,9 +184,6 @@
 <p>In light of this vulnerability, we’re also auditing our security reporting workflows to ensure they’re up to date. This will include steps like adding a <code class="language-plaintext highlighter-rouge">SECURITY.md</code> file to our repository and ensuring our private channels and processes are up to date and documented with the team.</p>
 
 <p>Thank you to <a href="https://www.drupal.org/u/poiu">poiu</a> for reporting the vulnerability to the <a href="https://www.drupal.org/project/bootstrap">Bootstrap Drupal project</a> and <a href="https://www.drupal.org/u/markcarver">Mark Carver</a> from the <a href="https://www.drupal.org/project/bootstrap">Bootstrap Drupal project</a> for responsibly disclosing the issue to us. Also a massive thank you to <a href="https://github.com/johann-s">@Johann-S</a>, <a href="https://github.com/xhmikosr">@Xhmikosr</a>, and <a href="https://github.com/bardiharborow">@bardiharborow</a> on our team for the fast turnaround on today’s releases.</p>
-
-<p>&lt;3,<br />
-<a href="https://twitter.com/mdo">@mdo</a> &amp; <a href="https://github.com/twbs">team</a></p>
 
   </div>
 
