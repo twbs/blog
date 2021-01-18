@@ -47,7 +47,7 @@ Also available in the [v4.6.0 release on GitHub](https://github.com/twbs/bootstr
 - [#31820](https://github.com/twbs/bootstrap/pull/31820): Check for data-interval on the first slide of carousel
 - [#31834](https://github.com/twbs/bootstrap/pull/31834)/[#32225](https://github.com/twbs/bootstrap/pull/32225): tooltip/popover: add a `customClass` option
 - [#32001](https://github.com/twbs/bootstrap/pull/32001): Move `js/src/index.js` one folder up
-- [#32045](https://github.com/twbs/bootstrap/pull/32045): tests: fix sanitizer test.
+- [#32045](https://github.com/twbs/bootstrap/pull/32045): tests: fix sanitizer test
 - [#32220](https://github.com/twbs/bootstrap/pull/32220): Don't hide modal when `config.keyboard` is false
 - [#32312](https://github.com/twbs/bootstrap/pull/32312): build-plugins: switch to "bundled" for babel helpers
 
@@ -113,7 +113,7 @@ Also available in the [v4.6.0 release on GitHub](https://github.com/twbs/bootstr
 ### Misc
 
 - [#29753](https://github.com/twbs/bootstrap/pull/29753): Improve build/generate-sri.js regex
-- [#32003](https://github.com/twbs/bootstrap/pull/32003): CI: switch to Node.js 14.
+- [#32003](https://github.com/twbs/bootstrap/pull/32003): CI: switch to Node.js 14
 - [#32008](https://github.com/twbs/bootstrap/pull/32008): Update Edge's Rendering Engine on CONTRIBUTING.md
 - [#32486](https://github.com/twbs/bootstrap/pull/32486): BrowserStack: test on macOS Catalina instead of High Sierra
 - [#32756](https://github.com/twbs/bootstrap/pull/32756): Stylelint: disallow some property values
