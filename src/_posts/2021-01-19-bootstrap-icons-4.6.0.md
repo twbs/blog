@@ -96,6 +96,7 @@ Also available in the [v4.6.0 release on GitHub](https://github.com/twbs/bootstr
 - [#32809](https://github.com/twbs/bootstrap/pull/32809):
   - Clarify Sass import and customize docs for how to modify variable defaults
   - Add an npm starter project callout to a few pages
+- [#32827](https://github.com/twbs/bootstrap/pull/32827): Add a live toast example to the docs
 - docs(dropdowns): clarify where is `.show` applied
 - Require `.has-validation` for input groups with validation
 - Fix mobile menu jump & double border
