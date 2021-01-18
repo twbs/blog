@@ -121,6 +121,8 @@ Also available in the [v4.6.0 release on GitHub](https://github.com/twbs/bootstr
 - Various CI tweaks
 - Updated devDependencies
 
+[Head to the v4.6 docs](https://getbootstrap.com/docs/4.6/) to see the latest in action. The full release has been published to npm and will soon appear on jsDelivr and Rubygems.
+
 ## Next up
 
 Our second beta of v5 is coming. We're working on ironing on some kinks from the update to Popover 2, which has taken longer than expected. This affects our dropdowns, popovers, and tooltips. Once some of the major issues are resolved, we'll ship our next beta.
