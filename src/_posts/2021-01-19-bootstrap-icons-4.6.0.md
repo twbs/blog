@@ -21,6 +21,7 @@ Also available in the [v4.6.0 release on GitHub](https://github.com/twbs/bootstr
 ### Highlights
 
 - Tooltips and popovers can have custom clases via `customClass` option.
+- Added new `.navbar-nav-scroll` class for scrolling expanded navbar contents on mobile devices.
 - For improved accessibiliy, spinners now slow down when `prefers-reduced-motion` is enabled.
 - v4.x docs are now built on Hugo for easier maintenance and backports from v5.x.
 - Darkened `background-color` of `.dropdown-item` for improved hover state contrast, and ligthened the disabled `.dropdown-item` `color`.
