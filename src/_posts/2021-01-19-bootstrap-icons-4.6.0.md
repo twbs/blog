@@ -39,6 +39,7 @@ Also available in the [v4.6.0 release on GitHub](https://github.com/twbs/bootstr
 - [#32160](https://github.com/twbs/bootstrap/pull/32160): Add overflow suppression to custom file label
 - [#32211](https://github.com/twbs/bootstrap/pull/32211): Move negative margin-bottom from .nav-item to .nav-link
 - [#32212](https://github.com/twbs/bootstrap/pull/32212): Remove needless Stylelint disables
+- [#32833](https://github.com/twbs/bootstrap/pull/32833): Add `.navbar-nav-scroll` for vertical scrolling of navbar content
 - Add two new variables for pagination border-radius values; backport of [#32423](https://github.com/twbs/bootstrap/pull/32423)
 - Remove old/unnecessary reboot bug fix; backport of [#32631](https://github.com/twbs/bootstrap/pull/32631)
 - Suppress focus outline for buttons when it shouldn't be visible in Chromium; backport of [#32689](https://github.com/twbs/bootstrap/pull/32689)
