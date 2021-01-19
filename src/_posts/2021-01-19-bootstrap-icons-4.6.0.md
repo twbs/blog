@@ -8,7 +8,11 @@ author: mdo
 
 Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.
 
-Read on for the highlighted changes.
+Read on for the highlighted changes or [head to the v4.6 docs](https://getbootstrap.com/docs/4.6/) to see the latest in action.
+
+## Hugo!
+
+The biggest change in v4.6.0 is under the hood—we've overhauled our development environment to match that of v5. Our v4.x docs are now powered by [Hugo](https://gohugo.io). That means no more Ruby dependency for v4.x, improved maintainability between major versions, faster development, and incredibly fast build times compared to Jekyll.
 
 ## Changes
 
@@ -17,7 +21,7 @@ Also available in the [v4.6.0 release on GitHub](https://github.com/twbs/bootstr
 ### Highlights
 
 - Tooltips and popovers can have custom clases via `customClass` option.
-- Spinners now slow down when `prefers-reduced-motion` is enabled.
+- For improved accessibiliy, spinners now slow down when `prefers-reduced-motion` is enabled.
 - v4.x docs are now built on Hugo for easier maintenance and backports from v5.x.
 - Darkened `background-color` of `.dropdown-item` for improved hover state contrast, and ligthened the disabled `.dropdown-item` `color`.
 - Improved alignment of form validation tooltips.
@@ -121,8 +125,6 @@ Also available in the [v4.6.0 release on GitHub](https://github.com/twbs/bootstr
 - Update build-examples script so that the resulting examples zip file includes only the needed files
 - Various CI tweaks
 - Updated devDependencies
-
-[Head to the v4.6 docs](https://getbootstrap.com/docs/4.6/) to see the latest in action. The full release has been published to npm and will soon appear on jsDelivr and Rubygems.
 
 ## Next up
 
