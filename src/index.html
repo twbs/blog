@@ -24,7 +24,7 @@ redirect_from:
         {%- include author-info.html do_lazyload=lazyload -%}
 
         {% if post.video -%}
-        {%- include video.html do_lazyload=lazyload -%}
+          {%- include video.html do_lazyload=lazyload -%}
         {%- endif %}
 
         {{ post.content }}
@@ -33,19 +33,19 @@ redirect_from:
   </div>
 
   <div class="pagination">
-    {% if paginator.next_page %}
+    {% if paginator.next_page -%}
       <a class="pagination-item older" href="/page{{ paginator.next_page }}/">Older</a>
-    {% else %}
+    {%- else -%}
       <span class="pagination-item older">Older</span>
-    {% endif %}
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
+    {%- endif %}
+    {% if paginator.previous_page -%}
+      {%- if paginator.page == 2 -%}
         <a class="pagination-item newer" href="/">Newer</a>
-      {% else %}
+      {%- else -%}
         <a class="pagination-item newer" href="/page{{ paginator.previous_page }}/">Newer</a>
-      {% endif %}
-    {% else %}
+      {%- endif -%}
+    {%- else -%}
       <span class="pagination-item newer">Newer</span>
-    {% endif %}
+    {%- endif %}
   </div>
 </div>
