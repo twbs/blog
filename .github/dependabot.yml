@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: wednesday
+      time: "12:00"
+      timezone: Europe/Athens
+    reviewers:
+      - XhmikosR
+    labels:
+      - dependencies
+      - ruby
+    versioning-strategy: increase
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: wednesday
+      time: "12:00"
+      timezone: Europe/Athens
+    reviewers:
+      - XhmikosR
+    labels:
+      - dependencies
+      - github_actions
