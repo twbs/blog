@@ -1,0 +1,90 @@
+languageCode:           "en"
+title:                  "Bootstrap Blog"
+baseURL:                "https://blog.getbootstrap.com"
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe:           true
+  highlight:
+    noClasses:          false
+  tableOfContents:
+    startLevel:         2
+    endLevel:           6
+
+buildDrafts:            true
+buildFuture:            true
+
+enableRobotsTXT:        true
+metaDataFormat:         "yaml"
+
+disableKinds:           ["404", "taxonomy", "term"]
+
+publishDir:             "_site"
+
+paginate:               5
+rssLimit:               10
+
+permalinks:
+  posts:                "/:year/:month/:day/:filename/"
+
+related:
+  includeNewer: false
+  indices:
+#    - name: keywords
+#      weight: 10
+    - name: date
+      weight: 20
+  threshold: 80
+  toLower:  false
+
+outputs:
+  page:                 ["HTML"]
+  home:                 ["HTML", "RSS"]
+  section:              ["HTML", "RSS"]
+
+outputFormats:
+  RSS:
+    mediatype:          "application/rss"
+    baseName:           "feed"
+
+module:
+  mounts:
+    - source:           src/assets
+      target:           assets
+    - source:           src/content
+      target:           content
+    - source:           src/data
+      target:           data
+    - source:           src/layouts
+      target:           layouts
+    - source:           src/static
+      target:           static
+    - source:           src/static/assets/img/favicons/apple-touch-icon.png
+      target:           static/apple-touch-icon.png
+    - source:           src/static/assets/img/favicons/favicon.ico
+      target:           static/favicon.ico
+
+params:
+  current_version:      "5.0.1"
+  docs_version:         "5.0"
+  description:          "Official blog for the Bootstrap framework."
+  social_image_path:    "/assets/img/bootstrap-social.png"
+  assets:
+    css:
+      # Use https://www.srihash.org to generate the hash, or use the hash from upstream
+      uri:              "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      sri:              "sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+  main:                 "https://getbootstrap.com"
+  github_org:           "https://github.com/twbs"
+  repo:                 "https://github.com/twbs/blog"
+  twitter:              "getbootstrap"
+  slack:                "https://bootstrap-slack.herokuapp.com"
+  blog:                 "https://blog.getbootstrap.com/"
+  expo:                 "https://expo.getbootstrap.com/"
+  icons:                "https://icons.getbootstrap.com/"
+  themes:               "https://themes.getbootstrap.com/"
+  opencollective:       "https://opencollective.com/bootstrap"
+
+# TODO social

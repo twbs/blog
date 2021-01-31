@@ -1,6 +1,5 @@
-/.netlify/
-/.sass-cache/
-/_site/
-/src/.jekyll-cache/
 .DS_Store
-.ruby-version
+/.netlify/
+/_site/
+/node_modules/
+/resources/

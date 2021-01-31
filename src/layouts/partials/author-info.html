@@ -1,0 +1,18 @@
+{{- /* Accepts 2 parameters, the "context" and "lazyload" */ -}}
+
+{{- $author := .context.Page.Params.author -}}
+{{- $date := .context.Date -}}
+<div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/{{ $author }}" target="_blank" rel="noopener">
+    {{ $avatar_width := 32 -}}
+    {{- $avatar_width_2x := mul $avatar_width 2 -}}
+    <img class="mb-0 mr-2" srcset="https://github.com/{{ $author }}.png?size={{ $avatar_width }}, https://github.com/{{ $author }}.png?size={{ $avatar_width_2x }} 2x"
+                           src="https://github.com/{{ $author }}.png?size={{ $avatar_width }}"
+                           alt="" width="{{ $avatar_width }}" height="{{ $avatar_width }}"{{ if eq .lazyload true }} loading="lazy"{{ end }}>
+    <span>@{{ $author }}</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="{{ $date | dateFormat "Mon, 02 Jan 2006 15:04:00 -0700" }}">
+    {{ partial "icons/calendar-event.svg" (dict "class" "mr-2" "width" "24" "height" "24") }}
+    {{ $date | dateFormat "January 02, 2006" }}
+  </span>
+</div>

@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="posts-container mx-auto px-3 my-5">
+  <div class="posts">
+    {{ $paginator := .Paginate (where site.RegularPages "Type" "posts") }}
+    {{- range $i, $page := $paginator.Pages -}}
+      {{- /* Don't lazyload the first video in each page */ -}}
+      {{- $lazyload := cond (eq $i 0) false true -}}
+
+      <div class="post">
+        <h1 class="post-title fw-500">
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </h1>
+
+        {{ partial "author-info" (dict "context" . "lazyload" $lazyload) -}}
+
+        {{ if .Page.Params.video -}}
+          {{- partial "video" (dict "context" . "lazyload" $lazyload) -}}
+        {{- end }}
+
+        {{ .Content }}
+      </div>
+    {{- end }}
+  </div>
+
+  <div class="pagination">
+    {{- if $paginator.HasNext -}}
+      <a class="pagination-item older" href="{{ $paginator.Next.URL }}">Older</a>
+    {{- else -}}
+      <span class="pagination-item older">Older</span>
+    {{- end }}
+    {{ if $paginator.HasPrev -}}
+      <a class="pagination-item newer" href="{{ $paginator.Prev.URL }}">Newer</a>
+    {{- else -}}
+      <span class="pagination-item newer">Newer</span>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

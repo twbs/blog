@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="posts-container mx-auto px-3 py-5">
+  {{ $postsByYear := .Data.Pages.GroupByDate "2006" -}}
+  {{- range $postsByYear }}
+  <h3>{{ .Key }}</h3>
+  <ul class="list mb-5">
+    {{ range .Pages -}}
+    <li>
+      <span>{{ .Date | dateFormat "Jan 02, 2006" }}</span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+</div>
+{{- end }}
