@@ -3,7 +3,7 @@
 <link href="https://gmpg.org/xfn/11" rel="profile">
 <link rel="canonical" href="{{ .Permalink }}">
 
-<meta name="description" content="{{ .Page.Params.description | default .Site.Params.description | markdownify }}">
+<meta name="description" content="{{ with .Description }}{{ . | markdownify }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . | markdownify }}{{ end }}{{ end }}{{ end }}">
 <meta name="generator" content="Hugo {{ hugo.Version }}">
 
 {{ with .Params.robots -}}
