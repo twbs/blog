@@ -65,11 +65,11 @@ We're working to utilize the superpowers of both Sass and CSS custom properties 
 
 We've hunkered down and improved our documentation in several places, giving more explanation, removing ambiguity, and providing much more support for extending Bootstrap. It all starts with a whole [new Customize section](https://v5.getbootstrap.com/docs/5.0/customize/overview/).
 
-![Bootstrap 5 customize docs](https://user-images.githubusercontent.com/98681/84740682-ac43c600-af62-11ea-88a4-79c1362061c8.png)
+![Bootstrap 5 customize docs](/assets/img/2020/06/v5-customize.png)
 
 v5's Customize docs expand on v4's Theming page with more content and code snippets for building on top of Bootstrap's source Sass files. We've fleshed out more content here and even provided a [starter npm project](https://github.com/twbs/bootstrap-npm-starter) for you to get started with faster and easier. It's also available as a template repo on GitHub, so you can freely fork and go.
 
-![Bootstrap 5 color palette](https://user-images.githubusercontent.com/98681/84801339-e5585680-afb3-11ea-8743-29647ff3f3a9.png)
+![Bootstrap 5 color palette](/assets/img/2020/06/v5-color-palette.png)
 
 We've expanded our color palette in v5, too. With an extensive color system built-in, you can more easily customize the look and feel of your app without ever leaving the codebase. We've also done some work to improve color contrast, and even provided color contrast metrics in our Color docs. Hopefully, this will continue to help make Bootstrap-powered sites more accessible to folks all over.
 
