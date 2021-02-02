@@ -70,7 +70,7 @@ params:
   current_version:      "5.0.1"
   docs_version:         "5.0"
   description:          "Official blog for the Bootstrap framework."
-  social_image_path:    "/assets/img/bootstrap-social.png"
+  author:               "Mark Otto"
   assets:
     css:
       # Use https://www.srihash.org to generate the hash, or use the hash from upstream
@@ -79,7 +79,6 @@ params:
   main:                 "https://getbootstrap.com"
   github_org:           "https://github.com/twbs"
   repo:                 "https://github.com/twbs/blog"
-  twitter:              "getbootstrap"
   slack:                "https://bootstrap-slack.herokuapp.com"
   blog:                 "https://blog.getbootstrap.com/"
   expo:                 "https://expo.getbootstrap.com/"
@@ -87,4 +86,6 @@ params:
   themes:               "https://themes.getbootstrap.com/"
   opencollective:       "https://opencollective.com/bootstrap"
 
-# TODO social
+social:
+  twitter:              getbootstrap
+  image:                /assets/img/bootstrap-social.png
