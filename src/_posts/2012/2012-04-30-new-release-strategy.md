@@ -18,6 +18,6 @@ At the Twitter UK Open House in London last week, we said 2.1 was our next prior
 
 To keep up with the community and improve code quality, we'll be shipping more releases more frequently.
 
------
+---
 
 Questions? [Mention us on Twitter](https://twitter.com/getbootstrap).

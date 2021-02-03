@@ -76,7 +76,7 @@ Or, hit the [project repository](https://github.com/twbs/bootstrap) or [Sass rep
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 {% endhighlight %}
 
------
+---
 
 
 ## Full changelog

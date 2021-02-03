@@ -70,7 +70,7 @@ Without listing all the minor changes (there have been over 500 commits since RC
 
 RC2 takes care of nearly all our bugs that have been filed thus far, but we have a few more to address before our final release. [Check the issues](https://github.com/twbs/bootstrap/issues?state=open) to see what's there already if you run into any problems. If you do find something, open a new issue with an example to reproduce it (jsbin or jsfiddle are awesome!) or submit a pull request.
 
------
+---
 
 [Head on over to the docs]({{ site.main }}/) to download and explore the new hotness in RC2.
 

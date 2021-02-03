@@ -37,6 +37,6 @@ Once again, we couldn't have done this without all you nerds out there supportin
 
 <3
 
------
+---
 
 For the full changelog, visit the [GitHub wiki page](https://github.com/twbs/bootstrap/wiki/Changelog) and the [2.1.0 milestone](https://github.com/twbs/bootstrap/issues?milestone=7&q=is%3Aclosed). We've already begun slating things for 2.2, but currently have no estimates on when that will be released or what exactly will make it in. We also may do a 2.1.1, but again, no promises at this point. [Live in the now!](https://www.youtube.com/watch?v=1vaQ-Y6kLOM&t=4s)

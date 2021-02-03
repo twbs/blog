@@ -9,7 +9,7 @@ Today we're shipping a quick v3.0.2 patch to fix incorrect version numbers in ou
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.2.zip">Download Bootstrap 3.0.2</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
 
------
+---
 
 ## Key changes
 

@@ -9,7 +9,7 @@ Today we're shipping v3.0.1, a huge patch release with over 750 commits since v3
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.1.zip">Download Bootstrap 3.0.1</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
 
------
+---
 
 ## Changes
 

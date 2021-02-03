@@ -22,6 +22,6 @@ Just like last time, we're pushing out a release candidate of the 2.0.3 code and
 - When you find a bug or have feedback, [open a new issue on GitHub](https://github.com/twbs/bootstrap/issues?sort=created&direction=desc&state=open). Please include as much context and information as possible. If it's a visual bug, please include a screenshot. If it pertains to JavaScript, consider including a [jsfiddle](https://jsfiddle.net/) or [jsbin](https://jsbin.com/).
 - If it's a code fix you can make yourself, go ahead and submit a pull request against `2.0.3-wip`. Be sure to read the [Contributing to Bootstrap](https://github.com/twbs/bootstrap/wiki/Contributing-to-Bootstrap) wiki page first though for a bit of insight into our code practices. (Unsure how to submit a pull request? [Learn more here](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests).)
 
------
+---
 
 We're only human, and we're bound to make a few mistakes in our code as Bootstrap continues to grow. Thanks in advance for all your help and support—it's appreciated more than you know.

@@ -9,7 +9,7 @@ Today we're shipping another patch release, v3.0.3, to fix a few dozen bugs and 
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.3.zip">Download Bootstrap 3.0.3</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
 
------
+---
 
 ### Key changes
 

@@ -20,6 +20,6 @@ We worked at this for a good bit before setting on our current tagline, "Simple 
 
 Another focal point in the email thread was the question of referring to Bootstrap as a framework. That's accurate enough for sure, but also somewhat limiting depending on how you want to use it. Holistically, Bootstrap certainly is a framework (or toolkit or whatever) for prototyping and building production ready stuff on the web. That said, on an individual component level, Bootstrap is a tool for performing common web development tasks faster and easier.
 
------
+---
 
 So there you have it, a quick low-down on how we're thinking and talking about Bootstrap. When it comes right down to it, Bootstrap is whatever you want to make of it, so dive in and see where it can help you out the most.

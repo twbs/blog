@@ -25,6 +25,6 @@ Get a more complete list by viewing the [2.2.2 milestone on GitHub](https://gith
 
 <a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.2.2.zip">Download Bootstrap 2.2.2</a> <span class="muted">(latest master ZIP)</span>
 
------
+---
 
 We have a 2.2.3 release slated for further bugs and improvements we couldn't tackle in this version, but most of our ongoing efforts are going to transition to development on 3.0.0. More details on that will come next week.

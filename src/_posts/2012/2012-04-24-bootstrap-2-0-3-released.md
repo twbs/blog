@@ -11,7 +11,7 @@ Today we're releasing [Bootstrap 2.0.3]({{ site.main }}/), another bugfix releas
 In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](https://jshint.com/) and [Recess](https://twitter.github.io/recess/), linters for JavaScript and CSS. To continue to run `make` via Terminal, do the following:
 
 {% highlight bash %}
-$ npm install -g recess jshint
+npm install -g recess jshint
 {% endhighlight %}
 
 We've also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the [updated readme](https://github.com/twbs/bootstrap/blob/v2.0.3/README.md).
@@ -93,6 +93,6 @@ We've also removed the bootstrap.zip file from the repository, so make runs much
 - Added mention of `data-target` attribute for the dropdowns JavaScript plugin to show how to keep custom URLs intact on links with `.dropdown-toggle` class.
 - Updated the Kippt screenshot on the homepage to reflect their recent responsive redesign and upgrade to 2.0.2.
 
------
+---
 
 We're continually updating issues and tracking them for our next release in the [2.1 milestone](https://github.com/twbs/bootstrap/issues?milestone=7&q=is%3Aopen), which will focus on adding a few new features and tackle the inevitable bugs and edge cases from this release.
