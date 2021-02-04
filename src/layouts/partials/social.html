@@ -9,32 +9,14 @@
 <meta name="author" content="{{ $author | default .Site.Params.author }}">
 
 {{ "<!-- Twitter -->" | safeHTML }}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@{{ .Site.Social.twitter }}">
+{{ template "_internal/twitter_cards.html" . }}
+{{- /* Manually add `twitter:creator` since Hugo's internal shortcode has some issues */ -}}
 <meta name="twitter:creator" content="@{{ $author_twitter | default .Site.Social.twitter }}">
-<meta name="twitter:title" content="{{ .Title | default .Site.Title | markdownify }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . | markdownify }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . | markdownify }}{{ end }}{{ end }}{{ end }}">
-<meta name="twitter:image" content="{{ .Site.Social.image | absURL }}">
 
 {{ "<!-- Facebook -->" | safeHTML }}
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:title" content="{{ .Title | default .Site.Title | markdownify }}">
-<meta property="og:description" content="{{ with .Description }}{{ . | markdownify }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . | markdownify }}{{ end }}{{ end }}{{ end }}">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:image" content="{{ .Site.Social.image | absURL }}">
-<meta property="og:image:type" content="image/png">
-{{ with (imageConfig (path.Join "src/static" .Site.Social.image)) -}}
+{{ template "_internal/opengraph.html" . }}
+{{- /* Manually add `og:image`'s dimensions since Hugo's internal shortcode doesn't do it */ -}}
+{{ with (imageConfig (path.Join "src/static" (index $.Site.Params.images 0))) -}}
 <meta property="og:image:width" content="{{ .Width }}">
 <meta property="og:image:height" content="{{ .Height }}">
 {{- end }}
-
-{{ $iso8601 := "2006-01-02T15:04:05-07:00" -}}
-{{- if .IsPage }}
-{{- if not .PublishDate.IsZero }}<meta property="article:published_time" {{ .PublishDate.Format $iso8601 | printf "content=%q" | safeHTMLAttr }}>
-{{ else if not .Date.IsZero }}<meta property="article:published_time" {{ .Date.Format $iso8601 | printf "content=%q" | safeHTMLAttr }}>
-{{ end }}
-{{- if not .Lastmod.IsZero }}<meta property="article:modified_time" {{ .Lastmod.Format $iso8601 | printf "content=%q" | safeHTMLAttr }}>{{ end }}
-{{- else }}
-{{- if not .Date.IsZero }}<meta property="og:updated_time" {{ .Lastmod.Format $iso8601 | printf "content=%q" | safeHTMLAttr }}>
-{{- end }}
-{{- end }}{{/* .IsPage */}}
