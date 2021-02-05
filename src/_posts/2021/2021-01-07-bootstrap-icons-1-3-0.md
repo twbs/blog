@@ -69,7 +69,7 @@ _**ProTip:** Most browsers do not allow SVG sprites to be used across domains, w
 
 To get started, install via npm:
 
-```shell
+```sh
 npm i bootstrap-icons
 ```
 

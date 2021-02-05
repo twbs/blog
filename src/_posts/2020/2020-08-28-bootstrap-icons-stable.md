@@ -26,7 +26,7 @@ Use them as embedded SVGs, as external assets with `<img>` tags, as an SVG sprit
 
 To get started, install via npm:
 
-```shell
+```sh
 npm i bootstrap-icons
 ```
 

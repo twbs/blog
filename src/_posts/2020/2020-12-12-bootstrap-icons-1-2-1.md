@@ -9,7 +9,7 @@ Just a quick release to fix a typo in our `package.json` for including the font 
 
 Get it via npm:
 
-```shell
+```sh
 npm i bootstrap-icons
 ```
 

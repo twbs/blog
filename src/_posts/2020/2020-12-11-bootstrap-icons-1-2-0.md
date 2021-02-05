@@ -44,7 +44,7 @@ The new permalink sidebar also features new and improved access to the icons. Ne
 
 To get started, install via npm:
 
-```shell
+```sh
 npm i bootstrap-icons
 ```
 

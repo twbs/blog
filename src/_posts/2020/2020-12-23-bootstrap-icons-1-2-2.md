@@ -43,7 +43,7 @@ Last but not least, we ironed out some docs issues. Our navbar is fully function
 
 To get started, install via npm:
 
-```shell
+```sh
 npm i bootstrap-icons
 ```
 

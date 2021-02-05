@@ -30,7 +30,7 @@ Here's a more complete look at what's changed in this release.
 
 To get started, install via npm:
 
-```shell
+```sh
 npm i bootstrap-icons
 ```
 
