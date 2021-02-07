@@ -3,8 +3,8 @@
 //
 
 .embed-responsive {
-  background-color: #000;
   margin-bottom: 1rem;
+  background-color: #000;
 
   .page-videos & {
     margin-top: .5rem;
@@ -26,8 +26,8 @@
   font-weight: 300;
   color: #cdbfe3;
   text-align: center;
-  text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-image: linear-gradient(darken($bd-purple-bright, 10%), $bd-purple-bright);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  background-image: linear-gradient(to bottom, darken($bd-purple-bright, 10%), $bd-purple-bright);
 
   @media (min-width: 40em) {
     padding: 3rem 0 4rem;
@@ -50,10 +50,11 @@
 }
 
 .bs-docs-booticon {
+  filter:
+    drop-shadow(0 .25em .25em rgba(0, 0, 0, .05))
+    drop-shadow(0 .5em 1em rgba(0, 0, 0, .1))
+    drop-shadow(0 .75em 1.5em rgba(0, 0, 0, .15));
   transform: rotate(-5deg);
-  filter: drop-shadow(0 .25em .25em rgba(0, 0, 0, .05))
-         drop-shadow(0 .5em 1em rgba(0, 0, 0, .1))
-         drop-shadow(0 .75em 1.5em rgba(0, 0, 0, .15));
 }
 
 
@@ -65,8 +66,8 @@
   display: inline-block;
   padding: .6rem 1.2rem;
   margin-right: .25rem;
-  color: #fff;
   font-weight: 700;
+  color: #fff;
   background-color: #08c;
   border-radius: .2rem;
   transition: all .2s linear;

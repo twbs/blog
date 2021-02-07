@@ -1,3 +1,5 @@
+// stylelint-disable selector-max-type, selector-no-qualifying-type
+
 // Body resets
 //
 // Update the foundational and global aspects of the page.
@@ -55,10 +57,10 @@ img {
 
 // Tables
 table {
-  margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  margin-bottom: 1rem;
   border-collapse: collapse;
+  border: 1px solid #e5e5e5;
 }
 td,
 th {
@@ -151,9 +153,9 @@ tbody tr:nth-child(odd) th {
 // there are no more previous or next posts to show.
 
 .pagination {
-  overflow: hidden; // clearfix
-  margin-left: -1rem;
   margin-right: -1rem;
+  margin-left: -1rem;
+  overflow: hidden; // clearfix
   color: #767676;
   text-align: center;
 }
@@ -229,12 +231,13 @@ a.pagination-item:hover {
 }
 
 iframe[data-url^="https://jsbin.com"] {
-  border-color: rgba(0,0,0,.1) !important;
+  // stylelint-disable-next-line declaration-no-important
+  border-color: rgba(0, 0, 0, .1) !important;
 }
 
 @media (min-width: 1200px) {
   .jsbin-wide {
-    margin-left: -226px;
     margin-right: -226px;
+    margin-left: -226px;
   }
 }
