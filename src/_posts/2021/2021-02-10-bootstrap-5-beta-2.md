@@ -62,6 +62,7 @@ Across the board we've made a few small changes to other components that are wor
   - Added our helpers to the utilities CSS bundle
 - **Carousels:**
   - Updated docs examples to use `<button>`s wherever possible instead of `<a>` elements.
+  - CSS selectors changed for using `<button>`s as indicators (from `.carousel-indicators li` to `.carousel-indicators [data-bs-target]`).
 
 For a more complete list of of changes, checkout the [v5 Beta 2 project board](https://github.com/twbs/bootstrap/projects/33) or [list of issues and PRs](https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F33+) in this [release](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta2).
 
