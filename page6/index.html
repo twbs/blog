@@ -163,6 +163,104 @@
 
       <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2019/02/11/bootstrap-4-3-0/">
+            Bootstrap 4.3.0
+          </a>
+        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Mon, 11 Feb 2019 00:00:00 +0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    February 11, 2019
+  </span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/htgr3pvBr-I?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Bootstrap v4.3 has landed with over 120 combined closed issues and merged pull requests. This release brings improvements to our utilities, some prep work for moving on to v5’s development, and the standard bug fixes and documentation updates.</p>
+
+<p>During our last release, we shared a small preview of where we’re taking the project next. That’s getting clearer in the coming weeks as our attention turns towards embracing Hugo for ultra fast docs development, removing jQuery in favor of regular JavaScript, and addressing our growing code base.</p>
+
+<p>Keep reading for v4.3 highlights, and see you soon with more details on v5!</p>
+
+<h2 id="highlights">Highlights</h2>
+
+<p>We’ve added some new utilities and deprecated some unused code. Here are the key changes in v4.3, broken down by new, improved, fixed, and deprecated.</p>
+
+<ul>
+  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.stretched-link</code> utility to make any anchor the size of it’s nearest <code class="language-plaintext highlighter-rouge">position: relative</code> parent, perfect for entirely clickable cards!</li>
+  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.text-break</code> utility for applying <code class="language-plaintext highlighter-rouge">word-break: break-word</code></li>
+  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.rounded-sm</code> and <code class="language-plaintext highlighter-rouge">.rounded-lg</code> for small and large <code class="language-plaintext highlighter-rouge">border-radius</code>.</li>
+  <li><strong>New:</strong> Added <code class="language-plaintext highlighter-rouge">.modal-dialog-scrollable</code> modifier class for scrolling content <em>within</em> a modal.</li>
+  <li><strong>New:</strong> Added responsive <code class="language-plaintext highlighter-rouge">.list-group-horizontal</code> modifier classes for displaying list groups as a horizontal row.</li>
+  <li><strong>Improved:</strong> Reduced our compiled CSS by using <code class="language-plaintext highlighter-rouge">null</code> for variables that by default inherit their values from other elements (e.g., <code class="language-plaintext highlighter-rouge">$headings-color</code> was <code class="language-plaintext highlighter-rouge">inherit</code> and is now <code class="language-plaintext highlighter-rouge">null</code> until you modifier it in your custom CSS).</li>
+  <li><strong>Improved:</strong> Badge focus styles now match their <code class="language-plaintext highlighter-rouge">background-color</code> like our buttons.</li>
+  <li><strong>Fixed:</strong> Silenced bad selectors in our JS plugins for the <code class="language-plaintext highlighter-rouge">href</code> HTML attribute to avoid JavaScript errors. Please try to use <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a> or the <code class="language-plaintext highlighter-rouge">data-target</code> HTML attribute/<code class="language-plaintext highlighter-rouge">target</code> option where available.</li>
+  <li><strong>Fixed:</strong> Reverted v4.2.1’s change to the breakpoint and grid container Sass maps that blocked folks from upgrading when modifying those default variables.</li>
+  <li><strong>Fixed:</strong> Restored <code class="language-plaintext highlighter-rouge">white-space: nowrap</code> to <code class="language-plaintext highlighter-rouge">.dropdown-toggle</code> (before v4.2.1 it was on all <code class="language-plaintext highlighter-rouge">.btn</code>s) so carets don’t wrap to new lines.</li>
+  <li><strong>Deprecated:</strong> <code class="language-plaintext highlighter-rouge">img-retina</code>, <code class="language-plaintext highlighter-rouge">invisible</code>, <code class="language-plaintext highlighter-rouge">float</code>, and <code class="language-plaintext highlighter-rouge">size</code> mixins are now deprecated and will be removed in v5.</li>
+</ul>
+
+<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/27893">v4.3.0 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/16">GitHub project</a> for the full details.</p>
+
+<p><a href="https://getbootstrap.com/docs/4.3/">Head to to the v4.3.x docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.</p>
+
+<h2 id="introducing-responsive-font-sizes">Introducing responsive font sizes</h2>
+
+<p><img src="/assets/img/2019/02/rfs.png" alt="Responsive font-sizes" /></p>
+
+<p>Our biggest new addition to Bootstrap in v4.3 is responsive font sizes, a <a href="https://github.com/twbs/rfs">new project in the Bootstrap GitHub org</a> to automate calculate an appropriate <code class="language-plaintext highlighter-rouge">font-size</code> based on the dimensions of a visitor’s device or browser viewport. Here’s how it works:</p>
+
+<ul>
+  <li>
+    <p>All <code class="language-plaintext highlighter-rouge">font-size</code> properties have been switched to the <code class="language-plaintext highlighter-rouge">@include font-size()</code> mixin. Our Stylelint configuration now prevents the usage of <code class="language-plaintext highlighter-rouge">font-size</code> property.</p>
+  </li>
+  <li>
+    <p>Disabled by default, you can opt into this new behavior by toggling the <code class="language-plaintext highlighter-rouge">$enable-responsive-font-sizes</code> boolean variable.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">font-size</code>s are entirely configurable via Sass. Be sure to read the docs for how to modify the scales, variables, and more.</p>
+  </li>
+</ul>
+
+<p>While responsive font-sizes are disabled by default, we’ve enabled them in the custom CSS that powers our docs starting with v4.3. Please share feedback with us via GitHub issues or on Twitter. We’ve added some light guidance to <a href="https://getbootstrap.com/docs/4.3/content/typography/#responsive-font-sizes">our Typography docs</a> to explain the feature. You can also learn more by <a href="https://github.com/twbs/rfs">reading the rfs project documentation</a>.</p>
+
+<h2 id="open-collective">Open Collective</h2>
+
+<p>Last December we launched our <a href="https://opencollective.com/bootstrap">Open Collective page</a> with our <a href="/2018/12/13/bootstrap-3-4-0/">v3.4 release</a> to help support the maintainers contributing to Bootstrap. The team has been very excited about this as a way to be transparent about maintainer costs (both time and money), as well as recognition of efforts.</p>
+
+<h2 id="branches-hugo-and-jquery">Branches, Hugo, and jQuery</h2>
+
+<p>Right after shipping v4.3, we’ll be tackling a few key changes on our road to active v5 development. These are larger changes to how we maintain and develop Bootstrap and are considered foundational for v5.</p>
+
+<ul>
+  <li>
+    <p><strong>Improving our branches for development.</strong> <code class="language-plaintext highlighter-rouge">master</code> will become our new <code class="language-plaintext highlighter-rouge">v3-dev</code> branch. <code class="language-plaintext highlighter-rouge">v4-dev</code> will stay as-is, but we’ll cut a new <code class="language-plaintext highlighter-rouge">master</code> branch from there to develop v5.</p>
+  </li>
+  <li>
+    <p><strong>We’re moving to Hugo!</strong> Jekyll has been great, but it’s starting to slow us down in local development. We’ll be making changes to our dependencies to support this move, and there’s already a pull request in progress and near completion for the change. <a href="https://github.com/twbs/bootstrap/pull/28014">Follow along</a> to see what’s changing.</p>
+  </li>
+  <li>
+    <p><strong>We’re dropping jQuery for regular JavaScript.</strong> The cat is out of the bag—we’re dropping our largest client-side dependency for regular JavaScript. Similar to the Hugo move, we’ve been working on this for a long time and have a <a href="https://github.com/twbs/bootstrap/pull/23586">pull request in progress</a> and near completion.</p>
+  </li>
+</ul>
+
+<p>We’ll have even more to share soon around v5’s plans after we tackle these bigger items. In the meantime, keep the feedback coming on GitHub and Twitter!</p>
+
+      </div>
+
+      <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2018/12/21/bootstrap-4-2-1/">
             Bootstrap 4.2.1
           </a>
@@ -170,7 +268,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Fri, 21 Dec 2018 00:00:00 +0000">
@@ -183,7 +281,7 @@
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/4N1iwQxiHrs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/4N1iwQxiHrs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -400,50 +498,6 @@
 <p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/26423">v4.1.2 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/14">GitHub project</a> for the full details. Up next will either be <a href="https://github.com/twbs/bootstrap/projects/15">v4.1.3</a> or <a href="https://github.com/twbs/bootstrap/projects/6">v4.2</a> depending on how smoothly this release goes and how well we can keep up with reviewing and merging pull requests.</p>
 
 <p>Head to the v4.1.x docs to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.</p>
-
-      </div>
-
-      <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2018/04/30/bootstrap-4-1-1/">
-            Bootstrap 4.1.1
-          </a>
-        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Mon, 30 Apr 2018 00:00:00 +0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    April 30, 2018
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/9jNt7ZGCW-o?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>We’re a few weeks out from v4.1 and we have our first patch release of Bootstrap 4! It’s a straightforward set of bug fixes and build tool quality of life updates.</p>
-
-<p>Here’s a quick rundown of some of the changes:</p>
-
-<ul>
-  <li>Added validation styles for file inputs</li>
-  <li>Improved printing of dark tables</li>
-  <li>Suppressed that <code class="language-plaintext highlighter-rouge">text-hide</code> deprecation notice by default</li>
-  <li>Fixed an issue where Collapse wasn’t working in Internet Explorer</li>
-  <li>Cleaned up some JS globals and improve coverage</li>
-  <li>Bumped dependencies, namely Jekyll</li>
-  <li>Fixed docs issue with incorrect name for our monospace font utility</li>
-</ul>
-
-<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/25971">v4.1.1 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/13">GitHub project</a> for the full details. Up next will be <a href="https://github.com/twbs/bootstrap/projects/14">v4.1.2</a>, another patch release to address the next set of CSS and JS bugs you’ve help share with us since v4 launched.</p>
 
       </div>
   </div>
