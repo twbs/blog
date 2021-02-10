@@ -12,6 +12,8 @@ Next up is our final beta, which we may even promote to a stable release dependi
 
 ## Dropdowns
 
+[![Dropdown docs screenshot](/assets/img/2021/02/bootstrap-v5b2-dropdowns.png)](https://getbootstrap.com/docs/5.0/components/dropdowns/)
+
 Dropdowns saw a lot of work in Beta 2 because of how much has changed in both our JavaScript and in Popper.js (which we depend on for most dropdown positioning). We've modified our dropdown plugin to add a data attribute to help separate our own positioning with that of Popper's. The issues we saw—like a `.dropstart` menu overlapping a button or an incorrect responsive `.dropdown-menu-end` class—were the result of competing positioning.
 
 Now when dropdown menus have `data-bs-display="static"`, we'll add `data-bs-popper="static"` via JavaScript to their associated `.dropdown-menu`. When dropdowns are in our navbars, their menus will have `data-bs-popper="none"` added. This separates two different positioning libraries, ours and Poppers, and ensures all behaviors are supported. You can see [all the options in a new example in our docs](https://getbootstrap.com/docs/5.0/components/dropdowns/#alignment-options).
@@ -19,6 +21,8 @@ Now when dropdown menus have `data-bs-display="static"`, we'll add `data-bs-popp
 In addition, we've removed the initial `margin`s from dropdowns and popovers, instead relying on Popper's offsets. Relatedly, there was a bug in how popover arrows were aligned that has now been resolved.
 
 ## Color utility docs
+
+[![Sass docs screenshot](/assets/img/2021/02/bootstrap-v5b2-sass-docs.png)](https://getbootstrap.com/docs/5.0/utilities/colors/)
 
 We've overhauled our color utility documentation, separating the text `color` classes from our `background-color` ones. We've also made extensive use of our `scss-docs` shortcode to include tons more code snippets in our docs.
 
