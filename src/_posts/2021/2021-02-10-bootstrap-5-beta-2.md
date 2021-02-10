@@ -2,7 +2,7 @@
 layout: post
 title: Bootstrap 5 Beta 2
 video: pUj9frKY46E
-date: 2020-12-07 11:00:00
+date: 2021-02-10 11:00:00
 author: mdo
 ---
 
