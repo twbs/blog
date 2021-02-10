@@ -27,7 +27,7 @@ In addition, we've removed the initial `margin`s from dropdowns and popovers, in
 We've overhauled our color utility documentation, separating the text `color` classes from our `background-color` ones. We've also made extensive use of our `scss-docs` shortcode to include tons more code snippets in our docs.
 
 - [Text color utilities](https://getbootstrap.com/docs/5.0/utilities/colors/) remain on their existing page.
-- [Background utilities](https://getbootstrap.co/mdocs/5.0/utilities/background/) have moved to a new page.
+- [Background utilities](https://getbootstrap.com/docs/5.0/utilities/background/) have moved to a new page.
 
 Both pages now include a new Sass section, showing relevant snippets of our source code that are related to each set of utilities. We list all our available color variables, our theme color variables and maps, associated mixins and loops, and even where these utilities are generated in the utilities API.
 
