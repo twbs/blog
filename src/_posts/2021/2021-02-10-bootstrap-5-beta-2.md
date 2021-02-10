@@ -6,7 +6,7 @@ date: 2021-02-10 11:00:00
 author: mdo
 ---
 
-Our second beta has arrived for Bootstrap 5! We delayed its release to iron out some issues with third party libraries and stabilize our major changes. We've also once again shipped some awesome updates to our documentation.
+Our second beta has arrived for Bootstrap 5! We delayed its release to iron out some issues with third-party libraries and stabilize our major changes. We've also once again shipped some awesome updates to our documentation.
 
 Next up is our final beta, which we may even promote to a stable release depending on how development proceeds. Stay tuned for that!
 
@@ -18,7 +18,7 @@ Dropdowns saw a lot of work in Beta 2 because of how much has changed in both ou
 
 Now when dropdown menus have `data-bs-display="static"`, we'll add `data-bs-popper="static"` via JavaScript to their associated `.dropdown-menu`. When dropdowns are in our navbars, their menus will have `data-bs-popper="none"` added. This separates two different positioning libraries, ours and Poppers, and ensures all behaviors are supported. You can see [all the options in a new example in our docs](https://getbootstrap.com/docs/5.0/components/dropdowns/#alignment-options).
 
-In addition, we've removed the initial `margin`s from dropdowns and popovers, instead relying on Popper's offsets. Relatedly, there was a bug in how popover arrows were aligned that has now been resolved.
+In addition, we've removed the initial `margin`s from dropdowns and popovers, instead of relying on Popper's offsets. Relatedly, there was a bug in how popover arrows were aligned that has now been resolved.
 
 ## Color utility docs
 
@@ -31,7 +31,7 @@ We've overhauled our color utility documentation, separating the text `color` cl
 
 Both pages now include a new Sass section, showing relevant snippets of our source code that are related to each set of utilities. We list all our available color variables, our theme color variables and maps, associated mixins and loops, and even where these utilities are generated in the utilities API.
 
-Expect these kind of documentation improvements to continue into our next release. Follow along in the [draft pull request that adds Sass docs to all our components](https://github.com/twbs/bootstrap/pull/32747) on GitHub.
+Expect this kind of documentation improvements to continue into our next release. Follow along in the [draft pull request that adds Sass docs to all our components](https://github.com/twbs/bootstrap/pull/32747) on GitHub.
 
 ## JS updates
 
@@ -46,7 +46,7 @@ We've spent a significant amount of time in Beta 2 improving our JavaScript plug
 
 ## Miscellaneous updates
 
-Across the board we've made a few small changes to other components that are worth a brief mention here.
+Across the board, we've made a few small changes to other components that are worth a brief mention here.
 
 - **Navbars:**
   - Added a new `.navbar-nav-scroll` class to enable vertical scrolling when a collapsed navbar is opened. It's customizable via Sass and a CSS variable. [Read more in the docs.](https://getbootstrap.com/docs/5.0/components/navbar/#scrolling)
@@ -68,7 +68,7 @@ Across the board we've made a few small changes to other components that are wor
   - Updated docs examples to use `<button>`s wherever possible instead of `<a>` elements.
   - CSS selectors changed for using `<button>`s as indicators (from `.carousel-indicators li` to `.carousel-indicators [data-bs-target]`).
 
-For a more complete list of of changes, checkout the [v5 Beta 2 project board](https://github.com/twbs/bootstrap/projects/33) or [list of issues and PRs](https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F33+) in this [release](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta2).
+For a more complete list of changes, check out the [v5 Beta 2 project board](https://github.com/twbs/bootstrap/projects/33) or [list of issues and PRs](https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F33+) in this [release](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta2).
 
 ## Get started
 
@@ -86,7 +86,7 @@ We have three releases coming up next for the team:
 - Bootstrap v4.6.1 (bringing in some more bugfixes and alignment with the latest in v5)
 - Bootstrap Icons v1.4.0
 
-Our v5 Beta 3 will continue to focus on JavaScript issues and documentation improvements. Tooltips in particular need some attention after our fixes to dropdowns and popovers. After v5 goes stable, we'll look to adding some of the awesome features we've built up in our backlog. Checkout the [v5.1 project](https://github.com/twbs/bootstrap/projects/31) for an idea of what's being planned.
+Our v5 Beta 3 will continue to focus on JavaScript issues and documentation improvements. Tooltips in particular need some attention after our fixes to dropdowns and popovers. After v5 goes stable, we'll look to adding some of the awesome features we've built up in our backlog. Check out the [v5.1 project](https://github.com/twbs/bootstrap/projects/31) for an idea of what's being planned.
 
 ## Support the team
 
