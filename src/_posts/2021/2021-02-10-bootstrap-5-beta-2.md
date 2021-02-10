@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bootstrap 5 Beta 2
-video:
+video: pUj9frKY46E
 date: 2020-12-07 11:00:00
 author: mdo
 ---
@@ -63,9 +63,7 @@ Across the board we've made a few small changes to other components that are wor
 - **Carousels:**
   - Updated docs examples to use `<button>`s wherever possible instead of `<a>` elements.
 
-
-
-For a more complete list of of changes, checkout the [v5 Beta project board](https://github.com/twbs/bootstrap/projects/26) or [list of issues and PRs](https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F26+) in this [release](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta1).
+For a more complete list of of changes, checkout the [v5 Beta 2 project board](https://github.com/twbs/bootstrap/projects/33) or [list of issues and PRs](https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F33+) in this [release](https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta2).
 
 ## Get started
 
@@ -74,6 +72,16 @@ For a more complete list of of changes, checkout the [v5 Beta project board](htt
 ```sh
 npm i bootstrap@next
 ```
+
+## What's next
+
+We have three releases coming up next for the team:
+
+- Bootstrap v5.0.0-beta3 (possibly promoted to v5 stable)
+- Bootstrap v4.6.1 (bringing in some more bugfixes and alignment with the latest in v5)
+- Bootstrap Icons v1.4.0
+
+Our v5 Beta 3 will continue to focus on JavaScript issues and documentation improvements. Tooltips in particular need some attention after our fixes to dropdowns and popovers. After v5 goes stable, we'll look to adding some of the awesome features we've built up in our backlog. Checkout the [v5.1 project](https://github.com/twbs/bootstrap/projects/31) for an idea of what's being planned.
 
 ## Support the team
 
