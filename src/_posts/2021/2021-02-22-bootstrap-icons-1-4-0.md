@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bootstrap Icons v1.4.0
-video:
+video: A-LMScK5SwU
 date: 2021-02-22 21:30:00
 author: mdo
 ---
