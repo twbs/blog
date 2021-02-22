@@ -21,7 +21,7 @@
     <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 14 of 19 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
+<title>Page 14 of 20 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Bootstrap Blog" />
 <meta name="author" content="Mark Otto" />
@@ -163,6 +163,120 @@
 
       <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2013/08/19/bootstrap-3-released/">
+            Bootstrap 3 released
+          </a>
+        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Mon, 19 Aug 2013 00:00:00 +0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    August 19, 2013
+  </span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/0hiUuL5uTKc?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Today, on the two year anniversary of releasing Bootstrap to the world, we’re shipping Bootstrap 3.0. It’s been a crazy long ride to say the least and we’re stoked to finally have this out in the wild. Thanks to everyone who’s tested our RCs (er, betas), reported bugs, and contributed code. We couldn’t have done it without you beautiful nerds.</p>
+
+<h2 id="whats-new">What’s new</h2>
+
+<p>For those who haven’t been following along too closely, here’s a recap of all the biggest changes shipping with Bootstrap 3:</p>
+
+<ul>
+  <li><strong>New design and an optional theme!</strong> With v3, we’ve gone flat. Don’t call it a trend—it’s all about customization, folks. Since we simplified the aesthetics though, we thought it’d help to have an optional theme. To use it, check out the <a href="https://getbootstrap.com/examples/theme/">Bootstrap theme example</a>.</li>
+  <li><strong>Mobile first and always responsive!</strong> Nearly everything has been redesigned and rebuilt to start from your handheld devices and scale up.</li>
+  <li><strong>Brand new Customizer!</strong> It’s been redesigned, is now compiled in the browser instead of Heroku, has better dependency support, and even has built-in error handling. Better yet, we now save your customizations to an anonymous Gist for easy reuse, sharing, and modifications.</li>
+  <li><strong>Better box model by default.</strong> Everything in Bootstrap gets <code class="language-plaintext highlighter-rouge">box-sizing: border-box</code>, making for easier sizing options and an enhanced grid system.</li>
+  <li><strong>Super-powered grid system.</strong> With four tiers of grid classes—phones, tablets, desktops, and large desktops—you can do some super crazy awesome layouts.</li>
+  <li><strong>Rewritten JavaScript plugins.</strong> All events are now namespaced, no-conflict stuff works way better, and more.</li>
+  <li><strong>New Glyphicons icon font!</strong> While they were gone for a while, we’ve since restored the Glyphicons to the main repo. In 2.x, they were images, but now they’re in font format and include 40 new glyphs.</li>
+  <li><strong>Overhauled navbar.</strong> It’s now always responsive and comes with some super handy and re-arrangable subcomponents.</li>
+  <li><strong>Modals are way more responsive.</strong> We’ve overhauled the modal code to make it way more responsive on mobile devices. They now scroll the entire viewport instead of having a max-height.</li>
+  <li><strong>Added some components!</strong> New to the mix are panels and list groups.</li>
+  <li><strong>Removed some components!</strong> We’ve dropped the accordion (replaced with collapsible panels), submenus, typeahead, and a few more small items. (Worth celebrating as much as adding new ones.)</li>
+  <li><strong>More consistent base and sizing classes.</strong> Buttons, tables, forms, alerts, and more have been updated to have more consistent classes for easier customizer and extensibility.</li>
+  <li><strong>Docs have been blown up, yo.</strong> We’ve added a lot of new documentation, not only for our components, but for browser support (including gotchas and bugs), license FAQs, third party support (and workarounds), accessibility, and more.</li>
+  <li><strong>Dropped Internet Explorer 7 and Firefox 3.6 support.</strong> For Internet Explorer 8, you’ll need to include <a href="https://github.com/scottjehl/Respond">Respond.js</a> for all the media queries to work correctly. You can read more about <a href="https://getbootstrap.com/getting-started/#browser-support">browser support</a> in the docs.</li>
+</ul>
+
+<p>For our pre-release testers and others who have been following along with the RCs, here’s a list of some of the more prominent changes made since RC2:</p>
+
+<ul>
+  <li>Hella bugs have been fixed (duh, right?).</li>
+  <li>Restored the Glyphicons icon font.</li>
+  <li>Navbars now require a <code class="language-plaintext highlighter-rouge">.navbar-default</code> for the standard version.</li>
+  <li>Panels now require a <code class="language-plaintext highlighter-rouge">.panel-default</code> for the standard gray variation.</li>
+  <li>Alerts now require a modifier class (e.g., <code class="language-plaintext highlighter-rouge">.alert.alert-warning</code> for the previously default yellow alert).</li>
+  <li>Multiple responsive utilities can now be applied to the same element.</li>
+  <li>Examples are back in the main repo and have been fully updated.</li>
+  <li>Docs have been updated for more consistent placement, naming, etc.</li>
+  <li>Customizer compiling bugs have all been fixed.</li>
+  <li>The optional theme has been added and is demonstrated in an example.</li>
+  <li>Jumbotrons are now made to extend the full width of the viewport with a container inside, but if you reverse that, the jumbotron in a container will be rounded and padded.</li>
+  <li>The navbar components have been updated to better account for the presence of containers and more. You’ll see some new margin and padding changes, but no markup changes should be required.</li>
+</ul>
+
+<h2 id="the-numbers-game">The numbers game</h2>
+
+<p>For those keeping track, Bootstrap 3 took nearly nine months to design, develop, and ship. In that time we’ve had:</p>
+
+<ul>
+  <li>Over 2,700 commits from 319 contributors</li>
+  <li>379 files changed, meaning 84,000 additions and deletions</li>
+  <li>Over 900 comments in the pull request</li>
+  <li>Over a 20% reduction in minified CSS (from 127kb to 97kb)</li>
+</ul>
+
+<p>Beyond this release, numbers everywhere else are looking amazing. It’s been staggering to watch these grow.</p>
+
+<ul>
+  <li>Over 56,000 stars and 19,000 forks on GitHub (still number one, baby!).</li>
+  <li>Over 9,800 closed issues (that’s over 13 a day since we released Bootstrap).</li>
+  <li>Last month, we had nearly 15 million pageviews on our docs (and that barely includes anything from our v3 pre-releases).</li>
+  <li>In the last year, we’ve logged over 3 million downloads just from the docs, 40% of which are from the Customizer.</li>
+</ul>
+
+<p>This was a massive undertaking and it couldn’t have come out better. Thanks once again to all our contributors and the rest of the community for helping us make this a reality.</p>
+
+<h2 id="what-about-non-responsive-sites">What about non-responsive sites?</h2>
+
+<p>With Bootstrap 3 we’ve gone deep on responsive and mobile first—it’s built in and no longer requires a separate stylesheet. That’s great for most folks, but not everyone needs or wants an adaptive web site or application. To help, we’ve added some documentation and an example that disables the adaptive or responsive features with some extra CSS.</p>
+
+<p>Check out the <a href="https://getbootstrap.com/getting-started/#disable-responsive">Disabling responsiveness section</a> or head right to the <a href="https://getbootstrap.com/examples/non-responsive/">non-responsive example</a> to learn more.</p>
+
+<h2 id="bootstrap-232">Bootstrap 2.3.2</h2>
+
+<p>While we’re not actively maintaining or supporting 2.3.2, you can still get to the old documentation. Head to <a href="https://getbootstrap.com/2.3.2/">https://getbootstrap.com/2.3.2/</a> and you’ll find everything right where you left it (including the old customizer). We’ll leave this up and available for the foreseeable future.</p>
+
+<p>As a side note, we apologize for all the redirect and 404 problems folks ran into during the last few weeks. This was our first time moving an entire repo on GitHub and we hit a huge snag with old builds of our docs and did our best to deal with those to not further confuse folks. We’ll do better next time.</p>
+
+<h2 id="coming-up-next">Coming up next</h2>
+
+<p>As always, we’ll have one or two patch releases before hitting our next minor release. Beyond that, we have a few things we’d like to tackle for BS3.1 and are already tracking those as potential additions in <a href="https://github.com/twbs/bootstrap/issues/9397">#9397</a>. If you’d like something considered for v3.1, check that list. If it’s not there, open a new issue to discuss.</p>
+
+<p>No dates have been set for any patch or minor release yet. As soon as we figure that out, we’ll let you know.</p>
+
+<h2 id="download">Download!</h2>
+
+<p>Woo, all set? Then head to the docs and download yourself some Bootstrap 3!</p>
+
+<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.0.zip">Download Bootstrap 3</a> or hit the <a href="https://github.com/twbs/bootstrap">GitHub repository</a></p>
+
+      </div>
+
+      <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2013/08/13/bootstrap-3-rc2/">
             Bootstrap 3 RC2
           </a>
@@ -170,7 +284,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Tue, 13 Aug 2013 00:00:00 +0000">
@@ -183,7 +297,7 @@
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/wiyYozeOoKs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/wiyYozeOoKs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -387,41 +501,6 @@
 <p>Work on Bootstrap 3 continues and we’re almost ready to do an official release candidate. We’ve addressed nearly all our chosen changes and are now at a point where we’re smoothing things out as much as possible. We’ll share more information on the RC and v3 in the coming weeks.</p>
 
 <p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.3.2.zip">Download Bootstrap 2.3.2</a> <span class="muted">(latest master ZIP)</span></p>
-
-      </div>
-
-      <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2013/03/03/bootstrap-expo/">
-            Welcome to the Bootstrap Expo
-          </a>
-        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Sun, 03 Mar 2013 00:00:00 +0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    March 03, 2013
-  </span>
-</div>
-
-
-        <p><a href="https://expo.getbootstrap.com/"><img src="/assets/img/2013/03/bootstrap-expo.jpg" alt="Bootstrap Expo" /></a></p>
-
-<p>Today we’re launching a new project to showcase the absolute best projects built on Bootstrap, the <a href="https://expo.getbootstrap.com/">Bootstrap Expo</a>.</p>
-
-<p>The Bootstrap Expo is all hosted on GitHub, meaning recommending new sites is as easy as <a href="https://github.com/twbs/bootstrap-expo/issues/new">opening a new issue</a>. It also keeps the primary Bootstrap repo focused on code and documentation, and not dozens of extraneous images.</p>
-
-<p>As a side note, the Expo is the second project appearing under the <a href="https://github.com/twbs">twbs organization</a> (this blog is already there in private mode). We’ll be moving Bootstrap and the Customizer over with v3 soon.</p>
-
-<p>Until then, enjoy and &lt;3.</p>
 
       </div>
   </div>

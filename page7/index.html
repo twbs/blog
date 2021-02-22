@@ -21,7 +21,7 @@
     <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 7 of 19 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
+<title>Page 7 of 20 for Bootstrap Blog | Official blog for the Bootstrap framework.</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Bootstrap Blog" />
 <meta name="author" content="Mark Otto" />
@@ -163,6 +163,54 @@
 
       <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2018/07/12/bootstrap-4-1-2/">
+            Bootstrap 4.1.2
+          </a>
+        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Thu, 12 Jul 2018 00:00:00 +0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    July 12, 2018
+  </span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/qHDy_b33cCQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>We’ve been busy these last couple months since launching v4.1.1, but we’re back with another bug fix and some sweeping changes to how we build and publish our docs after the issues stemming from our v4.1.x launches.</p>
+
+<p>When we launched v4.1, we ran into unexpected issues with having to rearrange asset paths after deploying, resulting in broken image URLs, a busted service worker, and more. Since then, we’re ironed out most of the kinks and introduced a new docs directory structure inside the repo. Nothing should change for anyone using our docs, but those contributing to the project and developing locally may need to rebase their changes or update their branches accordingly.</p>
+
+<p>Beyond the file structure changes, here are the highlights for v4.1.2:</p>
+
+<ul>
+  <li>Fixed an XSS vulnerability in tooltip, collapse, and scrollspy plugins</li>
+  <li>Improved how we query elements in our JavaScript plugins</li>
+  <li>Inline SVGs now have the same vertical alignment as images</li>
+  <li>Fixed issues with double transitions on carousels</li>
+  <li>Added Edge and IE10-11 fallbacks to our floating labels example</li>
+  <li>Various improvements to form controls, including disabled states on file inputs and unified focus styles for selects</li>
+  <li>Miscellaneous build tool improvements and documentation fixes</li>
+</ul>
+
+<p>Checkout the full <a href="https://github.com/twbs/bootstrap/issues/26423">v4.1.2 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/14">GitHub project</a> for the full details. Up next will either be <a href="https://github.com/twbs/bootstrap/projects/15">v4.1.3</a> or <a href="https://github.com/twbs/bootstrap/projects/6">v4.2</a> depending on how smoothly this release goes and how well we can keep up with reviewing and merging pull requests.</p>
+
+<p>Head to the v4.1.x docs to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.</p>
+
+      </div>
+
+      <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2018/04/30/bootstrap-4-1-1/">
             Bootstrap 4.1.1
           </a>
@@ -170,7 +218,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Mon, 30 Apr 2018 00:00:00 +0000">
@@ -183,7 +231,7 @@
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/9jNt7ZGCW-o?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/9jNt7ZGCW-o?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -454,95 +502,6 @@
 <p>Finally, one last thank you to everyone who’s contributed to Bootstrap 4. It’s been a crazy journey and I’m personally relieved, thrilled, and anxious to call it stable. There have been roughly 6,000 commits to v4 since we first starting working on it back in 2015. We’ve gone every which direction and rewrote far too many things far too many times, but I’m so very happy and fortunate with where we landed.</p>
 
 <p>Cheers once again to everyone who’s contributed to and built with Bootstrap. It’s an honor to be building these kind of tools alongside and for all of you.</p>
-
-      </div>
-
-      <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2017/12/28/bootstrap-4-beta-3/">
-            Bootstrap 4 Beta 3
-          </a>
-        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 28 Dec 2017 00:00:00 +0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    December 28, 2017
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/9jK-NcRmVcw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Welcome to the final beta of v4! It’s been over two months since we shipped our second beta and we’ve been busy making the last breaking changes before moving to our next stable release, v4.0.0! We have a few more breaking changes than we were planning, but fret not, we’ve detailed them all.</p>
-
-<p>Beta 3 primarily focuses around our forms, but it also includes key fixes to tables, some global styles, our documentation, and some JavaScript bugs. Following this release, we’ll <a href="https://github.com/twbs/bootstrap/projects/12">address a few issues and PRs</a> before doing a stable v4 release a week or two into the New Year.</p>
-
-<p>Let’s dive into all the highlights.</p>
-
-<h2 id="breaking-changes">Breaking changes</h2>
-
-<p>As mentioned in <a href="/2017/10/19/bootstrap-4-beta-2/">our Beta 2 release</a>, we needed to make a few more breaking changes in Beta 3. We’ve summarized them here and in our <a href="https://getbootstrap.com/docs/4.0/migration/#beta-3-changes">migration docs</a>—be sure to read them!</p>
-
-<ul>
-  <li>
-    <p><strong>Rewrote native and custom check controls.</strong> Both browser default and custom checkboxes and radios now have simpler markup after removing the <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> from the <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code>. Now, all checkboxes and radios have a parent <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> and sibling <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code> pair. This is essential for form validation and disabled inputs because we can use the input’s state to style the label.</p>
-
-    <p>In addition, custom checkbox and radio elements no longer have a <code class="language-plaintext highlighter-rouge">.custom-control-indicator</code>. This is generated from the new <code class="language-plaintext highlighter-rouge">.custom-control-label</code>.</p>
-  </li>
-  <li>
-    <p><strong>Input groups were rewritten</strong> with specific <code class="language-plaintext highlighter-rouge">.input-group-{prepend|append}</code> classes. The new approach allows us to support validation styles and messages within input groups, while also adding support for custom selects, custom file inputs, and multiple <code class="language-plaintext highlighter-rouge">.form-control</code>s.</p>
-  </li>
-  <li>
-    <p><strong>Responsive tables are once again parent classes</strong> to avoid accessiblity issues with changing a <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>’s <code class="language-plaintext highlighter-rouge">display</code>.</p>
-  </li>
-  <li>
-    <p><strong>Deleted the <code class="language-plaintext highlighter-rouge">.col-form-legend</code> class</strong>, consolidating it’s styles into the <code class="language-plaintext highlighter-rouge">.col-form-label</code> class.</p>
-  </li>
-</ul>
-
-<p>Read the <a href="https://getbootstrap.com/docs/4.0/migration/#beta-3-changes">Migration page</a> for further details.</p>
-
-<h2 id="more-highlights">More highlights</h2>
-
-<p>In addition to the breaking changes, we’ve addressed a few more general issues that may impact your project.</p>
-
-<ul>
-  <li>
-    <p>Restored <code class="language-plaintext highlighter-rouge">cursor: pointer</code> to non-disabled links, buttons, <code class="language-plaintext highlighter-rouge">.close</code>, navbar toggler, and pagination links.</p>
-  </li>
-  <li>
-    <p>Added a new vertically centered modal option with <code class="language-plaintext highlighter-rouge">.modal-dialog-centered</code>.</p>
-  </li>
-  <li>
-    <p>Added new dropleft and dropright variants for dropdowns in #23860.</p>
-  </li>
-  <li>
-    <p>Our npm package no longer includes any files other than our source and dist JavaScript and CSS files. If you previously relied on our running our scripts via the <code class="language-plaintext highlighter-rouge">node_modules</code> folder, you’ll need to update your build tools.</p>
-  </li>
-  <li>
-    <p>Print styles have moved to bottom of the import stack to properly override styles.</p>
-  </li>
-</ul>
-
-<p>For more details on this release’s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/24439">Beta 3 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/projects/10">Beta 3 project</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and specific feedback whenever possible.</p>
-
-<h2 id="coming-up">Coming up</h2>
-
-<p>Stable v4.0.0 is our next release and we already have a <a href="https://github.com/twbs/bootstrap/projects/12">GitHub project board</a> to track issues and PRs. There will be no breaking changes from Beta 3 to stable, so our changelog should be short and sweet. Expect some linting, Sass variable improvements, updated docs Examples, and more build tool improvements.</p>
-
-<p>With our next release, the <code class="language-plaintext highlighter-rouge">master</code> branch will once again become our default branch. We’ll merge <code class="language-plaintext highlighter-rouge">v4-dev</code> into <code class="language-plaintext highlighter-rouge">master</code>, meaning v3’s source code will only be in our <code class="language-plaintext highlighter-rouge">v3-dev</code> branch and <a href="https://github.com/twbs/bootstrap/releases">past releases</a>.</p>
-
-<p>See you again real soon!</p>
 
       </div>
   </div>
