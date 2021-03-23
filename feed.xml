@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-03-10T12:52:33+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap Icons v1.4.0</title><link href="https://blog.getbootstrap.com/2021/02/22/bootstrap-icons-1-4-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.4.0" /><published>2021-02-22T21:30:00+00:00</published><updated>2021-02-22T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/02/22/bootstrap-icons-1-4-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/02/22/bootstrap-icons-1-4-0/">&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.4.0&lt;/a&gt; adds over 60 new icons as part of a brand new weather category. Also included are some long requested improvements to vertical alignment and a handful of updates to tags and categories.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-03-23T16:40:22+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap 5 Beta 3</title><link href="https://blog.getbootstrap.com/2021/03/22/bootstrap-5-beta-3/" rel="alternate" type="text/html" title="Bootstrap 5 Beta 3" /><published>2021-03-22T21:30:00+00:00</published><updated>2021-03-22T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/03/22/bootstrap-5-beta-3</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/03/22/bootstrap-5-beta-3/">&lt;p&gt;Our final beta for Bootstrap 5 has come with some amazing new changes, including a new component!), documentation updates, and more. We’ve also fixed some important bugs since our last release, in particular with our dependencies. Next up is our stable release!&lt;/p&gt;
+
+&lt;p&gt;Keep reading for a recap of what’s new in Beta 3.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-offcanvas-component&quot;&gt;New offcanvas component&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.0/components/offcanvas/&quot;&gt;&lt;img src=&quot;/assets/img/2021/03/bootstrap-docs-offcanvas.png&quot; alt=&quot;Offcanvas example&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to our newest team member, &lt;a href=&quot;https://github.com/GeoSot&quot;&gt;@GeoSot&lt;/a&gt;, we have a brand new component to unveil in Beta 3—introducing offcanvas! Built on and sharing fundamental pieces of our modals, the offcanvas comes with configurable backdrop, body scroll, and placement. Offcanvas components can be placed on the left, right, and bottom of the viewport. Configure these options with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data&lt;/code&gt; attributes or via the JavaScript APIs.&lt;/p&gt;
+
+&lt;p&gt;We’re excited about iterating on the new offcanvas component and building additional examples and demos with you. Please share any feedback on an issue or pull request as you start to use it in your projects.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-and-refreshed-examples&quot;&gt;New and refreshed examples&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/&quot;&gt;&lt;img src=&quot;/assets/img/2021/03/bootstrap-new-examples.png&quot; alt=&quot;New examples&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Our examples have been updated in Beta 3 as well. We’ve added four brand new snippet-heavy examples and refreshed a few others. New with this release are several snippets for &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/headers/&quot;&gt;headers&lt;/a&gt;, &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/heroes/&quot;&gt;heroes&lt;/a&gt;, &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/features/&quot;&gt;features&lt;/a&gt;, and &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/sidebars/&quot;&gt;sidebars&lt;/a&gt;. These new snippets will continue to grow with new additions over time, showing just how fun and easy it is to build with Bootstrap.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/starter-template/&quot;&gt;&lt;img src=&quot;/assets/img/2021/03/starter-template.png&quot; alt=&quot;New starter example&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We’ve also updated our &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/starter-template/&quot;&gt;starter template&lt;/a&gt; with a refreshed, simplified design and more resource links. We’ll also incorporate this new look and feel into our &lt;a href=&quot;https://github.com/twbs/bootstrap-npm-starter&quot;&gt;npm starter project&lt;/a&gt; project, and eventually add a Parcel starter project.&lt;/p&gt;
+
+&lt;p&gt;Lastly, we’ve updated our &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/pricing/&quot;&gt;pricing&lt;/a&gt;, &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/checkout/&quot;&gt;checkout&lt;/a&gt;, and &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/sign-in/&quot;&gt;sign-in&lt;/a&gt; examples. We’ve also added a new &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/jumbotron/&quot;&gt;jumbotron example&lt;/a&gt; to show you how to create your own jumbotron since we removed it in Bootstrap 5.&lt;/p&gt;
+
+&lt;h2 id=&quot;improved-sass-docs&quot;&gt;Improved Sass docs&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.0/components/alerts/#sass&quot;&gt;&lt;img src=&quot;/assets/img/2021/03/bootstrap-docs-sass.png&quot; alt=&quot;New Sass docs&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Since our last release, we’ve added a new section to nearly every component and utility documentation page for the &lt;a href=&quot;https://getbootstrap.com/docs/5.0/components/alerts/#sass&quot;&gt;source Sass code&lt;/a&gt;. Where appropriate, we now list Sass variables, maps, loops, and animation keyframes. These are directly linked from our source files, so whenever we ship new code, they’ll automatically be up-to-date.&lt;/p&gt;
+
+&lt;h2 id=&quot;and-more&quot;&gt;And more!&lt;/h2&gt;
+
+&lt;p&gt;Some highlights from the rest of our documentation updates and bugfixes include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://getbootstrap.com/docs/5.0/components/list-group/#numbered&quot;&gt;new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.list-group-numbered&lt;/code&gt; variation&lt;/a&gt; to list groups that uses pseudo-elements for numbering list group items.&lt;/li&gt;
+  &lt;li&gt;Removed explicit focus state suppression in Reboot&lt;/li&gt;
+  &lt;li&gt;Improved carousel swipe behaviors for RTL&lt;/li&gt;
+  &lt;li&gt;Updated accordions to improve transitions and borders when animating&lt;/li&gt;
+  &lt;li&gt;Updated Sass customization docs to show how to properly override default variables&lt;/li&gt;
+  &lt;li&gt;Fixed tooltips not appearing after rapid focus in and out&lt;/li&gt;
+  &lt;li&gt;Fixed dropdown events not bubbling and forms inside dropdowns not propagating&lt;/li&gt;
+  &lt;li&gt;Removed flip option from dropdowns&lt;/li&gt;
+  &lt;li&gt;Disabled select now render consistently in Chrome&lt;/li&gt;
+  &lt;li&gt;Button elements now grow in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nav-fill&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.nav-justified&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;JavaScript plugin constructors now accept CSS selectors&lt;/li&gt;
+  &lt;li&gt;De-duped the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.border-0&lt;/code&gt; utility&lt;/li&gt;
+  &lt;li&gt;Fixed event handler removal in dropdown/carousel dispose&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://getbootstrap.com/docs/5.0/getting-started/parcel/&quot;&gt;new Parcel guide&lt;/a&gt; to the docs&lt;/li&gt;
+  &lt;li&gt;Added input focus blur Sass variable&lt;/li&gt;
+  &lt;li&gt;Updated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.browserslistrc&lt;/code&gt; to drop Android and add Safari/iOS 12 as the new minimum version (completing our two latest major releases guideline for supported browsers).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Head to GitHub for a complete &lt;a href=&quot;https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F34&quot;&gt;list of issues and pull requests in v5 Beta 3&lt;/a&gt;. You can also review the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/34&quot;&gt;v5 beta 3 project board&lt;/a&gt;, too.&lt;/p&gt;
+
+&lt;p&gt;A huge thanks to another new team member, &lt;a href=&quot;https://github.com/rohit2sharma95&quot;&gt;@rohit2sharma95&lt;/a&gt;, for the dozens of pull requests, bug fixes, and code reviews for our JavaScript plugins.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-the-release&quot;&gt;Get the release&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&quot;https://getbootstrap.com&quot;&gt;https://getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We’ve also published this updated as a pre-release to npm, so if you’re feeling bold or are curious about what’s new, you can pull the latest in that way.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap@next
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;What’s next&lt;/h2&gt;
+
+&lt;p&gt;Looking ahead, we’re eyeing our first stable release for Bootstrap 5! But we also have some other releases on the horizon:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/projects/27&quot;&gt;Bootstrap v5.0.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/projects/35&quot;&gt;Bootstrap v4.6.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons&lt;/a&gt; v1.4.1 (largely some bug fixes and enhancements)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap-npm-starter&quot;&gt;Bootstrap npm starter&lt;/a&gt; v1.5.0 (with updated dependencies, new page, and more)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As mentioned in our last release, after v5 goes stable, we’ll look to add some of the awesome features we’ve built up in our backlog. Check out the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/31&quot;&gt;v5.1 project&lt;/a&gt; for an idea of what’s being planned. Feel free to open issues or pull requests if you have any additional ideas!&lt;/p&gt;
+
+&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
+
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our final beta for Bootstrap 5 has come with some amazing new changes, including a new component!), documentation updates, and more. We’ve also fixed some important bugs since our last release, in particular with our dependencies. Next up is our stable release!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.4.0</title><link href="https://blog.getbootstrap.com/2021/02/22/bootstrap-icons-1-4-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.4.0" /><published>2021-02-22T21:30:00+00:00</published><updated>2021-02-22T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/02/22/bootstrap-icons-1-4-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/02/22/bootstrap-icons-1-4-0/">&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.4.0&lt;/a&gt; adds over 60 new icons as part of a brand new weather category. Also included are some long requested improvements to vertical alignment and a handful of updates to tags and categories.&lt;/p&gt;
 
 &lt;p&gt;Keep reading for a preview of the new icons and how icon alignment has changed.&lt;/p&gt;
 
@@ -798,37 +877,4 @@
 
 &lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
 
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our third alpha release has landed with tons of updates to our components, utilities, docs, forms, JavaScript, and more. This is a larger alpha release for us and sets us up for our first beta where we’ll introduce some final breaking changes and features.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.1.0</title><link href="https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.1.0" /><published>2020-10-28T21:30:00+00:00</published><updated>2020-10-28T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0/">&lt;p&gt;Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.&lt;/p&gt;
-
-&lt;h2 id=&quot;30-new-icons&quot;&gt;30+ new icons&lt;/h2&gt;
-
-&lt;p&gt;Here’s a look at our file and emoji icons as of v1.1.0. New in this release for emojis are the wink and heart eyes, along with fill versions for the full set. In addition, we’ve added icons for Word, Excel, PowerPoint, and a general bar chart file type.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/10/icons-emoji.png&quot; alt=&quot;Emoji icons&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/10/icons-files-folders.png&quot; alt=&quot;File and folder icons&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
-
-&lt;p&gt;Here’s a more complete look at what’s changed in this release.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/415&quot;&gt;#415&lt;/a&gt;: Properly name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grip-horizontal&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grip-vertical&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/423&quot;&gt;#423&lt;/a&gt;: Update &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arrow-up-square-fill&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/437&quot;&gt;#437&lt;/a&gt;: Make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;file-earmark&lt;/code&gt; variations consistent&lt;/li&gt;
-  &lt;li&gt;New: Added 18 filetype icons &lt;a href=&quot;https://github.com/twbs/icons/pull/465&quot;&gt;#465&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;New: Added 13 emoji icons &lt;a href=&quot;https://github.com/twbs/icons/pull/466&quot;&gt;#66&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;To get started, install via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.1.0&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip&quot;&gt;download just the SVGs&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-
-&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
-
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/6jIgJymnRpMjGSMG2BKNRe/Bootstrap-Icons-v1.1.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our third alpha release has landed with tons of updates to our components, utilities, docs, forms, JavaScript, and more. This is a larger alpha release for us and sets us up for our first beta where we’ll introduce some final breaking changes and features.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
