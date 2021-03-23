@@ -57,6 +57,8 @@ Some highlights from the rest of our documentation updates and bugfixes include:
 - Added input focus blur Sass variable
 - Updated `.browserslistrc` to drop Android and add Safari/iOS 12 as the new minimum version (completing our two latest major releases guideline for supported browsers).
 
+A huge thanks to another new team member, [@rohit2sharma95](https://github.com/rohit2sharma95), for the dozens of pull requests, bug fixes, and code reviews for our JavaScript plugins.
+
 ## Get the release
 
 **Head to <https://getbootstrap.com> to explore the new release.** We've also published this updated as a pre-release to npm, so if you're feeling bold or are curious about what's new, you can pull the latest in that way.
