@@ -56,6 +56,25 @@ Some highlights from the rest of our documentation updates and bugfixes include:
 - Added input focus blur Sass variable
 - Updated `.browserslistrc` to drop Android and add Safari/iOS 12 as the new minimum version (completing our two latest major releases guideline for supported browsers).
 
+## Get the release
+
+**Head to <https://getbootstrap.com> to explore the new release.** We've also published this updated as a pre-release to npm, so if you're feeling bold or are curious about what's new, you can pull the latest in that way.
+
+```sh
+npm i bootstrap@next
+```
+
+## What's next
+
+Looking ahead, we're eyeing our first stable release for Bootstrap 5! But we also have some other releases on the horizon:
+
+- [Bootstrap v5.0.0](https://github.com/twbs/bootstrap/projects/27)
+- [Bootstrap v4.6.1](https://github.com/twbs/bootstrap/projects/35)
+- [Bootstrap Icons](https://icons.getbootstrap.com) v1.4.1 (largely some bug fixes and enhancements)
+- [Bootstrap npm starter](https://github.com/twbs/bootstrap-npm-starter) v1.5.0 (with updated dependencies, new page, and more)
+
+As mentioned in our last release, after v5 goes stable, we'll look to add some of the awesome features we've built up in our backlog. Check out the [v5.1 project](https://github.com/twbs/bootstrap/projects/31) for an idea of what's being planned. Feel free to open issues or pull requests if you have any additional ideas!
+
 ## Support the team
 
 Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
