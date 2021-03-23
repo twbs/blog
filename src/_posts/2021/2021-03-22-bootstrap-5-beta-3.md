@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bootstrap 5 Beta 3
-video:
+video: kldVOhKe4rg
 date: 2021-03-22 21:30:00
 author: mdo
 ---
@@ -55,8 +55,6 @@ Some highlights from the rest of our documentation updates and bugfixes include:
 - Added [new Parcel guide](https://getbootstrap.com/docs/5.0/getting-started/parcel/) to the docs
 - Added input focus blur Sass variable
 - Updated `.browserslistrc` to drop Android and add Safari/iOS 12 as the new minimum version (completing our two latest major releases guideline for supported browsers).
-
-Help wanted: https://github.com/twbs/bootstrap/pull/33399
 
 ## Support the team
 
