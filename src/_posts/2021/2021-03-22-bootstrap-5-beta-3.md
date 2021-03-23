@@ -8,7 +8,7 @@ author: mdo
 
 Our final beta for Bootstrap 5 has come with some amazing new changes, including a new component!), documentation updates, and more. We've also fixed some important bugs since our last release, in particular with our dependencies. Next up is our stable release!
 
-Keep reading for a reacp of what's new in Beta 3.
+Keep reading for a recap of what's new in Beta 3.
 
 ## New offcanvas component
 
@@ -16,7 +16,7 @@ Keep reading for a reacp of what's new in Beta 3.
 
 Thanks to our newest team member, [@GeoSot](https://github.com/GeoSot), we have a brand new component to unveil in Beta 3—introducing offcanvas! Built on and sharing fundamental pieces of our modals, the offcanvas comes with configurable backdrop, body scroll, and placement. Offcanvas components can be placed on the left, right, and bottom of the viewport. Configure these options with `data` attributes or via the JavaScript APIs.
 
-We're excited about iterating on the new offcanvas component and building additional examples and demos with you. Please share any feedback in an issue or pull request as you start to use it in your projects.
+We're excited about iterating on the new offcanvas component and building additional examples and demos with you. Please share any feedback on an issue or pull request as you start to use it in your projects.
 
 ## New and refreshed examples
 
