@@ -46,6 +46,7 @@ Some highlights from the rest of our documentation updates and bugfixes include:
 - Updated accordions to improve transitions and borders when animating
 - Updated Sass customization docs to show how to properly override default variables
 - Fixed tooltips not appearing after rapid focus in and out
+- Fixed dropdown events not bubbling and forms inside dropdowns not propagating
 - Removed flip option from dropdowns
 - Disabled select now render consistently in Chrome
 - Button elements now grow in `.nav-fill` and `.nav-justified`
