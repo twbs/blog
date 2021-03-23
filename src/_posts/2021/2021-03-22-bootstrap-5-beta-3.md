@@ -57,6 +57,8 @@ Some highlights from the rest of our documentation updates and bugfixes include:
 - Added input focus blur Sass variable
 - Updated `.browserslistrc` to drop Android and add Safari/iOS 12 as the new minimum version (completing our two latest major releases guideline for supported browsers).
 
+Head to GitHub for a complete [list of issues and pull requests in v5 Beta 3](https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F34+). You can also review the [v5 beta 3 project board](https://github.com/twbs/bootstrap/projects/34), too.
+
 A huge thanks to another new team member, [@rohit2sharma95](https://github.com/rohit2sharma95), for the dozens of pull requests, bug fixes, and code reviews for our JavaScript plugins.
 
 ## Get the release
