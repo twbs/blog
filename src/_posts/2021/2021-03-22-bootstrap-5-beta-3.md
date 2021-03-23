@@ -14,7 +14,7 @@ Keep reading for a reacp of what's new in Beta 3.
 
 [![Offcanvas example](/assets/img/2021/03/bootstrap-docs-offcanvas.png)](https://getbootstrap.com/docs/5.0/components/offcanvas/)
 
-Thanks to our newest team member, @GeoSot, we have a brand new component to unveil in Beta 3—introducing offcanvas! Built on and sharing fundamental pieces of our modals, the offcanvas comes with configurable backdrop, body scroll, and placement. Offcanvas components can be placed on the left, right, and bottom of the viewport. Configure these options with `data` attributes or via the JavaScript APIs.
+Thanks to our newest team member, [@GeoSot](https://github.com/GeoSot), we have a brand new component to unveil in Beta 3—introducing offcanvas! Built on and sharing fundamental pieces of our modals, the offcanvas comes with configurable backdrop, body scroll, and placement. Offcanvas components can be placed on the left, right, and bottom of the viewport. Configure these options with `data` attributes or via the JavaScript APIs.
 
 We're excited about iterating on the new offcanvas component and building additional examples and demos with you. Please share any feedback in an issue or pull request as you start to use it in your projects.
 
@@ -28,7 +28,7 @@ Our examples have been updated in Beta 3 as well. We've added four brand new sni
 
 We've also updated our [starter template](https://getbootstrap.com/docs/5.0/examples/starter-template/) with a refreshed, simplified design and more resource links. We'll also incorporate this new look and feel into our [npm starter project](https://github.com/twbs/bootstrap-npm-starter) project, and eventually add a Parcel starter project.
 
-Lastly, we've updated our [pricing](https://getbootstrap.com/docs/5.0/examples/pricing/), [checkout](https://getbootstrap.com/docs/5.0/examples/checkout/), and [sign-in](https://getbootstrap.com/docs/5.0/examples/sign-in/) examples. We've also added a new [jumbotron example](https://getbootstrap.com/docs/5.0/examples/jumbotron/) to show you how to create your own jumbotron since we removed it in Bootstrap 4.
+Lastly, we've updated our [pricing](https://getbootstrap.com/docs/5.0/examples/pricing/), [checkout](https://getbootstrap.com/docs/5.0/examples/checkout/), and [sign-in](https://getbootstrap.com/docs/5.0/examples/sign-in/) examples. We've also added a new [jumbotron example](https://getbootstrap.com/docs/5.0/examples/jumbotron/) to show you how to create your own jumbotron since we removed it in Bootstrap 5.
 
 ## Improved Sass docs
 
