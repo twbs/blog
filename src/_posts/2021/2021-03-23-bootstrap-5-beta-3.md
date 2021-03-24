@@ -2,7 +2,7 @@
 layout: post
 title: Bootstrap 5 Beta 3
 video: kldVOhKe4rg
-date: 2021-03-23 09:30:00
+date: 2021-03-23 21:30:00
 author: mdo
 redirect_from:
   - /2021/01/19/bootstrap-icons-4.6.0/
