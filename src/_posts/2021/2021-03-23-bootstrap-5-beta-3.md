@@ -8,7 +8,7 @@ redirect_from:
   - /2021/03/22/bootstrap-5-beta-3/
 ---
 
-Our final beta for Bootstrap 5 has come with some amazing new changes, including a new component!), documentation updates, and more. We've also fixed some important bugs since our last release, in particular with our dependencies. Next up is our stable release!
+Our final beta for Bootstrap 5 has come with some amazing new changes (including a new component!), documentation updates, and more. We've also fixed some important bugs since our last release, in particular with our dependencies. Next up is our stable release!
 
 Keep reading for a recap of what's new in Beta 3.
 
