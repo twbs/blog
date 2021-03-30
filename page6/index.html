@@ -163,6 +163,63 @@
 
       <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2019/11/26/bootstrap-4-4-0/">
+            Bootstrap 4.4.0
+          </a>
+        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Tue, 26 Nov 2019 00:00:00 +0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    November 26, 2019
+  </span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/P5ZJui3aPoQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now.</p>
+
+<h2 id="highlights">Highlights</h2>
+
+<p>Here’s what you need to know about v4.4.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work.</p>
+
+<ul>
+  <li><strong>New responsive containers!</strong> Over a year in the making, fluid up to a particular breakpoint, available for all responsive tiers.</li>
+  <li><strong>New responsive <code class="language-plaintext highlighter-rouge">.row-cols</code> classes</strong> for quickly specifying the number of columns across breakpoints. This one is huge for those of you who have asked for responsive card decks.</li>
+  <li><strong>New <code class="language-plaintext highlighter-rouge">escape-svg()</code> function</strong> for simplifying our embedded <code class="language-plaintext highlighter-rouge">background-image</code> SVGs for forms and more.</li>
+  <li><strong>New <code class="language-plaintext highlighter-rouge">add()</code> and <code class="language-plaintext highlighter-rouge">subtract()</code> functions</strong> for avoiding errors and zero values from CSS’s built in <code class="language-plaintext highlighter-rouge">calc</code> feature.</li>
+  <li><strong>New <code class="language-plaintext highlighter-rouge">make-col-auto()</code> mixin</strong> to make our <code class="language-plaintext highlighter-rouge">.col-auto</code> class available with custom HTML.</li>
+  <li>Fixed an issue with Microsoft Edge not picking up <code class="language-plaintext highlighter-rouge">:disabled</code> styles by moving selectors to <code class="language-plaintext highlighter-rouge">[disabled]</code>.</li>
+  <li><strong>Deprecated:</strong> <code class="language-plaintext highlighter-rouge">bg-variant()</code>, <code class="language-plaintext highlighter-rouge">nav-divider()</code>, and <code class="language-plaintext highlighter-rouge">form-control-focus()</code> mixins are now deprecated as they’re going away in v5.</li>
+  <li>Updated our spacing and alignment for modal footer elements like buttons to automatically wrap when space is constrained.</li>
+  <li>More flexible form control validation styles thanks to fewer chained selectors. Also updated the <code class="language-plaintext highlighter-rouge">:invalid</code> validation icon to be an alert instead of an <code class="language-plaintext highlighter-rouge">&amp;times;</code> to avoid confusion with browser functionality for clearing the form field value.</li>
+  <li>Fixed a couple dozen CSS and JS bugs.</li>
+  <li>Moved to GitHub Actions for CI/CD! Expect more updates to our CI setup over time here while Actions evolves.</li>
+  <li>Updated documentation to fix links and typos, improved landmarks for secondary navigation, and a new security doc for guidelines on reporting potential vulnerabilities.</li>
+</ul>
+
+<p>We’ve shipped a lot more in this release, so be sure to check out the <a href="https://github.com/twbs/bootstrap/issues?q=project%3Atwbs%2Fbootstrap%2F18+is%3Aclosed+sort%3Aupdated-desc">v4.4.0 ship list of closed issues and merged pull requests</a> for more details.</p>
+
+<p><a href="https://getbootstrap.com/docs/4.4/">Head to to the v4.4.0 docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the BootstrapCDN and Rubygems.</p>
+
+<h2 id="support-the-team">Support the team</h2>
+
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>’ GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div>
+
+      <div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2019/07/24/lts-plan/">
             Introducing our Long Term Support plan
           </a>
@@ -170,7 +227,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Wed, 24 Jul 2019 00:00:00 +0000">
@@ -183,7 +240,7 @@
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/2HuiH-0R6a0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/2HuiH-0R6a0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -405,81 +462,6 @@
 <p>Stay tuned for a preview of the plans for v5 in the new year. We’ll share via an issue, ask for feedback, and then settle in to development mode.</p>
 
 <p>Happy holidays, and happy new year to everyone! Thanks for continuing to make Bootstrap an amazing project and community.</p>
-
-      </div>
-
-      <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2018/12/13/bootstrap-3-4-0/">
-            Bootstrap 3.4.0
-          </a>
-        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 13 Dec 2018 00:00:00 +0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    December 13, 2018
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/8WEtxJ4-sh4?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>That’s not a typo—today we’re shipping Bootstrap 3.4.0, a long overdue update to address some quality of life issues, XSS fixes, and build tooling updates to make it easier for us, and you, to develop.</p>
-
-<p>While we’d planned for ages to do a fresh v3.x update, we lost steam as energy was focused on all the work in v4. Early this year, <a href="https://github.com/twbs/bootstrap/issues/25679">one issue in particular</a> gained a ton of momentum from the community and the core team decided to do a huge push to pull together a solid release. I regret the time it took to pull this release together, especially given the security fixes, but with the improvements under the hood, v3 has never been easier to develop and maintain. Thanks for your continued support along the way!</p>
-
-<p>Keep reading for what’s changed and a look ahead at what’s coming in v4.2.0.</p>
-
-<h2 id="whats-new">What’s new</h2>
-
-<p>While we haven’t publicly worked on v3.x in years, we’ve heard from all of you during that time that we needed to do a new release to address</p>
-
-<ul>
-  <li><strong>New:</strong> Added a <code class="language-plaintext highlighter-rouge">.row-no-gutters</code> class.</li>
-  <li><strong>New:</strong> Added docs searching via Algolia.</li>
-  <li><strong>Fixed:</strong> Resolved an XSS issue in Alert, Carousel, Collapse, Dropdown, Modal, and Tab components. See <a href="https://snyk.io/vuln/npm:bootstrap:20160627">https://snyk.io/vuln/npm:bootstrap:20160627</a> for details.</li>
-  <li><strong>Fixed:</strong> Added padding to <code class="language-plaintext highlighter-rouge">.navbar-fixed-*</code> on modal open</li>
-  <li><strong>Fixed:</strong> Removed the double border on <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code> elements.</li>
-  <li>Removed Gist creation in web-based Customizer since anonymous gists were disabled long ago by GitHub.</li>
-  <li>Removed drag and drop support from Customizer since it didn’t work anymore.</li>
-</ul>
-
-<p>Our documentation and tooling saw massive updates as well to make it easier to work on v3.x, for ourselves and for you.</p>
-
-<ul>
-  <li>Added a dropdown to the docs nav for newer and previous versions.</li>
-  <li>Update the docs to use a new <code class="language-plaintext highlighter-rouge">baseurl</code>, <code class="language-plaintext highlighter-rouge">/docs/3.4/</code>, to version the v3.x documentation like we do with v4.</li>
-  <li>Reorganized the v3 docs CSS to use Less.</li>
-  <li>Switched to BrowserStack for tests.</li>
-  <li>Updated links to always use https and fix broken URLs.</li>
-  <li>Replaced ZeroClipboard with clipboard.js</li>
-</ul>
-
-<p><a href="https://getbootstrap.com/docs/3.4/">Head to the Bootstrap 3.4 docs</a> to see the latest in action. <a href="https://github.com/twbs/bootstrap/pull/27288">Check out the v3.4.0 pull request</a> for even more context on what’s changed.</p>
-
-<h2 id="upgrading">Upgrading</h2>
-
-<p>Upgrade your Bootstrap 3 projects to v3.4.0 with <code class="language-plaintext highlighter-rouge">npm i bootstrap@previous</code> or <code class="language-plaintext highlighter-rouge">npm i bootstrap@3.4.0</code>. This release won’t be available via Bower to start given the package manager was deprecated and has largely been unused by us in v4 for well over a year. Stay tuned for CDN and Rubygem updates.</p>
-
-<h2 id="open-collective">Open Collective</h2>
-
-<p>Also new with our v3.4 is the creation of an <a href="https://opencollective.com/bootstrap">Open Collective page</a> to help support the maintainers contributing to Bootstrap. The team has been very excited about this as a way to be transparent about maintainer costs (both time and money), as well as recognition of efforts.</p>
-
-<h2 id="v42-and-beyond">v4.2 and beyond</h2>
-
-<p>We’ve been working on a <a href="https://github.com/twbs/bootstrap/projects/6?fullscreen=true">huge v4.2 update</a> for several months now. Our attention has largely been on advancing the project and simplifying it’s dependencies, namely by removing our jQuery dependency. That work has sparked a keen interest in a moderately scoped v5 release, so we’ve been taking our sweet time with v4.2 to sneak in as many new features as we can.</p>
-
-<p>After we ship v4.2, we’ll plan for point releases to address any bugs and improvements as y’all start to use the new version. From there, we’ll start to share more plans on v5 to remove jQuery, drop support for older browsers, and clear up some cruft. This won’t be a sweeping rewrite, but rather an iterative improvement on v4. Stay tuned!</p>
 
       </div>
   </div>
