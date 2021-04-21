@@ -18,7 +18,7 @@ GEM
     ffi-win32-extensions (1.0.4)
       ffi
     forwardable-extended (2.6.0)
-    html-proofer (3.19.0)
+    html-proofer (3.19.1)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -123,7 +123,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  html-proofer (~> 3.19.0)
+  html-proofer (~> 3.19.1)
   jekyll (~> 4.2.0)
   jekyll-feed (~> 0.15.1)
   jekyll-paginate (~> 1.1.0)
