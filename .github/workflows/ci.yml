@@ -58,7 +58,7 @@ jobs:
           path: ./_site/
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3.8.0
         if: success()
         with:
           allow_empty_commit: false
