@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-05-13T04:56:38+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap Icons v1.5.0</title><link href="https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.5.0" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/">&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.5.0&lt;/a&gt; adds 45 new icons across a few categories as I continue to round out the set. Keep reading ot see what’s new!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-05-13T16:31:44+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap 5.0.1</title><link href="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/" rel="alternate" type="text/html" title="Bootstrap 5.0.1" /><published>2021-05-13T00:00:00+00:00</published><updated>2021-05-13T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/">&lt;p&gt;Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.&lt;/p&gt;
+
+&lt;h2 id=&quot;changelog&quot;&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixed an issue where dropdowns wouldn’t close after clicking into an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Validated inputs in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.input-group&lt;/code&gt;s no longer render behind sibling elements&lt;/li&gt;
+  &lt;li&gt;Prevent &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;accent-bg&lt;/code&gt; from leaking in nested tables&lt;/li&gt;
+  &lt;li&gt;Modal backdrops no longer throw Uncaught TypeError when initialized through JS&lt;/li&gt;
+  &lt;li&gt;Refactored disposing properties into the base component&lt;/li&gt;
+  &lt;li&gt;Extracted static &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DATA_KEY&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EVENT_KEY&lt;/code&gt; to the base component&lt;/li&gt;
+  &lt;li&gt;Merged &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transitionend&lt;/code&gt; listener callbacks into one method&lt;/li&gt;
+  &lt;li&gt;Popovers and tooltips have a streamlined config property&lt;/li&gt;
+  &lt;li&gt;Toasts no longer automatically hide on focus or hover&lt;/li&gt;
+  &lt;li&gt;No longer redefining &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$list-group-color&lt;/code&gt; in the list group loop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Our docs and examples also received a few updates:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixed Sidebars example not rendering correctly in Chrome&lt;/li&gt;
+  &lt;li&gt;Fixed RTLCSS &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stringMap&lt;/code&gt; configuration snippet&lt;/li&gt;
+  &lt;li&gt;Updated offcanvas navbar example to prevent console error&lt;/li&gt;
+  &lt;li&gt;Fixed miscellaneous typos, grammatical errors, and links in the Migration guide&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr class=&quot;my-5&quot; /&gt;
+
+&lt;p&gt;Head to GitHub for a complete &lt;a href=&quot;https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F38&quot;&gt;list of issues and pull requests in v5.0.1&lt;/a&gt;. You can also review the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/38&quot;&gt;v5.0.1 project board&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-the-release&quot;&gt;Get the release&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&quot;https://getbootstrap.com&quot;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It’s also been pushed to npm:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v5.0.1&quot;&gt;Review the GitHub v5.0.1 release changelog&lt;/a&gt; for a complete list of changes since our last release.&lt;/p&gt;
+
+&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
+
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.5.0</title><link href="https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.5.0" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/">&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.5.0&lt;/a&gt; adds 45 new icons across a few categories as I continue to round out the set. Keep reading ot see what’s new!&lt;/p&gt;
 
 &lt;h2 id=&quot;45-new-icons&quot;&gt;45 new icons&lt;/h2&gt;
 
@@ -925,11 +966,4 @@
 
 &lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
 
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.2.1</title><link href="https://blog.getbootstrap.com/2020/12/12/bootstrap-icons-1-2-1/" rel="alternate" type="text/html" title="Bootstrap Icons v1.2.1" /><published>2020-12-12T21:30:00+00:00</published><updated>2020-12-12T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/12/12/bootstrap-icons-1-2-1</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/12/12/bootstrap-icons-1-2-1/">&lt;p&gt;Just a quick release to fix a typo in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt; for including the font files in our published package.&lt;/p&gt;
-
-&lt;p&gt;Get it via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.2.1&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.2.1/bootstrap-icons-1.2.1.zip&quot;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Just a quick release to fix a typo in our package.json for including the font files in our published package.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
