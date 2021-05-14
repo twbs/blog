@@ -18,8 +18,8 @@ sass:
 host:           localhost # same as default value '127.0.0.1' but reads better
 
 # Links
-current_version: "4.6.0"
-docs_version:    "4.6"
+current_version: "5.0.1"
+docs_version:    "5.0"
 
 assets:
   css:
