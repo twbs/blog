@@ -6,7 +6,7 @@ date: 2021-05-10
 author: mdo
 ---
 
-[Bootstrap Icons v1.5.0](https://icons.getbootstrap.com) adds 45 new icons across a few categories as I continue to round out the set. Keep reading ot see what's new!
+[Bootstrap Icons v1.5.0](https://icons.getbootstrap.com) adds 45 new icons across a few categories as I continue to round out the set. Keep reading to see what's new!
 
 ## 45 new icons
 
