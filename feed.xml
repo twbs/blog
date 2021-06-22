@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-05-21T04:53:21+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap 5.0.1</title><link href="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/" rel="alternate" type="text/html" title="Bootstrap 5.0.1" /><published>2021-05-13T00:00:00+00:00</published><updated>2021-05-13T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/">&lt;p&gt;Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-06-22T18:47:01+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap 5.0.2</title><link href="https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/" rel="alternate" type="text/html" title="Bootstrap 5.0.2" /><published>2021-06-22T00:00:00+00:00</published><updated>2021-06-22T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/">&lt;p&gt;Our latest patch release has arrived to improve our JavaScript plugins, address the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.&lt;/p&gt;
+
+&lt;h2 id=&quot;sass-division&quot;&gt;Sass division&lt;/h2&gt;
+
+&lt;p&gt;One of the biggest fixes in Bootstrap v5.0.2 patches the deprecation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; for performing division in Sass. The Dart Sass team deprecated it due to the use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; characters in actual CSS (e.g., &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/background&quot;&gt;separating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background&lt;/code&gt; values&lt;/a&gt;). The bad news was this shipped with deprecation notices, which in our case heavily polluted the build process for everyone. Our potential solutions included:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ignore it entirely and silence the deprecation warnings&lt;/li&gt;
+  &lt;li&gt;Drop implicit support for LibSass and use the Dart Sass math module&lt;/li&gt;
+  &lt;li&gt;Figure out a custom fix to keep the widest possible Sass support&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We chose the third option—keeping support for both LibSass and Dart Sass, even though the former is deprecated. There are many projects out there that simply haven’t or cannot update to Dart Sass (including Hugo, which we use to build our docs).&lt;/p&gt;
+
+&lt;p&gt;Our solution meant rolling a custom &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;divide()&lt;/code&gt; function and replacing division with multiplication wherever possible. We wanted to limit the use of a custom function, so the situations where we used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$value / 2&lt;/code&gt; were replaced with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$value * .5&lt;/code&gt;. This custom function has also been added to the &lt;a href=&quot;https://github.com/twbs/rfs&quot;&gt;RFS project&lt;/a&gt; in a new release. While the precision in our compiled CSS has been reduced by two decimal places, the output remains otherwise unchanged.&lt;/p&gt;
+
+&lt;p&gt;If you have any ideas or suggestions on further improvements, please don’t hesitate to &lt;a href=&quot;https://github.com/twbs/bootstrap/issues/new/choose&quot;&gt;open an issue&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;highlights&quot;&gt;Highlights&lt;/h2&gt;
+
+&lt;p&gt;Here are some highlights from the changelog.&lt;/p&gt;
+
+&lt;h3 id=&quot;css&quot;&gt;CSS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixed deprecation warnings in Sass for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; division. Replaced most &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; division with multiplication and added a custom &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;divide()&lt;/code&gt; function to avoid adding Dart Sass modules (as this would negate the usage of LibSass).&lt;/li&gt;
+  &lt;li&gt;Individual &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.col-*&lt;/code&gt; grid classes can now override &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.row-cols&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Updated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;line-height&lt;/code&gt; for floating forms to fix cut-off select menu text.&lt;/li&gt;
+  &lt;li&gt;Added missing transition to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.form-select&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Fixed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dropdowns-menu-*&lt;/code&gt; position in RTL.&lt;/li&gt;
+  &lt;li&gt;Decoupled &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--bs-table-bg&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--bs-table-accent-bg&lt;/code&gt; to separate table accent highlights.&lt;/li&gt;
+  &lt;li&gt;Improved support for complex expressions in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subtract()&lt;/code&gt; functions.&lt;/li&gt;
+  &lt;li&gt;Fixed horizontal padding for select elements in Firefox.&lt;/li&gt;
+  &lt;li&gt;Updated border color for popover header to match the outer border.&lt;/li&gt;
+  &lt;li&gt;Fixed offcanvas header alignment for RTL.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;javascript&quot;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Popovers now remove titles or content when they’re empty instead of returning empty HTML elements.&lt;/li&gt;
+  &lt;li&gt;Dropdown items are now automatically selected when using arrow keys.&lt;/li&gt;
+  &lt;li&gt;We now register only one &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DOMContentLoaded&lt;/code&gt; event listener in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onDOMContentLoaded&lt;/code&gt; utility function.&lt;/li&gt;
+  &lt;li&gt;Fixed arrow keys breaking animation when the carousel sliding.&lt;/li&gt;
+  &lt;li&gt;Fixed handling of transitioned events dispatched by nested elements (e.g., modals didn’t transition when clicking buttons).&lt;/li&gt;
+  &lt;li&gt;Fixed backdrop errors with stale body cause by unnecessary default and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;removeChild&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Fixed issue where the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;show.bs.modal&lt;/code&gt; event with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.fade&lt;/code&gt; class prevented modals from being displayed again.&lt;/li&gt;
+  &lt;li&gt;Fixed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;isVisible&lt;/code&gt; false positives.&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getOrCreateInstance&lt;/code&gt; method in our base component that is applied to all components.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;docs&quot;&gt;Docs&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Documented how to make utilities responsive using the API. Also added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!important&lt;/code&gt; to the sample output CSS and mentioned the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$enable-important-utilities&lt;/code&gt; global setting.&lt;/li&gt;
+  &lt;li&gt;Added a mention of the breakpoint mixins changes from v4 to the migration guide.&lt;/li&gt;
+  &lt;li&gt;Added a new example of positioned badges to the docs.&lt;/li&gt;
+  &lt;li&gt;Clarified variable overrides in the Customizing &amp;gt; Sass page.&lt;/li&gt;
+  &lt;li&gt;Replaced Freenode with Libera IRC server.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr class=&quot;my-4&quot; /&gt;
+
+&lt;p&gt;Head to GitHub for a complete &lt;a href=&quot;https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F41&quot;&gt;list of issues and pull requests in v5.0.2&lt;/a&gt;. You can also review the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/41&quot;&gt;v5.0.2 project board&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-the-release&quot;&gt;Get the release&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&quot;https://getbootstrap.com&quot;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It’s also been pushed to npm:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v5.0.2&quot;&gt;Review the v5.0.2 release changelog&lt;/a&gt; for a complete list of changes.&lt;/p&gt;
+
+&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
+
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our latest patch release has arrived to improve our JavaScript plugins, address the / deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 5.0.1</title><link href="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/" rel="alternate" type="text/html" title="Bootstrap 5.0.1" /><published>2021-05-13T00:00:00+00:00</published><updated>2021-05-13T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/">&lt;p&gt;Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.&lt;/p&gt;
 
 &lt;h2 id=&quot;changelog&quot;&gt;Changelog&lt;/h2&gt;
 
@@ -39,7 +115,7 @@
 
 &lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
 
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.5.0</title><link href="https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.5.0" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/">&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.5.0&lt;/a&gt; adds 45 new icons across a few categories as I continue to round out the set. Keep reading ot see what’s new!&lt;/p&gt;
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.5.0</title><link href="https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.5.0" /><published>2021-05-10T00:00:00+00:00</published><updated>2021-05-10T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/">&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.5.0&lt;/a&gt; adds 45 new icons across a few categories as I continue to round out the set. Keep reading to see what’s new!&lt;/p&gt;
 
 &lt;h2 id=&quot;45-new-icons&quot;&gt;45 new icons&lt;/h2&gt;
 
@@ -78,7 +154,7 @@
 
 &lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
 
-&lt;p&gt;The Figma file is now published to the Figma Community! It’s the same &lt;a href=&quot;https://www.figma.com/community/file/972989644486753519/Bootstrap-Icons-v1.5.0&quot;&gt;Bootstrap Icons Figma file&lt;/a&gt; you’ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Bootstrap Icons v1.5.0 adds 45 new icons across a few categories as I continue to round out the set. Keep reading ot see what’s new!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 5</title><link href="https://blog.getbootstrap.com/2021/05/05/bootstrap-5/" rel="alternate" type="text/html" title="Bootstrap 5" /><published>2021-05-05T09:30:00+00:00</published><updated>2021-05-05T09:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/05/bootstrap-5</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/05/bootstrap-5/">&lt;p&gt;Bootstrap 5 has officially landed! After three alphas, three betas, and several months of hard work, we’re shipping the first stable release of our new major version. It’s been a wild ride made possible by our maintainers and the amazing community that uses and contributes to Bootstrap. Thanks to all who have helped us get here!&lt;/p&gt;
+&lt;p&gt;The Figma file is now published to the Figma Community! It’s the same &lt;a href=&quot;https://www.figma.com/community/file/972989644486753519/Bootstrap-Icons-v1.5.0&quot;&gt;Bootstrap Icons Figma file&lt;/a&gt; you’ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Bootstrap Icons v1.5.0 adds 45 new icons across a few categories as I continue to round out the set. Keep reading to see what’s new!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 5</title><link href="https://blog.getbootstrap.com/2021/05/05/bootstrap-5/" rel="alternate" type="text/html" title="Bootstrap 5" /><published>2021-05-05T09:30:00+00:00</published><updated>2021-05-05T09:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/05/05/bootstrap-5</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/05/05/bootstrap-5/">&lt;p&gt;Bootstrap 5 has officially landed! After three alphas, three betas, and several months of hard work, we’re shipping the first stable release of our new major version. It’s been a wild ride made possible by our maintainers and the amazing community that uses and contributes to Bootstrap. Thanks to all who have helped us get here!&lt;/p&gt;
 
 &lt;p&gt;Keep reading for details on what’s new compared to v4 and what’s coming for subsequent releases. Want to get right to it? &lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com&quot;&gt;Head to the new v5 docs&lt;/a&gt;&lt;/strong&gt; or fly by the seat of your pants and just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm i bootstrap&lt;/code&gt;.&lt;/p&gt;
 
@@ -920,50 +996,4 @@
 
 &lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
 
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Say hello to over 60 new icons with Bootstrap Icons v1.3.0! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.2.2</title><link href="https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/" rel="alternate" type="text/html" title="Bootstrap Icons v1.2.2" /><published>2020-12-23T21:30:00+00:00</published><updated>2020-12-23T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/">&lt;p&gt;We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.&lt;/p&gt;
-
-&lt;p&gt;We also snuck in a few bug fixes to existing icons, docs, and some slight visual improvements to some existing icons. Get the details below!&lt;/p&gt;
-
-&lt;h2 id=&quot;font-files&quot;&gt;Font files&lt;/h2&gt;
-
-&lt;p&gt;Our icons fonts are (fingers crossed!) free of visual glitches that made so many unusable across Windows devices. For some reason macOS and iOS had no problems, but Windows butchered the font files. Turns out this was a result of inconsistent &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule&quot;&gt;fill-rule&lt;/a&gt; values in our icons, and some font formats and renderers only support a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;non-zero&lt;/code&gt; fill rule. We revisited nearly every icon and got it all sorted out.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/icons-font-index.png&quot; alt=&quot;Icon fonts&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Massive shoutout to the &lt;a href=&quot;https://www.figma.com/community/plugin/771155994770327940&quot;&gt;Figma Fill Rule Editor plugin&lt;/a&gt; that made this relatively quick and painless to update. &lt;em&gt;You can even see in the plugin’s image below how this rule affects rendering of SVGs.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.figma.com/community/plugin/771155994770327940&quot;&gt;&lt;img src=&quot;/assets/img/2020/12/figma-fill-rule-editor.png&quot; alt=&quot;Figma Fill Rule Editor plugin&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/twbs/icons/pull/552&quot;&gt;Check out the PR&lt;/a&gt; for what’s changed under the hood.&lt;/p&gt;
-
-&lt;h2 id=&quot;updated-icons&quot;&gt;Updated icons&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/icons-realigned.png&quot; alt=&quot;Revised icons&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A few icons got touched up with the work for our font files to clean up paths and make them more visually pleasing.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Locks are a little more legible—they’re taller and narrower.&lt;/li&gt;
-  &lt;li&gt;Laptops now have a half pixel gap between their base and screen, making them look a little sleeker.&lt;/li&gt;
-  &lt;li&gt;Shields are 1px taller now, with their inner icons now raised 1px as well. No reason to make them not take up the full viewBox.&lt;/li&gt;
-  &lt;li&gt;Stopwatch icons look more like actual stopwatches with separate start/stop and lap buttons.&lt;/li&gt;
-  &lt;li&gt;The bricks icon has its missing grout line restored.&lt;/li&gt;
-  &lt;li&gt;Renamed patch fill icons to fix typos in their file names (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fll&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fill&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Have some other refinements we should consider? Open an issue to tell us about it.&lt;/p&gt;
-
-&lt;p&gt;Last but not least, we ironed out some docs issues. Our navbar is fully functional and inline with the v5 beta site. We also added &lt;a href=&quot;https://github.com/twbs/icons/pull/561&quot;&gt;new aliases&lt;/a&gt; for icon filtering on homepage.&lt;/p&gt;
-
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;To get started, install via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.2.2&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.2.2/bootstrap-icons-1.2.2.zip&quot;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-
-&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
-
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Say hello to over 60 new icons with Bootstrap Icons v1.3.0! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

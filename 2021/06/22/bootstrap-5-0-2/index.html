@@ -21,28 +21,28 @@
     <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Bootstrap 5.0.1 | Bootstrap Blog</title>
+<title>Bootstrap 5.0.2 | Bootstrap Blog</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Bootstrap 5.0.1" />
+<meta property="og:title" content="Bootstrap 5.0.2" />
 <meta name="author" content="Mark Otto" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples." />
-<meta property="og:description" content="Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples." />
-<link rel="canonical" href="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/" />
-<meta property="og:url" content="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/" />
+<meta name="description" content="Our latest patch release has arrived to improve our JavaScript plugins, address the / deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements." />
+<meta property="og:description" content="Our latest patch release has arrived to improve our JavaScript plugins, address the / deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements." />
+<link rel="canonical" href="https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/" />
 <meta property="og:site_name" content="Bootstrap Blog" />
 <meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
 <meta property="og:image:height" content="500" />
 <meta property="og:image:width" content="1000" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-05-13T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-06-22T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="twitter:title" content="Bootstrap 5.0.1" />
+<meta property="twitter:title" content="Bootstrap 5.0.2" />
 <meta name="twitter:site" content="@getbootstrap" />
 <meta name="twitter:creator" content="@mdo" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Mark Otto"},"image":{"width":1000,"height":500,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"description":"Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.","headline":"Bootstrap 5.0.1","dateModified":"2021-05-13T00:00:00+00:00","url":"https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/","datePublished":"2021-05-13T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Mark Otto"},"image":{"width":1000,"height":500,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"description":"Our latest patch release has arrived to improve our JavaScript plugins, address the / deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.","headline":"Bootstrap 5.0.2","dateModified":"2021-06-22T00:00:00+00:00","url":"https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/","datePublished":"2021-06-22T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -156,7 +156,7 @@
     <div class="container">
       <div class="posts-container px-3 mx-auto my-5">
   <div class="post">
-    <h1 class="post-title fw-500">Bootstrap 5.0.1</h1>
+    <h1 class="post-title fw-500">Bootstrap 5.0.2</h1>
     <div class="d-flex align-items-center mb-4 text-muted author-info">
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
@@ -164,47 +164,82 @@
                            alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 13 May 2021 00:00:00 +0000">
+  <span class="d-flex align-items-center ml-3" title="Tue, 22 Jun 2021 00:00:00 +0000">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
 </svg>
 
-    May 13, 2021
+    June 22, 2021
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/gAjR4_CbPpQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/6S3ISlvlEbs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
-<p>Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.</p>
+<p>Our latest patch release has arrived to improve our JavaScript plugins, address the <code class="language-plaintext highlighter-rouge">/</code> deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.</p>
 
-<h2 id="changelog">Changelog</h2>
+<h2 id="sass-division">Sass division</h2>
+
+<p>One of the biggest fixes in Bootstrap v5.0.2 patches the deprecation of <code class="language-plaintext highlighter-rouge">/</code> for performing division in Sass. The Dart Sass team deprecated it due to the use of <code class="language-plaintext highlighter-rouge">/</code> characters in actual CSS (e.g., <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">separating <code class="language-plaintext highlighter-rouge">background</code> values</a>). The bad news was this shipped with deprecation notices, which in our case heavily polluted the build process for everyone. Our potential solutions included:</p>
+
+<ol>
+  <li>Ignore it entirely and silence the deprecation warnings</li>
+  <li>Drop implicit support for LibSass and use the Dart Sass math module</li>
+  <li>Figure out a custom fix to keep the widest possible Sass support</li>
+</ol>
+
+<p>We chose the third option—keeping support for both LibSass and Dart Sass, even though the former is deprecated. There are many projects out there that simply haven’t or cannot update to Dart Sass (including Hugo, which we use to build our docs).</p>
+
+<p>Our solution meant rolling a custom <code class="language-plaintext highlighter-rouge">divide()</code> function and replacing division with multiplication wherever possible. We wanted to limit the use of a custom function, so the situations where we used <code class="language-plaintext highlighter-rouge">$value / 2</code> were replaced with <code class="language-plaintext highlighter-rouge">$value * .5</code>. This custom function has also been added to the <a href="https://github.com/twbs/rfs">RFS project</a> in a new release. While the precision in our compiled CSS has been reduced by two decimal places, the output remains otherwise unchanged.</p>
+
+<p>If you have any ideas or suggestions on further improvements, please don’t hesitate to <a href="https://github.com/twbs/bootstrap/issues/new/choose">open an issue</a>.</p>
+
+<h2 id="highlights">Highlights</h2>
+
+<p>Here are some highlights from the changelog.</p>
+
+<h3 id="css">CSS</h3>
 
 <ul>
-  <li>Fixed an issue where dropdowns wouldn’t close after clicking into an <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code></li>
-  <li>Validated inputs in <code class="language-plaintext highlighter-rouge">.input-group</code>s no longer render behind sibling elements</li>
-  <li>Prevent <code class="language-plaintext highlighter-rouge">accent-bg</code> from leaking in nested tables</li>
-  <li>Modal backdrops no longer throw Uncaught TypeError when initialized through JS</li>
-  <li>Refactored disposing properties into the base component</li>
-  <li>Extracted static <code class="language-plaintext highlighter-rouge">DATA_KEY</code> and <code class="language-plaintext highlighter-rouge">EVENT_KEY</code> to the base component</li>
-  <li>Merged <code class="language-plaintext highlighter-rouge">transitionend</code> listener callbacks into one method</li>
-  <li>Popovers and tooltips have a streamlined config property</li>
-  <li>Toasts no longer automatically hide on focus or hover</li>
-  <li>No longer redefining <code class="language-plaintext highlighter-rouge">$list-group-color</code> in the list group loop</li>
+  <li>Fixed deprecation warnings in Sass for <code class="language-plaintext highlighter-rouge">/</code> division. Replaced most <code class="language-plaintext highlighter-rouge">/</code> division with multiplication and added a custom <code class="language-plaintext highlighter-rouge">divide()</code> function to avoid adding Dart Sass modules (as this would negate the usage of LibSass).</li>
+  <li>Individual <code class="language-plaintext highlighter-rouge">.col-*</code> grid classes can now override <code class="language-plaintext highlighter-rouge">.row-cols</code>.</li>
+  <li>Updated <code class="language-plaintext highlighter-rouge">line-height</code> for floating forms to fix cut-off select menu text.</li>
+  <li>Added missing transition to <code class="language-plaintext highlighter-rouge">.form-select</code>.</li>
+  <li>Fixed <code class="language-plaintext highlighter-rouge">.dropdowns-menu-*</code> position in RTL.</li>
+  <li>Decoupled <code class="language-plaintext highlighter-rouge">--bs-table-bg</code> and <code class="language-plaintext highlighter-rouge">--bs-table-accent-bg</code> to separate table accent highlights.</li>
+  <li>Improved support for complex expressions in <code class="language-plaintext highlighter-rouge">add()</code> and <code class="language-plaintext highlighter-rouge">subtract()</code> functions.</li>
+  <li>Fixed horizontal padding for select elements in Firefox.</li>
+  <li>Updated border color for popover header to match the outer border.</li>
+  <li>Fixed offcanvas header alignment for RTL.</li>
 </ul>
 
-<p>Our docs and examples also received a few updates:</p>
+<h3 id="javascript">JavaScript</h3>
 
 <ul>
-  <li>Fixed Sidebars example not rendering correctly in Chrome</li>
-  <li>Fixed RTLCSS <code class="language-plaintext highlighter-rouge">stringMap</code> configuration snippet</li>
-  <li>Updated offcanvas navbar example to prevent console error</li>
-  <li>Fixed miscellaneous typos, grammatical errors, and links in the Migration guide</li>
+  <li>Popovers now remove titles or content when they’re empty instead of returning empty HTML elements.</li>
+  <li>Dropdown items are now automatically selected when using arrow keys.</li>
+  <li>We now register only one <code class="language-plaintext highlighter-rouge">DOMContentLoaded</code> event listener in <code class="language-plaintext highlighter-rouge">onDOMContentLoaded</code> utility function.</li>
+  <li>Fixed arrow keys breaking animation when the carousel sliding.</li>
+  <li>Fixed handling of transitioned events dispatched by nested elements (e.g., modals didn’t transition when clicking buttons).</li>
+  <li>Fixed backdrop errors with stale body cause by unnecessary default and <code class="language-plaintext highlighter-rouge">removeChild</code>.</li>
+  <li>Fixed issue where the <code class="language-plaintext highlighter-rouge">show.bs.modal</code> event with the <code class="language-plaintext highlighter-rouge">.fade</code> class prevented modals from being displayed again.</li>
+  <li>Fixed <code class="language-plaintext highlighter-rouge">isVisible</code> false positives.</li>
+  <li>Added <code class="language-plaintext highlighter-rouge">getOrCreateInstance</code> method in our base component that is applied to all components.</li>
 </ul>
 
-<hr class="my-5" />
+<h3 id="docs">Docs</h3>
 
-<p>Head to GitHub for a complete <a href="https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F38">list of issues and pull requests in v5.0.1</a>. You can also review the <a href="https://github.com/twbs/bootstrap/projects/38">v5.0.1 project board</a>.</p>
+<ul>
+  <li>Documented how to make utilities responsive using the API. Also added <code class="language-plaintext highlighter-rouge">!important</code> to the sample output CSS and mentioned the <code class="language-plaintext highlighter-rouge">$enable-important-utilities</code> global setting.</li>
+  <li>Added a mention of the breakpoint mixins changes from v4 to the migration guide.</li>
+  <li>Added a new example of positioned badges to the docs.</li>
+  <li>Clarified variable overrides in the Customizing &gt; Sass page.</li>
+  <li>Replaced Freenode with Libera IRC server.</li>
+</ul>
+
+<hr class="my-4" />
+
+<p>Head to GitHub for a complete <a href="https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F41">list of issues and pull requests in v5.0.2</a>. You can also review the <a href="https://github.com/twbs/bootstrap/projects/41">v5.0.2 project board</a>.</p>
 
 <h2 id="get-the-release">Get the release</h2>
 
@@ -213,7 +248,7 @@
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i bootstrap
 </code></pre></div></div>
 
-<p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.0.1">Review the GitHub v5.0.1 release changelog</a> for a complete list of changes since our last release.</p>
+<p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.0.2">Review the v5.0.2 release changelog</a> for a complete list of changes.</p>
 
 <h2 id="support-the-team">Support the team</h2>
 
@@ -226,9 +261,9 @@
     <ul class="related-posts list-unstyled">
       <li>
         <h4>
-          <a href="/2021/06/22/bootstrap-5-0-2/">
-            Bootstrap 5.0.2
-            <small>22 Jun 2021</small>
+          <a href="/2021/05/13/bootstrap-5-0-1/">
+            Bootstrap 5.0.1
+            <small>13 May 2021</small>
           </a>
         </h4>
       </li><li>
