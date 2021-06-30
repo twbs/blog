@@ -14,12 +14,12 @@ GEM
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
-    ffi (1.15.0)
-    ffi (1.15.0-x64-mingw32)
+    ffi (1.15.3)
+    ffi (1.15.3-x64-mingw32)
     ffi-win32-extensions (1.0.4)
       ffi
     forwardable-extended (2.6.0)
-    html-proofer (3.19.1)
+    html-proofer (3.19.2)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -73,7 +73,7 @@ GEM
       mixlib-config (>= 2.2.1, < 4)
       mixlib-shellout
     mercenary (0.4.0)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.3)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
       tomlrb
@@ -84,10 +84,10 @@ GEM
       ffi-win32-extensions (~> 1.0.3)
       win32-process (~> 0.9)
       wmi-lite (~> 1.0)
-    nokogiri (1.11.5)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    nokogiri (1.11.5-x64-mingw32)
+    nokogiri (1.11.7-x64-mingw32)
       racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -124,7 +124,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  html-proofer (~> 3.19.1)
+  html-proofer (~> 3.19.2)
   jekyll (~> 4.2.0)
   jekyll-feed (~> 0.15.1)
   jekyll-paginate (~> 1.1.0)
