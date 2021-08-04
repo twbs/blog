@@ -1,4 +1,269 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-07-14T05:12:15+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap 5.0.2</title><link href="https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/" rel="alternate" type="text/html" title="Bootstrap 5.0.2" /><published>2021-06-22T00:00:00+00:00</published><updated>2021-06-22T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/">&lt;p&gt;Our latest patch release has arrived to improve our JavaScript plugins, address the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-08-04T15:54:17+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap 5.1.0</title><link href="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/" rel="alternate" type="text/html" title="Bootstrap 5.1.0" /><published>2021-08-04T00:00:00+00:00</published><updated>2021-08-04T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/">&lt;p&gt;The first minor release of Bootstrap 5 is here! v5.1.0 has arrived and is packed with exciting new features and improvements. There’s experimental support for CSS Grid, offcanvas in the navbar, a new placeholders component, horizontal collapse support, new helpers, new CSS variables in our utilities, refactored JavaScript, and more.&lt;/p&gt;
+
+&lt;hr class=&quot;my-4&quot; /&gt;
+
+&lt;p&gt;&lt;strong&gt;Jump to a section:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#css-grid&quot;&gt;CSS Grid&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#offcanvas-in-navbars&quot;&gt;Offcanvas in navbars&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#placeholders&quot;&gt;Placeholders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#horizontal-collapse&quot;&gt;Horizontal collapse&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#stack-and-vertical-rule-helpers&quot;&gt;Stack and vertical rule helpers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#new-css-variables&quot;&gt;New CSS variables&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#updated-bg--and-text--utilities&quot;&gt;Updated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bg-*&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-*&lt;/code&gt; utilities&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#four-new-examples&quot;&gt;Four new examples&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#modal-and-offcanvas-backdrops&quot;&gt;Modal and offcanvas backdrops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr class=&quot;my-4&quot; /&gt;
+
+&lt;h2 id=&quot;css-grid&quot;&gt;CSS Grid&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/layout/css-grid/&quot;&gt;
+  &lt;img src=&quot;/assets/img/2021/08/bootstrap-css-grid-docs.png&quot; alt=&quot;CSS Grid docs&quot; class=&quot;border&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We’ve added an experimental version of a &lt;a href=&quot;https://getbootstrap.com/docs/5.1/layout/css-grid/&quot;&gt;new CSS Grid&lt;/a&gt; as an &lt;strong&gt;opt-in replacement&lt;/strong&gt; to our default grid system. To enable it, disable the default grid, by setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$enable-grid-classes: false&lt;/code&gt; and enable the CSS Grid by setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$enable-cssgrid: true&lt;/code&gt;. Once recompiled, you’ll be able to switch to the new classes. Our new CSS Grid docs page has all the details and some helpful examples to get you started.&lt;/p&gt;
+
+&lt;p&gt;Shipping CSS Grid support as experimental allows us to play with things a bit without breaking backward compatibility for folks. Please help us out by testing it and sharing feedback. We expect it to go stable for widespread use in a future minor release.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/layout/css-grid/&quot;&gt;Read the Bootstrap CSS Grid docs&lt;/a&gt;&lt;/strong&gt; for more info.&lt;/p&gt;
+
+&lt;h2 id=&quot;offcanvas-in-navbars&quot;&gt;Offcanvas in navbars&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/components/navbar/#offcanvas&quot;&gt;
+  &lt;img src=&quot;/assets/img/2021/08/bootstrap-navbar-offcanvas.png&quot; alt=&quot;Offcanvas navbar example&quot; class=&quot;border&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We’ve expanded our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.navbar-expand-*&lt;/code&gt; classes (see what we did there?) to include support for offcanvases inside the navbar. Wrap your navbar elements with the appropriate offcanvas HTML, point your navbar toggler button to the offcanvas, and voila.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/components/navbar#offcanvas&quot;&gt;Head to the offcanvas navbar docs&lt;/a&gt;&lt;/strong&gt; for more information and a live demo.&lt;/p&gt;
+
+&lt;h2 id=&quot;placeholders&quot;&gt;Placeholders&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/components/placeholders/&quot;&gt;
+  &lt;img src=&quot;/assets/img/2021/08/bootstrap-placeholders.png&quot; alt=&quot;Placeholders example&quot; class=&quot;border&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There’s a new component in town with &lt;a href=&quot;https://getbootstrap.com/docs/5.1/components/placeholders/&quot;&gt;placeholders&lt;/a&gt;, a way to provide temporary blocks in lieu of real content to help indicate that something is still loading in your site or app. Our first iteration here aims to only provide the HTML and CSS—it’s up to you to implement these placeholders with whatever custom code you might need.&lt;/p&gt;
+
+&lt;p&gt;Consider the basic Bootstrap card component shown above.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-img-top&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-body&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h5&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Card title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h5&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-primary&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Go somewhere&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here it is rebuilt with glowing placeholder bars to indicate something is still loading.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-hidden=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-img-top&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-body&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h5&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-title placeholder-glow&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;placeholder col-6&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h5&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card-text placeholder-glow&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;placeholder col-7&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;placeholder col-4&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;placeholder col-4&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;placeholder col-6&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;placeholder col-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;tabindex=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;-1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-primary disabled placeholder col-6&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/components/placeholders/&quot;&gt;Head to the placeholder docs&lt;/a&gt;&lt;/strong&gt; to learn more.&lt;/p&gt;
+
+&lt;h2 id=&quot;horizontal-collapse&quot;&gt;Horizontal collapse&lt;/h2&gt;
+
+&lt;p&gt;Hot damn, we’ve finally added official support for &lt;a href=&quot;https://getbootstrap.com/docs/5.1/components/collapse/#horizontal&quot;&gt;horizontally collapsing&lt;/a&gt;! The collapse plugin has been able to detect &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt; vs &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;height&lt;/code&gt; for some time (even in v4), but we never had a working example in our docs until now. Add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.collapse-horizontal&lt;/code&gt; modifier class to transition the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;height&lt;/code&gt; and set a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt; on the immediate child element.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-primary&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-bs-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapse&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-bs-target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#collapseWidthExample&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-expanded=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;false&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-controls=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapseWidthExample&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  Toggle width collapse
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;min-height: 120px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapse collapse-horizontal&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;collapseWidthExample&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;card card-body&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width: 300px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Heads up!&lt;/strong&gt; You may need some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;min-height&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;height&lt;/code&gt; to avoid excessive browser repainting, as we’ve included in our demo above.&lt;/p&gt;
+
+&lt;h2 id=&quot;stack-and-vertical-rule-helpers&quot;&gt;Stack and vertical rule helpers&lt;/h2&gt;
+
+&lt;p&gt;While utilities get most of the spotlight these days, helpers are still incredibly useful. &lt;a href=&quot;https://getbootstrap.com/docs/5.1/helpers/stacks/&quot;&gt;Our newest helpers are called stacks&lt;/a&gt; and they’re shortcuts for vertical and horizontal stacks of elements. They’re inspired by the open source &lt;a href=&quot;https://almonk.github.io/pylon&quot;&gt;Pylon&lt;/a&gt; project, which was in turn inspired by iOS’s stacks. Right now, stacks aren’t responsive, but that can easily change with your feedback.&lt;/p&gt;
+
+&lt;p&gt;To create a vertical stack, wrap a series of elements in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.vstack&lt;/code&gt;. Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gap-*&lt;/code&gt; utilities on the parent (or set individual &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;margin&lt;/code&gt; utilities) to quickly space elements.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021/08/bootstrap-vstack.png&quot; alt=&quot;Bootstrap vstack example&quot; class=&quot;border&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;vstack gap-3&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bg-light border&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;First item&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bg-light border&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Second item&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bg-light border&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Third item&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Want a horizontal stack? Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.hstack&lt;/code&gt; instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021/08/bootstrap-hstack.png&quot; alt=&quot;Bootstrap vstack example&quot; class=&quot;border&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hstack gap-3&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bg-light border&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;First item&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bg-light border&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Second item&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bg-light border&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Third item&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To support these stacks, we’ve also added an additional new helper—&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.vr&lt;/code&gt;, or vertical rule. HTML has had native &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; elements for the longest time to create horizontal rules, but never anything for &lt;em&gt;vertical&lt;/em&gt; rules. The new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.vr&lt;/code&gt; helper works great in horizontal stacks and other situations where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;border&lt;/code&gt;s are a little trickier.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021/08/bootstrap-hstack-vr.png&quot; alt=&quot;Bootstrap vstack example&quot; class=&quot;border&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hstack gap-3&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;form-control me-auto&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Add your item here...&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-secondary&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Submit&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;vr&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-outline-danger&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Reset&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Learn more in the &lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/helpers/stacks/&quot;&gt;stacks helper docs&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-css-variables&quot;&gt;New CSS variables&lt;/h2&gt;
+
+&lt;p&gt;We’ve expanded our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:root&lt;/code&gt; CSS variables to include our gray color palette, new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; variables, and new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RGB&lt;/code&gt; variables for our theme colors. The grayscale colors join our existing color and theme color variables to complete the set of globally available CSS colors. As the development of v5 progresses, these variables will be used more and more in our components to better enable global theming.&lt;/p&gt;
+
+&lt;p&gt;Speaking of, our new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; CSS variables now control the styling of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt;. This is what you’ll find in the compiled CSS:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-body-font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-body-font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-body-font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-body-line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-body-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-body-text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-body-bg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;-webkit-text-size-adjust&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;-webkit-tap-highlight-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Like all our other &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:root&lt;/code&gt; CSS variables, the values for these are &lt;a href=&quot;https://getbootstrap.com/docs/5.1/content/reboot/#css-variables&quot;&gt;generated from our Sass variables&lt;/a&gt;. That means that no matter how you customize Bootstrap—via Sass or CSS variables—you haven’t lost any functionality or convenience.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/customize/css-variables/&quot;&gt;Read the CSS variables customization docs&lt;/a&gt;&lt;/strong&gt; for more info.&lt;/p&gt;
+
+&lt;h2 id=&quot;updated-bg--and-text--utilities&quot;&gt;Updated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bg-*&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-*&lt;/code&gt; utilities&lt;/h2&gt;
+
+&lt;p&gt;Our new RGB values are built to help us make better use of CSS variables across the entire project. To start, our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background-color&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color&lt;/code&gt; utilities have been updated to use these new RGB values for real-time customization without recompiling Sass and on-the-fly transparency for any background or text color.&lt;/p&gt;
+
+&lt;p&gt;Here’s how our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bg-*&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-*&lt;/code&gt; color utilities look now once compiled:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.bg-success&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;--bs-bg-opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-success-rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-bg-opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.text-primary&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;--bs-text-opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-primary-rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--bs-text-opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We use an RGB version of each color’s CSS variable and attach a second CSS variable, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--bs-text-opacity&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--bs-bg-opacity&lt;/code&gt;, for the alpha transparency (with a default value &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; thanks to a local CSS variable in the ruleset). That means anytime you use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-primary&lt;/code&gt; now, your computed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color&lt;/code&gt; value is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rgba(13, 110, 253, 1)&lt;/code&gt;. The local CSS variable inside each &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-*&lt;/code&gt; class helps avoid inheritance issues when nesting instances of these classes.&lt;/p&gt;
+
+&lt;p&gt;To support these changes, we’ve added some new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-opacity-*&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bg-opacity-*&lt;/code&gt; utilities. Choose from a predefined set (which you can modify in the utilities API) of classes to quickly change the local CSS variable when a given &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-*&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bg-*&lt;/code&gt; utility is used. For example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021/08/bootstrap-text-opacity.png&quot; alt=&quot;Bootstrap text opacity example&quot; class=&quot;border&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text-primary&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;This is default primary text&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text-primary text-opacity-75&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;This is 75% opacity primary text&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text-primary text-opacity-50&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;This is 50% opacity primary text&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text-primary text-opacity-25&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;This is 25% opacity primary text&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We expect this approach to make its way to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;border&lt;/code&gt; utilities next. Have more CSS variables you’d like to see added? Share your thoughts on a new issue on GitHub. Head to the &lt;a href=&quot;https://getbootstrap.com/docs/5.1/utilities/colors/#opacity&quot;&gt;color utilities&lt;/a&gt; or &lt;a href=&quot;https://getbootstrap.com/docs/5.1/utilities/background/#opacity&quot;&gt;background utilities&lt;/a&gt; docs to learn more.&lt;/p&gt;
+
+&lt;h2 id=&quot;four-new-examples&quot;&gt;Four new examples&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021/08/v510-examples.png&quot; alt=&quot;&quot; class=&quot;border&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We’ve expanded on our component examples with four new examples that customize some of our core components and implement common patterns. Here’s what’s new:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/examples/footers/&quot;&gt;Footers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/examples/dropdowns/&quot;&gt;Dropdowns&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/examples/list-groups/&quot;&gt;List groups&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/examples/modals/&quot;&gt;Modals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.1/examples/&quot;&gt;Explore all our examples&lt;/a&gt;&lt;/strong&gt; to see more.&lt;/p&gt;
+
+&lt;h2 id=&quot;modal-and-offcanvas-backdrops&quot;&gt;Modal and offcanvas backdrops&lt;/h2&gt;
+
+&lt;p&gt;We’ve variablized the class name for our backdrops that are used across our modal and offcanvas components. This comes with a new class for the offcanvas backdrop, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.offcanvas-backdrop&lt;/code&gt;, and perhaps more importantly, some updated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z-index&lt;/code&gt; values.&lt;/p&gt;
+
+&lt;p&gt;Previously, there was a single offcanvas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z-index&lt;/code&gt; between the modal and modal backdrop &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z-index&lt;/code&gt;s, due to offcanvas sharing the modal’s backdrop.&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Before v5.1.0&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$zindex-modal-backdrop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;       &lt;span class=&quot;m&quot;&gt;1040&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$zindex-offcanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;            &lt;span class=&quot;m&quot;&gt;1050&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$zindex-modal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;                &lt;span class=&quot;m&quot;&gt;1060&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We’ve changed this to allow offcanvases and modals to work together better with separate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z-index&lt;/code&gt; values for offcanvas, the offcanvas backdrop, modal, and the modal backdrop.&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// After v5.1.0&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$zindex-offcanvas-backdrop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;   &lt;span class=&quot;m&quot;&gt;1040&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$zindex-offcanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;            &lt;span class=&quot;m&quot;&gt;1045&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$zindex-modal-backdrop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;       &lt;span class=&quot;m&quot;&gt;1050&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$zindex-modal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;                &lt;span class=&quot;m&quot;&gt;1055&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Unless you’ve modified the offcanvas component or its Sass variables, there should be no breaking changes for you.&lt;/p&gt;
+
+&lt;h2 id=&quot;and-more&quot;&gt;And more!&lt;/h2&gt;
+
+&lt;p&gt;There’s a lot more in this release that we didn’t include in the highlights above:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reverted the ability for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.col-*&lt;/code&gt; classes to override &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.row-cols-*&lt;/code&gt; as it caused some breaking bugs in our layouts. We’ll revisit and restore it when we can engineer it in a more scalable and easy to maintain way.&lt;/li&gt;
+  &lt;li&gt;Added new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.opacity-*&lt;/code&gt; utilities (with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.25&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.5&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.75&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; default values).&lt;/li&gt;
+  &lt;li&gt;Updated several JavaScript plugins with some major cleanups—alerts, collapse, dropdowns, popovers, and tooltips.&lt;/li&gt;
+  &lt;li&gt;Plugins now accept arguments of different types in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getInstance&lt;/code&gt; method.&lt;/li&gt;
+  &lt;li&gt;Added new Sass maps for all our colors, as well as a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map-merge-multiple()&lt;/code&gt; function to combine Sass maps.&lt;/li&gt;
+  &lt;li&gt;Updated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-dismiss&lt;/code&gt; on modals so that it can be outside of a modal using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bs-target&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Updated toasts to change show timings and classes to keep toast &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display: none&lt;/code&gt; by default.&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tab&lt;/code&gt; keyboard support to modal and offcanvas components.&lt;/li&gt;
+  &lt;li&gt;Renamed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Build Tools&lt;/code&gt; page to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Contribute&lt;/code&gt; to better communicate its purpose.&lt;/li&gt;
+  &lt;li&gt;Fixed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Manipulator.offset()&lt;/code&gt; in Scrollspy to improve scroll position detection.&lt;/li&gt;
+  &lt;li&gt;Added examples of live alerts to the docs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;get-the-release&quot;&gt;Get the release&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&quot;https://getbootstrap.com&quot;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It’s also been pushed to npm:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v5.1.0&quot;&gt;Review the GitHub v5.1.0 release changelog&lt;/a&gt; for a complete list of changes since our last release.&lt;/p&gt;
+
+&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
+
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">The first minor release of Bootstrap 5 is here! v5.1.0 has arrived and is packed with exciting new features and improvements. There’s experimental support for CSS Grid, offcanvas in the navbar, a new placeholders component, horizontal collapse support, new helpers, new CSS variables in our utilities, refactored JavaScript, and more.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 5.0.2</title><link href="https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/" rel="alternate" type="text/html" title="Bootstrap 5.0.2" /><published>2021-06-22T00:00:00+00:00</published><updated>2021-06-22T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/">&lt;p&gt;Our latest patch release has arrived to improve our JavaScript plugins, address the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.&lt;/p&gt;
 
 &lt;h2 id=&quot;sass-division&quot;&gt;Sass division&lt;/h2&gt;
 
@@ -922,78 +1187,4 @@
 
 &lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
 
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.3.0</title><link href="https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.3.0" /><published>2021-01-07T21:30:00+00:00</published><updated>2021-01-07T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0/">&lt;p&gt;Say hello to over 60 new icons with &lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.3.0&lt;/a&gt;! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!&lt;/p&gt;
-
-&lt;p&gt;As usual, we also snuck in some bug fixes to existing icons and ours docs. After this release, we’re back to focusing on shipping updates to Bootstrap v5 and v4. More on that soon, and in the mean time, enjoy the new icons!&lt;/p&gt;
-
-&lt;h2 id=&quot;60-new-icons&quot;&gt;60+ new icons&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021/01/icons-130-new.png&quot; alt=&quot;New icons in v1.3.0&quot; style=&quot;border: 1px solid rgba(0,0,0,.15);&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s a look at the new icons in v1.3.0:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Added window-dock and window-sidebar&lt;/li&gt;
-  &lt;li&gt;Added two symmetry icons&lt;/li&gt;
-  &lt;li&gt;Added new stack icon&lt;/li&gt;
-  &lt;li&gt;Added two speedometer icons&lt;/li&gt;
-  &lt;li&gt;Added four save icons&lt;/li&gt;
-  &lt;li&gt;Added rulers icon&lt;/li&gt;
-  &lt;li&gt;Added filled variations for phone-vibrate, mouse, mouse2, mouse3, and four hand icons&lt;/li&gt;
-  &lt;li&gt;Added several border icons&lt;/li&gt;
-  &lt;li&gt;Added paint bucket&lt;/li&gt;
-  &lt;li&gt;Added four new badges (3D, AR, VR, WC)&lt;/li&gt;
-  &lt;li&gt;Added four lightbulb icons&lt;/li&gt;
-  &lt;li&gt;Added eyedropper&lt;/li&gt;
-  &lt;li&gt;Added mask icon&lt;/li&gt;
-  &lt;li&gt;Added three color palette icons&lt;/li&gt;
-  &lt;li&gt;Added layer-forward and layer-backward&lt;/li&gt;
-  &lt;li&gt;Added two eraser icons&lt;/li&gt;
-  &lt;li&gt;Added two megaphone icons&lt;/li&gt;
-  &lt;li&gt;Added four push pin icons&lt;/li&gt;
-  &lt;li&gt;Added Whatsapp and Telegram social icons&lt;/li&gt;
-  &lt;li&gt;Added dotted circle dash, circle plus, square dash, and square plus&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Have some ideas for new icons we should consider? Open an issue to tell us about it!&lt;/p&gt;
-
-&lt;h2 id=&quot;cdn-quickstart-with-icon-fonts&quot;&gt;CDN quickstart with icon fonts&lt;/h2&gt;
-
-&lt;p&gt;Since we added icon fonts in v1.2.0, it’s been possible to use a CDN to deliver and use Bootstrap Icons in seconds. Include the stylesheet, place short HTML snippets where you want icons, and you’re done! If you want to include it yourself, here’s how.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Include the Bootstrap Icons font stylesheet in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your website. Or, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@import&lt;/code&gt; to include the stylesheet that way.&lt;/p&gt;
-
-    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Option 1: Include in HTML --&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;/* Option 2: Import via CSS */&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&quot;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add HTML snippets to include Bootstrap Icons where desired.&lt;/p&gt;
-
-    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bi-alarm&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Want to see it in action? We’ve put together a helpful &lt;a href=&quot;https://codepen.io/emdeoh/pen/NWRzbKM&quot;&gt;CodePen demo for using Bootstrap Icons fonts via CDN&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;ProTip:&lt;/strong&gt; Most browsers do not allow SVG sprites to be used across domains, which is why having icon fonts (when SVGs are the preferrable and more accessible method of delivering icons) are so useful. Whenever possible, please use SVGs over icon fonts.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;To get started, install via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.3.0&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.3.0/bootstrap-icons-1.3.0.zip&quot;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-
-&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
-
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Say hello to over 60 new icons with Bootstrap Icons v1.3.0! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
