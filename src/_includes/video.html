@@ -2,5 +2,5 @@
   Accepts one param, "do_lazyload"
 {%- endcomment-%}
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item{% if include.do_lazyload == true %} lazy{% endif %}" {% if include.do_lazyload == true %}data-src{% else %}src{% endif %}="https://www.youtube-nocookie.com/embed/{{ post.video | default: page.video }}?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item{% if include.do_lazyload == true %} lazy{% endif %}" {% if include.do_lazyload == true %}data-src{% else %}src{% endif %}="https://www.youtube-nocookie.com/embed/{{ post.video | default: page.video }}?rel=0&start={{ post.video_start | default: page.video_start }}" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
