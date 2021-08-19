@@ -160,48 +160,6 @@
 
       <div class="post">
         <h1 class="post-title fw-500">
-          <a href="/2020/05/21/bootstrap-icons-alpha4/">
-            Bootstrap Icons Alpha 4
-          </a>
-        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 21 May 2020 09:30:00 +0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    May 21, 2020
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/2ZBtPf7FOoM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>We’re closing in on 700 icons in Bootstrap Icons with today’s release, Alpha 4! We’ve spent some time under the hood of our build process to improve a few things, added tons of new icons, and fixed some bugs and inconsistencies.</p>
-
-<p>We’ve shipped tons of new commerce icons for all your shopping cart needs, added tons of calendar options (I couldn’t settle on one design), tons of new shape arrows, and more.</p>
-
-<h2 id="700-icons">~700 icons!</h2>
-
-<p>With 140 new icons in this release, we’ve almost hit 700 icons. We’re likely to fly by that in our next release, but in the meantime, have a look for yourself at the breadth of icons. Every icon has also been reprocessed to resolve SVGO issues that prevented them from being opened in some apps.</p>
-
-<p><img src="/assets/img/2020/05/bootstrap-icons-alpha4-all.png" alt="All Bootstrap Icons" /></p>
-
-<h2 id="download">Download</h2>
-
-<p>Alpha 4 has been published to GitHub and npm (package name <code class="language-plaintext highlighter-rouge">bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code class="language-plaintext highlighter-rouge">v1.0.0-alpha4</code>, or by snagging the <a href="https://www.figma.com/file/XDj1VewxEtXzkDDMAvWx2W/Bootstrap-Icons-v1.0.0-alpha4">icons from Figma</a>.</p>
-
-      </div>
-
-      <div class="post">
-        <h1 class="post-title fw-500">
           <a href="/2020/05/12/bootstrap-4-5-0/">
             Bootstrap 4.5.0
           </a>
@@ -209,7 +167,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
+                           alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Tue, 12 May 2020 00:00:00 +0000">
@@ -222,7 +180,7 @@
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/tNG62fULYgI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/tNG62fULYgI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -413,6 +371,48 @@
 <p>In <a href="/2019/11/26/bootstrap-4-4-0/">v4.4.0</a>, we added <code class="language-plaintext highlighter-rouge">add()</code> and <code class="language-plaintext highlighter-rouge">subtract()</code> functions to avoid errors when using zero values in CSS’s built in <code class="language-plaintext highlighter-rouge">calc()</code> function. While these functions work as expected with our build system, which is based on <code class="language-plaintext highlighter-rouge">node-sass</code>, some alert developers noticed that <a href="https://github.com/twbs/bootstrap/issues/29743">things broke when using another Sass compiler</a> like Dart Sass or Ruby Sass. To resolve this issue, we’ve tweaked these functions a bit to output what we would expect.</p>
 
 <p>Lastly, we also added a <a href="https://github.com/twbs/bootstrap/pull/29762">theming fix</a> for some custom forms in a disabled fieldset.</p>
+
+      </div>
+
+      <div class="post">
+        <h1 class="post-title fw-500">
+          <a href="/2019/11/26/bootstrap-icons/">
+            Introducing Bootstrap Icons
+          </a>
+        </h1><div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32" loading="lazy">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Tue, 26 Nov 2019 00:00:00 +0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    November 26, 2019
+  </span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/eM8Ss28zjcE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Say hello to <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, our very first icon set that’s designed entirely by our team and open sourced for everyone to use, with or without Bootstrap. It’s still in alpha, but we’re incredibly excited to share it with y’all ahead of our v5 alpha.</p>
+
+<p><a href="https://icons.getbootstrap.com/"><img src="/assets/img/2019/11/bi-docs.png" alt="Bootstrap Icons docs" /></a></p>
+
+<p>For the longest time, I’ve wanted to design an icon set to better lean how to better draw with different pen tools and to better understand SVGs. In the last several months I’ve used a few different applications, done nearly five style iterations, and finally settled on a single direction. The result? Over 200 icons to start.</p>
+
+<p><img src="/assets/img/2019/11/bi-icons.png" alt="Bootstrap Icons full list" width="300" style="margin: 0 auto;" /></p>
+
+<p>I’ve designed these initial icons in Figma and exported them as SVGs. The plan is to share that Figma file publicly once it’s cleaned up and the icon set is  more stable. While Bootstrap Icons are first and foremost designed to work with Bootstrap’s components, they can be used anywhere. They’re an entirely <a href="https://github.com/twbs/icons">separate project</a> and package from Bootstrap, so you can easily use them in any project, or use any other icon set alongside Bootstrap’s CSS and JavaScript.</p>
+
+<p>They’re also open sourced under the MIT license, so you’re free to download, use, and customize as you need. This is an alpha release for now, so bear with us as we get familiar with creating and managing hundreds of SVGs. and more icons will be added over time.</p>
+
+<p>Head to <a href="https://icons.getbootstrap.com">https://icons.getbootstrap.com</a> to explore and download!</p>
 
       </div>
   </div>

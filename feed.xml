@@ -1,52 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-08-19T04:52:00+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Ten Years of Bootstrap</title><link href="https://blog.getbootstrap.com/2021/08/19/ten/" rel="alternate" type="text/html" title="Ten Years of Bootstrap" /><published>2021-08-19T00:00:00+00:00</published><updated>2021-08-19T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/08/19/ten</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/08/19/ten/">&lt;p&gt;&lt;a href=&quot;https://blog.twitter.com/developer/en_us/a/2011/bootstrap-twitter&quot;&gt;Ten years ago today&lt;/a&gt;, we shipped the &lt;a href=&quot;https://getbootstrap.com/1.0.0/&quot;&gt;first release of Bootstrap&lt;/a&gt;. Releasing it on GitHub was my first real plunge into open source—what an introduction! Here we are a decade later with one of the most widely used open source projects and frontend toolkits on the web. Happy birthday, Bootstrap—what a ride!&lt;/p&gt;
-
-&lt;p&gt;While numbers certainly don’t tell the whole story, Bootstrap has reached some incredible milestones over the past decade. Here are some highlights:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Over 2.5 billion pageviews for our docs.&lt;/strong&gt; That’s more than 685,000 a day.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;394,000,000 &lt;a href=&quot;https://npm-stat.com/charts.html?package=bootstrap&amp;amp;from=2011-08-01&amp;amp;to=2021-08-18&quot;&gt;npm downloads&lt;/a&gt;&lt;/strong&gt; since 2015—over 131 million of which were in 2020 alone. That’s 180,000 a day over the last six years.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;57 million &lt;a href=&quot;https://www.nuget.org/packages/bootstrap/&quot;&gt;NuGet downloads&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;7.5 million &lt;a href=&quot;https://packagist.org/packages/twbs/bootstrap/stats&quot;&gt;Packagist installs&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Used by over &lt;a href=&quot;https://w3techs.com/technologies/details/js-bootstrap&quot;&gt;22% of all websites&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Used by 2.7 million projects on GitHub&lt;/li&gt;
-  &lt;li&gt;Over 21,100 commits on GitHub with nearly 35,000 issues and pull requests&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hidden in all those numbers are millions and millions of people that interact with Bootstrap just by visiting the sites and apps built with it. It’s still mind-blowing to see what’s been built with it after over the years, especially with how it all started.&lt;/p&gt;
-
-&lt;p&gt;Back in early 2011, the two of us were just a couple of nerds working at Twitter—Jacob was an engineer working on internal tools, me a product designer working on ads. Our paths crossed when the project I was working on needed to have its own internal tools app built for managing Twitter ad campaigns. Over a few months, we started working more and more together before ultimately deciding to release our project to the world.&lt;/p&gt;
-
-&lt;p&gt;Here we are 10 years later, still just a handful of nerds doing what we love, contributing to open source, and having an impact on people’s lives through our work. Bootstrap continues to be a passion project for me, from major rewrites to new features and from a growing &lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;icon library&lt;/a&gt; to a full-blown &lt;a href=&quot;https://themes.getbootstrap.com&quot;&gt;marketplace&lt;/a&gt;. It’s been an incredible journey, and one that’s still going strong thanks to the community’s love and the support of a small group of maintainers over the years.&lt;/p&gt;
-
-&lt;p&gt;The maintainers and contributors deserve the utmost thanks and appreciation. Please join me in thanking them—and every other open source maintainer!—whenever and however frequently you can. While this list can never fully represent all the contributions made to Bootstrap, I want to give a special shoutout to maintainers past and present, and some of the most prolific contributors.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/xhmikosr&quot;&gt;@xhmikosr&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/martijncuppens&quot;&gt;@martijncuppens&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/johann-s&quot;&gt;@johann-s&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/patrickhlauke&quot;&gt;@patrickhlauke&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/geosot&quot;&gt;@geosot&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/rohit2sharma95&quot;&gt;@rohit2sharma95&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/alpadev&quot;&gt;@alpadev&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ffoodd&quot;&gt;@ffoodd&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/cvrebert&quot;&gt;@cvrebert&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/andresgalante&quot;&gt;@andresgalante&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ysds&quot;&gt;@ysds&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/thomas-mcdonald&quot;&gt;@thomas-mcdonald&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/glebm&quot;&gt;@glebm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/zlatanvasovic&quot;&gt;@zlatanvasovic&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/hnrch02&quot;&gt;@hnrch02&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/juthilo&quot;&gt;@juthilo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bardiharborow&quot;&gt;@bardiharborow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/coliff&quot;&gt;@coliff&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/vsn4ik&quot;&gt;@vsn4ik&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/supergibbs&quot;&gt;@supergibbs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thank you again, folks. And to everyone who has used Bootstrap over the years, thank you for making a decade of building with Bootstrap possible. Cheers to whatever comes next, and see you soon for our next release.&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;3,&lt;br /&gt;
-&lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt;&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Ten years ago today, we shipped the first release of Bootstrap. Releasing it on GitHub was my first real plunge into open source—what an introduction! Here we are a decade later with one of the most widely used open source projects and frontend toolkits on the web. Happy birthday, Bootstrap—what a ride!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 5.1.0</title><link href="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/" rel="alternate" type="text/html" title="Bootstrap 5.1.0" /><published>2021-08-04T00:00:00+00:00</published><updated>2021-08-04T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/">&lt;p&gt;The first minor release of Bootstrap 5 is here! v5.1.0 has arrived and is packed with exciting new features and improvements. There’s experimental support for CSS Grid, offcanvas in the navbar, a new placeholders component, horizontal collapse support, new helpers, new CSS variables in our utilities, refactored JavaScript, and more.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-08-19T04:57:36+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap 5.1.0</title><link href="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/" rel="alternate" type="text/html" title="Bootstrap 5.1.0" /><published>2021-08-04T00:00:00+00:00</published><updated>2021-08-04T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/">&lt;p&gt;The first minor release of Bootstrap 5 is here! v5.1.0 has arrived and is packed with exciting new features and improvements. There’s experimental support for CSS Grid, offcanvas in the navbar, a new placeholders component, horizontal collapse support, new helpers, new CSS variables in our utilities, refactored JavaScript, and more.&lt;/p&gt;
 
 &lt;hr class=&quot;my-4&quot; /&gt;
 
@@ -1086,4 +1038,153 @@
 
 &lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
 
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our second beta has arrived for Bootstrap 5! We delayed its release to iron out some issues with third-party libraries and stabilize our major changes. We’ve also once again shipped some awesome updates to our documentation.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our second beta has arrived for Bootstrap 5! We delayed its release to iron out some issues with third-party libraries and stabilize our major changes. We’ve also once again shipped some awesome updates to our documentation.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap v4.6.0</title><link href="https://blog.getbootstrap.com/2021/01/19/bootstrap-4.6.0/" rel="alternate" type="text/html" title="Bootstrap v4.6.0" /><published>2021-01-19T21:30:00+00:00</published><updated>2021-01-19T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/01/19/bootstrap-4.6.0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/01/19/bootstrap-4.6.0/">&lt;p&gt;Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.&lt;/p&gt;
+
+&lt;p&gt;Read on for the highlighted changes or &lt;a href=&quot;https://getbootstrap.com/docs/4.6/&quot;&gt;head to the v4.6 docs&lt;/a&gt; to see the latest in action.&lt;/p&gt;
+
+&lt;h2 id=&quot;hugo&quot;&gt;Hugo!&lt;/h2&gt;
+
+&lt;p&gt;The biggest change in v4.6.0 is under the hood—we’ve overhauled our development environment to match that of v5. Our v4.x docs are now powered by &lt;a href=&quot;https://gohugo.io&quot;&gt;Hugo&lt;/a&gt;. That means no more Ruby dependency for v4.x, improved maintainability between major versions, faster development, and incredibly fast build times compared to Jekyll.&lt;/p&gt;
+
+&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
+
+&lt;p&gt;Also available in the &lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v4.6.0&quot;&gt;v4.6.0 release on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;highlights&quot;&gt;Highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tooltips and popovers can have custom classes via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;customClass&lt;/code&gt; option.&lt;/li&gt;
+  &lt;li&gt;Added new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.navbar-nav-scroll&lt;/code&gt; class for scrolling expanded navbar contents on mobile devices.&lt;/li&gt;
+  &lt;li&gt;For improved accessibiliy, spinners now slow down when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefers-reduced-motion&lt;/code&gt; is enabled.&lt;/li&gt;
+  &lt;li&gt;v4.x docs are now built on Hugo for easier maintenance and backports from v5.x.&lt;/li&gt;
+  &lt;li&gt;Darkened &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background-color&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dropdown-item&lt;/code&gt; for improved hover state contrast, and ligthened the disabled &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dropdown-item&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Improved alignment of form validation tooltips.&lt;/li&gt;
+  &lt;li&gt;File inputs no longer extend beyond their containers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;css&quot;&gt;CSS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31557&quot;&gt;#31557&lt;/a&gt;: Fix form validation tooltip alignment&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31657&quot;&gt;#31657&lt;/a&gt;: Handle the Ubuntu sans-serif case&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31700&quot;&gt;#31700&lt;/a&gt;: Suppress flexbox side effects in breadcrumb&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31882&quot;&gt;#31882&lt;/a&gt;: Slow down spinners when prefers-reduced-motion&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31886&quot;&gt;#31886&lt;/a&gt;: Fixed: Undefined mixin “deprecate” when importing “bootstrap-grid-scss”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32141&quot;&gt;#32141&lt;/a&gt;: Use correct value order&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32145&quot;&gt;#32145&lt;/a&gt;: Avoid invisible real file input “spilling” out of container&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32160&quot;&gt;#32160&lt;/a&gt;: Add overflow suppression to custom file label&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32211&quot;&gt;#32211&lt;/a&gt;: Move negative margin-bottom from .nav-item to .nav-link&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32212&quot;&gt;#32212&lt;/a&gt;: Remove needless Stylelint disables&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32833&quot;&gt;#32833&lt;/a&gt;: Add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.navbar-nav-scroll&lt;/code&gt; for vertical scrolling of navbar content&lt;/li&gt;
+  &lt;li&gt;Add two new variables for pagination border-radius values; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32423&quot;&gt;#32423&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Remove old/unnecessary reboot bug fix; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32631&quot;&gt;#32631&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Suppress focus outline for buttons when it shouldn’t be visible in Chromium; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32689&quot;&gt;#32689&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Consistently use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;outline:0&lt;/code&gt; rather than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;outline:none&lt;/code&gt;; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32751&quot;&gt;#32751&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Darken dropdown item hover style; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32754&quot;&gt;#32754&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Lighten disabled dropdown text to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$gray-500&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;js&quot;&gt;JS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31820&quot;&gt;#31820&lt;/a&gt;: Check for data-interval on the first slide of carousel&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31834&quot;&gt;#31834&lt;/a&gt;/&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32225&quot;&gt;#32225&lt;/a&gt;: tooltip/popover: add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;customClass&lt;/code&gt; option&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32001&quot;&gt;#32001&lt;/a&gt;: Move &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;js/src/index.js&lt;/code&gt; one folder up&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32045&quot;&gt;#32045&lt;/a&gt;: tests: fix sanitizer test&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32220&quot;&gt;#32220&lt;/a&gt;: Don’t hide modal when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.keyboard&lt;/code&gt; is false&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32312&quot;&gt;#32312&lt;/a&gt;: build-plugins: switch to “bundled” for babel helpers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;docs&quot;&gt;Docs&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31861&quot;&gt;#31861&lt;/a&gt;: Split up dropdown sizing docs to improve rendering&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31892&quot;&gt;#31892&lt;/a&gt;: Remove redundant visually hidden “(current)” from pagination controls&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31893&quot;&gt;#31893&lt;/a&gt;: manifest.json: Switch to relative URLs so that we don’t need to change the path with every major/minor release&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31898&quot;&gt;#31898&lt;/a&gt;: switch to suggesting jsDelivr as a CDN&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31904&quot;&gt;#31904&lt;/a&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;docs(forms): use a legend for fieldset instead of aria-label&lt;/li&gt;
+      &lt;li&gt;docs(forms): fix incorrect legend nesting in fieldset&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31936&quot;&gt;#31936&lt;/a&gt;: forms: change inline custom radio name&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31951&quot;&gt;#31951&lt;/a&gt;: Update anchor-js to v4.3.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31960&quot;&gt;#31960&lt;/a&gt;: Explicitly mention emoji fonts, tweak sentence in typography&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31981&quot;&gt;#31981&lt;/a&gt;: list-group.md: fix snippet&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32005&quot;&gt;#32005&lt;/a&gt;: Remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bugreport.apple.com&lt;/code&gt; since it doesn’t work&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32015&quot;&gt;#32015&lt;/a&gt;: Fix redirects&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32050&quot;&gt;#32050&lt;/a&gt;: Make docs anchorjs links darker on keyboard focus&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32054&quot;&gt;#32054&lt;/a&gt;: Add callouts about using light colors ideally on a dark background&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32077&quot;&gt;#32077&lt;/a&gt;: Switch to Hugo&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32083&quot;&gt;#32083&lt;/a&gt;: mention “Liberation Sans”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32087&quot;&gt;#32087&lt;/a&gt;: download.md: link to JS files comparison too&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32094&quot;&gt;#32094&lt;/a&gt;: Changes to navbar documentation/explanation&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32106&quot;&gt;#32106&lt;/a&gt;: Clarify JS bundle docs once more for v4&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32137&quot;&gt;#32137&lt;/a&gt;: input-group.md: fix wrong class &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.visually-hidden&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32138&quot;&gt;#32138&lt;/a&gt;: navbar.md: remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;loading=lazy&lt;/code&gt; from snippets&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32147&quot;&gt;#32147&lt;/a&gt;: Fix caniuse.com redirects&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32151&quot;&gt;#32151&lt;/a&gt;: Mention user-select-all support in docs&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32196&quot;&gt;#32196&lt;/a&gt;: homepage: split snippets and show copy buttons&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32203&quot;&gt;#32203&lt;/a&gt;: Switch to jsDelivr for the remaining docs assets&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32223&quot;&gt;#32223&lt;/a&gt;: introduction: split comments&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32247&quot;&gt;#32247&lt;/a&gt;: Fix typos in tooltip/popover docs&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32253&quot;&gt;#32253&lt;/a&gt;: Add Russian translation&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32363&quot;&gt;#32363&lt;/a&gt;: Remove useless &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-left&lt;/code&gt; in Layout / Overview&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32399&quot;&gt;#32399&lt;/a&gt;: Remove duplicated “follow Bootstrap on Twitter” link in Community section&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32457&quot;&gt;#32457&lt;/a&gt;: Add mention of the bs-custom-file-input plugin needed for the custom file input&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32461&quot;&gt;#32461&lt;/a&gt;: style clipboard button on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:focus&lt;/code&gt;, not just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:hover&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32462&quot;&gt;#32462&lt;/a&gt;: Replace Lorem Ipsum placeholder text with more representative (or at least english language) text&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32634&quot;&gt;#32634&lt;/a&gt;: Remove incorrect mention of dropdowns for dynamic tab behavior&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32639&quot;&gt;#32639&lt;/a&gt;: v4: Add an actual &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-touch=&quot;false&quot;&lt;/code&gt; example in the carousel docs&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32728&quot;&gt;#32728&lt;/a&gt;: add v5.0 in versions&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32761&quot;&gt;#32761&lt;/a&gt;: Mention stretched-link constraints with table elements&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32789&quot;&gt;#32789&lt;/a&gt;: Remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;role=&quot;button&quot;&lt;/code&gt; from CTA links in carousel example&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32791&quot;&gt;#32791&lt;/a&gt;: Docs v4: Sass implementation and rounding precision&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32809&quot;&gt;#32809&lt;/a&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Clarify Sass import and customize docs for how to modify variable defaults&lt;/li&gt;
+      &lt;li&gt;Add an npm starter project callout to a few pages&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32827&quot;&gt;#32827&lt;/a&gt;: Add a live toast example to the docs&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32759&quot;&gt;#32759&lt;/a&gt;: Mention CSP and embedded SVGs in v4 docs&lt;/li&gt;
+  &lt;li&gt;docs(dropdowns): clarify where is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.show&lt;/code&gt; applied&lt;/li&gt;
+  &lt;li&gt;Require &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.has-validation&lt;/code&gt; for input groups with validation&lt;/li&gt;
+  &lt;li&gt;Fix mobile menu jump &amp;amp; double border&lt;/li&gt;
+  &lt;li&gt;Remove double spaces from homepage SVGs&lt;/li&gt;
+  &lt;li&gt;browserconfig.xml: switch to relative image path&lt;/li&gt;
+  &lt;li&gt;Tweak the wording for collapse to indicate button is preferred/more semantic; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32632&quot;&gt;#32632&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Clarify the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$enable-shadows&lt;/code&gt; option in our docs; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32685&quot;&gt;#32685&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31979&quot;&gt;#31979&lt;/a&gt;: v4 Examples/Floating-labels: fix bad behavior with autofill&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32198&quot;&gt;#32198&lt;/a&gt;: examples: add the version number in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;misc&quot;&gt;Misc&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/29753&quot;&gt;#29753&lt;/a&gt;: Improve build/generate-sri.js regex&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32003&quot;&gt;#32003&lt;/a&gt;: CI: switch to Node.js 14&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32008&quot;&gt;#32008&lt;/a&gt;: Update Edge’s Rendering Engine on CONTRIBUTING.md&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32486&quot;&gt;#32486&lt;/a&gt;: BrowserStack: test on macOS Catalina instead of High Sierra&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32756&quot;&gt;#32756&lt;/a&gt;: Stylelint: disallow some property values&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fix for npm 7.x&lt;/strong&gt; package.json: move &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;version_short&lt;/code&gt; variable under the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config&lt;/code&gt; object; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32737&quot;&gt;#32737&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Update build-examples script so that the resulting examples zip file includes only the needed files&lt;/li&gt;
+  &lt;li&gt;Various CI tweaks&lt;/li&gt;
+  &lt;li&gt;Updated devDependencies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;next-up&quot;&gt;Next up&lt;/h2&gt;
+
+&lt;p&gt;Our second beta of v5 is coming. We’re working on ironing on some kinks from the update to Popover 2, which has taken longer than expected. This affects our dropdowns, popovers, and tooltips. Once some of the major issues are resolved, we’ll ship our next beta.&lt;/p&gt;
+
+&lt;p&gt;Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.&lt;/p&gt;
+
+&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
+
+&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
