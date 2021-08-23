@@ -111,7 +111,7 @@ Hot damn, we've finally added official support for [horizontally collapsing](htt
 
 ## Stack and vertical rule helpers
 
-While utilities get most of the spotlight these days, helpers are still incredibly useful. [Our newest helpers are called stacks](https://getbootstrap.com/docs/5.1/helpers/stacks/) and they're shortcuts for vertical and horizontal stacks of elements. They're inspired by the open source [Pylon](https://almonk.github.io/pylon) project, which was in turn inspired by iOS's stacks. Right now, stacks aren't responsive, but that can easily change with your feedback.
+While utilities get most of the spotlight these days, helpers are still incredibly useful. [Our newest helpers are called stacks](https://getbootstrap.com/docs/5.1/helpers/stacks/) and they're shortcuts for vertical and horizontal stacks of elements. They're inspired by the open source [Pylon](https://almonk.github.io/pylon/) project, which was in turn inspired by iOS's stacks. Right now, stacks aren't responsive, but that can easily change with your feedback.
 
 To create a vertical stack, wrap a series of elements in `.vstack`. Use `.gap-*` utilities on the parent (or set individual `margin` utilities) to quickly space elements.
 
