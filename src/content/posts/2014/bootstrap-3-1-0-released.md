@@ -134,7 +134,7 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#12248](https://github.com/twbs/bootstrap/pull/12248): Add and use `.bg-variant()` mixin to generate background classes.
 - [#12249](https://github.com/twbs/bootstrap/pull/12249): Add and use `@modal-md` Less variable for uniformity.
 - [#12250](https://github.com/twbs/bootstrap/pull/12250): Remove print `margin`s per upstream H5BP change, thus deferring to browser defaults, or users' custom values should they set them.
-- [#12286](https://github.com/twbs/bootstrap/issues/12286): Only remove appropriate `border-radius` from first and last tables or list groups in panels.
+- [#12286](https://github.com/twbs/bootstrap/pull/12286): Only remove appropriate `border-radius` from first and last tables or list groups in panels.
 - [#12353](https://github.com/twbs/bootstrap/issues/12353): Scope table border reset in panels to first-child rows.
 - [#12359](https://github.com/twbs/bootstrap/issues/12359): Reset `min-width` on `<fieldset>`s so they don't break responsive tables and behave more like standard block level elements.
 - [#12406](https://github.com/twbs/bootstrap/issues/12406): Upgrade to Normalize v3.
