@@ -29,7 +29,7 @@ Without listing all the minor changes (there have been over 500 commits since RC
   - Overhauled grid system to include four tiers instead of the original three of RC1. We now have `.col-xs` (phones), `.col-sm` (tablets), `.col-md` (desktops), and `.col-lg` (large desktops). Responsive utilities have been updated to match these new tiers as well. [See relevant commit](https://github.com/twbs/bootstrap/commit/a2b9988eb908e5b95fb253aac7fde0fbd61c375e).
   - `.row`s only have negative left and right margins if they sit within a `.container`. This resolves the horizontal scrollbar issue for folks with full page containers (restoring the full behavior of the old fluid container from 2.x). [See #8959.](https://github.com/twbs/bootstrap/issues/8959)
   - Grid now includes offset, push, and pull classes for each break point [See #8974.](https://github.com/twbs/bootstrap/pull/8974)
-  - Updated mixins to include ability to specify gutter width as a second parameter. [See #8935.](https://github.com/twbs/bootstrap/pull/8935)
+  - Updated mixins to include ability to specify gutter width as a second parameter. [See #8935.](https://github.com/twbs/bootstrap/issues/8935)
 
 - **Buttons:**
   - Buttons and inputs, and their large counterparts, are now a bit shorter.
@@ -43,7 +43,7 @@ Without listing all the minor changes (there have been over 500 commits since RC
   - Size modifier classes for large and small components—including buttons, form inputs, pagination, and wells—have all been standardized to use `-sm` or `-lg`. [See #9056.](https://github.com/twbs/bootstrap/pull/9056)
   - Inline forms now require the use of `.form-group`, [per #9382](https://github.com/twbs/bootstrap/issues/9382), to properly align and size all (native and custom) form controls. This also helps make form markup more consistent and flexible (just swap a class), so woohoo!
   - Added `.static-form-control` to account for static, placeholder text in horizontal form layouts. [Fixes #8150.](https://github.com/twbs/bootstrap/issues/8150)
-  - New input group sizing classes: just add `.input-group-sm` or `.input-group-lg` to any `.input-group` and you're good to go. [See #9295.](https://github.com/twbs/bootstrap/pull/9295)
+  - New input group sizing classes: just add `.input-group-sm` or `.input-group-lg` to any `.input-group` and you're good to go. [See #9295.](https://github.com/twbs/bootstrap/issues/9295)
 
 - **Dropped accordion for updated panel.**
   - We've removed the accordion and instead chosen to extend the panel component to provide the same functionality. [See #9404](https://github.com/twbs/bootstrap/pull/9404).

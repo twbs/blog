@@ -84,16 +84,16 @@ Update your CDN links to point to the v3.1.1 files:
 - [#12610](https://github.com/twbs/bootstrap/issues/12610): Better and more consistent prefixing of docs CSS with `.bs-docs-`.
 - [#12611](https://github.com/twbs/bootstrap/issues/12611): Mention limitation of one JavaScript plugin's data attributes per element.
 - [#12614](https://github.com/twbs/bootstrap/issues/12614): Add progress bar example with visible label.
-- [#12645](https://github.com/twbs/bootstrap/issues/12645): Omit semicolons consistently in JS examples.
-- [#12655](https://github.com/twbs/bootstrap/issues/12655): Upgrade holder.js to v2.3.1 so docs images are rendered properly in Internet Explorer >=9.
+- [#12645](https://github.com/twbs/bootstrap/pull/12645): Omit semicolons consistently in JS examples.
+- [#12655](https://github.com/twbs/bootstrap/pull/12655): Upgrade holder.js to v2.3.1 so docs images are rendered properly in Internet Explorer >=9.
 
 ### Examples
 
 - [#12455](https://github.com/twbs/bootstrap/issues/12455): Fix typo in Dashboard example's CSS.
 - [#12512](https://github.com/twbs/bootstrap/issues/12512): Improve alignment of the Dashboard example's placeholder images.
 - [#12526](https://github.com/twbs/bootstrap/issues/12526): Add scrollbars when necessary to the Dashboard example's sidebar.
-- [#12579](https://github.com/twbs/bootstrap/issues/12579): Improve sticky footer examples to avoid any wrappers and improve rendering in IE8.
-- [#12695](https://github.com/twbs/bootstrap/issues/12695): Fixed transitions on offcanvas example by adding initial left and right values.
+- [#12579](https://github.com/twbs/bootstrap/pull/12579): Improve sticky footer examples to avoid any wrappers and improve rendering in IE8.
+- [#12695](https://github.com/twbs/bootstrap/pull/12695): Fixed transitions on offcanvas example by adding initial left and right values.
 
 ### Build tools
 

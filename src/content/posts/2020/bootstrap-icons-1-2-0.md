@@ -33,9 +33,9 @@ This is our first foray into icon fonts, and we're likely to make some tweaks al
 
 The [homepage for Bootstrap Icons](https://icons.getbootstrap.com) has a new look thanks to an updated hero. The new hero features a new colorful icon image, clearer project description, and an upfront `npm i` snippet to help folks get started faster. A new notice at the top links to the blog post to tell folks what's new, too.
 
-[![New Icons permalink](/assets/img/2020/12/icons-docs-permalink.png)](https://icons.getbootstrap.com/icons/disc)
+[![New Icons permalink](/assets/img/2020/12/icons-docs-permalink.png)](https://icons.getbootstrap.com/icons/disc/)
 
-[Individual icon permalink pages](https://icons.getbootstrap.com/icons/disc) have also been refreshed and greatly simplified. We've reduced the main example down to one instance of the icon, and expanded the examples below it to include the icon in more Bootstrap components.
+[Individual icon permalink pages](https://icons.getbootstrap.com/icons/disc/) have also been refreshed and greatly simplified. We've reduced the main example down to one instance of the icon, and expanded the examples below it to include the icon in more Bootstrap components.
 
 The new permalink sidebar also features new and improved access to the icons. Need just an SVG or two? Use the new `Download SVG` button. Looking for the HTML for the new icon fonts? Just copy-paste. And as always, want the raw SVG HTML? That's still there, too.
 
