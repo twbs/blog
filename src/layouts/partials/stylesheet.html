@@ -1,0 +1,13 @@
+<link href="{{ .Site.Params.assets.css.uri }}" rel="stylesheet" {{ printf "integrity=%q" .Site.Params.assets.css.sri | safeHTMLAttr }} crossorigin="anonymous">
+
+{{- $targetDocsCssPath := "/assets/css/style.css" -}}
+{{- $sassOptions := dict "targetPath" $targetDocsCssPath "outputStyle" "expanded" "precision" 6 -}}
+{{- $postcssOptions := dict "use" "autoprefixer" "noMap" true -}}
+
+{{ if eq hugo.Environment "production" -}}
+  {{- $sassOptions = merge $sassOptions (dict "outputStyle" "compressed") -}}
+{{- end -}}
+
+{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions | postCSS $postcssOptions }}
+
+<link href="{{ $style.Permalink | relURL }}" rel="stylesheet">

@@ -1,0 +1,13 @@
+<div class="masthead bg-light">
+  <div class="container">
+    <a href="/" aria-label="Bootstrap">
+      {{ partial "icons/bootstrap-white-fill.svg" (dict "class" "bs-docs-booticon mb-3" "width" "90" "height" "72") }}
+      <h1 class="f2">The Bootstrap Blog</h1>
+    </a>
+    <p class="f5">
+      News and announcements for all things <a href="{{ .Site.Params.main }}/" title="Visit the Bootstrap docs">Bootstrap</a>, including new releases, <a href="{{ .Site.Params.themes }}" title="Browse the official Bootstrap themes">Bootstrap Themes</a>, and <a href="{{ .Site.Params.icons }}" title="Official open source Bootstrap Icons">Bootstrap Icons</a>.
+    </p>
+
+    {{ partial "carbonads" }}
+  </div>
+</div>

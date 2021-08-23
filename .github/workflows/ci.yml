@@ -1,9 +1,14 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches-ignore:
+      - "dependabot/**"
+  pull_request:
 
 env:
-  RUBY: 2.7
+  FORCE_COLOR: 2
+  NODE: 14
 
 jobs:
   test:
@@ -13,26 +18,22 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          ruby-version: "${{ env.RUBY }}"
-          bundler-cache: true
+          node-version: "${{ env.NODE }}"
+          cache: npm
 
-      - name: Version info
-        run: |
-          ruby --version
-          gem --version
-          bundle --version
+      - run: java -version
 
-      - run: bundle exec jekyll build
-      - run: bundle exec jekyll doctor
+      - name: Install npm dependencies
+        run: npm ci
 
-      - name: Run markdownlint
-        run: bundle exec mdl --ignore-front-matter --style mdl-style.rb src
+      - name: Build docs
+        run: npm run build
 
-      - name: Run html-proofer
-        run: bundle exec htmlproofer ./_site --allow-hash-href --assume-extension --check-external-hash --check-favicon --check-img-http --check-opengraph --disable-external --empty-alt-ignore --internal-domains "blog.getbootstrap.com"
+      - name: Test docs
+        run: npm test
 
       - name: Upload docs
         uses: actions/upload-artifact@v2

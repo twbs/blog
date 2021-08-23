@@ -1,0 +1,105 @@
+//
+// Resets
+//
+
+.embed-responsive {
+  margin-bottom: 1rem;
+  background-color: #000;
+
+  .page-videos & {
+    margin-top: .5rem;
+  }
+}
+
+.post li {
+  margin-bottom: .25rem;
+}
+
+
+//
+// Header
+//
+
+.masthead {
+  position: relative;
+  padding: 2rem 1.25rem;
+  font-weight: 300;
+  color: #cdbfe3;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  background-image: linear-gradient(to bottom, darken($bd-purple-bright, 10%), $bd-purple-bright);
+
+  @media (min-width: 40em) {
+    padding: 3rem 0 4rem;
+  }
+
+  a,
+  h1 {
+    font-weight: 400;
+    color: #fff;
+  }
+
+  h1 {
+    margin-bottom: .25rem;
+  }
+
+  p {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+.bs-docs-booticon {
+  filter:
+    drop-shadow(0 .25em .25em rgba(0, 0, 0, .05))
+    drop-shadow(0 .5em 1em rgba(0, 0, 0, .1))
+    drop-shadow(0 .75em 1.5em rgba(0, 0, 0, .15));
+  transform: rotate(-5deg);
+}
+
+
+//
+// Download buttons
+//
+
+.btn-link {
+  display: inline-block;
+  padding: .6rem 1.2rem;
+  margin-right: .25rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #08c;
+  border-radius: .2rem;
+  transition: all .2s linear;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #005580;
+  }
+}
+
+.btn-link-ratchet {
+  background-color: #b60c32;
+
+  &:hover {
+    background-color: #0f1953;
+  }
+}
+
+
+//
+// List page
+//
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+.list li {
+  display: block;
+  margin-bottom: 5px;
+}
+.list span {
+  float: right;
+  color: #767676;
+}

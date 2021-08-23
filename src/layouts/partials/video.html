@@ -1,0 +1,9 @@
+{{- /* Accepts 2 parameters, the "context" and "lazyload" */ -}}
+
+{{- $lazyload := .lazyload -}}
+{{- $video := .context.Params.video -}}
+{{- $video_start := .context.Params.video_start -}}
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item{{ if eq $lazyload true }} lazy{{ end }}" {{ if eq $lazyload true }}data-src{{ else }}src{{ end }}="https://www.youtube-nocookie.com/embed/{{ $video }}?rel=0{{ with $video_start }}&amp;start={{ . }}{{ end }}" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>

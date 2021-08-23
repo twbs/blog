@@ -1,0 +1,243 @@
+// stylelint-disable selector-max-type, selector-no-qualifying-type
+
+// Body resets
+//
+// Update the foundational and global aspects of the page.
+
+@import "variables";
+@import "syntax";
+@import "buttons";
+@import "navbar";
+@import "subnav";
+@import "footer";
+@import "theme";
+@import "ads";
+
+.f0 { font-size: 3rem; }
+.f2 { font-size: 2rem; }
+.f3 { font-size: 1.75rem; }
+.f5 { font-size: 1.25rem; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+
+.highlight pre.chroma {
+  padding: 1rem;
+  margin: 0 0 1rem;
+  background-color: #f5f5f5;
+  border-radius: .25rem;
+
+  code {
+    word-wrap: normal;
+  }
+}
+
+// Quotes
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+}
+
+// Tables
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  border: 1px solid #e5e5e5;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+
+// Container
+//
+// Center the page content.
+
+.posts-container {
+  max-width: 760px;
+
+  @media (min-width: 40em) {
+    font-size: 18px;
+  }
+}
+
+
+// Posts and pages
+//
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
+
+.page,
+.post {
+  margin-bottom: 4em;
+}
+
+// Blog post or page title
+.page-title,
+.post-title,
+.post-title a {
+  color: #303030;
+}
+
+// Meta data line below post title
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #767676;
+}
+
+// Break long links
+.post a {
+  word-break: break-word;
+}
+
+// Related posts
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  li small {
+    font-size: 75%;
+    color: #767676;
+  }
+  li a:hover {
+    color: #268bd2;
+    text-decoration: none;
+  }
+  li a:hover small {
+    color: inherit;
+  }
+}
+
+// Special case the opening paragraph
+.post > p:first-of-type {
+  font-size: 130%;
+  color: $gray-700;
+}
+
+.post .embed-responsive {
+  margin-bottom: 2rem;
+}
+
+
+// Pagination
+//
+// Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+// there are no more previous or next posts to show.
+
+.pagination {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  overflow: hidden; // clearfix
+  color: #767676;
+  text-align: center;
+}
+
+// Pagination items can be `span`s or `a`s
+.pagination-item {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+.pagination-item:first-child {
+  margin-bottom: -1px;
+}
+
+// Only provide a hover state for linked pagination items
+a.pagination-item:hover {
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+  background-color: $blue-500;
+  border-color: $blue-500;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  .pagination-item:first-child {
+    margin-bottom: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination-item:last-child {
+    margin-left: -1px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .no-js & {
+    display: none;
+  }
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  &.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+  }
+}
+
+iframe[data-url^="https://jsbin.com"] {
+  // stylelint-disable-next-line declaration-no-important
+  border-color: rgba(0, 0, 0, .1) !important;
+}
+
+@media (min-width: 1200px) {
+  .jsbin-wide {
+    margin-right: -226px;
+    margin-left: -226px;
+  }
+}

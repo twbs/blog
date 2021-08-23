@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}" class="no-js">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body>
+    {{ partial "navbar" . }}
+    {{ partial "hero" . }}
+    {{ partial "subnav" . }}
+
+    <div class="container">
+      {{ block "main" . }}
+      {{ end }}
+    </div>
+
+    {{ partial "footer" . }}
+
+    {{ partial "lazyload" . }}
+  </body>
+</html>
