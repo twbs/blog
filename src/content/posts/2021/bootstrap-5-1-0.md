@@ -43,7 +43,7 @@ Shipping CSS Grid support as experimental allows us to play with things a bit wi
 
 We've expanded our `.navbar-expand-*` classes (see what we did there?) to include support for offcanvases inside the navbar. Wrap your navbar elements with the appropriate offcanvas HTML, point your navbar toggler button to the offcanvas, and voila.
 
-**[Head to the offcanvas navbar docs](https://getbootstrap.com/docs/5.1/components/navbar#offcanvas)** for more information and a live demo.
+**[Head to the offcanvas navbar docs](https://getbootstrap.com/docs/5.1/components/navbar/#offcanvas)** for more information and a live demo.
 
 ## Placeholders
 
