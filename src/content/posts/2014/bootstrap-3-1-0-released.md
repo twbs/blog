@@ -125,15 +125,15 @@ While we originally wanted v3.1 to include RTL support, we decided to hold back 
 - [#11841](https://github.com/twbs/bootstrap/issues/11841): Breadcrumb padding values now use variables.
 - [#11859](https://github.com/twbs/bootstrap/issues/11859): Restore `@dropdown-caret-color` variable, but deprecate it.
 - [#11861](https://github.com/twbs/bootstrap/issues/11861): Add `@list-group-active-text-color` variable for improved customization on active list group items.
-- [#11868](https://github.com/twbs/bootstrap/issues/11868): Cleanup modal `z-index` values in `modals.less`.
+- [#11868](https://github.com/twbs/bootstrap/pull/11868): Cleanup modal `z-index` values in `modals.less`.
 - [#11990](https://github.com/twbs/bootstrap/issues/11990), #12159: Make range inputs block level and 100% wide by default.
 - [#12073](https://github.com/twbs/bootstrap/issues/12073): Make order of component variations consistent throughout the repo.
-- [#12164](https://github.com/twbs/bootstrap/issues/12164): Fix value of SVG font ID and removed hard coded value.
+- [#12164](https://github.com/twbs/bootstrap/pull/12164): Fix value of SVG font ID and removed hard coded value.
 - [#12171](https://github.com/twbs/bootstrap/issues/12171): Ensure panel groups have a bottom margin since we nuke it on child panels.
-- [#12247](https://github.com/twbs/bootstrap/issues/12247): Add and use `.text-emphasis-variant()` mixin for emphasis classes. Also updated emphasis classes to only apply `:hover` styles to linked content.
-- [#12248](https://github.com/twbs/bootstrap/issues/12248): Add and use `.bg-variant()` mixin to generate background classes.
-- [#12249](https://github.com/twbs/bootstrap/issues/12249): Add and use `@modal-md` Less variable for uniformity.
-- [#12250](https://github.com/twbs/bootstrap/issues/12250): Remove print `margin`s per upstream H5BP change, thus deferring to browser defaults, or users' custom values should they set them.
+- [#12247](https://github.com/twbs/bootstrap/pull/12247): Add and use `.text-emphasis-variant()` mixin for emphasis classes. Also updated emphasis classes to only apply `:hover` styles to linked content.
+- [#12248](https://github.com/twbs/bootstrap/pull/12248): Add and use `.bg-variant()` mixin to generate background classes.
+- [#12249](https://github.com/twbs/bootstrap/pull/12249): Add and use `@modal-md` Less variable for uniformity.
+- [#12250](https://github.com/twbs/bootstrap/pull/12250): Remove print `margin`s per upstream H5BP change, thus deferring to browser defaults, or users' custom values should they set them.
 - [#12286](https://github.com/twbs/bootstrap/issues/12286): Only remove appropriate `border-radius` from first and last tables or list groups in panels.
 - [#12353](https://github.com/twbs/bootstrap/issues/12353): Scope table border reset in panels to first-child rows.
 - [#12359](https://github.com/twbs/bootstrap/issues/12359): Reset `min-width` on `<fieldset>`s so they don't break responsive tables and behave more like standard block level elements.
