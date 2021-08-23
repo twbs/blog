@@ -90,7 +90,7 @@
   &lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/08/bootstrap-navbar-offcanvas.png&#34; alt=&#34;Offcanvas navbar example&#34; class=&#34;border&#34;&gt;
 &lt;/a&gt;
 &lt;p&gt;We&amp;rsquo;ve expanded our &lt;code&gt;.navbar-expand-*&lt;/code&gt; classes (see what we did there?) to include support for offcanvases inside the navbar. Wrap your navbar elements with the appropriate offcanvas HTML, point your navbar toggler button to the offcanvas, and voila.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.1/components/navbar#offcanvas&#34;&gt;Head to the offcanvas navbar docs&lt;/a&gt;&lt;/strong&gt; for more information and a live demo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.1/components/navbar/#offcanvas&#34;&gt;Head to the offcanvas navbar docs&lt;/a&gt;&lt;/strong&gt; for more information and a live demo.&lt;/p&gt;
 &lt;h2 id=&#34;placeholders&#34;&gt;Placeholders&lt;/h2&gt;
 &lt;a href=&#34;https://getbootstrap.com/docs/5.1/components/placeholders/&#34;&gt;
   &lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/08/bootstrap-placeholders.png&#34; alt=&#34;Placeholders example&#34; class=&#34;border&#34;&gt;
