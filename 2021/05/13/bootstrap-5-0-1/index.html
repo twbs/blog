@@ -2,51 +2,59 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://gmpg.org/xfn/11" rel="profile">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://gmpg.org/xfn/11" rel="profile">
+<link rel="canonical" href="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="/assets/css/style.css" rel="stylesheet">
+<meta name="description" content="Our first patch release for Bootstrap 5 has landed with v5.0.1! We&rsquo;ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.
+Changelog  Fixed an issue where dropdowns wouldn&rsquo;t close after clicking into an &lt;input&gt; Validated inputs in .input-groups no longer render behind sibling elements Prevent accent-bg from leaking in nested tables Modal backdrops no longer throw Uncaught TypeError when initialized through JS Refactored disposing properties into the base component Extracted static DATA_KEY and EVENT_KEY to the base component Merged transitionend listener callbacks into one method Popovers and tooltips have a streamlined config property Toasts no longer automatically hide on focus or hover No longer redefining $list-group-color in the list group loop  Our docs and examples also received a few updates:">
+<meta name="generator" content="Hugo 0.87.0">
 
-    <!-- Favicons -->
+
+
+<title>Bootstrap 5.0.1 | Bootstrap Blog</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<link href="/assets/css/style.css" rel="stylesheet">
+
+
+<link rel="alternate" type="application/rss+xml" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog">
+
+<!-- Favicons -->
 <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#7952b3">
 
+<meta name="author" content="Mark Otto">
 
-    <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Bootstrap 5.0.1 | Bootstrap Blog</title>
-<meta name="generator" content="Jekyll v4.2.0" />
+<meta name="twitter:title" content="Bootstrap 5.0.1"/>
+<meta name="twitter:description" content="Our first patch release for Bootstrap 5 has landed with v5.0.1! We&rsquo;ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.
+Changelog  Fixed an issue where dropdowns wouldn&rsquo;t close after clicking into an &lt;input&gt; Validated inputs in .input-groups no longer render behind sibling elements Prevent accent-bg from leaking in nested tables Modal backdrops no longer throw Uncaught TypeError when initialized through JS Refactored disposing properties into the base component Extracted static DATA_KEY and EVENT_KEY to the base component Merged transitionend listener callbacks into one method Popovers and tooltips have a streamlined config property Toasts no longer automatically hide on focus or hover No longer redefining $list-group-color in the list group loop  Our docs and examples also received a few updates:"/>
+<meta name="twitter:site" content="@getbootstrap"/>
+<meta name="twitter:creator" content="@mdo">
+
+<!-- Facebook -->
 <meta property="og:title" content="Bootstrap 5.0.1" />
-<meta name="author" content="Mark Otto" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples." />
-<meta property="og:description" content="Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples." />
-<link rel="canonical" href="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/" />
-<meta property="og:url" content="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/" />
-<meta property="og:site_name" content="Bootstrap Blog" />
-<meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="og:image:height" content="500" />
-<meta property="og:image:width" content="1000" />
+<meta property="og:description" content="Our first patch release for Bootstrap 5 has landed with v5.0.1! We&rsquo;ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.
+Changelog  Fixed an issue where dropdowns wouldn&rsquo;t close after clicking into an &lt;input&gt; Validated inputs in .input-groups no longer render behind sibling elements Prevent accent-bg from leaking in nested tables Modal backdrops no longer throw Uncaught TypeError when initialized through JS Refactored disposing properties into the base component Extracted static DATA_KEY and EVENT_KEY to the base component Merged transitionend listener callbacks into one method Popovers and tooltips have a streamlined config property Toasts no longer automatically hide on focus or hover No longer redefining $list-group-color in the list group loop  Our docs and examples also received a few updates:" />
 <meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-05-13T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="twitter:title" content="Bootstrap 5.0.1" />
-<meta name="twitter:site" content="@getbootstrap" />
-<meta name="twitter:creator" content="@mdo" />
-<script type="application/ld+json">
-{"dateModified":"2021-05-13T00:00:00+00:00","datePublished":"2021-05-13T00:00:00+00:00","description":"Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/"},"url":"https://blog.getbootstrap.com/2021/05/13/bootstrap-5-0-1/","@type":"BlogPosting","author":{"@type":"Person","name":"Mark Otto"},"image":{"width":1000,"height":500,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"headline":"Bootstrap 5.0.1","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+<meta property="article:modified_time" content="2021-05-13T00:00:00+00:00" />
 
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
 
-    <script>
+<script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', 'UA-146052-12', 'getbootstrap.com');
   ga('set', 'anonymizeIp', true);
@@ -55,14 +63,14 @@
 <script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <script src="https://cdn.usefathom.com/script.js" data-site="TAXRUMOF" defer></script>
-    <script>
+<script>
   (function(html) {
     html.className = html.className.replace(/\bno-js\b/, '');
   })(document.documentElement);
 </script>
 
-  </head>
 
+  </head>
   <body>
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar px-0">
   <div class="container flex-wrap flex-md-nowrap py-0 px-3">
@@ -138,23 +146,25 @@
     </p>
 
     <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJJ&placement=bloggetbootstrapcom" id="_carbonads_js"></script>
+
   </div>
 </div>
 
-      <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
-    <div class="container d-flex align-items-md-center py-2">
-      <nav class="nav mx-auto">
-        <a class="text-dark py-1 mr-3" href="/">All posts</a>
-        <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
-        <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
-        <a class="text-dark py-1" href="/feed.xml">Subscribe</a>
-      </nav>
-    </div>
-  </nav>
+    <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
+  <div class="container d-flex align-items-md-center py-2">
+    <nav class="nav mx-auto">
+      <a class="text-dark py-1 mr-3" href="/">All posts</a>
+      <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
+      <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
+      <a class="text-dark py-1" href="https://blog.getbootstrap.com/feed.xml">Subscribe</a>
+    </nav>
+  </div>
+</nav>
 
 
     <div class="container">
-      <div class="posts-container px-3 mx-auto my-5">
+      
+<div class="posts-container px-3 mx-auto my-5">
   <div class="post">
     <h1 class="post-title fw-500">Bootstrap 5.0.1</h1>
     <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -164,7 +174,7 @@
                            alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 13 May 2021 00:00:00 +0000">
+  <span class="d-flex align-items-center ml-3" title="Thu, 13 May 2021 00:00:00 &#43;0000">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -176,80 +186,66 @@
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/gAjR4_CbPpQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
-<p>Our first patch release for Bootstrap 5 has landed with v5.0.1! We’ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.</p>
-
+<p>Our first patch release for Bootstrap 5 has landed with v5.0.1! We&rsquo;ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.</p>
 <h2 id="changelog">Changelog</h2>
-
 <ul>
-  <li>Fixed an issue where dropdowns wouldn’t close after clicking into an <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code></li>
-  <li>Validated inputs in <code class="language-plaintext highlighter-rouge">.input-group</code>s no longer render behind sibling elements</li>
-  <li>Prevent <code class="language-plaintext highlighter-rouge">accent-bg</code> from leaking in nested tables</li>
-  <li>Modal backdrops no longer throw Uncaught TypeError when initialized through JS</li>
-  <li>Refactored disposing properties into the base component</li>
-  <li>Extracted static <code class="language-plaintext highlighter-rouge">DATA_KEY</code> and <code class="language-plaintext highlighter-rouge">EVENT_KEY</code> to the base component</li>
-  <li>Merged <code class="language-plaintext highlighter-rouge">transitionend</code> listener callbacks into one method</li>
-  <li>Popovers and tooltips have a streamlined config property</li>
-  <li>Toasts no longer automatically hide on focus or hover</li>
-  <li>No longer redefining <code class="language-plaintext highlighter-rouge">$list-group-color</code> in the list group loop</li>
+<li>Fixed an issue where dropdowns wouldn&rsquo;t close after clicking into an <code>&lt;input&gt;</code></li>
+<li>Validated inputs in <code>.input-group</code>s no longer render behind sibling elements</li>
+<li>Prevent <code>accent-bg</code> from leaking in nested tables</li>
+<li>Modal backdrops no longer throw Uncaught TypeError when initialized through JS</li>
+<li>Refactored disposing properties into the base component</li>
+<li>Extracted static <code>DATA_KEY</code> and <code>EVENT_KEY</code> to the base component</li>
+<li>Merged <code>transitionend</code> listener callbacks into one method</li>
+<li>Popovers and tooltips have a streamlined config property</li>
+<li>Toasts no longer automatically hide on focus or hover</li>
+<li>No longer redefining <code>$list-group-color</code> in the list group loop</li>
 </ul>
-
 <p>Our docs and examples also received a few updates:</p>
-
 <ul>
-  <li>Fixed Sidebars example not rendering correctly in Chrome</li>
-  <li>Fixed RTLCSS <code class="language-plaintext highlighter-rouge">stringMap</code> configuration snippet</li>
-  <li>Updated offcanvas navbar example to prevent console error</li>
-  <li>Fixed miscellaneous typos, grammatical errors, and links in the Migration guide</li>
+<li>Fixed Sidebars example not rendering correctly in Chrome</li>
+<li>Fixed RTLCSS <code>stringMap</code> configuration snippet</li>
+<li>Updated offcanvas navbar example to prevent console error</li>
+<li>Fixed miscellaneous typos, grammatical errors, and links in the Migration guide</li>
 </ul>
-
-<hr class="my-5" />
-
+<hr class="my-5">
 <p>Head to GitHub for a complete <a href="https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F38">list of issues and pull requests in v5.0.1</a>. You can also review the <a href="https://github.com/twbs/bootstrap/projects/38">v5.0.1 project board</a>.</p>
-
 <h2 id="get-the-release">Get the release</h2>
-
-<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It’s also been pushed to npm:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i bootstrap
-</code></pre></div></div>
-
-<p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.0.1">Review the GitHub v5.0.1 release changelog</a> for a complete list of changes since our last release.</p>
-
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm i bootstrap
+</code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.0.1">Review the GitHub v5.0.1 release changelog</a> for a complete list of changes since our last release.</p>
 <h2 id="support-the-team">Support the team</h2>
-
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>’ GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>' GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
   </div>
 
   <div class="related">
-    <h2>Recent posts</h2>
+    <h2>Related posts</h2>
     <ul class="related-posts list-unstyled">
       <li>
         <h4>
-          <a href="/2021/08/19/ten/">
-            Ten Years of Bootstrap
-            <small>19 Aug 2021</small>
+          <a href="/2021/05/10/bootstrap-icons-1-5-0/">
+            Bootstrap Icons v1.5.0
+            <small>10 May 2021</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/08/04/bootstrap-5-1-0/">
-            Bootstrap 5.1.0
-            <small>04 Aug 2021</small>
+          <a href="/2021/05/05/bootstrap-5/">
+            Bootstrap 5
+            <small>05 May 2021</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/06/22/bootstrap-5-0-2/">
-            Bootstrap 5.0.2
-            <small>22 Jun 2021</small>
+          <a href="/2021/03/29/bootstrap-icons-1-4-1/">
+            Bootstrap Icons v1.4.1
+            <small>29 Mar 2021</small>
           </a>
         </h4>
       </li>
     </ul>
   </div>
 </div>
-
     </div>
 
     <footer class="bd-footer p-3 p-md-5 mt-5 text-center text-muted bg-light">

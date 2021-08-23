@@ -2,51 +2,59 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://gmpg.org/xfn/11" rel="profile">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://gmpg.org/xfn/11" rel="profile">
+<link rel="canonical" href="https://blog.getbootstrap.com/2016/10/19/bootstrap-4-alpha-5/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="/assets/css/style.css" rel="stylesheet">
+<meta name="description" content="Alpha 5 has arrived just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we&rsquo;re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.
+New CSS bundles We&rsquo;ve updated our build process to include compiled versions of all our CSS bundles.">
+<meta name="generator" content="Hugo 0.87.0">
 
-    <!-- Favicons -->
+
+
+<title>Bootstrap 4 Alpha 5 | Bootstrap Blog</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<link href="/assets/css/style.css" rel="stylesheet">
+
+
+<link rel="alternate" type="application/rss+xml" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog">
+
+<!-- Favicons -->
 <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#7952b3">
 
+<meta name="author" content="Mark Otto">
 
-    <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Bootstrap 4 Alpha 5 | Bootstrap Blog</title>
-<meta name="generator" content="Jekyll v4.2.0" />
+<meta name="twitter:title" content="Bootstrap 4 Alpha 5"/>
+<meta name="twitter:description" content="Alpha 5 has arrived just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we&rsquo;re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.
+New CSS bundles We&rsquo;ve updated our build process to include compiled versions of all our CSS bundles."/>
+<meta name="twitter:site" content="@getbootstrap"/>
+<meta name="twitter:creator" content="@mdo">
+
+<!-- Facebook -->
 <meta property="og:title" content="Bootstrap 4 Alpha 5" />
-<meta name="author" content="Mark Otto" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Alpha 5 has arrived just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we’re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6." />
-<meta property="og:description" content="Alpha 5 has arrived just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we’re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6." />
-<link rel="canonical" href="https://blog.getbootstrap.com/2016/10/19/bootstrap-4-alpha-5/" />
-<meta property="og:url" content="https://blog.getbootstrap.com/2016/10/19/bootstrap-4-alpha-5/" />
-<meta property="og:site_name" content="Bootstrap Blog" />
-<meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="og:image:height" content="500" />
-<meta property="og:image:width" content="1000" />
+<meta property="og:description" content="Alpha 5 has arrived just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we&rsquo;re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.
+New CSS bundles We&rsquo;ve updated our build process to include compiled versions of all our CSS bundles." />
 <meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2016/10/19/bootstrap-4-alpha-5/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2016-10-19T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="twitter:title" content="Bootstrap 4 Alpha 5" />
-<meta name="twitter:site" content="@getbootstrap" />
-<meta name="twitter:creator" content="@mdo" />
-<script type="application/ld+json">
-{"dateModified":"2016-10-19T00:00:00+00:00","datePublished":"2016-10-19T00:00:00+00:00","description":"Alpha 5 has arrived just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we’re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2016/10/19/bootstrap-4-alpha-5/"},"url":"https://blog.getbootstrap.com/2016/10/19/bootstrap-4-alpha-5/","@type":"BlogPosting","author":{"@type":"Person","name":"Mark Otto"},"image":{"width":1000,"height":500,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"headline":"Bootstrap 4 Alpha 5","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+<meta property="article:modified_time" content="2016-10-19T00:00:00+00:00" />
 
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
 
-    <script>
+<script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', 'UA-146052-12', 'getbootstrap.com');
   ga('set', 'anonymizeIp', true);
@@ -55,14 +63,14 @@
 <script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <script src="https://cdn.usefathom.com/script.js" data-site="TAXRUMOF" defer></script>
-    <script>
+<script>
   (function(html) {
     html.className = html.className.replace(/\bno-js\b/, '');
   })(document.documentElement);
 </script>
 
-  </head>
 
+  </head>
   <body>
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar px-0">
   <div class="container flex-wrap flex-md-nowrap py-0 px-3">
@@ -138,23 +146,25 @@
     </p>
 
     <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJJ&placement=bloggetbootstrapcom" id="_carbonads_js"></script>
+
   </div>
 </div>
 
-      <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
-    <div class="container d-flex align-items-md-center py-2">
-      <nav class="nav mx-auto">
-        <a class="text-dark py-1 mr-3" href="/">All posts</a>
-        <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
-        <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
-        <a class="text-dark py-1" href="/feed.xml">Subscribe</a>
-      </nav>
-    </div>
-  </nav>
+    <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
+  <div class="container d-flex align-items-md-center py-2">
+    <nav class="nav mx-auto">
+      <a class="text-dark py-1 mr-3" href="/">All posts</a>
+      <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
+      <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
+      <a class="text-dark py-1" href="https://blog.getbootstrap.com/feed.xml">Subscribe</a>
+    </nav>
+  </div>
+</nav>
 
 
     <div class="container">
-      <div class="posts-container px-3 mx-auto my-5">
+      
+<div class="posts-container px-3 mx-auto my-5">
   <div class="post">
     <h1 class="post-title fw-500">Bootstrap 4 Alpha 5</h1>
     <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -164,7 +174,7 @@
                            alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ml-3" title="Wed, 19 Oct 2016 00:00:00 +0000">
+  <span class="d-flex align-items-center ml-3" title="Wed, 19 Oct 2016 00:00:00 &#43;0000">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -176,122 +186,97 @@
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/MxGEVIvSFeY?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
-<p><a href="https://v4-alpha.getbootstrap.com/">Alpha 5 has arrived</a> just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we’re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.</p>
-
+<p><a href="https://v4-alpha.getbootstrap.com/">Alpha 5 has arrived</a> just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we&rsquo;re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.</p>
 <h3 id="new-css-bundles">New CSS bundles</h3>
-
-<p>We’ve updated our build process to include compiled versions of all our CSS bundles. In addition to the longstanding default compiled and minified bundles, we now include compiled CSS files for our flexbox mode, grid system only, and Reboot only bundles. Each bundle includes a compiled, minified, and Sass map, just like the default compiled CSS.</p>
-
+<p>We&rsquo;ve updated our build process to include compiled versions of all our CSS bundles. In addition to the longstanding default compiled and minified bundles, we now include compiled CSS files for our flexbox mode, grid system only, and Reboot only bundles. Each bundle includes a compiled, minified, and Sass map, just like the default compiled CSS.</p>
 <h3 id="grid-updates">Grid updates</h3>
-
-<p>Our grid system has been updated and is more flexible than ever. New in Alpha 5 are breakpoint specific grid gutters. That’s right, now you can customize the width of your gutters across each and every grid tier by modifying the Sass map.</p>
-
-<p>The <code class="language-plaintext highlighter-rouge">.container</code> behaviors have changed slightly in Alpha 5. We now set the <code class="language-plaintext highlighter-rouge">width</code> of each container alongside a <code class="language-plaintext highlighter-rouge">max-width: 100%;</code> to ensure proper rendering across browsers in both our default and flexbox modes. Similarly, we fixed a bug in our flexbox grid where columns didn’t properly collapse at lower breakpoints.</p>
-
-<p>Lastly, we’ve changed a few breakpoint and container dimensions. The <code class="language-plaintext highlighter-rouge">sm</code> tier’s container is now smaller than it’s viewport dimensions and the <code class="language-plaintext highlighter-rouge">lg</code> tier has changed from <code class="language-plaintext highlighter-rouge">940px</code> to <code class="language-plaintext highlighter-rouge">960px</code> for grid columns that more cleanly by 12.</p>
-
+<p>Our grid system has been updated and is more flexible than ever. New in Alpha 5 are breakpoint specific grid gutters. That&rsquo;s right, now you can customize the width of your gutters across each and every grid tier by modifying the Sass map.</p>
+<p>The <code>.container</code> behaviors have changed slightly in Alpha 5. We now set the <code>width</code> of each container alongside a <code>max-width: 100%;</code> to ensure proper rendering across browsers in both our default and flexbox modes. Similarly, we fixed a bug in our flexbox grid where columns didn&rsquo;t properly collapse at lower breakpoints.</p>
+<p>Lastly, we&rsquo;ve changed a few breakpoint and container dimensions. The <code>sm</code> tier&rsquo;s container is now smaller than it&rsquo;s viewport dimensions and the <code>lg</code> tier has changed from <code>940px</code> to <code>960px</code> for grid columns that more cleanly by 12.</p>
 <h3 id="utilities-overhaul">Utilities overhaul</h3>
-
 <p>Utility classes got a ton of attention with Alpha 5 and will continue to in Alpha 6. Major changes in this release include:</p>
-
 <ul>
-  <li>
-    <p>Simpler <code class="language-plaintext highlighter-rouge">margin</code> and <code class="language-plaintext highlighter-rouge">padding</code> syntax (e.g., now <code class="language-plaintext highlighter-rouge">mx-auto</code> instead of <code class="language-plaintext highlighter-rouge">m-x-auto</code>).</p>
-  </li>
-  <li>
-    <p>Renamed <code class="language-plaintext highlighter-rouge">.pull-*-left</code> and <code class="language-plaintext highlighter-rouge">.pull-*-right</code> to their CSS properties (e.g., now <code class="language-plaintext highlighter-rouge">.float-*-left</code> and <code class="language-plaintext highlighter-rouge">.float-*-right</code>).</p>
-  </li>
-  <li>
-    <p>Separated <code class="language-plaintext highlighter-rouge">background</code> and <code class="language-plaintext highlighter-rouge">color</code> utilities for more explicit styling.</p>
-  </li>
-  <li>
-    <p>Renamed image utilities, moving from <code class="language-plaintext highlighter-rouge">.img-rounded</code> and <code class="language-plaintext highlighter-rouge">.img-circle</code> to <code class="language-plaintext highlighter-rouge">.rounded</code> and <code class="language-plaintext highlighter-rouge">.rounded-circle</code>, respectively.</p>
-  </li>
-  <li>
-    <p>Removed the <code class="language-plaintext highlighter-rouge">display: block;</code> from <code class="language-plaintext highlighter-rouge">.img-fluid</code> as it’s unnecessary for creating responsive images (the <code class="language-plaintext highlighter-rouge">inline-block</code> default works great as-is).</p>
-  </li>
-  <li>
-    <p>Added new <code class="language-plaintext highlighter-rouge">vertical-align</code> utilities with <code class="language-plaintext highlighter-rouge">.align-top</code>, <code class="language-plaintext highlighter-rouge">.align-middle</code>, and more.</p>
-  </li>
+<li>
+<p>Simpler <code>margin</code> and <code>padding</code> syntax (e.g., now <code>mx-auto</code> instead of <code>m-x-auto</code>).</p>
+</li>
+<li>
+<p>Renamed <code>.pull-*-left</code> and <code>.pull-*-right</code> to their CSS properties (e.g., now <code>.float-*-left</code> and <code>.float-*-right</code>).</p>
+</li>
+<li>
+<p>Separated <code>background</code> and <code>color</code> utilities for more explicit styling.</p>
+</li>
+<li>
+<p>Renamed image utilities, moving from <code>.img-rounded</code> and <code>.img-circle</code> to <code>.rounded</code> and <code>.rounded-circle</code>, respectively.</p>
+</li>
+<li>
+<p>Removed the <code>display: block;</code> from <code>.img-fluid</code> as it&rsquo;s unnecessary for creating responsive images (the <code>inline-block</code> default works great as-is).</p>
+</li>
+<li>
+<p>Added new <code>vertical-align</code> utilities with <code>.align-top</code>, <code>.align-middle</code>, and more.</p>
+</li>
 </ul>
-
 <p>Be sure to scope out the open issues in <a href="https://github.com/twbs/bootstrap/milestone/39">the Alpha 6 milestone</a>. There are more updates coming to utilities to add more responsive variations, more consistent naming, and more.</p>
-
 <h3 id="navbar-updates">Navbar updates</h3>
-
-<p>We’ve put a <a href="https://github.com/twbs/bootstrap/pull/19890">ton of time into the navbar for Alpha 5</a>, but honestly it’s still not done. Rather than hold back the progress we’ve made for it until Alpha 6, we’re including a somewhat half-baked iteration.</p>
-
-<p>Here’s a look at what’s new, how it works, and what might change in our next release.</p>
-
+<p>We&rsquo;ve put a <a href="https://github.com/twbs/bootstrap/pull/19890">ton of time into the navbar for Alpha 5</a>, but honestly it&rsquo;s still not done. Rather than hold back the progress we&rsquo;ve made for it until Alpha 6, we&rsquo;re including a somewhat half-baked iteration.</p>
+<p>Here&rsquo;s a look at what&rsquo;s new, how it works, and what might change in our next release.</p>
 <ul>
-  <li>
-    <p>First up, the navbar has a <strong>brand new toggler</strong> that features a customizable SVG-based <code class="language-plaintext highlighter-rouge">background-image</code>. With the power of Sass variables, that allows us to easily change the color of those hamburger menu icons.</p>
-  </li>
-  <li>
-    <p>Second, the <strong>default styles for the brand and navigation have largely been tweaked</strong>. There’s less custom styling overall and an emphasis on positioning and flexibility.</p>
-  </li>
-  <li>
-    <p>Building on that, we <strong>overhauled the collapse plugin integration for responsive navbars</strong>. With the help of some utility classes and collapse classes for each grid tier, you can easily pick the breakpoint for collapsing your navbar without having to recompile your Sass. Also included is the auto restyling of dropdown menus for mobile so they no longer hide other navbar content when toggled.</p>
-  </li>
-  <li>
-    <p>Lastly, we’ve <strong>updated the styling and documentation for various navbar subcomponents</strong>. There’s more flexibility and examples of the <code class="language-plaintext highlighter-rouge">.navbar-brand</code>, better form control support, higher nav contrast, themed responsive toggles, and more.</p>
-  </li>
+<li>
+<p>First up, the navbar has a <strong>brand new toggler</strong> that features a customizable SVG-based <code>background-image</code>. With the power of Sass variables, that allows us to easily change the color of those hamburger menu icons.</p>
+</li>
+<li>
+<p>Second, the <strong>default styles for the brand and navigation have largely been tweaked</strong>. There&rsquo;s less custom styling overall and an emphasis on positioning and flexibility.</p>
+</li>
+<li>
+<p>Building on that, we <strong>overhauled the collapse plugin integration for responsive navbars</strong>. With the help of some utility classes and collapse classes for each grid tier, you can easily pick the breakpoint for collapsing your navbar without having to recompile your Sass. Also included is the auto restyling of dropdown menus for mobile so they no longer hide other navbar content when toggled.</p>
+</li>
+<li>
+<p>Lastly, we&rsquo;ve <strong>updated the styling and documentation for various navbar subcomponents</strong>. There&rsquo;s more flexibility and examples of the <code>.navbar-brand</code>, better form control support, higher nav contrast, themed responsive toggles, and more.</p>
+</li>
 </ul>
-
-<p>The navbar is a tricky one—there’s so much functionality and styling that can go into them. We’ve <a href="https://github.com/twbs/bootstrap/issues/20937">outlined the next major pieces for the navbar</a>, but there’s likely more we’re missing. Be sure to give the updated component a whirl and report back with your feedback.</p>
-
+<p>The navbar is a tricky one—there&rsquo;s so much functionality and styling that can go into them. We&rsquo;ve <a href="https://github.com/twbs/bootstrap/issues/20937">outlined the next major pieces for the navbar</a>, but there&rsquo;s likely more we&rsquo;re missing. Be sure to give the updated component a whirl and report back with your feedback.</p>
 <h3 id="getting-to-alpha-6">Getting to Alpha 6</h3>
-
-<p>We’re planning on one more major alpha release before getting into the slightly more stable beta ships. There’s still more to do around our major components—the navbar, flexbox variants, utilities, and accessibility—before we button things up.</p>
-
-<p>Once done, we’ll review all on our docs and update all our example templates to the latest and greatest. From there we’ll need your help to test these changes and report bugs. Stay tuned for more updates as we get closer to that release.</p>
-
+<p>We&rsquo;re planning on one more major alpha release before getting into the slightly more stable beta ships. There&rsquo;s still more to do around our major components—the navbar, flexbox variants, utilities, and accessibility—before we button things up.</p>
+<p>Once done, we&rsquo;ll review all on our docs and update all our example templates to the latest and greatest. From there we&rsquo;ll need your help to test these changes and report bugs. Stay tuned for more updates as we get closer to that release.</p>
 <p>Until then, have at it with Alpha 5!</p>
-
-<hr />
-
-<p>For more details on this release’s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/20630">Alpha 5 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/milestone/36?closed=1">closed Alpha 5 milestone</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
-
+<hr>
+<p>For more details on this release&rsquo;s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/20630">Alpha 5 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/milestone/36?closed=1">closed Alpha 5 milestone</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
 <p><strong>Using the Bootstrap CDN?</strong> Review the changelog and update your CDN links to point to the latest files:</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
 
 <span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
-
-
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
   </div>
 
   <div class="related">
-    <h2>Recent posts</h2>
+    <h2>Related posts</h2>
     <ul class="related-posts list-unstyled">
       <li>
         <h4>
-          <a href="/2021/08/19/ten/">
-            Ten Years of Bootstrap
-            <small>19 Aug 2021</small>
+          <a href="/2016/09/05/bootstrap-4-alpha-4/">
+            Bootstrap 4 Alpha 4
+            <small>05 Sep 2016</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/08/04/bootstrap-5-1-0/">
-            Bootstrap 5.1.0
-            <small>04 Aug 2021</small>
+          <a href="/2016/07/27/bootstrap-4-alpha-3/">
+            Bootstrap 4 Alpha 3
+            <small>27 Jul 2016</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/06/22/bootstrap-5-0-2/">
-            Bootstrap 5.0.2
-            <small>22 Jun 2021</small>
+          <a href="/2016/07/25/bootstrap-3-3-7-released/">
+            Bootstrap 3.3.7 released
+            <small>25 Jul 2016</small>
           </a>
         </h4>
       </li>
     </ul>
   </div>
 </div>
-
     </div>
 
     <footer class="bd-footer p-3 p-md-5 mt-5 text-center text-muted bg-light">

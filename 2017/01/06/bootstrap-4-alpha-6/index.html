@@ -2,51 +2,59 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://gmpg.org/xfn/11" rel="profile">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://gmpg.org/xfn/11" rel="profile">
+<link rel="canonical" href="https://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="/assets/css/style.css" rel="stylesheet">
+<meta name="description" content="Alpha 6 has landed, and it&rsquo;s one of our biggest ships to date. We&rsquo;ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.
+Read one for highlights from this release. We also recommend reviewing the ship list and milestone for a more detailed look at what&rsquo;s changed.">
+<meta name="generator" content="Hugo 0.87.0">
 
-    <!-- Favicons -->
+
+
+<title>Bootstrap 4 Alpha 6 | Bootstrap Blog</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<link href="/assets/css/style.css" rel="stylesheet">
+
+
+<link rel="alternate" type="application/rss+xml" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog">
+
+<!-- Favicons -->
 <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#7952b3">
 
+<meta name="author" content="Mark Otto">
 
-    <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Bootstrap 4 Alpha 6 | Bootstrap Blog</title>
-<meta name="generator" content="Jekyll v4.2.0" />
+<meta name="twitter:title" content="Bootstrap 4 Alpha 6"/>
+<meta name="twitter:description" content="Alpha 6 has landed, and it&rsquo;s one of our biggest ships to date. We&rsquo;ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.
+Read one for highlights from this release. We also recommend reviewing the ship list and milestone for a more detailed look at what&rsquo;s changed."/>
+<meta name="twitter:site" content="@getbootstrap"/>
+<meta name="twitter:creator" content="@mdo">
+
+<!-- Facebook -->
 <meta property="og:title" content="Bootstrap 4 Alpha 6" />
-<meta name="author" content="Mark Otto" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Alpha 6 has landed, and it’s one of our biggest ships to date. We’ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do." />
-<meta property="og:description" content="Alpha 6 has landed, and it’s one of our biggest ships to date. We’ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do." />
-<link rel="canonical" href="https://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/" />
-<meta property="og:url" content="https://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/" />
-<meta property="og:site_name" content="Bootstrap Blog" />
-<meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="og:image:height" content="500" />
-<meta property="og:image:width" content="1000" />
+<meta property="og:description" content="Alpha 6 has landed, and it&rsquo;s one of our biggest ships to date. We&rsquo;ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.
+Read one for highlights from this release. We also recommend reviewing the ship list and milestone for a more detailed look at what&rsquo;s changed." />
 <meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-01-06T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="twitter:title" content="Bootstrap 4 Alpha 6" />
-<meta name="twitter:site" content="@getbootstrap" />
-<meta name="twitter:creator" content="@mdo" />
-<script type="application/ld+json">
-{"dateModified":"2017-01-06T00:00:00+00:00","datePublished":"2017-01-06T00:00:00+00:00","description":"Alpha 6 has landed, and it’s one of our biggest ships to date. We’ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/"},"url":"https://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/","@type":"BlogPosting","author":{"@type":"Person","name":"Mark Otto"},"image":{"width":1000,"height":500,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"headline":"Bootstrap 4 Alpha 6","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+<meta property="article:modified_time" content="2017-01-06T00:00:00+00:00" />
 
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
 
-    <script>
+<script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', 'UA-146052-12', 'getbootstrap.com');
   ga('set', 'anonymizeIp', true);
@@ -55,14 +63,14 @@
 <script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <script src="https://cdn.usefathom.com/script.js" data-site="TAXRUMOF" defer></script>
-    <script>
+<script>
   (function(html) {
     html.className = html.className.replace(/\bno-js\b/, '');
   })(document.documentElement);
 </script>
 
-  </head>
 
+  </head>
   <body>
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar px-0">
   <div class="container flex-wrap flex-md-nowrap py-0 px-3">
@@ -138,23 +146,25 @@
     </p>
 
     <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJJ&placement=bloggetbootstrapcom" id="_carbonads_js"></script>
+
   </div>
 </div>
 
-      <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
-    <div class="container d-flex align-items-md-center py-2">
-      <nav class="nav mx-auto">
-        <a class="text-dark py-1 mr-3" href="/">All posts</a>
-        <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
-        <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
-        <a class="text-dark py-1" href="/feed.xml">Subscribe</a>
-      </nav>
-    </div>
-  </nav>
+    <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
+  <div class="container d-flex align-items-md-center py-2">
+    <nav class="nav mx-auto">
+      <a class="text-dark py-1 mr-3" href="/">All posts</a>
+      <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
+      <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
+      <a class="text-dark py-1" href="https://blog.getbootstrap.com/feed.xml">Subscribe</a>
+    </nav>
+  </div>
+</nav>
 
 
     <div class="container">
-      <div class="posts-container px-3 mx-auto my-5">
+      
+<div class="posts-container px-3 mx-auto my-5">
   <div class="post">
     <h1 class="post-title fw-500">Bootstrap 4 Alpha 6</h1>
     <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -164,7 +174,7 @@
                            alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ml-3" title="Fri, 06 Jan 2017 00:00:00 +0000">
+  <span class="d-flex align-items-center ml-3" title="Fri, 06 Jan 2017 00:00:00 &#43;0000">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -176,124 +186,71 @@
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/V44HiAX91Hs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
-<p><a href="https://v4-alpha.getbootstrap.com/">Alpha 6 has landed</a>, and it’s one of our biggest ships to date. We’ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.</p>
-
-<p>Read one for highlights from this release. We also recommend reviewing the <a href="https://github.com/twbs/bootstrap/issues/20939">ship list</a> and <a href="https://github.com/twbs/bootstrap/milestone/39?closed=1">milestone</a> for a more detailed look at what’s changed.</p>
-
+<p><a href="https://v4-alpha.getbootstrap.com/">Alpha 6 has landed</a>, and it&rsquo;s one of our biggest ships to date. We&rsquo;ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.</p>
+<p>Read one for highlights from this release. We also recommend reviewing the <a href="https://github.com/twbs/bootstrap/issues/20939">ship list</a> and <a href="https://github.com/twbs/bootstrap/milestone/39?closed=1">milestone</a> for a more detailed look at what&rsquo;s changed.</p>
 <h2 id="embracing-flexbox">Embracing Flexbox</h2>
-
 <p>Bootstrap 4 is now flexbox by default! Flexbox is an immensely powerful layout tool, providing unparalleled flexibility (hah) and control to our grid system and core components. It comes at the cost of <a href="https://github.com/twbs/bootstrap/pull/21389">dropping IE9 support</a>, but brings significant improvements to component layout, alignment, and sizing.</p>
-
-<p><a class="jsbin-embed" href="https://output.jsbin.com/digabis/3/?output&amp;height=440px">Bootstrap flexbox on jsbin.com</a></p>
-
-<p>If you’re unfamiliar with flexbox, here’s some of the power you can expect to utilize in Bootstrap 4:</p>
-
+<p><a class="jsbin-embed" href="https://output.jsbin.com/digabis/3/?output&height=440px">Bootstrap flexbox on jsbin.com</a></p>
+<p>If you&rsquo;re unfamiliar with flexbox, here&rsquo;s some of the power you can expect to utilize in Bootstrap 4:</p>
 <ul>
-  <li>Automatic equal-width grid columns (e.g., two columns are automatically 50% wide)</li>
-  <li>Equal height and equal width cards</li>
-  <li>Vertical and horizontal centering without hardcoding values with <code class="language-plaintext highlighter-rouge">translate</code> or <code class="language-plaintext highlighter-rouge">margin</code></li>
-  <li>Utility classes for easily (and responsively!) changing display, direction, alignment, and more</li>
-  <li>Auto margins for easy spacing</li>
-  <li>Justified navigation and button groups</li>
-  <li>No more HTML white space or broken table-style rendering</li>
+<li>Automatic equal-width grid columns (e.g., two columns are automatically 50% wide)</li>
+<li>Equal height and equal width cards</li>
+<li>Vertical and horizontal centering without hardcoding values with <code>translate</code> or <code>margin</code></li>
+<li>Utility classes for easily (and responsively!) changing display, direction, alignment, and more</li>
+<li>Auto margins for easy spacing</li>
+<li>Justified navigation and button groups</li>
+<li>No more HTML white space or broken table-style rendering</li>
 </ul>
-
-<p>Nearly every component now takes advantage of flexbox in place of <code class="language-plaintext highlighter-rouge">display: table</code> hacks and <code class="language-plaintext highlighter-rouge">float</code>s. That means less reliance on clearfix, more control over DOM and visual order, and fewer bugs. Navs, list groups, cards, and more all utilize flexbox. Even more complex components like the carousel have been modified to use flexbox in some places.</p>
-
-<p><a class="jsbin-embed" href="https://output.jsbin.com/wepoya/?output&amp;height=340px">Bootstrap carousel on jsbin.com</a></p>
-
+<p>Nearly every component now takes advantage of flexbox in place of <code>display: table</code> hacks and <code>float</code>s. That means less reliance on clearfix, more control over DOM and visual order, and fewer bugs. Navs, list groups, cards, and more all utilize flexbox. Even more complex components like the carousel have been modified to use flexbox in some places.</p>
+<p><a class="jsbin-embed" href="https://output.jsbin.com/wepoya/?output&height=340px">Bootstrap carousel on jsbin.com</a></p>
 <h2 id="responsive-utilities-and-the-great-infix">Responsive utilities and the great infix</h2>
-
-<p>With Alpha 6, we’ve made Bootstrap’s extensive suite of utilities—including classes for <code class="language-plaintext highlighter-rouge">display</code>, <code class="language-plaintext highlighter-rouge">float</code>, and flexbox, and more—<a href="https://github.com/twbs/bootstrap/pull/20934">completely responsive</a>. To keep these class names as approachable and representative of their scope as possible, we’ve also made two important changes to their naming scheme.</p>
-
+<p>With Alpha 6, we&rsquo;ve made Bootstrap&rsquo;s extensive suite of utilities—including classes for <code>display</code>, <code>float</code>, and flexbox, and more—<a href="https://github.com/twbs/bootstrap/pull/20934">completely responsive</a>. To keep these class names as approachable and representative of their scope as possible, we&rsquo;ve also made two important changes to their naming scheme.</p>
 <ul>
-  <li>
-    <p>First, we’ve dropped the <code class="language-plaintext highlighter-rouge">-xs</code> infix from our lowest (extra small) breakpoint. <strong>xs</strong> isn’t a responsive breakpoint quite like <code class="language-plaintext highlighter-rouge">sm</code>, <code class="language-plaintext highlighter-rouge">md</code>, <code class="language-plaintext highlighter-rouge">lg</code>, and <code class="language-plaintext highlighter-rouge">xl</code> because it doesn’t start applying styles at a <code class="language-plaintext highlighter-rouge">min-width</code> and up. It simply applies to everything as there’s no bounding <code class="language-plaintext highlighter-rouge">@media</code> query.</p>
-  </li>
-  <li>
-    <p>Second, we’ve renamed several classes to better articulate their property-value pairings. Instead of <em>pull</em>, we use <em>float</em>. Instead of creating new names for the various flexbox properties, we start with the property name.</p>
-  </li>
+<li>
+<p>First, we&rsquo;ve dropped the <code>-xs</code> infix from our lowest (extra small) breakpoint. <strong>xs</strong> isn&rsquo;t a responsive breakpoint quite like <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code> because it doesn&rsquo;t start applying styles at a <code>min-width</code> and up. It simply applies to everything as there&rsquo;s no bounding <code>@media</code> query.</p>
+</li>
+<li>
+<p>Second, we&rsquo;ve renamed several classes to better articulate their property-value pairings. Instead of <em>pull</em>, we use <em>float</em>. Instead of creating new names for the various flexbox properties, we start with the property name.</p>
+</li>
 </ul>
-
-<p>Put that all together and you end up with updated classes like <code class="language-plaintext highlighter-rouge">.col-6</code>, <code class="language-plaintext highlighter-rouge">.d-none</code>, <code class="language-plaintext highlighter-rouge">.float-right</code>, <code class="language-plaintext highlighter-rouge">.d-md-flex</code>, <code class="language-plaintext highlighter-rouge">.justify-content-end</code>, and <code class="language-plaintext highlighter-rouge">.text-lg-left</code>. These new classes bring immense power and customization to folks building with Bootstrap. They also make it easier for those migrating from v3 with clearer mappings to legacy class names.</p>
-
+<p>Put that all together and you end up with updated classes like <code>.col-6</code>, <code>.d-none</code>, <code>.float-right</code>, <code>.d-md-flex</code>, <code>.justify-content-end</code>, and <code>.text-lg-left</code>. These new classes bring immense power and customization to folks building with Bootstrap. They also make it easier for those migrating from v3 with clearer mappings to legacy class names.</p>
 <h2 id="more-grid-improvements">More grid improvements</h2>
-
-<p>We’re back at it with more grid improvements. This time we’ve added responsive autosizing columns and more container padding options. Add any number of <code class="language-plaintext highlighter-rouge">.col-*</code> classes and they’ll automatically be equal in width.</p>
-
-<p><a class="jsbin-embed" href="https://output.jsbin.com/sarire/?output&amp;height=170px">Bootstrap flexbox auto columns on jsbin.com</a></p>
-
-<p>Padding for grid containers can now be configured across breakpoints with the new <code class="language-plaintext highlighter-rouge">$grid-gutter-widths</code> Sass map. In addition, you can remove gutters from grid rows and their columns with the <code class="language-plaintext highlighter-rouge">.no-gutters</code> modifier.</p>
-
+<p>We&rsquo;re back at it with more grid improvements. This time we&rsquo;ve added responsive autosizing columns and more container padding options. Add any number of <code>.col-*</code> classes and they&rsquo;ll automatically be equal in width.</p>
+<p><a class="jsbin-embed" href="https://output.jsbin.com/sarire/?output&height=170px">Bootstrap flexbox auto columns on jsbin.com</a></p>
+<p>Padding for grid containers can now be configured across breakpoints with the new <code>$grid-gutter-widths</code> Sass map. In addition, you can remove gutters from grid rows and their columns with the <code>.no-gutters</code> modifier.</p>
 <h2 id="updated-navbar">Updated navbar</h2>
-
-<p>As mentioned in our last release, the Alpha 5 navbar was a little half baked. This time around, we’re completely baked. No, but seriously, the navbar has been rewritten to provide better built-in responsive behaviors and improved layout customization thanks to our move to flexbox.</p>
-
-<p><a href="https://v4-alpha.getbootstrap.com/components/navbar/"><img src="/assets/img/2017/alpha6-navbar.png" alt="Bootstrap 4 navbars" /></a></p>
-
-<p>Here’s the rundown on what’s changed:</p>
-
+<p>As mentioned in our last release, the Alpha 5 navbar was a little half baked. This time around, we&rsquo;re completely baked. No, but seriously, the navbar has been rewritten to provide better built-in responsive behaviors and improved layout customization thanks to our move to flexbox.</p>
+<p><a href="https://v4-alpha.getbootstrap.com/components/navbar/"><img src="/assets/img/2017/alpha6-navbar.png" alt="Bootstrap 4 navbars"></a></p>
+<p>Here&rsquo;s the rundown on what&rsquo;s changed:</p>
 <ul>
-  <li>Navbars are built with flexbox! Instead of floats, you’ll need <a href="https://v4-alpha.getbootstrap.com/utilities/flexbox/">flexbox</a> and <a href="https://v4-alpha.getbootstrap.com/utilities/spacing/">margin utilities</a>.</li>
-  <li>Navbar navs no longer require the <code class="language-plaintext highlighter-rouge">.nav</code> base class. While it provided a starting point, these shared styles often got in the way of navbar behaviors. Now it’s just <code class="language-plaintext highlighter-rouge">.navbar-nav</code> and utilities for alignment.</li>
-  <li>The <code class="language-plaintext highlighter-rouge">.navbar-toggleable</code> classes are now applied to the <code class="language-plaintext highlighter-rouge">.navbar</code> instead of the <code class="language-plaintext highlighter-rouge">.collapse</code> within. This allows us to provide better responsive behavior with just one class change.</li>
-  <li>The responsive navbar toggle, <code class="language-plaintext highlighter-rouge">.navbar-toggler</code>, has also been updated. The icon is once again a child element, <code class="language-plaintext highlighter-rouge">.navbar-toggler-icon</code>, for improved customization. It also includes easy modifiers for absolutely aligning it to the top right or top left.</li>
+<li>Navbars are built with flexbox! Instead of floats, you&rsquo;ll need <a href="https://v4-alpha.getbootstrap.com/utilities/flexbox/">flexbox</a> and <a href="https://v4-alpha.getbootstrap.com/utilities/spacing/">margin utilities</a>.</li>
+<li>Navbar navs no longer require the <code>.nav</code> base class. While it provided a starting point, these shared styles often got in the way of navbar behaviors. Now it&rsquo;s just <code>.navbar-nav</code> and utilities for alignment.</li>
+<li>The <code>.navbar-toggleable</code> classes are now applied to the <code>.navbar</code> instead of the <code>.collapse</code> within. This allows us to provide better responsive behavior with just one class change.</li>
+<li>The responsive navbar toggle, <code>.navbar-toggler</code>, has also been updated. The icon is once again a child element, <code>.navbar-toggler-icon</code>, for improved customization. It also includes easy modifiers for absolutely aligning it to the top right or top left.</li>
 </ul>
-
 <p>Check out the <a href="https://v4-alpha.getbootstrap.com/components/navbar/">navbar docs</a> to learn more and see it in action.</p>
-
 <h2 id="up-next-our-first-beta">Up next, our first beta</h2>
-
-<p>Like you, we’re very much ready for our first beta release. Luckily, we’re in great shape to get there from this alpha. We have the fewest open issues and pulls we’ve had in easily the last 18 months, and the contributions from the community have been outstanding. As we head to our first beta, we’ll be focused on not adding anything new, ideally making as few breaking changes as possible, and emphasizing documentation quality and bug fixes.</p>
-
+<p>Like you, we&rsquo;re very much ready for our first beta release. Luckily, we&rsquo;re in great shape to get there from this alpha. We have the fewest open issues and pulls we&rsquo;ve had in easily the last 18 months, and the contributions from the community have been outstanding. As we head to our first beta, we&rsquo;ll be focused on not adding anything new, ideally making as few breaking changes as possible, and emphasizing documentation quality and bug fixes.</p>
 <p>We need your help to get there though. Please dive into this latest release and continue to report bugs and submit pull requests as you can. Every bit helps us improve the next release!</p>
-
-<hr />
-
-<p>For more details on this release’s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/20939">Alpha 6 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/milestone/39?closed=1">closed Alpha 6 milestone</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
-
+<hr>
+<p>For more details on this release&rsquo;s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/20939">Alpha 6 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/milestone/39?closed=1">closed Alpha 6 milestone</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
 <p><strong>Using the Bootstrap CDN?</strong> Review the changelog and update your CDN links to point to the latest files:</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
 
 <span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
-
-<script src="https://static.jsbin.com/js/embed.min.js"></script>
-
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div><script src="https://static.jsbin.com/js/embed.min.js"></script>
 
   </div>
 
   <div class="related">
-    <h2>Recent posts</h2>
+    <h2>Related posts</h2>
     <ul class="related-posts list-unstyled">
-      <li>
-        <h4>
-          <a href="/2021/08/19/ten/">
-            Ten Years of Bootstrap
-            <small>19 Aug 2021</small>
-          </a>
-        </h4>
-      </li><li>
-        <h4>
-          <a href="/2021/08/04/bootstrap-5-1-0/">
-            Bootstrap 5.1.0
-            <small>04 Aug 2021</small>
-          </a>
-        </h4>
-      </li><li>
-        <h4>
-          <a href="/2021/06/22/bootstrap-5-0-2/">
-            Bootstrap 5.0.2
-            <small>22 Jun 2021</small>
-          </a>
-        </h4>
-      </li>
+      
     </ul>
   </div>
 </div>
-
     </div>
 
     <footer class="bd-footer p-3 p-md-5 mt-5 text-center text-muted bg-light">

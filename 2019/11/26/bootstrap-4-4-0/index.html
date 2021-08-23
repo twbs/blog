@@ -2,51 +2,59 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://gmpg.org/xfn/11" rel="profile">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://gmpg.org/xfn/11" rel="profile">
+<link rel="canonical" href="https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="/assets/css/style.css" rel="stylesheet">
+<meta name="description" content="Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now.
+Highlights Here&rsquo;s what you need to know about v4.4.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work.">
+<meta name="generator" content="Hugo 0.87.0">
 
-    <!-- Favicons -->
+
+
+<title>Bootstrap 4.4.0 | Bootstrap Blog</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<link href="/assets/css/style.css" rel="stylesheet">
+
+
+<link rel="alternate" type="application/rss+xml" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog">
+
+<!-- Favicons -->
 <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#7952b3">
 
+<meta name="author" content="Mark Otto">
 
-    <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Bootstrap 4.4.0 | Bootstrap Blog</title>
-<meta name="generator" content="Jekyll v4.2.0" />
+<meta name="twitter:title" content="Bootstrap 4.4.0"/>
+<meta name="twitter:description" content="Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now.
+Highlights Here&rsquo;s what you need to know about v4.4.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work."/>
+<meta name="twitter:site" content="@getbootstrap"/>
+<meta name="twitter:creator" content="@mdo">
+
+<!-- Facebook -->
 <meta property="og:title" content="Bootstrap 4.4.0" />
-<meta name="author" content="Mark Otto" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now." />
-<meta property="og:description" content="Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now." />
-<link rel="canonical" href="https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/" />
-<meta property="og:url" content="https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/" />
-<meta property="og:site_name" content="Bootstrap Blog" />
-<meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="og:image:height" content="500" />
-<meta property="og:image:width" content="1000" />
+<meta property="og:description" content="Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now.
+Highlights Here&rsquo;s what you need to know about v4.4.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work." />
 <meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-11-26T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="twitter:title" content="Bootstrap 4.4.0" />
-<meta name="twitter:site" content="@getbootstrap" />
-<meta name="twitter:creator" content="@mdo" />
-<script type="application/ld+json">
-{"dateModified":"2019-11-26T00:00:00+00:00","datePublished":"2019-11-26T00:00:00+00:00","description":"Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/"},"url":"https://blog.getbootstrap.com/2019/11/26/bootstrap-4-4-0/","@type":"BlogPosting","author":{"@type":"Person","name":"Mark Otto"},"image":{"width":1000,"height":500,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"headline":"Bootstrap 4.4.0","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+<meta property="article:modified_time" content="2019-11-26T00:00:00+00:00" />
 
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
 
-    <script>
+<script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', 'UA-146052-12', 'getbootstrap.com');
   ga('set', 'anonymizeIp', true);
@@ -55,14 +63,14 @@
 <script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <script src="https://cdn.usefathom.com/script.js" data-site="TAXRUMOF" defer></script>
-    <script>
+<script>
   (function(html) {
     html.className = html.className.replace(/\bno-js\b/, '');
   })(document.documentElement);
 </script>
 
-  </head>
 
+  </head>
   <body>
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar px-0">
   <div class="container flex-wrap flex-md-nowrap py-0 px-3">
@@ -138,23 +146,25 @@
     </p>
 
     <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJJ&placement=bloggetbootstrapcom" id="_carbonads_js"></script>
+
   </div>
 </div>
 
-      <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
-    <div class="container d-flex align-items-md-center py-2">
-      <nav class="nav mx-auto">
-        <a class="text-dark py-1 mr-3" href="/">All posts</a>
-        <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
-        <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
-        <a class="text-dark py-1" href="/feed.xml">Subscribe</a>
-      </nav>
-    </div>
-  </nav>
+    <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
+  <div class="container d-flex align-items-md-center py-2">
+    <nav class="nav mx-auto">
+      <a class="text-dark py-1 mr-3" href="/">All posts</a>
+      <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
+      <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
+      <a class="text-dark py-1" href="https://blog.getbootstrap.com/feed.xml">Subscribe</a>
+    </nav>
+  </div>
+</nav>
 
 
     <div class="container">
-      <div class="posts-container px-3 mx-auto my-5">
+      
+<div class="posts-container px-3 mx-auto my-5">
   <div class="post">
     <h1 class="post-title fw-500">Bootstrap 4.4.0</h1>
     <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -164,7 +174,7 @@
                            alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ml-3" title="Tue, 26 Nov 2019 00:00:00 +0000">
+  <span class="d-flex align-items-center ml-3" title="Tue, 26 Nov 2019 00:00:00 &#43;0000">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -177,65 +187,57 @@
   <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/P5ZJui3aPoQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 <p>Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now.</p>
-
 <h2 id="highlights">Highlights</h2>
-
-<p>Here’s what you need to know about v4.4.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work.</p>
-
+<p>Here&rsquo;s what you need to know about v4.4.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work.</p>
 <ul>
-  <li><strong>New responsive containers!</strong> Over a year in the making, fluid up to a particular breakpoint, available for all responsive tiers.</li>
-  <li><strong>New responsive <code class="language-plaintext highlighter-rouge">.row-cols</code> classes</strong> for quickly specifying the number of columns across breakpoints. This one is huge for those of you who have asked for responsive card decks.</li>
-  <li><strong>New <code class="language-plaintext highlighter-rouge">escape-svg()</code> function</strong> for simplifying our embedded <code class="language-plaintext highlighter-rouge">background-image</code> SVGs for forms and more.</li>
-  <li><strong>New <code class="language-plaintext highlighter-rouge">add()</code> and <code class="language-plaintext highlighter-rouge">subtract()</code> functions</strong> for avoiding errors and zero values from CSS’s built in <code class="language-plaintext highlighter-rouge">calc</code> feature.</li>
-  <li><strong>New <code class="language-plaintext highlighter-rouge">make-col-auto()</code> mixin</strong> to make our <code class="language-plaintext highlighter-rouge">.col-auto</code> class available with custom HTML.</li>
-  <li>Fixed an issue with Microsoft Edge not picking up <code class="language-plaintext highlighter-rouge">:disabled</code> styles by moving selectors to <code class="language-plaintext highlighter-rouge">[disabled]</code>.</li>
-  <li><strong>Deprecated:</strong> <code class="language-plaintext highlighter-rouge">bg-variant()</code>, <code class="language-plaintext highlighter-rouge">nav-divider()</code>, and <code class="language-plaintext highlighter-rouge">form-control-focus()</code> mixins are now deprecated as they’re going away in v5.</li>
-  <li>Updated our spacing and alignment for modal footer elements like buttons to automatically wrap when space is constrained.</li>
-  <li>More flexible form control validation styles thanks to fewer chained selectors. Also updated the <code class="language-plaintext highlighter-rouge">:invalid</code> validation icon to be an alert instead of an <code class="language-plaintext highlighter-rouge">&amp;times;</code> to avoid confusion with browser functionality for clearing the form field value.</li>
-  <li>Fixed a couple dozen CSS and JS bugs.</li>
-  <li>Moved to GitHub Actions for CI/CD! Expect more updates to our CI setup over time here while Actions evolves.</li>
-  <li>Updated documentation to fix links and typos, improved landmarks for secondary navigation, and a new security doc for guidelines on reporting potential vulnerabilities.</li>
+<li><strong>New responsive containers!</strong> Over a year in the making, fluid up to a particular breakpoint, available for all responsive tiers.</li>
+<li><strong>New responsive <code>.row-cols</code> classes</strong> for quickly specifying the number of columns across breakpoints. This one is huge for those of you who have asked for responsive card decks.</li>
+<li><strong>New <code>escape-svg()</code> function</strong> for simplifying our embedded <code>background-image</code> SVGs for forms and more.</li>
+<li><strong>New <code>add()</code> and <code>subtract()</code> functions</strong> for avoiding errors and zero values from CSS’s built in <code>calc</code> feature.</li>
+<li><strong>New <code>make-col-auto()</code> mixin</strong> to make our <code>.col-auto</code> class available with custom HTML.</li>
+<li>Fixed an issue with Microsoft Edge not picking up <code>:disabled</code> styles by moving selectors to <code>[disabled]</code>.</li>
+<li><strong>Deprecated:</strong> <code>bg-variant()</code>, <code>nav-divider()</code>, and <code>form-control-focus()</code> mixins are now deprecated as they&rsquo;re going away in v5.</li>
+<li>Updated our spacing and alignment for modal footer elements like buttons to automatically wrap when space is constrained.</li>
+<li>More flexible form control validation styles thanks to fewer chained selectors. Also updated the <code>:invalid</code> validation icon to be an alert instead of an <code>&amp;times;</code> to avoid confusion with browser functionality for clearing the form field value.</li>
+<li>Fixed a couple dozen CSS and JS bugs.</li>
+<li>Moved to GitHub Actions for CI/CD! Expect more updates to our CI setup over time here while Actions evolves.</li>
+<li>Updated documentation to fix links and typos, improved landmarks for secondary navigation, and a new security doc for guidelines on reporting potential vulnerabilities.</li>
 </ul>
-
-<p>We’ve shipped a lot more in this release, so be sure to check out the <a href="https://github.com/twbs/bootstrap/issues?q=project%3Atwbs%2Fbootstrap%2F18+is%3Aclosed+sort%3Aupdated-desc">v4.4.0 ship list of closed issues and merged pull requests</a> for more details.</p>
-
+<p>We&rsquo;ve shipped a lot more in this release, so be sure to check out the <a href="https://github.com/twbs/bootstrap/issues?q=project%3Atwbs%2Fbootstrap%2F18+is%3Aclosed+sort%3Aupdated-desc">v4.4.0 ship list of closed issues and merged pull requests</a> for more details.</p>
 <p><a href="https://getbootstrap.com/docs/4.4/">Head to to the v4.4.0 docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the BootstrapCDN and Rubygems.</p>
-
 <h2 id="support-the-team">Support the team</h2>
-
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>’ GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>' GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
   </div>
 
   <div class="related">
-    <h2>Recent posts</h2>
+    <h2>Related posts</h2>
     <ul class="related-posts list-unstyled">
       <li>
         <h4>
-          <a href="/2021/08/19/ten/">
-            Ten Years of Bootstrap
-            <small>19 Aug 2021</small>
+          <a href="/2019/11/26/bootstrap-icons/">
+            Introducing Bootstrap Icons
+            <small>26 Nov 2019</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/08/04/bootstrap-5-1-0/">
-            Bootstrap 5.1.0
-            <small>04 Aug 2021</small>
+          <a href="/2019/07/24/lts-plan/">
+            Introducing our Long Term Support plan
+            <small>24 Jul 2019</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/06/22/bootstrap-5-0-2/">
-            Bootstrap 5.0.2
-            <small>22 Jun 2021</small>
+          <a href="/2019/02/13/bootstrap-4-3-1-and-3-4-1/">
+            Bootstrap 3.4.1 and 4.3.1
+            <small>13 Feb 2019</small>
           </a>
         </h4>
       </li>
     </ul>
   </div>
 </div>
-
     </div>
 
     <footer class="bd-footer p-3 p-md-5 mt-5 text-center text-muted bg-light">

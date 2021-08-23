@@ -2,51 +2,59 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://gmpg.org/xfn/11" rel="profile">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://gmpg.org/xfn/11" rel="profile">
+<link rel="canonical" href="https://blog.getbootstrap.com/2012/08/20/bootstrap-2-1-0-released/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="/assets/css/style.css" rel="stylesheet">
+<meta name="description" content="After a smaller 2.0.4 release, we&rsquo;ve got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It&rsquo;s a big release wrapped in a brand new set of docs and we couldn&rsquo;t be more stoked to launch it.
+tl;dr New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120&#43; closed bugs, and more.">
+<meta name="generator" content="Hugo 0.87.0">
 
-    <!-- Favicons -->
+
+
+<title>Bootstrap 2.1.0 released | Bootstrap Blog</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<link href="/assets/css/style.css" rel="stylesheet">
+
+
+<link rel="alternate" type="application/rss+xml" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog">
+
+<!-- Favicons -->
 <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#7952b3">
 
+<meta name="author" content="Mark Otto">
 
-    <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Bootstrap 2.1.0 released | Bootstrap Blog</title>
-<meta name="generator" content="Jekyll v4.2.0" />
+<meta name="twitter:title" content="Bootstrap 2.1.0 released"/>
+<meta name="twitter:description" content="After a smaller 2.0.4 release, we&rsquo;ve got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It&rsquo;s a big release wrapped in a brand new set of docs and we couldn&rsquo;t be more stoked to launch it.
+tl;dr New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120&#43; closed bugs, and more."/>
+<meta name="twitter:site" content="@getbootstrap"/>
+<meta name="twitter:creator" content="@mdo">
+
+<!-- Facebook -->
 <meta property="og:title" content="Bootstrap 2.1.0 released" />
-<meta name="author" content="Mark Otto" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="After a smaller 2.0.4 release, we’ve got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It’s a big release wrapped in a brand new set of docs and we couldn’t be more stoked to launch it." />
-<meta property="og:description" content="After a smaller 2.0.4 release, we’ve got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It’s a big release wrapped in a brand new set of docs and we couldn’t be more stoked to launch it." />
-<link rel="canonical" href="https://blog.getbootstrap.com/2012/08/20/bootstrap-2-1-0-released/" />
-<meta property="og:url" content="https://blog.getbootstrap.com/2012/08/20/bootstrap-2-1-0-released/" />
-<meta property="og:site_name" content="Bootstrap Blog" />
-<meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="og:image:height" content="500" />
-<meta property="og:image:width" content="1000" />
+<meta property="og:description" content="After a smaller 2.0.4 release, we&rsquo;ve got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It&rsquo;s a big release wrapped in a brand new set of docs and we couldn&rsquo;t be more stoked to launch it.
+tl;dr New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120&#43; closed bugs, and more." />
 <meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2012/08/20/bootstrap-2-1-0-released/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2012-08-20T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="twitter:title" content="Bootstrap 2.1.0 released" />
-<meta name="twitter:site" content="@getbootstrap" />
-<meta name="twitter:creator" content="@mdo" />
-<script type="application/ld+json">
-{"dateModified":"2012-08-20T00:00:00+00:00","datePublished":"2012-08-20T00:00:00+00:00","description":"After a smaller 2.0.4 release, we’ve got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It’s a big release wrapped in a brand new set of docs and we couldn’t be more stoked to launch it.","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2012/08/20/bootstrap-2-1-0-released/"},"url":"https://blog.getbootstrap.com/2012/08/20/bootstrap-2-1-0-released/","@type":"BlogPosting","author":{"@type":"Person","name":"Mark Otto"},"image":{"width":1000,"height":500,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"headline":"Bootstrap 2.1.0 released","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+<meta property="article:modified_time" content="2012-08-20T00:00:00+00:00" />
 
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
 
-    <script>
+<script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', 'UA-146052-12', 'getbootstrap.com');
   ga('set', 'anonymizeIp', true);
@@ -55,14 +63,14 @@
 <script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <script src="https://cdn.usefathom.com/script.js" data-site="TAXRUMOF" defer></script>
-    <script>
+<script>
   (function(html) {
     html.className = html.className.replace(/\bno-js\b/, '');
   })(document.documentElement);
 </script>
 
-  </head>
 
+  </head>
   <body>
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar px-0">
   <div class="container flex-wrap flex-md-nowrap py-0 px-3">
@@ -138,23 +146,25 @@
     </p>
 
     <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJJ&placement=bloggetbootstrapcom" id="_carbonads_js"></script>
+
   </div>
 </div>
 
-      <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
-    <div class="container d-flex align-items-md-center py-2">
-      <nav class="nav mx-auto">
-        <a class="text-dark py-1 mr-3" href="/">All posts</a>
-        <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
-        <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
-        <a class="text-dark py-1" href="/feed.xml">Subscribe</a>
-      </nav>
-    </div>
-  </nav>
+    <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
+  <div class="container d-flex align-items-md-center py-2">
+    <nav class="nav mx-auto">
+      <a class="text-dark py-1 mr-3" href="/">All posts</a>
+      <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
+      <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
+      <a class="text-dark py-1" href="https://blog.getbootstrap.com/feed.xml">Subscribe</a>
+    </nav>
+  </div>
+</nav>
 
 
     <div class="container">
-      <div class="posts-container px-3 mx-auto my-5">
+      
+<div class="posts-container px-3 mx-auto my-5">
   <div class="post">
     <h1 class="post-title fw-500">Bootstrap 2.1.0 released</h1>
     <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -164,7 +174,7 @@
                            alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ml-3" title="Mon, 20 Aug 2012 00:00:00 +0000">
+  <span class="d-flex align-items-center ml-3" title="Mon, 20 Aug 2012 00:00:00 &#43;0000">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -173,76 +183,63 @@
     August 20, 2012
   </span>
 </div>
-<p>After a smaller 2.0.4 release, we’ve got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It’s a big release wrapped in a brand new set of docs and we couldn’t be more stoked to launch it.</p>
-
+<p>After a smaller 2.0.4 release, we&rsquo;ve got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It&rsquo;s a big release wrapped in a brand new set of docs and we couldn&rsquo;t be more stoked to launch it.</p>
 <h2 id="tldr">tl;dr</h2>
-
 <p>New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120+ closed bugs, and more. <a href="https://getbootstrap.com/">Go get it.</a></p>
-
 <h2 id="improved-documentation">Improved documentation</h2>
-
-<p>In addition to sporting a fresh visual style, the content of our docs has been overhauled once again. Good-bye long-winded marketing copy and multiple columns, hello succinct and directive single-column documentation. We’ve got a new tagline, new layout and navigation, and (more) clearer examples.</p>
-
+<p>In addition to sporting a fresh visual style, the content of our docs has been overhauled once again. Good-bye long-winded marketing copy and multiple columns, hello succinct and directive single-column documentation. We&rsquo;ve got a new tagline, new layout and navigation, and (more) clearer examples.</p>
 <h2 id="key-changes-and-new-features">Key changes and new features</h2>
-
-<p>We had higher expectations for the number of new features in 2.1, but we toned it back to get this release out the door in a manageable form. We’ve still added some great new features and fixed tones of bugs, so here’s a brief overview of what’s new.</p>
-
+<p>We had higher expectations for the number of new features in 2.1, but we toned it back to get this release out the door in a manageable form. We&rsquo;ve still added some great new features and fixed tones of bugs, so here&rsquo;s a brief overview of what&rsquo;s new.</p>
 <ul>
-  <li><strong>Submenu support on dropdowns.</strong> We avoided this for some time as we thought it would unnecessarily complicate things, but we’ve backtracked on that and opted to add them in. See the docs for more info.</li>
-  <li><strong>Affix JavaScript plugin.</strong> Make anything stick to the top of the viewport as you scroll with our newest plugin, built to power our new docs navigation.</li>
-  <li><strong>Block level buttons.</strong> Add <code class="language-plaintext highlighter-rouge">.btn-block</code> to a button to make it full-width.</li>
-  <li><strong>State classes on table rows.</strong> Better convey success, warning, and error messages in tables.</li>
-  <li><strong>Improved disabled states on navs and dropdowns.</strong> Where by “improve” we mean actually present—just add <code class="language-plaintext highlighter-rouge">.disabled</code> to the <code class="language-plaintext highlighter-rouge">li</code>.</li>
-  <li><strong>The navbar component is now white by default, with an optional class to darken it.</strong> In order to have two options for the navbar, light and dark, we needed to have better defaults. Having a lighter default navbar means fewer lines of code as we don’t need to override anything for the basic navbar functionality and the override it again to restore the default styles. Missing the black? Just add <code class="language-plaintext highlighter-rouge">.navbar-inverse</code> to get the dark gray navbar back.</li>
-  <li><strong>Improved prepended and appended inputs.</strong> No need to place the <code class="language-plaintext highlighter-rouge">input</code> and <code class="language-plaintext highlighter-rouge">.add-on</code> on the same line of code (sorry about that by the way). Break them up as you like and they’ll still stick together with some crafty <code class="language-plaintext highlighter-rouge">font-size</code> working.</li>
-  <li><strong>New base font-size and line-height.</strong> 13px/18px is out, 14px/20px is in. This also has changed the size, line-height, and margin of our heading elements, buttons, and more.</li>
-  <li><strong>Added variable for navbar collapse trigger point.</strong> Instead of a fixed pixel width of <code class="language-plaintext highlighter-rouge">980px</code> for triggering the collapsed navbar, we now use a variable so you can customize it for your projects.</li>
-  <li><strong>Fluid grid offsets.</strong> Thanks to our contributors, the fluid grid now has offset support to match our fixed (pixel) grid.</li>
-  <li><strong>Fluid grid system variables are no longer fixed percentages.</strong> Instead, they are calculated in LESS with <code class="language-plaintext highlighter-rouge">percentage()</code> based on the default, fixed-width grid variables. Math!</li>
-  <li><strong>Removed LESS docs page.</strong> We will no longer document variables and mixins in two places—rewriting that stuff was painful and took too much time. Instead, just checkout the .less files.</li>
+<li><strong>Submenu support on dropdowns.</strong> We avoided this for some time as we thought it would unnecessarily complicate things, but we&rsquo;ve backtracked on that and opted to add them in. See the docs for more info.</li>
+<li><strong>Affix JavaScript plugin.</strong> Make anything stick to the top of the viewport as you scroll with our newest plugin, built to power our new docs navigation.</li>
+<li><strong>Block level buttons.</strong> Add <code>.btn-block</code> to a button to make it full-width.</li>
+<li><strong>State classes on table rows.</strong> Better convey success, warning, and error messages in tables.</li>
+<li><strong>Improved disabled states on navs and dropdowns.</strong> Where by &ldquo;improve&rdquo; we mean actually present—just add <code>.disabled</code> to the <code>li</code>.</li>
+<li><strong>The navbar component is now white by default, with an optional class to darken it.</strong> In order to have two options for the navbar, light and dark, we needed to have better defaults. Having a lighter default navbar means fewer lines of code as we don&rsquo;t need to override anything for the basic navbar functionality and the override it again to restore the default styles. Missing the black? Just add <code>.navbar-inverse</code> to get the dark gray navbar back.</li>
+<li><strong>Improved prepended and appended inputs.</strong> No need to place the <code>input</code> and <code>.add-on</code> on the same line of code (sorry about that by the way). Break them up as you like and they&rsquo;ll still stick together with some crafty <code>font-size</code> working.</li>
+<li><strong>New base font-size and line-height.</strong> 13px/18px is out, 14px/20px is in. This also has changed the size, line-height, and margin of our heading elements, buttons, and more.</li>
+<li><strong>Added variable for navbar collapse trigger point.</strong> Instead of a fixed pixel width of <code>980px</code> for triggering the collapsed navbar, we now use a variable so you can customize it for your projects.</li>
+<li><strong>Fluid grid offsets.</strong> Thanks to our contributors, the fluid grid now has offset support to match our fixed (pixel) grid.</li>
+<li><strong>Fluid grid system variables are no longer fixed percentages.</strong> Instead, they are calculated in LESS with <code>percentage()</code> based on the default, fixed-width grid variables. Math!</li>
+<li><strong>Removed LESS docs page.</strong> We will no longer document variables and mixins in two places—rewriting that stuff was painful and took too much time. Instead, just checkout the .less files.</li>
 </ul>
-
 <h2 id="thanks-nerds">Thanks, nerds</h2>
-
-<p>Once again, we couldn’t have done this without all you nerds out there supporting us with your contributions, bugfixes, and feature requests. You keep this project going strong and we thank you deeply for your support.</p>
-
+<p>Once again, we couldn&rsquo;t have done this without all you nerds out there supporting us with your contributions, bugfixes, and feature requests. You keep this project going strong and we thank you deeply for your support.</p>
 <p>&lt;3</p>
-
-<hr />
-
-<p>For the full changelog, visit the <a href="https://github.com/twbs/bootstrap/wiki/Changelog">GitHub wiki page</a> and the <a href="https://github.com/twbs/bootstrap/issues?milestone=7&amp;q=is%3Aclosed">2.1.0 milestone</a>. We’ve already begun slating things for 2.2, but currently have no estimates on when that will be released or what exactly will make it in. We also may do a 2.1.1, but again, no promises at this point. <a href="https://www.youtube.com/watch?v=1vaQ-Y6kLOM&amp;t=4s">Live in the now!</a></p>
+<hr>
+<p>For the full changelog, visit the <a href="https://github.com/twbs/bootstrap/wiki/Changelog">GitHub wiki page</a> and the <a href="https://github.com/twbs/bootstrap/issues?milestone=7&amp;q=is%3Aclosed">2.1.0 milestone</a>. We&rsquo;ve already begun slating things for 2.2, but currently have no estimates on when that will be released or what exactly will make it in. We also may do a 2.1.1, but again, no promises at this point. <a href="https://www.youtube.com/watch?v=1vaQ-Y6kLOM&amp;t=4s">Live in the now!</a></p>
 
   </div>
 
   <div class="related">
-    <h2>Recent posts</h2>
+    <h2>Related posts</h2>
     <ul class="related-posts list-unstyled">
       <li>
         <h4>
-          <a href="/2021/08/19/ten/">
-            Ten Years of Bootstrap
-            <small>19 Aug 2021</small>
+          <a href="/2012/08/13/help-test-bootstrap-2-1/">
+            Help test Bootstrap 2.1
+            <small>13 Aug 2012</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/08/04/bootstrap-5-1-0/">
-            Bootstrap 5.1.0
-            <small>04 Aug 2021</small>
+          <a href="/2012/08/11/now-powered-by-jekyll-and-github-pages/">
+            Now powered by Jekyll and GitHub Pages
+            <small>11 Aug 2012</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/06/22/bootstrap-5-0-2/">
-            Bootstrap 5.0.2
-            <small>22 Jun 2021</small>
+          <a href="/2012/06/01/bootstrap-2-0-4-released/">
+            Bootstrap 2.0.4 released
+            <small>01 Jun 2012</small>
           </a>
         </h4>
       </li>
     </ul>
   </div>
 </div>
-
     </div>
 
     <footer class="bd-footer p-3 p-md-5 mt-5 text-center text-muted bg-light">

@@ -2,51 +2,59 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://gmpg.org/xfn/11" rel="profile">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://gmpg.org/xfn/11" rel="profile">
+<link rel="canonical" href="https://blog.getbootstrap.com/2012/12/08/bootstrap-2-2-2-released/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="/assets/css/style.css" rel="stylesheet">
+<meta name="description" content="Today we&rsquo;re launching Bootstrap 2.2.2, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here&rsquo;s the rundown on what&rsquo;s new in this release:
+ Docs:  Assets (illustrations and examples) are now retina-ready. Replaced Placehold.it with Holder.js, a client-side and retina-ready placeholder image tool.   Dropdowns: Temporary fix added for dropdowns on mobile to prevent them from closing early.">
+<meta name="generator" content="Hugo 0.87.0">
 
-    <!-- Favicons -->
+
+
+<title>Bootstrap 2.2.2 released | Bootstrap Blog</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<link href="/assets/css/style.css" rel="stylesheet">
+
+
+<link rel="alternate" type="application/rss+xml" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog">
+
+<!-- Favicons -->
 <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#7952b3">
 
+<meta name="author" content="Mark Otto">
 
-    <link type="application/atom+xml" rel="alternate" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Bootstrap 2.2.2 released | Bootstrap Blog</title>
-<meta name="generator" content="Jekyll v4.2.0" />
+<meta name="twitter:title" content="Bootstrap 2.2.2 released"/>
+<meta name="twitter:description" content="Today we&rsquo;re launching Bootstrap 2.2.2, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here&rsquo;s the rundown on what&rsquo;s new in this release:
+ Docs:  Assets (illustrations and examples) are now retina-ready. Replaced Placehold.it with Holder.js, a client-side and retina-ready placeholder image tool.   Dropdowns: Temporary fix added for dropdowns on mobile to prevent them from closing early."/>
+<meta name="twitter:site" content="@getbootstrap"/>
+<meta name="twitter:creator" content="@mdo">
+
+<!-- Facebook -->
 <meta property="og:title" content="Bootstrap 2.2.2 released" />
-<meta name="author" content="Mark Otto" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Today we’re launching Bootstrap 2.2.2, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here’s the rundown on what’s new in this release:" />
-<meta property="og:description" content="Today we’re launching Bootstrap 2.2.2, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here’s the rundown on what’s new in this release:" />
-<link rel="canonical" href="https://blog.getbootstrap.com/2012/12/08/bootstrap-2-2-2-released/" />
-<meta property="og:url" content="https://blog.getbootstrap.com/2012/12/08/bootstrap-2-2-2-released/" />
-<meta property="og:site_name" content="Bootstrap Blog" />
-<meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="og:image:height" content="500" />
-<meta property="og:image:width" content="1000" />
+<meta property="og:description" content="Today we&rsquo;re launching Bootstrap 2.2.2, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here&rsquo;s the rundown on what&rsquo;s new in this release:
+ Docs:  Assets (illustrations and examples) are now retina-ready. Replaced Placehold.it with Holder.js, a client-side and retina-ready placeholder image tool.   Dropdowns: Temporary fix added for dropdowns on mobile to prevent them from closing early." />
 <meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2012/12/08/bootstrap-2-2-2-released/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2012-12-08T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" />
-<meta property="twitter:title" content="Bootstrap 2.2.2 released" />
-<meta name="twitter:site" content="@getbootstrap" />
-<meta name="twitter:creator" content="@mdo" />
-<script type="application/ld+json">
-{"dateModified":"2012-12-08T00:00:00+00:00","datePublished":"2012-12-08T00:00:00+00:00","description":"Today we’re launching Bootstrap 2.2.2, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here’s the rundown on what’s new in this release:","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.getbootstrap.com/2012/12/08/bootstrap-2-2-2-released/"},"url":"https://blog.getbootstrap.com/2012/12/08/bootstrap-2-2-2-released/","@type":"BlogPosting","author":{"@type":"Person","name":"Mark Otto"},"image":{"width":1000,"height":500,"url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png","@type":"imageObject"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.getbootstrap.com/assets/img/bootstrap-social.png"},"name":"Mark Otto"},"headline":"Bootstrap 2.2.2 released","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+<meta property="article:modified_time" content="2012-12-08T00:00:00+00:00" />
 
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
 
-    <script>
+<script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', 'UA-146052-12', 'getbootstrap.com');
   ga('set', 'anonymizeIp', true);
@@ -55,14 +63,14 @@
 <script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <script src="https://cdn.usefathom.com/script.js" data-site="TAXRUMOF" defer></script>
-    <script>
+<script>
   (function(html) {
     html.className = html.className.replace(/\bno-js\b/, '');
   })(document.documentElement);
 </script>
 
-  </head>
 
+  </head>
   <body>
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar px-0">
   <div class="container flex-wrap flex-md-nowrap py-0 px-3">
@@ -138,23 +146,25 @@
     </p>
 
     <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJJ&placement=bloggetbootstrapcom" id="_carbonads_js"></script>
+
   </div>
 </div>
 
-      <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
-    <div class="container d-flex align-items-md-center py-2">
-      <nav class="nav mx-auto">
-        <a class="text-dark py-1 mr-3" href="/">All posts</a>
-        <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
-        <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
-        <a class="text-dark py-1" href="/feed.xml">Subscribe</a>
-      </nav>
-    </div>
-  </nav>
+    <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
+  <div class="container d-flex align-items-md-center py-2">
+    <nav class="nav mx-auto">
+      <a class="text-dark py-1 mr-3" href="/">All posts</a>
+      <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
+      <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
+      <a class="text-dark py-1" href="https://blog.getbootstrap.com/feed.xml">Subscribe</a>
+    </nav>
+  </div>
+</nav>
 
 
     <div class="container">
-      <div class="posts-container px-3 mx-auto my-5">
+      
+<div class="posts-container px-3 mx-auto my-5">
   <div class="post">
     <h1 class="post-title fw-500">Bootstrap 2.2.2 released</h1>
     <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -164,7 +174,7 @@
                            alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ml-3" title="Sat, 08 Dec 2012 00:00:00 +0000">
+  <span class="d-flex align-items-center ml-3" title="Sat, 08 Dec 2012 00:00:00 &#43;0000">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -173,73 +183,67 @@
     December 08, 2012
   </span>
 </div>
-<p>Today we’re launching <a href="https://getbootstrap.com/">Bootstrap 2.2.2</a>, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here’s the rundown on what’s new in this release:</p>
-
+<p>Today we&rsquo;re launching <a href="https://getbootstrap.com/">Bootstrap 2.2.2</a>, another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here&rsquo;s the rundown on what&rsquo;s new in this release:</p>
 <ul>
-  <li><strong>Docs:</strong>
-    <ul>
-      <li>Assets (illustrations and examples) are now retina-ready.</li>
-      <li>Replaced <a href="https://placeholder.com/">Placehold.it</a> with <a href="http://holderjs.com/">Holder.js</a>, a client-side and retina-ready placeholder image tool.</li>
-    </ul>
-  </li>
-  <li><strong>Dropdowns:</strong> Temporary fix added for dropdowns on mobile to prevent them from closing early.</li>
-  <li><strong>Popovers:</strong>
-    <ul>
-      <li>No longer inherits <code class="language-plaintext highlighter-rouge">font-size: 0;</code> when placed in button groups.</li>
-      <li>Arrows refactored to work in IE8, and use less code.</li>
-      <li>Plugin no longer inserts popover content into a <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>, but rather directly into <code class="language-plaintext highlighter-rouge">.popover-content</code>.</li>
-    </ul>
-  </li>
-  <li><strong>Labels and badges:</strong> Now <a href="https://github.com/twbs/bootstrap/commit/ead5dbeba5cd7acfa560bfb353f5e7c4f4a19256">automatically collapse</a> if they have no content.</li>
-  <li><strong>Tables:</strong> Nesting support with <code class="language-plaintext highlighter-rouge">.table-bordered</code> and <code class="language-plaintext highlighter-rouge">.table-striped</code> greatly improved.</li>
-  <li><strong>Typeahead:</strong>
-    <ul>
-      <li>Now <a href="https://github.com/twbs/bootstrap/commit/1747caf19d59cad7fdc90ae56a00e0e2849f95f4">inserts dropdown menu after the input</a> instead of at the close of the document.</li>
-      <li>Hitting escape will place focus back on the <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>.</li>
-    </ul>
-  </li>
-  <li>Print styles, from HTML5 Boilerplate, have been added.</li>
+<li><strong>Docs:</strong>
+<ul>
+<li>Assets (illustrations and examples) are now retina-ready.</li>
+<li>Replaced <a href="https://placeholder.com/">Placehold.it</a> with <a href="http://holderjs.com/">Holder.js</a>, a client-side and retina-ready placeholder image tool.</li>
 </ul>
-
+</li>
+<li><strong>Dropdowns:</strong> Temporary fix added for dropdowns on mobile to prevent them from closing early.</li>
+<li><strong>Popovers:</strong>
+<ul>
+<li>No longer inherits <code>font-size: 0;</code> when placed in button groups.</li>
+<li>Arrows refactored to work in IE8, and use less code.</li>
+<li>Plugin no longer inserts popover content into a <code>&lt;p&gt;</code>, but rather directly into <code>.popover-content</code>.</li>
+</ul>
+</li>
+<li><strong>Labels and badges:</strong> Now <a href="https://github.com/twbs/bootstrap/commit/ead5dbeba5cd7acfa560bfb353f5e7c4f4a19256">automatically collapse</a> if they have no content.</li>
+<li><strong>Tables:</strong> Nesting support with <code>.table-bordered</code> and <code>.table-striped</code> greatly improved.</li>
+<li><strong>Typeahead:</strong>
+<ul>
+<li>Now <a href="https://github.com/twbs/bootstrap/commit/1747caf19d59cad7fdc90ae56a00e0e2849f95f4">inserts dropdown menu after the input</a> instead of at the close of the document.</li>
+<li>Hitting escape will place focus back on the <code>&lt;input&gt;</code>.</li>
+</ul>
+</li>
+<li>Print styles, from HTML5 Boilerplate, have been added.</li>
+</ul>
 <p>Get a more complete list by viewing the <a href="https://github.com/twbs/bootstrap/issues?milestone=17&amp;q=is%3Aclosed">2.2.2 milestone on GitHub</a>. Most of the issues not mentioned above are minor CSS tweaks and documentation typos.</p>
-
 <p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.2.2.zip">Download Bootstrap 2.2.2</a> <span class="muted">(latest master ZIP)</span></p>
-
-<hr />
-
-<p>We have a 2.2.3 release slated for further bugs and improvements we couldn’t tackle in this version, but most of our ongoing efforts are going to transition to development on 3.0.0. More details on that will come next week.</p>
+<hr>
+<p>We have a 2.2.3 release slated for further bugs and improvements we couldn&rsquo;t tackle in this version, but most of our ongoing efforts are going to transition to development on 3.0.0. More details on that will come next week.</p>
 
   </div>
 
   <div class="related">
-    <h2>Recent posts</h2>
+    <h2>Related posts</h2>
     <ul class="related-posts list-unstyled">
       <li>
         <h4>
-          <a href="/2021/08/19/ten/">
-            Ten Years of Bootstrap
-            <small>19 Aug 2021</small>
+          <a href="/2012/12/02/help-test-2.2.2/">
+            Help test Bootstrap 2.2.2
+            <small>02 Dec 2012</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/08/04/bootstrap-5-1-0/">
-            Bootstrap 5.1.0
-            <small>04 Aug 2021</small>
+          <a href="/2012/11/09/glyphicons-font/">
+            Update on the Glyphicons font
+            <small>09 Nov 2012</small>
           </a>
         </h4>
       </li><li>
         <h4>
-          <a href="/2021/06/22/bootstrap-5-0-2/">
-            Bootstrap 5.0.2
-            <small>22 Jun 2021</small>
+          <a href="/2012/10/30/2-2-1-hotfix-released/">
+            2.2.1 hotfix released
+            <small>30 Oct 2012</small>
           </a>
         </h4>
       </li>
     </ul>
   </div>
 </div>
-
     </div>
 
     <footer class="bd-footer p-3 p-md-5 mt-5 text-center text-muted bg-light">
