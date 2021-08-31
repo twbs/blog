@@ -37,7 +37,7 @@ jobs:
 
       - name: Upload docs
         uses: actions/upload-artifact@v2
-        if: success() && github.repository == 'twbs/blog' && github.ref == 'refs/heads/main'
+        if: github.repository == 'twbs/blog' && github.ref == 'refs/heads/main'
         with:
           name: docs
           path: ./_site/
@@ -60,7 +60,6 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: success()
         with:
           allow_empty_commit: false
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
