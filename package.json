@@ -33,10 +33,10 @@
     "buildTags": "extended"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.3",
+    "autoprefixer": "^10.3.4",
     "cross-env": "^7.0.3",
     "find-unused-sass-variables": "^3.1.0",
-    "hugo-bin": "^0.75.0",
+    "hugo-bin": "^0.76.0",
     "linkinator": "^2.14.0",
     "lockfile-lint": "^4.6.2",
     "markdownlint-cli2": "0.3.0",
@@ -45,6 +45,6 @@
     "postcss-cli": "^8.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-twbs-bootstrap": "^2.2.3",
-    "vnu-jar": "21.6.11"
+    "vnu-jar": "21.9.2"
   }
 }
