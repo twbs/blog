@@ -9,7 +9,7 @@ Bootstrap v5.1.1 has landed with a handful of bug fixes and documentation improv
 
 ## Highlights
 
-- **Fixed broken `.bg-body` utility.** This was caused by the same `--body-rgb` CSS variable for both text and background. `--body-rgb` is now split into `--body-color-rgb` and `--body-bg-rgb` for proper usage. _While this could be considered a breaking change, the current implementation was outright broken, so we've chosen to address this head on._
+- **Fixed broken `.bg-body` utility.** This was caused by the same `--body-rgb` CSS variable for both text and background. `--body-rgb` is now split into `--body-color-rgb` and `--body-bg-rgb` for proper usage. _While this could be considered a breaking change, the current implementation was outright broken, so we've chosen to address this head-on._
 - **All CSS dist builds now include `_root.scss` and all our `:root`-level CSS variables.** The goal here is consistency across the distribution files so that no matter what CSS build you use, you have the same level of customization potential.
 - Updated [global options page](https://getbootstrap.com/docs/5.1/customize/options/) to document `$enable-smooth-scroll` variable.
 - Added callout to the [Stacks page](https://getbootstrap.com/docs/5.1/helpers/stacks/) about `gap` browser support with flexbox.
