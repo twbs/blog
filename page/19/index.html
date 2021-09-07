@@ -162,6 +162,36 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/08/22/new-rss-feed/">
+            New RSS feed
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Wed, 22 Aug 2012 00:00:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    August 22, 2012
+  </span>
+</div>
+
+
+        <p>Roughly two weeks ago we upgraded the blog to use Jekyll and GitHub Pages instead of WordPress. When we did that, we forgot about the RSS feed. A few awesome folks noted we were missing it and so we&rsquo;ve added it back. Unfortunately it&rsquo;s not the same URL, but it&rsquo;s there nonetheless.</p>
+<p>Here&rsquo;s the URL for the new feed: <a href="https://blog.getbootstrap.com/feed.xml">https://blog.getbootstrap.com/feed.xml</a>.</p>
+<p>It&rsquo;s also in the <code>&lt;head&gt;</code> of the blog&rsquo;s pages, so entering just the root URL should resolve fine for you in most RSS apps. Again, sorry for the oversight and please continue to let us know if we can do anything else to improve the blog.</p>
+<p>Thanks!</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/08/20/bootstrap-2-1-0-released/">
             Bootstrap 2.1.0 released
           </a>
@@ -171,7 +201,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Mon, 20 Aug 2012 00:00:00 &#43;0000">
@@ -338,41 +368,6 @@
 <li>Fixed a bug in IE7/8 where certain form controls would not show text if the parent had a filter opacity set.</li>
 </ul>
 <p>For a full changelog, visit the now complete <a href="https://github.com/twbs/bootstrap/issues?milestone=11&amp;q=is%3Aclosed">2.0.4 milestone on GitHub</a>.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/04/30/new-release-strategy/">
-            New release strategy
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Mon, 30 Apr 2012 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    April 30, 2012
-  </span>
-</div>
-
-
-        <p>After three large point releases focusing on massive amounts of bugfixes and documentation changes, we&rsquo;re going to change up our release strategy to push out smaller, more frequent updates.</p>
-<h2 id="why">Why?</h2>
-<p>Releases with a hundred bugfixes are difficult to test, take much longer to ship, make changelogs super long and verbose, and have a tendency to introduce additional unforeseen bugs. In hindsight, our 2.0.3 release should have been a 2.1 given its sheer scope and the time it took to ship. Going forward, we&rsquo;ll try to improve the frequency of the patches to get you better code faster.</p>
-<h2 id="so-whats-next">So what&rsquo;s next?</h2>
-<p>At the Twitter UK Open House in London last week, we said 2.1 was our next priority. While that&rsquo;s still true, we&rsquo;re backing up and rethinking it&rsquo;s scope. Bootstrap 2.1 may end up much narrower in focus to help us ship it earlier. We&rsquo;ll still tackle all the same issues and new features we originally planned for, but across more releases. In addition, 2.1 might not be our very next release as some of those unforeseen bugs have already cropped up.</p>
-<h2 id="tldr">tl;dr</h2>
-<p>To keep up with the community and improve code quality, we&rsquo;ll be shipping more releases more frequently.</p>
-<hr>
-<p>Questions? <a href="https://twitter.com/getbootstrap">Mention us on Twitter</a>.</p>
 
       </div>
   </div>

@@ -6,7 +6,39 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap 5.1.1</title>
+      <link>https://blog.getbootstrap.com/2021/09/07/bootstrap-5-1-1/</link>
+      <pubDate>Tue, 07 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2021/09/07/bootstrap-5-1-1/</guid>
+      <description>&lt;p&gt;Bootstrap v5.1.1 has landed with a handful of bug fixes and documentation improvements. Following this release, we&amp;rsquo;ll be shipping another bugfix and docs update before moving onto additional new features. Keep reading for the highlights.&lt;/p&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fixed broken &lt;code&gt;.bg-body&lt;/code&gt; utility.&lt;/strong&gt; This was caused by the same &lt;code&gt;--body-rgb&lt;/code&gt; CSS variable for both text and background. &lt;code&gt;--body-rgb&lt;/code&gt; is now split into &lt;code&gt;--body-color-rgb&lt;/code&gt; and &lt;code&gt;--body-bg-rgb&lt;/code&gt; for proper usage. &lt;em&gt;While this could be considered a breaking change, the current implementation was outright broken, so we&amp;rsquo;ve chosen to address this head-on.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;All CSS dist builds now include &lt;code&gt;_root.scss&lt;/code&gt; and all our &lt;code&gt;:root&lt;/code&gt;-level CSS variables.&lt;/strong&gt; The goal here is consistency across the distribution files so that no matter what CSS build you use, you have the same level of customization potential.&lt;/li&gt;
+&lt;li&gt;Updated &lt;a href=&#34;https://getbootstrap.com/docs/5.1/customize/options/&#34;&gt;global options page&lt;/a&gt; to document &lt;code&gt;$enable-smooth-scroll&lt;/code&gt; variable.&lt;/li&gt;
+&lt;li&gt;Added callout to the &lt;a href=&#34;https://getbootstrap.com/docs/5.1/helpers/stacks/&#34;&gt;Stacks page&lt;/a&gt; about &lt;code&gt;gap&lt;/code&gt; browser support with flexbox.&lt;/li&gt;
+&lt;li&gt;Cleaned up documentation and usage of &lt;a href=&#34;https://getbootstrap.com/docs/5.1/components/buttons/#disabled-state&#34;&gt;disabled links&lt;/a&gt;, especially for &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; based buttons.&lt;/li&gt;
+&lt;li&gt;Fixed toggle between modal regression. &lt;a href=&#34;https://getbootstrap.com/docs/5.1/components/modal/#toggle-between-modals&#34;&gt;See docs example.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed regression in tooltips where content doesn&amp;rsquo;t update after the first &lt;code&gt;show()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed collapse toggle unintentionally hiding descendant tab panels.&lt;/li&gt;
+&lt;li&gt;Improved Alerts live example documentation.&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;$dropdown-link-hover-color&lt;/code&gt; to modify the &lt;code&gt;$dropdown-link-color&lt;/code&gt; instead of base &lt;code&gt;$gray-900&lt;/code&gt; variable for improved customization.&lt;/li&gt;
+&lt;li&gt;Clarified &lt;a href=&#34;https://getbootstrap.com/docs/5.1/getting-started/webpack/#importing-javascript&#34;&gt;JavaScript import usage&lt;/a&gt; for our Webpack guide.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;about-sass-compilers&#34;&gt;About Sass compilers&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve had a number of Visual Studio users mention that Sass compiling for Bootstrap 5.1.0 is broken when using the &lt;a href=&#34;https://github.com/madskristensen/WebCompiler&#34;&gt;Web Compiler extension&lt;/a&gt;. This extension hasn&amp;rsquo;t been updated in more than five years, so we recommend moving to a newer alternative. Some users mentioned the &lt;a href=&#34;https://github.com/madskristensen/SassCompiler&#34;&gt;Sass Compiler extension&lt;/a&gt; as a successful alternative. If you have additional recommendations, &lt;a href=&#34;https://github.com/twbs/bootstrap/issues/34738&#34;&gt;please leave a comment to share&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.1.1&#34;&gt;Review the GitHub v5.1.1 release changelog&lt;/a&gt; for a complete list of changes since our last release.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Ten Years of Bootstrap</title>
       <link>https://blog.getbootstrap.com/2021/08/19/ten/</link>
@@ -760,96 +792,6 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.4.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.4.0/bootstrap-icons-1.4.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
 &lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
 &lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&#34;https://www.figma.com/file/tZZVOiEgKcRUHE3s6o5djB/Bootstrap-Icons-v1.4.0?node-id=0%3A1&#34;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap 5 Beta 2</title>
-      <link>https://blog.getbootstrap.com/2021/02/10/bootstrap-5-beta-2/</link>
-      <pubDate>Wed, 10 Feb 2021 11:00:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/02/10/bootstrap-5-beta-2/</guid>
-      <description>&lt;p&gt;Our second beta has arrived for Bootstrap 5! We delayed its release to iron out some issues with third-party libraries and stabilize our major changes. We&amp;rsquo;ve also once again shipped some awesome updates to our documentation.&lt;/p&gt;
-&lt;p&gt;Next up is our final beta, which we may even promote to a stable release depending on how development proceeds. Stay tuned for that!&lt;/p&gt;
-&lt;h2 id=&#34;dropdowns&#34;&gt;Dropdowns&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/dropdowns/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/02/bootstrap-v5b2-dropdowns.png&#34; alt=&#34;Dropdown docs screenshot&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Dropdowns saw a lot of work in Beta 2 because of how much has changed in both our JavaScript and in Popper.js (which we depend on for most dropdown, popover, and toolip positioning). We&amp;rsquo;ve modified our dropdown plugin to add a new data attribute to help separate our own positioning styles with that of Popper&amp;rsquo;s. The issues we saw—like a &lt;code&gt;.dropstart&lt;/code&gt; menu overlapping a button or an incorrect responsive &lt;code&gt;.dropdown-menu-end&lt;/code&gt; class—were largely the result of competing positioning.&lt;/p&gt;
-&lt;p&gt;Now when dropdown menus have &lt;code&gt;data-bs-display=&amp;quot;static&amp;quot;&lt;/code&gt;, we&amp;rsquo;ll add &lt;code&gt;data-bs-popper=&amp;quot;static&amp;quot;&lt;/code&gt; via JavaScript to their associated &lt;code&gt;.dropdown-menu&lt;/code&gt;. When dropdowns are in our navbars, their menus will have &lt;code&gt;data-bs-popper=&amp;quot;none&amp;quot;&lt;/code&gt; added. This separates two different positioning libraries, ours and Poppers, and ensures all behaviors are supported. You can see &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/dropdowns/#alignment-options&#34;&gt;all the options in a new example in our docs&lt;/a&gt;. We updated our CSS selectors to use these new data attributes, too.&lt;/p&gt;
-&lt;p&gt;In addition, we&amp;rsquo;ve removed the initial &lt;code&gt;margin&lt;/code&gt;s from dropdowns and popovers, instead of relying on Popper&amp;rsquo;s offsets. These also conflicted with the default styling for elements positioned by Popper.js. Relatedly, there was a bug in how popover arrows were aligned that has now been resolved.&lt;/p&gt;
-&lt;h2 id=&#34;color-utility-docs&#34;&gt;Color utility docs&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/utilities/colors/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/02/bootstrap-v5b2-sass-docs.png&#34; alt=&#34;Sass docs screenshot&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve overhauled our color utility documentation, separating the text &lt;code&gt;color&lt;/code&gt; classes from our &lt;code&gt;background-color&lt;/code&gt; ones. We&amp;rsquo;ve also made extensive use of our &lt;code&gt;scss-docs&lt;/code&gt; shortcode to include tons more code snippets in our docs.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/utilities/colors/&#34;&gt;Text color utilities&lt;/a&gt; remain on their existing page.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/utilities/background/&#34;&gt;Background utilities&lt;/a&gt; have moved to a new page.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Both pages now include a new Sass section, showing relevant snippets of our source code that are related to each set of utilities. We list all our available color variables, our theme color variables and maps, associated mixins and loops, and even where these utilities are generated in the utilities API.&lt;/p&gt;
-&lt;p&gt;Expect this kind of documentation improvements to continue into our next release. Follow along in the &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32747&#34;&gt;draft pull request that adds Sass docs to all our components&lt;/a&gt; on GitHub.&lt;/p&gt;
-&lt;h2 id=&#34;js-updates&#34;&gt;JS updates&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve spent a significant amount of time in Beta 2 improving our JavaScript plugins to fix bugs and improve behaviors since dropping jQuery.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dropdown now emits events on the &lt;code&gt;.dropdown-toggle&lt;/code&gt; instead of the &lt;code&gt;.dropdown&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Restored the offset option for dropdowns.&lt;/li&gt;
-&lt;li&gt;Fixed modal toggling when clicking on &lt;code&gt;data-bs-toggle=&amp;quot;modal&amp;quot;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;We now build our base component as a separate &lt;code&gt;.js&lt;/code&gt; file.&lt;/li&gt;
-&lt;li&gt;We now prevent &lt;code&gt;getSelector&lt;/code&gt; from returning URLs as selector which caused errors in dropdown and scrollspy plugins.&lt;/li&gt;
-&lt;li&gt;Refactored components to use a utility function to define jQuery plugins&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;miscellaneous-updates&#34;&gt;Miscellaneous updates&lt;/h2&gt;
-&lt;p&gt;Across the board, we&amp;rsquo;ve made a few small changes to other components that are worth a brief mention here.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Navbars:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Added a new &lt;code&gt;.navbar-nav-scroll&lt;/code&gt; class to enable vertical scrolling when a collapsed navbar is opened. It&amp;rsquo;s customizable via Sass and a CSS variable. &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/navbar/#scrolling&#34;&gt;Read more in the docs.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;We&amp;rsquo;ve re-added &lt;code&gt;flex-grow&lt;/code&gt; to the &lt;code&gt;.navbar-collapse&lt;/code&gt; to restore the flexbox behaviors from v4 and prevent some content from being inadvertently squished.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Forms:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Removed &lt;code&gt;vertical-align&lt;/code&gt; from &lt;code&gt;.form-select&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Form validation mixin updated with additional parameters&lt;/li&gt;
-&lt;li&gt;Fixed validation icon placement in &lt;code&gt;.form-select&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Checkboxes and radio buttons are aligned better in input groups&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Buttons:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Added variables for tinting and shading button state colors&lt;/li&gt;
-&lt;li&gt;Suppressed the default focus outline for buttons in Chromium&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Toasts:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;word-break&lt;/code&gt; to &lt;code&gt;.toast-body&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Added a live example to the docs to trigger a real toast&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Bundles:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Added our helpers to the utilities CSS bundle&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Carousels:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated docs examples to use &lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt;s wherever possible instead of &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; elements.&lt;/li&gt;
-&lt;li&gt;CSS selectors changed for using &lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt;s as indicators (from &lt;code&gt;.carousel-indicators li&lt;/code&gt; to &lt;code&gt;.carousel-indicators [data-bs-target]&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For a more complete list of changes, check out the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/33&#34;&gt;v5 Beta 2 project board&lt;/a&gt; or &lt;a href=&#34;https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F33&#34;&gt;list of issues and PRs&lt;/a&gt; in this &lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta2&#34;&gt;release&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;get-started&#34;&gt;Get started&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We&amp;rsquo;ve also published this updated as a pre-release to npm, so if you&amp;rsquo;re feeling bold or are curious about what&amp;rsquo;s new, you can pull the latest in that way.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap@next
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next&lt;/h2&gt;
-&lt;p&gt;We have three releases coming up next for the team:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bootstrap v5.0.0-beta3 (possibly promoted to v5 stable)&lt;/li&gt;
-&lt;li&gt;Bootstrap v4.6.1 (bringing in some more bugfixes and alignment with the latest in v5)&lt;/li&gt;
-&lt;li&gt;Bootstrap Icons v1.4.0&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Our v5 Beta 3 will continue to focus on JavaScript issues and documentation improvements. Tooltips in particular need some attention after our fixes to dropdowns and popovers. After v5 goes stable, we&amp;rsquo;ll look to adding some of the awesome features we&amp;rsquo;ve built up in our backlog. Check out the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/31&#34;&gt;v5.1 project&lt;/a&gt; for an idea of what&amp;rsquo;s being planned.&lt;/p&gt;
-&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
-&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
 </description>
     </item>
     
