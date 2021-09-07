@@ -15,7 +15,7 @@ Bootstrap v5.1.1 has landed with a handful of bug fixes and documentation improv
 - Added callout to the [Stacks page](https://getbootstrap.com/docs/5.1/helpers/stacks/) about `gap` browser support with flexbox.
 - Cleaned up documentation and usage of [disabled links](https://getbootstrap.com/docs/5.1/components/buttons/#disabled-state), especially for `<a>` based buttons.
 - Fixed toggle between modal regression. [See docs example.](https://getbootstrap.com/docs/5.1/components/modal/#toggle-between-modals)
-- Fixed regression in tooltips where content doesn't update after the first show()`.
+- Fixed regression in tooltips where content doesn't update after the first `show()`.
 - Fixed collapse toggle unintentionally hiding descendant tab panels.
 - Improved Alerts live example documentation.
 - Updated `$dropdown-link-hover-color` to modify the `$dropdown-link-color` instead of base `$gray-900` variable for improved customization.
