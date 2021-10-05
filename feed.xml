@@ -6,7 +6,36 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap 5.1.2</title>
+      <link>https://blog.getbootstrap.com/2021/10/05/bootstrap-5-1-2/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2021/10/05/bootstrap-5-1-2/</guid>
+      <description>&lt;p&gt;Bootstrap v5.1.2 is here with a handful of improvements across our components, plus a fix for an issue in another project that prevented our Sass from compiling properly. Keep reading for the highlights.&lt;/p&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Temporarily patched a &lt;a href=&#34;https://github.com/shellscape/postcss-values-parser/issues/138&#34;&gt;postcss-values-parser&lt;/a&gt; issue by rearranging our &lt;code&gt;calc()&lt;/code&gt; functions that use negative numbers. This should restore the ability to import and compile Bootstrap&amp;rsquo;s Sass in &lt;code&gt;create-react-app&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;border-radius&lt;/code&gt; sizes to small and large &lt;code&gt;.form-select&lt;/code&gt;s&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;align-self: center&lt;/code&gt; to buttons for improved rendering in flex containers&lt;/li&gt;
+&lt;li&gt;Fixed Collapse regression that prevented toggling between sibling children&lt;/li&gt;
+&lt;li&gt;Updated JS Sanitizer to add &lt;code&gt;sms&lt;/code&gt; in the &lt;code&gt;SAFE_URL_PATTERN&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Improved docs around &lt;code&gt;.img-fluid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;role=&amp;quot;switch&amp;quot;&lt;/code&gt; to our form switches in our docs&lt;/li&gt;
+&lt;li&gt;Implemented GitHub Issue forms to replace our previous issue templates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;up-next&#34;&gt;Up next&lt;/h2&gt;
+&lt;p&gt;Up next is our v5.2.0 release, adding more utility improvements and fixing an issue with how &lt;a href=&#34;https://github.com/twbs/bootstrap/issues/34756&#34;&gt;Sass handles re-assigned maps and variables&lt;/a&gt;. Alongside that, we&amp;rsquo;ll be shipping an update to v4 soon as well.&lt;/p&gt;
+&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.1.2&#34;&gt;Review the GitHub v5.1.2 release changelog&lt;/a&gt; for a complete list of changes since our last release.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap 5.1.1</title>
       <link>https://blog.getbootstrap.com/2021/09/07/bootstrap-5-1-1/</link>
@@ -764,34 +793,6 @@
 &lt;p&gt;As mentioned in our last release, after v5 goes stable, we&amp;rsquo;ll look to add some of the awesome features we&amp;rsquo;ve built up in our backlog. Check out the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/31&#34;&gt;v5.1 project&lt;/a&gt; for an idea of what&amp;rsquo;s being planned. Feel free to open issues or pull requests if you have any additional ideas!&lt;/p&gt;
 &lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
 &lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap Icons v1.4.0</title>
-      <link>https://blog.getbootstrap.com/2021/02/22/bootstrap-icons-1-4-0/</link>
-      <pubDate>Mon, 22 Feb 2021 21:30:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/02/22/bootstrap-icons-1-4-0/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.4.0&lt;/a&gt; adds over 60 new icons as part of a brand new weather category. Also included are some long requested improvements to vertical alignment and a handful of updates to tags and categories.&lt;/p&gt;
-&lt;p&gt;Keep reading for a preview of the new icons and how icon alignment has changed.&lt;/p&gt;
-&lt;h2 id=&#34;60-weather-icons&#34;&gt;60+ weather icons&lt;/h2&gt;
-&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/02/v140-new-icons.png&#34; alt=&#34;New icons in v1.4.0&#34; style=&#34;border: 1px solid rgba(0,0,0,.15);&#34;&gt;
-&lt;p&gt;The new weather category includes over 60 icons for various weather and atmospheric conditions. From fog and haze to rainstorms and hurricanes, we now have icons for just about every weather situation. We undoubtedly have some more work to do to refine and add to this new category, but it&amp;rsquo;s a pretty big addition to the project. Let us know what you think and what&amp;rsquo;s missing so we can keep adding to it over time.&lt;/p&gt;
-&lt;h2 id=&#34;alignment-changes&#34;&gt;Alignment changes&lt;/h2&gt;
-&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/02/v140-alignment.png&#34; alt=&#34;Alignment changes&#34; style=&#34;border: 1px solid rgba(0,0,0,.15);&#34;&gt;
-&lt;p&gt;Also new in v1.4.0 are some alignment changes—before and after are shown above. Previously we used &lt;code&gt;vertical-align: text-top&lt;/code&gt; in our CSS to aligning individual icons. This wasn&amp;rsquo;t as much of an issue when we only had SVGs, but with the addition of icon fonts and their generated CSS in v1.2.0, we had to make some changes.&lt;/p&gt;
-&lt;p&gt;New in this release is a change to &lt;code&gt;vertical-align: -.125em&lt;/code&gt;. This new alignment is similar to that found in the tried and true &lt;a href=&#34;https://fontawesome.com&#34;&gt;Font Awesome&lt;/a&gt; project. This change essentially raises icons up about 1px to better vertically center them with nearby text.&lt;/p&gt;
-&lt;p&gt;It may not be perfect in all implementations, so additional changes might still be needed, but this should give you a stronger baseline to start (pun intended). Should you still run into issues, please don&amp;rsquo;t hesitate to open an issue on GitHub.&lt;/p&gt;
-&lt;h2 id=&#34;and-more&#34;&gt;And more&amp;hellip;&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve also made several updates under the hood, from dependencies to build tools. This has resulted in improved speeds for our development scripts and more resilient tooling for packaging our icons. We&amp;rsquo;ve also included category names into the fuzzy search on the homepage, making it a lot easier to search for groups of icons.&lt;/p&gt;
-&lt;p&gt;We still have some work to do on our docs and search, so stay tuned as we&amp;rsquo;ll eventually add category pages and more for easier browsing and navigating. If you&amp;rsquo;re reading this and want to help improve the Bootstrap Icons docs, please consider opening a PR anytime.&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;To get started, install via npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.4.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.4.0/bootstrap-icons-1.4.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&#34;https://www.figma.com/file/tZZVOiEgKcRUHE3s6o5djB/Bootstrap-Icons-v1.4.0?node-id=0%3A1&#34;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

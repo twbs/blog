@@ -162,6 +162,53 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2012/09/04/bootstrap-2-1-1-released/">
+            Bootstrap 2.1.1 released
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Tue, 04 Sep 2012 00:00:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    September 04, 2012
+  </span>
+</div>
+
+
+        <p><a href="/2012/08/20/bootstrap-2-1-0-released/">Two weeks later</a>, we&rsquo;ve closed another 500 issues against Bootstrap. That includes all the dupes—you nerds like reporting typos—and invalid issues that don&rsquo;t end up making it on the official release milestone. But, what&rsquo;s awesome is that we have 2.1.1 ready to rock with 73 bugfixes.</p>
+<h2 id="get-it">Get it</h2>
+<p>Head on over to <a href="https://getbootstrap.com">https://getbootstrap.com</a> and get your fix, or download the <a href="https://github.com/twbs/bootstrap/archive/v2.1.1.zip">latest master ZIP right from GitHub</a>.</p>
+<h2 id="whats-changed">What&rsquo;s changed</h2>
+<p>Here&rsquo;s the rundown:</p>
+<ul>
+<li>New feature: alert text. We documented these new classes, like <code>.text-success</code>, at the bottom of the <a href="https://getbootstrap.com/2.3.2/base-css.html#typography">Typography section</a> along with the long undocumented <code>.muted</code>.</li>
+<li>Fixed a lot of typos in the docs. Spelling is hard.</li>
+<li>Made the <code>.box-shadow()</code> mixin more durable. It no longer requires escaping for multiple shadows, meaning you can easily use variables and functions in them once again.</li>
+<li>Widened <code>.dl-horizontal dt</code> and <code>.horizontal-form .control-group</code> to better handle the increased font-size.</li>
+<li>Dropdown submenus improved: now you only see the next level, not all levels, on hover of the submenu toggle.</li>
+<li>Clarified jQuery and Bootstrap template requirements in Getting Started section.</li>
+<li><code>select</code> now utilizes <code>@inputBorder</code>.</li>
+<li><code>.lead</code> now scales up from <code>@baseFontSize</code> instead of being a fixed font-size and line-height.</li>
+<li>Fixed the vertical three color gradient in latest Firefox.</li>
+<li>Reordered some variables that caused errors in certain Less compilers.</li>
+</ul>
+<p>There&rsquo;s a bunch more, so do run through the <a href="https://github.com/twbs/bootstrap/issues?milestone=14&amp;q=is%3Aclosed">2.1.1 milestone</a> when you can, but those are the big ones.</p>
+<h2 id="next-up">Next up</h2>
+<p><strong>More bug fixes, more feature improvements.</strong> 2.1.2 will be coming shortly and we&rsquo;ll work to improve a handful of issues that we punted on for 2.1.1. Beyond that, we&rsquo;ve scoped out the <a href="https://github.com/twbs/bootstrap/issues/milestones">next few releases</a> around a set of key components like modals and carousels.</p>
+<p>We&rsquo;ll continue to add new features as appropriate, but we&rsquo;re primarily focused on improving current functionality in the next few months.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2012/08/22/new-rss-feed/">
             New RSS feed
           </a>
@@ -171,7 +218,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Wed, 22 Aug 2012 00:00:00 &#43;0000">
@@ -313,61 +360,6 @@
 <li>The posting process is as simple as writing a post and pushing the <code>gh-pages</code> branch.</li>
 </ul>
 <p>It&rsquo;s simple, fast, and pain free. We love it and encourage you to check it out in the future. Stay tuned in the next two weeks or so for more information on our next release. Until then, enjoy the updated blog.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/06/01/bootstrap-2-0-4-released/">
-            Bootstrap 2.0.4 released
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Fri, 01 Jun 2012 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    June 01, 2012
-  </span>
-</div>
-
-
-        <p>Following up on the large 2.0.3 release a few weeks ago, we have a fresh update to address some documentation issues and basic CSS bugs. 2.0.4 includes around thirty closed issues and is our first version under our updated release approach (shorter, more concise releases).</p>
-<p>As always, here&rsquo;s a quick overview of some of the top changes.</p>
-<h2 id="docs">Docs</h2>
-<ul>
-<li>Added <code>type=&quot;button&quot;</code> to all dismiss buttons in alerts and modals to avoid a bug in which they prevent their parent&rsquo;s <code>form</code> from properly submitting.</li>
-<li>Added simple documentation to Base CSS for <code>.lead</code>.</li>
-<li>Added new CSS test to illustrate how the navbar, static and fixed, behaves.</li>
-<li>Clarified grid sizing copy to include mention of responsive variations.</li>
-<li>Reformatted the LESS docs page to prevent terrible table displays at smaller grid sizes.</li>
-<li>Miscellaneous typos and tweaks.</li>
-</ul>
-<h2 id="css">CSS</h2>
-<ul>
-<li>Refactored forms.less to make our selectors more specific for fewer overrides and less code. Instead of a generic <code>input</code> selector and various resets, we target each type of input like <code>input[type=&quot;text&quot;]</code>, <code>input[type=&quot;password&quot;]</code>, etc.</li>
-<li>Form field state (e.g., success or error) now applies to checkbox and radio labels.</li>
-<li>Removed redundant CSS on <code>&amp;lt;p&amp;gt;</code> for <code>font-family</code>, <code>font-size</code>, and <code>line-height</code>.</li>
-<li>Removed redundant <code>color</code> declaration from the <code>&amp;lt;label&amp;gt;</code> element.</li>
-<li>Added variables for dropdown dividers border colors.</li>
-<li><code>legend</code> and <code>.form-actions</code> share the same <code>border-color</code>, <code>#e5e5e5</code>.</li>
-<li>Fixed some responsive issues with input-prepend and -append, notably with the fluid grid.</li>
-<li>Added special CSS to prevent <code>max-width: 100%;</code> on images from messing up Google Maps rendering.</li>
-<li>Scope opened dropdowns to only immediate children to avoid unintended cascade.</li>
-<li>Similarly, scope floated-right dropdowns to immediate children with <code>.pull-right &gt; .dropdown-menu</code>.</li>
-<li>Updated <code>.placeholder()</code> mixin to use <code>&amp;</code> operator in Less for proper output when compiling.</li>
-<li>Added <code>-ms-input-placeholder</code> to <code>.placeholder()</code> mixin.</li>
-<li>Added CSS3 hyphens mixin.</li>
-<li>Fixed a bug in IE7/8 where certain form controls would not show text if the parent had a filter opacity set.</li>
-</ul>
-<p>For a full changelog, visit the now complete <a href="https://github.com/twbs/bootstrap/issues?milestone=11&amp;q=is%3Aclosed">2.0.4 milestone on GitHub</a>.</p>
 
       </div>
   </div>
