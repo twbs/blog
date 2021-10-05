@@ -20,7 +20,7 @@ Bootstrap v5.1.2 is here with a handful of improvements across our components, p
 
 ## Up next
 
-Up next is our v5.2.0 release, adding more utility improvements and fixing an issue with how [Sass handles re-assigned maps and variables](https://github.com/twbs/bootstrap/issues/34756). Alongside that we'll be shipping an update to v4 soon as well.
+Up next is our v5.2.0 release, adding more utility improvements and fixing an issue with how [Sass handles re-assigned maps and variables](https://github.com/twbs/bootstrap/issues/34756). Alongside that, we'll be shipping an update to v4 soon as well.
 
 ## Get the release
 
