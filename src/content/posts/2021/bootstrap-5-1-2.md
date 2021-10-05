@@ -5,7 +5,7 @@ title: Bootstrap 5.1.2
 video: HoQN7K6HdRw
 ---
 
-Bootstrap v5.1.2 is here with a handful of improvements across our components, plus a fix for an issue in another project that prevented Bootstrap's Sass from compiling properly. Keep reading for the highlights.
+Bootstrap v5.1.2 is here with a handful of improvements across our components, plus a fix for an issue in another project that prevented our Sass from compiling properly. Keep reading for the highlights.
 
 ## Highlights
 
