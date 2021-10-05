@@ -9,7 +9,7 @@
     "build": "hugo --cleanDestinationDir",
     "serve": "hugo server --port 4000 --disableFastRender",
     "serve-only": "npx sirv-cli _site --port 4000",
-    "test": "npm-run-all --parallel --continue-on-error --aggregate-output test-*",
+    "test": "npm-run-all build --parallel --continue-on-error --aggregate-output test-*",
     "test-fusv": "fusv src/assets/scss/",
     "test-stylelint": "stylelint src/assets/scss/ --cache --cache-location node_modules/.cache/.stylelintcache --rd",
     "test-markdownlint": "markdownlint-cli2 \"**/*.md\" \"!**/node_modules/**\"",
