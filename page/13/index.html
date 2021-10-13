@@ -162,6 +162,66 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2015/01/19/bootstrap-3-3-2-released/">
+            Bootstrap 3.3.2 released
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Mon, 19 Jan 2015 00:00:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    January 19, 2015
+  </span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/DNPjeIamsck?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Bootstrap 3.3.2 is here! This release has been all about bug fixes, accessibility improvements, and documentation updates. We&rsquo;ve had over 300 commits from 19 contributors since our last release. Woohoo!</p>
+<p>Here are some of the highlights:</p>
+<ul>
+<li>Updated Glyphicons to v1.9.</li>
+<li>Reverted support for delegating multiple tooltips via a single element, because it caused nasty regressions.</li>
+<li>Fixed a regression that broke <code>wrap: false</code> for the carousel plugin.</li>
+<li>Added manual vendor prefixing back to carousel CSS to avoid a regression among folks not yet using <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>.</li>
+<li>Improved accessibility of our examples and added more accessibility guidance to our docs.</li>
+</ul>
+<p>We&rsquo;ve also deployed two new bots to aid Bootstrap&rsquo;s development:</p>
+<ul>
+<li><a href="https://github.com/twbs/savage">Savage</a>, a bot to automatically run Sauce cross-browser tests on JavaScript pull requests.</li>
+<li><a href="https://github.com/twbs-grunt">@twbs-grunt</a>, a bot to automatically keep our compiled <code>/dist/</code> files up-to-date</li>
+</ul>
+<p>For a complete breakdown, <a href="https://github.com/twbs/bootstrap/releases/tag/v3.3.2">read the release changelog</a> or the <a href="https://github.com/twbs/bootstrap/issues?q=milestone%3Av3.3.2+is%3Aclosed">v3.3.2 milestone</a>.</p>
+<h2 id="new-team-member">New team member</h2>
+<p>We&rsquo;re stoked to welcome <a href="https://github.com/patrickhlauke">Patrick</a> to the Bootstrap team! Patrick brings with him terrific accessibility expertise and has already contributed many improvements to Bootstrap&rsquo;s components and documentation.</p>
+<h2 id="download-bootstrap">Download Bootstrap</h2>
+<p>Download the latest release—source code, compiled assets, and documentation—as a zip file directly from GitHub:</p>
+<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.2.zip">Download Bootstrap 3.3.2</a></p>
+<p>Hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a> for more options. Also, remember <a href="https://www.npmjs.com/package/bootstrap">we&rsquo;re available on npm</a>, too.</p>
+<h2 id="bootstrap-cdn">Bootstrap CDN</h2>
+<p>After reviewing the changelog, update your CDN links to point to the v3.3.2 files:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css&#34;</span><span class="p">&gt;</span>
+
+<span class="c">&lt;!-- Optional theme --&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css&#34;</span><span class="p">&gt;</span>
+
+<span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+      </div><div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2014/11/12/bootstrap-3-3-1-released/">
             Bootstrap 3.3.1 released
           </a>
@@ -171,7 +231,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Wed, 12 Nov 2014 00:00:00 &#43;0000">
@@ -184,7 +244,7 @@
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/ydd9Dn3bJlI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/ydd9Dn3bJlI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -341,74 +401,6 @@
 <p>Pointing out the same mistakes repeatedly gets tiring, so once again, we decided to try automating things. The result of our efforts is <strong><a href="https://github.com/twbs/bootlint">Bootlint</a></strong>, an HTML <a href="https://en.wikipedia.org/wiki/Lint_%28software%29">linting</a> tool for projects using vanilla Bootstrap. Using Bootlint (either <a href="https://github.com/twbs/bootlint#in-the-browser">in-browser</a> or <a href="https://github.com/twbs/bootlint#on-the-command-line">from the command line via Node.js</a>), you can automatically check your Bootstrapped webpages for many common Bootstrap usage mistakes.</p>
 <p>We encourage you to add Bootlint to your web development toolchain so that none of the common mistakes slow down your project&rsquo;s development. In the future, we hope to also make a GitHub issues bot based on Bootlint to help folks out on the Bootstrap issue tracker.</p>
 <p>For more details, installation &amp; usage instructions, or to contribute or give feedback, <a href="https://github.com/twbs/bootlint">check out the Bootlint project on GitHub!</a></p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2014/06/26/bootstrap-3-2-0-released/">
-            Bootstrap 3.2.0 released
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 26 Jun 2014 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    June 26, 2014
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/LaTGrV58wec?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Today we&rsquo;re shipping Bootstrap v3.2.0, a monster of a release that&rsquo;s been in the works for four months. There&rsquo;s lots of new hotness, hundreds of bug fixes, plenty of documentation improvements, and some build tool improvements. All told, there have been over 1,000 commits since our last release.</p>
-<h2 id="download-bootstrap">Download Bootstrap</h2>
-<p>Download the latest release—source code, compiled assets, and documentation—as a zip file directly from GitHub:</p>
-<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.2.0.zip">Download Bootstrap 3.2.0</a></p>
-<p>Hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a> for more options. Also, remember <a href="https://www.npmjs.com/package/bootstrap">we&rsquo;re available on npm</a>, too.</p>
-<h2 id="bootstrap-cdn">Bootstrap CDN</h2>
-<p>After reviewing the changelog, update your CDN links to point to the v3.2.0 files:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&#34;</span><span class="p">&gt;</span>
-
-<span class="c">&lt;!-- Optional theme --&gt;</span>
-<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&#34;</span><span class="p">&gt;</span>
-
-<span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div><h2 id="whats-new">What&rsquo;s new</h2>
-<p>Here&rsquo;s a look at some of the highlights of this release.</p>
-<h3 id="responsive-embeds">Responsive embeds</h3>
-<p>As seen in <a href="https://suitcss.github.io/">SUIT CSS</a>, we&rsquo;ve added a few classes for creating responsive embeds. They&rsquo;re great for proportionally scaling down YouTube videos and other <code>iframe</code> or <code>embed</code> elements. <a href="https://getbootstrap.com/components/#responsive-embed">Head to the docs</a> to check them out.</p>
-<h3 id="new-responsive-utility-classes">New responsive utility classes</h3>
-<p>We&rsquo;ve had responsive utility classes—e.g., <code>.visible-xs</code>—for awhile now. Today, they level up a bit. We&rsquo;ve added <code>block</code>, <code>inline-block</code>, and <code>inline</code> variations for each grid tier. For example, <code>.visible-xs-block</code> is now a thing.</p>
-<h3 id="copy-docs-snippets">Copy docs snippets</h3>
-<p>Our documentation snippets just got an upgrade with the help of <a href="https://github.com/zeroclipboard/zeroclipboard">ZeroClipboard</a>, the open source Flash-based copy-paste button. It&rsquo;ll appear in the top right of nearly every example in the docs. Just click, and paste.</p>
-<h3 id="lmvtfy">LMVTFY</h3>
-<p><a href="/2014/06/25/lmvtfy/">We blogged about this yesterday</a>, but we have a new bot hanging out in our issues and pull requests on GitHub. Whenever someone pastes in a live example—like those from JS Bin or jsFiddle—we now validate their HTML. If it&rsquo;s invalid, we tell folks what&rsquo;s wrong so they can fix it.</p>
-<h3 id="browser-bugs">Browser bugs</h3>
-<p>We&rsquo;ve also begun tracking unresolved browser bugs that currently impact Bootstrap&rsquo;s development in some way. We call it the <a href="https://getbootstrap.com/browser-bugs/">Wall of browser bugs</a>. One of the coolest parts of developing Bootstrap is finding and reporting browser bugs to their developers. We&rsquo;re literally helping to make the web a better place, and that&rsquo;s pretty awesome in our book.</p>
-<h3 id="and-dozens-more">And dozens more&hellip;</h3>
-<p>With over 1,000 commits, a lot has changed, and all of it for the better. A few more notable changes include:</p>
-<ul>
-<li>The docs have been rearranged and updated to be more specific and easier to develop.</li>
-<li>The progress bar component has been improved for increased flexibility.</li>
-<li>CSS repaint performance (most notably through scrolling) has been enhanced for several components.</li>
-<li>Keyboard navigation (forward and backward) is now available for the carousel.</li>
-<li>Modals should no longer shift left when being opened.</li>
-</ul>
-<p>For a complete breakdown, <a href="https://github.com/twbs/bootstrap/releases/tag/v3.2.0">read the release changelog</a> or the <a href="https://github.com/twbs/bootstrap/issues?milestone=26&amp;q=is%3Aclosed">v3.2.0 milestone</a>.</p>
-<h2 id="whats-next">What&rsquo;s next</h2>
-<p>Well, we&rsquo;ll probably have a patch release (v3.2.1), and then I imagine it&rsquo;s onward to v4. We have a v3.3.0 milestone on GitHub, but it&rsquo;s still unclear if we&rsquo;ll ship that before jumping to v4. We&rsquo;ve been building a list of things we&rsquo;d like to see in the new version, but we don&rsquo;t have anything ready for the public yet. We&rsquo;ll share more details as we have them though. Until then, enjoy!</p>
 
       </div>
   </div>
