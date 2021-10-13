@@ -19,14 +19,14 @@ We have a few dozen new and updated icons in this release, including:
 - Two new easel variations
 - New fingerprint icon
 - New magic stick
-- New people variations for Rolodex, workspace, and video chat
+- New people variations for rolodex, workspace, and video chat
 - New webcam icons
 - New radioactive icon
 - New fan icon
 - New hypnotize icon
 - New yin yang icon
 - New activity/pulse icon
-- Updated large dash, plus, slash, x, i, ?, !, and check icons to have a thinner stroke that matter matches rest of icons
+- Updated large dash, plus, slash, x, i, ?, !, and check icons to have a thinner stroke that better matches other icons
 - Updated lamp icons
 - Updated `graph-up` and `graph-down` icons, with the previous ones being renamed to `graph-up-arrow` and `graph-down-arrow`
 
