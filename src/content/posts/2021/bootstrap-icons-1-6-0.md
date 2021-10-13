@@ -9,7 +9,7 @@ video: sOS9aOIXPEk
 
 ## 1,400+ icons
 
-We've officially past 1,400 glyphs in Bootstrap Icons with this release—woohoo! Seems utterly insane to me that the project has come this far and there are still so many more icons to include.
+We've officially passed 1,400 glyphs in Bootstrap Icons with this release—woohoo! Seems utterly insane to me that the project has come this far and there are still so many more icons to include.
 
 <img src="/assets/img/2021/10/v160-new-updated-icons.png" alt="New icons in v1.6.0" style="border: 1px solid rgba(0,0,0,.15);">
 
@@ -19,14 +19,14 @@ We have a few dozen new and updated icons in this release, including:
 - Two new easel variations
 - New fingerprint icon
 - New magic stick
-- New people variations for rolodex, workspace, and video chat
+- New people variations for Rolodex, workspace, and video chat
 - New webcam icons
 - New radioactive icon
 - New fan icon
 - New hypnotize icon
 - New yin yang icon
 - New activity/pulse icon
-- Updated large dash, plus, slash, x, i, ?, !, and check icons to have thinner stroke that matter matches rest of icons
+- Updated large dash, plus, slash, x, i, ?, !, and check icons to have a thinner stroke that matter matches rest of icons
 - Updated lamp icons
 - Updated `graph-up` and `graph-down` icons, with the previous ones being renamed to `graph-up-arrow` and `graph-down-arrow`
 
