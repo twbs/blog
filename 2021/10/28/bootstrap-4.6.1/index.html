@@ -4,14 +4,16 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://gmpg.org/xfn/11" rel="profile">
-<link rel="canonical" href="https://blog.getbootstrap.com/">
+<link rel="canonical" href="https://blog.getbootstrap.com/2021/10/28/bootstrap-4.6.1/">
 
-<meta name="description" content="Official blog for the Bootstrap framework.">
+<meta name="description" content="Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.
+Read on for the highlights or head to the v4.6.x docs to see the latest in action.
+What&rsquo;s changed  Replace Sass division with multiplication and custom divide() function fix(forms): input-group and validation icons Fix minor visual bug in FF caused by moz-focusring Adjust SAFE_URL_PATTERN regex for use with test method of regexes Add sms in the SAFE_URL_PATTERN for sanitizer Adjust feedback icon position and padding for select.">
 <meta name="generator" content="Hugo 0.88.1">
 
 
 
-<title>Bootstrap Blog · Official blog for the Bootstrap framework.</title>
+<title>Bootstrap v4.6.1 | Bootstrap Blog</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
@@ -35,16 +37,22 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-<meta name="twitter:title" content="Bootstrap Blog"/>
-<meta name="twitter:description" content="Official blog for the Bootstrap framework."/>
+<meta name="twitter:title" content="Bootstrap v4.6.1"/>
+<meta name="twitter:description" content="Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.
+Read on for the highlights or head to the v4.6.x docs to see the latest in action.
+What&rsquo;s changed  Replace Sass division with multiplication and custom divide() function fix(forms): input-group and validation icons Fix minor visual bug in FF caused by moz-focusring Adjust SAFE_URL_PATTERN regex for use with test method of regexes Add sms in the SAFE_URL_PATTERN for sanitizer Adjust feedback icon position and padding for select."/>
 <meta name="twitter:site" content="@getbootstrap"/>
-<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:creator" content="@mdo">
 
 <!-- Facebook -->
-<meta property="og:title" content="Bootstrap Blog" />
-<meta property="og:description" content="Official blog for the Bootstrap framework." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.getbootstrap.com/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
+<meta property="og:title" content="Bootstrap v4.6.1" />
+<meta property="og:description" content="Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.
+Read on for the highlights or head to the v4.6.x docs to see the latest in action.
+What&rsquo;s changed  Replace Sass division with multiplication and custom divide() function fix(forms): input-group and validation icons Fix minor visual bug in FF caused by moz-focusring Adjust SAFE_URL_PATTERN regex for use with test method of regexes Add sms in the SAFE_URL_PATTERN for sanitizer Adjust feedback icon position and padding for select." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2021/10/28/bootstrap-4.6.1/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-28T21:30:00+00:00" />
+<meta property="article:modified_time" content="2021-10-28T21:30:00+00:00" />
 
 <meta property="og:image:width" content="1000">
 <meta property="og:image:height" content="500">
@@ -147,7 +155,7 @@
     <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
   <div class="container d-flex align-items-md-center py-2">
     <nav class="nav mx-auto">
-      <a class="text-dark py-1 mr-3 fw-600 text-decoration-none" href="/">All posts</a>
+      <a class="text-dark py-1 mr-3" href="/">All posts</a>
       <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
       <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
       <a class="text-dark py-1" href="https://blog.getbootstrap.com/feed.xml">Subscribe</a>
@@ -158,133 +166,90 @@
 
     <div class="container">
       
-<div class="posts-container mx-auto px-3 my-5">
-  <div class="posts">
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/03/22/combining-badges-less-and-labels-less-in-2-0-3/">
-            Combining badges.less and labels.less in 2.0.3
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
+<div class="posts-container px-3 mx-auto my-5">
+  <div class="post">
+    <h1 class="post-title fw-500">Bootstrap v4.6.1</h1>
+    <div class="d-flex align-items-center mb-4 text-muted author-info">
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
                            alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 22 Mar 2012 00:00:00 &#43;0000">
+  <span class="d-flex align-items-center ml-3" title="Thu, 28 Oct 2021 21:30:00 &#43;0000">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
 </svg>
 
-    March 22, 2012
+    October 28, 2021
   </span>
 </div>
-
-
-        <p>For one reason or another, in 2.0.2 we made badges have separate LESS files. The CSS is 95% the same, but we knew that some folks might need one or the other, or even both. With <a href="https://github.com/twbs/bootstrap/issues?milestone=10&amp;q=is%3Aopen">2.0.3</a>, we&rsquo;ll be simplifying some of those styles into a single .less file and scoping the <code>:hover</code> state to anchors only.</p>
-<p>Moving forward, we&rsquo;ll have the following as a shared set of base styles. As you can see, when combined, there isn&rsquo;t much extra weight at all for those who want just badges or labels.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="nc">.label</span><span class="o">,</span>
-<span class="nc">.badge</span> <span class="p">{</span>
-  <span class="na">font-size</span><span class="o">:</span> <span class="o">@</span><span class="n">baseFontSize</span> <span class="o">*</span> <span class="mf">.846</span><span class="p">;</span>
-  <span class="na">font-weight</span><span class="o">:</span> <span class="ni">bold</span><span class="p">;</span>
-  <span class="na">line-height</span><span class="o">:</span> <span class="mi">13</span><span class="kt">px</span><span class="p">;</span> <span class="c1">// ensure proper line-height if floated
-</span><span class="c1"></span>  <span class="na">color</span><span class="o">:</span> <span class="o">@</span><span class="ni">white</span><span class="p">;</span>
-  <span class="na">vertical-align</span><span class="o">:</span> <span class="ni">middle</span><span class="p">;</span>
-  <span class="na">white-space</span><span class="o">:</span> <span class="ni">nowrap</span><span class="p">;</span>
-  <span class="na">text-shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="o">-</span><span class="mi">1</span><span class="kt">px</span> <span class="mi">0</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,.</span><span class="mi">25</span><span class="p">);</span>
-  <span class="na">background-color</span><span class="o">:</span> <span class="o">@</span><span class="n">grayLight</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>One file, multiple components. We&rsquo;ve done it before with our multiple types of navigation, so it&rsquo;s nothing folks familiar with Bootstrap haven&rsquo;t seen before.</p>
-<p>On a related note, we&rsquo;ve changed how we handle hover states for badges and labels. Instead of having a default hover state on an inherently static element, one made with say a <code>span</code>, we relegate the hover state (a cursor and background change) to anchors only.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="nt">a</span> <span class="p">{</span>
-  <span class="k">&amp;</span><span class="nc">.label</span><span class="nd">:hover</span><span class="o">,</span>
-  <span class="k">&amp;</span><span class="nc">.badge</span><span class="nd">:hover</span> <span class="p">{</span>
-    <span class="na">color</span><span class="o">:</span> <span class="o">@</span><span class="ni">white</span><span class="p">;</span>
-    <span class="na">text-decoration</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
-    <span class="na">cursor</span><span class="o">:</span> <span class="ni">pointer</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><p>For the alternate colors on badges and labels, we&rsquo;ve also relegated those styles to anchors only (those with an <code>href</code> attribute).</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/03/22/coming-up-in-bootstrap/">
-            Coming up in Bootstrap
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 22 Mar 2012 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    March 22, 2012
-  </span>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/wBl2QGAIx1s?rel=0&amp;start=135" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
-
-
-        <p>We&rsquo;ve been mum on the next few releases for Bootstrap the last couple weeks, and with good reason: both Jacob and I have been super busy at work and we&rsquo;re uncertain of what features to add next. That said, we know we have some bugs and docs fixes to make and know we can slip in a few small features if time allows. I&rsquo;ve updated <a href="https://github.com/twbs/bootstrap/wiki/Roadmap">the roadmap</a> to reflect the last two releases and a general outline for the next two.</p>
-<p>But, what&rsquo;s next?</p>
-<h2 id="203">2.0.3</h2>
-<p>To start, we&rsquo;ll take a good hard look at the docs and current components to get a strong base and iron out additional bugs we introduced in 2.0.2. This release will not include any new features at all. Key bugs to fix include the static navbar regression and tabbed content alignment, but you can see a more thorough list on the <a href="https://github.com/twbs/bootstrap/issues?milestone=10&amp;q=is%3Aopen">2.0.3 milestone</a>.</p>
-<h2 id="210">2.1.0</h2>
-<p>After 2.0.3, we have a small feature and (as required) bugfix release to push out. So far, the only features we&rsquo;re planning on adding include an official addition of the subnav, Growl-style notifications, and an OOCSS-style media component. The first two are some of oldest feature requests, and honestly are fairly easy to add and document compared to some of the other requests.</p>
-<p>We haven&rsquo;t slated anything else because of other time commitments, but we&rsquo;re open to hearing your feedback if you have top requests. Feel free to weigh in on <a href="https://twitter.com/getbootstrap">Twitter</a> or on <a href="https://github.com/twbs/bootstrap">GitHub</a>.</p>
-<h2 id="timing">Timing</h2>
-<p>We don&rsquo;t have specific dates in mind, but we know we want 2.0.3 out by the end of the month to address those key bugs. 2.1 will follow, but not for at least a month or two after 2.0.3.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2012/03/22/what-up-nerds/">
-            What up, nerds?
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 22 Mar 2012 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    March 22, 2012
-  </span>
-</div>
-
-
-        <p>Welcome one and all to the new, official Twitter Bootstrap blog. From now on, Jacob and I will be posting info on new releases, documentation changes, great examples of folks using Bootstrap, and more. Stay tuned for our first post on the next two updates for the project.</p>
-<hr>
-<h3 id="quick-links">Quick links</h3>
+<p>Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.</p>
+<p>Read on for the highlights or <a href="https://getbootstrap.com/docs/4.6/">head to the v4.6.x docs</a> to see the latest in action.</p>
+<h2 id="whats-changed">What&rsquo;s changed</h2>
 <ul>
-<li><a href="https://getbootstrap.com/">Bootstrap homepage</a></li>
-<li><a href="https://github.com/twbs/bootstrap">GitHub project page</a></li>
-<li><a href="https://github.com/twbs/bootstrap/wiki/Roadmap">Roadmap</a></li>
-<li><a href="https://github.com/twbs/bootstrap/issues?state=open">Open issues</a></li>
+<li>Replace Sass division with multiplication and custom <code>divide()</code> function</li>
+<li>fix(forms): input-group and validation icons</li>
+<li>Fix minor visual bug in FF caused by moz-focusring</li>
+<li>Adjust <code>SAFE_URL_PATTERN</code> regex for use with test method of regexes</li>
+<li>Add <code>sms</code> in the <code>SAFE_URL_PATTERN</code> for sanitizer</li>
+<li>Adjust feedback icon position and padding for <code>select.form-control</code></li>
+<li>Carousel: use buttons, not links, for prev/next controls</li>
+<li>v4: Sass docs for default variables</li>
+<li>Handle complex expressions in <code>add()</code> &amp; <code>subtract()</code></li>
+<li>More concise improvements for <code>add()</code> and <code>subtract()</code></li>
+<li>Remove aria-haspopup from dropdowns</li>
+<li>Dropdown: support <code>.dropdown-item</code> wrapped in <code>&lt;li&gt;</code> tags</li>
+<li>Update Node versions in JS tests (drop Node 10, add Node 16) and add variables for <code>vertical-align</code> in spinners</li>
+<li>Replace Freenode with Libera IRC server</li>
+<li>Fix repetition in the Navbar docs description</li>
+<li>Enable <code>0.x</code> with negative margins in utilities</li>
+<li>Remove print <code>thead</code> rule</li>
+<li>Fix prevented <code>show</code> event disabling modals with fade class from being displayed again</li>
+<li>Input group validation with custom-file input</li>
+<li>Add eslint-plugin-qunit and tighten JS tests</li>
+<li>Update our tests to Node 16 and npm 8</li>
+<li>Disabled link cleanup</li>
 </ul>
+<p><a href="https://github.com/twbs/bootstrap/releases/tag/v4.6.1">Review the GitHub v4.6.1 release changelog</a> for more details.</p>
+<h2 id="next-up">Next up</h2>
+<p>We&rsquo;ll be flipping back to v5 development after this release, focusing on v5.2.0 with some additional updates to using more CSS variables and other awesome features. Sometime after that, we hope to ship a v4.7.0 release with some additional backported features and improvements to v4.</p>
+<p>Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>' GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
-      </div>
   </div>
 
-  <div class="pagination"><span class="pagination-item older">Older</span>
-    <a class="pagination-item newer" href="/page/21/">Newer</a>
+  <div class="related">
+    <h2>Related posts</h2>
+    <ul class="related-posts list-unstyled">
+      <li>
+        <h4>
+          <a href="/2021/10/13/bootstrap-icons-1-6-0/">
+            Bootstrap Icons v1.6.0
+            <small>13 Oct 2021</small>
+          </a>
+        </h4>
+      </li><li>
+        <h4>
+          <a href="/2021/10/05/bootstrap-5-1-2/">
+            Bootstrap 5.1.2
+            <small>05 Oct 2021</small>
+          </a>
+        </h4>
+      </li><li>
+        <h4>
+          <a href="/2021/09/07/bootstrap-5-1-1/">
+            Bootstrap 5.1.1
+            <small>07 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    </ul>
   </div>
 </div>
     </div>

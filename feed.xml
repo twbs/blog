@@ -6,7 +6,49 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 21:30:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap v4.6.1</title>
+      <link>https://blog.getbootstrap.com/2021/10/28/bootstrap-4.6.1/</link>
+      <pubDate>Thu, 28 Oct 2021 21:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2021/10/28/bootstrap-4.6.1/</guid>
+      <description>&lt;p&gt;Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.&lt;/p&gt;
+&lt;p&gt;Read on for the highlights or &lt;a href=&#34;https://getbootstrap.com/docs/4.6/&#34;&gt;head to the v4.6.x docs&lt;/a&gt; to see the latest in action.&lt;/p&gt;
+&lt;h2 id=&#34;whats-changed&#34;&gt;What&amp;rsquo;s changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Replace Sass division with multiplication and custom &lt;code&gt;divide()&lt;/code&gt; function&lt;/li&gt;
+&lt;li&gt;fix(forms): input-group and validation icons&lt;/li&gt;
+&lt;li&gt;Fix minor visual bug in FF caused by moz-focusring&lt;/li&gt;
+&lt;li&gt;Adjust &lt;code&gt;SAFE_URL_PATTERN&lt;/code&gt; regex for use with test method of regexes&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;sms&lt;/code&gt; in the &lt;code&gt;SAFE_URL_PATTERN&lt;/code&gt; for sanitizer&lt;/li&gt;
+&lt;li&gt;Adjust feedback icon position and padding for &lt;code&gt;select.form-control&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Carousel: use buttons, not links, for prev/next controls&lt;/li&gt;
+&lt;li&gt;v4: Sass docs for default variables&lt;/li&gt;
+&lt;li&gt;Handle complex expressions in &lt;code&gt;add()&lt;/code&gt; &amp;amp; &lt;code&gt;subtract()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;More concise improvements for &lt;code&gt;add()&lt;/code&gt; and &lt;code&gt;subtract()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove aria-haspopup from dropdowns&lt;/li&gt;
+&lt;li&gt;Dropdown: support &lt;code&gt;.dropdown-item&lt;/code&gt; wrapped in &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tags&lt;/li&gt;
+&lt;li&gt;Update Node versions in JS tests (drop Node 10, add Node 16) and add variables for &lt;code&gt;vertical-align&lt;/code&gt; in spinners&lt;/li&gt;
+&lt;li&gt;Replace Freenode with Libera IRC server&lt;/li&gt;
+&lt;li&gt;Fix repetition in the Navbar docs description&lt;/li&gt;
+&lt;li&gt;Enable &lt;code&gt;0.x&lt;/code&gt; with negative margins in utilities&lt;/li&gt;
+&lt;li&gt;Remove print &lt;code&gt;thead&lt;/code&gt; rule&lt;/li&gt;
+&lt;li&gt;Fix prevented &lt;code&gt;show&lt;/code&gt; event disabling modals with fade class from being displayed again&lt;/li&gt;
+&lt;li&gt;Input group validation with custom-file input&lt;/li&gt;
+&lt;li&gt;Add eslint-plugin-qunit and tighten JS tests&lt;/li&gt;
+&lt;li&gt;Update our tests to Node 16 and npm 8&lt;/li&gt;
+&lt;li&gt;Disabled link cleanup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v4.6.1&#34;&gt;Review the GitHub v4.6.1 release changelog&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;h2 id=&#34;next-up&#34;&gt;Next up&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ll be flipping back to v5 development after this release, focusing on v5.2.0 with some additional updates to using more CSS variables and other awesome features. Sometime after that, we hope to ship a v4.7.0 release with some additional backported features and improvements to v4.&lt;/p&gt;
+&lt;p&gt;Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap Icons v1.6.0</title>
       <link>https://blog.getbootstrap.com/2021/10/13/bootstrap-icons-1-6-0/</link>
@@ -768,33 +810,6 @@
 &lt;p&gt;And more features and updates are planned for a few more releases after that! Check out our &lt;a href=&#34;https://github.com/twbs/bootstrap/projects&#34;&gt;projects on GitHub&lt;/a&gt; for a closer look.&lt;/p&gt;
 &lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
 &lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap Icons v1.4.1</title>
-      <link>https://blog.getbootstrap.com/2021/03/29/bootstrap-icons-1-4-1/</link>
-      <pubDate>Mon, 29 Mar 2021 21:30:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/03/29/bootstrap-icons-1-4-1/</guid>
-      <description>&lt;p&gt;Our latest &lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons&lt;/a&gt; update has arrived to fix a few bugs and improve our build tooling. Keep reading for what&amp;rsquo;s new.&lt;/p&gt;
-&lt;h2 id=&#34;key-changes&#34;&gt;Key changes&lt;/h2&gt;
-&lt;p&gt;Here are the highlights from this release:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated: PowerPoint icons now look more capitalized&lt;/li&gt;
-&lt;li&gt;Fixed: &lt;code&gt;skip-forward&lt;/code&gt; and &lt;code&gt;skip-backward&lt;/code&gt; icons are now properly named&lt;/li&gt;
-&lt;li&gt;Fixed: &lt;code&gt;mic&lt;/code&gt; and &lt;code&gt;record&lt;/code&gt; icons no longer appear filled&lt;/li&gt;
-&lt;li&gt;Fixed: Codepoints for icon font will no longer change between versions&lt;/li&gt;
-&lt;li&gt;Upgraded SVGO to v2.3.0, bringing some minor SVG optimizations to ~200 icons&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The update to codepoints is the most important change in this release. It ensures the &lt;code&gt;content&lt;/code&gt; property values for each icon doesn&amp;rsquo;t change. This gives our icon font more stability between versions, allowing for easier upgrades and maintenance.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.4.1&#34;&gt;Check out the release notes&lt;/a&gt; for more changes in v1.4.1.&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;To get started, install via npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.4.1&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.4.1/bootstrap-icons-1.4.1.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&#34;https://www.figma.com/file/YjjMzXhECL1MIb6Qlm7VJO/Bootstrap-Icons-v1.4.1&#34;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

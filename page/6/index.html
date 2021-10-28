@@ -162,6 +162,48 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2020/08/06/bootstrap-4-5-2/">
+            Bootstrap 4.5.2
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Thu, 06 Aug 2020 00:00:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    August 06, 2020
+  </span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/ccenFp_3kq8?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Today&rsquo;s patch release is aimed at addressing some small issues introduced over the last few versions of Bootstrap 4. Read on for details and update when you&rsquo;re ready.</p>
+<p>From the addition of responsive containers in v4.4.0 to the most recent row and column adjustments, we had been making incremental changes to our grid system. While our changes have solved some issues, they&rsquo;ve broken other behaviors and introduced new complexities.</p>
+<p>Today&rsquo;s release rolls back and restores a few things:</p>
+<ul>
+<li>
+<p><strong><a href="https://github.com/twbs/bootstrap/pull/31438">#31438</a> restores the <code>make-container-max-widths</code> mixin.</strong> We won&rsquo;t be using the mixin ourselves, but it will remain in the codebase for the rest of v4 with today&rsquo;s release. We&rsquo;ve added a deprecation notice as well.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/twbs/bootstrap/pull/31439">#31439</a> removes <code>flex: 1 0 100%</code> from <code>.row</code>s.</strong> This was added to address shrinking rows inside the navbar component after our responsive containers were added in v4.4.0. Removing this rolls us back to the expected grid and flex behavior—your row will shrink unfortunately without further changes. We could add extra custom CSS to address this, but it seems shortsighted to rush into that. Instead, apply <code>.flex-fill</code> to the <code>.row</code> and your row will behave as usual.</p>
+</li>
+</ul>
+<p>Similarly, <strong>v4.5.1 already removed the <code>min-width: 0</code> on <code>.col</code>s</strong>. This change was introduced to fix <code>&lt;pre&gt;</code> elements not fitting to a column. This an issue with how flexbox works, where a flex container cannot shrink beyond its children&rsquo;s content. Rather than force this on every column, we recommend you apply this as needed with a custom utility. (We&rsquo;ll also aim to add this as a new utility in v5.)</p>
+<p>We know this kind of hiccups set you back, so please accept our apologies for the bugs. Be sure to read the referenced pull requests above to get up to speed on what happened and how we fixed it. <a href="https://codepen.io/emdeoh/pen/LYNYmPR?editors=1100">This CodePen demo</a> has all the known grid issues and fixes implemented in it.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2020/08/04/bootstrap-4-5-1/">
             Bootstrap 4.5.1
           </a>
@@ -171,7 +213,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Tue, 04 Aug 2020 00:00:00 &#43;0000">
@@ -184,7 +226,7 @@
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/iIpfWORQWhU?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/iIpfWORQWhU?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -507,52 +549,6 @@
 <p><img src="/assets/img/2020/05/bootstrap-icons-alpha4-all.png" alt="All Bootstrap Icons"></p>
 <h2 id="download">Download</h2>
 <p>Alpha 4 has been published to GitHub and npm (package name <code>bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code>v1.0.0-alpha4</code>, or by snagging the <a href="https://www.figma.com/file/XDj1VewxEtXzkDDMAvWx2W/Bootstrap-Icons-v1.0.0-alpha4">icons from Figma</a>.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2020/05/12/bootstrap-4-5-0/">
-            Bootstrap 4.5.0
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Tue, 12 May 2020 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    May 12, 2020
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/tNG62fULYgI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Bootstrap v4.5.0 has landed with dozens of bug fixes, some small new features, and some changes to our development. Originally planned as a v4.4.2 patch release, we&rsquo;ve bumped this to a minor release on account of our new features that help bridge the gap between v4 and our upcoming v5.</p>
-<h2 id="highlights">Highlights</h2>
-<p>Here&rsquo;s what you need to know about v4.5.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work.</p>
-<ul>
-<li><strong>New interaction utilities.</strong> Quickly set <code>user-select</code> with the new utilities and Sass map.</li>
-<li><strong>New Reboot style for pointer cursors.</strong> We now include a <code>role=&quot;button&quot;</code> selector in Reboot to set <code>cursor: pointer</code> on non-<code>&lt;button&gt;</code> element buttons.</li>
-<li><strong>Examples are now downloadable.</strong> We&rsquo;ve added a script to zip up and offer all our Examples as their own download from the docs.</li>
-<li><strong>Saved ~5%</strong> from the compressed minified JS builds.</li>
-<li>Added guidance to our docs for how to work around our longstanding input group rounded corner bug.</li>
-<li>Redesigned docs homepage and navbar to increment us towards v5&rsquo;s new docs design.</li>
-<li>Deprecated <code>bg-gradient-variant</code> mixin as it&rsquo;s being removed in v5.</li>
-<li>Updated to jQuery v3.5.1, Jekyll v4, and dropped Node.js &lt; 10 for development.</li>
-</ul>
-<p>We&rsquo;ve shipped a lot more in this release, so be sure to check out the <a href="https://github.com/twbs/bootstrap/releases/tag/v4.5.0">v4.5.0 GitHub release</a> and the <a href="https://github.com/twbs/bootstrap/projects/20">v4.5.0 project for closed issues and merged pull requests</a> for more details.</p>
-<p><a href="https://getbootstrap.com/docs/4.5/">Head to the v4.5.0 docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the BootstrapCDN and Rubygems.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>' GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
       </div>
   </div>
