@@ -6,7 +6,29 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 Oct 2021 21:30:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap Icons v1.7.0</title>
+      <link>https://blog.getbootstrap.com/2021/11/01/bootstrap-icons-1-7-0/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2021/11/01/bootstrap-icons-1-7-0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.7.0&lt;/a&gt; is here with 120 new and updated icons, taking us over 1,500 total icons for the project! It&amp;rsquo;s the largest update since the initial release, so keep reading to see what&amp;rsquo;s new.&lt;/p&gt;
+&lt;h2 id=&#34;120-new-icons&#34;&gt;120 new icons&lt;/h2&gt;
+&lt;p&gt;This update was a lot of fun for me—drawing all these tiny computer parts most of all! There are dozens of new computer related icons for parts, ports, and peripheral devices. There are also several new brand icons, including Meta, and some other fun icons like a new robot head and a boombox.&lt;/p&gt;
+&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/11/icons-v170.png&#34; alt=&#34;New icons in v1.7.0&#34; style=&#34;border: 1px solid rgba(0,0,0,.15);&#34;&gt;
+&lt;p&gt;&lt;em&gt;Looking for more new icons? Head to the &lt;a href=&#34;https://github.com/twbs/icons/issues&#34;&gt;issue tracker&lt;/a&gt; to check for open requests or submit a new one.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;To get started, install or update via npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or Composer:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;composer require twbs/bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.7.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.7.0/bootstrap-icons-1.7.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
+&lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap v4.6.1</title>
       <link>https://blog.getbootstrap.com/2021/10/28/bootstrap-4.6.1/</link>
@@ -547,269 +569,6 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.5.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.5.0/bootstrap-icons-1.5.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
 &lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
 &lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/community/file/972989644486753519/Bootstrap-Icons-v1.5.0&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap 5</title>
-      <link>https://blog.getbootstrap.com/2021/05/05/bootstrap-5/</link>
-      <pubDate>Wed, 05 May 2021 09:30:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/05/05/bootstrap-5/</guid>
-      <description>&lt;p&gt;Bootstrap 5 has officially landed! After three alphas, three betas, and several months of hard work, we&amp;rsquo;re shipping the first stable release of our new major version. It&amp;rsquo;s been a wild ride made possible by our maintainers and the amazing community that uses and contributes to Bootstrap. Thanks to all who have helped us get here!&lt;/p&gt;
-&lt;p&gt;Keep reading for details on what&amp;rsquo;s new compared to v4 and what&amp;rsquo;s coming for subsequent releases. Want to get right to it? &lt;strong&gt;&lt;a href=&#34;https://getbootstrap.com&#34;&gt;Head to the new v5 docs&lt;/a&gt;&lt;/strong&gt; or fly by the seat of your pants and just &lt;code&gt;npm i bootstrap&lt;/code&gt;.&lt;/p&gt;
-&lt;hr class=&#34;my-5&#34;&gt;
-&lt;p&gt;&lt;strong&gt;In this post:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#new-logo&#34;&gt;New logo!&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#new-offcanvas-component&#34;&gt;New offcanvas component&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#new-accordion&#34;&gt;New accordion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#new-and-updated-forms&#34;&gt;New and updated forms&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#checks-and-radios&#34;&gt;Checks and radios&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#floating-labels&#34;&gt;Floating labels&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#new-file-input&#34;&gt;New file input&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#simplified-layout&#34;&gt;Simplified layout&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#rtl-is-here&#34;&gt;RTL is here!&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#overhauled-utilities&#34;&gt;Overhauled utilities&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#new-utilities-api&#34;&gt;New utilities API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#new-utilities&#34;&gt;New utilities&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#logical-properties-for-spacing-utilities&#34;&gt;Logical properties for spacing utilities&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#new-snippet-examples&#34;&gt;New snippet examples&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#grid-and-layout&#34;&gt;Grid and layout&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#more-component-updates&#34;&gt;More component updates&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#improved-customizing&#34;&gt;Improved customizing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#dart-sass&#34;&gt;Dart Sass&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#browser-support&#34;&gt;Browser support&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#javascript&#34;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#migration-guide&#34;&gt;Migration guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#get-the-release&#34;&gt;Get the release&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#whats-next&#34;&gt;What&amp;rsquo;s next&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#v510-preview&#34;&gt;v5.1.0 preview&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#support-the-team&#34;&gt;Support the team&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr class=&#34;my-5&#34;&gt;
-&lt;h2 id=&#34;new-logo&#34;&gt;New logo!&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/06/v5-new-logo.png&#34; alt=&#34;New Bootstrap logo&#34;&gt;&lt;/p&gt;
-&lt;p&gt;One of the biggest changes with v5 came with our redesigned logo and updated docs design. Inspired by the work we&amp;rsquo;ve done in &lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons&lt;/a&gt;, our new logo is a callback to CSS&amp;rsquo;s curly braces and our longstanding &lt;code&gt;B&lt;/code&gt; icon. It&amp;rsquo;s a small upgrade, but a fun one nonetheless, and one that we feel helps set the tone for this new major release. Still the same Bootstrap, just slightly refined. 😅&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/06/v5-home.png&#34; alt=&#34;New Bootstrap docs layout&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;And &lt;a href=&#34;https://getbootstrap.com&#34;&gt;the new docs&lt;/a&gt; are brighter, better organized with new content sections, and also feature improved navigation.&lt;/p&gt;
-&lt;h2 id=&#34;new-offcanvas-component&#34;&gt;New offcanvas component&lt;/h2&gt;
-&lt;p&gt;One of our big new component additions is the all-new offcanvas!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/offcanvas/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/03/bootstrap-docs-offcanvas.png&#34; alt=&#34;Offcanvas example&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Built on and sharing fundamental pieces of our modals, &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/offcanvas/&#34;&gt;our new offcanvas component&lt;/a&gt; comes with a configurable backdrop, body scroll, and placement. Offcanvas components can be placed on the top, right, bottom, or left of the viewport. Configure these options with &lt;code&gt;data&lt;/code&gt; attributes or via the JavaScript APIs.&lt;/p&gt;
-&lt;h2 id=&#34;new-accordion&#34;&gt;New accordion&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve replaced our &lt;code&gt;.card&lt;/code&gt; accordion component with a &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/accordion/&#34;&gt;brand new &lt;code&gt;.accordion&lt;/code&gt; component&lt;/a&gt;, solving several bugs in the process. Our new accordion still uses the Collapse JavaScript plugin, but with custom HTML and CSS to support it, it&amp;rsquo;s better and easier than ever to use.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/accordion/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/accordion.png&#34; alt=&#34;New Bootstrap accordion&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The new accordion includes Bootstrap Icons as chevron icons indicating state and click-ability. We&amp;rsquo;ve included support for a flush accordion (add &lt;code&gt;.accordion-flush&lt;/code&gt;) to remove the outer borders, allowing for easier placement inside parent elements.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/accordion/&#34;&gt;Visit the new docs page&lt;/a&gt; to learn more.&lt;/p&gt;
-&lt;h2 id=&#34;new-and-updated-forms&#34;&gt;New and updated forms&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve overhauled our &lt;a href=&#34;https://getbootstrap.com/docs/5.0/forms/&#34;&gt;Forms documentation and components&lt;/a&gt;. We&amp;rsquo;ve consolidated all our forms styles into a new Forms section (including the input group component) to give them the emphasis they deserve.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/forms/overview/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/06/v5-forms.png&#34; alt=&#34;New Bootstrap 5 forms docs&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Alongside new docs pages, we&amp;rsquo;ve redesigned and de-duped all our form controls. In v4 we introduced an extensive suite of custom form controls—checks, radios, switches, files, and more—but those were in addition to whatever defaults each browser provided. With v5, we&amp;rsquo;ve gone fully custom.&lt;/p&gt;
-&lt;h3 id=&#34;checks-and-radios&#34;&gt;Checks and radios&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/forms/checks-radios/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/06/v5-checks.png&#34; alt=&#34;New Bootstrap 5 checks&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re familiar with v4&amp;rsquo;s form markup, this shouldn&amp;rsquo;t look too far off for you. With a single set of form controls and a focus on redesigning existing elements vs generating new ones via pseudo-elements, we have a much more consistent look and feel.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check-input&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;checkbox&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;flexCheckDefault&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check-label&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;flexCheckDefault&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-    Default checkbox
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check-input&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;radio&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;flexRadioDefault&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;flexRadioDefault1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check-label&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;flexRadioDefault1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-    Default radio
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check form-switch&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check-input&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;checkbox&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;flexSwitchCheckDefault&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;label&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;form-check-label&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;flexSwitchCheckDefault&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Default switch checkbox input&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Every checkbox, radio, select, file, range, and more includes a custom appearance to unify the style and behavior of form controls across OS and browser. These new form controls are all built on completely semantic, standard form controls—no more superfluous markup, just form controls and labels.&lt;/p&gt;
-&lt;h3 id=&#34;floating-labels&#34;&gt;Floating labels&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/floating-forms.png&#34; alt=&#34;New floating labels&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/forms/floating-labels/&#34;&gt;Floating labels&lt;/a&gt; include support for textual inputs, selects, and textareas. We have one limitation with textareas where multiple lines of text can be obscured by the floating label. We&amp;rsquo;re working on fixes for this, so if you have ideas, please let us know!&lt;/p&gt;
-&lt;h3 id=&#34;new-file-input&#34;&gt;New file input&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/file-input.png&#34; alt=&#34;New file input&#34;&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve dropped our custom &lt;code&gt;.form-file&lt;/code&gt; class for additional styles on the &lt;code&gt;.form-control&lt;/code&gt; class. This means we no longer require additional JavaScript to make our file input styles functional—the &lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/forms/form-control/#file-input&#34;&gt;new form file&lt;/a&gt; is all CSS!&lt;/p&gt;
-&lt;h3 id=&#34;simplified-layout&#34;&gt;Simplified layout&lt;/h3&gt;
-&lt;p&gt;Using our new grid updates, &lt;a href=&#34;https://getbootstrap.com/docs/5.0/forms/layout/&#34;&gt;form layout&lt;/a&gt; has never been easier. We&amp;rsquo;ve dropped the &lt;code&gt;.form-group&lt;/code&gt;, &lt;code&gt;.form-row&lt;/code&gt;, and &lt;code&gt;.form-inline&lt;/code&gt; for the grid system.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/forms/layout/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/05/v5-form-layout.png&#34; alt=&#34;New form layout via grid&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Be sure to &lt;a href=&#34;https://getbootstrap.com/docs/5.0/forms/overview/&#34;&gt;explore the new forms docs&lt;/a&gt; and let us know what you think.&lt;/p&gt;
-&lt;h2 id=&#34;rtl-is-here&#34;&gt;RTL is here!&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/getting-started/rtl/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/rtl-docs.png&#34; alt=&#34;Bootstrap RTL docs&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve finally added RTL support to Bootstrap! At a high level, our RTL approach includes a handful of changes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;New RTL versions of our CSS dist file&lt;/strong&gt;, which includes our grid, Reboot, utilities, and standard bundles. &lt;a href=&#34;https://getbootstrap.com/docs/5.0/getting-started/contents/&#34;&gt;See the Contents page for a full list of files.&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/getting-started/rtl/&#34;&gt;New RTL documentation&lt;/a&gt;&lt;/strong&gt; to help you get started.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/#rtl&#34;&gt;Five new RTL Examples&lt;/a&gt;&lt;/strong&gt; that show our new RTL CSS in action, converting our Album, Checkout, Carousel, Blog, and Dashboard examples into all-new right-to-left equivalents.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Two new cheatsheet kitchen sink pages&lt;/strong&gt;—the &lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/cheatsheet/&#34;&gt;default cheatsheet&lt;/a&gt; for our standard CSS and the &lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/cheatsheet-rtl/&#34;&gt;RTL cheatsheet&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Our approach is built on &lt;a href=&#34;https://rtlcss.com/&#34;&gt;RTLCSS&lt;/a&gt;, an awesome project that helps reprocess an existing LTR stylesheet for RTL. We&amp;rsquo;ve classified it as an experimental feature for now, anticipating that we&amp;rsquo;ll get some of this wrong. We&amp;rsquo;re looking to the community to help us round out the feature as we wrap up some remaining todos.&lt;/p&gt;
-&lt;h2 id=&#34;overhauled-utilities&#34;&gt;Overhauled utilities&lt;/h2&gt;
-&lt;p&gt;Given the love utility-driven frameworks have garnered the last few years, we&amp;rsquo;ve invested in adding more utilities to Bootstrap along with a new method of managing them across your projects.&lt;/p&gt;
-&lt;h3 id=&#34;new-utilities-api&#34;&gt;New utilities API&lt;/h3&gt;
-&lt;p&gt;We&amp;rsquo;ve implemented a brand &lt;a href=&#34;https://getbootstrap.com/docs/5.0/utilities/api/&#34;&gt;new utility API&lt;/a&gt; into Bootstrap 5 as the primary way to extend Bootstrap&amp;rsquo;s default utility classes. Easily generate and customize utilities with support for custom class names, support for generating state-based classes like &lt;code&gt;:hover&lt;/code&gt;, print versions, and more.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$utilities&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;!default&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;$utilities&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;map-merge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// ...&lt;/span&gt;
-    &lt;span class=&#34;s2&#34;&gt;&amp;#34;margin&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
-      &lt;span class=&#34;na&#34;&gt;responsive&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-      &lt;span class=&#34;na&#34;&gt;property&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-      &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-      &lt;span class=&#34;na&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;map-merge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$spacers&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;auto&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;ni&#34;&gt;auto&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// ...&lt;/span&gt;
-    &lt;span class=&#34;s2&#34;&gt;&amp;#34;opacity&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
-      &lt;span class=&#34;na&#34;&gt;property&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-      &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;ni&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-      &lt;span class=&#34;na&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;hover&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-      &lt;span class=&#34;na&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
-        &lt;span class=&#34;na&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-        &lt;span class=&#34;na&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.25&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-        &lt;span class=&#34;na&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.5&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-        &lt;span class=&#34;na&#34;&gt;75&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.75&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-        &lt;span class=&#34;na&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-      &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// ...&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$utilities&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ever since utilities become a preferred way to build, we&amp;rsquo;ve been working to find the right balance to implement them in Bootstrap while providing control and customization. In v4, we did this with global &lt;code&gt;$enable-*&lt;/code&gt; classes, and we&amp;rsquo;ve even carried that forward in v5. But with an API-based approach, we&amp;rsquo;ve created a language and syntax in Sass to create your own utilities on the fly while also being able to modify or remove those we provide.&lt;/p&gt;
-&lt;p&gt;Head to the &lt;a href=&#34;https://getbootstrap.com/docs/5.0/utilities/api/&#34;&gt;new Utilities API docs&lt;/a&gt; to learn more.&lt;/p&gt;
-&lt;h3 id=&#34;new-utilities&#34;&gt;New utilities&lt;/h3&gt;
-&lt;p&gt;Speaking of utilities, we&amp;rsquo;ve added a ton of new ones to our arsenal, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Added positioning utilities: &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;, and &lt;code&gt;left&lt;/code&gt; with &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;50%&lt;/code&gt;, and &lt;code&gt;100%&lt;/code&gt; values&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;.d-grid&lt;/code&gt; option, along with new &lt;code&gt;gap&lt;/code&gt; utilities for easy grid layouts&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;.fs&lt;/code&gt; utilities for &lt;code&gt;font-size&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Renamed &lt;code&gt;font-weight&lt;/code&gt; utilities to &lt;code&gt;.fw&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;.rounded-1&lt;/code&gt;, &lt;code&gt;.rounded-2&lt;/code&gt;, and &lt;code&gt;.rounded-3&lt;/code&gt; for new small, medium, and large &lt;code&gt;border-radius&lt;/code&gt; utilities&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;.overflow-visible&lt;/code&gt; and &lt;code&gt;.overflow-scroll&lt;/code&gt; utilities&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Check out the &lt;a href=&#34;https://getbootstrap.com/docs/5.0/migration/&#34;&gt;Migration guide&lt;/a&gt; and &lt;a href=&#34;https://getbootstrap.com/docs/5.0/utilities/&#34;&gt;utilities documentation&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;h3 id=&#34;logical-properties-for-spacing-utilities&#34;&gt;Logical properties for spacing utilities&lt;/h3&gt;
-&lt;p&gt;Part of our approach to adding RTL to Bootstrap was to add it in a way that felt future-friendly to ourselves and the web at large. As such, we&amp;rsquo;ve embraced the spirit of CSS logical properties and &lt;strong&gt;have renamed several classes and variables&lt;/strong&gt;. It&amp;rsquo;s a risky change because of the size and impact of the change, but we hope you&amp;rsquo;ll appreciate it overall!&lt;/p&gt;
-&lt;p&gt;Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt; in favor &lt;code&gt;start&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt;. Things like &lt;code&gt;align-items-end&lt;/code&gt; have been welcomed additions. This makes horizontal directional class names appropriate for LTR and RTL without any additional overhead moving forward.&lt;/p&gt;
-&lt;p&gt;For example, in a LTR context, instead of &lt;code&gt;.ml-3&lt;/code&gt; for &lt;code&gt;margin-left&lt;/code&gt;, use &lt;code&gt;.ms-3&lt;/code&gt;. Be sure to &lt;a href=&#34;https://getbootstrap.com/docs/5.0/migration/#rtl&#34;&gt;read the RTL Migration guide&lt;/a&gt; for a full list of renamed classes and variables.&lt;/p&gt;
-&lt;h2 id=&#34;new-snippet-examples&#34;&gt;New snippet examples&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/03/bootstrap-new-examples.png&#34; alt=&#34;New examples&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve added four brand new snippet-heavy examples and refreshed a few other examples while we were at it. These new snippet examples feature several variations of common components, served up in different ways for you to easily copy and paste.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/headers/&#34;&gt;Headers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/heroes/&#34;&gt;Heroes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/features/&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/sidebars/&#34;&gt;Sidebars&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These new snippets will continue to grow with new additions over time, showing just how fun and easy it is to build with Bootstrap.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/starter-template/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/03/starter-template.png&#34; alt=&#34;New starter example&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve also updated our &lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/starter-template/&#34;&gt;starter template&lt;/a&gt; with a refreshed design and more resources.&lt;/p&gt;
-&lt;h2 id=&#34;grid-and-layout&#34;&gt;Grid and layout&lt;/h2&gt;
-&lt;p&gt;Our grid system and layout options saw some changes to streamline and improve things, namely:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Column classes can now be used as &lt;code&gt;width&lt;/code&gt; utilities (e.g., &lt;code&gt;.col-6&lt;/code&gt; is &lt;code&gt;width: 50%&lt;/code&gt;) as &lt;code&gt;padding&lt;/code&gt; is no longer applied outside a &lt;code&gt;.row&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;New gutter utilities can responsively customize horizontal and vertical grid gutters. The gutter width has also been reduced to &lt;code&gt;1.5rem&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed &lt;code&gt;position: relative&lt;/code&gt; from column classes&lt;/li&gt;
-&lt;li&gt;Dropped the &lt;code&gt;.media&lt;/code&gt; component for utilities&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We also updated our layout documentation to break apart the exceptionally long pages into more focused topics. We&amp;rsquo;ve also added a clarified explanation of breakpoints, containers, and more.&lt;/p&gt;
-&lt;p&gt;Check out the &lt;a href=&#34;https://getbootstrap.com/docs/5.0/migration/&#34;&gt;Migration guide&lt;/a&gt; and &lt;a href=&#34;https://getbootstrap.com/docs/5.0/layout/breakpoints/&#34;&gt;layout documentation&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;h2 id=&#34;more-component-updates&#34;&gt;More component updates&lt;/h2&gt;
-&lt;p&gt;Across the board we&amp;rsquo;ve made a number of other enhancements and changes to key components:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;We&amp;rsquo;ve overhauled the JavaScript and positioning for our dropdowns as part of our adoption of Popper 2. You can see &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/dropdowns/#alignment-options&#34;&gt;all the options in a new example in our docs&lt;/a&gt; and new CSS selectors and data attributes used to position them.&lt;/li&gt;
-&lt;li&gt;Dropdown menus now have a new &lt;code&gt;.dropdown-menu-dark&lt;/code&gt; modifier class.&lt;/li&gt;
-&lt;li&gt;Similarly, carousels now have a new &lt;code&gt;.carousel-dark&lt;/code&gt; modifier class to invert the controls, text, and indicators.&lt;/li&gt;
-&lt;li&gt;Added &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/alerts/#icons&#34;&gt;icon examples to our Alert component&lt;/a&gt; for adding Bootstrap Icons (or other icon libraries) using utilities&lt;/li&gt;
-&lt;li&gt;Our close button has been redesigned with an SVG &lt;code&gt;background-image&lt;/code&gt; and improved cross-browser styling.&lt;/li&gt;
-&lt;li&gt;We&amp;rsquo;ve dropped the &lt;code&gt;.btn-block&lt;/code&gt; class for utilities.&lt;/li&gt;
-&lt;li&gt;We&amp;rsquo;ve updated navbars with a new &lt;code&gt;.navbar-nav-scroll&lt;/code&gt; for vertical &lt;code&gt;max-height&lt;/code&gt; and scrolling of when a collapsed navbar is opened&lt;/li&gt;
-&lt;li&gt;List groups have a &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/list-group/#numbered&#34;&gt;new &lt;code&gt;.list-group-numbered&lt;/code&gt; modifier class&lt;/a&gt; that uses pseudo-elements to create numbered list group items.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;improved-customizing&#34;&gt;Improved customizing&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve hunkered down and improved our documentation in several places, giving more explanation, removing ambiguity, and providing much more support for extending Bootstrap. It all starts with a whole &lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/customize/overview/&#34;&gt;new Customize section&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/06/v5-customize.png&#34; alt=&#34;Bootstrap 5 customize docs&#34;&gt;&lt;/p&gt;
-&lt;p&gt;v5&amp;rsquo;s Customize docs expand on v4&amp;rsquo;s Theming page with more content and code snippets for building on top of Bootstrap&amp;rsquo;s source Sass files. We&amp;rsquo;ve fleshed out more content here and even provided a &lt;a href=&#34;https://github.com/twbs/bootstrap-npm-starter&#34;&gt;starter npm project&lt;/a&gt; for you to get started with faster and easier. It&amp;rsquo;s also available as a template repo on GitHub, so you can freely fork and go.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/06/v5-color-palette.png&#34; alt=&#34;Bootstrap 5 color palette&#34;&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve expanded our color palette in v5, too. With an extensive color system built-in, you can more easily customize the look and feel of your app without ever leaving the codebase. We&amp;rsquo;ve also done some work to improve color contrast, and even provided color contrast metrics in our Color docs. Hopefully, this will continue to help make Bootstrap-powered sites more accessible to folks all over.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/alerts/#sass&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/03/bootstrap-docs-sass.png&#34; alt=&#34;New Sass docs&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve also added new sections to most of our pages to document the source Sass code that powers each component. Variables, mixins, loops, and maps are all rendered and kept up to date in each page, making it easier to reference and customize values as you build.&lt;/p&gt;
-&lt;h2 id=&#34;dart-sass&#34;&gt;Dart Sass&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve switched to Dart Sass with LibSass being deprecated. We&amp;rsquo;ve been testing our builds with Dart Sass for a while and decided to make the switch with LibSass being deprecated just a couple of weeks ago. We&amp;rsquo;re holding on to the Sass modules for now. We&amp;rsquo;re still not using the new module system for compatibility concerns and a greater gap for folks upgrading from v4.&lt;/p&gt;
-&lt;h2 id=&#34;browser-support&#34;&gt;Browser support&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve dropped a ton of older browsers in this update, making it one of our biggest leaps in a while:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dropped Microsoft Edge Legacy&lt;/li&gt;
-&lt;li&gt;Dropped Internet Explorer 10 and 11&lt;/li&gt;
-&lt;li&gt;Dropped Firefox &amp;lt; 60&lt;/li&gt;
-&lt;li&gt;Dropped Safari &amp;lt; 10&lt;/li&gt;
-&lt;li&gt;Dropped iOS Safari &amp;lt; 10&lt;/li&gt;
-&lt;li&gt;Dropped Chrome &amp;lt; 60&lt;/li&gt;
-&lt;li&gt;Dropped Android &amp;lt; 6&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can find the full browser and device support in our &lt;code&gt;.browserslistrc&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;javascript&#34;&gt;JavaScript&lt;/h2&gt;
-&lt;p&gt;The biggest change to our JavaScript has been the removal of jQuery, but we&amp;rsquo;ve also made a number of enhancements beyond that as well.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;No more jQuery!&lt;/li&gt;
-&lt;li&gt;All plugins can now accept a CSS selector as the first argument.&lt;/li&gt;
-&lt;li&gt;Updated to Popper 2!&lt;/li&gt;
-&lt;li&gt;Data attributes for all JavaScript plugins are now namespaced with &lt;code&gt;bs&lt;/code&gt;. For example, we use data-bs-toggle instead of data-toggle.&lt;/li&gt;
-&lt;li&gt;We overhauled dropdown, popover, and tooltip placement with the arrival of Popper v2.&lt;/li&gt;
-&lt;li&gt;Toast positioning was also overhauled and now leverages our new position utilities.&lt;/li&gt;
-&lt;li&gt;Added ability to use custom classes for tooltips and popovers.&lt;/li&gt;
-&lt;li&gt;Made various optimizations to better share code across components.&lt;/li&gt;
-&lt;li&gt;Changed dropdowns to emit events on &lt;code&gt;.dropdown-toggle&lt;/code&gt; instead of &lt;code&gt;.dropdown&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Removed underscore from public static methods like &lt;code&gt;_getInstance()&lt;/code&gt; to &lt;code&gt;getInstance()&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Renamed &lt;code&gt;whiteList&lt;/code&gt; to &lt;code&gt;allowList&lt;/code&gt; in popovers and tooltips`&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;migration-guide&#34;&gt;Migration guide&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve updated our &lt;a href=&#34;https://getbootstrap.com/docs/5.0/migration/&#34;&gt;migration guide page&lt;/a&gt; to consolidate all our changes across the six pre-releases into a single set of changes. We&amp;rsquo;ve condensed much of the content this way and added &lt;span class=&#34;badge bg-danger text-white&#34;&gt;Breaking change&lt;/span&gt; labels throughout to help draw you attention to potential gotchas while upgrading.&lt;/p&gt;
-&lt;p&gt;We still think there&amp;rsquo;s more to do here—including tutorial-like guidance on the code changes, diffs and code snippets for our dependencies, etc. If you have suggestions or want to contribute, please open an issue or pull request.&lt;/p&gt;
-&lt;hr class=&#34;my-5&#34;&gt;
-&lt;p&gt;Head to GitHub for a complete &lt;a href=&#34;https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F27&#34;&gt;list of issues and pull requests in v5.0.0&lt;/a&gt;. You can also review the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/27&#34;&gt;v5.0.0 project board&lt;/a&gt;, too.&lt;/p&gt;
-&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We&amp;rsquo;ve also published this update as our new latest release on npm, so if you&amp;rsquo;re feeling bold or are curious about what&amp;rsquo;s new, you can pull the latest in that way.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.0.0&#34;&gt;Review the GitHub v5.0.0 release changelog&lt;/a&gt; for a complete list of changes since our last pre-release.&lt;/p&gt;
-&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next&lt;/h2&gt;
-&lt;p&gt;Looking ahead, we have some other releases on the horizon:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/projects/35&#34;&gt;Bootstrap v4.6.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons&lt;/a&gt; v1.5.0&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap-npm-starter&#34;&gt;Bootstrap npm starter&lt;/a&gt; v2.0.0 with support for Bootstrap 5&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/projects/38&#34;&gt;Bootstrap v5.0.1&lt;/a&gt; for follow-up bug fixes from our initial release&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/projects/31&#34;&gt;Bootstrap v5.1.0&lt;/a&gt; for our first minor feature release&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Feel free to open issues or pull requests if you have any additional ideas for upcoming releases!&lt;/p&gt;
-&lt;h2 id=&#34;v510-preview&#34;&gt;v5.1.0 preview&lt;/h2&gt;
-&lt;p&gt;While we were polishing up this release, we also had our eyes towards the future to ship a few minor releases. Here&amp;rsquo;s a quick look at what&amp;rsquo;s coming in our next minor release, &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/31&#34;&gt;v5.1.0&lt;/a&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31813&#34;&gt;Opt-in CSS Grid support&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32319&#34;&gt;Expanded Sass maps for color palette&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31859&#34;&gt;New skeleton placeholder component&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/33781&#34;&gt;New opacity utilities&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;and more!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And more features and updates are planned for a few more releases after that! Check out our &lt;a href=&#34;https://github.com/twbs/bootstrap/projects&#34;&gt;projects on GitHub&lt;/a&gt; for a closer look.&lt;/p&gt;
-&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
-&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
 </description>
     </item>
     
