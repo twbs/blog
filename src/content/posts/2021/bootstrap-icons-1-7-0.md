@@ -9,7 +9,7 @@ video: CqZgd6-xQl8
 
 ## 120 new icons
 
-This update was a lot of fun for me—drawing all these tiny computer parts most of all! There are dozens of new computer related icons for parts, ports, and peripheral devices. There are also several new brand icons, including Meta, and some other fun icons like a new robot head and a boombox.
+This update was a lot of fun for me—drawing all these tiny computer parts most of all! There are dozens of new computer-related icons for parts, ports, and peripheral devices. There are also several new brand icons, including Meta, and some other fun icons like a new robot head and a boombox.
 
 <img src="/assets/img/2021/11/icons-v170.png" alt="New icons in v1.7.0" style="border: 1px solid rgba(0,0,0,.15);">
 
