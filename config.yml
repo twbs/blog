@@ -74,8 +74,8 @@ params:
   assets:
     css:
       # Use https://www.srihash.org to generate the hash, or use the hash from upstream
-      uri:              "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      sri:              "sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      uri:              "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      sri:              "sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
   main:                 "https://getbootstrap.com"
   github_org:           "https://github.com/twbs"
   repo:                 "https://github.com/twbs/blog"
