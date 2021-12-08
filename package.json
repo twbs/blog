@@ -36,7 +36,7 @@
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
     "find-unused-sass-variables": "^3.1.0",
-    "hugo-bin": "^0.77.4",
+    "hugo-bin": "^0.78.0",
     "linkinator": "^2.16.2",
     "lockfile-lint": "^4.6.2",
     "markdownlint-cli2": "0.3.2",
