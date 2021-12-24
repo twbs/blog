@@ -1,9 +1,23 @@
 {
   "name": "bootstrap-blog",
+  "description": "Official blog for Bootstrap.",
   "version": "1.0.0",
   "private": true,
-  "description": "Official blog for Bootstrap.",
+  "author": "The Bootstrap Authors (https://github.com/twbs/blog/graphs/contributors)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twbs/blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twbs/blog/issues"
+  },
   "main": "",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://blog.getbootstrap.com",
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
   "scripts": {
     "start": "npm run serve",
     "build": "hugo --cleanDestinationDir",
@@ -18,33 +32,19 @@
     "test-lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
     "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/twbs/blog.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/twbs/blog/issues"
-  },
-  "homepage": "https://blog.getbootstrap.com",
-  "hugo-bin": {
-    "buildTags": "extended"
-  },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
     "find-unused-sass-variables": "^3.1.0",
-    "hugo-bin": "^0.78.0",
-    "linkinator": "^2.16.2",
+    "hugo-bin": "^0.79.2",
+    "linkinator": "^3.0.3",
     "lockfile-lint": "^4.6.2",
     "markdownlint-cli2": "0.3.2",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.4",
-    "postcss-cli": "^9.0.2",
-    "stylelint": "^14.1.0",
-    "stylelint-config-twbs-bootstrap": "^3.0.0-alpha2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "stylelint": "^14.2.0",
+    "stylelint-config-twbs-bootstrap": "^3.0.1",
     "vnu-jar": "21.10.12"
   }
 }
