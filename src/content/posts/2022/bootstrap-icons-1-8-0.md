@@ -17,7 +17,7 @@ Want to visually show the extensions of your files? There are tons of new option
 
 <img src="/assets/img/2022/01/icons-v180-filetypes.png" alt="New filetype icons in v1.8.0" style="border: 1px solid rgba(0,0,0,.15);">
 
-And elsewhere, we've expanded a number of other categories of icons. There are some new medical icons (more are planned), lots of new clipboard icons, additional tools, and more.
+Elsewhere we've expanded a number of other categories of icons. There are some new medical icons (more are planned), lots of new clipboard icons, additional tools, and more.
 
 <img src="/assets/img/2022/01/icons-v180-misc.png" alt="Miscellaneous new icons in v1.8.0" style="border: 1px solid rgba(0,0,0,.15);">
 
