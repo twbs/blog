@@ -6,10 +6,11 @@
 
 <div class="ratio ratio-16x9">
   <iframe
-    {{ if eq $lazyload true }}class="lazy" data-src{{ else }}src{{ end }}="https://www.youtube-nocookie.com/embed/{{ $video }}?rel=0{{ with $videoStart }}&amp;start={{ . }}{{ end }}"
+    src="https://www.youtube-nocookie.com/embed/{{ $video }}?rel=0{{ with $videoStart }}&amp;start={{ . }}{{ end }}"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
     title="YouTube Video"
+    {{ if eq $lazyload true }}loading="lazy"{{ end }}
     width="760"
     height="570">
   </iframe>
