@@ -41,4 +41,4 @@ You can also [download the release from GitHub](https://github.com/twbs/icons/re
 
 ## Figma
 
-The Figma file is now published to the Figma Community! It's the same [Bootstrap Icons Figma file](https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons) you've seen from previous releases, just a little more accessible to those using the app.
+The Figma file is now published to the Figma Community! It's the same [Bootstrap Icons Figma file](https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons) you've seen from previous releases, just a little more accessible to those using the app.
