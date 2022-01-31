@@ -6,7 +6,33 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap Icons v1.8.0</title>
+      <link>https://blog.getbootstrap.com/2022/01/31/bootstrap-icons-1-8-0/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2022/01/31/bootstrap-icons-1-8-0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.8.0&lt;/a&gt; is here with over 140 new icons, including dozens of new heart icons ready for Valentine&amp;rsquo;s Day and dozens of filetype icons. We&amp;rsquo;re not at almost 1,700 icons and is once again our second largest release. Keep reading to see what&amp;rsquo;s new.&lt;/p&gt;
+&lt;h2 id=&#34;140-new-icons&#34;&gt;140+ new icons&lt;/h2&gt;
+&lt;p&gt;Perfect for Valentine&amp;rsquo;s Day or any other time you need to show a little heart, there are dozens of icons to choose from.&lt;/p&gt;
+&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/01/icons-v180-love.png&#34; alt=&#34;New love icons in v1.8.0&#34; style=&#34;border: 1px solid rgba(0,0,0,.15);&#34;&gt;
+&lt;p&gt;Want to visually show the extensions of your files? There are tons of new options for programming languages, audio and video, images, and more.&lt;/p&gt;
+&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/01/icons-v180-filetypes.png&#34; alt=&#34;New filetype icons in v1.8.0&#34; style=&#34;border: 1px solid rgba(0,0,0,.15);&#34;&gt;
+&lt;p&gt;Elsewhere we&amp;rsquo;ve expanded a number of other categories of icons. There are some new medical icons (more are planned), lots of new clipboard icons, additional tools, and more.&lt;/p&gt;
+&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/01/icons-v180-misc.png&#34; alt=&#34;Miscellaneous new icons in v1.8.0&#34; style=&#34;border: 1px solid rgba(0,0,0,.15);&#34;&gt;
+&lt;p&gt;&lt;em&gt;Looking for more new icons? Head to the &lt;a href=&#34;https://github.com/twbs/icons/issues&#34;&gt;issue tracker&lt;/a&gt; to check for open requests or submit a new one.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;To get started, install or update via npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or Composer:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;composer require twbs/bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.8.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.8.0/bootstrap-icons-1.8.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
+&lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap Icons v1.7.0</title>
       <link>https://blog.getbootstrap.com/2021/11/01/bootstrap-icons-1-7-0/</link>
@@ -532,43 +558,6 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.0.1&#34;&gt;Review the GitHub v5.0.1 release changelog&lt;/a&gt; for a complete list of changes since our last release.&lt;/p&gt;
 &lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
 &lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap Icons v1.5.0</title>
-      <link>https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/</link>
-      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/05/10/bootstrap-icons-1-5-0/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.5.0&lt;/a&gt; adds 45 new icons across a few categories as I continue to round out the set. Keep reading to see what&amp;rsquo;s new!&lt;/p&gt;
-&lt;h2 id=&#34;45-new-icons&#34;&gt;45 new icons&lt;/h2&gt;
-&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/05/v150-new-icons.png&#34; alt=&#34;New icons in v1.5.0&#34; style=&#34;border: 1px solid rgba(0,0,0,.15);&#34;&gt;
-&lt;p&gt;The primary goal with this release was to round out some of the most requested icons to date. Here&amp;rsquo;s the lowdown:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;First up are large versions of our dash, plus, slash, x, and other alert signage icons. The existing icons are based on their placement in other shapes, so rather than upsize those ones and potentially break things for folks, I&amp;rsquo;ve added new large options.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Commerce icons have a huge update with new currency options, banks, insert credit card, vaults/safes, and even a couple piggy banks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;For people and identity, we&amp;rsquo;ve added our first gender icons for female, male, trans, and ambiguous. It&amp;rsquo;s just the start, as I&amp;rsquo;m sure there are significant gender and identity roles I&amp;rsquo;m missing. Please open an issue with feedback if there are improvements I can make here to be more inclusive of everyone.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;On the communications side, there&amp;rsquo;s finally a translate icon and bells with slash.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;And to round it out, there&amp;rsquo;s a new VR headset icon, a couple new geo pin icons, and some new social options like Messenger, Reddit, WhatsApp, and more.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Head to the Bootstrap Icons docs&lt;/a&gt; to see them in action.&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;To get started, install or update via npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.5.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.5.0/bootstrap-icons-1.5.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
-&lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/community/file/972989644486753519/Bootstrap-Icons-v1.5.0&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
 </description>
     </item>
     
