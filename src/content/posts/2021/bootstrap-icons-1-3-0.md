@@ -11,7 +11,7 @@ As usual, we also snuck in some bug fixes to existing icons and ours docs. After
 
 ## 60+ new icons
 
-<img src="/assets/img/2021/01/icons-130-new.png" alt="New icons in v1.3.0" style="border: 1px solid rgba(0,0,0,.15);">
+![New icons in v1.3.0](/assets/img/2021/01/icons-130-new.png)
 
 Here's a look at the new icons in v1.3.0:
 

@@ -25,9 +25,7 @@ The first minor release of Bootstrap 5 is here! v5.1.0 has arrived and is packed
 
 ## CSS Grid
 
-<a href="https://getbootstrap.com/docs/5.1/layout/css-grid/">
-  <img src="/assets/img/2021/08/bootstrap-css-grid-docs.png" alt="CSS Grid docs" class="border">
-</a>
+[![CSS Grid docs](/assets/img/2021/08/bootstrap-css-grid-docs.png)](https://getbootstrap.com/docs/5.1/layout/css-grid/)
 
 We've added an experimental version of a [new CSS Grid](https://getbootstrap.com/docs/5.1/layout/css-grid/) as an **opt-in replacement** to our default grid system. To enable it, disable the default grid, by setting `$enable-grid-classes: false` and enable the CSS Grid by setting `$enable-cssgrid: true`. Once recompiled, you'll be able to switch to the new classes. Our new CSS Grid docs page has all the details and some helpful examples to get you started.
 
@@ -37,9 +35,7 @@ Shipping CSS Grid support as experimental allows us to play with things a bit wi
 
 ## Offcanvas in navbars
 
-<a href="https://getbootstrap.com/docs/5.1/components/navbar/#offcanvas">
-  <img src="/assets/img/2021/08/bootstrap-navbar-offcanvas.png" alt="Offcanvas navbar example" class="border">
-</a>
+[![Offcanvas navbar example](/assets/img/2021/08/bootstrap-navbar-offcanvas.png)](https://getbootstrap.com/docs/5.1/components/navbar/#offcanvas)
 
 We've expanded our `.navbar-expand-*` classes (see what we did there?) to include support for offcanvases inside the navbar. Wrap your navbar elements with the appropriate offcanvas HTML, point your navbar toggler button to the offcanvas, and voila.
 
@@ -47,9 +43,7 @@ We've expanded our `.navbar-expand-*` classes (see what we did there?) to includ
 
 ## Placeholders
 
-<a href="https://getbootstrap.com/docs/5.1/components/placeholders/">
-  <img src="/assets/img/2021/08/bootstrap-placeholders.png" alt="Placeholders example" class="border">
-</a>
+[![Placeholders example](/assets/img/2021/08/bootstrap-placeholders.png)](https://getbootstrap.com/docs/5.1/components/placeholders/)
 
 There's a new component in town with [placeholders](https://getbootstrap.com/docs/5.1/components/placeholders/), a way to provide temporary blocks in lieu of real content to help indicate that something is still loading in your site or app. Our first iteration here aims to only provide the HTML and CSS—it's up to you to implement these placeholders with whatever custom code you might need.
 
@@ -115,7 +109,7 @@ While utilities get most of the spotlight these days, helpers are still incredib
 
 To create a vertical stack, wrap a series of elements in `.vstack`. Use `.gap-*` utilities on the parent (or set individual `margin` utilities) to quickly space elements.
 
-<img src="/assets/img/2021/08/bootstrap-vstack.png" alt="Bootstrap vstack example" class="border">
+![Bootstrap vstack example](/assets/img/2021/08/bootstrap-vstack.png)
 
 ```html
 <div class="vstack gap-3">
@@ -127,7 +121,7 @@ To create a vertical stack, wrap a series of elements in `.vstack`. Use `.gap-*`
 
 Want a horizontal stack? Use `.hstack` instead.
 
-<img src="/assets/img/2021/08/bootstrap-hstack.png" alt="Bootstrap vstack example" class="border">
+![Bootstrap vstack example](/assets/img/2021/08/bootstrap-hstack.png)
 
 ```html
 <div class="hstack gap-3">
@@ -139,7 +133,7 @@ Want a horizontal stack? Use `.hstack` instead.
 
 To support these stacks, we've also added an additional new helper—`.vr`, or vertical rule. HTML has had native `<hr>` elements for the longest time to create horizontal rules, but never anything for _vertical_ rules. The new `.vr` helper works great in horizontal stacks and other situations where `border`s are a little trickier.
 
-<img src="/assets/img/2021/08/bootstrap-hstack-vr.png" alt="Bootstrap vstack example" class="border">
+![Bootstrap vstack example](/assets/img/2021/08/bootstrap-hstack-vr.png)
 
 ```html
 <div class="hstack gap-3">
@@ -199,7 +193,7 @@ We use an RGB version of each color's CSS variable and attach a second CSS varia
 
 To support these changes, we've added some new `.text-opacity-*` and `.bg-opacity-*` utilities. Choose from a predefined set (which you can modify in the utilities API) of classes to quickly change the local CSS variable when a given `.text-*` or `.bg-*` utility is used. For example:
 
-<img src="/assets/img/2021/08/bootstrap-text-opacity.png" alt="Bootstrap text opacity example" class="border">
+![Bootstrap text opacity example](/assets/img/2021/08/bootstrap-text-opacity.png)
 
 ```html
 <div class="text-primary">This is default primary text</div>
@@ -212,7 +206,7 @@ We expect this approach to make its way to `border` utilities next. Have more CS
 
 ## Four new examples
 
-<img src="/assets/img/2021/08/v510-examples.png" alt="" class="border">
+![Bootstrap examples](/assets/img/2021/08/v510-examples.png)
 
 We've expanded on our component examples with four new examples that customize some of our core components and implement common patterns. Here's what's new:
 

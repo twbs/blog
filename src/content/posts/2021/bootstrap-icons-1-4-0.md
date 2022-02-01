@@ -11,13 +11,13 @@ Keep reading for a preview of the new icons and how icon alignment has changed.
 
 ## 60+ weather icons
 
-<img src="/assets/img/2021/02/v140-new-icons.png" alt="New icons in v1.4.0" style="border: 1px solid rgba(0,0,0,.15);">
+![New icons in v1.4.0](/assets/img/2021/02/v140-new-icons.png)
 
 The new weather category includes over 60 icons for various weather and atmospheric conditions. From fog and haze to rainstorms and hurricanes, we now have icons for just about every weather situation. We undoubtedly have some more work to do to refine and add to this new category, but it's a pretty big addition to the project. Let us know what you think and what's missing so we can keep adding to it over time.
 
 ## Alignment changes
 
-<img src="/assets/img/2021/02/v140-alignment.png" alt="Alignment changes" style="border: 1px solid rgba(0,0,0,.15);">
+![Alignment changes](/assets/img/2021/02/v140-alignment.png)
 
 Also new in v1.4.0 are some alignment changes—before and after are shown above. Previously we used `vertical-align: text-top` in our CSS to aligning individual icons. This wasn't as much of an issue when we only had SVGs, but with the addition of icon fonts and their generated CSS in v1.2.0, we had to make some changes.
 

@@ -11,7 +11,7 @@ video: sOS9aOIXPEk
 
 We've officially passed 1,400 glyphs in Bootstrap Icons with this release—woohoo! Seems utterly insane to me that the project has come this far and there are still so many more icons to include.
 
-<img src="/assets/img/2021/10/v160-new-updated-icons.png" alt="New icons in v1.6.0" style="border: 1px solid rgba(0,0,0,.15);">
+![New icons in v1.6.0](/assets/img/2021/10/v160-new-updated-icons.png)
 
 We have a few dozen new and updated icons in this release, including:
 
