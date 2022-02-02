@@ -17,7 +17,7 @@ a {
   width: 1em;
   height: 1em;
   vertical-align: -.125em;
-  fill: currentColor;
+  fill: currentColor; // styleline-disable-line value-keyword-case
 }
 
 .sidebar-nav {
@@ -44,9 +44,9 @@ a {
 
 .embed-responsive {
   margin-bottom: 1rem;
+  overflow: hidden;
   background-color: #000;
   border-radius: .5rem;
-  overflow: hidden;
 
   .page-videos & {
     margin-top: .5rem;
@@ -62,7 +62,7 @@ a {
   overflow: hidden;
 
   @media (min-width: 768px) {
-    position: -webkit-sticky;
+    position: -webkit-sticky; // stylelint-disable-line value-no-vendor-prefix
     position: sticky;
     top: 0;
   }
