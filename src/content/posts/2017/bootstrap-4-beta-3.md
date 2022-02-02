@@ -3,6 +3,9 @@ author: mdo
 date: "2017-12-28T00:00:00Z"
 title: Bootstrap 4 Beta 3
 video: 9jK-NcRmVcw
+keywords:
+  - bootstrap
+  - release
 ---
 
 Welcome to the final beta of v4! It's been over two months since we shipped our second beta and we've been busy making the last breaking changes before moving to our next stable release, v4.0.0! We have a few more breaking changes than we were planning, but fret not, we've detailed them all.

@@ -3,6 +3,9 @@ author: mdo
 date: "2021-05-10T00:00:00Z"
 title: Bootstrap Icons v1.5.0
 video: FxzBvqY5PP0
+keywords:
+  - icons
+  - release
 ---
 
 [Bootstrap Icons v1.5.0](https://icons.getbootstrap.com) adds 45 new icons across a few categories as I continue to round out the set. Keep reading to see what's new!

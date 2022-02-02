@@ -3,6 +3,9 @@ author: mdo
 date: "2021-03-29T21:30:00Z"
 title: Bootstrap Icons v1.4.1
 video: zO6D_BAuYCI
+keywords:
+  - icons
+  - release
 ---
 
 Our latest [Bootstrap Icons](https://icons.getbootstrap.com) update has arrived to fix a few bugs and improve our build tooling. Keep reading for what's new.

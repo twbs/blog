@@ -3,6 +3,9 @@ author: mdo
 date: "2019-11-26T00:00:00Z"
 title: Introducing Bootstrap Icons
 video: eM8Ss28zjcE
+keywords:
+  - icons
+  - release
 ---
 
 Say hello to [Bootstrap Icons](https://icons.getbootstrap.com/), our very first icon set that's designed entirely by our team and open sourced for everyone to use, with or without Bootstrap. It's still in alpha, but we're incredibly excited to share it with y'all ahead of our v5 alpha.

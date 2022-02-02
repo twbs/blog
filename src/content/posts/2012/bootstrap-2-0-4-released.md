@@ -2,6 +2,9 @@
 author: mdo
 date: "2012-06-01T00:00:00Z"
 title: Bootstrap 2.0.4 released
+keywords:
+  - bootstrap
+  - release
 ---
 
 Following up on the large 2.0.3 release a few weeks ago, we have a fresh update to address some documentation issues and basic CSS bugs. 2.0.4 includes around thirty closed issues and is our first version under our updated release approach (shorter, more concise releases).

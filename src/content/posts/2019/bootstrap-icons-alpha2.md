@@ -3,6 +3,9 @@ author: mdo
 date: "2019-12-14T00:00:00Z"
 title: Bootstrap Icons Alpha 2
 video: HgzGwKwLmgM
+keywords:
+  - icons
+  - release
 ---
 
 There's a brand new update of Bootstrap Icons today with our second alpha release! We've updated nearly 20 icons and added over 100 new icons since our last release just a few weeks ago.

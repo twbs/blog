@@ -3,6 +3,9 @@ author: mdo
 date: "2014-01-30T00:00:00Z"
 title: Bootstrap 3.1.0 released
 video: phOW-CZJWT0
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're stoked to ship Bootstrap v3.1. We've got a handful of new features, plenty of bug fixes and improvements, and updated build tools.

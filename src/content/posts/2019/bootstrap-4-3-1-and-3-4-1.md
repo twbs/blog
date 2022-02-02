@@ -2,6 +2,9 @@
 author: mdo
 date: "2019-02-13T00:00:00Z"
 title: Bootstrap 3.4.1 and 4.3.1
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're shipping [Bootstrap v4.3.1](https://github.com/twbs/bootstrap/releases/tag/v4.3.1) and [v3.4.1](https://github.com/twbs/bootstrap/releases/tag/v3.4.1) to patch an XSS vulnerability, CVE-2019-8331. Also included in v4.3.1 is a small fix to some RFS (responsive font sizes) mixins that were added in v4.3.0.

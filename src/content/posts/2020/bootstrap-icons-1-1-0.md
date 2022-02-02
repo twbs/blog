@@ -3,6 +3,9 @@ author: mdo
 date: "2020-10-28T21:30:00Z"
 title: Bootstrap Icons v1.1.0
 video: 04854XqcfCY
+keywords:
+  - icons
+  - release
 ---
 
 Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.

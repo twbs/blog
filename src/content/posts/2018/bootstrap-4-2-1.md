@@ -3,6 +3,9 @@ author: mdo
 date: "2018-12-21T00:00:00Z"
 title: Bootstrap 4.2.1
 video: 4N1iwQxiHrs
+keywords:
+  - bootstrap
+  - release
 ---
 
 Look out world, we're shipping Bootstrap v4.2.1 with a slew of new features, bug fixes, and docs updates. On the new features side, we have spinners, toasts, switches, and (finally!) touch support in the carousel. That's just the tip of the iceberg though.

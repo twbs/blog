@@ -2,6 +2,9 @@
 author: mdo
 date: "2012-12-08T00:00:00Z"
 title: Bootstrap 2.2.2 released
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're launching [Bootstrap 2.2.2]({{< param "main" >}}/), another larger bugfix release that focuses mostly on CSS and documentation fixes, with a few key JS issues mixed in as well. Here's the rundown on what's new in this release:

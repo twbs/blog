@@ -3,6 +3,9 @@ author: mdo
 date: "2015-12-08T00:00:00Z"
 title: New Bootstrap 4 alpha
 video: J_kokTee01k
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap 4 alpha 2 is now available. Since [our last release]({{< relref "/posts/2015/bootstrap-4-alpha" >}}), nearly 100 people have pushed over 900 commits to v4 and we've closed over 400 issues and pull requests. Those numbers are outrageously awesome to see, and we've still got a ton of work ahead of us this year for v4.

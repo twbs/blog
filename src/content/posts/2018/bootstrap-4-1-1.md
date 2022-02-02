@@ -3,6 +3,9 @@ author: mdo
 date: "2018-04-30T00:00:00Z"
 title: Bootstrap 4.1.1
 video: 9jNt7ZGCW-o
+keywords:
+  - bootstrap
+  - release
 ---
 
 We're a few weeks out from v4.1 and we have our first patch release of Bootstrap 4! It's a straightforward set of bug fixes and build tool quality of life updates.

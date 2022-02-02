@@ -3,6 +3,9 @@ author: mdo
 date: "2021-05-05T09:30:00Z"
 title: Bootstrap 5
 video: FGBhQbmPwH8
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap 5 has officially landed! After three alphas, three betas, and several months of hard work, we're shipping the first stable release of our new major version. It's been a wild ride made possible by our maintainers and the amazing community that uses and contributes to Bootstrap. Thanks to all who have helped us get here!

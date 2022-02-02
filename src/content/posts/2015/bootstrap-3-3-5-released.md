@@ -3,6 +3,9 @@ author: cvrebert
 date: "2015-06-15T00:00:00Z"
 title: Bootstrap 3.3.5 released
 video: vCadcBR95oU
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap 3.3.5 is here! This release has focused on bug fixes, accessibility improvements, and documentation updates. We've had over 330 commits and 160 closed issues and pull requests from over 40 contributors since our last release! Hell yeah.

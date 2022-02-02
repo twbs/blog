@@ -3,6 +3,9 @@ author: mdo
 date: "2021-10-13T00:00:00Z"
 title: Bootstrap Icons v1.6.0
 video: sOS9aOIXPEk
+keywords:
+  - icons
+  - release
 ---
 
 [Bootstrap Icons v1.6.0](https://icons.getbootstrap.com) adds over 30 new icons, adds official Composer support, includes a new `.scss` stylesheet for the icon font, plus some other enhancements and bug fixes. Keep reading to see what's new!

@@ -3,6 +3,9 @@ author: mdo
 date: "2020-09-29T11:00:00Z"
 title: Bootstrap 5 Alpha 2
 video: Gs069dndIYk
+keywords:
+  - bootstrap
+  - release
 ---
 
 We're back at it again with a brand new alpha release of Bootstrap 5! Our second alpha has brought some new and improved features, color contrast improvements, improved helpers and utilities, and some documentation design updates.

@@ -3,6 +3,9 @@ author: mdo
 date: "2020-08-06T00:00:00Z"
 title: Bootstrap 4.5.2
 video: ccenFp_3kq8
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today's patch release is aimed at addressing some small issues introduced over the last few versions of Bootstrap 4. Read on for details and update when you're ready.

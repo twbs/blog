@@ -39,10 +39,12 @@ permalinks:
 related:
   includeNewer: false
   indices:
-#    - name: keywords
-#      weight: 10
+    - name: keywords
+      weight: 100
+    - name: tags
+      weight: 80
     - name: date
-      weight: 20
+      weight: 10
   threshold: 80
   toLower:  false
 

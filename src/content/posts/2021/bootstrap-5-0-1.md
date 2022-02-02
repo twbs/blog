@@ -3,6 +3,9 @@ author: mdo
 date: "2021-05-13T00:00:00Z"
 title: Bootstrap 5.0.1
 video: gAjR4_CbPpQ
+keywords:
+  - bootstrap
+  - release
 ---
 
 Our first patch release for Bootstrap 5 has landed with v5.0.1! We've fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.

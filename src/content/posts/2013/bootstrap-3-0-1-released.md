@@ -3,6 +3,9 @@ author: mdo
 date: "2013-10-29T00:00:00Z"
 title: Bootstrap 3.0.1 released
 video: fdKsgBNEHUU
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're shipping v3.0.1, a huge patch release with over 750 commits since v3 was released two months ago. We've outlined most of the changes below, including documentation updates, bug fixes, and even a few deprecations (our first in the history of the project).

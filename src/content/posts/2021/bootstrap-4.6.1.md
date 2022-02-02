@@ -4,6 +4,9 @@ date: "2021-10-28T21:30:00Z"
 title: Bootstrap v4.6.1
 video: wBl2QGAIx1s
 video_start: 135
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.

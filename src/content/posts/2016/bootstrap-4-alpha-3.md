@@ -3,6 +3,9 @@ author: mdo
 date: "2016-07-27T00:00:00Z"
 title: Bootstrap 4 Alpha 3
 video: xFrGuyw1V8s
+keywords:
+  - bootstrap
+  - release
 ---
 
 Alpha 3 has landed! We have an overhauled grid, updated form controls, a new font stack, tons of bug fixes, and more. It's been several months since our last update, but the size of this update should help get us back on track.

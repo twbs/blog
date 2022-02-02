@@ -3,6 +3,9 @@ author: mdo
 date: "2021-02-22T21:30:00Z"
 title: Bootstrap Icons v1.4.0
 video: A-LMScK5SwU
+keywords:
+  - icons
+  - release
 ---
 
 [Bootstrap Icons v1.4.0](https://icons.getbootstrap.com) adds over 60 new icons as part of a brand new weather category. Also included are some long requested improvements to vertical alignment and a handful of updates to tags and categories.

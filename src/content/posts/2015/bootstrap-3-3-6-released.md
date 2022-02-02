@@ -3,6 +3,9 @@ author: mdo
 date: "2015-11-24T00:00:00Z"
 title: Bootstrap 3.3.6 released
 video: l-O5IHVhWj0
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap 3.3.6 is here! It's a long overdue release that addresses dozens of CSS bug fixes and documentation updates. We've had over 180 commits and 100 closed issues and pull requests from nearly 30 contributors since our last release. Woohoo!

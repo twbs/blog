@@ -3,6 +3,9 @@ author: mdo
 date: "2019-11-26T00:00:00Z"
 title: Bootstrap 4.4.0
 video: P5ZJui3aPoQ
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now.
