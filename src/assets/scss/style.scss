@@ -65,15 +65,24 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 
+.s-32 {
+  width: 32px;
+  height: 32px;
+}
 
 // Container
 //
 // Center the page content.
 
+#content {
+  grid-template-columns: 1.15fr 3fr;
+  gap: 3rem;
+}
+
 .posts-container {
   max-width: 760px;
 
-  @media (min-width: 40em) {
+  @media (min-width: 1024px) {
     font-size: 18px;
   }
 }
@@ -104,9 +113,14 @@ tbody tr:nth-child(odd) th {
   color: #767676;
 }
 
-// Break long links
-.post a {
-  word-break: break-word;
+.post {
+  a {
+    word-break: break-word;
+  }
+
+  li {
+    margin-bottom: .25rem;
+  }
 }
 
 // Related posts
@@ -149,7 +163,7 @@ tbody tr:nth-child(odd) th {
   margin-right: -1rem;
   margin-left: -1rem;
   overflow: hidden; // clearfix
-  color: #767676;
+  color: var(--bs-gray-600);
   text-align: center;
 }
 
@@ -158,7 +172,8 @@ tbody tr:nth-child(odd) th {
   position: relative;
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
+  text-decoration: none;
+  border: 1px solid var(--bs-gray-200);
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -168,9 +183,8 @@ tbody tr:nth-child(odd) th {
 a.pagination-item:hover {
   z-index: 2;
   color: #fff;
-  text-decoration: none;
-  background-color: $blue-500;
-  border-color: $blue-500;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
 }
 
 @media (min-width: 30em) {
@@ -183,13 +197,13 @@ a.pagination-item:hover {
   }
   .pagination-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
   }
   .pagination-item:last-child {
     margin-left: -1px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
   }
 }
 

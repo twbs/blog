@@ -4,17 +4,23 @@
     {{ partial "head" . }}
   </head>
   <body>
+    {{ partial "icons" . }}
     {{ partial "navbar" . }}
-    {{ partial "hero" . }}
-    {{ partial "subnav" . }}
 
-    <div class="container">
-      {{ block "main" . }}
-      {{ end }}
+    <div class="container-xxl px-4 px-xxl-2">
+      <div class="d-lg-grid" id="content">
+        <div class="sidebar">
+          {{ partial "hero" . }}
+        </div>
+        <div class="main">
+          {{ block "main" . }}
+          {{ end }}
+        </div>
+      </div>
     </div>
 
     {{ partial "footer" . }}
 
-    {{ partial "lazyload" . }}
+    {{ partial "scripts" . }}
   </body>
 </html>

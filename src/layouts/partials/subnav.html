@@ -1,10 +1,10 @@
 <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
   <div class="container d-flex align-items-md-center py-2">
     <nav class="nav mx-auto">
-      <a class="text-dark py-1 mr-3{{ if .IsHome }} fw-600 text-decoration-none{{ end }}" href="/">All posts</a>
-      <a class="text-dark py-1 mr-3{{ if eq .Page.Title "Archive" }} fw-600 text-decoration-none{{ end }}" href="/archive/">Archive</a>
-      <a class="text-dark py-1 mr-3{{ if eq .Page.Title "Videos" }} fw-600 text-decoration-none{{ end }}" href="/videos/">Videos</a>
-      <a class="text-dark py-1" href="{{ absURL "/feed.xml" }}">Subscribe</a>
+      <a class="nav-link text-dark py-1{{ if .IsHome }} fw-600{{ end }}" href="/">All posts</a>
+      <a class="nav-link text-dark py-1{{ if eq .Page.Title "Archive" }} fw-600{{ end }}" href="/archive/">Archive</a>
+      <a class="nav-link text-dark py-1{{ if eq .Page.Title "Videos" }} fw-600{{ end }}" href="/videos/">Videos</a>
+      <a class="nav-link text-dark py-1" href="{{ absURL "/feed.xml" }}">Subscribe</a>
     </nav>
   </div>
 </nav>

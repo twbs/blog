@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="posts-container mx-auto px-3 my-5">
+<div class="posts-container mx-auto my-5">
   <div class="posts">
     {{ $paginator := .Paginate (where site.RegularPages "Type" "posts") }}
     {{- range $i, $page := $paginator.Pages -}}
@@ -7,8 +7,8 @@
       {{- $lazyload := cond (eq $i 0) false true -}}
 
       <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="{{ .RelPermalink }}">
+        <h1 class="post-title fw-600">
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">
             {{ .Title }}
           </a>
         </h1>
