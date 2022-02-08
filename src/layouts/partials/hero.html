@@ -13,19 +13,19 @@
 
   <nav class="nav nav-pills justify-content-center flex-lg-column justify-content-lg-start gap-1 sidebar-nav">
     <a class="nav-link d-flex align-items-center{{ if .IsHome }} active fw-600{{ else }} text-dark{{ end }}" href="/">
-      <svg class="bi f5 me-2"><use xlink:href="#file-earmark-richtext"></use></svg>
+      <svg class="bi me-2 f5 bd-text-purple"><use xlink:href="#file-earmark-richtext"></use></svg>
       All posts
     </a>
     <a class="nav-link d-flex align-items-center{{ if eq .Page.Title "Archive" }} active fw-600{{ else }} text-dark{{ end }}" href="/archive/">
-      <svg class="bi f5 me-2"><use xlink:href="#archive"></use></svg>
+      <svg class="bi me-2 f5 text-primary"><use xlink:href="#archive"></use></svg>
       Archive
     </a>
     <a class="nav-link d-flex align-items-center{{ if eq .Page.Title "Videos" }} active fw-600{{ else }} text-dark{{ end }}" href="/videos/">
-      <svg class="bi f5 me-2"><use xlink:href="#film"></use></svg>
+      <svg class="bi me-2 f5 text-info"><use xlink:href="#film"></use></svg>
       Videos
     </a>
     <a class="nav-link d-flex align-items-center text-dark" href="{{ absURL "/feed.xml" }}">
-      <svg class="bi f5 me-2"><use xlink:href="#rss"></use></svg>
+      <svg class="bi me-2 f5 text-warning"><use xlink:href="#rss"></use></svg>
       Subscribe
     </a>
   </nav>

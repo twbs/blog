@@ -25,19 +25,14 @@ a {
     padding-inline: .75rem;
     border-radius: .5rem;
 
-    .bi {
-      opacity: .5;
-    }
-
     &:not(.active):hover,
     &:not(.active):focus {
-      background-color: var(--bs-gray-100);
+      background-color: rgba($bd-purple-bright, .05);
     }
 
     &.active {
-      .bi {
-        opacity: 1;
-      }
+      color: var(--bs-body-color);
+      background-color: rgba($bd-purple-bright, .1);
     }
   }
 }
