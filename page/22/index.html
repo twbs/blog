@@ -7,7 +7,7 @@
 <link rel="canonical" href="https://blog.getbootstrap.com/">
 
 <meta name="description" content="Official blog for the Bootstrap framework.">
-<meta name="generator" content="Hugo 0.92.2">
+<meta name="generator" content="Hugo 0.93.0">
 
 
 
@@ -247,28 +247,28 @@
 
         <p>For one reason or another, in 2.0.2 we made badges have separate LESS files. The CSS is 95% the same, but we knew that some folks might need one or the other, or even both. With <a href="https://github.com/twbs/bootstrap/issues?milestone=10&amp;q=is%3Aopen">2.0.3</a>, we&rsquo;ll be simplifying some of those styles into a single .less file and scoping the <code>:hover</code> state to anchors only.</p>
 <p>Moving forward, we&rsquo;ll have the following as a shared set of base styles. As you can see, when combined, there isn&rsquo;t much extra weight at all for those who want just badges or labels.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="nc">.label</span><span class="o">,</span>
-<span class="nc">.badge</span> <span class="p">{</span>
-  <span class="na">font-size</span><span class="o">:</span> <span class="o">@</span><span class="n">baseFontSize</span> <span class="o">*</span> <span class="mf">.846</span><span class="p">;</span>
-  <span class="na">font-weight</span><span class="o">:</span> <span class="ni">bold</span><span class="p">;</span>
-  <span class="na">line-height</span><span class="o">:</span> <span class="mi">13</span><span class="kt">px</span><span class="p">;</span> <span class="c1">// ensure proper line-height if floated
-</span><span class="c1"></span>  <span class="na">color</span><span class="o">:</span> <span class="o">@</span><span class="ni">white</span><span class="p">;</span>
-  <span class="na">vertical-align</span><span class="o">:</span> <span class="ni">middle</span><span class="p">;</span>
-  <span class="na">white-space</span><span class="o">:</span> <span class="ni">nowrap</span><span class="p">;</span>
-  <span class="na">text-shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="o">-</span><span class="mi">1</span><span class="kt">px</span> <span class="mi">0</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,.</span><span class="mi">25</span><span class="p">);</span>
-  <span class="na">background-color</span><span class="o">:</span> <span class="o">@</span><span class="n">grayLight</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div><p>One file, multiple components. We&rsquo;ve done it before with our multiple types of navigation, so it&rsquo;s nothing folks familiar with Bootstrap haven&rsquo;t seen before.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc">.label</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nc">.badge</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">font-size</span><span class="o">:</span> <span class="o">@</span><span class="n">baseFontSize</span> <span class="o">*</span> <span class="mf">.846</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">font-weight</span><span class="o">:</span> <span class="ni">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">line-height</span><span class="o">:</span> <span class="mi">13</span><span class="kt">px</span><span class="p">;</span> <span class="c1">// ensure proper line-height if floated
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">color</span><span class="o">:</span> <span class="o">@</span><span class="ni">white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">vertical-align</span><span class="o">:</span> <span class="ni">middle</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">white-space</span><span class="o">:</span> <span class="ni">nowrap</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">text-shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="o">-</span><span class="mi">1</span><span class="kt">px</span> <span class="mi">0</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,.</span><span class="mi">25</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="na">background-color</span><span class="o">:</span> <span class="o">@</span><span class="n">grayLight</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>One file, multiple components. We&rsquo;ve done it before with our multiple types of navigation, so it&rsquo;s nothing folks familiar with Bootstrap haven&rsquo;t seen before.</p>
 <p>On a related note, we&rsquo;ve changed how we handle hover states for badges and labels. Instead of having a default hover state on an inherently static element, one made with say a <code>span</code>, we relegate the hover state (a cursor and background change) to anchors only.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="nt">a</span> <span class="p">{</span>
-  <span class="k">&amp;</span><span class="nc">.label</span><span class="nd">:hover</span><span class="o">,</span>
-  <span class="k">&amp;</span><span class="nc">.badge</span><span class="nd">:hover</span> <span class="p">{</span>
-    <span class="na">color</span><span class="o">:</span> <span class="o">@</span><span class="ni">white</span><span class="p">;</span>
-    <span class="na">text-decoration</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
-    <span class="na">cursor</span><span class="o">:</span> <span class="ni">pointer</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><p>For the alternate colors on badges and labels, we&rsquo;ve also relegated those styles to anchors only (those with an <code>href</code> attribute).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">&amp;</span><span class="nc">.label</span><span class="nd">:hover</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="k">&amp;</span><span class="nc">.badge</span><span class="nd">:hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">color</span><span class="o">:</span> <span class="o">@</span><span class="ni">white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">text-decoration</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">cursor</span><span class="o">:</span> <span class="ni">pointer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>For the alternate colors on badges and labels, we&rsquo;ve also relegated those styles to anchors only (those with an <code>href</code> attribute).</p>
 
       </div><div class="post">
         <h1 class="post-title fw-500">

@@ -7,7 +7,7 @@
 <link rel="canonical" href="https://blog.getbootstrap.com/">
 
 <meta name="description" content="Official blog for the Bootstrap framework.">
-<meta name="generator" content="Hugo 0.92.2">
+<meta name="generator" content="Hugo 0.93.0">
 
 
 
@@ -239,9 +239,9 @@
 <p>We&rsquo;ll be alternating releases across v4 and v5 to keep the momentum up. We&rsquo;re shipping v4.5.3 next and then moving right back to v5 for Alpha 3. We&rsquo;ve noted our intended <a href="https://github.com/twbs/release#upcoming-release-schedule">release schedule in our release repo</a>. We&rsquo;ll also keep updating that repo&rsquo;s readme as we go.</p>
 <h2 id="get-started">Get started</h2>
 <p><strong>Head to <a href="https://v5.getbootstrap.com">https://v5.getbootstrap.com</a> to explore the new release.</strong> We&rsquo;ve also published this updated as a pre-release to npm, so if you&rsquo;re feeling bold or are curious about what&rsquo;s new, you can pull the latest in that way.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm i bootstrap@next
-</code></pre></div><h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>' GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@next
+</span></span></code></pre></div><h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
       </div><div class="post">
         <h1 class="post-title fw-500">
@@ -281,8 +281,8 @@
 <p>Use them as embedded SVGs, as external assets with <code>&lt;img&gt;</code> tags, as an SVG sprite, or even embedded in your CSS. <a href="https://icons.getbootstrap.com">Head to the docs to learn more.</a></p>
 <h2 id="install">Install</h2>
 <p>To get started, install via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm i bootstrap-icons
-</code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.0.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.0.0/bootstrap-icons-1.0.0.zip">download just the SVGs</a> (without the rest of the repository files).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
+</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.0.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.0.0/bootstrap-icons-1.0.0.zip">download just the SVGs</a> (without the rest of the repository files).</p>
 <h2 id="figma">Figma</h2>
 <p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/9YmlUAwhMv99G4yP4yN7Jy/Bootstrap-Icons-v1.0.0?node-id=0%3A1">icons from Figma</a>.</p>
 <h2 id="up-next">Up next</h2>
@@ -371,7 +371,7 @@
 <li>#30922: Fix color on disabled checked state for custom controls</li>
 <li>#30932: Restore <code>word-break: break-word;</code> on <code>.text-break</code> utility.</li>
 <li>#30940: Prevent <code>.row</code> from shrinking in flex containers</li>
-<li>#30957: Nullify custom form states' <code>box-shadow</code></li>
+<li>#30957: Nullify custom form states&rsquo; <code>box-shadow</code></li>
 <li>#30959: Toasts in IE11</li>
 <li>#30960: Fix IE11 validation tooltip alignment in input groups</li>
 <li>#30965: Improve floating labels example in IE</li>
@@ -414,7 +414,7 @@
 <p>We&rsquo;ll be shipping our second alpha of v5 in the next few weeks. We&rsquo;ve been a little delayed as we focus on ourselves during these unprecedented times and have all been taking a bit of time off here and there. We&rsquo;re sorry to keep y&rsquo;all waiting on v5 and hope you can understand.</p>
 <p>After v5&rsquo;s second alpha, we&rsquo;ll be targeting a final alpha before our first beta, as well as more patches for v4. We&rsquo;ll also be releasing the Bootstrap Icons soon. So stay tuned for more!</p>
 <h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>' GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
       </div><div class="post">
         <h1 class="post-title fw-500">
@@ -452,16 +452,16 @@
 <h2 id="new-svg-sprite">New SVG sprite</h2>
 <p>In addition to hundreds of new icons, we&rsquo;ve added a new <code>bootstrap-icons.svg</code> sprite. For those new to SVG sprites, it allows you to load a single asset and reference fragments of it across your project without inserting the entire HTML for the SVG.</p>
 <p>Here&rsquo;s a quick look at how it works once imported:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;bootstrap-icons.svg#heart-fill&#34;</span><span class="p">/&gt;</span>
-<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;bootstrap-icons.svg#toggles&#34;</span><span class="p">/&gt;</span>
-<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;bootstrap-icons.svg#shop&#34;</span><span class="p">/&gt;</span>
-<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</code></pre></div><p>We hope to include some optimizations around this in the future as it&rsquo;s our first endeavor into an SVG sprite system. Feedback and ideas are always welcome in our issues!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;bootstrap-icons.svg#heart-fill&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;bootstrap-icons.svg#toggles&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;bootstrap-icons.svg#shop&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>We hope to include some optimizations around this in the future as it&rsquo;s our first endeavor into an SVG sprite system. Feedback and ideas are always welcome in our issues!</p>
 <h2 id="coming-in-v1-stable">Coming in v1 stable</h2>
 <p>The single biggest feature coming in v1&rsquo;s stable release will be <a href="https://github.com/twbs/icons/pull/287">icon web fonts</a>. There&rsquo;s a PR underway that requires further SVG path cleanup, as well as some tooling improvements. Overall it feels pretty promising!</p>
 <p>While icon fonts are great for a handful of implementation reasons, please be aware that they are not inherently the most accessible option for your visitors. SVGs provide more control and styling options, and allow you to be accessible from the start with <code>aria</code> roles and <code>&lt;title&gt;</code>s.</p>

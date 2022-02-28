@@ -8,7 +8,7 @@
 
 <meta name="description" content="This last week we&rsquo;ve added two new developer tools to the Bootstrap tool chain and I wanted to take a minute to let you know a little bit more about what they are, why we&rsquo;ve added them, and why it matters.
 JSHint JSHint is an awesome community-driven linting tool, used to detect errors and potential problems in your JS, and to enforce coding conventions. It&rsquo;s super flexible and can easily adapt to whichever coding guidelines and environment you expect your code to execute in.">
-<meta name="generator" content="Hugo 0.92.2">
+<meta name="generator" content="Hugo 0.93.0">
 
 
 
@@ -188,16 +188,16 @@ JSHint JSHint is an awesome community-driven linting tool, used to detect errors
 <p>As of 2.0.3, all JS (including tests) will be run through JSHint as a part of the build process.
 We&rsquo;re hoping that this will both catch potentially unsafe syntax as well as encourage a convention around Bootstap&rsquo;s JavaScript style.</p>
 <p>To begin with, Bootstrap&rsquo;s JS will use the following options (stored in a .jshintrc file in the js dir):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;validthis&#34;</span> <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;laxcomma&#34;</span>  <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;laxbreak&#34;</span>  <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;browser&#34;</span>   <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;boss&#34;</span>      <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;expr&#34;</span>      <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;asi&#34;</span>       <span class="p">:</span> <span class="kc">true</span>
-<span class="p">}</span>
-</code></pre></div><p>We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven&rsquo;t played with JSHint, you should definitely take a moment to <a href="https://jshint.com/">check it out right now</a>!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;validthis&#34;</span> <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;laxcomma&#34;</span>  <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;laxbreak&#34;</span>  <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;browser&#34;</span>   <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;boss&#34;</span>      <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;expr&#34;</span>      <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;asi&#34;</span>       <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven&rsquo;t played with JSHint, you should definitely take a moment to <a href="https://jshint.com/">check it out right now</a>!</p>
 <h3 id="recesshttpstwittergithubiorecess"><a href="https://twitter.github.io/recess/">Recess</a></h3>
 <p>Recess is a project developed at Twitter to help support our internal style guide.</p>
 <p><img src="/assets/img/2012/04/recess.png" alt="Recess screenshot"></p>

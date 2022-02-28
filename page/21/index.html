@@ -7,7 +7,7 @@
 <link rel="canonical" href="https://blog.getbootstrap.com/">
 
 <meta name="description" content="Official blog for the Bootstrap framework.">
-<meta name="generator" content="Hugo 0.92.2">
+<meta name="generator" content="Hugo 0.93.0">
 
 
 
@@ -259,8 +259,8 @@
         <p>Today we&rsquo;re releasing <a href="https://getbootstrap.com/">Bootstrap 2.0.3</a>, another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the <a href="https://github.com/twbs/bootstrap/issues?sort=created&amp;direction=desc&amp;state=closed&amp;page=1&amp;milestone=10">2.0.3 milestone</a> on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what&rsquo;s changed.</p>
 <h2 id="makefile">Makefile</h2>
 <p>In the spirit of always improving the LESS functionality and build tools, we&rsquo;ve updated our makefile to utilize <a href="https://jshint.com/">JSHint</a> and <a href="https://twitter.github.io/recess/">Recess</a>, linters for JavaScript and CSS. To continue to run <code>make</code> via Terminal, do the following:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install -g recess jshint
-</code></pre></div><p>We&rsquo;ve also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the <a href="https://github.com/twbs/bootstrap/blob/v2.0.3/README.md">updated readme</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g recess jshint
+</span></span></code></pre></div><p>We&rsquo;ve also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the <a href="https://github.com/twbs/bootstrap/blob/v2.0.3/README.md">updated readme</a>.</p>
 <h2 id="html-and-css">HTML and CSS</h2>
 <ul>
 <li>Overhauled the responsive utility classes to simplify required CSS, add <code>!important</code> to all declarations, and use <code>display: inherit</code> in place of <code>display: block</code> to account for different types of elements.</li>
@@ -375,16 +375,16 @@
 <p>As of 2.0.3, all JS (including tests) will be run through JSHint as a part of the build process.
 We&rsquo;re hoping that this will both catch potentially unsafe syntax as well as encourage a convention around Bootstap&rsquo;s JavaScript style.</p>
 <p>To begin with, Bootstrap&rsquo;s JS will use the following options (stored in a .jshintrc file in the js dir):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;validthis&#34;</span> <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;laxcomma&#34;</span>  <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;laxbreak&#34;</span>  <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;browser&#34;</span>   <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;boss&#34;</span>      <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;expr&#34;</span>      <span class="p">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nt">&#34;asi&#34;</span>       <span class="p">:</span> <span class="kc">true</span>
-<span class="p">}</span>
-</code></pre></div><p>We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven&rsquo;t played with JSHint, you should definitely take a moment to <a href="https://jshint.com/">check it out right now</a>!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;validthis&#34;</span> <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;laxcomma&#34;</span>  <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;laxbreak&#34;</span>  <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;browser&#34;</span>   <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;boss&#34;</span>      <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;expr&#34;</span>      <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">,</span> <span class="nt">&#34;asi&#34;</span>       <span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven&rsquo;t played with JSHint, you should definitely take a moment to <a href="https://jshint.com/">check it out right now</a>!</p>
 <h3 id="recesshttpstwittergithubiorecess"><a href="https://twitter.github.io/recess/">Recess</a></h3>
 <p>Recess is a project developed at Twitter to help support our internal style guide.</p>
 <p><img src="/assets/img/2012/04/recess.png" alt="Recess screenshot"></p>

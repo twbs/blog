@@ -8,7 +8,7 @@
 
 <meta name="description" content="Today we&rsquo;re releasing Bootstrap 2.0.3, another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the 2.0.3 milestone on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what&rsquo;s changed.
 Makefile In the spirit of always improving the LESS functionality and build tools, we&rsquo;ve updated our makefile to utilize JSHint and Recess, linters for JavaScript and CSS.">
-<meta name="generator" content="Hugo 0.92.2">
+<meta name="generator" content="Hugo 0.93.0">
 
 
 
@@ -185,8 +185,8 @@ Makefile In the spirit of always improving the LESS functionality and build tool
 <p>Today we&rsquo;re releasing <a href="https://getbootstrap.com/">Bootstrap 2.0.3</a>, another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the <a href="https://github.com/twbs/bootstrap/issues?sort=created&amp;direction=desc&amp;state=closed&amp;page=1&amp;milestone=10">2.0.3 milestone</a> on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what&rsquo;s changed.</p>
 <h2 id="makefile">Makefile</h2>
 <p>In the spirit of always improving the LESS functionality and build tools, we&rsquo;ve updated our makefile to utilize <a href="https://jshint.com/">JSHint</a> and <a href="https://twitter.github.io/recess/">Recess</a>, linters for JavaScript and CSS. To continue to run <code>make</code> via Terminal, do the following:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install -g recess jshint
-</code></pre></div><p>We&rsquo;ve also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the <a href="https://github.com/twbs/bootstrap/blob/v2.0.3/README.md">updated readme</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g recess jshint
+</span></span></code></pre></div><p>We&rsquo;ve also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the <a href="https://github.com/twbs/bootstrap/blob/v2.0.3/README.md">updated readme</a>.</p>
 <h2 id="html-and-css">HTML and CSS</h2>
 <ul>
 <li>Overhauled the responsive utility classes to simplify required CSS, add <code>!important</code> to all declarations, and use <code>display: inherit</code> in place of <code>display: block</code> to account for different types of elements.</li>

@@ -9,7 +9,7 @@
 <meta name="description" content="Bootstrap 3.3.5 is here! This release has focused on bug fixes, accessibility improvements, and documentation updates. We&rsquo;ve had over 330 commits and 160 closed issues and pull requests from over 40 contributors since our last release! Hell yeah.
 Here are some of the highlights:
  Updated to Normalize.css v3.0.3. Updated main in bower.json to comply with recent update to the bower.json specification List groups now support &lt;button&gt; elements. Cleaned up some extraneous padding on jumbotrons across various viewports.">
-<meta name="generator" content="Hugo 0.92.2">
+<meta name="generator" content="Hugo 0.93.0">
 
 
 
@@ -209,30 +209,30 @@ Here are some of the highlights:
 <h2 id="wiredep-and-bower">wiredep and Bower</h2>
 <p>Due to vagueness in Bower&rsquo;s specification, wiredep made some questionable assumptions about how the <code>main</code> field in <code>bower.json</code> works. Recently, <a href="https://github.com/bower/spec/pull/43">Bower updated their spec to address this and clarify how <code>main</code> should work</a>, and we <a href="https://github.com/twbs/bootstrap/pull/16359">updated our <code>bower.json</code> accordingly</a>. Unfortunately, <a href="https://github.com/twbs/bootstrap/issues/16663">wiredep broke as a result</a> if you were using it with Bootstrap&rsquo;s vanilla precompiled CSS. Bower is <a href="https://github.com/bower/spec/issues/47">working to further update their spec</a> to address this problem and better assist tools like wiredep.</p>
 <p>In the meantime, a quick-and-dirty workaround to get wiredep to work with Bootstrap again is to add the following to your project&rsquo;s <code>bower.json</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;overrides&#34;</span><span class="err">:</span> <span class="p">{</span>
-  <span class="nt">&#34;bootstrap&#34;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&#34;main&#34;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="s2">&#34;dist/js/bootstrap.js&#34;</span><span class="p">,</span>
-      <span class="s2">&#34;dist/css/bootstrap.css&#34;</span><span class="p">,</span>
-      <span class="s2">&#34;less/bootstrap.less&#34;</span>
-    <span class="p">]</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><h2 id="download-bootstrap">Download Bootstrap</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;overrides&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;bootstrap&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;main&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;dist/js/bootstrap.js&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;dist/css/bootstrap.css&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;less/bootstrap.less&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="download-bootstrap">Download Bootstrap</h2>
 <p>Download the latest release—source code, compiled assets, and documentation—as a ZIP file directly from GitHub:</p>
 <p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.5.zip">Download Bootstrap 3.3.5</a></p>
 <p>Hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a> for more options. Also, remember <a href="https://www.npmjs.com/package/bootstrap">we&rsquo;re available on npm</a>, too.</p>
 <h2 id="bootstrap-cdn">Bootstrap CDN</h2>
 <p>After reviewing the changelog, update your CDN links to point to the v3.3.5 files:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&#34;</span><span class="p">&gt;</span>
-
-<span class="c">&lt;!-- Optional theme --&gt;</span>
-<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css&#34;</span><span class="p">&gt;</span>
-
-<span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Optional theme --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
   </div>
 
   <div class="related">

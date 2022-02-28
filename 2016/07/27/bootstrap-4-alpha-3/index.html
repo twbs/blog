@@ -8,7 +8,7 @@
 
 <meta name="description" content="Alpha 3 has landed! We have an overhauled grid, updated form controls, a new font stack, tons of bug fixes, and more. It&rsquo;s been several months since our last update, but the size of this update should help get us back on track.
 Work on Alpha 3 started rather broadly, addressing bug fixes and docs updates of all shapes and sizes, but finished with a narrow focus on our form controls and grid system.">
-<meta name="generator" content="Hugo 0.92.2">
+<meta name="generator" content="Hugo 0.93.0">
 
 
 
@@ -233,19 +233,19 @@ Work on Alpha 3 started rather broadly, addressing bug fixes and docs updates of
 <p>Speaking of validation states, we have <strong>brand new form validation and help text options</strong>. Validation states can now be applied on a per-input basis (with <code>.form-control-{state}</code>) and optional validation feedback can be shown with <code>.form-control-feedback</code>. Independent form help text can now be controlled with the new <code>.form-text</code> class.</p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-group has-success&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-form-label&#34;</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;inputSuccess1&#34;</span><span class="p">&gt;</span>
-    Input with success
-  <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control form-control-success&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;inputSuccess1&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control-feedback&#34;</span><span class="p">&gt;</span>
-    Success! You&#39;ve done it.
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-text text-muted&#34;</span><span class="p">&gt;</span>
-    Example help text that remains unchanged.
-  <span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-group has-success&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-form-label&#34;</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;inputSuccess1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Input with success
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control form-control-success&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;inputSuccess1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control-feedback&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Success! You&#39;ve done it.
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">small</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-text text-muted&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Example help text that remains unchanged.
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><ul>
 <li>
 <p>Fixed a few form related bugs, like the horizontal label padding in <a href="https://github.com/twbs/bootstrap/issues/17498">#17498</a>, misuse of <code>&lt;fieldset&gt;</code>s for form groups, sizing classes not applying to <code>&lt;select&gt;</code>s, and more.</p>
 </li>
