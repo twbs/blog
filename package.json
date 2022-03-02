@@ -35,7 +35,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "cross-env": "^7.0.3",
-    "find-unused-sass-variables": "^4.0.2",
+    "find-unused-sass-variables": "^4.0.3",
     "hugo-bin": "^0.81.1",
     "linkinator": "^3.0.3",
     "lockfile-lint": "^4.6.2",
