@@ -11,10 +11,6 @@ env:
   FORCE_COLOR: 2
   NODE: 16
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
-  cancel-in-progress: true
-
 jobs:
   test:
     runs-on: ubuntu-latest
