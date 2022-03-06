@@ -5,6 +5,7 @@ on:
     branches-ignore:
       - "dependabot/**"
   pull_request:
+  workflow_dispatch:
 
 env:
   FORCE_COLOR: 2
@@ -21,7 +22,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "${{ env.NODE }}"
+          node-version: ${{ env.NODE }}
           cache: npm
 
       - run: java -version
@@ -33,7 +34,7 @@ jobs:
         run: npm test
 
       - name: Upload docs
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: github.repository == 'twbs/blog' && github.ref == 'refs/heads/main'
         with:
           name: docs
@@ -50,7 +51,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download docs
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: docs
           path: ./_site/
