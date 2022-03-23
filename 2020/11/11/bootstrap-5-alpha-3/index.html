@@ -192,16 +192,19 @@ We&rsquo;re trying to move fast and keep the future of the project and the web i
 <p>We&rsquo;ve improved a handful of components in this release, and even dropped one for some new and improved utilities.</p>
 <h3 id="new-accordion">New accordion</h3>
 <p>We&rsquo;ve dropped the <code>.card</code> based accordion for a brand new <code>.accordion</code> component, solving several bugs in the process. Our new accordion still uses the Collapse JavaScript plugin, but with custom HTML and CSS to support it, it&rsquo;s better and easier than ever to use.</p>
-<p><img src="/assets/img/2020/11/accordion.png" alt="New Bootstrap accordion"></p>
+<p><img src="/assets/img/2020/11/accordion.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap accordion" loading="lazy" width="1510" height="626">
+</p>
 <p>The new accordion includes Bootstrap Icons as chevron icons indicating state and click-ability. We&rsquo;ve included support for a flush accordion (add <code>.accordion-flush</code>) to remove the outer borders, allowing for easier placement inside parent elements.</p>
 <p><a href="https://github.com/twbs/bootstrap/pull/32013">See the PR</a> for extra details on what&rsquo;s new, or <a href="https://v5.getbootstrap.com/docs/5.0/components/accordion/">visit the new docs page</a>.</p>
 <h3 id="new-block-buttons">New block buttons</h3>
-<p><img src="/assets/img/2020/11/block-buttons.png" alt="New block buttons"></p>
+<p><img src="/assets/img/2020/11/block-buttons.png" class="d-block img-fluid mb-2 rounded border" alt="New block buttons" loading="lazy" width="1614" height="550">
+</p>
 <p>Block buttons are no more in v5—we&rsquo;ve dropped the <code>.btn-block</code> class for <code>.d-grid</code> and <code>.gap-*</code> utilities. This allows for the same behavior and style, but with much greater control over spacing, alignment, and even responsive layout options.</p>
 <p><a href="https://v5.getbootstrap.com/docs/5.0/components/buttons/#block-buttons">See the buttons docs page for details.</a></p>
 <h2 id="docs-improvements">Docs improvements</h2>
 <p>We&rsquo;re always looking for new ways to improve our documentation, and this release is no different. We have a ton of changes big and small.</p>
-<p><img src="/assets/img/2020/11/docs-search.png" alt="Docs search"></p>
+<p><img src="/assets/img/2020/11/docs-search.png" class="d-block img-fluid mb-2 rounded border" alt="Docs search" loading="lazy" width="1480" height="900">
+</p>
 <p>We&rsquo;ve added a keyboard shortcut to focus you on the search field. Hit <kbd>Ctrl</kbd> + <kbd>/</kbd> to trigger it.</p>
 <p>We&rsquo;ve also rewritten the docs sidebar to use actual <code>&lt;button&gt;</code> elements instead of anchors, and improved the focus styling.</p>
 <p>Content-wise, we&rsquo;ve renamed the &ldquo;Navs&rdquo; page to &ldquo;Navs &amp; Tabs&rdquo; to help folks find our tab JavaScript features better. We&rsquo;ve also made some style changes, improving the focus styles of heading anchor links and removing text wrapping from code snippets for shorter and easier to read code.</p>
@@ -228,7 +231,8 @@ We&rsquo;re trying to move fast and keep the future of the project and the web i
 </ul>
 <h2 id="utilities">Utilities</h2>
 <p>Utility classes are incredibly powerful in Bootstrap, especially with our new <a href="https://v5.getbootstrap.com/docs/5.0/utilities/api/">utilities API</a>.</p>
-<p><img src="/assets/img/2020/11/utilities-api-docs.png" alt="New utilities API docs"></p>
+<p><img src="/assets/img/2020/11/utilities-api-docs.png" class="d-block img-fluid mb-2 rounded border" alt="New utilities API docs" loading="lazy" width="3048" height="2064">
+</p>
 <p>With our first beta, we&rsquo;ve overhauled our API docs to provide clearer examples and information on adding, modifying, removing, and extending our default utilities.</p>
 <p>In addition, we&rsquo;ve added some new default utilities to make life a little easier:</p>
 <ul>
@@ -242,10 +246,12 @@ We&rsquo;re trying to move fast and keep the future of the project and the web i
 <h2 id="forms">Forms</h2>
 <p>Forms have some exciting changes thanks to the addition of floating labels as a fully-fledged form layout option and a new file input.</p>
 <h3 id="floating-labels">Floating labels</h3>
-<p><img src="/assets/img/2020/11/floating-forms.png" alt="New floating labels"></p>
+<p><img src="/assets/img/2020/11/floating-forms.png" class="d-block img-fluid mb-2 rounded border" alt="New floating labels" loading="lazy" width="1610" height="216">
+</p>
 <p><a href="https://v5.getbootstrap.com/docs/5.0/forms/floating-labels/">Floating labels</a> include support for textual inputs, selects, and textareas. We have one limitation with textareas where multiple lines of text can be obscured by the floating label. We&rsquo;re working on fixes for this, so if you have ideas, please let us know!</p>
 <h3 id="new-file-input">New file input</h3>
-<p><img src="/assets/img/2020/11/file-input.png" alt="New file input"></p>
+<p><img src="/assets/img/2020/11/file-input.png" class="d-block img-fluid mb-2 rounded border" alt="New file input" loading="lazy" width="1610" height="934">
+</p>
 <p>We&rsquo;ve dropped our custom <code>.form-file</code> class for additional styles on the <code>.form-control</code> class. This means we no longer require additional JavaScript to make our file input styles functional—the <a href="https://v5.getbootstrap.com/docs/5.0/forms/form-control/#file-input">new form file</a> is all CSS!</p>
 <h3 id="input-group-rounded-corners">Input group rounded corners</h3>
 <p>Beyond that, we&rsquo;ve finally resolved ourselves to adding a new class to fix the rounded corners on input groups when using validation. Add the <code>.has-feedback</code> class to the <code>.input-group</code> to enable validation messages inside input groups without any visual regressions. The good news is this is also being <a href="https://github.com/twbs/bootstrap/pull/31953">backported to v4</a> in our next release.</p>

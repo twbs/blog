@@ -189,7 +189,8 @@ Just like with the v4 development process, our docs for v5 have been temporarily
 <p>Just like with the v4 development process, our docs for v5 have been temporarily hosted on a subdomain for the next major release. Starting today, those docs are being moved to the main domain and our old <code>v5.getbootstrap.com</code> domain will redirect.</p>
 <p>There are some really awesome new features—RTL!—that have been added in this release, and they&rsquo;ve come with some important changes. Keep reading for the lowdown and let us know what you think!</p>
 <h2 id="rtl">RTL</h2>
-<p><a href="https://getbootstrap.com/docs/5.0/getting-started/rtl/"><img src="/assets/img/2020/12/rtl-docs.png" alt="Bootstrap RTL docs"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/getting-started/rtl/"><img src="/assets/img/2020/12/rtl-docs.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap RTL docs" loading="lazy" width="1280" height="800">
+</a></p>
 <p>Our biggest addition to the project in years, we&rsquo;ve finally added RTL support to Bootstrap! Please join me in giving @ffoodd—one of our newest contributors and author of the RTL pull request—a massive thank you. <a href="https://github.com/twbs/bootstrap/pull/30980">The pull request</a> includes nearly 50 references to existing issues and PRs that have tried to implement the feature into our core.</p>
 <p>At a high level, our RTL approach includes a handful of changes:</p>
 <ul>
@@ -214,7 +215,8 @@ Just like with the v4 development process, our docs for v5 have been temporarily
 <p>Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like <code>left</code> and <code>right</code> in favor <code>start</code> and <code>end</code>. Things like <code>align-items-end</code> have been welcomed additions. This makes horizontal directional class names appropriate for LTR and RTL without any additional overhead moving forward.</p>
 <p>For example, in a LTR context, instead of <code>.ml-3</code> for <code>margin-left</code>, use <code>.ms-3</code>. Be sure to <a href="https://getbootstrap.com/docs/5.0/migration/#rtl">read the RTL Migration guide</a> for a full list of renamed classes and variables.</p>
 <h2 id="popperjs-v2">Popper.js v2</h2>
-<p><img src="/assets/img/2020/12/popper-header.png" alt="Popper.js"></p>
+<p><img src="/assets/img/2020/12/popper-header.png" class="d-block img-fluid mb-2 rounded border" alt="Popper.js" loading="lazy" width="1520" height="834">
+</p>
 <p>We&rsquo;ve upgraded <a href="https://popper.js.org">Popper.js</a> from v1.x to v2.x, bringing with it some small breaking changes to our tooltips and popovers. These two changes are why we haven&rsquo;t been able to update to v2.x sooner.</p>
 <ul>
 <li>Removed <code>offset</code> option from our Tooltip/Popover and Dropdown plugins; this can still be achieved using the <code>popperConfig</code> parameter.</li>
@@ -235,7 +237,8 @@ Just like with the v4 development process, our docs for v5 have been temporarily
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="new-toast-positioning">New toast positioning</h2>
-<p><img src="/assets/img/2020/12/toast-position-docs.png" alt="Popper.js"></p>
+<p><img src="/assets/img/2020/12/toast-position-docs.png" class="d-block img-fluid mb-2 rounded border" alt="Popper.js" loading="lazy" width="1556" height="752">
+</p>
 <p>After dabbling in some JavaScript solutions to <a href="https://getbootstrap.com/docs/5.0/components/toasts/#placement">positioning toasts</a>, we&rsquo;ve landed on a new CSS-only approach thanks to our <a href="https://getbootstrap.com/docs/5.0/utilities/position/">new positioning utilities</a>. This comes with some minor breaking changes—namely some changes to exact CSS properties and how we toggle visibility of the toasts—but largely keeps them intact.</p>
 <p>Our docs have been updated to include a <a href="https://getbootstrap.com/docs/5.0/components/toasts/#placement">new position preview picker</a>, too, so you can see them in action. <a href="https://github.com/twbs/bootstrap/pull/32280/">See the pull request for more details.</a></p>
 <h2 id="js-enhancements">JS enhancements</h2>

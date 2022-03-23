@@ -387,7 +387,8 @@ We&rsquo;re hoping that this will both catch potentially unsafe syntax as well a
 </span></span></code></pre></div><p>We hope this will make it a little easier for those looking to contribute to Bootstrap, and lessen the pain around pull requests with divergent styles. If you haven&rsquo;t played with JSHint, you should definitely take a moment to <a href="https://jshint.com/">check it out right now</a>!</p>
 <h3 id="recesshttpstwittergithubiorecess"><a href="https://twitter.github.io/recess/">Recess</a></h3>
 <p>Recess is a project developed at Twitter to help support our internal style guide.</p>
-<p><img src="/assets/img/2012/04/recess.png" alt="Recess screenshot"></p>
+<p><img src="/assets/img/2012/04/recess.png" class="d-block img-fluid mb-2 rounded border" alt="Recess screenshot" loading="lazy" width="475" height="288">
+</p>
 <p>At it&rsquo;s core, Recess is a linter, but with the added ability to compile and/or reformat your css/less files: normalizing whitespace, stripping 0 values, reordering properties, and any other safe stylistic optimizations it can find.</p>
 <p>What this means is that instead of just telling you where you have problems, you can actually tell Recess to just go ahead and tidy your code up for you.</p>
 <p>To begin with, we&rsquo;re only using Recess in this manner — as a compiler for our Less (rather than the lessc compiler directly). This gives us strict control over the output of Bootstrap and let&rsquo;s Mark and I really geekout, which we&rsquo;re super excited about (we like things to be perfect&hellip; we&rsquo;re nerds like that).</p>

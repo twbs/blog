@@ -224,25 +224,31 @@ Keep reading for details on what&rsquo;s new compared to v4 and what&rsquo;s com
 </ul>
 <hr class="my-5">
 <h2 id="new-logo">New logo!</h2>
-<p><img src="/assets/img/2020/06/v5-new-logo.png" alt="New Bootstrap logo"></p>
+<p><img src="/assets/img/2020/06/v5-new-logo.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap logo" loading="lazy" width="2000" height="1000">
+</p>
 <p>One of the biggest changes with v5 came with our redesigned logo and updated docs design. Inspired by the work we&rsquo;ve done in <a href="https://icons.getbootstrap.com">Bootstrap Icons</a>, our new logo is a callback to CSS&rsquo;s curly braces and our longstanding <code>B</code> icon. It&rsquo;s a small upgrade, but a fun one nonetheless, and one that we feel helps set the tone for this new major release. Still the same Bootstrap, just slightly refined. 😅</p>
-<p><a href="https://getbootstrap.com"><img src="/assets/img/2020/06/v5-home.png" alt="New Bootstrap docs layout"></a></p>
+<p><a href="https://getbootstrap.com"><img src="/assets/img/2020/06/v5-home.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap docs layout" loading="lazy" width="1500" height="1150">
+</a></p>
 <p>And <a href="https://getbootstrap.com">the new docs</a> are brighter, better organized with new content sections, and also feature improved navigation.</p>
 <h2 id="new-offcanvas-component">New offcanvas component</h2>
 <p>One of our big new component additions is the all-new offcanvas!</p>
-<p><a href="https://getbootstrap.com/docs/5.0/components/offcanvas/"><img src="/assets/img/2021/03/bootstrap-docs-offcanvas.png" alt="Offcanvas example"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/components/offcanvas/"><img src="/assets/img/2021/03/bootstrap-docs-offcanvas.png" class="d-block img-fluid mb-2 rounded border" alt="Offcanvas example" loading="lazy" width="1614" height="896">
+</a></p>
 <p>Built on and sharing fundamental pieces of our modals, <a href="https://getbootstrap.com/docs/5.0/components/offcanvas/">our new offcanvas component</a> comes with a configurable backdrop, body scroll, and placement. Offcanvas components can be placed on the top, right, bottom, or left of the viewport. Configure these options with <code>data</code> attributes or via the JavaScript APIs.</p>
 <h2 id="new-accordion">New accordion</h2>
 <p>We&rsquo;ve replaced our <code>.card</code> accordion component with a <a href="https://getbootstrap.com/docs/5.0/components/accordion/">brand new <code>.accordion</code> component</a>, solving several bugs in the process. Our new accordion still uses the Collapse JavaScript plugin, but with custom HTML and CSS to support it, it&rsquo;s better and easier than ever to use.</p>
-<p><a href="https://getbootstrap.com/docs/5.0/components/accordion/"><img src="/assets/img/2020/11/accordion.png" alt="New Bootstrap accordion"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/components/accordion/"><img src="/assets/img/2020/11/accordion.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap accordion" loading="lazy" width="1510" height="626">
+</a></p>
 <p>The new accordion includes Bootstrap Icons as chevron icons indicating state and click-ability. We&rsquo;ve included support for a flush accordion (add <code>.accordion-flush</code>) to remove the outer borders, allowing for easier placement inside parent elements.</p>
 <p><a href="https://getbootstrap.com/docs/5.0/components/accordion/">Visit the new docs page</a> to learn more.</p>
 <h2 id="new-and-updated-forms">New and updated forms</h2>
 <p>We&rsquo;ve overhauled our <a href="https://getbootstrap.com/docs/5.0/forms/">Forms documentation and components</a>. We&rsquo;ve consolidated all our forms styles into a new Forms section (including the input group component) to give them the emphasis they deserve.</p>
-<p><a href="https://getbootstrap.com/docs/5.0/forms/overview/"><img src="/assets/img/2020/06/v5-forms.png" alt="New Bootstrap 5 forms docs"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/forms/overview/"><img src="/assets/img/2020/06/v5-forms.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap 5 forms docs" loading="lazy" width="1500" height="1090">
+</a></p>
 <p>Alongside new docs pages, we&rsquo;ve redesigned and de-duped all our form controls. In v4 we introduced an extensive suite of custom form controls—checks, radios, switches, files, and more—but those were in addition to whatever defaults each browser provided. With v5, we&rsquo;ve gone fully custom.</p>
 <h3 id="checks-and-radios">Checks and radios</h3>
-<p><a href="https://getbootstrap.com/docs/5.0/forms/checks-radios/"><img src="/assets/img/2020/06/v5-checks.png" alt="New Bootstrap 5 checks"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/forms/checks-radios/"><img src="/assets/img/2020/06/v5-checks.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap 5 checks" loading="lazy" width="902" height="568">
+</a></p>
 <p>If you&rsquo;re familiar with v4&rsquo;s form markup, this shouldn&rsquo;t look too far off for you. With a single set of form controls and a focus on redesigning existing elements vs generating new ones via pseudo-elements, we have a much more consistent look and feel.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-check&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-check-input&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;flexCheckDefault&#34;</span><span class="p">&gt;</span>
@@ -264,17 +270,21 @@ Keep reading for details on what&rsquo;s new compared to v4 and what&rsquo;s com
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p>Every checkbox, radio, select, file, range, and more includes a custom appearance to unify the style and behavior of form controls across OS and browser. These new form controls are all built on completely semantic, standard form controls—no more superfluous markup, just form controls and labels.</p>
 <h3 id="floating-labels">Floating labels</h3>
-<p><img src="/assets/img/2020/11/floating-forms.png" alt="New floating labels"></p>
+<p><img src="/assets/img/2020/11/floating-forms.png" class="d-block img-fluid mb-2 rounded border" alt="New floating labels" loading="lazy" width="1610" height="216">
+</p>
 <p><a href="https://getbootstrap.com/docs/5.0/forms/floating-labels/">Floating labels</a> include support for textual inputs, selects, and textareas. We have one limitation with textareas where multiple lines of text can be obscured by the floating label. We&rsquo;re working on fixes for this, so if you have ideas, please let us know!</p>
 <h3 id="new-file-input">New file input</h3>
-<p><img src="/assets/img/2020/11/file-input.png" alt="New file input"></p>
+<p><img src="/assets/img/2020/11/file-input.png" class="d-block img-fluid mb-2 rounded border" alt="New file input" loading="lazy" width="1610" height="934">
+</p>
 <p>We&rsquo;ve dropped our custom <code>.form-file</code> class for additional styles on the <code>.form-control</code> class. This means we no longer require additional JavaScript to make our file input styles functional—the <a href="https://v5.getbootstrap.com/docs/5.0/forms/form-control/#file-input">new form file</a> is all CSS!</p>
 <h3 id="simplified-layout">Simplified layout</h3>
 <p>Using our new grid updates, <a href="https://getbootstrap.com/docs/5.0/forms/layout/">form layout</a> has never been easier. We&rsquo;ve dropped the <code>.form-group</code>, <code>.form-row</code>, and <code>.form-inline</code> for the grid system.</p>
-<p><a href="https://getbootstrap.com/docs/5.0/forms/layout/"><img src="/assets/img/2021/05/v5-form-layout.png" alt="New form layout via grid"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/forms/layout/"><img src="/assets/img/2021/05/v5-form-layout.png" class="d-block img-fluid mb-2 rounded border" alt="New form layout via grid" loading="lazy" width="1610" height="622">
+</a></p>
 <p>Be sure to <a href="https://getbootstrap.com/docs/5.0/forms/overview/">explore the new forms docs</a> and let us know what you think.</p>
 <h2 id="rtl-is-here">RTL is here!</h2>
-<p><a href="https://getbootstrap.com/docs/5.0/getting-started/rtl/"><img src="/assets/img/2020/12/rtl-docs.png" alt="Bootstrap RTL docs"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/getting-started/rtl/"><img src="/assets/img/2020/12/rtl-docs.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap RTL docs" loading="lazy" width="1280" height="800">
+</a></p>
 <p>We&rsquo;ve finally added RTL support to Bootstrap! At a high level, our RTL approach includes a handful of changes:</p>
 <ul>
 <li>
@@ -338,7 +348,8 @@ Keep reading for details on what&rsquo;s new compared to v4 and what&rsquo;s com
 <p>Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like <code>left</code> and <code>right</code> in favor <code>start</code> and <code>end</code>. Things like <code>align-items-end</code> have been welcomed additions. This makes horizontal directional class names appropriate for LTR and RTL without any additional overhead moving forward.</p>
 <p>For example, in a LTR context, instead of <code>.ml-3</code> for <code>margin-left</code>, use <code>.ms-3</code>. Be sure to <a href="https://getbootstrap.com/docs/5.0/migration/#rtl">read the RTL Migration guide</a> for a full list of renamed classes and variables.</p>
 <h2 id="new-snippet-examples">New snippet examples</h2>
-<p><a href="https://getbootstrap.com/docs/5.0/examples/"><img src="/assets/img/2021/03/bootstrap-new-examples.png" alt="New examples"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/examples/"><img src="/assets/img/2021/03/bootstrap-new-examples.png" class="d-block img-fluid mb-2 rounded border" alt="New examples" loading="lazy" width="3360" height="2100">
+</a></p>
 <p>We&rsquo;ve added four brand new snippet-heavy examples and refreshed a few other examples while we were at it. These new snippet examples feature several variations of common components, served up in different ways for you to easily copy and paste.</p>
 <ul>
 <li><a href="https://getbootstrap.com/docs/5.0/examples/headers/">Headers</a></li>
@@ -347,7 +358,8 @@ Keep reading for details on what&rsquo;s new compared to v4 and what&rsquo;s com
 <li><a href="https://getbootstrap.com/docs/5.0/examples/sidebars/">Sidebars</a></li>
 </ul>
 <p>These new snippets will continue to grow with new additions over time, showing just how fun and easy it is to build with Bootstrap.</p>
-<p><a href="https://getbootstrap.com/docs/5.0/examples/starter-template/"><img src="/assets/img/2021/03/starter-template.png" alt="New starter example"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/examples/starter-template/"><img src="/assets/img/2021/03/starter-template.png" class="d-block img-fluid mb-2 rounded border" alt="New starter example" loading="lazy" width="3584" height="2240">
+</a></p>
 <p>We&rsquo;ve also updated our <a href="https://getbootstrap.com/docs/5.0/examples/starter-template/">starter template</a> with a refreshed design and more resources.</p>
 <h2 id="grid-and-layout">Grid and layout</h2>
 <p>Our grid system and layout options saw some changes to streamline and improve things, namely:</p>
@@ -373,11 +385,14 @@ Keep reading for details on what&rsquo;s new compared to v4 and what&rsquo;s com
 </ul>
 <h2 id="improved-customizing">Improved customizing</h2>
 <p>We&rsquo;ve hunkered down and improved our documentation in several places, giving more explanation, removing ambiguity, and providing much more support for extending Bootstrap. It all starts with a whole <a href="https://v5.getbootstrap.com/docs/5.0/customize/overview/">new Customize section</a>.</p>
-<p><img src="/assets/img/2020/06/v5-customize.png" alt="Bootstrap 5 customize docs"></p>
+<p><img src="/assets/img/2020/06/v5-customize.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap 5 customize docs" loading="lazy" width="1500" height="1150">
+</p>
 <p>v5&rsquo;s Customize docs expand on v4&rsquo;s Theming page with more content and code snippets for building on top of Bootstrap&rsquo;s source Sass files. We&rsquo;ve fleshed out more content here and even provided a <a href="https://github.com/twbs/bootstrap-npm-starter">starter npm project</a> for you to get started with faster and easier. It&rsquo;s also available as a template repo on GitHub, so you can freely fork and go.</p>
-<p><img src="/assets/img/2020/06/v5-color-palette.png" alt="Bootstrap 5 color palette"></p>
+<p><img src="/assets/img/2020/06/v5-color-palette.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap 5 color palette" loading="lazy" width="1774" height="552">
+</p>
 <p>We&rsquo;ve expanded our color palette in v5, too. With an extensive color system built-in, you can more easily customize the look and feel of your app without ever leaving the codebase. We&rsquo;ve also done some work to improve color contrast, and even provided color contrast metrics in our Color docs. Hopefully, this will continue to help make Bootstrap-powered sites more accessible to folks all over.</p>
-<p><a href="https://getbootstrap.com/docs/5.0/components/alerts/#sass"><img src="/assets/img/2021/03/bootstrap-docs-sass.png" alt="New Sass docs"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/components/alerts/#sass"><img src="/assets/img/2021/03/bootstrap-docs-sass.png" class="d-block img-fluid mb-2 rounded border" alt="New Sass docs" loading="lazy" width="3584" height="2240">
+</a></p>
 <p>We&rsquo;ve also added new sections to most of our pages to document the source Sass code that powers each component. Variables, mixins, loops, and maps are all rendered and kept up to date in each page, making it easier to reference and customize values as you build.</p>
 <h2 id="dart-sass">Dart Sass</h2>
 <p>We&rsquo;ve switched to Dart Sass with LibSass being deprecated. We&rsquo;ve been testing our builds with Dart Sass for a while and decided to make the switch with LibSass being deprecated just a couple of weeks ago. We&rsquo;re holding on to the Sass modules for now. We&rsquo;re still not using the new module system for compatibility concerns and a greater gap for folks upgrading from v4.</p>

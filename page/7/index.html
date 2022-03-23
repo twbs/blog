@@ -194,9 +194,11 @@
 <p>Now let&rsquo;s dig in with some highlights!</p>
 <h2 id="new-look-and-feel">New look and feel</h2>
 <p>We&rsquo;ve built on the improvements to our docs homepage in v4.5.0 with an updated look and feel for the rest of our docs. Our docs pages are no longer full-width to improve readability and make our site feel less app-like and more content-like. In addition, we&rsquo;ve upgraded our sidebar to use expandable sections (powered by our own Collapse plugin) for faster navigation.</p>
-<p><a href="https://v5.getbootstrap.com"><img src="/assets/img/2020/06/v5-home.png" alt="New Bootstrap docs layout"></a></p>
+<p><a href="https://v5.getbootstrap.com"><img src="/assets/img/2020/06/v5-home.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap docs layout" loading="lazy" width="1500" height="1150">
+</a></p>
 <p>We&rsquo;re also sporting a brand new logo! More on that when v5 goes stable, but suffice to say we wanted to give the ol&rsquo; B in a rounded square a small upgrade.</p>
-<p><img src="/assets/img/2020/06/v5-new-logo.png" alt="New Bootstrap logo"></p>
+<p><img src="/assets/img/2020/06/v5-new-logo.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap logo" loading="lazy" width="2000" height="1000">
+</p>
 <p>Inspired by the CSS that created the very beginnings of this project, our logo embodies the feeling of a rule set—style bounded by curly braces. We love it and think you will, too. Expect to see it roll out to v4&rsquo;s documentation, our blog, and more over time as we continue to refine things and ship new releases.</p>
 <h2 id="jquery-and-javascript">jQuery and JavaScript</h2>
 <p>jQuery brought unprecedented access to complex JavaScript behaviors to millions (billions?) of people over the last decade and a half. Personally, I&rsquo;m forever grateful for the empowerment and support it gave me to continue writing front-end code, learning new things, and embracing plugins from the community. Perhaps most importantly, it&rsquo;s forever changed JavaScript itself, and that in itself is a monument to jQuery&rsquo;s success. Thank you to every jQuery contributor and maintainer who made that possible for folks like me.</p>
@@ -222,15 +224,19 @@
 </span></span></code></pre></div><p>We&rsquo;re working to utilize the superpowers of both Sass and CSS custom properties for a more flexible system. You can <a href="https://v5.getbootstrap.com/docs/5.0/content/tables/#how-do-the-variants-and-accented-tables-work">read more about this in the Tables docs page</a> and expect to see more usage in components like buttons in the near future.</p>
 <h2 id="improved-customizing-docs">Improved customizing docs</h2>
 <p>We&rsquo;ve hunkered down and improved our documentation in several places, giving more explanation, removing ambiguity, and providing much more support for extending Bootstrap. It all starts with a whole <a href="https://v5.getbootstrap.com/docs/5.0/customize/overview/">new Customize section</a>.</p>
-<p><img src="/assets/img/2020/06/v5-customize.png" alt="Bootstrap 5 customize docs"></p>
+<p><img src="/assets/img/2020/06/v5-customize.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap 5 customize docs" loading="lazy" width="1500" height="1150">
+</p>
 <p>v5&rsquo;s Customize docs expand on v4&rsquo;s Theming page with more content and code snippets for building on top of Bootstrap&rsquo;s source Sass files. We&rsquo;ve fleshed out more content here and even provided a <a href="https://github.com/twbs/bootstrap-npm-starter">starter npm project</a> for you to get started with faster and easier. It&rsquo;s also available as a template repo on GitHub, so you can freely fork and go.</p>
-<p><img src="/assets/img/2020/06/v5-color-palette.png" alt="Bootstrap 5 color palette"></p>
+<p><img src="/assets/img/2020/06/v5-color-palette.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap 5 color palette" loading="lazy" width="1774" height="552">
+</p>
 <p>We&rsquo;ve expanded our color palette in v5, too. With an extensive color system built-in, you can more easily customize the look and feel of your app without ever leaving the codebase. We&rsquo;ve also done some work to improve color contrast, and even provided color contrast metrics in our Color docs. Hopefully, this will continue to help make Bootstrap-powered sites more accessible to folks all over.</p>
 <h2 id="updated-forms">Updated forms</h2>
 <p>In addition to the new Customize section, we&rsquo;ve overhauled our Forms documentation and components. We&rsquo;ve consolidated all our forms styles into a new Forms section (including the input group component) to give them the emphasis they deserve.</p>
-<p><img src="/assets/img/2020/06/v5-forms.png" alt="New Bootstrap 5 forms docs"></p>
+<p><img src="/assets/img/2020/06/v5-forms.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap 5 forms docs" loading="lazy" width="1500" height="1090">
+</p>
 <p>Alongside new docs pages, we&rsquo;ve redesigned and de-duped all our form controls. In v4 we introduced an extensive suite of custom form controls—checks, radios, switches, files, and more—but those were in addition to whatever defaults each browser provided. With v5, we&rsquo;ve gone fully custom.</p>
-<p><img src="/assets/img/2020/06/v5-checks.png" alt="New Bootstrap 5 checks"></p>
+<p><img src="/assets/img/2020/06/v5-checks.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap 5 checks" loading="lazy" width="902" height="568">
+</p>
 <p>If you&rsquo;re familiar with v4&rsquo;s form markup, this shouldn&rsquo;t look too far off for you. With a single set of form controls and a focus on redesigning existing elements vs generating new ones via pseudo-elements, we have a much more consistent look and feel.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-check&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-check-input&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;flexCheckDefault&#34;</span><span class="p">&gt;</span>
@@ -364,7 +370,8 @@
 <p>We&rsquo;ve shipped tons of new commerce icons for all your shopping cart needs, added tons of calendar options (I couldn&rsquo;t settle on one design), tons of new shape arrows, and more.</p>
 <h2 id="700-icons">~700 icons!</h2>
 <p>With 140 new icons in this release, we&rsquo;ve almost hit 700 icons. We&rsquo;re likely to fly by that in our next release, but in the meantime, have a look for yourself at the breadth of icons. Every icon has also been reprocessed to resolve SVGO issues that prevented them from being opened in some apps.</p>
-<p><img src="/assets/img/2020/05/bootstrap-icons-alpha4-all.png" alt="All Bootstrap Icons"></p>
+<p><img src="/assets/img/2020/05/bootstrap-icons-alpha4-all.png" class="d-block img-fluid mb-2 rounded border" alt="All Bootstrap Icons" loading="lazy" width="1681" height="2470">
+</p>
 <h2 id="download">Download</h2>
 <p>Alpha 4 has been published to GitHub and npm (package name <code>bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code>v1.0.0-alpha4</code>, or by snagging the <a href="https://www.figma.com/file/XDj1VewxEtXzkDDMAvWx2W/Bootstrap-Icons-v1.0.0-alpha4">icons from Figma</a>.</p>
 
@@ -446,13 +453,15 @@
 <p>We&rsquo;ve cleaned up existing icons, created new permalink pages for each and every icon, and added hundreds of new icons—all in one release.</p>
 <h2 id="500-icons">500+ icons!</h2>
 <p>I&rsquo;ve added 221 new icons in our third alpha, the most ever in an alpha release thus far. And while I was drawing all these new awesome icons, I also cleaned up the existing ones by changing their <code>viewBox</code> size and redrew many to ensure more pixel perfect icons.</p>
-<p><img src="/assets/img/2020/03/bootstrap-icons-alpha3-all.png" alt="All Bootstrap Icons"></p>
+<p><img src="/assets/img/2020/03/bootstrap-icons-alpha3-all.png" class="d-block img-fluid mb-2 rounded border" alt="All Bootstrap Icons" loading="lazy" width="1680" height="2375">
+</p>
 <p>Why change the <code>viewBox</code>? In the first two alphas, I was drawing icons on 20x20 artboards in Figma. This seemed like a good idea, but every icon was roughly 16x16, so it ended up being dead space. Now, every icon has been updated to eliminate the 2px inner padding, making the <code>viewBox</code>s <code>0 0 16 16</code> instead of <code>0 0 20 20</code>.</p>
 <p>This change has some slight file size improvements, and should help with sizing and positioning as well.</p>
 <h2 id="permalink-pages">Permalink pages</h2>
 <p>Looking for a particular icon, but don&rsquo;t want to download the entire project to snag the SVG source code? Need to send someone a link to an icon? Look no further than the new icon permalink pages!</p>
 <p>From the Bootstrap Icons homepage, click any icon and you&rsquo;ll be taken to a page dedicated to just that icon. It features the icon in various sizes and renders the source code like you&rsquo;re used to seeing in Bootstrap&rsquo;s docs.</p>
-<p><img src="/assets/img/2020/03/bootstrap-icons-alpha3-permalink.png" alt="Bootstrap Icons permalink"></p>
+<p><img src="/assets/img/2020/03/bootstrap-icons-alpha3-permalink.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap Icons permalink" loading="lazy" width="2600" height="2000">
+</p>
 <p>Since this is still an alpha, some features are still missing from our docs. This includes unlinked tags, no category listing, and no copy to clipboard. I hope to see those added before our stable v1.0.0 release. PRs are very much welcome if you&rsquo;d like to contribute!</p>
 <h2 id="download">Download</h2>
 <p>Alpha 3 has been published to GitHub and npm (package name <code>bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code>v1.0.0-alpha3</code>, or by snagging the <a href="https://www.figma.com/file/NKZWcfR2T3FU0I7fNLqFvI/Bootstrap-Icons-v1.0.0-alpha3">icons from Figma</a>.</p>
@@ -488,7 +497,8 @@
         <p>There&rsquo;s a brand new update of Bootstrap Icons today with our second alpha release! We&rsquo;ve updated nearly 20 icons and added over 100 new icons since our last release just a few weeks ago.</p>
 <h2 id="new-icons">New icons</h2>
 <p>With over 120 new and updated icons, this is likely going to be our largest update before we our first stable release. We have some renamed icons, fixed bugs, new tools icons, new typography icons, tons of new arrows, and so much more.</p>
-<p><a href="https://icons.getbootstrap.com/"><img src="/assets/img/2019/12/bootstrap-icons-alpha2-new.png" alt="New icons in Alpha 2"></a></p>
+<p><a href="https://icons.getbootstrap.com/"><img src="/assets/img/2019/12/bootstrap-icons-alpha2-new.png" class="d-block img-fluid mb-2 rounded border" alt="New icons in Alpha 2" loading="lazy" width="2280" height="1440">
+</a></p>
 <h2 id="highlights">Highlights</h2>
 <p>Here&rsquo;s a summary of what&rsquo;s been fixed, updated, or renamed in this release. For a full summary of what&rsquo;s new, head to the <a href="https://github.com/twbs/icons/releases/tag/v1.0.0-alpha2">GitHub release</a> or <a href="https://github.com/twbs/icons/pull/78">Alpha 2 pull request</a>.</p>
 <ul>

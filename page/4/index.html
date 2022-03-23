@@ -191,12 +191,14 @@
         <p>Our second beta has arrived for Bootstrap 5! We delayed its release to iron out some issues with third-party libraries and stabilize our major changes. We&rsquo;ve also once again shipped some awesome updates to our documentation.</p>
 <p>Next up is our final beta, which we may even promote to a stable release depending on how development proceeds. Stay tuned for that!</p>
 <h2 id="dropdowns">Dropdowns</h2>
-<p><a href="https://getbootstrap.com/docs/5.0/components/dropdowns/"><img src="/assets/img/2021/02/bootstrap-v5b2-dropdowns.png" alt="Dropdown docs screenshot"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/components/dropdowns/"><img src="/assets/img/2021/02/bootstrap-v5b2-dropdowns.png" class="d-block img-fluid mb-2 rounded border" alt="Dropdown docs screenshot" loading="lazy" width="1680" height="1020">
+</a></p>
 <p>Dropdowns saw a lot of work in Beta 2 because of how much has changed in both our JavaScript and in Popper.js (which we depend on for most dropdown, popover, and toolip positioning). We&rsquo;ve modified our dropdown plugin to add a new data attribute to help separate our own positioning styles with that of Popper&rsquo;s. The issues we saw—like a <code>.dropstart</code> menu overlapping a button or an incorrect responsive <code>.dropdown-menu-end</code> class—were largely the result of competing positioning.</p>
 <p>Now when dropdown menus have <code>data-bs-display=&quot;static&quot;</code>, we&rsquo;ll add <code>data-bs-popper=&quot;static&quot;</code> via JavaScript to their associated <code>.dropdown-menu</code>. When dropdowns are in our navbars, their menus will have <code>data-bs-popper=&quot;none&quot;</code> added. This separates two different positioning libraries, ours and Poppers, and ensures all behaviors are supported. You can see <a href="https://getbootstrap.com/docs/5.0/components/dropdowns/#alignment-options">all the options in a new example in our docs</a>. We updated our CSS selectors to use these new data attributes, too.</p>
 <p>In addition, we&rsquo;ve removed the initial <code>margin</code>s from dropdowns and popovers, instead of relying on Popper&rsquo;s offsets. These also conflicted with the default styling for elements positioned by Popper.js. Relatedly, there was a bug in how popover arrows were aligned that has now been resolved.</p>
 <h2 id="color-utility-docs">Color utility docs</h2>
-<p><a href="https://getbootstrap.com/docs/5.0/utilities/colors/"><img src="/assets/img/2021/02/bootstrap-v5b2-sass-docs.png" alt="Sass docs screenshot"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/utilities/colors/"><img src="/assets/img/2021/02/bootstrap-v5b2-sass-docs.png" class="d-block img-fluid mb-2 rounded border" alt="Sass docs screenshot" loading="lazy" width="1680" height="1020">
+</a></p>
 <p>We&rsquo;ve overhauled our color utility documentation, separating the text <code>color</code> classes from our <code>background-color</code> ones. We&rsquo;ve also made extensive use of our <code>scss-docs</code> shortcode to include tons more code snippets in our docs.</p>
 <ul>
 <li><a href="https://getbootstrap.com/docs/5.0/utilities/colors/">Text color utilities</a> remain on their existing page.</li>
@@ -458,7 +460,8 @@
         <p>Say hello to over 60 new icons with <a href="https://icons.getbootstrap.com">Bootstrap Icons v1.3.0</a>! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!</p>
 <p>As usual, we also snuck in some bug fixes to existing icons and ours docs. After this release, we&rsquo;re back to focusing on shipping updates to Bootstrap v5 and v4. More on that soon, and in the mean time, enjoy the new icons!</p>
 <h2 id="60-new-icons">60+ new icons</h2>
-<img src="/assets/img/2021/01/icons-130-new.png" alt="New icons in v1.3.0" style="border: 1px solid rgba(0,0,0,.15);">
+<p><img src="/assets/img/2021/01/icons-130-new.png" class="d-block img-fluid mb-2 rounded border" alt="New icons in v1.3.0" loading="lazy" width="1200" height="750">
+</p>
 <p>Here&rsquo;s a look at the new icons in v1.3.0:</p>
 <ul>
 <li>Added window-dock and window-sidebar</li>
@@ -539,12 +542,15 @@
 <p>We also snuck in a few bug fixes to existing icons, docs, and some slight visual improvements to some existing icons. Get the details below!</p>
 <h2 id="font-files">Font files</h2>
 <p>Our icons fonts are (fingers crossed!) free of visual glitches that made so many unusable across Windows devices. For some reason macOS and iOS had no problems, but Windows butchered the font files. Turns out this was a result of inconsistent <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule">fill-rule</a> values in our icons, and some font formats and renderers only support a <code>non-zero</code> fill rule. We revisited nearly every icon and got it all sorted out.</p>
-<p><img src="/assets/img/2020/12/icons-font-index.png" alt="Icon fonts"></p>
+<p><img src="/assets/img/2020/12/icons-font-index.png" class="d-block img-fluid mb-2 rounded border" alt="Icon fonts" loading="lazy" width="1444" height="960">
+</p>
 <p>Massive shoutout to the <a href="https://www.figma.com/community/plugin/771155994770327940">Figma Fill Rule Editor plugin</a> that made this relatively quick and painless to update. <em>You can even see in the plugin&rsquo;s image below how this rule affects rendering of SVGs.</em></p>
-<p><a href="https://www.figma.com/community/plugin/771155994770327940"><img src="/assets/img/2020/12/figma-fill-rule-editor.png" alt="Figma Fill Rule Editor plugin"></a></p>
+<p><a href="https://www.figma.com/community/plugin/771155994770327940"><img src="/assets/img/2020/12/figma-fill-rule-editor.png" class="d-block img-fluid mb-2 rounded border" alt="Figma Fill Rule Editor plugin" loading="lazy" width="2048" height="1024">
+</a></p>
 <p><a href="https://github.com/twbs/icons/pull/552">Check out the PR</a> for what&rsquo;s changed under the hood.</p>
 <h2 id="updated-icons">Updated icons</h2>
-<p><img src="/assets/img/2020/12/icons-realigned.png" alt="Revised icons"></p>
+<p><img src="/assets/img/2020/12/icons-realigned.png" class="d-block img-fluid mb-2 rounded border" alt="Revised icons" loading="lazy" width="900" height="450">
+</p>
 <p>A few icons got touched up with the work for our font files to clean up paths and make them more visually pleasing.</p>
 <ul>
 <li>Locks are a little more legible—they’re taller and narrower.</li>

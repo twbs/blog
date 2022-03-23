@@ -194,12 +194,14 @@ Dropdowns saw a lot of work in Beta 2 because of how much has changed in both ou
 <p>Our second beta has arrived for Bootstrap 5! We delayed its release to iron out some issues with third-party libraries and stabilize our major changes. We&rsquo;ve also once again shipped some awesome updates to our documentation.</p>
 <p>Next up is our final beta, which we may even promote to a stable release depending on how development proceeds. Stay tuned for that!</p>
 <h2 id="dropdowns">Dropdowns</h2>
-<p><a href="https://getbootstrap.com/docs/5.0/components/dropdowns/"><img src="/assets/img/2021/02/bootstrap-v5b2-dropdowns.png" alt="Dropdown docs screenshot"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/components/dropdowns/"><img src="/assets/img/2021/02/bootstrap-v5b2-dropdowns.png" class="d-block img-fluid mb-2 rounded border" alt="Dropdown docs screenshot" loading="lazy" width="1680" height="1020">
+</a></p>
 <p>Dropdowns saw a lot of work in Beta 2 because of how much has changed in both our JavaScript and in Popper.js (which we depend on for most dropdown, popover, and toolip positioning). We&rsquo;ve modified our dropdown plugin to add a new data attribute to help separate our own positioning styles with that of Popper&rsquo;s. The issues we saw—like a <code>.dropstart</code> menu overlapping a button or an incorrect responsive <code>.dropdown-menu-end</code> class—were largely the result of competing positioning.</p>
 <p>Now when dropdown menus have <code>data-bs-display=&quot;static&quot;</code>, we&rsquo;ll add <code>data-bs-popper=&quot;static&quot;</code> via JavaScript to their associated <code>.dropdown-menu</code>. When dropdowns are in our navbars, their menus will have <code>data-bs-popper=&quot;none&quot;</code> added. This separates two different positioning libraries, ours and Poppers, and ensures all behaviors are supported. You can see <a href="https://getbootstrap.com/docs/5.0/components/dropdowns/#alignment-options">all the options in a new example in our docs</a>. We updated our CSS selectors to use these new data attributes, too.</p>
 <p>In addition, we&rsquo;ve removed the initial <code>margin</code>s from dropdowns and popovers, instead of relying on Popper&rsquo;s offsets. These also conflicted with the default styling for elements positioned by Popper.js. Relatedly, there was a bug in how popover arrows were aligned that has now been resolved.</p>
 <h2 id="color-utility-docs">Color utility docs</h2>
-<p><a href="https://getbootstrap.com/docs/5.0/utilities/colors/"><img src="/assets/img/2021/02/bootstrap-v5b2-sass-docs.png" alt="Sass docs screenshot"></a></p>
+<p><a href="https://getbootstrap.com/docs/5.0/utilities/colors/"><img src="/assets/img/2021/02/bootstrap-v5b2-sass-docs.png" class="d-block img-fluid mb-2 rounded border" alt="Sass docs screenshot" loading="lazy" width="1680" height="1020">
+</a></p>
 <p>We&rsquo;ve overhauled our color utility documentation, separating the text <code>color</code> classes from our <code>background-color</code> ones. We&rsquo;ve also made extensive use of our <code>scss-docs</code> shortcode to include tons more code snippets in our docs.</p>
 <ul>
 <li><a href="https://getbootstrap.com/docs/5.0/utilities/colors/">Text color utilities</a> remain on their existing page.</li>
