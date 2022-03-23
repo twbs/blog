@@ -3,6 +3,9 @@ author: mdo
 date: "2020-06-16T11:00:00Z"
 title: Bootstrap 5 alpha!
 video: 3GwjfUFyY6M
+keywords:
+  - bootstrap
+  - release
 ---
 
 [**Bootstrap 5's very first alpha has arrived!**](https://v5.getbootstrap.com) We've been working hard for several months to refine the work we started in v4, and while we're feeling great about our progress, there's still even more to do.

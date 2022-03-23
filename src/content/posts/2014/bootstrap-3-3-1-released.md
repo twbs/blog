@@ -3,6 +3,9 @@ author: mdo
 date: "2014-11-12T00:00:00Z"
 title: Bootstrap 3.3.1 released
 video: ydd9Dn3bJlI
+keywords:
+  - bootstrap
+  - release
 ---
 
 Say hello to Bootstrap 3.3.1. As one of our fastest follow up releases, the changelog is focused around a small set of bug fixes for our CSS and JS, loads of accessibility improvements, and several documentation improvements.

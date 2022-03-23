@@ -3,6 +3,9 @@ author: mdo
 date: "2020-06-26T21:30:00Z"
 title: Bootstrap Icons Alpha 5
 video: HgzGwKwLmgM
+keywords:
+  - icons
+  - release
 ---
 
 Today we're shipping our fifth and final alpha release of [Bootstrap Icons](https://icons.getbootstrap.com). After today's alpha release, we'll be moving onto final touch ups of existing icons, closing out some more requests, and buttoning things up for a stable v1 release. Stay tuned!

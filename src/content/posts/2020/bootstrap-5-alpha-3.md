@@ -3,6 +3,9 @@ author: mdo
 date: "2020-11-11T11:00:00Z"
 title: Bootstrap 5 Alpha 3
 video: god7hAPv8f0
+keywords:
+  - bootstrap
+  - release
 ---
 
 Our third alpha release has landed with tons of updates to our components, utilities, docs, forms, JavaScript, and more. This is a larger alpha release for us and sets us up for our first beta where we'll introduce some final breaking changes and features.

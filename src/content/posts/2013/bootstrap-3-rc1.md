@@ -3,6 +3,9 @@ author: mdo
 date: "2013-07-27T00:00:00Z"
 title: Bootstrap 3 RC1
 video: uB1D9wWxd2w
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're releasing the first of at least two release candidates for Bootstrap 3, and along with it a slew of updates to the project and community. Buckle up.

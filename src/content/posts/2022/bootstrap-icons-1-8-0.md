@@ -3,6 +3,9 @@ author: mdo
 date: "2022-01-31T00:00:00Z"
 title: Bootstrap Icons v1.8.0
 video: HhZaHf8RP6g
+keywords:
+  - icons
+  - release
 ---
 
 [Bootstrap Icons v1.8.0](https://icons.getbootstrap.com) is here with over 140 new icons, including dozens of new heart icons ready for Valentine's Day and dozens of filetype icons. We're now at almost 1,700 icons and is once again our second largest release. Keep reading to see what's new.

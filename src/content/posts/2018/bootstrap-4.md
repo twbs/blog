@@ -3,6 +3,9 @@ author: mdo
 date: "2018-01-18T00:00:00Z"
 title: Bootstrap 4
 video: VcjzHMhBtf0
+keywords:
+  - bootstrap
+  - release
 ---
 
 It's literally taken us years to do it, but Bootstrap 4 has finally arrived! Words cannot begin to describe the elation the entire team and I have for this release, but I'll do my best. Thank you to everyone, especially to the team, and to everyone who's contributed code in a pull request or opened an issue. **Thank you.**

@@ -3,6 +3,9 @@ author: mdo
 date: "2020-12-11T21:30:00Z"
 title: Bootstrap Icons v1.2.0
 video: rY0WxgSXdEE
+keywords:
+  - icons
+  - release
 ---
 
 Our latest Bootstrap Icons release includes dozens of new icons, redesigned documentation, and the most highly requested new feature—icon fonts!

@@ -2,6 +2,9 @@
 author: mdo
 date: "2013-02-07T00:00:00Z"
 title: Bootstrap 2.3 released
+keywords:
+  - bootstrap
+  - release
 ---
 
 It has been far too long, friends. Nearly three months has gone by since we pushed out a new version of Bootstrap, but fret not, for that void comes to a most excellent halt tonight. After numerous delays, including a bout with the flu, we're happy to announce the release of [Bootstrap 2.3]({{< param "main" >}}/).

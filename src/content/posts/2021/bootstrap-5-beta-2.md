@@ -3,6 +3,9 @@ author: mdo
 date: "2021-02-10T11:00:00Z"
 title: Bootstrap 5 Beta 2
 video: pUj9frKY46E
+keywords:
+  - bootstrap
+  - release
 ---
 
 Our second beta has arrived for Bootstrap 5! We delayed its release to iron out some issues with third-party libraries and stabilize our major changes. We've also once again shipped some awesome updates to our documentation.

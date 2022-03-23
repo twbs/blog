@@ -3,6 +3,9 @@ author: mdo
 date: "2018-07-12T00:00:00Z"
 title: Bootstrap 4.1.2
 video: qHDy_b33cCQ
+keywords:
+  - bootstrap
+  - release
 ---
 
 We've been busy these last couple months since launching v4.1.1, but we're back with another bug fix and some sweeping changes to how we build and publish our docs after the issues stemming from our v4.1.x launches.

@@ -3,6 +3,9 @@ author: mdo
 date: "2017-10-19T00:00:00Z"
 title: Bootstrap 4 Beta 2
 video: MqnZ1RpmxBg
+keywords:
+  - bootstrap
+  - release
 ---
 
 Just over two months ago we shipped our first beta for Bootstrap 4, and now we're ready to share our second with you. We've improved customization, documentation, build tooling, and naming inconsistencies all while fixing hella bugs.

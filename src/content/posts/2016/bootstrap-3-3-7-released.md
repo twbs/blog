@@ -3,6 +3,9 @@ author: cvrebert
 date: "2016-07-25T00:00:00Z"
 title: Bootstrap 3.3.7 released
 video: Kr0tTbTbmVA
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap 3.3.7 is here! We've had over 220 commits and 80 closed issues and pull requests from nearly 30 contributors since our last release. Woohoo!

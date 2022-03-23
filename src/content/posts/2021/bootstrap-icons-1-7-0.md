@@ -3,6 +3,9 @@ author: mdo
 date: "2021-11-01T00:00:00Z"
 title: Bootstrap Icons v1.7.0
 video: CqZgd6-xQl8
+keywords:
+  - icons
+  - release
 ---
 
 [Bootstrap Icons v1.7.0](https://icons.getbootstrap.com) is here with 120 new and updated icons, taking us over 1,500 total icons for the project! It's the largest update since the initial release, so keep reading to see what's new.

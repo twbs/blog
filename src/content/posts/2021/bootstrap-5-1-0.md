@@ -3,6 +3,9 @@ author: mdo
 date: "2021-08-04T00:00:00Z"
 title: Bootstrap 5.1.0
 video: xBTqRd09y3E
+keywords:
+  - bootstrap
+  - release
 ---
 
 The first minor release of Bootstrap 5 is here! v5.1.0 has arrived and is packed with exciting new features and improvements. There's experimental support for CSS Grid, offcanvas in the navbar, a new placeholders component, horizontal collapse support, new helpers, new CSS variables in our utilities, refactored JavaScript, and more.

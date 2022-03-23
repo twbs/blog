@@ -2,6 +2,9 @@
 author: mdo
 date: "2012-04-24T00:00:00Z"
 title: Bootstrap 2.0.3 released
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're releasing [Bootstrap 2.0.3]({{< param "main" >}}/), another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the [2.0.3 milestone](https://github.com/twbs/bootstrap/issues?sort=created&direction=desc&state=closed&page=1&milestone=10) on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what's changed.

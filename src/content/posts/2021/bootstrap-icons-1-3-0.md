@@ -3,6 +3,9 @@ author: mdo
 date: "2021-01-07T21:30:00Z"
 title: Bootstrap Icons v1.3.0
 video: a01QQZyl-_I
+keywords:
+  - icons
+  - release
 ---
 
 Say hello to over 60 new icons with [Bootstrap Icons v1.3.0](https://icons.getbootstrap.com)! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!

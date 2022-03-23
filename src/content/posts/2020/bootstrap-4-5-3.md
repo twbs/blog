@@ -3,6 +3,9 @@ author: mdo
 date: "2020-10-13T00:00:00Z"
 title: Bootstrap 4.5.3
 video: Y3ywicffOj4
+keywords:
+  - bootstrap
+  - release
 ---
 
 We've updated Bootstrap 4 with a new patch release to fix some bugs, backport some iterative changes from v5, and more. Enjoy!

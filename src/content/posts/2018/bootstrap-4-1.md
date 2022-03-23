@@ -3,6 +3,9 @@ author: mdo
 date: "2018-04-09T00:00:00Z"
 title: Bootstrap 4.1
 video: 3wxyN3z9PL4
+keywords:
+  - bootstrap
+  - release
 ---
 
 Two months ago we shipped the [first major release of Bootstrap 4]({{< relref "/posts/2018/bootstrap-4" >}}) and we're thrilled y'all love the latest release and [our brand new themes]({{< relref "/posts/2018/new-bootstrap-themes" >}}) so much. Today we're shipping our first minor release, v4.1! This release comes later than expected and some of the fixes we intended, but there's still a boatload of fixes, docs updates, build tool changes, and even a few small new features.
