@@ -15,7 +15,16 @@
   "MD013": false,
   "MD024": false,
   "MD026": false,
-  "MD033": false,
+  "MD033": {
+    "allowed_elements": [
+      "a",
+      "br",
+      "hr",
+      "kbd",
+      "script",
+      "span"
+    ]
+  },
   "MD035": {
     "style": "---"
   },

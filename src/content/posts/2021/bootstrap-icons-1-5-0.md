@@ -12,7 +12,7 @@ keywords:
 
 ## 45 new icons
 
-<img src="/assets/img/2021/05/v150-new-icons.png" alt="New icons in v1.5.0" style="border: 1px solid rgba(0,0,0,.15);">
+![New icons in v1.5.0](/assets/img/2021/05/v150-new-icons.png)
 
 The primary goal with this release was to round out some of the most requested icons to date. Here's the lowdown:
 
