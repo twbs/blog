@@ -3,6 +3,9 @@ author: mdo
 date: "2013-08-19T00:00:00Z"
 title: Bootstrap 3 released
 video: 0hiUuL5uTKc
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today, on the two year anniversary of releasing Bootstrap to the world, we're shipping Bootstrap 3.0. It's been a crazy long ride to say the least and we're stoked to finally have this out in the wild. Thanks to everyone who's tested our RCs (er, betas), reported bugs, and contributed code. We couldn't have done it without you beautiful nerds.

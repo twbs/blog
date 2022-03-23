@@ -3,6 +3,9 @@ author: mdo
 date: "2020-12-07T11:00:00Z"
 title: Bootstrap 5 Beta 1
 video: y2bVIBwpCTA
+keywords:
+  - bootstrap
+  - release
 ---
 
 With our first beta release of Bootstrap 5, we're calling it on new features and breaking changes. From here on out, we're only fine-tuning features, bugs, and documentation on our way to a stable v5 release. Woohoo!

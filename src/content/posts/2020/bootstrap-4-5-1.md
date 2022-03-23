@@ -3,6 +3,9 @@ author: mdo
 date: "2020-08-04T00:00:00Z"
 title: Bootstrap 4.5.1
 video: iIpfWORQWhU
+keywords:
+  - bootstrap
+  - release
 ---
 
 We're shipping our latest patch release today to fix a handful of bugs in Bootstrap 4. While our focus remains on v5's second alpha release (coming in the next couple weeks), we want to keep v4 as stable and reliable as possible.

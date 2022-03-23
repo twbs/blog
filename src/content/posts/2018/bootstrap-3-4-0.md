@@ -3,6 +3,9 @@ author: mdo
 date: "2018-12-13T00:00:00Z"
 title: Bootstrap 3.4.0
 video: 8WEtxJ4-sh4
+keywords:
+  - bootstrap
+  - release
 ---
 
 That's not a typo—today we're shipping Bootstrap 3.4.0, a long overdue update to address some quality of life issues, XSS fixes, and build tooling updates to make it easier for us, and you, to develop.

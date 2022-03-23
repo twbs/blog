@@ -3,6 +3,9 @@ author: mdo
 date: "2013-12-05T00:00:00Z"
 title: Bootstrap 3.0.3 released
 video: xy4FXhkm6Nw
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're shipping another patch release, v3.0.3, to fix a few dozen bugs and improve our documentation.

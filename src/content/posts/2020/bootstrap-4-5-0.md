@@ -3,6 +3,9 @@ author: mdo
 date: "2020-05-12T00:00:00Z"
 title: Bootstrap 4.5.0
 video: tNG62fULYgI
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap v4.5.0 has landed with dozens of bug fixes, some small new features, and some changes to our development. Originally planned as a v4.4.2 patch release, we've bumped this to a minor release on account of our new features that help bridge the gap between v4 and our upcoming v5.

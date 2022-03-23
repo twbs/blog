@@ -5,6 +5,9 @@ aliases:
   - /2021/01/19/bootstrap-icons-4.6.0/
 title: Bootstrap v4.6.0
 video: LuN6gs0AJls
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.

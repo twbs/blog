@@ -2,6 +2,9 @@
 author: mdo
 date: "2020-12-12T21:30:00Z"
 title: Bootstrap Icons v1.2.1
+keywords:
+  - icons
+  - release
 ---
 
 Just a quick release to fix a typo in our `package.json` for including the font files in our published package.

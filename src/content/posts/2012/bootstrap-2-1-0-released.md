@@ -2,6 +2,9 @@
 author: mdo
 date: "2012-08-20T00:00:00Z"
 title: Bootstrap 2.1.0 released
+keywords:
+  - bootstrap
+  - release
 ---
 
 After a smaller 2.0.4 release, we've got another huge update that resolves tons of bugs, improves the flexibility and durability of our code, and introduces a few awesome new features. It's a big release wrapped in a brand new set of docs and we couldn't be more stoked to launch it.

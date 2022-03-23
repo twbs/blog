@@ -3,6 +3,9 @@ author: mdo
 date: "2020-03-19T00:00:00Z"
 title: Bootstrap Icons Alpha 3
 video: kijpcUv-b8M
+keywords:
+  - icons
+  - release
 ---
 
 While we continue to work on Bootstrap 5, I've been jamming away on the Bootstrap Icons library, continuing to create as many icons as time allows. Today marks the third alpha, and massive update to the project. We've officially crossed 500 icons!

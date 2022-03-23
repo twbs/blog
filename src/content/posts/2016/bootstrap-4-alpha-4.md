@@ -3,6 +3,9 @@ author: mdo
 date: "2016-09-05T00:00:00Z"
 title: Bootstrap 4 Alpha 4
 video: p0OX_8YvFxA
+keywords:
+  - bootstrap
+  - release
 ---
 
 [Alpha 4 is here](https://v4-alpha.getbootstrap.com/) to address those pesky build and package errors, a few CSS bugs, and some documentation inconsistencies we introduced in our last release.

@@ -3,6 +3,9 @@ author: mdo
 date: "2014-10-29T00:00:00Z"
 title: Bootstrap 3.3.0 released
 video: Zr9R7hN1YSs
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap 3.3.0 is here! This release has been all about bug fixes, accessibility improvements, and documentation updates. We've had over 700 commits from 28 contributors since our last release. Woohoo!

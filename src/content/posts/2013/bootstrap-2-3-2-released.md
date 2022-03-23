@@ -2,6 +2,9 @@
 author: mdo
 date: "2013-05-17T00:00:00Z"
 title: Bootstrap 2.3.2 released
+keywords:
+  - bootstrap
+  - release
 ---
 
 This morning we pushed out a 2.3.2 patch release to address a single bug (<a href="https://github.com/twbs/bootstrap/issues/7118" rel="noopener" target="_blank">see #7118</a>) related to dropdowns and command/control clicking links in Firefox.

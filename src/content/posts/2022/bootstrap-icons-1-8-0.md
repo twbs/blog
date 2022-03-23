@@ -3,23 +3,26 @@ author: mdo
 date: "2022-01-31T00:00:00Z"
 title: Bootstrap Icons v1.8.0
 video: HhZaHf8RP6g
+keywords:
+  - icons
+  - release
 ---
 
-[Bootstrap Icons v1.8.0](https://icons.getbootstrap.com) is here with over 140 new icons, including dozens of new heart icons ready for Valentine's Day and dozens of filetype icons. We're not at almost 1,700 icons and is once again our second largest release. Keep reading to see what's new.
+[Bootstrap Icons v1.8.0](https://icons.getbootstrap.com) is here with over 140 new icons, including dozens of new heart icons ready for Valentine's Day and dozens of filetype icons. We're now at almost 1,700 icons and is once again our second largest release. Keep reading to see what's new.
 
 ## 140+ new icons
 
 Perfect for Valentine's Day or any other time you need to show a little heart, there are dozens of icons to choose from.
 
-<img src="/assets/img/2022/01/icons-v180-love.png" alt="New love icons in v1.8.0" style="border: 1px solid rgba(0,0,0,.15);">
+![New love icons in v1.8.0](/assets/img/2022/01/icons-v180-love.png)
 
 Want to visually show the extensions of your files? There are tons of new options for programming languages, audio and video, images, and more.
 
-<img src="/assets/img/2022/01/icons-v180-filetypes.png" alt="New filetype icons in v1.8.0" style="border: 1px solid rgba(0,0,0,.15);">
+![New filetype icons in v1.8.0](/assets/img/2022/01/icons-v180-filetypes.png)
 
 Elsewhere we've expanded a number of other categories of icons. There are some new medical icons (more are planned), lots of new clipboard icons, additional tools, and more.
 
-<img src="/assets/img/2022/01/icons-v180-misc.png" alt="Miscellaneous new icons in v1.8.0" style="border: 1px solid rgba(0,0,0,.15);">
+![Miscellaneous new icons in v1.8.0](/assets/img/2022/01/icons-v180-misc.png)
 
 *Looking for more new icons? Head to the [issue tracker](https://github.com/twbs/icons/issues) to check for open requests or submit a new one.*
 

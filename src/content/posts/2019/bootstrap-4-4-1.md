@@ -3,6 +3,9 @@ author: mdo
 date: "2019-11-28T00:00:00Z"
 title: Bootstrap 4.4.1
 video: 2HuiH-0R6a0
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're shipping [Bootstrap v4.4.1](https://github.com/twbs/bootstrap/releases/tag/v4.4.1)!

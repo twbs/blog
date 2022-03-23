@@ -3,6 +3,9 @@ author: mdo
 date: "2021-06-22T00:00:00Z"
 title: Bootstrap 5.0.2
 video: 6S3ISlvlEbs
+keywords:
+  - bootstrap
+  - release
 ---
 
 Our latest patch release has arrived to improve our JavaScript plugins, address the `/` deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.

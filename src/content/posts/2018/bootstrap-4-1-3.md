@@ -3,6 +3,9 @@ author: mdo
 date: "2018-07-24T00:00:00Z"
 title: Bootstrap 4.1.3
 video: LqB9lhHqmsE
+keywords:
+  - bootstrap
+  - release
 ---
 
 Hot on the heels of v4.1.2, we're shipping another patch release to address an issue with our browserslist config, fix some CSS bugs, make JavaScript plugins UMD ready, and improve form control rendering. Up next will be v4.2, our second minor release where we add some new features.

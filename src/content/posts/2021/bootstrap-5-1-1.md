@@ -3,6 +3,9 @@ author: mdo
 date: "2021-09-07T00:00:00Z"
 title: Bootstrap 5.1.1
 video: bRt5z880CFY
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap v5.1.1 has landed with a handful of bug fixes and documentation improvements. Following this release, we'll be shipping another bugfix and docs update before moving onto additional new features. Keep reading for the highlights.

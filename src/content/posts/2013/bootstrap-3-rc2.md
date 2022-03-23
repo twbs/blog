@@ -3,6 +3,9 @@ author: mdo
 date: "2013-08-13T00:00:00Z"
 title: Bootstrap 3 RC2
 video: wiyYozeOoKs
+keywords:
+  - bootstrap
+  - release
 ---
 
 We've just cut a new release for Bootstrap 3, RC2. It's a big release as lots has changed, but that should all be for the better. Thanks everyone who's given feedback and submitted pull requests thus far—we're getting super close!

@@ -3,6 +3,9 @@ author: mdo
 date: "2016-07-27T00:00:00Z"
 title: Bootstrap 4 Alpha 3
 video: xFrGuyw1V8s
+keywords:
+  - bootstrap
+  - release
 ---
 
 Alpha 3 has landed! We have an overhauled grid, updated form controls, a new font stack, tons of bug fixes, and more. It's been several months since our last update, but the size of this update should help get us back on track.
@@ -27,7 +30,7 @@ These changes are available in our standard grid, as well as our flexbox grid. M
 
 ## Flexbox
 
-<img alt="Flexbox auto-layout" src="/assets/img/2016/07/flex-cols.png" style="padding: 4px; border: 1px solid #eee;">
+![Flexbox auto-layout](/assets/img/2016/07/flex-cols.png)
 
 Flexbox mode has been updated across the board in Alpha 3, starting from the grid system (it uses the same variable and the updated Sass mixins) and moving through our utilities and components.
 
@@ -39,7 +42,7 @@ Flexbox mode has been updated across the board in Alpha 3, starting from the gri
 
 ## Forms
 
-<img alt="Form validation states" src="/assets/img/2016/07/forms.png" style="padding: 4px; border: 1px solid #eee;">
+![Form validation states](/assets/img/2016/07/forms.png)
 
 Forms saw a ton of activity early on in Alpha 3's development. Documentation, class names, layout options, and validation styles have all been drastically improved.
 

@@ -2,6 +2,9 @@
 author: mdo
 date: "2012-10-29T00:00:00Z"
 title: Bootstrap 2.2.0 released
+keywords:
+  - bootstrap
+  - release
 ---
 
 Aww yeah, our first release since leaving Twitter is here with Bootstrap 2.2.0! We originally planned to release this as 2.1.2, but given the timing and scope we're bumping the version. Included in this release are dozens of bug fixes, documentation enhancements, and a few new and improved features.

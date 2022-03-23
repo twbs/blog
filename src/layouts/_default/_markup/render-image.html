@@ -1,0 +1,4 @@
+{{- $img := imageConfig (add "/src/static" (.Destination | safeURL)) -}}
+{{- $classes := "d-block img-fluid mb-2 rounded border" -}}
+
+<img src="{{ .Destination | safeURL }}" class="{{ $classes }}" alt="{{ .Text }}" loading="lazy" width="{{ $img.Width }}" height="{{ $img.Height }}">

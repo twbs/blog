@@ -3,6 +3,9 @@ author: mdo
 date: "2019-02-11T00:00:00Z"
 title: Bootstrap 4.3.0
 video: htgr3pvBr-I
+keywords:
+  - bootstrap
+  - release
 ---
 
 Bootstrap v4.3 has landed with over 120 combined closed issues and merged pull requests. This release brings improvements to our utilities, some prep work for moving on to v5's development, and the standard bug fixes and documentation updates.

@@ -3,6 +3,9 @@ author: mdo
 date: "2015-08-19T00:00:00Z"
 title: Bootstrap 4 alpha
 video: 4PdU6migsqQ
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today is a special day for Bootstrap. Not only is it our fourth birthday, but after a year of development, we're finally shipping the first alpha release of Bootstrap 4. Hell yeah!

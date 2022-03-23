@@ -3,6 +3,9 @@ author: mdo
 date: "2020-08-28T21:30:00Z"
 title: Bootstrap Icons v1.0.0
 video: azdwsXLmrHE
+keywords:
+  - icons
+  - release
 ---
 
 After five alphas over the last nine months, Bootstrap Icons has officially gone stable with our v1.0.0 release! We're now over 1,100 icons and are on track to add hundreds more in our upcoming minor releases. This has been a labor of love and I'm thrilled to ship this latest update.

@@ -3,6 +3,9 @@ author: mdo
 date: "2020-12-23T21:30:00Z"
 title: Bootstrap Icons v1.2.2
 video: hFDcoX7s6rE
+keywords:
+  - icons
+  - release
 ---
 
 We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.

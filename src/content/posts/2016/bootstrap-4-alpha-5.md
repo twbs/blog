@@ -3,6 +3,9 @@ author: mdo
 date: "2016-10-19T00:00:00Z"
 title: Bootstrap 4 Alpha 5
 video: MxGEVIvSFeY
+keywords:
+  - bootstrap
+  - release
 ---
 
 [Alpha 5 has arrived](https://v4-alpha.getbootstrap.com/) just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we're closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.

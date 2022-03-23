@@ -3,6 +3,9 @@ author: mdo
 date: "2017-01-06T00:00:00Z"
 title: Bootstrap 4 Alpha 6
 video: V44HiAX91Hs
+keywords:
+  - bootstrap
+  - release
 ---
 
 [Alpha 6 has landed](https://v4-alpha.getbootstrap.com/), and it's one of our biggest ships to date. We've rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.

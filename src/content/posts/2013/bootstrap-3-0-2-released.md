@@ -3,6 +3,9 @@ author: mdo
 date: "2013-11-06T00:00:00Z"
 title: Bootstrap 3.0.2 released
 video: -eSN8Cwit_s
+keywords:
+  - bootstrap
+  - release
 ---
 
 Today we're shipping a quick v3.0.2 patch to fix incorrect version numbers in our JavaScript files, restore missing grid classes, and make a few improvements to our documentation.
