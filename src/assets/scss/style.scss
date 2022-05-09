@@ -127,6 +127,10 @@ tbody tr:nth-child(odd) th {
   }
 }
 
+.bd-gutter {
+  --bs-gutter-x: #{$bd-gutter-x};
+}
+
 
 // Posts and pages
 //
