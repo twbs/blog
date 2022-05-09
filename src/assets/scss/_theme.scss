@@ -27,12 +27,12 @@ a {
 
     &:not(.active):hover,
     &:not(.active):focus {
-      background-color: rgba($bd-purple-bright, .05);
+      background-color: rgba(var(--bd-violet-rgb), .05);
     }
 
     &.active {
       color: var(--bs-body-color);
-      background-color: rgba($bd-purple-bright, .1);
+      background-color: rgba(var(--bd-violet-rgb), .1);
     }
   }
 }
@@ -59,7 +59,7 @@ a {
   @media (min-width: 768px) {
     position: -webkit-sticky; // stylelint-disable-line value-no-vendor-prefix
     position: sticky;
-    top: 0;
+    top: 4rem;
   }
 }
 
