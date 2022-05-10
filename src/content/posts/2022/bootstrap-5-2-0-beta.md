@@ -129,29 +129,29 @@ Your custom Bootstrap CSS builds should now look like this with a separate maps 
 
 We're continuing to invest in our helpers and utilities to make it easier to quickly build and modify custom components.
 
-- Added new `.text-bg-{color}` helpers. Instead of setting individual `.text-*` and `.bg-*` utilities, you can now use [the `.text-bg-*` helpers](https://getbootstrap.com/docs/5.2/helpers/color-background) to set a `background-color` with contrasting foreground `color`.
+- Added new `.text-bg-{color}` helpers. Instead of setting individual `.text-*` and `.bg-*` utilities, you can now use [the `.text-bg-*` helpers](https://getbootstrap.com/docs/5.2/helpers/color-background/) to set a `background-color` with contrasting foreground `color`.
 
-- Expanded [`font-weight` utilities](https://getbootstrap.com/docs/5.2/utilities/text#font-weight-and-italics) to include `.fw-semibold` for semibold fonts.
+- Expanded [`font-weight` utilities](https://getbootstrap.com/docs/5.2/utilities/text/#font-weight-and-italics) to include `.fw-semibold` for semibold fonts.
 
-- Expanded [`border-radius` utilities](https://getbootstrap.com/docs/5.2/utilities/borders#sizes) to include two new sizes, `.rounded-4` and `.rounded-5`, for more options.
+- Expanded [`border-radius` utilities](https://getbootstrap.com/docs/5.2/utilities/borders/#sizes) to include two new sizes, `.rounded-4` and `.rounded-5`, for more options.
 
 Expect more improvements here as v5's development continues.
 
 ## Responsive offcanvas
 
-Our Offcanvas component now has [responsive variations](https://getbootstrap.com/docs/5.2/components/offcanvas#responsive). The original `.offcanvas` class remains unchanged—it hides content across all viewports. To make it responsive, change that `.offcanvas` class to any `.offcanvas-{sm|md|lg|xl|xxl}` class.
+Our Offcanvas component now has [responsive variations](https://getbootstrap.com/docs/5.2/components/offcanvas/#responsive). The original `.offcanvas` class remains unchanged—it hides content across all viewports. To make it responsive, change that `.offcanvas` class to any `.offcanvas-{sm|md|lg|xl|xxl}` class.
 
 ## And tons more!
 
 - **Introduced new `$enable-container-classes` option. —** Now when opting into the experimental CSS Grid layout, `.container-*` classes will still be compiled, unless this option is set to `false`. Containers also now keep their gutter values.
 
-- **Thicker table dividers are now opt-in. —** We've removed the thicker and more difficult to override border between table groups and moved it to an optional class you can apply, `.table-group-divider`. [See the table docs for an example.](/content/tables#table-group-dividers})
+- **Thicker table dividers are now opt-in. —** We've removed the thicker and more difficult to override border between table groups and moved it to an optional class you can apply, `.table-group-divider`. [See the table docs for an example.](https://getbootstrap.com/docs/5.2/content/tables/#table-group-dividers)
 
 - **[Scrollspy has been rewritten](https://github.com/twbs/bootstrap/pull/33421) to use the Intersection Observer API**, which means you no longer need relative parent wrappers, deprecates `offset` config, and more. Look for your Scrollspy implementations to be more accurate and consistent in their nav highlighting.
 
 - Added `.form-check-reverse` modifier to flip the order of labels and associated checkboxes/radios.
 
-- Added [striped columns](https://getbootstrap.com/docs/5.2/content/tables#striped-columns) support to tables via the new `.table-striped-columns` class.
+- Added [striped columns](https://getbootstrap.com/docs/5.2/content/tables/#striped-columns) support to tables via the new `.table-striped-columns` class.
 
 For a complete list of changes, [see the v5.2.0 project on GitHub](https://github.com/twbs/bootstrap/projects/32).
 
