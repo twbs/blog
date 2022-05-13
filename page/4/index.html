@@ -211,6 +211,90 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2021/03/23/bootstrap-5-beta-3/" class="text-decoration-none">
+            Bootstrap 5 Beta 3
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="Tue, 23 Mar 2021 09:30:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    March 23, 2021
+  </span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/kldVOhKe4rg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Our final beta for Bootstrap 5 has come with some amazing new changes (including a new component!), documentation updates, and more. We&rsquo;ve also fixed some important bugs since our last release, in particular with our dependencies. Next up is our stable release!</p>
+<p>Keep reading for a recap of what&rsquo;s new in Beta 3.</p>
+<h2 id="new-offcanvas-component">New offcanvas component</h2>
+<p><a href="https://getbootstrap.com/docs/5.0/components/offcanvas/"><img src="/assets/img/2021/03/bootstrap-docs-offcanvas.png" class="d-block img-fluid mb-2 rounded border" alt="Offcanvas example" loading="lazy" width="1614" height="896">
+</a></p>
+<p>Thanks to our newest team member, <a href="https://github.com/GeoSot">@GeoSot</a>, we have a brand new component to unveil in Beta 3—introducing offcanvas! Built on and sharing fundamental pieces of our modals, the offcanvas comes with configurable backdrop, body scroll, and placement. Offcanvas components can be placed on the left, right, and bottom of the viewport. Configure these options with <code>data</code> attributes or via the JavaScript APIs.</p>
+<p>We&rsquo;re excited about iterating on the new offcanvas component and building additional examples and demos with you. Please share any feedback on an issue or pull request as you start to use it in your projects.</p>
+<h2 id="new-and-refreshed-examples">New and refreshed examples</h2>
+<p><a href="https://getbootstrap.com/docs/5.0/examples/"><img src="/assets/img/2021/03/bootstrap-new-examples.png" class="d-block img-fluid mb-2 rounded border" alt="New examples" loading="lazy" width="3360" height="2100">
+</a></p>
+<p>Our examples have been updated in Beta 3 as well. We&rsquo;ve added four brand new snippet-heavy examples and refreshed a few others. New with this release are several snippets for <a href="https://getbootstrap.com/docs/5.0/examples/headers/">headers</a>, <a href="https://getbootstrap.com/docs/5.0/examples/heroes/">heroes</a>, <a href="https://getbootstrap.com/docs/5.0/examples/features/">features</a>, and <a href="https://getbootstrap.com/docs/5.0/examples/sidebars/">sidebars</a>. These new snippets will continue to grow with new additions over time, showing just how fun and easy it is to build with Bootstrap.</p>
+<p><a href="https://getbootstrap.com/docs/5.0/examples/starter-template/"><img src="/assets/img/2021/03/starter-template.png" class="d-block img-fluid mb-2 rounded border" alt="New starter example" loading="lazy" width="3584" height="2240">
+</a></p>
+<p>We&rsquo;ve also updated our <a href="https://getbootstrap.com/docs/5.0/examples/starter-template/">starter template</a> with a refreshed, simplified design and more resource links. We&rsquo;ll also incorporate this new look and feel into our <a href="https://github.com/twbs/bootstrap-npm-starter">npm starter project</a> project, and eventually add a Parcel starter project.</p>
+<p>Lastly, we&rsquo;ve updated our <a href="https://getbootstrap.com/docs/5.0/examples/pricing/">pricing</a>, <a href="https://getbootstrap.com/docs/5.0/examples/checkout/">checkout</a>, and <a href="https://getbootstrap.com/docs/5.0/examples/sign-in/">sign-in</a> examples. We&rsquo;ve also added a new <a href="https://getbootstrap.com/docs/5.0/examples/jumbotron/">jumbotron example</a> to show you how to create your own jumbotron since we removed it in Bootstrap 5.</p>
+<h2 id="improved-sass-docs">Improved Sass docs</h2>
+<p><a href="https://getbootstrap.com/docs/5.0/components/alerts/#sass"><img src="/assets/img/2021/03/bootstrap-docs-sass.png" class="d-block img-fluid mb-2 rounded border" alt="New Sass docs" loading="lazy" width="3584" height="2240">
+</a></p>
+<p>Since our last release, we&rsquo;ve added a new section to nearly every component and utility documentation page for the <a href="https://getbootstrap.com/docs/5.0/components/alerts/#sass">source Sass code</a>. Where appropriate, we now list Sass variables, maps, loops, and animation keyframes. These are directly linked from our source files, so whenever we ship new code, they&rsquo;ll automatically be up-to-date.</p>
+<h2 id="and-more">And more!</h2>
+<p>Some highlights from the rest of our documentation updates and bugfixes include:</p>
+<ul>
+<li>Added <a href="https://getbootstrap.com/docs/5.0/components/list-group/#numbered">new <code>.list-group-numbered</code> variation</a> to list groups that uses pseudo-elements for numbering list group items.</li>
+<li>Removed explicit focus state suppression in Reboot</li>
+<li>Improved carousel swipe behaviors for RTL</li>
+<li>Updated accordions to improve transitions and borders when animating</li>
+<li>Updated Sass customization docs to show how to properly override default variables</li>
+<li>Fixed tooltips not appearing after rapid focus in and out</li>
+<li>Fixed dropdown events not bubbling and forms inside dropdowns not propagating</li>
+<li>Removed flip option from dropdowns</li>
+<li>Disabled select now render consistently in Chrome</li>
+<li>Button elements now grow in <code>.nav-fill</code> and <code>.nav-justified</code></li>
+<li>JavaScript plugin constructors now accept CSS selectors</li>
+<li>De-duped the <code>.border-0</code> utility</li>
+<li>Fixed event handler removal in dropdown/carousel dispose</li>
+<li>Added <a href="https://getbootstrap.com/docs/5.0/getting-started/parcel/">new Parcel guide</a> to the docs</li>
+<li>Added input focus blur Sass variable</li>
+<li>Updated <code>.browserslistrc</code> to drop Android and add Safari/iOS 12 as the new minimum version (completing our two latest major releases guideline for supported browsers).</li>
+</ul>
+<p>Head to GitHub for a complete <a href="https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F34">list of issues and pull requests in v5 Beta 3</a>. You can also review the <a href="https://github.com/twbs/bootstrap/projects/34">v5 beta 3 project board</a>, too.</p>
+<p>A huge thanks to another new team member, <a href="https://github.com/rohit2sharma95">@rohit2sharma95</a>, for the dozens of pull requests, bug fixes, and code reviews for our JavaScript plugins.</p>
+<h2 id="get-the-release">Get the release</h2>
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> to explore the new release.</strong> We&rsquo;ve also published this updated as a pre-release to npm, so if you&rsquo;re feeling bold or are curious about what&rsquo;s new, you can pull the latest in that way.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@next
+</span></span></code></pre></div><h2 id="whats-next">What&rsquo;s next</h2>
+<p>Looking ahead, we&rsquo;re eyeing our first stable release for Bootstrap 5! But we also have some other releases on the horizon:</p>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/projects/27">Bootstrap v5.0.0</a></li>
+<li><a href="https://github.com/twbs/bootstrap/projects/35">Bootstrap v4.6.1</a></li>
+<li><a href="https://icons.getbootstrap.com">Bootstrap Icons</a> v1.4.1 (largely some bug fixes and enhancements)</li>
+<li><a href="https://github.com/twbs/bootstrap-npm-starter">Bootstrap npm starter</a> v1.5.0 (with updated dependencies, new page, and more)</li>
+</ul>
+<p>As mentioned in our last release, after v5 goes stable, we&rsquo;ll look to add some of the awesome features we&rsquo;ve built up in our backlog. Check out the <a href="https://github.com/twbs/bootstrap/projects/31">v5.1 project</a> for an idea of what&rsquo;s being planned. Feel free to open issues or pull requests if you have any additional ideas!</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2021/02/22/bootstrap-icons-1-4-0/" class="text-decoration-none">
             Bootstrap Icons v1.4.0
           </a>
@@ -220,7 +304,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="Mon, 22 Feb 2021 21:30:00 &#43;0000">
@@ -233,7 +317,7 @@
   </span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/A-LMScK5SwU?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/A-LMScK5SwU?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -608,65 +692,6 @@
 </span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.3.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.3.0/bootstrap-icons-1.3.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
 <h2 id="figma">Figma</h2>
 <p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1">icons from Figma</a>.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2020/12/23/bootstrap-icons-1-2-2/" class="text-decoration-none">
-            Bootstrap Icons v1.2.2
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="Wed, 23 Dec 2020 21:30:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    December 23, 2020
-  </span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/hFDcoX7s6rE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.</p>
-<p>We also snuck in a few bug fixes to existing icons, docs, and some slight visual improvements to some existing icons. Get the details below!</p>
-<h2 id="font-files">Font files</h2>
-<p>Our icons fonts are (fingers crossed!) free of visual glitches that made so many unusable across Windows devices. For some reason macOS and iOS had no problems, but Windows butchered the font files. Turns out this was a result of inconsistent <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule">fill-rule</a> values in our icons, and some font formats and renderers only support a <code>non-zero</code> fill rule. We revisited nearly every icon and got it all sorted out.</p>
-<p><img src="/assets/img/2020/12/icons-font-index.png" class="d-block img-fluid mb-2 rounded border" alt="Icon fonts" loading="lazy" width="1444" height="960">
-</p>
-<p>Massive shoutout to the <a href="https://www.figma.com/community/plugin/771155994770327940">Figma Fill Rule Editor plugin</a> that made this relatively quick and painless to update. <em>You can even see in the plugin&rsquo;s image below how this rule affects rendering of SVGs.</em></p>
-<p><a href="https://www.figma.com/community/plugin/771155994770327940"><img src="/assets/img/2020/12/figma-fill-rule-editor.png" class="d-block img-fluid mb-2 rounded border" alt="Figma Fill Rule Editor plugin" loading="lazy" width="2048" height="1024">
-</a></p>
-<p><a href="https://github.com/twbs/icons/pull/552">Check out the PR</a> for what&rsquo;s changed under the hood.</p>
-<h2 id="updated-icons">Updated icons</h2>
-<p><img src="/assets/img/2020/12/icons-realigned.png" class="d-block img-fluid mb-2 rounded border" alt="Revised icons" loading="lazy" width="900" height="450">
-</p>
-<p>A few icons got touched up with the work for our font files to clean up paths and make them more visually pleasing.</p>
-<ul>
-<li>Locks are a little more legible—they’re taller and narrower.</li>
-<li>Laptops now have a half pixel gap between their base and screen, making them look a little sleeker.</li>
-<li>Shields are 1px taller now, with their inner icons now raised 1px as well. No reason to make them not take up the full viewBox.</li>
-<li>Stopwatch icons look more like actual stopwatches with separate start/stop and lap buttons.</li>
-<li>The bricks icon has its missing grout line restored.</li>
-<li>Renamed patch fill icons to fix typos in their file names (<code>fll</code> to <code>fill</code>).</li>
-</ul>
-<p>Have some other refinements we should consider? Open an issue to tell us about it.</p>
-<p>Last but not least, we ironed out some docs issues. Our navbar is fully functional and inline with the v5 beta site. We also added <a href="https://github.com/twbs/icons/pull/561">new aliases</a> for icon filtering on homepage.</p>
-<h2 id="install">Install</h2>
-<p>To get started, install via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
-</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.2.2">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.2.2/bootstrap-icons-1.2.2.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
-<h2 id="figma">Figma</h2>
-<p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1">icons from Figma</a>.</p>
 
       </div>
   </div>

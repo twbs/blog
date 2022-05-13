@@ -211,6 +211,65 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2020/12/23/bootstrap-icons-1-2-2/" class="text-decoration-none">
+            Bootstrap Icons v1.2.2
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="Wed, 23 Dec 2020 21:30:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    December 23, 2020
+  </span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/hFDcoX7s6rE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.</p>
+<p>We also snuck in a few bug fixes to existing icons, docs, and some slight visual improvements to some existing icons. Get the details below!</p>
+<h2 id="font-files">Font files</h2>
+<p>Our icons fonts are (fingers crossed!) free of visual glitches that made so many unusable across Windows devices. For some reason macOS and iOS had no problems, but Windows butchered the font files. Turns out this was a result of inconsistent <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule">fill-rule</a> values in our icons, and some font formats and renderers only support a <code>non-zero</code> fill rule. We revisited nearly every icon and got it all sorted out.</p>
+<p><img src="/assets/img/2020/12/icons-font-index.png" class="d-block img-fluid mb-2 rounded border" alt="Icon fonts" loading="lazy" width="1444" height="960">
+</p>
+<p>Massive shoutout to the <a href="https://www.figma.com/community/plugin/771155994770327940">Figma Fill Rule Editor plugin</a> that made this relatively quick and painless to update. <em>You can even see in the plugin&rsquo;s image below how this rule affects rendering of SVGs.</em></p>
+<p><a href="https://www.figma.com/community/plugin/771155994770327940"><img src="/assets/img/2020/12/figma-fill-rule-editor.png" class="d-block img-fluid mb-2 rounded border" alt="Figma Fill Rule Editor plugin" loading="lazy" width="2048" height="1024">
+</a></p>
+<p><a href="https://github.com/twbs/icons/pull/552">Check out the PR</a> for what&rsquo;s changed under the hood.</p>
+<h2 id="updated-icons">Updated icons</h2>
+<p><img src="/assets/img/2020/12/icons-realigned.png" class="d-block img-fluid mb-2 rounded border" alt="Revised icons" loading="lazy" width="900" height="450">
+</p>
+<p>A few icons got touched up with the work for our font files to clean up paths and make them more visually pleasing.</p>
+<ul>
+<li>Locks are a little more legible—they’re taller and narrower.</li>
+<li>Laptops now have a half pixel gap between their base and screen, making them look a little sleeker.</li>
+<li>Shields are 1px taller now, with their inner icons now raised 1px as well. No reason to make them not take up the full viewBox.</li>
+<li>Stopwatch icons look more like actual stopwatches with separate start/stop and lap buttons.</li>
+<li>The bricks icon has its missing grout line restored.</li>
+<li>Renamed patch fill icons to fix typos in their file names (<code>fll</code> to <code>fill</code>).</li>
+</ul>
+<p>Have some other refinements we should consider? Open an issue to tell us about it.</p>
+<p>Last but not least, we ironed out some docs issues. Our navbar is fully functional and inline with the v5 beta site. We also added <a href="https://github.com/twbs/icons/pull/561">new aliases</a> for icon filtering on homepage.</p>
+<h2 id="install">Install</h2>
+<p>To get started, install via npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
+</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.2.2">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.2.2/bootstrap-icons-1.2.2.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+<h2 id="figma">Figma</h2>
+<p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1">icons from Figma</a>.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2020/12/12/bootstrap-icons-1-2-1/" class="text-decoration-none">
             Bootstrap Icons v1.2.1
           </a>
@@ -220,7 +279,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="Sat, 12 Dec 2020 21:30:00 &#43;0000">
@@ -585,57 +644,6 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@next
 </span></span></code></pre></div><h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2020/10/28/bootstrap-icons-1-1-0/" class="text-decoration-none">
-            Bootstrap Icons v1.1.0
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="Wed, 28 Oct 2020 21:30:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    October 28, 2020
-  </span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/04854XqcfCY?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.</p>
-<h2 id="30-new-icons">30+ new icons</h2>
-<p>Here&rsquo;s a look at our file and emoji icons as of v1.1.0. New in this release for emojis are the wink and heart eyes, along with fill versions for the full set. In addition, we&rsquo;ve added icons for Word, Excel, PowerPoint, and a general bar chart file type.</p>
-<p><img src="/assets/img/2020/10/icons-emoji.png" class="d-block img-fluid mb-2 rounded border" alt="Emoji icons" loading="lazy" width="1560" height="540">
-</p>
-<p><img src="/assets/img/2020/10/icons-files-folders.png" class="d-block img-fluid mb-2 rounded border" alt="File and folder icons" loading="lazy" width="3070" height="1684">
-</p>
-<h2 id="changes">Changes</h2>
-<p>Here&rsquo;s a more complete look at what&rsquo;s changed in this release.</p>
-<ul>
-<li>Fixed <a href="https://github.com/twbs/icons/issues/415">#415</a>: Properly name <code>grip-horizontal</code> and <code>grip-vertical</code></li>
-<li>Fixed <a href="https://github.com/twbs/icons/issues/423">#423</a>: Update <code>arrow-up-square-fill</code></li>
-<li>Fixed <a href="https://github.com/twbs/icons/issues/437">#437</a>: Make <code>file-earmark</code> variations consistent</li>
-<li>New: Added 18 filetype icons <a href="https://github.com/twbs/icons/pull/465">#465</a></li>
-<li>New: Added 13 emoji icons <a href="https://github.com/twbs/icons/pull/466">#66</a></li>
-</ul>
-<h2 id="install">Install</h2>
-<p>To get started, install via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
-</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.1.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip">download just the SVGs</a> (without the rest of the repository files).</p>
-<h2 id="figma">Figma</h2>
-<p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/6jIgJymnRpMjGSMG2BKNRe/Bootstrap-Icons-v1.1.0?node-id=0%3A1">icons from Figma</a>.</p>
 
       </div>
   </div>

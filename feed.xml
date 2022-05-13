@@ -6,7 +6,35 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 00:01:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap Icons v1.8.2</title>
+      <link>https://blog.getbootstrap.com/2022/05/13/bootstrap-icons-1-8-2/</link>
+      <pubDate>Fri, 13 May 2022 00:01:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2022/05/13/bootstrap-icons-1-8-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.8.2&lt;/a&gt; has arrvied with some bug fixes and a refreshed docs design to match our main project.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a quick rundown on the icon fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix cutoff &lt;code&gt;bank&lt;/code&gt; icon&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;house-heart&lt;/code&gt; and &lt;code&gt;house-heart-fill&lt;/code&gt; fill-rules&lt;/li&gt;
+&lt;li&gt;Fix corners of pentagon icons to match other shapes&lt;/li&gt;
+&lt;li&gt;Fix fill-rule for &lt;code&gt;x-lg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fix cutoff &lt;code&gt;tool&lt;/code&gt; icon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the CSS side, we&amp;rsquo;ve also added &lt;code&gt;font-display: block&lt;/code&gt; to help address our icon font affecting Google Lighthouse scores.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Looking for more new icons? Head to the &lt;a href=&#34;https://github.com/twbs/icons/issues&#34;&gt;issue tracker&lt;/a&gt; to check for open requests or submit a new one.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;To get started, install or update via npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap-icons
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or Composer:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer require twbs/bootstrap-icons
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.8.2&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.8.2/bootstrap-icons-1.8.2.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
+&lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap 5.2.0 beta</title>
       <link>https://blog.getbootstrap.com/2022/05/13/bootstrap-5-2-0-beta/</link>
@@ -627,69 +655,6 @@
 &lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.1.0&#34;&gt;Review the GitHub v5.1.0 release changelog&lt;/a&gt; for a complete list of changes since our last release.&lt;/p&gt;
-&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
-&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap 5.0.2</title>
-      <link>https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/</link>
-      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/06/22/bootstrap-5-0-2/</guid>
-      <description>&lt;p&gt;Our latest patch release has arrived to improve our JavaScript plugins, address the &lt;code&gt;/&lt;/code&gt; deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.&lt;/p&gt;
-&lt;h2 id=&#34;sass-division&#34;&gt;Sass division&lt;/h2&gt;
-&lt;p&gt;One of the biggest fixes in Bootstrap v5.0.2 patches the deprecation of &lt;code&gt;/&lt;/code&gt; for performing division in Sass. The Dart Sass team deprecated it due to the use of &lt;code&gt;/&lt;/code&gt; characters in actual CSS (e.g., &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/background&#34;&gt;separating &lt;code&gt;background&lt;/code&gt; values&lt;/a&gt;). The bad news was this shipped with deprecation notices, which in our case heavily polluted the build process for everyone. Our potential solutions included:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Ignore it entirely and silence the deprecation warnings&lt;/li&gt;
-&lt;li&gt;Drop implicit support for LibSass and use the Dart Sass math module&lt;/li&gt;
-&lt;li&gt;Figure out a custom fix to keep the widest possible Sass support&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;We chose the third option—keeping support for both LibSass and Dart Sass, even though the former is deprecated. There are many projects out there that simply haven&amp;rsquo;t or cannot update to Dart Sass (including Hugo, which we use to build our docs).&lt;/p&gt;
-&lt;p&gt;Our solution meant rolling a custom &lt;code&gt;divide()&lt;/code&gt; function and replacing division with multiplication wherever possible. We wanted to limit the use of a custom function, so the situations where we used &lt;code&gt;$value / 2&lt;/code&gt; were replaced with &lt;code&gt;$value * .5&lt;/code&gt;. This custom function has also been added to the &lt;a href=&#34;https://github.com/twbs/rfs&#34;&gt;RFS project&lt;/a&gt; in a new release. While the precision in our compiled CSS has been reduced by two decimal places, the output remains otherwise unchanged.&lt;/p&gt;
-&lt;p&gt;If you have any ideas or suggestions on further improvements, please don&amp;rsquo;t hesitate to &lt;a href=&#34;https://github.com/twbs/bootstrap/issues/new/choose&#34;&gt;open an issue&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
-&lt;p&gt;Here are some highlights from the changelog.&lt;/p&gt;
-&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed deprecation warnings in Sass for &lt;code&gt;/&lt;/code&gt; division. Replaced most &lt;code&gt;/&lt;/code&gt; division with multiplication and added a custom &lt;code&gt;divide()&lt;/code&gt; function to avoid adding Dart Sass modules (as this would negate the usage of LibSass).&lt;/li&gt;
-&lt;li&gt;Individual &lt;code&gt;.col-*&lt;/code&gt; grid classes can now override &lt;code&gt;.row-cols&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;line-height&lt;/code&gt; for floating forms to fix cut-off select menu text.&lt;/li&gt;
-&lt;li&gt;Added missing transition to &lt;code&gt;.form-select&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;.dropdowns-menu-*&lt;/code&gt; position in RTL.&lt;/li&gt;
-&lt;li&gt;Decoupled &lt;code&gt;--bs-table-bg&lt;/code&gt; and &lt;code&gt;--bs-table-accent-bg&lt;/code&gt; to separate table accent highlights.&lt;/li&gt;
-&lt;li&gt;Improved support for complex expressions in &lt;code&gt;add()&lt;/code&gt; and &lt;code&gt;subtract()&lt;/code&gt; functions.&lt;/li&gt;
-&lt;li&gt;Fixed horizontal padding for select elements in Firefox.&lt;/li&gt;
-&lt;li&gt;Updated border color for popover header to match the outer border.&lt;/li&gt;
-&lt;li&gt;Fixed offcanvas header alignment for RTL.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Popovers now remove titles or content when they&amp;rsquo;re empty instead of returning empty HTML elements.&lt;/li&gt;
-&lt;li&gt;Dropdown items are now automatically selected when using arrow keys.&lt;/li&gt;
-&lt;li&gt;We now register only one &lt;code&gt;DOMContentLoaded&lt;/code&gt; event listener in &lt;code&gt;onDOMContentLoaded&lt;/code&gt; utility function.&lt;/li&gt;
-&lt;li&gt;Fixed arrow keys breaking animation when the carousel sliding.&lt;/li&gt;
-&lt;li&gt;Fixed handling of transitioned events dispatched by nested elements (e.g., modals didn’t transition when clicking buttons).&lt;/li&gt;
-&lt;li&gt;Fixed backdrop errors with stale body cause by unnecessary default and &lt;code&gt;removeChild&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed issue where the &lt;code&gt;show.bs.modal&lt;/code&gt; event with the &lt;code&gt;.fade&lt;/code&gt; class prevented modals from being displayed again.&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;isVisible&lt;/code&gt; false positives.&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;getOrCreateInstance&lt;/code&gt; method in our base component that is applied to all components.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;docs&#34;&gt;Docs&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Documented how to make utilities responsive using the API. Also added &lt;code&gt;!important&lt;/code&gt; to the sample output CSS and mentioned the &lt;code&gt;$enable-important-utilities&lt;/code&gt; global setting.&lt;/li&gt;
-&lt;li&gt;Added a mention of the breakpoint mixins changes from v4 to the migration guide.&lt;/li&gt;
-&lt;li&gt;Added a new example of positioned badges to the docs.&lt;/li&gt;
-&lt;li&gt;Clarified variable overrides in the Customizing &amp;gt; Sass page.&lt;/li&gt;
-&lt;li&gt;Replaced Freenode with Libera IRC server.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr class=&#34;my-4&#34;&gt;
-&lt;p&gt;Head to GitHub for a complete &lt;a href=&#34;https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F41&#34;&gt;list of issues and pull requests in v5.0.2&lt;/a&gt;. You can also review the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/41&#34;&gt;v5.0.2 project board&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.0.2&#34;&gt;Review the v5.0.2 release changelog&lt;/a&gt; for a complete list of changes.&lt;/p&gt;
 &lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
 &lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
 </description>
