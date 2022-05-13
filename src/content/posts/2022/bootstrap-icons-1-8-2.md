@@ -8,9 +8,15 @@ keywords:
   - release
 ---
 
-[Bootstrap Icons v1.8.2](https://icons.getbootstrap.com) is here with over a refreshed docs design and several fixes.
+[Bootstrap Icons v1.8.2](https://icons.getbootstrap.com) has arrvied with some bug fixes and a refreshed docs design to match our main project.
 
+Here's a quick rundown on the icon fixes:
 
+- Fix cutoff `bank` icon
+- Fix `house-heart` and `house-heart-fill` fill-rules
+- Fix corners of pentagon icons to match other shapes
+- Fix fill-rule for `x-lg`
+- Fix cutoff `tool` icon
 
 *Looking for more new icons? Head to the [issue tracker](https://github.com/twbs/icons/issues) to check for open requests or submit a new one.*
 
