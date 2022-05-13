@@ -18,6 +18,8 @@ Here's a quick rundown on the icon fixes:
 - Fix fill-rule for `x-lg`
 - Fix cutoff `tool` icon
 
+On the CSS side, we've also added `font-display: block` to help address our icon font affecting Google Lighthouse scores.
+
 *Looking for more new icons? Head to the [issue tracker](https://github.com/twbs/icons/issues) to check for open requests or submit a new one.*
 
 ## Install
