@@ -80,8 +80,8 @@ module:
       target:           assets/js/bootstrap.min.js
 
 params:
-  current_version:      "5.1.3"
-  docs_version:         "5.1"
+  current_version:      "5.2.0-beta1"
+  docs_version:         "5.2"
   description:          "Official blog for the Bootstrap framework."
   author:               "Mark Otto"
   main:                 "https://getbootstrap.com"
