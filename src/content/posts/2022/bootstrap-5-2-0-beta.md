@@ -8,13 +8,13 @@ keywords:
   - release
 ---
 
-It's the biggest release since v5 itself—**Bootstrap v5.2.0 has arrived!** This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.
+It's the biggest release since v5 itself—**Bootstrap v5.2.0-beta1 is here!** This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.
 
 Given the size of the update and time since our last release, we're doing something different and shipping it as a beta first. Keep reading for details.
 
 ## Why so long?
 
-I want to start by acknowledging the time it's taken to ship a new release. As an open source maintainer, I'm constantly worried about not doing or being good enough of a developer for my projects. Pair that with a distributed team all working through this pandemic and [me having a heart attack](https://twitter.com/mdo/status/1483871584267866115?s=20&t=8rPOWalniMVV8u49S_yxkA), we've all needed some down time. I managed to put together a [Bootstrap Icons release](/2022/01/31/bootstrap-icons-1-8-0/) with what energy I had before needing another break.
+I want to start by acknowledging the time it's taken to ship a new release. As an open source maintainer, I'm constantly worried about not doing or being good enough of a developer for my projects. Pair that with a distributed team all working through this pandemic and [me having a heart attack](https://twitter.com/mdo/status/1483871584267866115?s=20&t=8rPOWalniMVV8u49S_yxkA), we've all needed some down time. I managed to put together a [Bootstrap Icons release](/2022/01/31/bootstrap-icons-1-8-0/) with what energy I had before needing another break. The rest of the team has also needed some well deserved down time.
 
 I ask that you all **please take some time to send some appreciation and support to your favorite open source maintainers**. Everyone could use a little more love in this work.
 
@@ -81,7 +81,7 @@ Check out all our components to see how you can customize them to your liking.
 
 ## New `_maps.scss`
 
-Bootstrap v5.2.0 introduces a new Sass file with `_maps.scss` that pulls out several Sass maps from `_variables.scss` to fix an issue where updates to an original map were not applied to secondary maps that extend it. It's not ideal, but it resolves a longstanding issue for folks when working with customized maps.
+Bootstrap v5.2.0-beta1 introduces a new Sass file with `_maps.scss` that pulls out several Sass maps from `_variables.scss` to fix an issue where updates to an original map were not applied to secondary maps that extend it. It's not ideal, but it resolves a longstanding issue for folks when working with customized maps.
 
 For example, updates to `$theme-colors` were not being applied to other maps that relied on `$theme-colors` (like the `$utilities-colors` and more), which created broken customization workflows. To summarize the problem, **Sass has a limitation where once a default variable or map has been _used_, it cannot be updated**. _There's a similar shortcoming with CSS variables when they're used to compose other CSS variables._
 
@@ -153,11 +153,11 @@ Our Offcanvas component now has [responsive variations](https://getbootstrap.com
 
 - Added [striped columns](https://getbootstrap.com/docs/5.2/content/tables/#striped-columns) support to tables via the new `.table-striped-columns` class.
 
-For a complete list of changes, [see the v5.2.0 project on GitHub](https://github.com/twbs/bootstrap/projects/32).
+For a complete list of changes, [see the project on GitHub](https://github.com/twbs/bootstrap/projects/32).
 
 ## Coming soon: Dark mode!
 
-Much of the work we've done in v5.2.0 has been in support of adding dark mode to Bootstrap. Yes, it's finally coming in our next minor release!
+Much of the work we've done in v5.2.0-beta1 has been in support of adding dark mode to Bootstrap. Yes, it's finally coming in our next minor release!
 
 ![Dark mode](/assets/img/2022/05/docs-darkmode.png)
 
