@@ -162,6 +162,77 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-500">
+          <a href="/2015/08/19/bootstrap-4-alpha/">
+            Bootstrap 4 alpha
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ml-3" title="Wed, 19 Aug 2015 00:00:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    August 19, 2015
+  </span>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/4PdU6migsqQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        <p>Today is a special day for Bootstrap. Not only is it our fourth birthday, but after a year of development, we&rsquo;re finally shipping the first alpha release of Bootstrap 4. Hell yeah!</p>
+<p>Bootstrap 4 has been a massive undertaking that touches nearly every line of code. We&rsquo;re stoked to share it with you and hear your feedback. We&rsquo;ve got a lot of news to share with you, so let&rsquo;s jump right into it.</p>
+<h2 id="whats-new">What&rsquo;s new</h2>
+<p><a href="https://v4-alpha.getbootstrap.com/"><img src="/assets/img/2015/bs4-alpha.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap 4 alpha" loading="lazy" width="2360" height="1588">
+</a></p>
+<p>There are a ton of major changes to Bootstrap and it&rsquo;s impossible to cover them all in detail here, so here are some of our favorite highlights:</p>
+<ul>
+<li><strong>Moved from Less to Sass.</strong> Bootstrap now compiles faster than ever thanks to Libsass, and we join an increasingly large community of Sass developers.</li>
+<li><strong>Improved grid system.</strong> We&rsquo;ve added a new grid tier to better target mobile devices and completely overhauled our semantic mixins.</li>
+<li><strong>Opt-in flexbox support is here.</strong> The future is now—switch a boolean variable and recompile your CSS to take advantage of a flexbox-based grid system and components.</li>
+<li><strong>Dropped wells, thumbnails, and panels for cards.</strong> Cards are a brand new component to Bootstrap, but they&rsquo;ll feel super familiar as they do nearly everything wells, thumbnails, and panels did, only better.</li>
+<li><strong>Consolidated all our HTML resets into a new module, Reboot.</strong> Reboot steps in where Normalize.css stops, giving you more opinionated resets like <code>box-sizing: border-box</code>, margin tweaks, and more all in a single Sass file.</li>
+<li><strong>Brand new customization options.</strong> Instead of relegating style embellishments like gradients, transitions, shadows, and more to a separate stylesheet like v3, we&rsquo;ve moved all those options into Sass variables. Want default transitions on everything or to disable rounded corners? Simply update a variable and recompile.</li>
+<li><strong>Dropped IE8 support and moved to rem and em units.</strong> Dropping support for IE8 means we can take advantage of the best parts of CSS without being held back with CSS hacks or fallbacks. Pixels have been swapped for rems and ems where appropriate to make responsive typography and component sizing even easier. If you need IE8 support, keep using Bootstrap 3.</li>
+<li><strong>Rewrote all our JavaScript plugins.</strong> Every plugin has been rewritten in ES6 to take advantage of the newest JavaScript enhancements. They also now come with UMD support, generic teardown methods, option type checking, and tons more.</li>
+<li><strong>Improved auto-placement of tooltips and popovers</strong> thanks to the help of a library called <a href="http://tether.io/">Tether</a>.</li>
+<li><strong>Improved documentation.</strong> We rewrote it all in Markdown and added a few handy plugins to streamline examples and code snippets to make working with our docs way easier. Improved search is also on its way.</li>
+<li><strong>And tons more!</strong> Custom form controls, margin and padding classes, new utility classes, and more have also been included.</li>
+</ul>
+<p>And that barely scratches the surface of the 1,100 commits and 120,000 lines of changes in v4 so far. Plus, we&rsquo;re not even done yet!</p>
+<p>Ready to check it out? Then <a href="https://v4-alpha.getbootstrap.com/">head to the v4 alpha docs!</a></p>
+<h2 id="development-plan">Development plan</h2>
+<p>We need your help to make Bootstrap 4 the best it can be. Starting today, the source code for v4 will be available in a <a href="https://github.com/twbs/bootstrap/tree/v4-dev"><code>v4-dev</code> branch on GitHub</a>. In addition, we have a <a href="https://github.com/twbs/bootstrap/pull/17021">v4 development and tracking pull request</a> that includes a master checklist of changes we&rsquo;ve made and our remaining possible todos. We&rsquo;d love for y&rsquo;all to help chip away at those todos.</p>
+<p>The general development and release plan looks something like this:</p>
+<ul>
+<li>A few alpha releases while things are still in flux.</li>
+<li>Two beta releases after features and functionality are locked down to really test things out.</li>
+<li>Two release candidates (RCs) to really test things out closer to production environments.</li>
+<li>Then, the final release!</li>
+</ul>
+<p>For those jamming on v4 with us, we also have a dedicated v4 Slack channel. Jump in to talk shop and work with your fellow Bootstrappers. If you haven&rsquo;t yet, <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a>.</p>
+<p>If you&rsquo;re not keen on pushing code to v4, we&rsquo;d love to hear from you in <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback.</p>
+<h2 id="supporting-v3">Supporting v3</h2>
+<p>When we shipped Bootstrap 3, we immediately discontinued all support for v2.x, causing a lot of pain for all our users out there. That was a mistake we won&rsquo;t be making again. For the foreseeable future, <strong>we&rsquo;ll be maintaining Bootstrap 3 with critical bug fixes and documentation improvements</strong>. v3 docs will also continue to be hosted after v4&rsquo;s final release.</p>
+<h2 id="one-more-thing">One more thing&hellip;</h2>
+<p>In addition to shipping the first Bootstrap 4 alpha today, we&rsquo;re also launching our latest side project, <a href="https://themes.getbootstrap.com/">Official Bootstrap Themes</a>.</p>
+<p><a href="https://themes.getbootstrap.com/"><img src="/assets/img/2015/bs-themes.png" class="d-block img-fluid mb-2 rounded border" alt="Official Bootstrap Themes" loading="lazy" width="2048" height="782">
+</a></p>
+<p>We&rsquo;ve talked about building premium themes for Bootstrap since our earliest releases, but never quite found the time or ideal approach until earlier this year. We&rsquo;ve poured hundreds of hours into these themes and consider them to be much more than traditional re-skins of Bootstrap. They&rsquo;ve very much their own toolkits, just like Bootstrap.</p>
+<p>To start, we&rsquo;re launching with three themes built on Bootstrap 3: a <a href="https://themes.getbootstrap.com/product/dashboard/">dashboard</a>, an <a href="https://themes.getbootstrap.com/product/application/">application</a>, and a <a href="https://themes.getbootstrap.com/product/marketing/">marketing</a> site. Each theme contains everything you&rsquo;d find in Bootstrap, plus stunning real world examples, brand new components and plugins, custom documentation, and simple build tools.</p>
+<p>All themes include a <a href="https://themes.getbootstrap.com/licenses/">multiple-use license</a> for the purchaser and free updates for bug fixes and documentation updates for the life of the themes.</p>
+<p><a href="https://themes.getbootstrap.com/">Head to the Bootstrap themes site</a> to check them out.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-500">
           <a href="/2015/08/04/no-carrier/">
             Introducing No Carrier
           </a>
@@ -171,7 +242,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/cvrebert" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/cvrebert.png?size=32, https://github.com/cvrebert.png?size=64 2x"
                            src="https://github.com/cvrebert.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@cvrebert</span>
   </a>
   <span class="d-flex align-items-center ml-3" title="Tue, 04 Aug 2015 00:00:00 &#43;0000">
@@ -184,7 +255,7 @@
   </span>
 </div>
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/rog8ou-ZepE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/rog8ou-ZepE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -380,51 +451,6 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2014/11/12/bootstrap-3-3-1-released/">
-            Bootstrap 3.3.1 released
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Wed, 12 Nov 2014 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    November 12, 2014
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/ydd9Dn3bJlI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Say hello to Bootstrap 3.3.1. As one of our fastest follow up releases, the changelog is focused around a small set of bug fixes for our CSS and JS, loads of accessibility improvements, and several documentation improvements.</p>
-<p>For a complete breakdown, <a href="https://github.com/twbs/bootstrap/releases/tag/v3.3.1">read the release changelog</a> or the <a href="https://github.com/twbs/bootstrap/issues?q=milestone%3Av3.3.1+is%3Aclosed">v3.3.1 milestone</a>.</p>
-<h2 id="download-bootstrap">Download Bootstrap</h2>
-<p>Download the latest release—source code, compiled assets, and documentation—as a zip file directly from GitHub:</p>
-<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.1.zip">Download Bootstrap 3.3.1</a></p>
-<p>Hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a> for more options. Also, remember <a href="https://www.npmjs.com/package/bootstrap">we&rsquo;re available on npm</a>, too.</p>
-<h2 id="bootstrap-cdn">Bootstrap CDN</h2>
-<p>After reviewing the changelog, update your CDN links to point to the v3.3.1 files:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Optional theme --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
       </div>
   </div>

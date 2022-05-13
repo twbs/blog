@@ -4,14 +4,16 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://gmpg.org/xfn/11" rel="profile">
-<link rel="canonical" href="https://blog.getbootstrap.com/">
+<link rel="canonical" href="https://blog.getbootstrap.com/2022/05/13/bootstrap-5-2-0-beta/">
 
-<meta name="description" content="Official blog for the Bootstrap framework.">
+<meta name="description" content="It&rsquo;s the biggest release since v5 itself—Bootstrap v5.2.0-beta1 is here! This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.
+Given the size of the update and time since our last release, we&rsquo;re doing something different and shipping it as a beta first. Keep reading for details.
+Why so long? I want to start by acknowledging the time it&rsquo;s taken to ship a new release.">
 <meta name="generator" content="Hugo 0.98.0">
 
 
 
-<title>Bootstrap Blog · Official blog for the Bootstrap framework.</title>
+<title>Bootstrap 5.2.0 beta | Bootstrap Blog</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
@@ -35,16 +37,22 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-<meta name="twitter:title" content="Bootstrap Blog"/>
-<meta name="twitter:description" content="Official blog for the Bootstrap framework."/>
+<meta name="twitter:title" content="Bootstrap 5.2.0 beta"/>
+<meta name="twitter:description" content="It&rsquo;s the biggest release since v5 itself—Bootstrap v5.2.0-beta1 is here! This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.
+Given the size of the update and time since our last release, we&rsquo;re doing something different and shipping it as a beta first. Keep reading for details.
+Why so long? I want to start by acknowledging the time it&rsquo;s taken to ship a new release."/>
 <meta name="twitter:site" content="@getbootstrap"/>
-<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:creator" content="@mdo">
 
 <!-- Facebook -->
-<meta property="og:title" content="Bootstrap Blog" />
-<meta property="og:description" content="Official blog for the Bootstrap framework." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.getbootstrap.com/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
+<meta property="og:title" content="Bootstrap 5.2.0 beta" />
+<meta property="og:description" content="It&rsquo;s the biggest release since v5 itself—Bootstrap v5.2.0-beta1 is here! This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.
+Given the size of the update and time since our last release, we&rsquo;re doing something different and shipping it as a beta first. Keep reading for details.
+Why so long? I want to start by acknowledging the time it&rsquo;s taken to ship a new release." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2022/05/13/bootstrap-5-2-0-beta/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-05-13T00:00:00+00:00" />
 
 <meta property="og:image:width" content="1000">
 <meta property="og:image:height" content="500">
@@ -147,7 +155,7 @@
     <nav class="bd-subnavbar pt-2 pb-3 pb-md-2">
   <div class="container d-flex align-items-md-center py-2">
     <nav class="nav mx-auto">
-      <a class="text-dark py-1 mr-3 fw-600 text-decoration-none" href="/">All posts</a>
+      <a class="text-dark py-1 mr-3" href="/">All posts</a>
       <a class="text-dark py-1 mr-3" href="/archive/">Archive</a>
       <a class="text-dark py-1 mr-3" href="/videos/">Videos</a>
       <a class="text-dark py-1" href="https://blog.getbootstrap.com/feed.xml">Subscribe</a>
@@ -158,16 +166,10 @@
 
     <div class="container">
       
-<div class="posts-container mx-auto px-3 my-5">
-  <div class="posts">
-    <div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2022/05/13/bootstrap-5-2-0-beta/">
-            Bootstrap 5.2.0 beta
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
+<div class="posts-container px-3 mx-auto my-5">
+  <div class="post">
+    <h1 class="post-title fw-500">Bootstrap 5.2.0 beta</h1>
+    <div class="d-flex align-items-center mb-4 text-muted author-info">
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
@@ -186,9 +188,7 @@
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/1-yzqgwTVi8?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
-
-
-        <p>It&rsquo;s the biggest release since v5 itself—<strong>Bootstrap v5.2.0-beta1 is here!</strong> This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.</p>
+<p>It&rsquo;s the biggest release since v5 itself—<strong>Bootstrap v5.2.0-beta1 is here!</strong> This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.</p>
 <p>Given the size of the update and time since our last release, we&rsquo;re doing something different and shipping it as a beta first. Keep reading for details.</p>
 <h2 id="why-so-long">Why so long?</h2>
 <p>I want to start by acknowledging the time it&rsquo;s taken to ship a new release. As an open source maintainer, I&rsquo;m constantly worried about not doing or being good enough of a developer for my projects. Pair that with a distributed team all working through this pandemic and <a href="https://twitter.com/mdo/status/1483871584267866115?s=20&amp;t=8rPOWalniMVV8u49S_yxkA">me having a heart attack</a>, we&rsquo;ve all needed some down time. I managed to put together a <a href="/2022/01/31/bootstrap-icons-1-8-0/">Bootstrap Icons release</a> with what energy I had before needing another break. The rest of the team has also needed some well deserved down time.</p>
@@ -345,248 +345,34 @@
 <h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2022/01/31/bootstrap-icons-1-8-0/">
-            Bootstrap Icons v1.8.0
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Mon, 31 Jan 2022 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    January 31, 2022
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/HhZaHf8RP6g?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.8.0</a> is here with over 140 new icons, including dozens of new heart icons ready for Valentine&rsquo;s Day and dozens of filetype icons. We&rsquo;re now at almost 1,700 icons and is once again our second largest release. Keep reading to see what&rsquo;s new.</p>
-<h2 id="140-new-icons">140+ new icons</h2>
-<p>Perfect for Valentine&rsquo;s Day or any other time you need to show a little heart, there are dozens of icons to choose from.</p>
-<p><img src="/assets/img/2022/01/icons-v180-love.png" class="d-block img-fluid mb-2 rounded border" alt="New love icons in v1.8.0" loading="lazy" width="1170" height="444">
-</p>
-<p>Want to visually show the extensions of your files? There are tons of new options for programming languages, audio and video, images, and more.</p>
-<p><img src="/assets/img/2022/01/icons-v180-filetypes.png" class="d-block img-fluid mb-2 rounded border" alt="New filetype icons in v1.8.0" loading="lazy" width="1170" height="444">
-</p>
-<p>Elsewhere we&rsquo;ve expanded a number of other categories of icons. There are some new medical icons (more are planned), lots of new clipboard icons, additional tools, and more.</p>
-<p><img src="/assets/img/2022/01/icons-v180-misc.png" class="d-block img-fluid mb-2 rounded border" alt="Miscellaneous new icons in v1.8.0" loading="lazy" width="1170" height="528">
-</p>
-<p><em>Looking for more new icons? Head to the <a href="https://github.com/twbs/icons/issues">issue tracker</a> to check for open requests or submit a new one.</em></p>
-<h2 id="install">Install</h2>
-<p>To get started, install or update via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
-</span></span></code></pre></div><p>Or Composer:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">composer require twbs/bootstrap-icons
-</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.8.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.8.0/bootstrap-icons-1.8.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
-<h2 id="figma">Figma</h2>
-<p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2021/11/01/bootstrap-icons-1-7-0/">
-            Bootstrap Icons v1.7.0
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Mon, 01 Nov 2021 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    November 01, 2021
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/CqZgd6-xQl8?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.7.0</a> is here with 120 new and updated icons, taking us over 1,500 total icons for the project! It&rsquo;s the largest update since the initial release, so keep reading to see what&rsquo;s new.</p>
-<h2 id="120-new-icons">120 new icons</h2>
-<p>This update was a lot of fun for me—drawing all these tiny computer parts most of all! There are dozens of new computer-related icons for parts, ports, and peripheral devices. There are also several new brand icons, including Meta, and some other fun icons like a new robot head and a boombox.</p>
-<p><img src="/assets/img/2021/11/icons-v170.png" class="d-block img-fluid mb-2 rounded border" alt="New icons in v1.7.0" loading="lazy" width="1620" height="720">
-</p>
-<p><em>Looking for more new icons? Head to the <a href="https://github.com/twbs/icons/issues">issue tracker</a> to check for open requests or submit a new one.</em></p>
-<h2 id="install">Install</h2>
-<p>To get started, install or update via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
-</span></span></code></pre></div><p>Or Composer:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">composer require twbs/bootstrap-icons
-</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.7.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.7.0/bootstrap-icons-1.7.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
-<h2 id="figma">Figma</h2>
-<p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2021/10/28/bootstrap-4.6.1/">
-            Bootstrap v4.6.1
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Thu, 28 Oct 2021 21:30:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    October 28, 2021
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/wBl2QGAIx1s?rel=0&amp;start=135" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.</p>
-<p>Read on for the highlights or <a href="https://getbootstrap.com/docs/4.6/">head to the v4.6.x docs</a> to see the latest in action.</p>
-<h2 id="whats-changed">What&rsquo;s changed</h2>
-<ul>
-<li>Replace Sass division with multiplication and custom <code>divide()</code> function</li>
-<li>fix(forms): input-group and validation icons</li>
-<li>Fix minor visual bug in FF caused by moz-focusring</li>
-<li>Adjust <code>SAFE_URL_PATTERN</code> regex for use with test method of regexes</li>
-<li>Add <code>sms</code> in the <code>SAFE_URL_PATTERN</code> for sanitizer</li>
-<li>Adjust feedback icon position and padding for <code>select.form-control</code></li>
-<li>Carousel: use buttons, not links, for prev/next controls</li>
-<li>v4: Sass docs for default variables</li>
-<li>Handle complex expressions in <code>add()</code> &amp; <code>subtract()</code></li>
-<li>More concise improvements for <code>add()</code> and <code>subtract()</code></li>
-<li>Remove aria-haspopup from dropdowns</li>
-<li>Dropdown: support <code>.dropdown-item</code> wrapped in <code>&lt;li&gt;</code> tags</li>
-<li>Update Node versions in JS tests (drop Node 10, add Node 16) and add variables for <code>vertical-align</code> in spinners</li>
-<li>Replace Freenode with Libera IRC server</li>
-<li>Fix repetition in the Navbar docs description</li>
-<li>Enable <code>0.x</code> with negative margins in utilities</li>
-<li>Remove print <code>thead</code> rule</li>
-<li>Fix prevented <code>show</code> event disabling modals with fade class from being displayed again</li>
-<li>Input group validation with custom-file input</li>
-<li>Add eslint-plugin-qunit and tighten JS tests</li>
-<li>Update our tests to Node 16 and npm 8</li>
-<li>Disabled link cleanup</li>
-</ul>
-<p><a href="https://github.com/twbs/bootstrap/releases/tag/v4.6.1">Review the GitHub v4.6.1 release changelog</a> for more details.</p>
-<h2 id="next-up">Next up</h2>
-<p>We&rsquo;ll be flipping back to v5 development after this release, focusing on v5.2.0 with some additional updates to using more CSS variables and other awesome features. Sometime after that, we hope to ship a v4.7.0 release with some additional backported features and improvements to v4.</p>
-<p>Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-500">
-          <a href="/2021/10/13/bootstrap-icons-1-6-0/">
-            Bootstrap Icons v1.6.0
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ml-3" title="Wed, 13 Oct 2021 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    October 13, 2021
-  </span>
-</div>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/sOS9aOIXPEk?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.6.0</a> adds over 30 new icons, adds official Composer support, includes a new <code>.scss</code> stylesheet for the icon font, plus some other enhancements and bug fixes. Keep reading to see what&rsquo;s new!</p>
-<h2 id="1400-icons">1,400+ icons</h2>
-<p>We&rsquo;ve officially passed 1,400 glyphs in Bootstrap Icons with this release—woohoo! Seems utterly insane to me that the project has come this far and there are still so many more icons to include.</p>
-<p><img src="/assets/img/2021/10/v160-new-updated-icons.png" class="d-block img-fluid mb-2 rounded border" alt="New icons in v1.6.0" loading="lazy" width="1104" height="784">
-</p>
-<p>We have a few dozen new and updated icons in this release, including:</p>
-<ul>
-<li>New brand icons for Apple, Behance, Dribbble, Line, Medium, Microsoft, PayPal, Pinterest, Signal, Snapchat, Spotify, Stack Overflow, Strava, Vimeo, Windows, and WordPress</li>
-<li>Two new easel variations</li>
-<li>New fingerprint icon</li>
-<li>New magic stick</li>
-<li>New people variations for rolodex, workspace, and video chat</li>
-<li>New webcam icons</li>
-<li>New radioactive icon</li>
-<li>New fan icon</li>
-<li>New hypnotize icon</li>
-<li>New yin yang icon</li>
-<li>New activity/pulse icon</li>
-<li>Updated large dash, plus, slash, x, i, ?, !, and check icons to have a thinner stroke that better matches other icons</li>
-<li>Updated lamp icons</li>
-<li>Updated <code>graph-up</code> and <code>graph-down</code> icons, with the previous ones being renamed to <code>graph-up-arrow</code> and <code>graph-down-arrow</code></li>
-</ul>
-<h2 id="new-features">New features</h2>
-<p>We&rsquo;ve added a handful of new features and enhancements to how you can use Bootstrap Icons in this release:</p>
-<ul>
-<li>
-<p><strong>Added Composer support</strong> with automatic publishing to Packagist. See the <a href="https://packagist.org/packages/twbs/bootstrap-icons">official package</a> for more information.</p>
-</li>
-<li>
-<p><strong>Added new <code>bootstrap-icons.scss</code> stylesheet for the icon font.</strong> This includes font name and path variables, plus a Sass map of icon names and unicode values.</p>
-</li>
-<li>
-<p><strong>Added new <code>.bi</code> CSS selector</strong> to the icon font ruleset (in addition to the attribute selectors we had through v1.5.0) to allow for easier <code>@extend</code>ing of icon styles. This has also been reflected in the new <code>.scss</code> stylesheet.</p>
-</li>
-</ul>
-<p>Our next minor release will continue to see improvements to our icon permalink pages, adding more options for copying and pasting our icons. If you have other suggestions, please don&rsquo;t hesitate to open a new issue!</p>
-<h2 id="bug-fixes">Bug fixes</h2>
-<p>We&rsquo;ve fixed a few glitches with existing icons in this release:</p>
-<ul>
-<li><code>droplet-fill</code> now renders correctly thanks to an updated fill rule</li>
-<li><code>lamp</code> and <code>lamp-fill</code> now look more like lamps and less like toilets 😅</li>
-<li><code>coin</code> now renders correctly thanks to an updated fill rule</li>
-<li><code>cloud</code> now renders correctly thanks to an updated fill rule</li>
-<li><code>textarea-resize</code> is no longer incorrectly placed in the <code>viewBox</code></li>
-</ul>
-<p>Found another bug, or have a suggestion? Check out the issue tracker and open an issue if you don&rsquo;t see one already opened.</p>
-<h2 id="install">Install</h2>
-<p>To get started, install or update via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
-</span></span></code></pre></div><p>Or Composer:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">composer require twbs/bootstrap-icons
-</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.6.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.6.0/bootstrap-icons-1.6.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
-<h2 id="figma">Figma</h2>
-<p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
-
-      </div>
   </div>
 
-  <div class="pagination"><a class="pagination-item older" href="/page/2/">Older</a>
-    <span class="pagination-item newer">Newer</span>
+  <div class="related">
+    <h2>Related posts</h2>
+    <ul class="related-posts list-unstyled">
+      <li>
+        <h4>
+          <a href="/2021/10/28/bootstrap-4.6.1/">
+            Bootstrap v4.6.1
+            <small>28 Oct 2021</small>
+          </a>
+        </h4>
+      </li><li>
+        <h4>
+          <a href="/2021/10/05/bootstrap-5-1-2/">
+            Bootstrap 5.1.2
+            <small>05 Oct 2021</small>
+          </a>
+        </h4>
+      </li><li>
+        <h4>
+          <a href="/2021/09/07/bootstrap-5-1-1/">
+            Bootstrap 5.1.1
+            <small>07 Sep 2021</small>
+          </a>
+        </h4>
+      </li>
+    </ul>
   </div>
 </div>
     </div>
