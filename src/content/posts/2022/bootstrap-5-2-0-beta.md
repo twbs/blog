@@ -189,7 +189,7 @@ And likely a lot more!
 **Head to <https://getbootstrap.com> for the latest.** It's also been pushed to npm:
 
 ```sh
-npm i bootstrap
+npm i bootstrap@v5.2.0-beta1
 ```
 
 [Read the GitHub v5.2.0-beta1 changelog](https://github.com/twbs/bootstrap/releases/tag/v5.2.0-beta1) for a complete list of changes in this release.
