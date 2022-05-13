@@ -192,7 +192,7 @@ And likely a lot more!
 npm i bootstrap
 ```
 
-[Read the GitHub v5.2.0 changelog](https://github.com/twbs/bootstrap/releases/tag/v5.2.0) for a complete list of changes in this release.
+[Read the GitHub v5.2.0-beta1 changelog](https://github.com/twbs/bootstrap/releases/tag/v5.2.0-beta1) for a complete list of changes in this release.
 
 ## Support the team
 
