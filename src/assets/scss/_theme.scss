@@ -2,17 +2,50 @@
 // Resets
 //
 
-.embed-responsive {
+a {
+  text-decoration-color: rgba(var(--bs-primary-rgb), .25);
+  text-underline-offset: .25rem;
+
+  &:hover,
+  &:focus {
+    text-decoration-color: rgba(var(--bs-primary-rgb), .5);
+  }
+}
+
+.bi {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+  fill: currentColor; // stylelint-disable-line value-keyword-case
+}
+
+.sidebar-nav {
+  .nav-link {
+    padding-inline: .75rem;
+    border-radius: .5rem;
+
+    &:not(.active):hover,
+    &:not(.active):focus {
+      background-color: rgba(var(--bd-violet-rgb), .05);
+    }
+
+    &.active {
+      color: var(--bs-body-color);
+      background-color: rgba(var(--bd-violet-rgb), .1);
+    }
+  }
+}
+
+.ratio {
   margin-bottom: 1rem;
+  overflow: hidden;
   background-color: #000;
+  border-radius: .5rem;
 
   .page-videos & {
     margin-top: .5rem;
   }
-}
-
-.post li {
-  margin-bottom: .25rem;
 }
 
 
@@ -21,40 +54,23 @@
 //
 
 .masthead {
-  position: relative;
-  padding: 2rem 1.25rem;
-  font-weight: 300;
-  color: #cdbfe3;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-  background-image: linear-gradient(to bottom, darken($bd-purple-bright, 10%), $bd-purple-bright);
+  overflow: hidden;
 
-  @media (min-width: 40em) {
-    padding: 3rem 0 4rem;
-  }
-
-  a,
-  h1 {
-    font-weight: 400;
-    color: #fff;
-  }
-
-  h1 {
-    margin-bottom: .25rem;
-  }
-
-  p {
-    max-width: 640px;
-    margin: 0 auto;
+  @media (min-width: 768px) {
+    position: -webkit-sticky; // stylelint-disable-line value-no-vendor-prefix
+    position: sticky;
+    top: 4rem;
   }
 }
 
-.bs-docs-booticon {
-  filter:
-    drop-shadow(0 .25em .25em rgba(0, 0, 0, .05))
-    drop-shadow(0 .5em 1em rgba(0, 0, 0, .1))
-    drop-shadow(0 .75em 1.5em rgba(0, 0, 0, .15));
+.bd-booticon {
+  margin-left: -.75rem;
   transform: rotate(-5deg);
+
+  @media (max-width: 1024px) {
+    width: 128px;
+    height: auto;
+  }
 }
 
 
@@ -66,10 +82,10 @@
   display: inline-block;
   padding: .6rem 1.2rem;
   margin-right: .25rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
-  background-color: #08c;
-  border-radius: .2rem;
+  background-color: var(--bs-primary);
+  border-radius: .5rem;
   transition: all .2s linear;
 
   &:hover {
@@ -94,12 +110,13 @@
 .list {
   padding-left: 0;
   list-style: none;
-}
-.list li {
-  display: block;
-  margin-bottom: 5px;
-}
-.list span {
-  float: right;
-  color: #767676;
+
+  li {
+    display: block;
+    margin-bottom: .5rem;
+  }
+  span {
+    float: right;
+    color: #var(--bs-gray-600);
+  }
 }

@@ -74,17 +74,16 @@ module:
       target:           static/apple-touch-icon.png
     - source:           src/static/assets/img/favicons/favicon.ico
       target:           static/favicon.ico
+    - source:           node_modules/bootstrap/scss
+      target:           assets/scss/bootstrap
+    - source:           node_modules/bootstrap/dist/js/bootstrap.min.js
+      target:           assets/js/bootstrap.min.js
 
 params:
-  current_version:      "5.1.3"
-  docs_version:         "5.1"
+  current_version:      "5.2.0-beta1"
+  docs_version:         "5.2"
   description:          "Official blog for the Bootstrap framework."
   author:               "Mark Otto"
-  assets:
-    css:
-      # Use https://www.srihash.org to generate the hash, or use the hash from upstream
-      uri:              "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      sri:              "sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
   main:                 "https://getbootstrap.com"
   github_org:           "https://github.com/twbs"
   repo:                 "https://github.com/twbs/blog"

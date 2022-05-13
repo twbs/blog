@@ -8,24 +8,24 @@
   position: static;
   display: block;
   max-width: 400px;
-  padding: 15px 15px 15px 160px;
-  margin: 2rem auto 0;
+  padding: 12px 12px 12px 154px;
+  margin: 1.5rem auto 0;
   overflow: hidden;
   font-size: .875rem;
   line-height: 1.4;
   text-align: left;
-  background-color: rgba(0, 0, 0, .05);
+  background-color: var(--bs-gray-100);
   border-radius: .5rem;
 
   a {
-    color: rgba(255, 255, 255, .75);
+    color: var(--bs-gray-600);
     text-decoration: none;
   }
 }
 
 .carbon-img {
   float: left;
-  margin-left: -145px;
+  margin-left: -140px;
 
   > img {
     margin-bottom: 0;
@@ -35,5 +35,5 @@
 .carbon-poweredby {
   display: block;
   margin-top: .75rem;
-  color: rgba(255, 255, 255, .5) !important;
+  color: var(--bs-gray-600) !important;
 }

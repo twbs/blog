@@ -1,46 +1,85 @@
 .bd-navbar {
-  min-height: 4rem;
-  background-color: $bd-purple-bright;
+  padding: .75rem 0;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), .95));
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15), inset 0 -1px 0 rgba(0, 0, 0, .15);
 
-  @media (max-width: 991.98px) {
-    .navbar-nav-scroll {
-      width: 100%;
-      height: 2.5rem;
-      margin-top: .25rem;
-      overflow: hidden;
+  .navbar-toggler {
+    padding: 0;
+    margin-right: -.5rem;
+    border: 0;
 
-      .navbar-nav {
-        padding-bottom: 2rem;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+    &:first-child {
+      margin-left: -.5rem;
+    }
+
+    .bi {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &:focus {
+      box-shadow: none;
     }
   }
 
-  .navbar-nav {
-    .nav-link {
-      padding-right: .5rem;
-      padding-left: .5rem;
-      color: rgba($white, .85);
+  .navbar-brand {
+    transition: .2s ease-in-out transform;
 
-      &.active,
-      &:hover,
-      &:focus {
-        color: $white;
-        background-color: transparent;
-      }
+    &:hover {
+      transform: rotate(-5deg) scale(1.1);
+    }
+  }
 
-      &.active {
-        font-weight: 600;
-      }
+  .navbar-toggler,
+  .nav-link {
+    padding-right: $spacer * .25;
+    padding-left: $spacer * .25;
+    color: rgba($white, .85);
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+
+    &.active {
+      font-weight: 600;
+      color: $white;
     }
   }
 
   .navbar-nav-svg {
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    vertical-align: text-top;
+    vertical-align: -.125rem;
+  }
+
+  .offcanvas-lg {
+    background-color: var(--bd-violet);
+    border-left: 0;
+
+    @media (max-width: 992px) {
+      box-shadow: $box-shadow-lg;
+    }
+  }
+
+  .dropdown-toggle {
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .dropdown-menu {
+    --bs-dropdown-min-width: 12rem;
+    --bs-dropdown-link-hover-bg: rgba(var(--bd-violet-rgb), .1);
+    --bs-dropdown-font-size: .875rem;
+    box-shadow: $dropdown-box-shadow;
+  }
+
+  .dropdown-item.current {
+    font-weight: 600;
+    background-image: escape-svg($dropdown-active-icon);
+    background-repeat: no-repeat;
+    background-position: right $dropdown-item-padding-x top .6rem;
+    background-size: .75rem .75rem;
   }
 }
