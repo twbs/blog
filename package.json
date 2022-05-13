@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "bootstrap": "github:twbs/bootstrap#d2497b0384d05af9159743d7ff58fd071d5c5cbb",
+    "bootstrap": "5.2.0-beta1",
     "cross-env": "^7.0.3",
     "find-unused-sass-variables": "^4.0.4",
     "hugo-bin": "^0.86.0",
