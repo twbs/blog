@@ -1,6 +1,6 @@
 ---
 author: mdo
-date: "2022-05-11T00:00:00Z"
+date: "2022-05-13T00:00:00Z"
 title: Bootstrap 5.2.0 beta
 video: 1-yzqgwTVi8
 keywords:
