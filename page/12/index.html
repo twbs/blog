@@ -46,8 +46,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.getbootstrap.com/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-<meta property="og:image:width" content="1000">
-<meta property="og:image:height" content="500">
+<meta property="og:image:width" content="2000">
+<meta property="og:image:height" content="1000">
 
 <script defer src="https://cdn.usefathom.com/script.js" data-site="ITUSEYJG"></script>
 <script>
@@ -211,6 +211,93 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2017/01/06/bootstrap-4-alpha-6/" class="text-decoration-none">
+            Bootstrap 4 Alpha 6
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="Fri, 06 Jan 2017 00:00:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    January 06, 2017
+  </span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/V44HiAX91Hs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p><a href="https://v4-alpha.getbootstrap.com/">Alpha 6 has landed</a>, and it&rsquo;s one of our biggest ships to date. We&rsquo;ve rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.</p>
+<p>Read one for highlights from this release. We also recommend reviewing the <a href="https://github.com/twbs/bootstrap/issues/20939">ship list</a> and <a href="https://github.com/twbs/bootstrap/milestone/39?closed=1">milestone</a> for a more detailed look at what&rsquo;s changed.</p>
+<h2 id="embracing-flexbox">Embracing Flexbox</h2>
+<p>Bootstrap 4 is now flexbox by default! Flexbox is an immensely powerful layout tool, providing unparalleled flexibility (hah) and control to our grid system and core components. It comes at the cost of <a href="https://github.com/twbs/bootstrap/pull/21389">dropping IE9 support</a>, but brings significant improvements to component layout, alignment, and sizing.</p>
+<p><a class="jsbin-embed" href="https://output.jsbin.com/digabis/3/?output&height=440px">Bootstrap flexbox on jsbin.com</a></p>
+<p>If you&rsquo;re unfamiliar with flexbox, here&rsquo;s some of the power you can expect to utilize in Bootstrap 4:</p>
+<ul>
+<li>Automatic equal-width grid columns (e.g., two columns are automatically 50% wide)</li>
+<li>Equal height and equal width cards</li>
+<li>Vertical and horizontal centering without hardcoding values with <code>translate</code> or <code>margin</code></li>
+<li>Utility classes for easily (and responsively!) changing display, direction, alignment, and more</li>
+<li>Auto margins for easy spacing</li>
+<li>Justified navigation and button groups</li>
+<li>No more HTML white space or broken table-style rendering</li>
+</ul>
+<p>Nearly every component now takes advantage of flexbox in place of <code>display: table</code> hacks and <code>float</code>s. That means less reliance on clearfix, more control over DOM and visual order, and fewer bugs. Navs, list groups, cards, and more all utilize flexbox. Even more complex components like the carousel have been modified to use flexbox in some places.</p>
+<p><a class="jsbin-embed" href="https://output.jsbin.com/wepoya/?output&height=340px">Bootstrap carousel on jsbin.com</a></p>
+<h2 id="responsive-utilities-and-the-great-infix">Responsive utilities and the great infix</h2>
+<p>With Alpha 6, we&rsquo;ve made Bootstrap&rsquo;s extensive suite of utilities—including classes for <code>display</code>, <code>float</code>, and flexbox, and more—<a href="https://github.com/twbs/bootstrap/pull/20934">completely responsive</a>. To keep these class names as approachable and representative of their scope as possible, we&rsquo;ve also made two important changes to their naming scheme.</p>
+<ul>
+<li>
+<p>First, we&rsquo;ve dropped the <code>-xs</code> infix from our lowest (extra small) breakpoint. <strong>xs</strong> isn&rsquo;t a responsive breakpoint quite like <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code> because it doesn&rsquo;t start applying styles at a <code>min-width</code> and up. It simply applies to everything as there&rsquo;s no bounding <code>@media</code> query.</p>
+</li>
+<li>
+<p>Second, we&rsquo;ve renamed several classes to better articulate their property-value pairings. Instead of <em>pull</em>, we use <em>float</em>. Instead of creating new names for the various flexbox properties, we start with the property name.</p>
+</li>
+</ul>
+<p>Put that all together and you end up with updated classes like <code>.col-6</code>, <code>.d-none</code>, <code>.float-right</code>, <code>.d-md-flex</code>, <code>.justify-content-end</code>, and <code>.text-lg-left</code>. These new classes bring immense power and customization to folks building with Bootstrap. They also make it easier for those migrating from v3 with clearer mappings to legacy class names.</p>
+<h2 id="more-grid-improvements">More grid improvements</h2>
+<p>We&rsquo;re back at it with more grid improvements. This time we&rsquo;ve added responsive autosizing columns and more container padding options. Add any number of <code>.col-*</code> classes and they&rsquo;ll automatically be equal in width.</p>
+<p><a class="jsbin-embed" href="https://output.jsbin.com/sarire/?output&height=170px">Bootstrap flexbox auto columns on jsbin.com</a></p>
+<p>Padding for grid containers can now be configured across breakpoints with the new <code>$grid-gutter-widths</code> Sass map. In addition, you can remove gutters from grid rows and their columns with the <code>.no-gutters</code> modifier.</p>
+<h2 id="updated-navbar">Updated navbar</h2>
+<p>As mentioned in our last release, the Alpha 5 navbar was a little half baked. This time around, we&rsquo;re completely baked. No, but seriously, the navbar has been rewritten to provide better built-in responsive behaviors and improved layout customization thanks to our move to flexbox.</p>
+<p><a href="https://v4-alpha.getbootstrap.com/components/navbar/"><img src="/assets/img/2017/alpha6-navbar.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap 4 navbars" loading="lazy" width="2752" height="1984">
+</a></p>
+<p>Here&rsquo;s the rundown on what&rsquo;s changed:</p>
+<ul>
+<li>Navbars are built with flexbox! Instead of floats, you&rsquo;ll need <a href="https://v4-alpha.getbootstrap.com/utilities/flexbox/">flexbox</a> and <a href="https://v4-alpha.getbootstrap.com/utilities/spacing/">margin utilities</a>.</li>
+<li>Navbar navs no longer require the <code>.nav</code> base class. While it provided a starting point, these shared styles often got in the way of navbar behaviors. Now it&rsquo;s just <code>.navbar-nav</code> and utilities for alignment.</li>
+<li>The <code>.navbar-toggleable</code> classes are now applied to the <code>.navbar</code> instead of the <code>.collapse</code> within. This allows us to provide better responsive behavior with just one class change.</li>
+<li>The responsive navbar toggle, <code>.navbar-toggler</code>, has also been updated. The icon is once again a child element, <code>.navbar-toggler-icon</code>, for improved customization. It also includes easy modifiers for absolutely aligning it to the top right or top left.</li>
+</ul>
+<p>Check out the <a href="https://v4-alpha.getbootstrap.com/components/navbar/">navbar docs</a> to learn more and see it in action.</p>
+<h2 id="up-next-our-first-beta">Up next, our first beta</h2>
+<p>Like you, we&rsquo;re very much ready for our first beta release. Luckily, we&rsquo;re in great shape to get there from this alpha. We have the fewest open issues and pulls we&rsquo;ve had in easily the last 18 months, and the contributions from the community have been outstanding. As we head to our first beta, we&rsquo;ll be focused on not adding anything new, ideally making as few breaking changes as possible, and emphasizing documentation quality and bug fixes.</p>
+<p>We need your help to get there though. Please dive into this latest release and continue to report bugs and submit pull requests as you can. Every bit helps us improve the next release!</p>
+<hr>
+<p>For more details on this release&rsquo;s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/20939">Alpha 6 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/milestone/39?closed=1">closed Alpha 6 milestone</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
+<p><strong>Using the Bootstrap CDN?</strong> Review the changelog and update your CDN links to point to the latest files:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><script src="https://static.jsbin.com/js/embed.min.js"></script>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2016/10/19/bootstrap-4-alpha-5/" class="text-decoration-none">
             Bootstrap 4 Alpha 5
           </a>
@@ -220,7 +307,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="Wed, 19 Oct 2016 00:00:00 &#43;0000">
@@ -233,9 +320,11 @@
   </span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/MxGEVIvSFeY?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/MxGEVIvSFeY?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
+
+        
 
         <p><a href="https://v4-alpha.getbootstrap.com/">Alpha 5 has arrived</a> just over a month after Alpha 4 with some major feature improvements and a boat load of bug fixes. We still have a lot of work to do, but we&rsquo;re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.</p>
 <h3 id="new-css-bundles">New CSS bundles</h3>
@@ -326,6 +415,8 @@
 </div>
 
 
+        
+
         <p><a href="https://v4-alpha.getbootstrap.com/">Alpha 4 is here</a> to address those pesky build and package errors, a few CSS bugs, and some documentation inconsistencies we introduced in our last release.</p>
 <p>This is a super small release compared to our previous alphas, so here&rsquo;s the rundown on what&rsquo;s changed:</p>
 <ul>
@@ -371,6 +462,8 @@
   <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/xFrGuyw1V8s?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
+
+        
 
         <p>Alpha 3 has landed! We have an overhauled grid, updated form controls, a new font stack, tons of bug fixes, and more. It&rsquo;s been several months since our last update, but the size of this update should help get us back on track.</p>
 <p>Work on Alpha 3 started rather broadly, addressing bug fixes and docs updates of all shapes and sizes, but finished with a narrow focus on our form controls and grid system. If you&rsquo;ve followed the development in our <code>v4-dev</code> branch, you might already be familiar with some of these bigger changes.</p>
@@ -487,6 +580,8 @@
 </div>
 
 
+        
+
         <p>Bootstrap 3.3.7 is here! We&rsquo;ve had over 220 commits and 80 closed issues and pull requests from nearly 30 contributors since our last release. Woohoo!</p>
 <p>Here are some of the highlights:</p>
 <ul>
@@ -511,55 +606,6 @@
 </span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2015/12/08/bootstrap-4-alpha-2/" class="text-decoration-none">
-            New Bootstrap 4 alpha
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="Tue, 08 Dec 2015 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    December 08, 2015
-  </span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/J_kokTee01k?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        <p>Bootstrap 4 alpha 2 is now available. Since <a href="/2015/08/19/bootstrap-4-alpha/">our last release</a>, nearly 100 people have pushed over 900 commits to v4 and we&rsquo;ve closed over 400 issues and pull requests. Those numbers are outrageously awesome to see, and we&rsquo;ve still got a ton of work ahead of us this year for v4.</p>
-<p>As mentioned in <a href="/2015/08/19/bootstrap-4-alpha/">our last post</a>, the general plan for v4&rsquo;s development starts with a few alpha releases. We&rsquo;re a little behind on that, but should be getting caught up as the year winds down. Expect another alpha or two this month to really round things out.</p>
-<p>Here&rsquo;s a look at a handful of the changes since our last alpha:</p>
-<ul>
-<li>Overhauled spacing utilities to use a numerical tiering (to avoid confusion with grid tiers).</li>
-<li>Continued refactoring efforts to replace markup-specific selectors with classes across several components (including pagination, lists, and more). <em>Still more to do here with additional components.</em></li>
-<li>Reverted media queries and grid containers from rems to pixels as viewports are not affected by font-size. See <a href="https://github.com/twbs/bootstrap/pull/17403">#17403</a> for details. <em>We&rsquo;ve got a ton of grid work left, too. Feel free to follow along with <a href="https://github.com/twbs/bootstrap/issues/18471">#18471</a>.</em></li>
-<li>Reverted <code>.0625rem</code> width borders to <code>1px</code> for more consistent component borders that avoid zoom and font-size bugs across browsers.</li>
-<li>Renamed <code>.img-responsive</code> to <code>.img-fluid</code> to avoid future confusion on the various responsive image solutions out there.</li>
-<li>Replaced ZeroClipboard with clipboard.js for Flash-independent copy buttons.</li>
-<li>Inputs and buttons now share the same border variable to ensure components are always sized similarly.</li>
-<li>Updated all pseudo-element selectors to use the spec&rsquo;s preferred double colon (e.g., <code>::before</code> as opposed to <code>:before</code>).</li>
-<li>Cards now have outline variants and mixins to support extending base classes further.</li>
-<li>Utility classes for floats and text alignment now have responsive ranges. <em>This means we&rsquo;ve dropped the non-responsive classes to avoid duplication.</em></li>
-<li>Added support for jQuery 2.</li>
-<li>And hundreds more Sass improvements, bug fixes, documentation updates, and more.</li>
-</ul>
-<p>We highly encourage folks to skim through <a href="https://github.com/twbs/bootstrap/issues?q=milestone%3Av4.0.0-alpha.2+is%3Aclosed">the second alpha&rsquo;s milestone on GitHub</a> for a better idea of what&rsquo;s changed across the board. You can also follow along with other v4 efforts with the <a href="https://github.com/twbs/bootstrap/labels/v4"><code>v4</code> label</a> on our issue tracker.</p>
-<p><strong>Ready to dive in? Then <a href="https://v4-alpha.getbootstrap.com/">head to the v4 alpha docs!</a></strong></p>
-<p>Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
-
       </div>
   </div>
 

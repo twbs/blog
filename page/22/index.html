@@ -46,8 +46,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.getbootstrap.com/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-<meta property="og:image:width" content="1000">
-<meta property="og:image:height" content="500">
+<meta property="og:image:width" content="2000">
+<meta property="og:image:height" content="1000">
 
 <script defer src="https://cdn.usefathom.com/script.js" data-site="ITUSEYJG"></script>
 <script>
@@ -211,6 +211,121 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2012/04/24/bootstrap-2-0-3-released/" class="text-decoration-none">
+            Bootstrap 2.0.3 released
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="Tue, 24 Apr 2012 00:00:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    April 24, 2012
+  </span>
+</div>
+
+
+        
+
+        <p>Today we&rsquo;re releasing <a href="https://getbootstrap.com/">Bootstrap 2.0.3</a>, another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the <a href="https://github.com/twbs/bootstrap/issues?sort=created&amp;direction=desc&amp;state=closed&amp;page=1&amp;milestone=10">2.0.3 milestone</a> on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what&rsquo;s changed.</p>
+<h2 id="makefile">Makefile</h2>
+<p>In the spirit of always improving the LESS functionality and build tools, we&rsquo;ve updated our makefile to utilize <a href="https://jshint.com/">JSHint</a> and <a href="https://twitter.github.io/recess/">Recess</a>, linters for JavaScript and CSS. To continue to run <code>make</code> via Terminal, do the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g recess jshint
+</span></span></code></pre></div><p>We&rsquo;ve also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the <a href="https://github.com/twbs/bootstrap/blob/v2.0.3/README.md">updated readme</a>.</p>
+<h2 id="html-and-css">HTML and CSS</h2>
+<ul>
+<li>Overhauled the responsive utility classes to simplify required CSS, add <code>!important</code> to all declarations, and use <code>display: inherit</code> in place of <code>display: block</code> to account for different types of elements.</li>
+<li>Removed <code>&gt;</code> from fluid grid column selectors, meaning every element with a <code>.span*</code> class within a <code>.row-fluid</code> will use percentage widths instead of fixed-pixels.</li>
+<li>Fixed regression in responsive images support as of 2.0.1. We&rsquo;ve re-added <code>max-width: 100%;</code> to images by default. We removed it in our last release since we had folks complaining about Google Maps integration and other projects, but we&rsquo;re taking a different stance now on these things and will require developers to make these tweaks on their end.</li>
+<li>Added variable <code>@navbarBrandColor</code> for the brand element in navbars, which defaults to <code>@navbarLinkColor</code>.</li>
+<li>Font-family mixins now use variables for their stacks.</li>
+<li>Fixed an unescaped <code>filter</code> on the <code>.reset-filter()</code> mixin that was causing some errors depending on your compiler.</li>
+<li>Fixed regression in <code>.form-actions</code> background, which was too dark, by adding a new variable <code>@formActionsBackground</code> and changing the color to <code>#f5f5f5</code> instead of <code>#eee</code>.</li>
+<li>Fixed an issue on button group dropdowns where the background color was not using the button&rsquo;s darker color when the dropdown is open.</li>
+<li>Generalized and simplified the open dropdown classes while adding smarter defaults. Instead of <code>.dropdown.open</code>, we now use just <code>.open</code>. On the defaults side, all dropdown menus now have rounded corners to start.</li>
+<li>Improved active <code>.dropdown-toggle</code> styles (for dropdown buttons) by darkening the background and sharpening the inset shadow to match the active state of buttons.</li>
+<li>Direction of animation on progress bars reversed.</li>
+<li>Fixed input-prepend/append issue with uneditable inputs: <code>.uneditable-input</code> was being floated and a missing comma meant its <code>border-radius</code> for the append option wasn&rsquo;t being applied properly.</li>
+<li>Removed <code>height: auto;</code> from <code>img</code> since it was overriding dimensions set via HTML attributes.</li>
+<li>Fixed an issue of double borders on the top of tables with captions or colgroups.</li>
+<li>Fixed issue with anchor buttons in the <code>.navbar-text</code>. Instead of a general styling on all anchors within an element with that class, we now have a new class to specifically apply appropriate link color.</li>
+<li>Added support for <code>@navbarHeight</code> on the brand/project name and nav links for complete navbar height customization.</li>
+<li>Fixed the black borders on buttons problem in IE7 by removing the border, increasing the line-height, and providing darker background colors.</li>
+<li>Removed excess padding on <code>.search-query</code> inputs in IE7 since it doesn&rsquo;t have border-radius.</li>
+<li>Updated alert messages in Components to use <code>button</code> elements as close icons instead of <code>a</code>. Both can be used, but an <code>a</code> will require <code>href=&quot;#&quot;</code> for dismissal on iOS devices.</li>
+<li>Fixed an issue with prepended/appended inputs in Firefox where <code>select</code> elements required two clicks to toggle the dropdown. Resolved by moving the <code>position: relative</code> to the <code>select</code> by default instead of on <code>:focus</code>.</li>
+<li>Added a new mixin, <code>.backface-visibility</code>, to help refine CSS 3D tranforms. Examples and explanation of usage can be found on <a href="https://css-tricks.com/almanac/properties/b/backface-visibility/">CSS Tricks</a>.</li>
+<li>Changed specificity of grid classes in responsive layouts under 767px to accurately target <code>input</code>, <code>select</code>, and <code>textarea</code> elements that use <code>.span*</code> classes.</li>
+<li>Horizontal description lists, <code>.dl-horizontal</code>, now truncate terms that are too long to fit in their fixed-width column. In the &lt; 767px responsive layout, they change to their default stacked layout.</li>
+<li>Changed tabbable tabs to prevent issues in left and right aligned tabs. <code>.tab-content</code> would not growing to its parent&rsquo;s full width due to <code>display: table</code>. We removed that and the <code>width: 100%</code> and instead just set <code>overflow: auto</code> to clear the left and right aligned tabs.</li>
+<li>Updated thumbnails to support fluid grid column sizing.</li>
+<li>Added <code>&gt;</code> to most of the button group selectors</li>
+<li>Added new variable, <code>@inputBorderRadius</code>, to all form controls that previously made use of the static <code>3px</code> value everywhere.</li>
+<li>Changed the way we do <code>border-radius</code> for tables. Instead of the regular mixin that zeros out all other corners, we specify one corner only so they can be combined for use on single column table headers.</li>
+<li>Updated Glyphicons Halflings from 1.5 to 1.6, introducing 20 new icons.</li>
+<li>Added an <code>offset</code> paramater to the <code>.makeColumn</code>.</li>
+<li>Increased the specificity of all tabbable nav selectors to include <code>.nav-collapse</code> to appropriately scope the responsive navbar behavior.</li>
+<li>Fixed uneditable inputs: text now cuts off and does not wrap, making it behave just like a default <code>input</code>.</li>
+<li>Labels and badges are now <code>vertical-align: baseline;</code> so they line up with surrounding text.</li>
+</ul>
+<h2 id="javascript">JavaScript</h2>
+<ul>
+<li>Add jshint support</li>
+<li>Add travis-ci support w/ headless phantom integration</li>
+<li>Replace UA sniffing in bootstrap-transitions.js</li>
+<li>Add MSTransitionEnd event to transition plugin</li>
+<li>Fix pause method in carousel (shouldn&rsquo;t restart when hovering over controls)</li>
+<li>Fix crazy opera bug #1776</li>
+<li>Don&rsquo;t open dropdown if target element is disabled</li>
+<li>Always select last item in scrollspy if you&rsquo;ve reached the bottom of the document or element</li>
+<li>Typeahead should escape regexp special chars</li>
+<li>If interval is false on carousel, do not auto-cycle</li>
+<li>Add preventDefault support for all initial event types (show, close, hide, etc.)</li>
+<li>Fix collapse bug in ie7+ for initial collapse in</li>
+<li>Fix nested collapse bug</li>
+<li>If transitioning collapse, don&rsquo;t start new transition</li>
+<li>Try to autodetect when to use html/text method in tooltip/popovers to help prevent xss</li>
+<li>Add bootstrap + bootstrap.min.js to gh-pages for @remy and jsbin support</li>
+</ul>
+<h2 id="documentation-and-repo">Documentation and repo</h2>
+<ul>
+<li>Combined badges and labels into a single LESS file, badges-labels.less, to reduce repeated CSS.</li>
+<li>Separated responsive features into multiple files. We now have a file for each grouping of media queries (tablets and down, tablets to desktops, and large desktops). Additionally, the visible/hidden utility classes and the responsive navbar are in their own files. The output is the same in the compiled CSS, but this should give folks a bit more flexibility.</li>
+<li>Added a new CSS Tests page in the docs (not in the top nav) for better testing of edge cases and extending the use of standard components.</li>
+<li>Removed the bootstrap.zip file from the repo and the make process for faster building and a lighter repo. From now on, the zip will only be in the documentation branch.</li>
+<li>Fixed incorrect use of class instead of ID for tabs example and added documentation for multiple ways of toggling tabs.</li>
+<li>Fixed required markup listed for the specialized navbar search field.</li>
+<li>Removed all mention of <code>@siteWidth</code>, a variable no longer in use.</li>
+<li>Removed mentions of unused <code>@buttonPrimaryBackground</code> variable, which is no longer in use.</li>
+<li>Updated LESS docs page to include all the new variables we added in previous releases.</li>
+<li>Removed broken &ldquo;dropup&rdquo; menus from tabs and pills examples (shouldn&rsquo;t have been there in the first place).</li>
+<li>Replaced <code>.badge-error</code> with <code>.badge-important</code>. The error option is not a valid class and was a typo in the docs.</li>
+<li>Fixed mention of how to add plain text to the navbar. Previously the docs stated you only needed a <code>p</code> tag, but the required HTML is any element with class <code>.navbar-text</code>.</li>
+<li>Clarified the use of <code>.tabbable</code> for tabs. The wrapping class is only required for left and right tabs to clear their floats. Also added mention of <code>.fade</code> to fade in tabs.</li>
+<li>Updated forms documentation:
+<ul>
+<li>Remove unnecessary duplicate help text in first example</li>
+<li>Added mention of required <code>input</code> class, <code>.search-query</code>, for the search form variation</li>
+<li>Removed incorrect mention of form fields being <code>display: block;</code> to start as fields are <code>inline-block</code> to start.</li>
+</ul>
+</li>
+<li>Added mention of <code>data-target</code> attribute for the dropdowns JavaScript plugin to show how to keep custom URLs intact on links with <code>.dropdown-toggle</code> class.</li>
+<li>Updated the Kippt screenshot on the homepage to reflect their recent responsive redesign and upgrade to 2.0.2.</li>
+</ul>
+<hr>
+<p>We&rsquo;re continually updating issues and tracking them for our next release in the <a href="https://github.com/twbs/bootstrap/issues?milestone=7&amp;q=is%3Aopen">2.1 milestone</a>, which will focus on adding a few new features and tackle the inevitable bugs and edge cases from this release.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2012/04/19/bootstrap-jshint-and-recess/" class="text-decoration-none">
             Bootstrap, JSHint, and Recess
           </a>
@@ -220,7 +335,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="Thu, 19 Apr 2012 00:00:00 &#43;0000">
@@ -233,6 +348,8 @@
   </span>
 </div>
 
+
+        
 
         <p>This last week we&rsquo;ve added two new developer tools to the Bootstrap tool chain and I wanted to take a minute to let you know a little bit more about what they are, why we&rsquo;ve added them, and why it matters.</p>
 <h3 id="jshinthttpsjshintcom"><a href="https://jshint.com/">JSHint</a></h3>
@@ -287,6 +404,8 @@ We&rsquo;re hoping that this will both catch potentially unsafe syntax as well a
 </div>
 
 
+        
+
         <p>Our next release, <a href="https://github.com/twbs/bootstrap/issues?milestone=10&amp;q=is%3Aopen">2.0.3</a>, is almost ready to rock, but we need your help to get the finish line in the best shape possible. Similar to what we did for the big 2.0 launch, we&rsquo;re asking for the community&rsquo;s help in testing out the release&rsquo;s work-in-progress branch. We have a ton of bug fixes—another 80 or so since 2.0.2—and want to have the highest quality release we can.</p>
 <h2 id="why">Why?</h2>
 <p>Good question. 2.0.2 introduced some bad bugs in component behavior, publicized outdated documentation, and introduced some ugly regressions. That sucks, and when those things happen, we get held up tracking them down because we missed something in our haste to get a release out the door. We want to focus all our efforts on the 2.1 release after 2.0.3, and to do that we need to get as bug free as we can with this one.</p>
@@ -328,6 +447,8 @@ We&rsquo;re hoping that this will both catch potentially unsafe syntax as well a
 </div>
 
 
+        
+
         <p>As you may have heard, Jacob and I are <a href="https://ukengopenhouse.eventbrite.com/">heading to London in a week to talk Bootstrap</a>—and we&rsquo;re pretty stoked about it! The event is already sold out, but we&rsquo;ll be there for a few days to be sure to chat and hang with folks in the area.</p>
 <p>As part of our visit and talk, we&rsquo;ll be <strong>releasing Bootstrap 2.0.3 on April 24</strong> from London, our first intercontinental release. It&rsquo;s been a long time coming, and we know lots of you have been anxiously awaiting its arrival, but we want to do this release the best we can. In addition to the release itself, the rest of our talk will focus on the future of Bootstrap. We&rsquo;re not exactly sure what that will be yet, but the <a href="https://github.com/twbs/bootstrap/issues?milestone=7&amp;q=is%3Aopen">2.1 milestone on GitHub</a> might give away some of it.</p>
 <p>Stay tuned for more info and feel free to hit us up on Twitter for questions, opportunities to meet up, and more.</p>
@@ -357,61 +478,13 @@ We&rsquo;re hoping that this will both catch potentially unsafe syntax as well a
 </div>
 
 
+        
+
         <p>Earlier today <a href="https://getbootstrap.com/">Bootstrap</a> passed 25,000 watchers on GitHub. For the last few months it has been the most watched project and continues to grow at an alarming rate. In fact, I recall writing about <a href="https://markdotto.com/2011/10/28/floored/">8,700 watchers back in October</a>. Jacob and I are still both in awe of how this former internal pet project has grown into one of the most popular front-end frameworks on the Web.</p>
 <p>We&rsquo;ve still got a lot ahead of us for features, refinement, and more, but we wanted to take a moment once again to thank the community for making Bootstrap the success that it is today.</p>
 <p>Thank you. <em>Really</em>, <strong>thank you.</strong></p>
 <p>And a special thanks to the 119 contributors (not including Jacob or myself) who have committed code to Bootstrap. Without you guys, a lot of this wouldn&rsquo;t be possible.</p>
 <p>Here&rsquo;s to the next 25,000!</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2012/03/22/combining-badges-less-and-labels-less-in-2-0-3/" class="text-decoration-none">
-            Combining badges.less and labels.less in 2.0.3
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="Thu, 22 Mar 2012 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    March 22, 2012
-  </span>
-</div>
-
-
-        <p>For one reason or another, in 2.0.2 we made badges have separate LESS files. The CSS is 95% the same, but we knew that some folks might need one or the other, or even both. With <a href="https://github.com/twbs/bootstrap/issues?milestone=10&amp;q=is%3Aopen">2.0.3</a>, we&rsquo;ll be simplifying some of those styles into a single .less file and scoping the <code>:hover</code> state to anchors only.</p>
-<p>Moving forward, we&rsquo;ll have the following as a shared set of base styles. As you can see, when combined, there isn&rsquo;t much extra weight at all for those who want just badges or labels.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc">.label</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="nc">.badge</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="na">font-size</span><span class="o">:</span> <span class="o">@</span><span class="n">baseFontSize</span> <span class="o">*</span> <span class="mf">.846</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">font-weight</span><span class="o">:</span> <span class="ni">bold</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">line-height</span><span class="o">:</span> <span class="mi">13</span><span class="kt">px</span><span class="p">;</span> <span class="c1">// ensure proper line-height if floated
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">color</span><span class="o">:</span> <span class="o">@</span><span class="ni">white</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">vertical-align</span><span class="o">:</span> <span class="ni">middle</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">white-space</span><span class="o">:</span> <span class="ni">nowrap</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">text-shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="o">-</span><span class="mi">1</span><span class="kt">px</span> <span class="mi">0</span> <span class="nf">rgba</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">,.</span><span class="mi">25</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="na">background-color</span><span class="o">:</span> <span class="o">@</span><span class="n">grayLight</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>One file, multiple components. We&rsquo;ve done it before with our multiple types of navigation, so it&rsquo;s nothing folks familiar with Bootstrap haven&rsquo;t seen before.</p>
-<p>On a related note, we&rsquo;ve changed how we handle hover states for badges and labels. Instead of having a default hover state on an inherently static element, one made with say a <code>span</code>, we relegate the hover state (a cursor and background change) to anchors only.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nt">a</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">&amp;</span><span class="nc">.label</span><span class="nd">:hover</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">  <span class="k">&amp;</span><span class="nc">.badge</span><span class="nd">:hover</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="na">color</span><span class="o">:</span> <span class="o">@</span><span class="ni">white</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="na">text-decoration</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="na">cursor</span><span class="o">:</span> <span class="ni">pointer</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>For the alternate colors on badges and labels, we&rsquo;ve also relegated those styles to anchors only (those with an <code>href</code> attribute).</p>
 
       </div>
   </div>
