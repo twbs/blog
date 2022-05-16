@@ -112,7 +112,7 @@ On our components, CSS variables get even more power for customizing. Nearly eve
 
 _Scrollspy and close button have no relevant CSS variables, so they're excluded here._
 
-Throughout our documentation you'll find examples of customizing our default components by overriding their CSS variables. One great example comes from our own docs where we write our own button styles to create a purple button.
+Throughout our documentation you'll find examples of customizing our default components by overriding their CSS variables. One great example comes from our own docs where we write our own button styles to [create a purple button](https://getbootstrap.com/docs/5.2/components/buttons/#variables).
 
 ```css
 .btn-bd-primary {
