@@ -1,6 +1,6 @@
 ---
 author: mdo
-date: "2022-05-17T00:00:00Z"
+date: "2022-05-16T00:00:00Z"
 title: Using CSS variables in Bootstrap
 keywords:
   - bootstrap
