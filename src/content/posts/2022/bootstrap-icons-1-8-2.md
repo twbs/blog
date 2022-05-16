@@ -8,7 +8,7 @@ keywords:
   - release
 ---
 
-[Bootstrap Icons v1.8.2](https://icons.getbootstrap.com) has arrvied with some bug fixes and a refreshed docs design to match our main project.
+[Bootstrap Icons v1.8.2](https://icons.getbootstrap.com) has arrived with some bug fixes and a refreshed docs design to match our main project.
 
 Here's a quick rundown on the icon fixes:
 
