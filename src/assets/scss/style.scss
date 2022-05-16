@@ -55,6 +55,10 @@
 .fw-500 { font-weight: 500; }
 .fw-600 { font-weight: 600; }
 
+hr {
+  margin-block: 2rem;
+}
+
 .highlight pre.chroma {
   padding: 1.25rem;
   margin: 0 0 1rem;
@@ -86,19 +90,12 @@ blockquote p:last-child {
 
 // Tables
 table {
-  width: 100%;
-  margin-bottom: 1rem;
-  border-collapse: collapse;
-  border: 1px solid #e5e5e5;
-}
-td,
-th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
-}
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  @extend .table;
+  font-size: .875rem;
+
+  tbody {
+    border-top: 2px solid currentcolor;
+  }
 }
 
 .s-32 {
@@ -184,7 +181,8 @@ tbody tr:nth-child(odd) th {
 }
 
 // Special case the opening paragraph
-.post > p:first-of-type {
+.post > p:first-of-type,
+.post > img:first-child + p {
   font-size: 130%;
   color: $gray-700;
 }
