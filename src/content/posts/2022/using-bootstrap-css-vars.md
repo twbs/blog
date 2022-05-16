@@ -9,7 +9,7 @@ keywords:
 
 [Bootstrap v5.2.0-beta1](/2022/05/13/bootstrap-5-2-0-beta/) added a slew of CSS custom properties, or CSS variables, across the `:root` level and all our core components. Here's a quick look at how you can utilize them in your projects.
 
-With CSS variables, you can now customize Bootstrap easier than ever, and without the need for a CSS preprocessor if you want. Of course all the power of Sass is still there behind the scenes, but with CSS variables, we get a ton of power for the future. We can use and compose new values, replace styles globally without recompiling, set fallback values, setup new color modes, and more.
+With CSS variables, you can now customize Bootstrap easier than ever, and without the need for a CSS preprocessor. All the power of Sass is still there behind the scenes, but CSS variables adds a ton of power for the future. Use and compose new values, updates styles globally without recompiling, set fallback values, setup new color modes, and more.
 
 Let's dig in.
 
@@ -40,9 +40,14 @@ When we talk about CSS variables in Bootstrap, we're referring to three major gr
 
 - **Utility variables —** Used as modifiers within other utility classes.
 
-Regardless of where they are, all of our CSS variables are prefixed with `--bs-`, so you know where they're coming from and how they might be used across codebases that mix Bootstrap's CSS with additional custom styles.
+Regardless of where they are, all of our CSS variables are prefixed with `--bs-`, so you know where they're coming from and how they might be used across codebases that mix Bootstrap's CSS with additional custom styles. You'll also notice that we don't put all our component variables at the root level. This keeps CSS variables scoped to their intended use cases and prevents polluted variables in the global `:root` scope.
 
-It's also worth noting there are two upcoming updates will add even more power to our CSS variables. First, we'll be adding them to all our forms. Second, we'll be adding more nuanced global theme variables and support for color modes like [dark mode](https://github.com/twbs/bootstrap/pull/35857).
+It's also worth mentioning two larger efforts that are still to come around CSS variables:
+
+1. Adding CSS variables to all our forms
+2. Adding more nuanced global theme variables and support for color modes like [dark mode](https://github.com/twbs/bootstrap/pull/35857).
+
+These are likely coming in v5.3.0 (our next minor release after v5.2.0 stablizes), so in the mean time, check out the GitHub repo to see how things are shaping up.
 
 ## Root variables
 
@@ -54,7 +59,7 @@ Bootstrap has a ton of [root variables](https://getbootstrap.com/docs/5.2/custom
 
 - **Body font styles —** Everything from `font-size` to `color` and more, all applied to our `<body>` element.
 
-- **Shared properties —** For property-value pairings that are we consider theme specific, like link colors and border styles.
+- **Shared properties —** For property-value pairings that we consider theme specific, like link colors and border styles.
 
 Root CSS variables are used extensively across other parts of Bootstrap to allow you to easily override our default styles at a global level. For example, if you wanted to adjust the default `border-radius` and link color for our components, you could override a couple variables instead of writing new selectors.
 
@@ -82,28 +87,28 @@ Without CSS variables, you'd have to use a preprocessor like Sass or write new s
 
 On our components, CSS variables get even more power for customizing. Nearly everything under the Components section in our docs sidebar now has CSS variables available to you:
 
-- Accordion
-- Alerts
-- Badge
-- Breadcrumb
-- Buttons
-- Button group
-- Card
-- Carousel
-- Collapse
-- Dropdowns
-- List group
-- Modal
-- Navbar
-- Navs & tabs
-- Offcanvas
-- Pagination
-- Placeholders
-- Popovers
-- Progress
-- Spinners
-- Toasts
-- Tooltips
+- [Accordion](https://getbootstrap.com/docs/5.2/components/accordion/)
+- [Alerts](https://getbootstrap.com/docs/5.2/components/alerts/)
+- [Badge](https://getbootstrap.com/docs/5.2/components/badge/)
+- [Breadcrumb](https://getbootstrap.com/docs/5.2/components/breadcrumb/)
+- [Buttons](https://getbootstrap.com/docs/5.2/components/buttons/)
+- [Button group](https://getbootstrap.com/docs/5.2/components/button-group/)
+- [Card](https://getbootstrap.com/docs/5.2/components/card/)
+- [Carousel](https://getbootstrap.com/docs/5.2/components/carousel/)
+- [Collapse](https://getbootstrap.com/docs/5.2/components/collapse/)
+- [Dropdowns](https://getbootstrap.com/docs/5.2/components/dropdowns/)
+- [List group](https://getbootstrap.com/docs/5.2/components/list-group/)
+- [Modal](https://getbootstrap.com/docs/5.2/components/modal/)
+- [Navbar](https://getbootstrap.com/docs/5.2/components/navbar/)
+- [Navs & tabs](https://getbootstrap.com/docs/5.2/components/navs-tabs/)
+- [Offcanvas](https://getbootstrap.com/docs/5.2/components/offcanvas/)
+- [Pagination](https://getbootstrap.com/docs/5.2/components/pagination/)
+- [Placeholders](https://getbootstrap.com/docs/5.2/components/placeholders/)
+- [Popovers](https://getbootstrap.com/docs/5.2/components/popovers/)
+- [Progress](https://getbootstrap.com/docs/5.2/components/progress/)
+- [Spinners](https://getbootstrap.com/docs/5.2/components/spinners/)
+- [Toasts](https://getbootstrap.com/docs/5.2/components/toasts/)
+- [Tooltips](https://getbootstrap.com/docs/5.2/components/tooltips/)
 
 _Scrollspy and close button have no relevant CSS variables, so they're excluded here._
 
@@ -142,11 +147,11 @@ Which looks like this:
 
 ![Custom tooltip](/assets/img/2022/05/docs-custom-tooltip.png)
 
-There are dozens of CSS variables in play not across our components. All of them are referenced in a new section on the relevant docs page. For example, [here are our modal CSS variables](https://getbootstrap.com/docs/5.2/components/modal/#variables). This is in addition to all the Sass variables, mixins, loops, and maps used for each component.
+There are dozens of CSS variables in play across our components. All of them are referenced in a new section on the relevant docs page. For example, [here are our modal CSS variables](https://getbootstrap.com/docs/5.2/components/modal/#variables). This is in addition to all the Sass variables, mixins, loops, and maps used for each component.
 
 ## Utility variables
 
-Not every utility class uses CSS variables, but the ones that do gain a good amount of power and customization. [Background](https://getbootstrap.com/docs/5.2/utilities/background/), [border](https://getbootstrap.com/docs/5.2/utilities/borders/), and [color](https://getbootstrap.com/docs/5.2/utilities/colors/) utilities all have what we call "local CSS variables" to help supercharge their usefulness. And all of them use CSS variables to customize the alpha transparency value of `rgba()` colors.
+Not every utility class uses CSS variables, but the ones that do gain a good amount of power and customization. [Background](https://getbootstrap.com/docs/5.2/utilities/background/), [border](https://getbootstrap.com/docs/5.2/utilities/borders/), and [color](https://getbootstrap.com/docs/5.2/utilities/colors/) utilities all have what we call "local CSS variables" to improve their usefulness. Each of them uses CSS variables to customize the alpha transparency value of `rgba()` colors.
 
 Consider our [background color utilities](https://getbootstrap.com/docs/5.2/utilities/background/), `.bg-*`. By default each utility class has a local variable, `--bs-bg-opacity` with a default value of `1`. To change the background utility alpha value, you can override that value with your own styles, or some new `.bg-opacity-*` utilities.
 
@@ -160,7 +165,7 @@ Here's how `.bg-success` looks with all our `.bg-opacity-*` classes applied:
 
 ![Background opacity examples](/assets/img/2022/05/bg-opacity.png)
 
-And the same is available for [border color opacity](https://getbootstrap.com/docs/5.2/utilities/borders/#opacity) (`--bs-border-opacity` and `.border-opacity-*`) and [text color opacity](https://getbootstrap.com/docs/5.2/utilities/colors/#opacity)https://getbootstrap.com/docs/5.2/utilities/colors/#opacity (`--bs-text-opacity` and `.text-opacity-*`). So many color options are now available with these utilities.
+And the same is available for [border color opacity](https://getbootstrap.com/docs/5.2/utilities/borders/#opacity) (`--bs-border-opacity` and `.border-opacity-*`) and [text color opacity](https://getbootstrap.com/docs/5.2/utilities/colors/#opacity) (`--bs-text-opacity` and `.text-opacity-*`). So many color options are now available with these utilities.
 
 By default, we ship with five values for these various opacity utilities.
 
