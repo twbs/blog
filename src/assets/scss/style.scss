@@ -181,7 +181,8 @@ table {
 }
 
 // Special case the opening paragraph
-.post > p:first-of-type {
+.post > p:first-of-type,
+.post > img:first-child + p {
   font-size: 130%;
   color: $gray-700;
 }

@@ -8,6 +8,10 @@
       {{- partial "video" (dict "context" .) -}}
     {{- end -}}
 
+    {{- if .Page.Params.banner -}}
+      {{- partial "banner" (dict "context" .) -}}
+    {{- end -}}
+
     {{ .Content }}
   </div>
 

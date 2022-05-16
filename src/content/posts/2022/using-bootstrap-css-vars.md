@@ -5,6 +5,7 @@ title: Using CSS variables in Bootstrap
 keywords:
   - bootstrap
   - guide
+banner: "/assets/img/bootstrap-banner.png"
 ---
 
 [Bootstrap v5.2.0-beta1](/2022/05/13/bootstrap-5-2-0-beta/) added a slew of CSS custom properties, or CSS variables, across the `:root` level and all our core components. Here's a quick look at how you can utilize them in your projects.
