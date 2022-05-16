@@ -157,7 +157,7 @@ Consider our [background color utilities](https://getbootstrap.com/docs/5.2/util
 
 ```html
 <div class="p-3 bg-success bg-opacity-25">
-	...
+  ...
 </div>
 ```
 
