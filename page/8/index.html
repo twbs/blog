@@ -211,6 +211,45 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2020/05/21/bootstrap-icons-alpha4/" class="text-decoration-none">
+            Bootstrap Icons Alpha 4
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="Thu, 21 May 2020 09:30:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    May 21, 2020
+  </span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/2ZBtPf7FOoM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>We&rsquo;re closing in on 700 icons in Bootstrap Icons with today&rsquo;s release, Alpha 4! We&rsquo;ve spent some time under the hood of our build process to improve a few things, added tons of new icons, and fixed some bugs and inconsistencies.</p>
+<p>We&rsquo;ve shipped tons of new commerce icons for all your shopping cart needs, added tons of calendar options (I couldn&rsquo;t settle on one design), tons of new shape arrows, and more.</p>
+<h2 id="700-icons">~700 icons!</h2>
+<p>With 140 new icons in this release, we&rsquo;ve almost hit 700 icons. We&rsquo;re likely to fly by that in our next release, but in the meantime, have a look for yourself at the breadth of icons. Every icon has also been reprocessed to resolve SVGO issues that prevented them from being opened in some apps.</p>
+<p><img src="/assets/img/2020/05/bootstrap-icons-alpha4-all.png" class="d-block img-fluid mb-2 rounded border" alt="All Bootstrap Icons" loading="lazy" width="1681" height="2470">
+</p>
+<h2 id="download">Download</h2>
+<p>Alpha 4 has been published to GitHub and npm (package name <code>bootstrap-icons</code>). Get your hands on it <a href="https://github.com/twbs/icons/releases">from GitHub</a>, by updating to <code>v1.0.0-alpha4</code>, or by snagging the <a href="https://www.figma.com/file/XDj1VewxEtXzkDDMAvWx2W/Bootstrap-Icons-v1.0.0-alpha4">icons from Figma</a>.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2020/05/12/bootstrap-4-5-0/" class="text-decoration-none">
             Bootstrap 4.5.0
           </a>
@@ -220,7 +259,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="Tue, 12 May 2020 00:00:00 &#43;0000">
@@ -233,7 +272,7 @@
   </span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/tNG62fULYgI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/tNG62fULYgI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -405,58 +444,6 @@
         <p>Today we&rsquo;re shipping <a href="https://github.com/twbs/bootstrap/releases/tag/v4.4.1">Bootstrap v4.4.1</a>!</p>
 <p>In <a href="/2019/11/26/bootstrap-4-4-0/">v4.4.0</a>, we added <code>add()</code> and <code>subtract()</code> functions to avoid errors when using zero values in CSS&rsquo;s built in <code>calc()</code> function. While these functions work as expected with our build system, which is based on <code>node-sass</code>, some alert developers noticed that <a href="https://github.com/twbs/bootstrap/issues/29743">things broke when using another Sass compiler</a> like Dart Sass or Ruby Sass. To resolve this issue, we&rsquo;ve tweaked these functions a bit to output what we would expect.</p>
 <p>Lastly, we also added a <a href="https://github.com/twbs/bootstrap/pull/29762">theming fix</a> for some custom forms in a disabled fieldset.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2019/11/26/bootstrap-4-4-0/" class="text-decoration-none">
-            Bootstrap 4.4.0
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="Tue, 26 Nov 2019 00:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    November 26, 2019
-  </span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/P5ZJui3aPoQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p>Bootstrap 4 has a new update with a handful of feature changes. We’ve had quite the lengthy pull request to add responsive containers—big thanks to the developers who contribute to Bootstrap for sticking with it and helping us along the way. Nearly all new features will be carried forward into Bootstrap 5, so feel free to start using them now.</p>
-<h2 id="highlights">Highlights</h2>
-<p>Here&rsquo;s what you need to know about v4.4.0. Remember that with every minor and major release of Bootstrap, we ship a new URL for our hosted docs to ensure URLs continue to work.</p>
-<ul>
-<li><strong>New responsive containers!</strong> Over a year in the making, fluid up to a particular breakpoint, available for all responsive tiers.</li>
-<li><strong>New responsive <code>.row-cols</code> classes</strong> for quickly specifying the number of columns across breakpoints. This one is huge for those of you who have asked for responsive card decks.</li>
-<li><strong>New <code>escape-svg()</code> function</strong> for simplifying our embedded <code>background-image</code> SVGs for forms and more.</li>
-<li><strong>New <code>add()</code> and <code>subtract()</code> functions</strong> for avoiding errors and zero values from CSS’s built in <code>calc</code> feature.</li>
-<li><strong>New <code>make-col-auto()</code> mixin</strong> to make our <code>.col-auto</code> class available with custom HTML.</li>
-<li>Fixed an issue with Microsoft Edge not picking up <code>:disabled</code> styles by moving selectors to <code>[disabled]</code>.</li>
-<li><strong>Deprecated:</strong> <code>bg-variant()</code>, <code>nav-divider()</code>, and <code>form-control-focus()</code> mixins are now deprecated as they&rsquo;re going away in v5.</li>
-<li>Updated our spacing and alignment for modal footer elements like buttons to automatically wrap when space is constrained.</li>
-<li>More flexible form control validation styles thanks to fewer chained selectors. Also updated the <code>:invalid</code> validation icon to be an alert instead of an <code>&amp;times;</code> to avoid confusion with browser functionality for clearing the form field value.</li>
-<li>Fixed a couple dozen CSS and JS bugs.</li>
-<li>Moved to GitHub Actions for CI/CD! Expect more updates to our CI setup over time here while Actions evolves.</li>
-<li>Updated documentation to fix links and typos, improved landmarks for secondary navigation, and a new security doc for guidelines on reporting potential vulnerabilities.</li>
-</ul>
-<p>We&rsquo;ve shipped a lot more in this release, so be sure to check out the <a href="https://github.com/twbs/bootstrap/issues?q=project%3Atwbs%2Fbootstrap%2F18+is%3Aclosed+sort%3Aupdated-desc">v4.4.0 ship list of closed issues and merged pull requests</a> for more details.</p>
-<p><a href="https://getbootstrap.com/docs/4.4/">Head to to the v4.4.0 docs</a> to see the latest in action. The full release has been published to npm and will soon appear on the BootstrapCDN and Rubygems.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
       </div>
   </div>

@@ -211,6 +211,165 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2021/01/19/bootstrap-4.6.0/" class="text-decoration-none">
+            Bootstrap v4.6.0
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="Tue, 19 Jan 2021 21:30:00 &#43;0000">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    January 19, 2021
+  </span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/LuN6gs0AJls?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.</p>
+<p>Read on for the highlighted changes or <a href="https://getbootstrap.com/docs/4.6/">head to the v4.6 docs</a> to see the latest in action.</p>
+<h2 id="hugo">Hugo!</h2>
+<p>The biggest change in v4.6.0 is under the hood—we&rsquo;ve overhauled our development environment to match that of v5. Our v4.x docs are now powered by <a href="https://gohugo.io">Hugo</a>. That means no more Ruby dependency for v4.x, improved maintainability between major versions, faster development, and incredibly fast build times compared to Jekyll.</p>
+<h2 id="changes">Changes</h2>
+<p>Also available in the <a href="https://github.com/twbs/bootstrap/releases/tag/v4.6.0">v4.6.0 release on GitHub</a>.</p>
+<h3 id="highlights">Highlights</h3>
+<ul>
+<li>Tooltips and popovers can have custom classes via <code>customClass</code> option.</li>
+<li>Added new <code>.navbar-nav-scroll</code> class for scrolling expanded navbar contents on mobile devices.</li>
+<li>For improved accessibiliy, spinners now slow down when <code>prefers-reduced-motion</code> is enabled.</li>
+<li>v4.x docs are now built on Hugo for easier maintenance and backports from v5.x.</li>
+<li>Darkened <code>background-color</code> of <code>.dropdown-item</code> for improved hover state contrast, and ligthened the disabled <code>.dropdown-item</code> <code>color</code>.</li>
+<li>Improved alignment of form validation tooltips.</li>
+<li>File inputs no longer extend beyond their containers.</li>
+</ul>
+<h3 id="css">CSS</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/pull/31557">#31557</a>: Fix form validation tooltip alignment</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31657">#31657</a>: Handle the Ubuntu sans-serif case</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31700">#31700</a>: Suppress flexbox side effects in breadcrumb</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31882">#31882</a>: Slow down spinners when prefers-reduced-motion</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31886">#31886</a>: Fixed: Undefined mixin &ldquo;deprecate&rdquo; when importing &ldquo;bootstrap-grid-scss&rdquo;</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32141">#32141</a>: Use correct value order</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32145">#32145</a>: Avoid invisible real file input &ldquo;spilling&rdquo; out of container</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32160">#32160</a>: Add overflow suppression to custom file label</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32211">#32211</a>: Move negative margin-bottom from .nav-item to .nav-link</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32212">#32212</a>: Remove needless Stylelint disables</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32833">#32833</a>: Add <code>.navbar-nav-scroll</code> for vertical scrolling of navbar content</li>
+<li>Add two new variables for pagination border-radius values; backport of <a href="https://github.com/twbs/bootstrap/pull/32423">#32423</a></li>
+<li>Remove old/unnecessary reboot bug fix; backport of <a href="https://github.com/twbs/bootstrap/pull/32631">#32631</a></li>
+<li>Suppress focus outline for buttons when it shouldn&rsquo;t be visible in Chromium; backport of <a href="https://github.com/twbs/bootstrap/pull/32689">#32689</a></li>
+<li>Consistently use <code>outline:0</code> rather than <code>outline:none</code>; backport of <a href="https://github.com/twbs/bootstrap/pull/32751">#32751</a></li>
+<li>Darken dropdown item hover style; backport of <a href="https://github.com/twbs/bootstrap/pull/32754">#32754</a></li>
+<li>Lighten disabled dropdown text to <code>$gray-500</code></li>
+</ul>
+<h3 id="js">JS</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/pull/31820">#31820</a>: Check for data-interval on the first slide of carousel</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31834">#31834</a>/<a href="https://github.com/twbs/bootstrap/pull/32225">#32225</a>: tooltip/popover: add a <code>customClass</code> option</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32001">#32001</a>: Move <code>js/src/index.js</code> one folder up</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32045">#32045</a>: tests: fix sanitizer test</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32220">#32220</a>: Don&rsquo;t hide modal when <code>config.keyboard</code> is false</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32312">#32312</a>: build-plugins: switch to &ldquo;bundled&rdquo; for babel helpers</li>
+</ul>
+<h3 id="docs">Docs</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/pull/31861">#31861</a>: Split up dropdown sizing docs to improve rendering</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31892">#31892</a>: Remove redundant visually hidden &ldquo;(current)&rdquo; from pagination controls</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31893">#31893</a>: manifest.json: Switch to relative URLs so that we don&rsquo;t need to change the path with every major/minor release</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31898">#31898</a>: switch to suggesting jsDelivr as a CDN</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31904">#31904</a>:
+<ul>
+<li>docs(forms): use a legend for fieldset instead of aria-label</li>
+<li>docs(forms): fix incorrect legend nesting in fieldset</li>
+</ul>
+</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31936">#31936</a>: forms: change inline custom radio name</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31951">#31951</a>: Update anchor-js to v4.3.0</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31960">#31960</a>: Explicitly mention emoji fonts, tweak sentence in typography</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/31981">#31981</a>: list-group.md: fix snippet</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32005">#32005</a>: Remove <code>bugreport.apple.com</code> since it doesn&rsquo;t work</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32015">#32015</a>: Fix redirects</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32050">#32050</a>: Make docs anchorjs links darker on keyboard focus</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32054">#32054</a>: Add callouts about using light colors ideally on a dark background</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32077">#32077</a>: Switch to Hugo</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32083">#32083</a>: mention &ldquo;Liberation Sans&rdquo;</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32087">#32087</a>: download.md: link to JS files comparison too</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32094">#32094</a>: Changes to navbar documentation/explanation</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32106">#32106</a>: Clarify JS bundle docs once more for v4</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32137">#32137</a>: input-group.md: fix wrong class <code>.visually-hidden</code></li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32138">#32138</a>: navbar.md: remove <code>loading=lazy</code> from snippets</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32147">#32147</a>: Fix caniuse.com redirects</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32151">#32151</a>: Mention user-select-all support in docs</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32196">#32196</a>: homepage: split snippets and show copy buttons</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32203">#32203</a>: Switch to jsDelivr for the remaining docs assets</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32223">#32223</a>: introduction: split comments</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32247">#32247</a>: Fix typos in tooltip/popover docs</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32253">#32253</a>: Add Russian translation</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32363">#32363</a>: Remove useless <code>.text-left</code> in Layout / Overview</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32399">#32399</a>: Remove duplicated &ldquo;follow Bootstrap on Twitter&rdquo; link in Community section</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32457">#32457</a>: Add mention of the bs-custom-file-input plugin needed for the custom file input</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32461">#32461</a>: style clipboard button on <code>:focus</code>, not just <code>:hover</code></li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32462">#32462</a>: Replace Lorem Ipsum placeholder text with more representative (or at least english language) text</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32634">#32634</a>: Remove incorrect mention of dropdowns for dynamic tab behavior</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32639">#32639</a>: v4: Add an actual <code>data-touch=&quot;false&quot;</code> example in the carousel docs</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32728">#32728</a>: add v5.0 in versions</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32761">#32761</a>: Mention stretched-link constraints with table elements</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32789">#32789</a>: Remove <code>role=&quot;button&quot;</code> from CTA links in carousel example</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32791">#32791</a>: Docs v4: Sass implementation and rounding precision</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32809">#32809</a>:
+<ul>
+<li>Clarify Sass import and customize docs for how to modify variable defaults</li>
+<li>Add an npm starter project callout to a few pages</li>
+</ul>
+</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32827">#32827</a>: Add a live toast example to the docs</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32759">#32759</a>: Mention CSP and embedded SVGs in v4 docs</li>
+<li>docs(dropdowns): clarify where is <code>.show</code> applied</li>
+<li>Require <code>.has-validation</code> for input groups with validation</li>
+<li>Fix mobile menu jump &amp; double border</li>
+<li>Remove double spaces from homepage SVGs</li>
+<li>browserconfig.xml: switch to relative image path</li>
+<li>Tweak the wording for collapse to indicate button is preferred/more semantic; backport of <a href="https://github.com/twbs/bootstrap/pull/32632">#32632</a></li>
+<li>Clarify the <code>$enable-shadows</code> option in our docs; backport of <a href="https://github.com/twbs/bootstrap/pull/32685">#32685</a></li>
+</ul>
+<h3 id="examples">Examples</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/pull/31979">#31979</a>: v4 Examples/Floating-labels: fix bad behavior with autofill</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32198">#32198</a>: examples: add the version number in <code>title</code></li>
+</ul>
+<h3 id="misc">Misc</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/pull/29753">#29753</a>: Improve build/generate-sri.js regex</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32003">#32003</a>: CI: switch to Node.js 14</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32008">#32008</a>: Update Edge&rsquo;s Rendering Engine on CONTRIBUTING.md</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32486">#32486</a>: BrowserStack: test on macOS Catalina instead of High Sierra</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/32756">#32756</a>: Stylelint: disallow some property values</li>
+<li><strong>Fix for npm 7.x</strong> package.json: move <code>version_short</code> variable under the <code>config</code> object; backport of <a href="https://github.com/twbs/bootstrap/pull/32737">#32737</a></li>
+<li>Update build-examples script so that the resulting examples zip file includes only the needed files</li>
+<li>Various CI tweaks</li>
+<li>Updated devDependencies</li>
+</ul>
+<h2 id="next-up">Next up</h2>
+<p>Our second beta of v5 is coming. We&rsquo;re working on ironing on some kinks from the update to Popover 2, which has taken longer than expected. This affects our dropdowns, popovers, and tooltips. Once some of the major issues are resolved, we&rsquo;ll ship our next beta.</p>
+<p>Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2021/01/07/bootstrap-icons-1-3-0/" class="text-decoration-none">
             Bootstrap Icons v1.3.0
           </a>
@@ -220,7 +379,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="Thu, 07 Jan 2021 21:30:00 &#43;0000">
@@ -233,7 +392,7 @@
   </span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/a01QQZyl-_I?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/a01QQZyl-_I?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -443,155 +602,6 @@
 </span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.2.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.2.0/bootstrap-icons-1.2.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
 <h2 id="figma">Figma</h2>
 <p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/JeBqM2fRcfIe7wMDgNZG6d/Bootstrap-Icons-v1.2.0?node-id=0%3A1">icons from Figma</a>.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2020/12/07/bootstrap-5-beta-1/" class="text-decoration-none">
-            Bootstrap 5 Beta 1
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="Mon, 07 Dec 2020 11:00:00 &#43;0000">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    December 07, 2020
-  </span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/y2bVIBwpCTA?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p>With our first beta release of Bootstrap 5, we&rsquo;re calling it on new features and breaking changes. From here on out, we&rsquo;re only fine-tuning features, bugs, and documentation on our way to a stable v5 release. Woohoo!</p>
-<p>Just like with the v4 development process, our docs for v5 have been temporarily hosted on a subdomain for the next major release. Starting today, those docs are being moved to the main domain and our old <code>v5.getbootstrap.com</code> domain will redirect.</p>
-<p>There are some really awesome new features—RTL!—that have been added in this release, and they&rsquo;ve come with some important changes. Keep reading for the lowdown and let us know what you think!</p>
-<h2 id="rtl">RTL</h2>
-<p><a href="https://getbootstrap.com/docs/5.0/getting-started/rtl/"><img src="/assets/img/2020/12/rtl-docs.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap RTL docs" loading="lazy" width="1280" height="800">
-</a></p>
-<p>Our biggest addition to the project in years, we&rsquo;ve finally added RTL support to Bootstrap! Please join me in giving @ffoodd—one of our newest contributors and author of the RTL pull request—a massive thank you. <a href="https://github.com/twbs/bootstrap/pull/30980">The pull request</a> includes nearly 50 references to existing issues and PRs that have tried to implement the feature into our core.</p>
-<p>At a high level, our RTL approach includes a handful of changes:</p>
-<ul>
-<li>
-<p><strong>New RTL versions of our CSS dist file</strong>, which includes our grid, Reboot, utilities, and standard bundles. <a href="https://getbootstrap.com/docs/5.0/getting-started/contents/">See the Contents page for a full list of files.</a></p>
-</li>
-<li>
-<p><strong><a href="https://getbootstrap.com/docs/5.0/getting-started/rtl/">New RTL documentation</a></strong> to help you get started.</p>
-</li>
-<li>
-<p><strong><a href="https://getbootstrap.com/docs/5.0/examples/#rtl">Five new RTL Examples</a></strong> that show our new RTL CSS in action, converting our Album, Checkout, Carousel, Blog, and Dashboard examples into all new right-to-left equivalents.</p>
-</li>
-<li>
-<p><strong>Two new cheatsheet kitchen sink pages</strong>—the <a href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">default cheatsheet</a> for our standard CSS and the <a href="https://getbootstrap.com/docs/5.0/examples/cheatsheet-rtl/">RTL cheatsheet</a>.</p>
-</li>
-</ul>
-<p>Our approach is built on <a href="https://rtlcss.com/">RTLCSS</a>, an awesome project that helps reprocess an existing LTR stylesheet for RTL. We&rsquo;ve classified it as an experimental feature for now, anticipating that we&rsquo;ll get some of this wrong. We&rsquo;re looking to the community to help us round out the feature as we wrap up some remaining todos.</p>
-<p><a href="https://github.com/twbs/bootstrap/issues/32330">This issue</a> has some outstanding todos already planned for our team to address. See something else we can improve? Please consider opening an issue or pull request.</p>
-<p><a href="https://getbootstrap.com/docs/5.0/getting-started/rtl/">Read up on RTL in Bootstrap in our docs</a>, including required HTML changes, a starter template, details on our approach, and more.</p>
-<h2 id="renamed-classes-for-logical-properties">Renamed classes for logical properties</h2>
-<p>Part of our approach to adding RTL to Bootstrap was to add it in a way that felt future-friendly to ourselves and the web at large. As such, we&rsquo;ve embraced the spirit of CSS logical properties and <strong>have renamed several classes and variables</strong>. It&rsquo;s a risky change because of the size and impact of the change, but we hope you&rsquo;ll appreciate it overall!</p>
-<p>Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like <code>left</code> and <code>right</code> in favor <code>start</code> and <code>end</code>. Things like <code>align-items-end</code> have been welcomed additions. This makes horizontal directional class names appropriate for LTR and RTL without any additional overhead moving forward.</p>
-<p>For example, in a LTR context, instead of <code>.ml-3</code> for <code>margin-left</code>, use <code>.ms-3</code>. Be sure to <a href="https://getbootstrap.com/docs/5.0/migration/#rtl">read the RTL Migration guide</a> for a full list of renamed classes and variables.</p>
-<h2 id="popperjs-v2">Popper.js v2</h2>
-<p><img src="/assets/img/2020/12/popper-header.png" class="d-block img-fluid mb-2 rounded border" alt="Popper.js" loading="lazy" width="1520" height="834">
-</p>
-<p>We&rsquo;ve upgraded <a href="https://popper.js.org">Popper.js</a> from v1.x to v2.x, bringing with it some small breaking changes to our tooltips and popovers. These two changes are why we haven&rsquo;t been able to update to v2.x sooner.</p>
-<ul>
-<li>Removed <code>offset</code> option from our Tooltip/Popover and Dropdown plugins; this can still be achieved using the <code>popperConfig</code> parameter.</li>
-<li>The <code>fallbackPlacement</code> option has become <code>fallbackPlacements</code>.</li>
-</ul>
-<p>Popper.js v2 also comes with a smaller file size for our primary dependency, updated positioning calculations, and much more. Beyond that, our tooltips and popovers are unchanged and just as powerful.</p>
-<h2 id="namespaced-data-attributes">Namespaced data attributes</h2>
-<p>We&rsquo;ve renamed all our <code>data</code> attributes to include <code>bs</code> as an infix, thereby namespacing all the HTML attributes that enable JavaScript behaviors from our plugins. <a href="https://github.com/twbs/bootstrap/pull/31827">See #31827</a> for details. It helps keep Bootstrap-required JavaScript triggers clearly identified throughout your projects.</p>
-<p>Making this change is a tad annoying, but easy enough to remedy with a find and replace. The new attributes work just like the old ones, just a little more specific. For example, here&rsquo;s a dropdown button and menu with the newly renamed <code>data-bs-toggle</code> attribute.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary dropdown-toggle&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dropdownMenuButton&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    Dropdown button
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-menu&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dropdownMenuButton&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Another action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Something else here<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="new-toast-positioning">New toast positioning</h2>
-<p><img src="/assets/img/2020/12/toast-position-docs.png" class="d-block img-fluid mb-2 rounded border" alt="Popper.js" loading="lazy" width="1556" height="752">
-</p>
-<p>After dabbling in some JavaScript solutions to <a href="https://getbootstrap.com/docs/5.0/components/toasts/#placement">positioning toasts</a>, we&rsquo;ve landed on a new CSS-only approach thanks to our <a href="https://getbootstrap.com/docs/5.0/utilities/position/">new positioning utilities</a>. This comes with some minor breaking changes—namely some changes to exact CSS properties and how we toggle visibility of the toasts—but largely keeps them intact.</p>
-<p>Our docs have been updated to include a <a href="https://getbootstrap.com/docs/5.0/components/toasts/#placement">new position preview picker</a>, too, so you can see them in action. <a href="https://github.com/twbs/bootstrap/pull/32280/">See the pull request for more details.</a></p>
-<h2 id="js-enhancements">JS enhancements</h2>
-<p>Beyond the namespacing, we&rsquo;ve been chipping away at a few other JavaScript improvements and bug fixes. Here&rsquo;s a rundown of what&rsquo;s new:</p>
-<ul>
-<li>Created a new base component to share logic across our components. <a href="https://github.com/twbs/bootstrap/pull/29370">See #29370.</a></li>
-<li>Migrate to more modern APIs across our plugins. <a href="https://github.com/twbs/bootstrap/pull/32095">See #32095.</a></li>
-<li>Tooltips and popovers can now have custom classes. <a href="https://github.com/twbs/bootstrap/pull/32217">See #32217.</a></li>
-<li>Don&rsquo;t hide modal when <code>config.keyboard</code> is false. <a href="https://github.com/twbs/bootstrap/pull/32179">See #32179.</a></li>
-</ul>
-<p>More JavaScript updates are coming soon, from performance and file-size improvements to new features.</p>
-<h2 id="states-in-the-utilities-api">States in the utilities API</h2>
-<p>One of the biggest new features of Bootstrap 5 is our utilities API, an extensible way to customize, add, or remove Bootstrap utilities. We&rsquo;ve been iterating along the way and our newest improvement is the ability to add pseudo-class variants with the <code>state</code> option.</p>
-<p>Use the <code>state</code> option to generate pseudo-class variations. Example pseudo-classes are <code>:hover</code> and <code>:focus</code>. When a list of states are provided, classnames are created for that pseudo-class. For example, to change opacity on hover, add <code>state: hover</code> and you&rsquo;ll get <code>.opacity-hover:hover</code> in your compiled CSS.</p>
-<p>Need multiple pseudo-classes? Use a space-separated list: <code>state: hover focus</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$utilities</span><span class="o">:</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">  <span class="s2">&#34;opacity&#34;</span><span class="o">:</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="na">property</span><span class="o">:</span> <span class="ni">opacity</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">    <span class="na">class</span><span class="o">:</span> <span class="ni">opacity</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">    <span class="na">state</span><span class="o">:</span> <span class="n">hover</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">    <span class="na">values</span><span class="o">:</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">      <span class="na">0</span><span class="o">:</span> <span class="mi">0</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">      <span class="na">25</span><span class="o">:</span> <span class="mf">.25</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">      <span class="na">50</span><span class="o">:</span> <span class="mf">.5</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">      <span class="na">75</span><span class="o">:</span> <span class="mf">.75</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">      <span class="na">100</span><span class="o">:</span> <span class="mi">1</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl">    <span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">);</span>
-</span></span></code></pre></div><p>Which outputs to:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">opacity-0-hover</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">opacity</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">opacity-25-hover</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">opacity</span><span class="p">:</span> <span class="mf">.25</span><span class="p">;</span> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">opacity-50-hover</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">opacity</span><span class="p">:</span> <span class="mf">.5</span><span class="p">;</span> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">opacity-75-hover</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">opacity</span><span class="p">:</span> <span class="mf">.75</span><span class="p">;</span> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">opacity-100-hover</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="p">}</span>
-</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/pull/31643">See #31643</a> for more context on the change.</p>
-<h2 id="and-more">And more&hellip;</h2>
-<p>Elsewhere we&rsquo;ve made a handful of other breaking changes and improvements. The most notable updates include:</p>
-<ul>
-<li>
-<p><strong>Breaking:</strong> Renamed  <code>scale-color()</code> function to <code>shift-color()</code> . <a href="https://github.com/twbs/bootstrap/pull/32149">See #32149.</a></p>
-</li>
-<li>
-<p><strong>Breaking:</strong> Simplified the <code>make-container()</code> mixin and <code>$container-padding-x</code>. <a href="https://github.com/twbs/bootstrap/pull/31735">See #31735.</a></p>
-</li>
-<li>
-<p><strong>Fixed:</strong> Corners remain rounded now in vertical button groups. <a href="https://github.com/twbs/bootstrap/pull/31303">See #31303.</a></p>
-</li>
-<li>
-<p><strong>Fixed:</strong> Removed default linear gradient on some table rows that caused undesirable performance. Still more work to do here FYI. <a href="https://github.com/twbs/bootstrap/pull/32277">See #32277.</a></p>
-</li>
-<li>
-<p><strong>Updated:</strong> Breadcrumbs now have a simplified appearance. Use utilities to restore the <code>padding</code>, <code>background-color</code>, and <code>border-radius</code> as desired. <a href="https://github.com/twbs/bootstrap/pull/32249">See #32249.</a></p>
-</li>
-<li>
-<p><strong>Updated:</strong> Finalized browserslist configuration to match our supported browsers. <a href="https://github.com/twbs/bootstrap/pull/30986">See #30986.</a></p>
-</li>
-</ul>
-<p>For a more complete list of of changes, checkout the <a href="https://github.com/twbs/bootstrap/projects/26">v5 Beta project board</a> or <a href="https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F26+">list of issues and PRs</a> in this <a href="https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta1">release</a>.</p>
-<h2 id="get-started">Get started</h2>
-<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> to explore the new release.</strong> We&rsquo;ve also published this updated as a pre-release to npm, so if you&rsquo;re feeling bold or are curious about what&rsquo;s new, you can pull the latest in that way.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@next
-</span></span></code></pre></div><h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
       </div>
   </div>
