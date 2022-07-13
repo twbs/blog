@@ -8,7 +8,13 @@ keywords:
   - release
 ---
 
-[Bootstrap Icons v1.9.0](https://icons.getbootstrap.com) is here with over 140 new and updated icons, including some longstanding requests.
+[Bootstrap Icons v1.9.0](https://icons.getbootstrap.com) is here with over 140 new and updated icons, including some longstanding requests for new brands, transportation options, numbers and letters, and so much more. With this release, we're now at **over 1,800 icons**!
+
+## 140+ new icons
+
+Here's a quick look at all the new icons in v1.9.0:
+
+![New love icons in v1.9.0](/assets/img/2022/07/bootstrap-icons-v190.png)
 
 - Tons of new brand icons including popular browsers, Ubuntu, Google Play, Android, Dropbox, and many more.
 - New transportation icons including cars, trains, planes, fuel, and common road signs.
@@ -19,7 +25,7 @@ keywords:
 - Redrawn cup icon, now with a steam variant for hot beverages.
 - Fire, finally!
 
-There are a handful more in there as well, so have a look and put them to use in your next update!
+There are a handful more in there as well, so have a look and put them to use in your next update! In addition, we've updated our docs to include mention of Composer installs.
 
 *Looking for more new icons? Head to the [issue tracker](https://github.com/twbs/icons/issues) to check for open requests or submit a new one.*
 
