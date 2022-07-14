@@ -8,7 +8,9 @@
 
       <div class="post">
         <h1 class="post-title fw-600">
-          <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">
+            {{ .Title }}
+          </a>
         </h1>
 
         {{ partial "author-info" (dict "context" . "lazyload" $lazyload) -}}
