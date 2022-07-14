@@ -1,4 +1,5 @@
-{{- $img := imageConfig (add "/src/static" (.Destination | safeURL)) -}}
+{{- $src := .Destination | safeURL -}}
+{{- $config := imageConfig (add "/src/static" $src) -}}
 {{- $classes := "d-block img-fluid mb-2 rounded border" -}}
 
-<img src="{{ .Destination | safeURL }}" class="{{ $classes }}" alt="{{ .Text }}" loading="lazy" width="{{ $img.Width }}" height="{{ $img.Height }}">
+<img src="{{ $src }}" class="{{ $classes }}" alt="{{ .Text }}" loading="lazy" width="{{ $config.Width }}" height="{{ $config.Height }}">
