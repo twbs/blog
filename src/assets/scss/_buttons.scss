@@ -2,7 +2,6 @@
 //
 // Custom buttons for the docs.
 
-// scss-docs-start btn-css-vars-example
 .btn-bd-primary {
   --bs-btn-font-weight: 600;
   --bs-btn-color: var(--bs-white);
@@ -17,7 +16,6 @@
   --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
   --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
 }
-// scss-docs-end btn-css-vars-example
 
 .btn-bd-accent {
   --bs-btn-font-weight: 600;
