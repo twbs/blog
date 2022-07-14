@@ -2,7 +2,7 @@
 author: mdo
 date: "2013-11-06T00:00:00Z"
 title: Bootstrap 3.0.2 released
-video: -eSN8Cwit_s
+video: oMf_TdL0l64
 keywords:
   - bootstrap
   - release
