@@ -149,10 +149,10 @@ And did we mention that nearly all our code snippets now have an open in Stackbl
 **Head to <https://getbootstrap.com> for the latest.** It's also been pushed to npm:
 
 ```sh
-npm i bootstrap@v5.2.0-beta1
+npm i bootstrap@v5.2.0
 ```
 
-[Read the GitHub v5.2.0-beta1 changelog](https://github.com/twbs/bootstrap/releases/tag/v5.2.0-beta1) for a complete list of changes in this release.
+[Read the GitHub v5.2.0 changelog](https://github.com/twbs/bootstrap/releases/tag/v5.2.0) for a complete list of changes in this release.
 
 ## Support the team
 
