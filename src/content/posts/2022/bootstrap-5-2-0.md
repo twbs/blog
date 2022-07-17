@@ -144,6 +144,20 @@ And did we mention that nearly all our code snippets now have an open in Stackbl
 
 ![Code snippets Stackblitz](/assets/img/2022/07/snippets-stackblitz.png)
 
+## And more!
+
+- **Introduced new `$enable-container-classes` option. —** Now when opting into the experimental CSS Grid layout, `.container-*` classes will still be compiled, unless this option is set to `false`. Containers also now keep their gutter values.
+
+- **Thicker table dividers are now opt-in. —** We've removed the thicker and more difficult to override border between table groups and moved it to an optional class you can apply, `.table-group-divider`. [See the table docs for an example.](https://getbootstrap.com/docs/5.2/content/tables/#table-group-dividers)
+
+- **[Scrollspy has been rewritten](https://github.com/twbs/bootstrap/pull/33421) to use the Intersection Observer API**, which means you no longer need relative parent wrappers, deprecates `offset` config, and more. Look for your Scrollspy implementations to be more accurate and consistent in their nav highlighting.
+
+- Added `.form-check-reverse` modifier to flip the order of labels and associated checkboxes/radios.
+
+- Added [striped columns](https://getbootstrap.com/docs/5.2/content/tables/#striped-columns) support to tables via the new `.table-striped-columns` class.
+
+- Added new `smooth-scroll` to Scrollspy.
+
 ## Get the release
 
 **Head to <https://getbootstrap.com> for the latest.** It's also been pushed to npm:
