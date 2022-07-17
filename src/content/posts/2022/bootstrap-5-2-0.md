@@ -156,6 +156,8 @@ And did we mention that nearly all our code snippets now have an open in Stackbl
 
 - Added [striped columns](https://getbootstrap.com/docs/5.2/content/tables/#striped-columns) support to tables via the new `.table-striped-columns` class.
 
+- Added a new experimental [reserved data attribute `data-bs-config`](https://getbootstrap.com/docs/5.2/components/tooltips/#options) that can house simple component configuration as a JSON string.
+
 - Added new `smooth-scroll` to Scrollspy.
 
 ## Get the release
