@@ -2,7 +2,7 @@
 author: mdo
 date: "2022-07-14T21:30:00Z"
 title: Bootstrap v4.6.2
-video: RDTzFnYcIqj6I
+video: EErSKhC0CZs
 video_start: 135
 keywords:
   - bootstrap
@@ -19,7 +19,7 @@ There are two big highlights in v4.6.2:
 
 - First, we've added an example to our Collapse plugin docs to show how to use horizontal collapsing. This has long been possible via our JS, but we never had an official class to utitlize it.
 
-- Second, we've replaced the deprecated `color-adjust` with `print-color-adjust` as part of the Autoprefixer v10.4.6 issues. This should quiet the issues folks have seen from that dependency change.
+- Second, we've replaced the deprecated `color-adjust` with `print-color-adjust` in our Sass files as part of the Autoprefixer v10.4.6 issues. This should quiet the issues folks have seen from that dependency change. _If you're using our distribution CSS files, like `bootstrap.min.css`, you may still see the warning._
 
 Beyond that, we've addressed a few other things:
 
@@ -30,7 +30,7 @@ Beyond that, we've addressed a few other things:
 
 [Review the GitHub v4.6.2 release changelog](https://github.com/twbs/bootstrap/releases/tag/v4.6.2) for more details.
 
-From here, we don't expect to ship any meaningful updates to v4.6.x other than major security or dependency updates. Everything will focus on v5 and beyond after this release, starting with the stable release of v5.2.0 in the next couple of weeks.
+From here, we don't expect to ship any meaningful updates to v4.6.x other than major security or dependency updates. Everything will focus on v5 and beyond after this release, starting with the stable release of v5.2.0 in the next couple of weeks. Bootstrap 4 will officially end of life January 1, 2023, though you're obviously welcome to continue using it longer than that. Follow our [release repo](https://github.com/twbs/release) to stay in the loop on release maintenance status.
 
 ## Support the team
 
