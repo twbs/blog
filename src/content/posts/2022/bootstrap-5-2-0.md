@@ -123,11 +123,11 @@ Our Offcanvas component now has [responsive variations](https://getbootstrap.com
 
 ## New Examples repo and guides
 
-Since the beta, we've completely rewritten our Webpack and Parcel guides—and we've also added a new Vite guide.
+Since the beta, we've completely rewritten our [Webpack guide](https://getbootstrap.com/docs/5.2/getting-started/webpack/) and [Parcel guide](https://getbootstrap.com/docs/5.2/getting-started/parcel/). We've also added a new [Vite guide](https://getbootstrap.com/docs/5.2/getting-started/vite/).
 
-![Guides images](/assets/img/2022/07/bootstrap-guides@2x.png)
+![Bootstrap guides](/assets/img/2022/07/bootstrap-guides@2x.png)
 
-Plus, we've turned every one of those guides into a fully functioning example in our new [twbs/examples](https://github.com/twbs/examples) repo. We've even added a couple more examples to the repo, with plans to create even more.
+In addition, we've turned every one of those guides into a fully functioning example in our new [twbs/examples](https://github.com/twbs/examples) repo. We've even added a couple more examples to the repo, with plans to create even more.
 
 - [Starter](https://github.com/twbs/examples/tree/main/starter/) – CDN links for our CSS and JS
 - [Sass & JS](https://github.com/twbs/examples/tree/main/sass-js/) — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm
@@ -135,6 +135,7 @@ Plus, we've turned every one of those guides into a fully functioning example in
 - [Webpack](https://github.com/twbs/examples/tree/main/webpack/) - Import and bundle Sass and JS with Webpack
 - [Parcel](https://github.com/twbs/examples/tree/main/parcel/) - Sass, JS via Parcel
 - [Vite](https://github.com/twbs/examples/tree/main/vite/) - Sass, JS via Vite
+- [Bootstrap Icons font](https://github.com/twbs/examples/tree/main/icons-font) - Import Bootstrap Icons via icon font
 
 Each guide matches up to a new example in that repo, and nearly all of them can be immeditely available in Stackblitz. Now you don't even need to have a development environment configured on your computer to get started with Bootstrap.
 
