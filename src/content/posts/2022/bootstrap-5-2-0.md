@@ -1,8 +1,8 @@
 ---
 author: mdo
-date: "2022-07-13T00:00:00Z"
+date: "2022-07-19T16:00:00Z"
 title: Bootstrap 5.2.0
-video:
+video: L93-7vRfxNs
 keywords:
   - bootstrap
   - release
