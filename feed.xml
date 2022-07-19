@@ -6,7 +6,39 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Jul 2022 00:01:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Jul 2022 15:30:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap v4.6.2</title>
+      <link>https://blog.getbootstrap.com/2022/07/19/bootstrap-4-6-2/</link>
+      <pubDate>Tue, 19 Jul 2022 15:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2022/07/19/bootstrap-4-6-2/</guid>
+      <description>&lt;p&gt;After several months, we&amp;rsquo;ve finally shipped Bootstrap v4.6.2, one of our last releases for the v4. It&amp;rsquo;s a bit of a maintenance patch featuring bug fixes, dependency updates, and some docs updates.&lt;/p&gt;
+&lt;p&gt;Read on for the highlights or &lt;a href=&#34;https://getbootstrap.com/docs/4.6/&#34;&gt;head to the v4.6.x docs&lt;/a&gt; to see the latest in action.&lt;/p&gt;
+&lt;h2 id=&#34;whats-changed&#34;&gt;What&amp;rsquo;s changed&lt;/h2&gt;
+&lt;p&gt;There are two big highlights in v4.6.2:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, we&amp;rsquo;ve added an example to our Collapse plugin docs to show how to use horizontal collapsing. This has long been possible via our JS, but we never had an official class to utilize it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Second, we&amp;rsquo;ve replaced the deprecated &lt;code&gt;color-adjust&lt;/code&gt; with &lt;code&gt;print-color-adjust&lt;/code&gt; in our Sass files as part of the Autoprefixer v10.4.6 issues. This should quiet the issues folks have seen from that dependency change. &lt;em&gt;If you&amp;rsquo;re using our distribution CSS files, like &lt;code&gt;bootstrap.min.css&lt;/code&gt;, you may still see the warning.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beyond that, we&amp;rsquo;ve addressed a few other things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tweaked the size of &lt;code&gt;small&lt;/code&gt; and &lt;code&gt;.small&lt;/code&gt; to compute to a whole pixel value (was &lt;code&gt;12.8px&lt;/code&gt; and now is &lt;code&gt;14px&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Improved accessibility around our dropdowns, color contrast, and &lt;code&gt;role&lt;/code&gt; attributes.&lt;/li&gt;
+&lt;li&gt;Fixed some broken links to supporting documentation.&lt;/li&gt;
+&lt;li&gt;Updated dependencies across the board.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v4.6.2&#34;&gt;Review the GitHub v4.6.2 release changelog&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;From here, we don&amp;rsquo;t expect to ship any meaningful updates to v4.6.x other than major security or dependency updates. Everything will focus on v5 and beyond after this release, starting with the stable release of v5.2.0. Bootstrap 4 will officially end of life January 1, 2023, though you&amp;rsquo;re obviously welcome to continue using it longer than that. Follow our &lt;a href=&#34;https://github.com/twbs/release&#34;&gt;release repo&lt;/a&gt; to stay in the loop on release maintenance status.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap Icons v1.9.0</title>
       <link>https://blog.getbootstrap.com/2022/07/13/bootstrap-icons-1-9-0/</link>
@@ -582,38 +614,6 @@
 &lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.1.2&#34;&gt;Review the GitHub v5.1.2 release changelog&lt;/a&gt; for a complete list of changes since our last release.&lt;/p&gt;
-&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
-&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap 5.1.1</title>
-      <link>https://blog.getbootstrap.com/2021/09/07/bootstrap-5-1-1/</link>
-      <pubDate>Tue, 07 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/09/07/bootstrap-5-1-1/</guid>
-      <description>&lt;p&gt;Bootstrap v5.1.1 has landed with a handful of bug fixes and documentation improvements. Following this release, we&amp;rsquo;ll be shipping another bugfix and docs update before moving onto additional new features. Keep reading for the highlights.&lt;/p&gt;
-&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fixed broken &lt;code&gt;.bg-body&lt;/code&gt; utility.&lt;/strong&gt; This was caused by the same &lt;code&gt;--body-rgb&lt;/code&gt; CSS variable for both text and background. &lt;code&gt;--body-rgb&lt;/code&gt; is now split into &lt;code&gt;--body-color-rgb&lt;/code&gt; and &lt;code&gt;--body-bg-rgb&lt;/code&gt; for proper usage. &lt;em&gt;While this could be considered a breaking change, the current implementation was outright broken, so we&amp;rsquo;ve chosen to address this head-on.&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;All CSS dist builds now include &lt;code&gt;_root.scss&lt;/code&gt; and all our &lt;code&gt;:root&lt;/code&gt;-level CSS variables.&lt;/strong&gt; The goal here is consistency across the distribution files so that no matter what CSS build you use, you have the same level of customization potential.&lt;/li&gt;
-&lt;li&gt;Updated &lt;a href=&#34;https://getbootstrap.com/docs/5.1/customize/options/&#34;&gt;global options page&lt;/a&gt; to document &lt;code&gt;$enable-smooth-scroll&lt;/code&gt; variable.&lt;/li&gt;
-&lt;li&gt;Added callout to the &lt;a href=&#34;https://getbootstrap.com/docs/5.1/helpers/stacks/&#34;&gt;Stacks page&lt;/a&gt; about &lt;code&gt;gap&lt;/code&gt; browser support with flexbox.&lt;/li&gt;
-&lt;li&gt;Cleaned up documentation and usage of &lt;a href=&#34;https://getbootstrap.com/docs/5.1/components/buttons/#disabled-state&#34;&gt;disabled links&lt;/a&gt;, especially for &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; based buttons.&lt;/li&gt;
-&lt;li&gt;Fixed toggle between modal regression. &lt;a href=&#34;https://getbootstrap.com/docs/5.1/components/modal/#toggle-between-modals&#34;&gt;See docs example.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Fixed regression in tooltips where content doesn&amp;rsquo;t update after the first &lt;code&gt;show()&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fixed collapse toggle unintentionally hiding descendant tab panels.&lt;/li&gt;
-&lt;li&gt;Improved Alerts live example documentation.&lt;/li&gt;
-&lt;li&gt;Updated &lt;code&gt;$dropdown-link-hover-color&lt;/code&gt; to modify the &lt;code&gt;$dropdown-link-color&lt;/code&gt; instead of base &lt;code&gt;$gray-900&lt;/code&gt; variable for improved customization.&lt;/li&gt;
-&lt;li&gt;Clarified &lt;a href=&#34;https://getbootstrap.com/docs/5.1/getting-started/webpack/#importing-javascript&#34;&gt;JavaScript import usage&lt;/a&gt; for our Webpack guide.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;about-sass-compilers&#34;&gt;About Sass compilers&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve had a number of Visual Studio users mention that Sass compiling for Bootstrap 5.1.0 is broken when using the &lt;a href=&#34;https://github.com/madskristensen/WebCompiler&#34;&gt;Web Compiler extension&lt;/a&gt;. This extension hasn&amp;rsquo;t been updated in more than five years, so we recommend moving to a newer alternative. Some users mentioned the &lt;a href=&#34;https://github.com/madskristensen/SassCompiler&#34;&gt;Sass Compiler extension&lt;/a&gt; as a successful alternative. If you have additional recommendations, &lt;a href=&#34;https://github.com/twbs/bootstrap/issues/34738&#34;&gt;please leave a comment to share&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.1.1&#34;&gt;Review the GitHub v5.1.1 release changelog&lt;/a&gt; for a complete list of changes since our last release.&lt;/p&gt;
 &lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
 &lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
 </description>
