@@ -17,7 +17,7 @@ Read on for the highlights or [head to the v4.6.x docs](https://getbootstrap.com
 
 There are two big highlights in v4.6.2:
 
-- First, we've added an example to our Collapse plugin docs to show how to use horizontal collapsing. This has long been possible via our JS, but we never had an official class to utitlize it.
+- First, we've added an example to our Collapse plugin docs to show how to use horizontal collapsing. This has long been possible via our JS, but we never had an official class to utilize it.
 
 - Second, we've replaced the deprecated `color-adjust` with `print-color-adjust` in our Sass files as part of the Autoprefixer v10.4.6 issues. This should quiet the issues folks have seen from that dependency change. _If you're using our distribution CSS files, like `bootstrap.min.css`, you may still see the warning._
 
