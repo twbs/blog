@@ -6,8 +6,8 @@
   <ul class="list mb-5">
     {{ range .Pages -}}
     <li>
-      <span>{{ .Date | dateFormat "Jan 02, 2006" }}</span>
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span title="{{ .Date.UTC | dateFormat "02 Jan 06 15:04 MST" }}">{{ .Date | dateFormat "Jan 02, 2006" }}</span>
     </li>
     {{- end }}
   </ul>
