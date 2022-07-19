@@ -137,13 +137,13 @@ In addition, we've turned every one of those guides into a fully functioning exa
 - [Vite](https://github.com/twbs/examples/tree/main/vite/) - Sass, JS via Vite
 - [Bootstrap Icons font](https://github.com/twbs/examples/tree/main/icons-font) - Import Bootstrap Icons via icon font
 
-Each guide matches up to a new example in that repo, and nearly all of them can be immeditely available in Stackblitz. Now you don't even need to have a development environment configured on your computer to get started with Bootstrap.
+Each guide matches up to a new example in that repo, and nearly all of them can be immediately available in StackBlitz. Now you don't even need to have a development environment configured on your computer to get started with Bootstrap.
 
-![Examples Stackblitz repo](/assets/img/2022/07/guides-stackblitz.png)
+![Examples StackBlitz repo](/assets/img/2022/07/guides-stackblitz.png)
 
-And did we mention that nearly all our code snippets now have an open in Stackblitz button?
+And did we mention that nearly all our code snippets now have an open in StackBlitz button?
 
-![Code snippets Stackblitz](/assets/img/2022/07/snippets-stackblitz.png)
+![Code snippets StackBlitz](/assets/img/2022/07/snippets-stackblitz.png)
 
 ## And more!
 
