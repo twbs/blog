@@ -1,6 +1,6 @@
 ---
 author: mdo
-date: "2022-07-14T21:30:00Z"
+date: "2022-07-19T15:30:00Z"
 title: Bootstrap v4.6.2
 video: EErSKhC0CZs
 video_start: 135
@@ -9,7 +9,7 @@ keywords:
   - release
 ---
 
-After several months, we've finally shipped Bootstrap v4.6.2, one of our last releases for the v4. It's a bit of a maintenance patch featuring all bug fixes, dependency updates, and some docs updates.
+After several months, we've finally shipped Bootstrap v4.6.2, one of our last releases for the v4. It's a bit of a maintenance patch featuring bug fixes, dependency updates, and some docs updates.
 
 Read on for the highlights or [head to the v4.6.x docs](https://getbootstrap.com/docs/4.6/) to see the latest in action.
 
@@ -30,7 +30,7 @@ Beyond that, we've addressed a few other things:
 
 [Review the GitHub v4.6.2 release changelog](https://github.com/twbs/bootstrap/releases/tag/v4.6.2) for more details.
 
-From here, we don't expect to ship any meaningful updates to v4.6.x other than major security or dependency updates. Everything will focus on v5 and beyond after this release, starting with the stable release of v5.2.0 in the next couple of weeks. Bootstrap 4 will officially end of life January 1, 2023, though you're obviously welcome to continue using it longer than that. Follow our [release repo](https://github.com/twbs/release) to stay in the loop on release maintenance status.
+From here, we don't expect to ship any meaningful updates to v4.6.x other than major security or dependency updates. Everything will focus on v5 and beyond after this release, starting with the stable release of v5.2.0. Bootstrap 4 will officially end of life January 1, 2023, though you're obviously welcome to continue using it longer than that. Follow our [release repo](https://github.com/twbs/release) to stay in the loop on release maintenance status.
 
 ## Support the team
 
