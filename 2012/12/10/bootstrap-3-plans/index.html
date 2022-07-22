@@ -290,24 +290,23 @@ Specifics of v3 Overall, Bootstrap 3 will be rather narrow in focus compared to 
 </footer>
 
 
-    
-<script src="/js/bootstrap.min.js"></script>
+    <script async src="/js/bootstrap.min.js"></script>
 
 <script>
   (function(w, d) {
-      var b = d.getElementsByTagName('body')[0];
-      var s = d.createElement('script');
-      var io = 'IntersectionObserver' in w && 'IntersectionObserverEntry' in w &&
-                 'intersectionRatio' in w.IntersectionObserverEntry.prototype &&
-                 'isIntersecting' in w.IntersectionObserverEntry.prototype;
-      var v = io ? '17.x' : '8.x';
-      s.async = true;
-      s.src = '/assets/js/vendor/lazyload.' + v + '.iife.min.js';
-      w.lazyLoadOptions = {
-        elements_selector: '.lazy',
-        threshold: 150
-      };
-      b.appendChild(s);
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement('script');
+    var io = 'IntersectionObserver' in w && 'IntersectionObserverEntry' in w &&
+               'intersectionRatio' in w.IntersectionObserverEntry.prototype &&
+               'isIntersecting' in w.IntersectionObserverEntry.prototype;
+    var v = io ? '17.x' : '8.x';
+    s.async = true;
+    s.src = '/assets/js/vendor/lazyload.' + v + '.iife.min.js';
+    w.lazyLoadOptions = {
+      elements_selector: '.lazy',
+      threshold: 150
+    };
+    b.appendChild(s);
   }(window, document));
 </script>
 
