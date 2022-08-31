@@ -87,7 +87,7 @@ params:
   main:                 "https://getbootstrap.com"
   github_org:           "https://github.com/twbs"
   repo:                 "https://github.com/twbs/blog"
-  slack:                "https://bootstrap-slack.herokuapp.com"
+  twitter:              "getbootstrap"
   blog:                 "https://blog.getbootstrap.com/"
   expo:                 "https://expo.getbootstrap.com/"
   icons:                "https://icons.getbootstrap.com/"
@@ -97,6 +97,3 @@ params:
   # the first image in the following array is always used, unless specified in the front matter
   images:
     - "/assets/img/bootstrap-social.png"
-
-social:
-  twitter:              "getbootstrap"
