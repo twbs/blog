@@ -10,6 +10,8 @@ keywords:
 
 Bootstrap v5.2.1 is here with fixes from our latest minor release, v5.2. As a patch release, these changes are limited to bug fixes, documentation updates, and some dependency updates.
 
+We've also continued to iterate on a few other projects to help folks get up and running with Bootstrap with npm, other JS frameworks, and various build tools. Keep reading to learn more.
+
 ## Highlights
 
 - **Buttons**
