@@ -45,6 +45,28 @@ As mentioned over a month ago, we made the decision to close down our community 
 
 **[Explore Bootstrap discussions](https://github.com/twbs/bootstrap/discussions)**
 
+## Examples repo
+
+[![Examples](/assets/img/2022/09/examples.png)](https://github.com/twbs/examples)
+
+Make sure to checkout (pun intended!) our latest project, the [twbs/examples repository](https://github.com/twbs/examples)! The examples project includes functional demos for all sorts of environments and JS frameworks, with more planned! You can even open every example in StackBlitz and edit them in the browser.
+
+- [Starter](https://github.com/twbs/examples/tree/main/starter/) – CDN links for our CSS and JS
+- [Sass & JS](https://github.com/twbs/examples/tree/main/sass-js/) — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm
+- [Sass & ESM JS](https://github.com/twbs/examples/tree/main/sass-js-esm/) — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim
+- [Webpack](https://github.com/twbs/examples/tree/main/webpack/) - Import and bundle Sass and JS with Webpack
+- [Parcel](https://github.com/twbs/examples/tree/main/parcel/) - Sass, JS via Parcel
+- [Vite](https://github.com/twbs/examples/tree/main/vite/) - Sass, JS via Vite
+- [Bootstrap Icons font](https://github.com/twbs/examples/tree/main/icons-font/) - Import and compile Sass, Stylelint, PurgeCSS, and our icon font
+
+**Have an idea for a new starter example?** Feel free to open an issue or pull request!
+
+## v4 starter project
+
+[![npm starter](/assets/img/2022/09/bnpm.png)](https://github.com/twbs/bootstrap-npm-starter)
+
+We've shipped a v2.0.0 update to the [twbs/bootstrap-npm-starter project](https://github.com/twbs/bootstrap-npm-starter). This release includes Bootstrap v4.6.2, Bootstrap Icons v1.9.1, a new live reload feature for local development, and several dependency updates. This project will remain dedicated to Bootstrap 4 while our [twbs/examples](https://github.com/twbs/examples) repo will focus on v5 and future major releases.
+
 ## Get the release
 
 **Head to <https://getbootstrap.com> for the latest.** It's also been pushed to npm:

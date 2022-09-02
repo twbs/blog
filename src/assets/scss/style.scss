@@ -114,10 +114,6 @@ table {
 
 .posts-container {
   max-width: 760px;
-
-  @media (min-width: 1024px) {
-    font-size: 18px;
-  }
 }
 
 .bd-gutter {
@@ -157,6 +153,11 @@ table {
 
   li {
     margin-bottom: .25rem;
+  }
+
+  h2 {
+    margin-top: 1.5rem;
+    @include font-size(1.75rem);
   }
 }
 
