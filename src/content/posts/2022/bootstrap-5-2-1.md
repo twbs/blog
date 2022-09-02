@@ -17,7 +17,7 @@ Bootstrap v5.2.1 is here with fixes from our latest minor release, v5.2. As a pa
 - Input groups have updated `z-index` values to ensure proper rendering of validated form fields
 - Modified the `list-group-item` selectors to better support nested imports of Bootstrap's CSS
 - Floating labels now reset their `text-align` to ensure consistent styling
-- Updated Autoprefixer to fix warnings of the `color-adjust` property (thanks to @julien-deramond on our team for reporting an issue upstream here)
+- Updated Autoprefixer to fix warnings of the `color-adjust` property (thanks to [@julien-deramond](https://github.com/julien-deramond/) on our team for reporting an issue upstream here)
 - Fixed incorrect `border-radius` values inside pagination components
 - Moved our search functionality out of the hidden sidebar on narrow viewports and mobile devices
 - Removed links to and mentions of Slack from across the codebase, as we intend to shutter Slack in favor of GitHub Discussions
