@@ -12,10 +12,21 @@ Bootstrap v5.2.1 is here with fixes from our latest minor release, v5.2. As a pa
 
 We've also continued to iterate on a few other projects to help folks get up and running with Bootstrap with npm, other JS frameworks, and various build tools. Keep reading to learn more.
 
+## Key changes
+
+We've **updated our `calc()` functions** to work around an [apparent bug in `postcss-values-parser`](https://github.com/shellscape/postcss-values-parser/issues/138) that prevented our source Sass files from compiling properly when building with React and PostCSS. The fix was to reverse the order of our multiplication inside `calc()` functions. Be aware you may need to make similar [modifications](https://github.com/twbs/bootstrap/pull/37079) depending on your own customizations.
+
+We've also [addressed some longstanding issues around button focus and active styling](https://github.com/twbs/bootstrap/pull/37026), in particular for checkbox and radio buttons. On mobile devices, input-based buttons have trouble shedding their focus styles. This has been resolved in v5.2.1 with a change from `:focus` to `:focus-visible` for our `.btn`s. **Now, checkbox and radio buttons no longer change their `background-color` on `:focus-visible` and they receive no `:hover` styling.** Regular `.btn`s still have their familiar hover and focus styles.
+
+We debated not including the button focus change in v5.2.1, but felt it was important enough to close several bugs. Let us know what you think and we'll continue to refine our implementation.
+
 ## Highlights
+
+In addition to the changes above, we've fixed bugs across several components:
 
 - **Buttons**
   - Added a `transparent` default hover border color CSS variable for buttons to fix a visual regression
+  - `.btn-link` no longer has a gradient when `$enable-gradients` is set to `true`
 - **Forms**
   - Input groups have updated `z-index` values to ensure proper rendering of validated form fields
   - Floating labels now reset their `text-align` to ensure consistent styling
