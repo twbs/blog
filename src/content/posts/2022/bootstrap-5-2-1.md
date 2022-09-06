@@ -24,6 +24,8 @@ We debated not including the button focus change in v5.2.1, but felt it was impo
 
 In addition to the changes above, we've fixed bugs across several components:
 
+- **Accordion**
+  - Update `color` value to use the `$accordion-button-color` Sass variable instead of our color contrast function
 - **Buttons**
   - Added a `transparent` default hover border color CSS variable for buttons to fix a visual regression
   - `.btn-link` no longer has a gradient when `$enable-gradients` is set to `true`
