@@ -21,7 +21,7 @@
 .c { color: var(--base03); }
 .err { color: var(--base08); }
 .k { color: var(--base0E); }
-.l { color: var(----base09); }
+.l { color: var(--base09); }
 .n { color: var(--base08); }
 .o { color: var(--base05); }
 .p { color: var(--base05); }
@@ -98,7 +98,7 @@
 .language-sh .c { color: var(--base03); }
 
 .chroma {
-  .language-bash,
+  .language-bash, // TODO .line
   .language-sh {
     &::before {
       color: #777;
@@ -107,7 +107,7 @@
     }
   }
 
-  .language-powershell::before {
+  .language-powershell::before { // TODO .line
     color: #009;
     content: "PM> ";
     user-select: none;
