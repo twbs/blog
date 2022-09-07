@@ -33,18 +33,18 @@
     "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm run build"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
+    "autoprefixer": "^10.4.8",
     "bootstrap": "5.2.0",
     "cross-env": "^7.0.3",
     "find-unused-sass-variables": "^4.0.4",
     "hugo-bin": "^0.89.0",
     "linkinator": "^4.0.2",
-    "lockfile-lint": "^4.7.6",
-    "markdownlint-cli2": "0.4.0",
+    "lockfile-lint": "^4.8.0",
+    "markdownlint-cli2": "^0.5.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
-    "stylelint": "^14.9.1",
+    "stylelint": "^14.11.0",
     "stylelint-config-twbs-bootstrap": "^5.0.0",
     "vnu-jar": "21.10.12"
   }

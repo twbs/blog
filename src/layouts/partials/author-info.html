@@ -11,7 +11,7 @@
                            alt="" width="{{ $avatar_width }}" height="{{ $avatar_width }}"{{ if eq .lazyload true }} loading="lazy"{{ end }}>
     <span>@{{ $author }}</span>
   </a>
-  <span class="d-flex align-items-center ms-3" title="{{ $date | dateFormat "Mon, 02 Jan 2006 15:04:00 -0700" }}">
+  <span class="d-flex align-items-center ms-3" title="{{ $date | dateFormat "02 Jan 06 15:04 MST" }}">
     {{ partial "icons/calendar-event.svg" (dict "class" "me-2" "width" "24" "height" "24") }}
     {{ $date | dateFormat "January 02, 2006" }}
   </span>
