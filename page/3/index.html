@@ -203,6 +203,91 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2021/10/13/bootstrap-icons-1-6-0/" class="text-decoration-none">
+            Bootstrap Icons v1.6.0
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="13 Oct 21 00:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    October 13, 2021
+  </span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/sOS9aOIXPEk?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.6.0</a> adds over 30 new icons, adds official Composer support, includes a new <code>.scss</code> stylesheet for the icon font, plus some other enhancements and bug fixes. Keep reading to see what&rsquo;s new!</p>
+<h2 id="1400-icons">1,400+ icons</h2>
+<p>We&rsquo;ve officially passed 1,400 glyphs in Bootstrap Icons with this release—woohoo! Seems utterly insane to me that the project has come this far and there are still so many more icons to include.</p>
+<p><img src="/assets/img/2021/10/v160-new-updated-icons.png" class="d-block img-fluid mb-2 rounded border" alt="New icons in v1.6.0" loading="lazy" width="1104" height="784">
+</p>
+<p>We have a few dozen new and updated icons in this release, including:</p>
+<ul>
+<li>New brand icons for Apple, Behance, Dribbble, Line, Medium, Microsoft, PayPal, Pinterest, Signal, Snapchat, Spotify, Stack Overflow, Strava, Vimeo, Windows, and WordPress</li>
+<li>Two new easel variations</li>
+<li>New fingerprint icon</li>
+<li>New magic stick</li>
+<li>New people variations for rolodex, workspace, and video chat</li>
+<li>New webcam icons</li>
+<li>New radioactive icon</li>
+<li>New fan icon</li>
+<li>New hypnotize icon</li>
+<li>New yin yang icon</li>
+<li>New activity/pulse icon</li>
+<li>Updated large dash, plus, slash, x, i, ?, !, and check icons to have a thinner stroke that better matches other icons</li>
+<li>Updated lamp icons</li>
+<li>Updated <code>graph-up</code> and <code>graph-down</code> icons, with the previous ones being renamed to <code>graph-up-arrow</code> and <code>graph-down-arrow</code></li>
+</ul>
+<h2 id="new-features">New features</h2>
+<p>We&rsquo;ve added a handful of new features and enhancements to how you can use Bootstrap Icons in this release:</p>
+<ul>
+<li>
+<p><strong>Added Composer support</strong> with automatic publishing to Packagist. See the <a href="https://packagist.org/packages/twbs/bootstrap-icons">official package</a> for more information.</p>
+</li>
+<li>
+<p><strong>Added new <code>bootstrap-icons.scss</code> stylesheet for the icon font.</strong> This includes font name and path variables, plus a Sass map of icon names and unicode values.</p>
+</li>
+<li>
+<p><strong>Added new <code>.bi</code> CSS selector</strong> to the icon font ruleset (in addition to the attribute selectors we had through v1.5.0) to allow for easier <code>@extend</code>ing of icon styles. This has also been reflected in the new <code>.scss</code> stylesheet.</p>
+</li>
+</ul>
+<p>Our next minor release will continue to see improvements to our icon permalink pages, adding more options for copying and pasting our icons. If you have other suggestions, please don&rsquo;t hesitate to open a new issue!</p>
+<h2 id="bug-fixes">Bug fixes</h2>
+<p>We&rsquo;ve fixed a few glitches with existing icons in this release:</p>
+<ul>
+<li><code>droplet-fill</code> now renders correctly thanks to an updated fill rule</li>
+<li><code>lamp</code> and <code>lamp-fill</code> now look more like lamps and less like toilets 😅</li>
+<li><code>coin</code> now renders correctly thanks to an updated fill rule</li>
+<li><code>cloud</code> now renders correctly thanks to an updated fill rule</li>
+<li><code>textarea-resize</code> is no longer incorrectly placed in the <code>viewBox</code></li>
+</ul>
+<p>Found another bug, or have a suggestion? Check out the issue tracker and open an issue if you don&rsquo;t see one already opened.</p>
+<h2 id="install">Install</h2>
+<p>To get started, install or update via npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
+</span></span></code></pre></div><p>Or Composer:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">composer require twbs/bootstrap-icons
+</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.6.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.6.0/bootstrap-icons-1.6.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+<h2 id="figma">Figma</h2>
+<p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2021/10/05/bootstrap-5-1-2/" class="text-decoration-none">
             Bootstrap 5.1.2
           </a>
@@ -212,7 +297,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="05 Oct 21 00:00 UTC">
@@ -225,7 +310,7 @@
   </span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/HoQN7K6HdRw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/HoQN7K6HdRw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -589,91 +674,6 @@
 <p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap
 </span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.1.0">Review the GitHub v5.1.0 release changelog</a> for a complete list of changes since our last release.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2021/06/22/bootstrap-5-0-2/" class="text-decoration-none">
-            Bootstrap 5.0.2
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="22 Jun 21 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    June 22, 2021
-  </span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/6S3ISlvlEbs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p>Our latest patch release has arrived to improve our JavaScript plugins, address the <code>/</code> deprecation in Dart Sass, fix a few CSS bugs, and make some documentation improvements.</p>
-<h2 id="sass-division">Sass division</h2>
-<p>One of the biggest fixes in Bootstrap v5.0.2 patches the deprecation of <code>/</code> for performing division in Sass. The Dart Sass team deprecated it due to the use of <code>/</code> characters in actual CSS (e.g., <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">separating <code>background</code> values</a>). The bad news was this shipped with deprecation notices, which in our case heavily polluted the build process for everyone. Our potential solutions included:</p>
-<ol>
-<li>Ignore it entirely and silence the deprecation warnings</li>
-<li>Drop implicit support for LibSass and use the Dart Sass math module</li>
-<li>Figure out a custom fix to keep the widest possible Sass support</li>
-</ol>
-<p>We chose the third option—keeping support for both LibSass and Dart Sass, even though the former is deprecated. There are many projects out there that simply haven&rsquo;t or cannot update to Dart Sass (including Hugo, which we use to build our docs).</p>
-<p>Our solution meant rolling a custom <code>divide()</code> function and replacing division with multiplication wherever possible. We wanted to limit the use of a custom function, so the situations where we used <code>$value / 2</code> were replaced with <code>$value * .5</code>. This custom function has also been added to the <a href="https://github.com/twbs/rfs">RFS project</a> in a new release. While the precision in our compiled CSS has been reduced by two decimal places, the output remains otherwise unchanged.</p>
-<p>If you have any ideas or suggestions on further improvements, please don&rsquo;t hesitate to <a href="https://github.com/twbs/bootstrap/issues/new/choose">open an issue</a>.</p>
-<h2 id="highlights">Highlights</h2>
-<p>Here are some highlights from the changelog.</p>
-<h3 id="css">CSS</h3>
-<ul>
-<li>Fixed deprecation warnings in Sass for <code>/</code> division. Replaced most <code>/</code> division with multiplication and added a custom <code>divide()</code> function to avoid adding Dart Sass modules (as this would negate the usage of LibSass).</li>
-<li>Individual <code>.col-*</code> grid classes can now override <code>.row-cols</code>.</li>
-<li>Updated <code>line-height</code> for floating forms to fix cut-off select menu text.</li>
-<li>Added missing transition to <code>.form-select</code>.</li>
-<li>Fixed <code>.dropdowns-menu-*</code> position in RTL.</li>
-<li>Decoupled <code>--bs-table-bg</code> and <code>--bs-table-accent-bg</code> to separate table accent highlights.</li>
-<li>Improved support for complex expressions in <code>add()</code> and <code>subtract()</code> functions.</li>
-<li>Fixed horizontal padding for select elements in Firefox.</li>
-<li>Updated border color for popover header to match the outer border.</li>
-<li>Fixed offcanvas header alignment for RTL.</li>
-</ul>
-<h3 id="javascript">JavaScript</h3>
-<ul>
-<li>Popovers now remove titles or content when they&rsquo;re empty instead of returning empty HTML elements.</li>
-<li>Dropdown items are now automatically selected when using arrow keys.</li>
-<li>We now register only one <code>DOMContentLoaded</code> event listener in <code>onDOMContentLoaded</code> utility function.</li>
-<li>Fixed arrow keys breaking animation when the carousel sliding.</li>
-<li>Fixed handling of transitioned events dispatched by nested elements (e.g., modals didn’t transition when clicking buttons).</li>
-<li>Fixed backdrop errors with stale body cause by unnecessary default and <code>removeChild</code>.</li>
-<li>Fixed issue where the <code>show.bs.modal</code> event with the <code>.fade</code> class prevented modals from being displayed again.</li>
-<li>Fixed <code>isVisible</code> false positives.</li>
-<li>Added <code>getOrCreateInstance</code> method in our base component that is applied to all components.</li>
-</ul>
-<h3 id="docs">Docs</h3>
-<ul>
-<li>Documented how to make utilities responsive using the API. Also added <code>!important</code> to the sample output CSS and mentioned the <code>$enable-important-utilities</code> global setting.</li>
-<li>Added a mention of the breakpoint mixins changes from v4 to the migration guide.</li>
-<li>Added a new example of positioned badges to the docs.</li>
-<li>Clarified variable overrides in the Customizing &gt; Sass page.</li>
-<li>Replaced Freenode with Libera IRC server.</li>
-</ul>
-<hr class="my-4">
-<p>Head to GitHub for a complete <a href="https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F41">list of issues and pull requests in v5.0.2</a>. You can also review the <a href="https://github.com/twbs/bootstrap/projects/41">v5.0.2 project board</a>.</p>
-<h2 id="get-the-release">Get the release</h2>
-<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap
-</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.0.2">Review the v5.0.2 release changelog</a> for a complete list of changes.</p>
 <h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
