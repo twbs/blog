@@ -1,8 +1,8 @@
 ---
 author: mdo
-date: "2022-09-02T16:00:00Z"
+date: "2022-09-07T16:00:00Z"
 title: Bootstrap 5.2.1
-video:
+video: hrB-_nler88
 keywords:
   - bootstrap
   - release
@@ -36,13 +36,14 @@ In addition to the changes above, we've fixed bugs across several components:
   - Horizontal list groups with only one child now render the correct `border-radius`
   - Modified the `list-group-item` selectors to better support nested imports of Bootstrap's CSS
 - **Modals**
-  - Fixed modal event listeners during dismiss click, allowing you to once again click scrollbars without dismissing the modal
+  - Updated event listeners to ignore clicks on scrollbar clicks, clicks that start inside `.modal-dialog` but end outside it, and respond to clicks that start and end outside `.modal-dialog`
 - **Pagination**
   - Fixed incorrect `border-radius` values inside pagination components
 - **Scrollspy**
   - Scrollspy threshold option is now configurable
-- **Tooltips**
+- **Tooltips & Popovers**
   - Reverted some tooltip plugin updates to prevent issues with `selector`, dynamic content, and disposed tooltips using `title`
+  - Fixed `trigger: "manual"` showing and immediately hiding when calling `toggle()`
 
 ## Dependencies
 
