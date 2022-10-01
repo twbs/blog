@@ -25,7 +25,8 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
   const ignores = [
     // TODO report the issue upstream in Hugo
     'Duplicate ID.*',
-    'The first occurrence of ID.*'
+    'The first occurrence of ID.*',
+    'Self-closing tag syntax in text/html documents is widely discouraged.*'
   ].join('|')
 
   const args = [
