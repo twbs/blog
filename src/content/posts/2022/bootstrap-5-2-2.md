@@ -28,7 +28,8 @@ Bootstrap v5.2.2 has landed with new bug fixes and documentation updates—keep 
   - Fix `.active` class toggling of tabs within dropdowns
 - **Toasts**
   - Properly set toast `z-index` on `.toast-container` as opposed to individual `.toast`s that don't receive any other positioning
-- **Tooltips & Popovers**
+- **Tooltips**
+  - Fixes tooltip selectors with `title` attribute on dynamically created elements
 
 ## Get the release
 
