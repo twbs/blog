@@ -1,6 +1,6 @@
 ---
 author: mdo
-date: "2022-10-03T16:00:00Z"
+date: "2022-10-03T08:00:00Z"
 title: Bootstrap 5.2.2
 keywords:
   - bootstrap
