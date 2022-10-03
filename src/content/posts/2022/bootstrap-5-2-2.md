@@ -22,14 +22,14 @@ Bootstrap v5.2.2 has landed with new bug fixes and documentation updates—keep 
 - **Modals**
   - Improve modal event listeners
   - Use `<h1>` for all `.modal-title` instances in our docs
-- **Tabss**
+- **Tabs**
   - Ensure Tab plugin has proper keyboard functionality
   - Tabs no longer autofocus and cause pages to jump on `tab.show()`
   - Fix `.active` class toggling of tabs within dropdowns
 - **Toasts**
   - Properly set toast `z-index` on `.toast-container` as opposed to individual `.toast`s that don't receive any other positioning
 - **Tooltips**
-  - Fixes tooltip selectors with `title` attribute on dynamically created elements
+  - Fix tooltip selectors with `title` attribute on dynamically created elements
 
 ## Get the release
 
