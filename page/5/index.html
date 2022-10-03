@@ -203,6 +203,55 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2021/03/29/bootstrap-icons-1-4-1/" class="text-decoration-none">
+            Bootstrap Icons v1.4.1
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="29 Mar 21 21:30 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    March 29, 2021
+  </span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/zO6D_BAuYCI?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>Our latest <a href="https://icons.getbootstrap.com">Bootstrap Icons</a> update has arrived to fix a few bugs and improve our build tooling. Keep reading for what&rsquo;s new.</p>
+<h2 id="key-changes">Key changes</h2>
+<p>Here are the highlights from this release:</p>
+<ul>
+<li>Updated: PowerPoint icons now look more capitalized</li>
+<li>Fixed: <code>skip-forward</code> and <code>skip-backward</code> icons are now properly named</li>
+<li>Fixed: <code>mic</code> and <code>record</code> icons no longer appear filled</li>
+<li>Fixed: Codepoints for icon font will no longer change between versions</li>
+<li>Upgraded SVGO to v2.3.0, bringing some minor SVG optimizations to ~200 icons</li>
+</ul>
+<p>The update to codepoints is the most important change in this release. It ensures the <code>content</code> property values for each icon doesn&rsquo;t change. This gives our icon font more stability between versions, allowing for easier upgrades and maintenance.</p>
+<p><a href="https://github.com/twbs/icons/releases/tag/v1.4.1">Check out the release notes</a> for more changes in v1.4.1.</p>
+<h2 id="install">Install</h2>
+<p>To get started, install via npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
+</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.4.1">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.4.1/bootstrap-icons-1.4.1.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+<h2 id="figma">Figma</h2>
+<p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/YjjMzXhECL1MIb6Qlm7VJO/Bootstrap-Icons-v1.4.1">icons from Figma</a>.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2021/03/23/bootstrap-5-beta-3/" class="text-decoration-none">
             Bootstrap 5 Beta 3
           </a>
@@ -212,7 +261,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="23 Mar 21 09:30 UTC">
@@ -225,7 +274,7 @@
   </span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/kldVOhKe4rg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/kldVOhKe4rg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -611,89 +660,6 @@
 <p>Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.</p>
 <h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2021/01/07/bootstrap-icons-1-3-0/" class="text-decoration-none">
-            Bootstrap Icons v1.3.0
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="07 Jan 21 21:30 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    January 07, 2021
-  </span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/a01QQZyl-_I?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p>Say hello to over 60 new icons with <a href="https://icons.getbootstrap.com">Bootstrap Icons v1.3.0</a>! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!</p>
-<p>As usual, we also snuck in some bug fixes to existing icons and ours docs. After this release, we&rsquo;re back to focusing on shipping updates to Bootstrap v5 and v4. More on that soon, and in the mean time, enjoy the new icons!</p>
-<h2 id="60-new-icons">60+ new icons</h2>
-<p><img src="/assets/img/2021/01/icons-130-new.png" class="d-block img-fluid mb-2 rounded border" alt="New icons in v1.3.0" loading="lazy" width="1200" height="750">
-</p>
-<p>Here&rsquo;s a look at the new icons in v1.3.0:</p>
-<ul>
-<li>Added window-dock and window-sidebar</li>
-<li>Added two symmetry icons</li>
-<li>Added new stack icon</li>
-<li>Added two speedometer icons</li>
-<li>Added four save icons</li>
-<li>Added rulers icon</li>
-<li>Added filled variations for phone-vibrate, mouse, mouse2, mouse3, and four hand icons</li>
-<li>Added several border icons</li>
-<li>Added paint bucket</li>
-<li>Added four new badges (3D, AR, VR, WC)</li>
-<li>Added four lightbulb icons</li>
-<li>Added eyedropper</li>
-<li>Added mask icon</li>
-<li>Added three color palette icons</li>
-<li>Added layer-forward and layer-backward</li>
-<li>Added two eraser icons</li>
-<li>Added two megaphone icons</li>
-<li>Added four push pin icons</li>
-<li>Added Whatsapp and Telegram social icons</li>
-<li>Added dotted circle dash, circle plus, square dash, and square plus</li>
-</ul>
-<p>Have some ideas for new icons we should consider? Open an issue to tell us about it!</p>
-<h2 id="cdn-quickstart-with-icon-fonts">CDN quickstart with icon fonts</h2>
-<p>Since we added icon fonts in v1.2.0, it&rsquo;s been possible to use a CDN to deliver and use Bootstrap Icons in seconds. Include the stylesheet, place short HTML snippets where you want icons, and you&rsquo;re done! If you want to include it yourself, here&rsquo;s how.</p>
-<ol>
-<li>
-<p>Include the Bootstrap Icons font stylesheet in the <code>&lt;head&gt;</code> of your website. Or, use <code>@import</code> to include the stylesheet that way.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Option 1: Include in HTML --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&#34;</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* Option 2: Import via CSS */</span>
-</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">import</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&#34;</span><span class="o">)</span><span class="p">;</span>
-</span></span></code></pre></div></li>
-<li>
-<p>Add HTML snippets to include Bootstrap Icons where desired.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi-alarm&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
-</span></span></code></pre></div></li>
-</ol>
-<p>Want to see it in action? We&rsquo;ve put together a helpful <a href="https://codepen.io/emdeoh/pen/NWRzbKM">CodePen demo for using Bootstrap Icons fonts via CDN</a>.</p>
-<p><em><strong>ProTip:</strong> Most browsers do not allow SVG sprites to be used across domains, which is why having icon fonts (when SVGs are the preferrable and more accessible method of delivering icons) are so useful. Whenever possible, please use SVGs over icon fonts.</em></p>
-<h2 id="install">Install</h2>
-<p>To get started, install via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
-</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.3.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.3.0/bootstrap-icons-1.3.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
-<h2 id="figma">Figma</h2>
-<p>For the Figma users out there, you can also snag the <a href="https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1">icons from Figma</a>.</p>
 
       </div>
   </div>

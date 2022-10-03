@@ -203,6 +203,86 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2022/10/03/bootstrap-5-2-2/" class="text-decoration-none">
+            Bootstrap 5.2.2
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="03 Oct 22 16:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    October 03, 2022
+  </span>
+</div>
+
+
+        
+
+        <p>Bootstrap v5.2.2 has landed with new bug fixes and documentation updates—keep reading to see what&rsquo;s changed!</p>
+<h2 id="highlights">Highlights</h2>
+<ul>
+<li><strong>Accordion</strong>
+<ul>
+<li>Use Sass variable for the accordion color instead of an invalid CSS variable</li>
+</ul>
+</li>
+<li><strong>Buttons</strong>
+<ul>
+<li>Undo changes to <code>.btn:hover</code> from v5.2.1. We now explicitly target <code>.btn-check</code> styles instead.</li>
+</ul>
+</li>
+<li><strong>Dropdowns</strong>
+<ul>
+<li>Temporarily restore ability for dropdowns to work without an explicit <code>data</code> attribute (will be removed again in v6)</li>
+</ul>
+</li>
+<li><strong>Modals</strong>
+<ul>
+<li>Improve modal event listeners</li>
+<li>Use <code>&lt;h1&gt;</code> for all <code>.modal-title</code> instances in our docs</li>
+</ul>
+</li>
+<li><strong>Tables</strong>
+<ul>
+<li>Don&rsquo;t redefine <code>$border-color</code> in <code>table-variant()</code> mixin</li>
+</ul>
+</li>
+<li><strong>Tabs</strong>
+<ul>
+<li>Tabs no longer autofocus and cause pages to jump on <code>tab.show()</code></li>
+<li>Fix <code>.active</code> class toggling of tabs within dropdowns</li>
+</ul>
+</li>
+<li><strong>Toasts</strong>
+<ul>
+<li>Properly set toast <code>z-index</code> on <code>.toast-container</code> as opposed to individual <code>.toast</code>s that don&rsquo;t receive any other positioning</li>
+</ul>
+</li>
+<li><strong>Tooltips</strong>
+<ul>
+<li>Fix tooltip selectors with <code>title</code> attribute on dynamically created elements</li>
+</ul>
+</li>
+</ul>
+<h2 id="get-the-release">Get the release</h2>
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.2.2
+</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.2.2">Read the GitHub v5.2.2 changelog</a> for a complete list of changes in this release.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2022/09/07/bootstrap-5-2-1/" class="text-decoration-none">
             Bootstrap 5.2.1
           </a>
@@ -212,7 +292,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="07 Sep 22 16:00 UTC">
@@ -602,193 +682,6 @@
 </span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.9.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.9.0/bootstrap-icons-1.9.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
 <h2 id="figma">Figma</h2>
 <p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2022/05/16/using-bootstrap-css-vars/" class="text-decoration-none">
-            Using CSS variables in Bootstrap
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="16 May 22 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    May 16, 2022
-  </span>
-</div>
-
-
-        <img src="/assets/img/bootstrap-banner.png" class="d-block img-fluid rounded-3 mb-4" alt="" loading="lazy" width="1500" height="600">
-
-
-        <p><a href="/2022/05/13/bootstrap-5-2-0-beta/">Bootstrap v5.2.0-beta1</a> added a slew of CSS custom properties, or CSS variables, across the <code>:root</code> level and all our core components. Here&rsquo;s a quick look at how you can utilize them in your projects.</p>
-<p>With CSS variables, you can now customize Bootstrap easier than ever, and without the need for a CSS preprocessor. All the power of Sass is still there behind the scenes, but CSS variables adds a ton of power for the future. Use and compose new values, updates styles globally without recompiling, set fallback values, setup new color modes, and more.</p>
-<p>Let&rsquo;s dig in.</p>
-<h2 id="css-variables">CSS variables?</h2>
-<p>Their official name is custom properties, but they&rsquo;re often referred to as CSS variables thanks to their most immediate use case for setting specific values. Consider reading <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#first_steps_with_custom_properties">the MDN CSS custom properties article</a> or <a href="https://css-tricks.com/a-complete-guide-to-custom-properties/">the CSS Tricks guide</a> if you need a primer.</p>
-<p>In a nutshell, CSS variables allow you to name frequently used values. For example, instead of writing <code>#6f42c1</code> everywhere, you can set <code>--purple: #6f42c1</code>. Then you can use that variable later on with the <code>var()</code> function.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--purple</span><span class="p">:</span> <span class="mh">#6f42c1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">custom-element</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">purple</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>We use CSS variables in Bootstrap to set many property values globally, across our components, and in some of our utilities.</p>
-<h2 id="groups-of-variables">Groups of variables</h2>
-<p>When we talk about CSS variables in Bootstrap, we&rsquo;re referring to three major groups:</p>
-<ul>
-<li>
-<p><strong>Root variables —</strong> Globally scoped variables available on the <code>:root</code> element (<code>&lt;html&gt;</code> usually) and accessible by any element throughout the DOM.</p>
-</li>
-<li>
-<p><strong>Component variables —</strong> Variables scoped specifically to each component, usually on the component&rsquo;s base class, and their modifier classes and Sass mixins.</p>
-</li>
-<li>
-<p><strong>Utility variables —</strong> Used as modifiers within other utility classes.</p>
-</li>
-</ul>
-<p>Regardless of where they are, all of our CSS variables are prefixed with <code>--bs-</code>, so you know where they&rsquo;re coming from and how they might be used across codebases that mix Bootstrap&rsquo;s CSS with additional custom styles. You&rsquo;ll also notice that we don&rsquo;t put all our component variables at the root level. This keeps CSS variables scoped to their intended use cases and prevents polluted variables in the global <code>:root</code> scope.</p>
-<p>It&rsquo;s also worth mentioning two larger efforts that are still to come around CSS variables:</p>
-<ol>
-<li>Adding CSS variables to all our forms</li>
-<li>Adding more nuanced global theme variables and support for color modes like <a href="https://github.com/twbs/bootstrap/pull/35857">dark mode</a>.</li>
-</ol>
-<p>These are likely coming in v5.3.0 (our next minor release after v5.2.0 stablizes), so in the mean time, check out the GitHub repo to see how things are shaping up.</p>
-<h2 id="root-variables">Root variables</h2>
-<p><img src="/assets/img/2022/05/docs-root-vars.png" class="d-block img-fluid mb-2 rounded border" alt="Root variables in web inspector" loading="lazy" width="3040" height="1946">
-</p>
-<p>Bootstrap has a ton of <a href="https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables">root variables</a> and we&rsquo;ll only be adding more in future updates for the aforementioned color mode support. As of this post, we have the following CSS variables on the <code>:root</code> element:</p>
-<ul>
-<li>
-<p><strong>Colors —</strong> All named colors, gray colors, and theme colors. This also includes all our <code>$theme-colors</code> in their <code>rgb</code> format.</p>
-</li>
-<li>
-<p><strong>Body font styles —</strong> Everything from <code>font-size</code> to <code>color</code> and more, all applied to our <code>&lt;body&gt;</code> element.</p>
-</li>
-<li>
-<p><strong>Shared properties —</strong> For property-value pairings that we consider theme specific, like link colors and border styles.</p>
-</li>
-</ul>
-<p>Root CSS variables are used extensively across other parts of Bootstrap to allow you to easily override our default styles at a global level. For example, if you wanted to adjust the default <code>border-radius</code> and link color for our components, you could override a couple variables instead of writing new selectors.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// custom.css
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nd">:root</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--bs-border-radius</span><span class="o">:</span> <span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--bs-link-color</span><span class="o">:</span> <span class="mh">#333</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>You can even use other root variables to override those values:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// custom.css
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nd">:root</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--bs-border-radius</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-border-radius-lg</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--bs-link-color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-gray-800</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Without CSS variables, you&rsquo;d have to use a preprocessor like Sass or write new selectors for every instance of these properties across all components. The former is relatively easy, the latter not so much. CSS variables help solve that.</p>
-<h2 id="component-variables">Component variables</h2>
-<p>On our components, CSS variables get even more power for customizing. Nearly everything under the Components section in our docs sidebar now has CSS variables available to you:</p>
-<ul>
-<li><a href="https://getbootstrap.com/docs/5.2/components/accordion/">Accordion</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/alerts/">Alerts</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/badge/">Badge</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/breadcrumb/">Breadcrumb</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/buttons/">Buttons</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/button-group/">Button group</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/card/">Card</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/carousel/">Carousel</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/collapse/">Collapse</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/dropdowns/">Dropdowns</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/list-group/">List group</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/modal/">Modal</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/navbar/">Navbar</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/navs-tabs/">Navs &amp; tabs</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/offcanvas/">Offcanvas</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/pagination/">Pagination</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/placeholders/">Placeholders</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/popovers/">Popovers</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/progress/">Progress</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/spinners/">Spinners</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/toasts/">Toasts</a></li>
-<li><a href="https://getbootstrap.com/docs/5.2/components/tooltips/">Tooltips</a></li>
-</ul>
-<p><em>Scrollspy and close button have no relevant CSS variables, so they&rsquo;re excluded here.</em></p>
-<p>Throughout our documentation you&rsquo;ll find examples of customizing our default components by overriding their CSS variables. One great example comes from our own docs where we write our own button styles to <a href="https://getbootstrap.com/docs/5.2/components/buttons/#variables">create a purple button</a>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">btn-bd-primary</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--bs-btn-font-weight</span><span class="p">:</span> <span class="mi">600</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--bs-btn-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs</span><span class="o">-</span><span class="kc">white</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--bs-btn-bg</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bd</span><span class="o">-</span><span class="kc">violet</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--bs-btn-border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bd</span><span class="o">-</span><span class="kc">violet</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--bs-btn-border-radius</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--bs-btn-hover-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs</span><span class="o">-</span><span class="kc">white</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--bs-btn-hover-bg</span><span class="p">:</span> <span class="err">#{</span><span class="nf">shade-color</span><span class="p">(</span><span class="err">$</span><span class="n">bd</span><span class="o">-</span><span class="kc">violet</span><span class="p">,</span> <span class="mi">10</span><span class="kt">%</span><span class="p">)}</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">--bs-btn-hover-border-color</span><span class="o">:</span> <span class="err">#</span><span class="p">{</span><span class="err">shade-color($bd-violet,</span> <span class="err">10%)</span><span class="p">}</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">--bs-btn-focus-shadow-rgb</span><span class="o">:</span> <span class="nt">var</span><span class="o">(</span><span class="nt">--bd-violet-rgb</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">--bs-btn-active-color</span><span class="o">:</span> <span class="nt">var</span><span class="o">(</span><span class="nt">--bs-btn-hover-color</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">--bs-btn-active-bg</span><span class="o">:</span> <span class="err">#</span><span class="p">{</span><span class="err">shade-color($bd-violet,</span> <span class="err">20%)</span><span class="p">}</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">--bs-btn-active-border-color</span><span class="o">:</span> <span class="err">#</span><span class="p">{</span><span class="err">shade-color($bd-violet,</span> <span class="err">20%)</span><span class="p">}</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="err">}</span>
-</span></span></code></pre></div><p>Which looks like this:</p>
-<p><img src="/assets/img/2022/05/docs-custom-button.png" class="d-block img-fluid mb-2 rounded border" alt="Custom Bootstrap docs button" loading="lazy" width="1652" height="284">
-</p>
-<p>Another great example is from <a href="https://getbootstrap.com/docs/5.2/components/tooltips/#custom-tooltips">our tooltips</a>. You can add custom classes to tooltips and popovers in Bootstrap with <code>data-bs-custom-class=&quot;custom-tooltip&quot;</code>. Then, with one CSS variable, you can change the tooltip background and arrow color.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">custom-tooltip</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">--bs-tooltip-bg</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs</span><span class="o">-</span><span class="n">primary</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Which looks like this:</p>
-<p><img src="/assets/img/2022/05/docs-custom-tooltip.png" class="d-block img-fluid mb-2 rounded border" alt="Custom tooltip" loading="lazy" width="1520" height="360">
-</p>
-<p>There are dozens of CSS variables in play across our components. All of them are referenced in a new section on the relevant docs page. For example, <a href="https://getbootstrap.com/docs/5.2/components/modal/#variables">here are our modal CSS variables</a>. This is in addition to all the Sass variables, mixins, loops, and maps used for each component.</p>
-<h2 id="utility-variables">Utility variables</h2>
-<p>Not every utility class uses CSS variables, but the ones that do gain a good amount of power and customization. <a href="https://getbootstrap.com/docs/5.2/utilities/background/">Background</a>, <a href="https://getbootstrap.com/docs/5.2/utilities/borders/">border</a>, and <a href="https://getbootstrap.com/docs/5.2/utilities/colors/">color</a> utilities all have what we call &ldquo;local CSS variables&rdquo; to improve their usefulness. Each of them uses CSS variables to customize the alpha transparency value of <code>rgba()</code> colors.</p>
-<p>Consider our <a href="https://getbootstrap.com/docs/5.2/utilities/background/">background color utilities</a>, <code>.bg-*</code>. By default each utility class has a local variable, <code>--bs-bg-opacity</code> with a default value of <code>1</code>. To change the background utility alpha value, you can override that value with your own styles, or some new <code>.bg-opacity-*</code> utilities.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 bg-success bg-opacity-25&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  ...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Here&rsquo;s how <code>.bg-success</code> looks with all our <code>.bg-opacity-*</code> classes applied:</p>
-<p><img src="/assets/img/2022/05/bg-opacity.png" class="d-block img-fluid mb-2 rounded border" alt="Background opacity examples" loading="lazy" width="1556" height="400">
-</p>
-<p>And the same is available for <a href="https://getbootstrap.com/docs/5.2/utilities/borders/#opacity">border color opacity</a> (<code>--bs-border-opacity</code> and <code>.border-opacity-*</code>) and <a href="https://getbootstrap.com/docs/5.2/utilities/colors/#opacity">text color opacity</a> (<code>--bs-text-opacity</code> and <code>.text-opacity-*</code>). So many color options are now available with these utilities.</p>
-<p>By default, we ship with five values for these various opacity utilities.</p>
-<table>
-<thead>
-<tr>
-<th>Class names</th>
-<th>Alpha value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.text-opacity-10</code><br> <code>.bg-opacity-10</code><br> <code>.border-opacity-10</code></td>
-<td><code>.1</code></td>
-</tr>
-<tr>
-<td><code>.text-opacity-25</code><br> <code>.bg-opacity-25</code><br> <code>.border-opacity-25</code></td>
-<td><code>.25</code></td>
-</tr>
-<tr>
-<td><code>.text-opacity-50</code><br> <code>.bg-opacity-50</code><br> <code>.border-opacity-50</code></td>
-<td><code>.5</code></td>
-</tr>
-<tr>
-<td><code>.text-opacity-75</code><br> <code>.bg-opacity-75</code><br> <code>.border-opacity-75</code></td>
-<td><code>.75</code></td>
-</tr>
-<tr>
-<td><code>.text-opacity-100</code><br> <code>.bg-opacity-100</code><br> <code>.border-opacity-100</code></td>
-<td><code>1</code></td>
-</tr>
-</tbody>
-</table>
-<p>Expect more CSS variables to make their way into our utilities. There&rsquo;s a lot of power in real-time customization, even for what we consider immutable styles.</p>
-<hr>
-<p><strong>Ready to get started with Bootstrap?</strong> Checkout the <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/#quick-start">quick start guide</a> so you can put these new CSS variables to work in your next project!</p>
 
       </div>
   </div>

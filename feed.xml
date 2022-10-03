@@ -6,7 +6,68 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Sep 2022 16:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Oct 2022 16:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap 5.2.2</title>
+      <link>https://blog.getbootstrap.com/2022/10/03/bootstrap-5-2-2/</link>
+      <pubDate>Mon, 03 Oct 2022 16:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2022/10/03/bootstrap-5-2-2/</guid>
+      <description>&lt;p&gt;Bootstrap v5.2.2 has landed with new bug fixes and documentation updates—keep reading to see what&amp;rsquo;s changed!&lt;/p&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Accordion&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Use Sass variable for the accordion color instead of an invalid CSS variable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Buttons&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Undo changes to &lt;code&gt;.btn:hover&lt;/code&gt; from v5.2.1. We now explicitly target &lt;code&gt;.btn-check&lt;/code&gt; styles instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dropdowns&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Temporarily restore ability for dropdowns to work without an explicit &lt;code&gt;data&lt;/code&gt; attribute (will be removed again in v6)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modals&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improve modal event listeners&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; for all &lt;code&gt;.modal-title&lt;/code&gt; instances in our docs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tables&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t redefine &lt;code&gt;$border-color&lt;/code&gt; in &lt;code&gt;table-variant()&lt;/code&gt; mixin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tabs&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Tabs no longer autofocus and cause pages to jump on &lt;code&gt;tab.show()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fix &lt;code&gt;.active&lt;/code&gt; class toggling of tabs within dropdowns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Toasts&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Properly set toast &lt;code&gt;z-index&lt;/code&gt; on &lt;code&gt;.toast-container&lt;/code&gt; as opposed to individual &lt;code&gt;.toast&lt;/code&gt;s that don&amp;rsquo;t receive any other positioning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tooltips&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix tooltip selectors with &lt;code&gt;title&lt;/code&gt; attribute on dynamically created elements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap@v5.2.2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.2.2&#34;&gt;Read the GitHub v5.2.2 changelog&lt;/a&gt; for a complete list of changes in this release.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap 5.2.1</title>
       <link>https://blog.getbootstrap.com/2022/09/07/bootstrap-5-2-1/</link>
@@ -733,48 +794,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.7.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.7.0/bootstrap-icons-1.7.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
 &lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
 &lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap v4.6.1</title>
-      <link>https://blog.getbootstrap.com/2021/10/28/bootstrap-4.6.1/</link>
-      <pubDate>Thu, 28 Oct 2021 21:30:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/10/28/bootstrap-4.6.1/</guid>
-      <description>&lt;p&gt;Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.&lt;/p&gt;
-&lt;p&gt;Read on for the highlights or &lt;a href=&#34;https://getbootstrap.com/docs/4.6/&#34;&gt;head to the v4.6.x docs&lt;/a&gt; to see the latest in action.&lt;/p&gt;
-&lt;h2 id=&#34;whats-changed&#34;&gt;What&amp;rsquo;s changed&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Replace Sass division with multiplication and custom &lt;code&gt;divide()&lt;/code&gt; function&lt;/li&gt;
-&lt;li&gt;fix(forms): input-group and validation icons&lt;/li&gt;
-&lt;li&gt;Fix minor visual bug in FF caused by moz-focusring&lt;/li&gt;
-&lt;li&gt;Adjust &lt;code&gt;SAFE_URL_PATTERN&lt;/code&gt; regex for use with test method of regexes&lt;/li&gt;
-&lt;li&gt;Add &lt;code&gt;sms&lt;/code&gt; in the &lt;code&gt;SAFE_URL_PATTERN&lt;/code&gt; for sanitizer&lt;/li&gt;
-&lt;li&gt;Adjust feedback icon position and padding for &lt;code&gt;select.form-control&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Carousel: use buttons, not links, for prev/next controls&lt;/li&gt;
-&lt;li&gt;v4: Sass docs for default variables&lt;/li&gt;
-&lt;li&gt;Handle complex expressions in &lt;code&gt;add()&lt;/code&gt; &amp;amp; &lt;code&gt;subtract()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;More concise improvements for &lt;code&gt;add()&lt;/code&gt; and &lt;code&gt;subtract()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Remove aria-haspopup from dropdowns&lt;/li&gt;
-&lt;li&gt;Dropdown: support &lt;code&gt;.dropdown-item&lt;/code&gt; wrapped in &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tags&lt;/li&gt;
-&lt;li&gt;Update Node versions in JS tests (drop Node 10, add Node 16) and add variables for &lt;code&gt;vertical-align&lt;/code&gt; in spinners&lt;/li&gt;
-&lt;li&gt;Replace Freenode with Libera IRC server&lt;/li&gt;
-&lt;li&gt;Fix repetition in the Navbar docs description&lt;/li&gt;
-&lt;li&gt;Enable &lt;code&gt;0.x&lt;/code&gt; with negative margins in utilities&lt;/li&gt;
-&lt;li&gt;Remove print &lt;code&gt;thead&lt;/code&gt; rule&lt;/li&gt;
-&lt;li&gt;Fix prevented &lt;code&gt;show&lt;/code&gt; event disabling modals with fade class from being displayed again&lt;/li&gt;
-&lt;li&gt;Input group validation with custom-file input&lt;/li&gt;
-&lt;li&gt;Add eslint-plugin-qunit and tighten JS tests&lt;/li&gt;
-&lt;li&gt;Update our tests to Node 16 and npm 8&lt;/li&gt;
-&lt;li&gt;Disabled link cleanup&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v4.6.1&#34;&gt;Review the GitHub v4.6.1 release changelog&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;h2 id=&#34;next-up&#34;&gt;Next up&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ll be flipping back to v5 development after this release, focusing on v5.2.0 with some additional updates to using more CSS variables and other awesome features. Sometime after that, we hope to ship a v4.7.0 release with some additional backported features and improvements to v4.&lt;/p&gt;
-&lt;p&gt;Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.&lt;/p&gt;
-&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
-&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
 </description>
     </item>
     
