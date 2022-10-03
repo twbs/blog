@@ -16,7 +16,7 @@ Bootstrap v5.2.2 has landed with new bug fixes and documentation updates—keep 
 - **Buttons**
   - Undo changes to `.btn:hover` from v5.2.1. We now explicitly target `.btn-check` styles instead.
 - **Dropdowns**
-  - Temporarily restore ability for dropdowns to work without an explicit `data` atttribute (will be removed again in v6)
+  - Temporarily restore ability for dropdowns to work without an explicit `data` attribute (will be removed again in v6)
 - **Modals**
   - Improve modal event listeners
   - Use `<h1>` for all `.modal-title` instances in our docs
