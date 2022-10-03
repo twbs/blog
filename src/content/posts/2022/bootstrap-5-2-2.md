@@ -15,13 +15,13 @@ Bootstrap v5.2.2 has landed with new bug fixes and documentation updates—keep 
   - Use Sass variable for the accordion color instead of an invalid CSS variable
 - **Buttons**
   - Undo changes to `.btn:hover` from v5.2.1. We now explicitly target `.btn-check` styles instead.
-- **Tables**
-  - Don't redefine `$border-color` in `table-variant()` mixin
 - **Dropdowns**
   - Temporarily restore ability for dropdowns to work without an explicit `data` atttribute (will be removed again in v6)
 - **Modals**
   - Improve modal event listeners
   - Use `<h1>` for all `.modal-title` instances in our docs
+- **Tables**
+  - Don't redefine `$border-color` in `table-variant()` mixin
 - **Tabs**
   - Tabs no longer autofocus and cause pages to jump on `tab.show()`
   - Fix `.active` class toggling of tabs within dropdowns
