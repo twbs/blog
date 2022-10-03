@@ -23,7 +23,6 @@ Bootstrap v5.2.2 has landed with new bug fixes and documentation updates—keep 
   - Improve modal event listeners
   - Use `<h1>` for all `.modal-title` instances in our docs
 - **Tabs**
-  - Ensure Tab plugin has proper keyboard functionality
   - Tabs no longer autofocus and cause pages to jump on `tab.show()`
   - Fix `.active` class toggling of tabs within dropdowns
 - **Toasts**
