@@ -203,6 +203,89 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2013/02/07/bootstrap-2-3-released/" class="text-decoration-none">
+            Bootstrap 2.3 released
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="07 Feb 13 00:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    February 07, 2013
+  </span>
+</div>
+
+
+        
+
+        <p>It has been far too long, friends. Nearly three months has gone by since we pushed out a new version of Bootstrap, but fret not, for that void comes to a most excellent halt tonight. After numerous delays, including a bout with the flu, we&rsquo;re happy to announce the release of <a href="https://getbootstrap.com/">Bootstrap 2.3</a>.</p>
+<h2 id="oh-shit-what">Oh shit what</h2>
+<p>Bootstrap 2.3 includes some new features, as well as the standard bunch of bug fixes and docs improvements. Here are the highlights:</p>
+<ul>
+<li><strong>Repository changes:</strong>
+<ul>
+<li><strong>Local instead of global dependencies</strong> for our makefile and install process. Now getting started is way easier—just run <code>npm install</code>.</li>
+<li>Upgraded to jQuery 1.9. No changes were needed, but we did upgrade the included jQuery file to the latest release.</li>
+<li>Moved changelog to be within the repo instead of as a wiki page.</li>
+</ul>
+</li>
+<li><strong>New and improved features:</strong>
+<ul>
+<li><strong>Added carousel indicators!</strong> Add the HTML and it automagically works.</li>
+<li><strong>Added <code>container</code> option to tooltips.</strong> The default option is still <code>insertAfter</code>, but now you may specify where to insert tooltips (and by extension, popovers) with the optional container parameter.</li>
+<li>Improved popovers now utilize <code>max-width</code> instead of <code>width</code>, have been widened from 240px to 280px, and will automatically hide the title if one has not been set via CSS <code>:empty</code> selector.</li>
+<li>Improved tooltip alignment on edges with <a href="https://github.com/twbs/bootstrap/pull/6713">#6713</a>.</li>
+<li><strong>Improved accessibility for links in all components.</strong> After merging <a href="https://github.com/twbs/bootstrap/pull/6441">#6441</a>, link hover states now apply to the <code>:focus</code> state as well. This goes for basic <code>&lt;a&gt;</code> tags, as well as buttons, navs, dropdowns, and more.</li>
+<li>Added print utility classes to show and hide content between <code>screen</code> and <code>print</code> via CSS.</li>
+<li>Updated input groups to make them behave more like default form controls. Added <code>display: inline-block;</code>, increased <code>margin-bottom</code>, and added <code>vertical-align: middle;</code>  to match <code>&lt;input&gt;</code> styles.</li>
+<li>Added <code>.horizontal-three-colors()</code> gradient mixin (with example in the CSS tests file).</li>
+<li>Added <code>.text-left</code>, <code>.text-center</code>, and <code>.text-right</code> utility classes for easy typographic alignment.</li>
+<li>Added <code>@ms-viewport</code> so IE10 can use responsive CSS when in split-screen mode.</li>
+</ul>
+</li>
+<li><strong>Docs changes:</strong>
+<ul>
+<li>Added <a href="/assets/img/2013/02/justified-nav.png">new justified navigation example</a>.</li>
+<li>Added sticky footer with fixed navbar example.</li>
+</ul>
+</li>
+</ul>
+<p>As always, you can see a more complete list of changes by viewing the <a href="https://github.com/twbs/bootstrap/issues?milestone=18&amp;q=is%3Aclosed">2.3.0 milestone</a> or <a href="https://github.com/twbs/bootstrap/pull/6346">2.3.0 pull request</a> on GitHub. Most of the issues not mentioned above are minor CSS tweaks and documentation typos.</p>
+<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.3.0.zip">Download Bootstrap 2.3.0</a> <span class="muted">(latest master ZIP)</span></p>
+<h2 id="a-note-on-tooltips">A note on tooltips</h2>
+<p>When we <a href="/2012/12/08/bootstrap-2-2-2-released/">released 2.2.2</a>, we changed the insertion strategy for tooltips and popovers. Instead of appending to the <code>&lt;body&gt;</code> by default, they used <code>insertAfter</code>. This change fixed number <code>z-index</code> issues and ultimately makes controlling and styling tooltips much easier for folks.</p>
+<p>Unfortunately, this also resulted in a few bugs, namely breaking input groups by interfering with <a href="https://css-tricks.com/child-and-sibling-selectors/">adjacent CSS selectors</a>. Instead of reverting the insertion method, <strong>we&rsquo;ve added a new <code>container</code> option</strong>. If you run into a situation where <code>insertAfter</code> doesn&rsquo;t work for you, go ahead and set that option to whatever element works best for you.</p>
+<h2 id="bootstrap-3-update">Bootstrap 3 update</h2>
+<p>As we&rsquo;ve previously mentioned, v2.3 is our last planned release before moving onto v3 fulltime (pending any catastrophic fuckups). For the latest, <a href="https://github.com/twbs/bootstrap/pull/6342">follow the Bootstrap 3 pull request</a>. <strong>Otherwise, here&rsquo;s the lowdown:</strong></p>
+<ul>
+<li>Bootstrap 3 will be mobile first.</li>
+<li>No more separate responsive CSS file—all in one now, baby.</li>
+<li>Dropping support for IE7 and Firefox 3.x.</li>
+<li>Grids have been overhauled—now simpler and fluid by default.</li>
+<li>Modals are all responsive and shit now.</li>
+<li>Dropping submenu support.</li>
+<li>Carousel has been redesigned.</li>
+<li>Renamed all of the variables to use dashes instead of camelCase.</li>
+<li>Dropped image icons in favor of icon font.</li>
+<li>JavaScript events are going to be namespaced.</li>
+<li>Docs are getting a bit of a reorganization—Scaffolding and Base CSS have been merged into a single page, CSS.</li>
+<li>Added a new gallery page to showcase more awesome Bootstrap implementations.</li>
+<li>And a whole mess of other changes.</li>
+</ul>
+<p>And that&rsquo;s just some of the highlights. Again, <a href="https://github.com/twbs/bootstrap/pull/6342">peep the pull request</a> for the most up to date changes as we continue to chip away at this bad boy. Feel free to comment on that, or hit us up on Twitter, for feedback of any kind.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2012/12/10/bootstrap-3-plans/" class="text-decoration-none">
             Bootstrap 3 plans
           </a>
@@ -212,7 +295,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="10 Dec 12 00:00 UTC">
@@ -400,37 +483,6 @@
 <p>Backwards compatibility is always a pain in the ass, and to avoid huge headaches for folks, we sometimes have to bend over, well, backwards. I hope this doesn&rsquo;t screw up your plans too much and that you understand we have the community&rsquo;s best interests at heart.</p>
 <p>There&rsquo;s some good news though. For you nerds who live on the edge, I&rsquo;ve been working on tons of BS3-esque changes in the <code>3.0.0-wip</code> branch on GitHub. If you really cannot wait for the Glyphicons font (and don&rsquo;t mind using unsupported code), do check it out. I plan on accelerating work on it in the coming weeks. (Please don&rsquo;t submit issues for it though, but rather email me or ping me on Twitter for questions.)</p>
 <p>Thanks for listening, and as always, &lt;3&lt;3&lt;3.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2012/10/30/2-2-1-hotfix-released/" class="text-decoration-none">
-            2.2.1 hotfix released
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="30 Oct 12 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    October 30, 2012
-  </span>
-</div>
-
-
-        
-
-        <p>After the <a href="/2012/10/29/bootstrap-2-2-0-released/">2.2.0 release last night</a>, a few bugs were reported, but only one major one: <a href="https://twitter.com/getbootstrap/status/263327129905811459">malfunctioning carousels</a>. To address that, <a href="https://twitter.com/fat">@fat</a> just pushed out a 2.2.1 hotfix release that fixes the bug. Upgrading should be super simple given the scope of this release.</p>
-<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.2.1.zip">Download Bootstrap 2.2.1</a> <span class="muted">(latest master ZIP)</span></p>
-<p>Once more, apologies for any hiccups and happy Bootstrapping!</p>
 
       </div>
   </div>

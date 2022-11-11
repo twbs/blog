@@ -6,7 +6,47 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Oct 2022 08:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Nov 2022 00:01:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap Icons v1.10.0</title>
+      <link>https://blog.getbootstrap.com/2022/11/11/bootstrap-icons-1-10-0/</link>
+      <pubDate>Fri, 11 Nov 2022 00:01:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2022/11/11/bootstrap-icons-1-10-0/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.10.0&lt;/a&gt; is here with nearly 150 new icons. This release includes tons of new variants for person, building, and database icons, plus new brands, rockets, road signs, globes, and many more. We&amp;rsquo;re now at &lt;strong&gt;over 1,900 icons&lt;/strong&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;150-new-icons&#34;&gt;150 new icons&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a quick look at all the new icons in v1.10.0:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/11/bootstrap-icons-v1100.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New love icons in v1.10.0&#34; loading=&#34;lazy&#34; width=&#34;1520&#34; height=&#34;1664&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Some highlights for the new icons include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;22 new person icons&lt;/li&gt;
+&lt;li&gt;26 new house icons&lt;/li&gt;
+&lt;li&gt;24 new building icons, including a renamed &lt;code&gt;building&lt;/code&gt; to &lt;code&gt;buildings&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;22 new database icons&lt;/li&gt;
+&lt;li&gt;24 new street sign icons&lt;/li&gt;
+&lt;li&gt;New globe icons&lt;/li&gt;
+&lt;li&gt;New EV, taxi, bus, and scooter transportation icons&lt;/li&gt;
+&lt;li&gt;New rockets&lt;/li&gt;
+&lt;li&gt;and more!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We also fixed the fill rules for several  some issues across the docs, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;De-duped category names &lt;code&gt;Brand&lt;/code&gt; and &lt;code&gt;Brands&lt;/code&gt; to be just &lt;code&gt;Brand&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Updated tags on several icon pages for additional aliases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Looking for more new icons? Head to the &lt;a href=&#34;https://github.com/twbs/icons/issues&#34;&gt;issue tracker&lt;/a&gt; to check for open requests or submit a new one.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+&lt;p&gt;To get started, install or update via npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap-icons
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or Composer:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer require twbs/bootstrap-icons
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.9.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.9.0/bootstrap-icons-1.9.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
+&lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap 5.2.2</title>
       <link>https://blog.getbootstrap.com/2022/10/03/bootstrap-5-2-2/</link>
@@ -771,29 +811,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.8.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.8.0/bootstrap-icons-1.8.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
 &lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
 &lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap Icons v1.7.0</title>
-      <link>https://blog.getbootstrap.com/2021/11/01/bootstrap-icons-1-7-0/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2021/11/01/bootstrap-icons-1-7-0/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.7.0&lt;/a&gt; is here with 120 new and updated icons, taking us over 1,500 total icons for the project! It&amp;rsquo;s the largest update since the initial release, so keep reading to see what&amp;rsquo;s new.&lt;/p&gt;
-&lt;h2 id=&#34;120-new-icons&#34;&gt;120 new icons&lt;/h2&gt;
-&lt;p&gt;This update was a lot of fun for me—drawing all these tiny computer parts most of all! There are dozens of new computer-related icons for parts, ports, and peripheral devices. There are also several new brand icons, including Meta, and some other fun icons like a new robot head and a boombox.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/11/icons-v170.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New icons in v1.7.0&#34; loading=&#34;lazy&#34; width=&#34;1620&#34; height=&#34;720&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Looking for more new icons? Head to the &lt;a href=&#34;https://github.com/twbs/icons/issues&#34;&gt;issue tracker&lt;/a&gt; to check for open requests or submit a new one.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;To get started, install or update via npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap-icons
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or Composer:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer require twbs/bootstrap-icons
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.7.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.7.0/bootstrap-icons-1.7.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
-&lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
 </description>
     </item>
     
