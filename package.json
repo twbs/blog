@@ -37,7 +37,7 @@
     "bootstrap": "5.2.2",
     "cross-env": "^7.0.3",
     "find-unused-sass-variables": "^4.0.4",
-    "hugo-bin": "^0.93.0",
+    "hugo-bin": "^0.94.0",
     "linkinator": "^4.1.1",
     "lockfile-lint": "^4.9.6",
     "markdownlint-cli2": "^0.5.1",
