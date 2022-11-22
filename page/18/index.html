@@ -203,6 +203,246 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
+          <a href="/2014/01/30/bootstrap-3-1-0-released/" class="text-decoration-none">
+            Bootstrap 3.1.0 released
+          </a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                           src="https://github.com/mdo.png?size=32"
+                           alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="30 Jan 14 00:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+
+    January 30, 2014
+  </span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/phOW-CZJWT0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>Today we&rsquo;re stoked to ship Bootstrap v3.1. We&rsquo;ve got a handful of new features, plenty of bug fixes and improvements, and updated build tools.</p>
+<h3 id="new-docs">New docs</h3>
+<p><a href="https://getbootstrap.com/getting-started/"><img src="/assets/img/2014/01/docs.png" class="d-block img-fluid mb-2 rounded border" alt="New Bootstrap docs" loading="lazy" width="2800" height="2200">
+</a></p>
+<p>We&rsquo;ve made tons of changes across the board, most notably to our documentation. Just like v2.1 brought a brand new design, v3.1 overhauls the docs to refocus on the actual documentation rather than the chrome around it. Our new homepage restores the quick run through of key features and showcases some awesome examples from the Expo.</p>
+<h3 id="official-sass-port">Official Sass port</h3>
+<p><a href="https://github.com/twbs/bootstrap-sass"><img src="/assets/img/2014/01/sass.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap for Sass" loading="lazy" width="2300" height="1150">
+</a></p>
+<p>The best part about v3.1 is that we&rsquo;re shipping with an official Sass port. A few weeks ago we moved over the most popular port on GitHub and made it official—Bootstrap is now available in Sass. Rather than bloat the main project with support for Less and Sass—and all the documentation for both—we&rsquo;ve kept them separate for the time being. Prominent links in the docs are included though, so enjoy!</p>
+<h3 id="new-examples">New examples</h3>
+<p><img src="/assets/img/2014/01/examples.jpg" class="d-block img-fluid mb-2 rounded border" alt="New examples" loading="lazy" width="1200" height="600">
+</p>
+<p>We&rsquo;ve added three new examples: Blog, Cover, and Dashboard. Each example provides a single page of awesomeness for you to quickly get started on a project built with Bootstrap. They&rsquo;re responsive and ready to go.</p>
+<h3 id="improved-features">Improved features</h3>
+<p>A handful of features that aren&rsquo;t exactly new to Bootstrap have seen an update in v3.1:</p>
+<ul>
+<li>Modals now include optional sizes</li>
+<li>Dropdowns now have their own alignment classes for easier customization</li>
+<li>Form feedback styles for validation states now include optional icons to reinforce color changes</li>
+</ul>
+<p>All-in-all these make components more focused, more durable, and easier to work with. See the changelog included with <a href="https://github.com/twbs/bootstrap/releases/tag/v3.1.0">the GitHub release</a> for the complete list of new features.</p>
+<h3 id="remote-modal-content">Remote modal content</h3>
+<p>One of the more important improved features is for our modals. If you currently use the modal&rsquo;s <code>remote</code> option, be aware this release may break your modals. Yes, this is a breaking change, but it&rsquo;s first and foremost a <strong>bug fix</strong> that corrects a rather longstanding and overlooked error. Our apologies for any headaches it may cause, but it&rsquo;s been missed in the last few patch releases.</p>
+<p>See the <a href="https://github.com/twbs/bootstrap/pull/11933">#11933</a> pull request for details on the code changes.</p>
+<h3 id="new-license">New license</h3>
+<p>We&rsquo;ve been talking about it for what seems like forever, but thanks to all our contributors and the core team, we&rsquo;ve finally done it. As of v3.1, Bootstrap ships under the MIT license to allow as many people to utilize Bootstrap as possible. Thanks to all our contributors for helping make it happen.</p>
+<h3 id="improved-build-tools">Improved build tools</h3>
+<p>We&rsquo;re constantly trying to improve our tools for developing Bootstrap and v3.1 brings a slew of updates to do just that.</p>
+<ul>
+<li>We&rsquo;ve switched from Recess to grunt-contrib-less for our compiler, giving us access to Less 1.6.x (as opposed to 1.3.x with Recess).</li>
+<li>Our compiled code is virtually identical in formatting and organization thanks to <a href="https://github.com/csscomb/csscomb.js">CSScomb</a> and some other Grunt-fu.</li>
+<li>Tests also run a tad faster with the help of some magical caching and parallelization.</li>
+<li>The web Customizer is now generated from a Grunt task, meaning we&rsquo;ll never miss updating or adding a variable again. If you contribute to Bootstrap regularly, just run <code>grunt</code> and commit to update the page.</li>
+</ul>
+<p><strong>Heads up!</strong> If you develop Bootstrap locally, be sure to nuke your <code>node_modules/</code> directory and run <code>npm install</code> before getting started with v3.1.</p>
+<h3 id="download-bootstrap">Download Bootstrap</h3>
+<p>Get downloading now, or see the list below for more information on what&rsquo;s new in this release. Download it from GitHub or snag it from the CDN:</p>
+<p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.1.0.zip">Download Bootstrap 3.1.0</a></p>
+<p>Or, hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Optional theme --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><hr>
+<h2 id="full-changelog">Full changelog</h2>
+<h3 id="new-features">New features</h3>
+<ul>
+<li>Three new templates: Blog, Cover, and Dashboard.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10884">#10884</a>: Add <code>.info</code> variant to contextual table classes.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/11138">#11138</a>: Add contextual styles to list groups.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11162">#11162</a>: Add new sizes, <code>.modal-lg</code> and <code>.modal-sm</code>, to modals for quicker settings on modals. Only applies to modals above the small breakpoint.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11193">#11193</a>: Add <code>&lt;kbd&gt;</code> element styles to indicate user input via keyboard.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11244">#11244</a>: Add <code>.animation()</code> mixins.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11572">#11572</a>: Add contextual <code>background-color</code> classes to match our existing text classes. (This also moves both sets of classes to the Helper Classes section of the CSS docs.)</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11675">#11675</a>: Add <code>.text-justify</code> class to round out the text alignment classes.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11836">#11836</a>: Add new form control feedback classes to toggle icons for each validation state. Works on regular forms, horizontal, and inline.</li>
+</ul>
+<p>While we originally wanted v3.1 to include RTL support, we decided to hold back on that for some potentially beneficial unreleased tooling. We&rsquo;ll share more on that when we know more, but suffice to say it&rsquo;s been bumped to v3.2.</p>
+<h3 id="css-changes">CSS changes</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/10951">#10951</a>: Add <code>outline: 0</code> to <code>.modal</code> to prevent a focus outline from appearing in Chrome for Windows.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11107">#11107</a>: Add <code>@modal-backdrop-opacity</code> variable for customizable modal backdrop.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11266">#11266</a>: Apply a pixel-based <code>line-height</code> that matches the <code>height</code> to date inputs for iOS 7 for proper vertical alignment of text in the form control.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11286">#11286</a>: Add <code>@well-border</code> variable.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11302">#11302</a>: Refactor the responsive utility classes to cut a few hundred lines of CSS (more context in #11214).</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11435">#11435</a>: Prevent the double borders between multiple buttons in an input group.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11561">#11561</a>: Add <code>float: left;</code> to <code>.form-control</code>s within input groups to prevent IE9 from screwing up placeholder text and select menu arrows.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11588">#11588</a>: Scope <code>font-size</code> to only <code>&lt;p&gt;</code> elements in <code>.jumbotron</code>s and remove the super-sized <code>line-height</code> from the base class to avoid interference with sub-components.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11676">#11676</a>: Add <code>-webkit-overflow-scrolling: touch;</code> to modals for smooth scrolling on iOS devices.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11744">#11744</a>: Clean up some incompatible properties in <code>forms.less</code>: block level inputs no longer receive <code>vertical-align: middle;</code> unless necessary, e.g. in inline forms.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11748">#11748</a>: Updated <code>.scale()</code> mixin so that it accepts optional vertical scale as second parameter.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11750">#11750</a>: Reverts v3.0.3&rsquo;s refactor to contextual table classes to ensure they work with striped tables.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11757">#11757</a>: Darken default navbar toggle bars to meet WCAG criteria.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11766">#11766</a>: Use <code>@color</code> variable in <code>.button-variant()</code> mixin to set <code>background-color</code> on <code>.badge</code>s in buttons for proper default button badge styles.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11741">#11741</a>: Don&rsquo;t set <code>@headings-font-family</code> to the same font stack as the <code>&lt;body&gt;</code>; instead, just use <code>inherit</code> for same default CSS.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11786">#11786</a>: Nest media queries within print utilities for mixin-friendliness.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11790">#11790</a>: With upgrade to Less v1.6.0, remove duplicate CSS generated from the nested <code>.clearfix</code> class and mixin by switching to <code>&amp;:extend(.clearfix all)</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11801">#11801</a>: Use correct variables for grid containers.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11817">#11817</a>: Rework input groups to use the <code>font-size: 0;</code> and <code>white-space: nowrap</code> hack for a more durable component with regards to code formatting and custom font size changes.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11829">#11829</a>: Add <code>.make-xs-column</code> mixins to complement the recently added extra small predefined grid classes.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11836">#11836</a>: Along with the form validation update, we reset some key form and icon styles:
+<ul>
+<li>All <code>.form-control</code>s within inline forms are set to <code>width: auto;</code> to prevent stacking of <code>.form-label</code> within a <code>.form-group</code>.</li>
+<li>Removes all <code>select.form-control</code> settings since those are now inherited by the above change</li>
+<li>Removes the <code>width: 1em;</code> from the Glyphicons because it was virtually impossible to override.</li>
+</ul>
+</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11841">#11841</a>: Breadcrumb padding values now use variables.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11859">#11859</a>: Restore <code>@dropdown-caret-color</code> variable, but deprecate it.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11861">#11861</a>: Add <code>@list-group-active-text-color</code> variable for improved customization on active list group items.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/11868">#11868</a>: Cleanup modal <code>z-index</code> values in <code>modals.less</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11990">#11990</a>, #12159: Make range inputs block level and 100% wide by default.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12073">#12073</a>: Make order of component variations consistent throughout the repo.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12164">#12164</a>: Fix value of SVG font ID and removed hard coded value.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12171">#12171</a>: Ensure panel groups have a bottom margin since we nuke it on child panels.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12247">#12247</a>: Add and use <code>.text-emphasis-variant()</code> mixin for emphasis classes. Also updated emphasis classes to only apply <code>:hover</code> styles to linked content.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12248">#12248</a>: Add and use <code>.bg-variant()</code> mixin to generate background classes.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12249">#12249</a>: Add and use <code>@modal-md</code> Less variable for uniformity.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12250">#12250</a>: Remove print <code>margin</code>s per upstream H5BP change, thus deferring to browser defaults, or users&rsquo; custom values should they set them.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12286">#12286</a>: Only remove appropriate <code>border-radius</code> from first and last tables or list groups in panels.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12353">#12353</a>: Scope table border reset in panels to first-child rows.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12359">#12359</a>: Reset <code>min-width</code> on <code>&lt;fieldset&gt;</code>s so they don&rsquo;t break responsive tables and behave more like standard block level elements.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12406">#12406</a>: Upgrade to Normalize v3.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12422">#12422</a>: Reset height on <code>select[multiple]</code> in <code>.input-size()</code> mixin.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12424">#12424</a>: Given Normalize v3 upgrade, account for change on <code>&lt;figure&gt;</code> element so that we don&rsquo;t cause backward compatibility issues.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12388">#12388</a>: Apply a fixed <code>height</code> to <code>.navbar-brand</code> to ensure adding a Glyphicon doesn&rsquo;t increase it&rsquo;s height.</li>
+<li>Updated <code>&lt;blockquote&gt;</code> to no longer thin text or modify <code>line-height</code> for improved readability.</li>
+</ul>
+<h3 id="javascript-changes">JavaScript changes</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/9318">#9318</a>, <a href="https://github.com/twbs/bootstrap/issues/9459">#9459</a>, <a href="https://github.com/twbs/bootstrap/issues/10105">#10105</a>: Properly place remote content within the <code>.modal-content</code> instead of <code>.modal-body</code> (see note above).</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10044">#10044</a>: Check that <code>href</code> id&rsquo;s are followed by valid characters in dropdowns.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10134">#10134</a>: Don&rsquo;t use jQuery <code>offset</code> directly because it uses sub pixel rendering.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10199">#10199</a>: Correct <code>hidden.bs</code> and <code>shown.bs</code> events firing too early in tooltips and popovers.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10205">#10205</a>: Enable support of arbitrary characters in Scrollspy targets.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10236">#10236</a>: Properly calculate offset positioning for affix plugin when reloading a scrolled window.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10260">#10260</a>, #10568, #10740: Properly hide tooltips and popovers if no animation is set.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10283">#10283</a>: Prevent IE8 from complaining about <code>$.support.transition.end</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10327">#10327</a>: Correctly reset carousel when the slide event is prevented.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10359">#10359</a>: Pass <code>$element</code> to offset top/bottom calc funcs for better dynamic offsets.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10658">#10658</a>: Don&rsquo;t let popover content lose bound events on second <code>setContent</code> call.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10675">#10675</a>: Ensure scrollspy target in tab content works properly.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10709">#10709</a>: Be consistent about type of quotes in our JS—switches double quotes to single quotes throughout.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10761">#10761</a>: Don&rsquo;t create new tooltip/popover objects just to destroy them immediately.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10798">#10798</a>: Modal namespacing.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10801">#10801</a>: Restore <code>.collapse</code> to <code>.in</code> after collapsing animation finishes in collapse plugin.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10834">#10834</a>: Only <code>preventDefault</code> on click on <code>[data-toggle=&quot;modal&quot;]</code> when the element is a link.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10890">#10890</a>: Calling <code>$().button(state)</code> shouldn&rsquo;t enable a disabled button.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10911">#10911</a>: Add <code>loaded</code> event for use with modal&rsquo;s <code>remote</code> option.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10921">#10921</a>: Input groups within button toolbars are now supported.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11203">#11203</a>: Improve scrollspy&rsquo;s handling of hidden targets.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11288">#11288</a>: Save vertical scroll position of modal between openings.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11362">#11362</a>: Update affix and scrollspy on speedy scroll to top of page.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11373">#11373</a>: Add related target to dropdown events.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11379">#11379</a>: Fix carousel <code>this.sliding</code> not getting reset if <code>$next.hasClass('active')</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11416">#11416</a>: Use the transition duration from the CSS for the carousel.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11496">#11496</a>: Clear tooltip timeout on destroy.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11555">#11555</a>: Add <code>@tooltip-opacity</code> variable.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11720">#11720</a>: Add events (affix, affixed, affix-top, etc) to affix plugin.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11722">#11722</a>: Use document scroll height instead of offset height in affix plugin.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11788">#11788</a>: Use <code>focusin</code>/<code>focusout</code> instead of <code>focus</code>/<code>blur</code> for tooltip and popover focus trigger for Firefox and Safari.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11825">#11825</a>: Add dropdown ARIA roles.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12270">#12270</a>: Add namespace <code>.bs</code> also to the event <code>dismiss.modal</code>.</li>
+</ul>
+<h3 id="deprecations">Deprecations</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/10370">#10370</a>: Deprecated the <code>.pull-right</code> method for aligning dropdown menus. Includes the following changes:
+<ul>
+<li>Removed an old and unused pair of selectors that didn&rsquo;t properly target the right-aligned navbar alignment of dropdown menus.</li>
+<li>Deprecates the <code>.pull-right</code> alignment in favor of a more specific and unique class name.</li>
+<li>Adds <code>.dropdown-menu-right</code> as the new alignment class. This is then mixin-ed into the <code>.navbar-right.navbar-nav</code> dropdown menus for auto-alignment (keeping the current behavior we have today).</li>
+<li>Adds new ability to override that auto-alignment though with the new <code>.dropdown-menu-left</code>, which is mixin-ed in the same way to provide the appropriate specificity of an override. This should never need to be used except for within right-aligned <code>.navbar-nav</code> components.</li>
+</ul>
+</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11660">#11660</a>: Deprecate <code>small</code> and <code>.small</code> in <code>blockquote</code> citation in favor of <code>footer</code> element.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12398">#12398</a>: Deprecate <code>.box-shadow()</code> mixin.</li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/10486">#10486</a>: Add note about <code>data-toggle</code> dropdown dependency.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/10505">#10505</a>: Document more of our Less variables and mixins (not all, but the commonly used ones).</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11158">#11158</a>: Customizer&rsquo;s variables are now generated via Grunt task from the <code>variables.less</code> file.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11447">#11447</a>: Document that modal remote URL is only loaded once.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11655">#11655</a>: Normalize disabled inputs and buttons in iOS with <code>opacity: 1;</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11723">#11723</a>: Mention removal of <code>.pill-content</code> and <code>.pill-pane</code> in the migration guide.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11738">#11738</a>, <a href="https://github.com/twbs/bootstrap/issues/11765">#11765</a>: Load minified assets in the docs to improve performance.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11742">#11742</a>: Add link to French translation in About page (v3.0.3 saw Ukrainian added as well).</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11760">#11760</a>: Remove mailing list links from readme and about pages.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11764">#11764</a>: Add <code>meta</code> tags to docs for description, keywords, and authors.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11770">#11770</a>: Move component-animations.less to the utility section of import list to match Customizer</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11830">#11830</a>, <a href="https://github.com/twbs/bootstrap/issues/11832">#11832</a>: More help for Windows users installing Jekyll with requirement of Python and link to <a href="https://github.com/juthilo">@juthilo</a>&rsquo;s guide, <a href="https://github.com/juthilo/run-jekyll-on-windows/">Run Jekyll on Windows</a>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11876">#11876</a>: Enable <code>failHard</code> grunt-html-validation option.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11977">#11977</a>: Concatenate and minify all docs assets.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12037">#12037</a>: Move docs <code>.html</code> pages and assets into <code>docs/</code> subfolder to clean up project root directory. Also moves <code>.csscomb.json</code> and <code>.csslintrc</code> to <code>less/</code> to further clean up project root.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12073">#12073</a>: Make order of component variations consistent throughout the repo.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12244">#12244</a>: Move v2.x to v3.x migration docs to a separate page.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12311">#12311</a>: Expand information on how to handle overflowing content in navbars.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12314">#12314</a>: Add warning about modal markup placement affecting modal appearance/functionality.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12345">#12345</a>: Add note about printer viewport weirdness.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12380">#12380</a>: Add link to unofficial German translation, <a href="http://holdirbootstrap.de/">http://holdirbootstrap.de/</a>.</li>
+<li>Updated browser and device support documentation:
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/11055">#11055</a>: add mention of select menu styling on Android stock browsers with included optional fix.</li>
+<li>Update IDs and docs nav to include bookmark links to each section.</li>
+<li>Add callout to navbar docs about fixed position, inputs, and virtual keyboard.</li>
+</ul>
+</li>
+</ul>
+<h3 id="build-system--packaging">Build system &amp; packaging</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/pull/11761">#11761</a>: Add JavaScript Code Style checker integration.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/11739">#11739</a>: Lint <code>docs-assets/js/application.js</code> and <code>docs-assets/js/customizer.js</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/11780">#11780</a>: Don&rsquo;t ignore <code>Gruntfile.js</code> or <code>package.json</code> in <code>bower.json</code> as they&rsquo;re required for compilation.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11790">#11790</a>: Switch from Recess to grunt-contrib-less.
+<ul>
+<li>Dropped <code>grunt-recess</code> for <code>grunt-contrib-less</code> to get the latest version of Less (v1.6.x) since Recess was still quite behind.</li>
+<li>Adds CSScomb to take place of Recess&rsquo;s CSS linting. Includes custom <code>.csscomb.json</code> in project root with basically the same property order as Recess.</li>
+<li>Fixes duplicate CSS generation from the nested <code>.clearfix</code> class and mixin by switching to <code>&amp;:extend(.mixin all)</code> (also mentioned in changes section).</li>
+<li>Compiled CSS looks only slightly different—yay!</li>
+</ul>
+</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/11804">#11804</a>: Enable CSS source maps in <code>grunt-contrib-less</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12003">#12003</a>: Customizer now compiles <code>theme.less</code> with updated values.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12315">#12315</a>: Add npm caching based on <code>npm-shrinkwrap.canonical.json</code>.</li>
+</ul>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
           <a href="/2013/12/05/bootstrap-3-0-3-released/" class="text-decoration-none">
             Bootstrap 3.0.3 released
           </a>
@@ -212,7 +452,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                            src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32">
+                           alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="05 Dec 13 00:00 UTC">
@@ -225,7 +465,7 @@
   </span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/xy4FXhkm6Nw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/xy4FXhkm6Nw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -664,126 +904,6 @@
 <h2 id="download">Download!</h2>
 <p>Woo, all set? Then head to the docs and download yourself some Bootstrap 3!</p>
 <p><a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.0.zip">Download Bootstrap 3</a> or hit the <a href="https://github.com/twbs/bootstrap">GitHub repository</a></p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2013/08/13/bootstrap-3-rc2/" class="text-decoration-none">
-            Bootstrap 3 RC2
-          </a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                           src="https://github.com/mdo.png?size=32"
-                           alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="13 Aug 13 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-
-    August 13, 2013
-  </span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/wiyYozeOoKs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p>We&rsquo;ve just cut a new release for Bootstrap 3, RC2. It&rsquo;s a big release as lots has changed, but that should all be for the better. Thanks everyone who&rsquo;s given feedback and submitted pull requests thus far—we&rsquo;re getting super close!</p>
-<h2 id="key-changes-from-rc1">Key changes from RC1</h2>
-<p>Without listing all the minor changes (there have been over 500 commits since RC1!), here&rsquo;s a quick overview of the changes.</p>
-<ul>
-<li>
-<p><strong>Docs changes:</strong></p>
-<ul>
-<li>The Customizer is back! Still needs some work, but functionality has been rewritten and will be improved as we head to final release.</li>
-<li>Added new mention to our <a href="https://getbootstrap.com/getting-started/#browsers">browser compatibility docs</a> to highlight the workaround for Internet Explorer 10 in Windows Phone 8 not picking up media queries. <a href="https://github.com/twbs/bootstrap/pull/9171">See #9171.</a></li>
-<li>Added new section to the Getting Started page for documenting <a href="https://getbootstrap.com/getting-started/#third-parties">third party and addon compatibility</a> issues. <a href="https://github.com/twbs/bootstrap/pull/9175">See #9175.</a></li>
-<li>Added <a href="https://getbootstrap.com/getting-started/#accessibility">new Accessibility section</a>, lots of new aria and role attributes, and more for improved 508 and WCAG compliancy. <a href="https://github.com/twbs/bootstrap/pull/9186">See #9186.</a> Also improved used of more semantic HTML5 elements in docs per <a href="https://github.com/twbs/bootstrap/pull/9332">#9332</a>, <a href="https://github.com/twbs/bootstrap/pull/9347">#9347</a>, and <a href="https://github.com/twbs/bootstrap/pull/9352">#9352</a>.</li>
-<li>Added HTML validation tests, and made any existing failures pass. <a href="https://github.com/twbs/bootstrap/pull/9396">See #9396.</a></li>
-</ul>
-</li>
-<li>
-<p><strong>Global CSS changes:</strong></p>
-<ul>
-<li>Update vertical and horizontal gradients to make start and end color parameters come first, then start and end positions. <a href="https://github.com/twbs/bootstrap/issues/9049">Fixes #9049.</a></li>
-<li>Make <code>.pull-right</code> and <code>.pull-left</code> classes use <code>!important</code> to avoid needing overrides due to specificity (like in navbar, button groups, etc). <a href="https://github.com/twbs/bootstrap/pull/8697">See #8697.</a></li>
-<li>Lots of variable additions to components.</li>
-<li>Updated gradients to not include <code>background-color</code> for improved use of <code>rgba()</code> colors within mixins. <a href="https://github.com/twbs/bootstrap/pull/8877">See #8877</a></li>
-</ul>
-</li>
-<li>
-<p><strong>Grid system:</strong></p>
-<ul>
-<li>Overhauled grid system to include four tiers instead of the original three of RC1. We now have <code>.col-xs</code> (phones), <code>.col-sm</code> (tablets), <code>.col-md</code> (desktops), and <code>.col-lg</code> (large desktops). Responsive utilities have been updated to match these new tiers as well. <a href="https://github.com/twbs/bootstrap/commit/a2b9988eb908e5b95fb253aac7fde0fbd61c375e">See relevant commit</a>.</li>
-<li><code>.row</code>s only have negative left and right margins if they sit within a <code>.container</code>. This resolves the horizontal scrollbar issue for folks with full page containers (restoring the full behavior of the old fluid container from 2.x). <a href="https://github.com/twbs/bootstrap/issues/8959">See #8959.</a></li>
-<li>Grid now includes offset, push, and pull classes for each break point <a href="https://github.com/twbs/bootstrap/pull/8974">See #8974.</a></li>
-<li>Updated mixins to include ability to specify gutter width as a second parameter. <a href="https://github.com/twbs/bootstrap/issues/8935">See #8935.</a></li>
-</ul>
-</li>
-<li>
-<p><strong>Buttons:</strong></p>
-<ul>
-<li>Buttons and inputs, and their large counterparts, are now a bit shorter.</li>
-<li>New default button styles and higher contrast on <code>:hover</code> and <code>:active</code> states. <a href="https://github.com/twbs/bootstrap/issues/8786">Fixes #8786.</a></li>
-<li>New classes for size modifier classes—instead of <code>.btn-mini</code>, <code>.btn-small</code>, or <code>.btn-large</code>, we now have <code>.btn-xs</code>, <code>.btn-sm</code>, and <code>.btn-lg</code>. <a href="https://github.com/twbs/bootstrap/pull/9056">See #9056.</a></li>
-<li>New button group sizing classes: just add <code>.btn-group-xs</code>, <code>.btn-group-sm</code>, or <code>.btn-group-lg</code> to any <code>.btn-group</code> and you&rsquo;re good to go. <a href="https://github.com/twbs/bootstrap/pull/9295">See #9295.</a></li>
-</ul>
-</li>
-<li>
-<p><strong>Forms:</strong></p>
-<ul>
-<li>Similar to the new button classes, we have new input size classes: <code>.input-sm</code> and <code>.input-lg</code>. <a href="https://github.com/twbs/bootstrap/pull/9056">See #9056.</a></li>
-<li>Input focus states now generated via variable and mixin. Use the <code>@input-focus-border</code> variable and <code>.form-control-focus</code> mixin to generate a custom <code>border-color</code> and <code>box-shadow</code>.</li>
-<li>Size modifier classes for large and small components—including buttons, form inputs, pagination, and wells—have all been standardized to use <code>-sm</code> or <code>-lg</code>. <a href="https://github.com/twbs/bootstrap/pull/9056">See #9056.</a></li>
-<li>Inline forms now require the use of <code>.form-group</code>, <a href="https://github.com/twbs/bootstrap/issues/9382">per #9382</a>, to properly align and size all (native and custom) form controls. This also helps make form markup more consistent and flexible (just swap a class), so woohoo!</li>
-<li>Added <code>.static-form-control</code> to account for static, placeholder text in horizontal form layouts. <a href="https://github.com/twbs/bootstrap/issues/8150">Fixes #8150.</a></li>
-<li>New input group sizing classes: just add <code>.input-group-sm</code> or <code>.input-group-lg</code> to any <code>.input-group</code> and you&rsquo;re good to go. <a href="https://github.com/twbs/bootstrap/issues/9295">See #9295.</a></li>
-</ul>
-</li>
-<li>
-<p><strong>Dropped accordion for updated panel.</strong></p>
-<ul>
-<li>We&rsquo;ve removed the accordion and instead chosen to extend the panel component to provide the same functionality. <a href="https://github.com/twbs/bootstrap/pull/9404">See #9404</a>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Navbar:</strong></p>
-<ul>
-<li>Overhauled navbar to always be responsive and mobile first.
-<ul>
-<li>Navbars now require a <code>.navbar-header</code> to wrap up brand and toggle.</li>
-<li><code>.nav-collapse</code> has been renamed to <code>.navbar-collapse</code> and automatically hits a max-height and will overflow to keep your nav content in the same viewport.</li>
-<li><a href="https://github.com/twbs/bootstrap/pull/9403">See details in #9403.</a></li>
-</ul>
-</li>
-<li>Navbar&rsquo;s no longer use <code>.pull-left</code> or <code>.pull-right</code>, but rather <code>.navbar-left</code> and <code>.navbar-right</code>. This avoids issues with specificity due to chaining classes and enables easier styling.</li>
-</ul>
-</li>
-<li>
-<p><strong>Miscellaneous component changes:</strong></p>
-<ul>
-<li>Alerts that are to be dismissed now require <code>.alert-dismissable</code> to properly pad the alert and align the close button. <a href="https://github.com/twbs/bootstrap/issues/9310">See #9310</a>.</li>
-<li>Responsive utilities are now mixin-able thanks to <a href="https://github.com/twbs/bootstrap/pull/9211">#9211</a>.</li>
-<li>Dropped <code>.alert-block</code> for a simpler <code>.alert</code>.</li>
-<li>Linked panel titles now inherit their color. Fixes <a href="https://github.com/twbs/bootstrap/issues/9061">#9061</a>.</li>
-<li>List groups in panels no longer require <code>.list-group-flush</code>.</li>
-<li>Labels now require <code>.label-default</code> for the &ldquo;default&rdquo; gray option. <a href="https://github.com/twbs/bootstrap/pull/9123">See #9123.</a></li>
-<li>Labels now collapse automatically (not in IE8) when empty. <a href="https://github.com/twbs/bootstrap/issues/9241">See #9241.</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="whats-left">What&rsquo;s left?</h2>
-<p>RC2 takes care of nearly all our bugs that have been filed thus far, but we have a few more to address before our final release. <a href="https://github.com/twbs/bootstrap/issues?state=open">Check the issues</a> to see what&rsquo;s there already if you run into any problems. If you do find something, open a new issue with an example to reproduce it (jsbin or jsfiddle are awesome!) or submit a pull request.</p>
-<hr>
-<p><a href="https://getbootstrap.com/">Head on over to the docs</a> to download and explore the new hotness in RC2.</p>
-<p>&lt;3</p>
 
       </div>
   </div>
