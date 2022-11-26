@@ -1,4 +1,4 @@
-{{- $bootstrapJs := resources.Get "/js/bootstrap.min.js" -}}
+{{- $bootstrapJs := resources.Get "/js/bootstrap.min.js" | resources.Copy "/assets/js/vendor/bootstrap.min.js" -}}
 
 <script async src="{{ $bootstrapJs.Permalink | relURL }}"></script>
 
