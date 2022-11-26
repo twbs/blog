@@ -34,10 +34,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "bootstrap": "5.2.2",
+    "bootstrap": "5.2.3",
     "cross-env": "^7.0.3",
-    "find-unused-sass-variables": "^4.0.4",
-    "hugo-bin": "^0.94.0",
+    "find-unused-sass-variables": "^4.0.5",
+    "hugo-bin": "^0.95.0",
     "linkinator": "^4.1.1",
     "lockfile-lint": "^4.9.6",
     "markdownlint-cli2": "^0.5.1",
