@@ -1,24 +1,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://gmpg.org/xfn/11" rel="profile">
-<link rel="canonical" href="{{ .Permalink }}">
 
 <link rel="preconnect" href="https://github.com">
 <link rel="preconnect" href="https://avatars.githubusercontent.com">
+<link rel="preload" href="/assets/brand/bootstrap-logo-shadow.png" as="image">
 
+<link href="https://gmpg.org/xfn/11" rel="profile">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | absURL }}" title="{{ .Site.Title }}">
+
+<title>{{ if .IsHome }}{{ .Site.Title | markdownify }} · {{ .Site.Params.description | markdownify }}{{ else }}{{ .Title | markdownify }} | {{ .Site.Title | markdownify }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . | markdownify }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . | markdownify }}{{ end }}{{ end }}{{ end }}">
 <meta name="generator" content="Hugo {{ hugo.Version }}">
-
 {{ with .Params.robots -}}
 <meta name="robots" content="{{ . }}">
 {{- end }}
 
-<title>{{ if .IsHome }}{{ .Site.Title | markdownify }} · {{ .Site.Params.description | markdownify }}{{ else }}{{ .Title | markdownify }} | {{ .Site.Title | markdownify }}{{ end }}</title>
-
 {{ partial "stylesheet" . }}
-
-<link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | absURL }}" title="{{ .Site.Title }}">
-
 {{ partial "favicons" . }}
 {{ partial "social" . }}
 {{ partial "analytics" . }}
