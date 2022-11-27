@@ -78,8 +78,6 @@ module:
       target:           assets/scss/bootstrap
     - source:           node_modules/bootstrap/dist/js/bootstrap.min.js
       target:           assets/js/bootstrap.min.js
-    - source:           node_modules/vanilla-lazyload/dist/lazyload.iife.min.js
-      target:           assets/js/lazyload.iife.min.js
 
 params:
   docs_version:         "5.2"
