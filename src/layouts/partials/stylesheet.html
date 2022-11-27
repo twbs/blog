@@ -1,11 +1,10 @@
-{{- $targetDocsCssPath := "/assets/css/style.css" -}}
-{{- $sassOptions := dict "targetPath" $targetDocsCssPath "outputStyle" "expanded" "precision" 6 -}}
+{{ $sassOptions := dict "targetPath" "/assets/css/style.css" "outputStyle" "expanded" "precision" 6 -}}
 {{- $postcssOptions := dict "use" "autoprefixer" "noMap" true -}}
 
-{{ if eq hugo.Environment "production" -}}
+{{- if eq hugo.Environment "production" -}}
   {{- $sassOptions = merge $sassOptions (dict "outputStyle" "compressed") -}}
 {{- end -}}
 
-{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions | postCSS $postcssOptions }}
+{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions | postCSS $postcssOptions -}}
 
 <link href="{{ $style.Permalink | relURL }}" rel="stylesheet">
