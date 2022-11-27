@@ -12,7 +12,7 @@
     <span>@{{ $author }}</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="{{ $date | dateFormat "02 Jan 06 15:04 MST" }}">
-    {{- partial "icons/calendar-event.svg" (dict "class" "me-2" "width" "24" "height" "24") -}}
+    {{ partial "icons/calendar-event.svg" (dict "class" "me-2" "width" "24" "height" "24") -}}
     {{- $date | dateFormat "January 02, 2006" -}}
   </span>
 </div>
