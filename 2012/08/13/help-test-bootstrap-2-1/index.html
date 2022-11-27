@@ -309,24 +309,12 @@ While 2.0.4 was a smaller release, 2.1 is a much larger effort that closes nearl
 </footer>
 
 
-    <script async src="/assets/js/vendor/bootstrap.min.js"></script>
-
+    <script async src="/assets/js/vendor/bootstrap.min.js"></script><script src="/assets/js/vendor/lazyload.iife.min.js"></script>
 <script>
-  (function(w, d) {
-    var b = d.getElementsByTagName('body')[0];
-    var s = d.createElement('script');
-    var io = 'IntersectionObserver' in w && 'IntersectionObserverEntry' in w &&
-               'intersectionRatio' in w.IntersectionObserverEntry.prototype &&
-               'isIntersecting' in w.IntersectionObserverEntry.prototype;
-    var v = io ? '17.x' : '8.x';
-    s.async = true;
-    s.src = '/assets/js/vendor/lazyload.' + v + '.iife.min.js';
-    w.lazyLoadOptions = {
-      elements_selector: '.lazy',
-      threshold: 150
-    };
-    b.appendChild(s);
-  }(window, document));
+  new LazyLoad({
+    elements_selector: '.lazy',
+    threshold: 150
+  });
 </script>
 
   </body>
