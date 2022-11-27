@@ -80,7 +80,6 @@ module:
       target:           assets/js/bootstrap.min.js
 
 params:
-  current_version:      "5.2.3"
   docs_version:         "5.2"
   description:          "Official blog for the Bootstrap framework."
   author:               "Mark Otto"
@@ -89,7 +88,6 @@ params:
   repo:                 "https://github.com/twbs/blog"
   twitter:              "getbootstrap"
   blog:                 "https://blog.getbootstrap.com/"
-  expo:                 "https://expo.getbootstrap.com/"
   icons:                "https://icons.getbootstrap.com/"
   themes:               "https://themes.getbootstrap.com/"
   opencollective:       "https://opencollective.com/bootstrap"

@@ -4,9 +4,9 @@ date: "2013-03-03T00:00:00Z"
 title: Welcome to the Bootstrap Expo
 ---
 
-[![Bootstrap Expo](/assets/img/2013/03/bootstrap-expo.jpg)]({{< param "expo" >}})
+[![Bootstrap Expo](/assets/img/2013/03/bootstrap-expo.jpg)](https://expo.getbootstrap.com/)
 
-Today we're launching a new project to showcase the absolute best projects built on Bootstrap, the [Bootstrap Expo]({{< param "expo" >}}).
+Today we're launching a new project to showcase the absolute best projects built on Bootstrap, the [Bootstrap Expo](https://expo.getbootstrap.com/).
 
 The Bootstrap Expo is all hosted on GitHub, meaning recommending new sites is as easy as [opening a new issue](https://github.com/twbs/bootstrap-expo/issues/new). It also keeps the primary Bootstrap repo focused on code and documentation, and not dozens of extraneous images.
 
