@@ -1,17 +1,15 @@
-/* eslint-env browser */
+/* global bootstrap:false */
 
-/* global ClipboardJS:false */
-
-import ClipboardJS from 'clipboard';
+import ClipboardJS from 'clipboard'
 
 const btnTitle = 'Copy to clipboard'
 
 const btnHtml = [
 '<div class="bd-clipboard">',
-  '<button type="button" class="btn-clipboard" title="' + btnTitle + '">',
+  `<button type="button" class="btn-clipboard" title="${btnTitle}">`,
     '<svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>',
   '</button>',
-'</div>'].join('');
+'</div>'].join('')
 
 document.querySelectorAll('div.highlight')
   .forEach((element) => {
