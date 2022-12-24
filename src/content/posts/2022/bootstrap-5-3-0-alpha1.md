@@ -70,7 +70,7 @@ Be sure to consult the [v5.3.0 migration guide](https://getbootstrap.com/docs/5.
 
 ## Up next
 
-As we iron out the release with your feedback and bug reports, we'll also be updating the Bootstrap Blog and Bootstrap Icons sites to use the new themes soon. We'll also continue to refine how our componnts and utilities work with the new color modes, adding Sass testing to improve our coverage of how folks build with Bootstrap, and much more.
+As we iron out the release with your feedback and bug reports, we'll also be updating the Bootstrap Blog and Bootstrap Icons sites to use the new themes soon. We'll also continue to refine how our components and utilities work with the new color modes, adding Sass testing to improve our coverage of how folks build with Bootstrap, and much more.
 
 ## Get the release
 
