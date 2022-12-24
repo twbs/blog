@@ -63,7 +63,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Be sure to consult the &lt;a href=&#34;https://getbootstrap.com/docs/5.3/migration/&#34;&gt;v5.3.0 migration guide&lt;/a&gt; to see what&amp;rsquo;s changed as well.&lt;/p&gt;
 &lt;h2 id=&#34;up-next&#34;&gt;Up next&lt;/h2&gt;
-&lt;p&gt;As we iron out the release with your feedback and bug reports, we&amp;rsquo;ll also be updating the Bootstrap Blog and Bootstrap Icons sites to use the new themes soon. We&amp;rsquo;ll also continue to refine how our componnts and utilities work with the new color modes, adding Sass testing to improve our coverage of how folks build with Bootstrap, and much more.&lt;/p&gt;
+&lt;p&gt;As we iron out the release with your feedback and bug reports, we&amp;rsquo;ll also be updating the Bootstrap Blog and Bootstrap Icons sites to use the new themes soon. We&amp;rsquo;ll also continue to refine how our components and utilities work with the new color modes, adding Sass testing to improve our coverage of how folks build with Bootstrap, and much more.&lt;/p&gt;
 &lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap@v5.3.0-alpha1
