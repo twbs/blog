@@ -16,7 +16,7 @@ We're keeping things short and simple in this blog post with deeper dives into t
 
 [![New homepage](/assets/img/2022/12/docs-dark-mode.png)](https://getbootstrap.com)
 
-Bootstrap now supports an explicit opt-in for creating multiple color modes via the `data-bs-theme` attribute on the root `<html>` element. We opted for a `data` attribute solution so that you can create any number of themes instead of just light and dark. We use a new Sass mixin, [`color-mode()`](http://localhost:9001/docs/5.3/customize/color-modes/#building-with-sass), to generate our dark mode styles with either a data attribute (the default) or a media query. The latter is useful if you only have two color modes and want automatic color mode changing via CSS.
+Bootstrap now supports an explicit opt-in for creating multiple color modes via the `data-bs-theme` attribute on the root `<html>` element. We opted for a `data` attribute solution so that you can create any number of themes instead of just light and dark. We use a new Sass mixin, [`color-mode()`](https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass), to generate our dark mode styles with either a data attribute (the default) or a media query. The latter is useful if you only have two color modes and want automatic color mode changing via CSS.
 
 [Read more in the new color mode docs.](https://getbootstrap.com/docs/5.3/customize/color-modes/)
 
@@ -42,7 +42,7 @@ If you're using the CDN or starter template, using the new color modes is straig
 </html>
 ```
 
-Want to use CSS media queries to change the color mode instead? You can also build Bootstrap with Sass and customize how you use color modes. [Read the docs](http://localhost:9001/docs/5.3/customize/color-modes/#building-with-sass) to learn more. You can even create custom color modes.
+Want to use CSS media queries to change the color mode instead? You can also build Bootstrap with Sass and customize how you use color modes. [Read the docs](https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass) to learn more. You can even create custom color modes.
 
 ## Expanded color palette
 
