@@ -6,7 +6,73 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Nov 2022 08:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Dec 2022 08:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap 5.3.0-alpha1</title>
+      <link>https://blog.getbootstrap.com/2022/12/24/bootstrap-5-3-0-alpha1/</link>
+      <pubDate>Sat, 24 Dec 2022 08:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2022/12/24/bootstrap-5-3-0-alpha1/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a Christmas miracle—Bootstrap v5.3.0-alpha1 has arrived just in time for the holiday break! This release brings new color mode support, an expanded color palette with variables and utilities, and more.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re keeping things short and simple in this blog post with deeper dives into the new color modes and more coming in future posts. For now, we want you to enjoy the holiday break and come back next year feeling refreshed and rejuvenated. Keep reading for what&amp;rsquo;s new and we&amp;rsquo;ll see you next year!&lt;/p&gt;
+&lt;h2 id=&#34;dark-mode-and-color-modes&#34;&gt;Dark mode and color modes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/12/docs-dark-mode.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New homepage&#34; loading=&#34;lazy&#34; width=&#34;2880&#34; height=&#34;1800&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bootstrap now supports an explicit opt-in for creating multiple color modes via the &lt;code&gt;data-bs-theme&lt;/code&gt; attribute on the root &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; element. We opted for a &lt;code&gt;data&lt;/code&gt; attribute solution so that you can create any number of themes instead of just light and dark. We use a new Sass mixin, &lt;a href=&#34;https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass&#34;&gt;&lt;code&gt;color-mode()&lt;/code&gt;&lt;/a&gt;, to generate our dark mode styles with either a data attribute (the default) or a media query. The latter is useful if you only have two color modes and want automatic color mode changing via CSS.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.3/customize/color-modes/&#34;&gt;Read more in the new color mode docs.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.3/customize/color-modes/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/12/docs-color-modes.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New homepage&#34; loading=&#34;lazy&#34; width=&#34;2880&#34; height=&#34;1800&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For those wanting to build something more advanced, you can &lt;a href=&#34;https://getbootstrap.com/docs/5.3/customize/color-modes/#javascript&#34;&gt;read how we built our own color mode picker&lt;/a&gt; with JavaScript that respects the device or operating system setting by default, but still allows someone to override it with an explicit theme.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re using the CDN or starter template, using the new color modes is straightforward. Add the &lt;code&gt;data-bs-theme&lt;/code&gt; attribute with &lt;code&gt;light&lt;/code&gt; or &lt;code&gt;dark&lt;/code&gt; values to the &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; element and you&amp;rsquo;ll be using either the light or dark theme.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;data-bs-theme&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dark&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Bootstrap demo&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;link&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;integrity&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;crossorigin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;anonymous&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;integrity&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;crossorigin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;anonymous&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Want to use CSS media queries to change the color mode instead? You can also build Bootstrap with Sass and customize how you use color modes. &lt;a href=&#34;https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass&#34;&gt;Read the docs&lt;/a&gt; to learn more. You can even create custom color modes.&lt;/p&gt;
+&lt;h2 id=&#34;expanded-color-palette&#34;&gt;Expanded color palette&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.3/customize/color/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/12/docs-colors.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New homepage&#34; loading=&#34;lazy&#34; width=&#34;2880&#34; height=&#34;1800&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.3/customize/color/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/12/docs-colors-dark-mode.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New homepage&#34; loading=&#34;lazy&#34; width=&#34;2880&#34; height=&#34;1800&#34;&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We have a huge new color palette update with new Sass variables, CSS variables, and utilities to boot. Foreground and background colors have new secondary, tertiary, and emphasis colors to choose from, while our theme colors have expanded on to include their subtle background colors, subtle border colors, and darker text colors. We&amp;rsquo;ve rebuilt some components (like list groups and alerts) to use these new variables in their source Sass and compiled CSS so that they respond to the color mode changes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.3/customize/color/#colors&#34;&gt;Check out the new colors docs.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;and-more&#34;&gt;And more!&lt;/h2&gt;
+&lt;p&gt;And a few more noteworthy changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added new CSS variables for grid breakpoints, link colors, close button, alert links, forms, and more. In addition, many components have been updated to use more global CSS variables like &lt;code&gt;--bs-border-color&lt;/code&gt; to better respond to changing color modes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Floating forms have been updated to be more bulletproof and now include proper support for textareas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added many new utilities, including &lt;code&gt;fw-medium&lt;/code&gt;, &lt;code&gt;overflow&lt;/code&gt; and &lt;code&gt;object-fit&lt;/code&gt; utilities, &lt;a href=&#34;https://getbootstrap.com/docs/5.3/utilities/z-index/&#34;&gt;z-index&lt;/a&gt;, and more. Plus, &lt;code&gt;border-radius&lt;/code&gt; utilities have been updated so that you can combine &lt;code&gt;.rounded-{top|bottom|start|end}&lt;/code&gt; with &lt;code&gt;.rounded-{0-5|pill|circle}&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed some Popper tooltip and popover consistency issues.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Be sure to consult the &lt;a href=&#34;https://getbootstrap.com/docs/5.3/migration/&#34;&gt;v5.3.0 migration guide&lt;/a&gt; to see what&amp;rsquo;s changed as well.&lt;/p&gt;
+&lt;h2 id=&#34;up-next&#34;&gt;Up next&lt;/h2&gt;
+&lt;p&gt;As we iron out the release with your feedback and bug reports, we&amp;rsquo;ll also be updating the Bootstrap Blog and Bootstrap Icons sites to use the new themes soon. We&amp;rsquo;ll also continue to refine how our componnts and utilities work with the new color modes, adding Sass testing to improve our coverage of how folks build with Bootstrap, and much more.&lt;/p&gt;
+&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap@v5.3.0-alpha1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.3.0-alpha1&#34;&gt;Read the GitHub v5.3.0-alpha1 changelog&lt;/a&gt; for a complete list of changes in this release.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap 5.2.3</title>
       <link>https://blog.getbootstrap.com/2022/11/22/bootstrap-5-2-3/</link>
@@ -641,171 +707,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.8.2&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.8.2/bootstrap-icons-1.8.2.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
 &lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
 &lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap 5.2.0 beta</title>
-      <link>https://blog.getbootstrap.com/2022/05/13/bootstrap-5-2-0-beta/</link>
-      <pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2022/05/13/bootstrap-5-2-0-beta/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s the biggest release since v5 itself—&lt;strong&gt;Bootstrap v5.2.0-beta1 is here!&lt;/strong&gt; This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.&lt;/p&gt;
-&lt;p&gt;Given the size of the update and time since our last release, we&amp;rsquo;re doing something different and shipping it as a beta first. Keep reading for details.&lt;/p&gt;
-&lt;h2 id=&#34;why-so-long&#34;&gt;Why so long?&lt;/h2&gt;
-&lt;p&gt;I want to start by acknowledging the time it&amp;rsquo;s taken to ship a new release. As an open source maintainer, I&amp;rsquo;m constantly worried about not doing or being good enough of a developer for my projects. Pair that with a distributed team all working through this pandemic and &lt;a href=&#34;https://twitter.com/mdo/status/1483871584267866115?s=20&amp;amp;t=8rPOWalniMVV8u49S_yxkA&#34;&gt;me having a heart attack&lt;/a&gt;, we&amp;rsquo;ve all needed some down time. I managed to put together a &lt;a href=&#34;https://blog.getbootstrap.com/2022/01/31/bootstrap-icons-1-8-0/&#34;&gt;Bootstrap Icons release&lt;/a&gt; with what energy I had before needing another break. The rest of the team has also needed some well deserved down time.&lt;/p&gt;
-&lt;p&gt;I ask that you all &lt;strong&gt;please take some time to send some appreciation and support to your favorite open source maintainers&lt;/strong&gt;. Everyone could use a little more love in this work.&lt;/p&gt;
-&lt;p&gt;All that said, we’re shipping v5.2.0-beta1 first since it&amp;rsquo;s been so long—we&amp;rsquo;d love your help testing things out. We’ll follow up with a stable release as soon as possible.&lt;/p&gt;
-&lt;p&gt;Okay, now onto the good parts!&lt;/p&gt;
-&lt;h2 id=&#34;redesigned-docs&#34;&gt;Redesigned docs&lt;/h2&gt;
-&lt;p&gt;Another release, another docs refresh! From the get go, you&amp;rsquo;ll notice our Bootstrap Purple™ is much more vibrant now, making everything feel brand new. We&amp;rsquo;ve rewritten our entire homepage to better show off all the awesome features of Bootstrap.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/05/docs-home.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New homepage&#34; loading=&#34;lazy&#34; width=&#34;3360&#34; height=&#34;2100&#34;&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com&#34;&gt;See the homepage in action&lt;/a&gt; and let us know what you think!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.2/getting-started/introduction/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/05/docs-quick-start.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New docs page&#34; loading=&#34;lazy&#34; width=&#34;3360&#34; height=&#34;2100&#34;&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Stepping into the actual docs, you&amp;rsquo;ll notice quite a few changes. We&amp;rsquo;ve streamlined our navbar, done away with our subnav, and changed the sidebar to always show every page link for greater discoverability. Show above is also our &lt;a href=&#34;https://getbootstrap.com/docs/5.2/getting-started/introduction/&#34;&gt;refreshed quick start guide&lt;/a&gt;, which is now a step-by-step instructional guide for using Bootstrap via CDN.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/05/docs-version-picker.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;Docs version picker&#34; loading=&#34;lazy&#34; width=&#34;1680&#34; height=&#34;1050&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;The refreshed navbar also has a long-awaited new version picker for v5.2.0 and beyond. From any page, click the version and see options to navigate to previous minor releases of that same page. When a page doesn&amp;rsquo;t exist in an older release, you&amp;rsquo;ll see a disabled version in the dropdown. We currently have no plans to link pages across major versions.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/05/docs-search.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;New search&#34; loading=&#34;lazy&#34; width=&#34;3360&#34; height=&#34;2100&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;The docs search is now powered by the latest version of Algolia&amp;rsquo;s DocSearch, bringing an improved design that even shows your most recent searches.&lt;/p&gt;
-&lt;h2 id=&#34;design-tweaks&#34;&gt;Design tweaks&lt;/h2&gt;
-&lt;p&gt;To coincide with our docs redesign, we&amp;rsquo;ve given our buttons and inputs a slight refresh with some refined &lt;code&gt;border-radius&lt;/code&gt; values. It&amp;rsquo;s a small change, but a welcomed refresh to keep things modern and fresh. Here&amp;rsquo;s a look at the before and after of &lt;a href=&#34;https://getbootstrap.com/docs/5.2/components/buttons/&#34;&gt;our buttons&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/05/buttons-compared.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;Updated buttons&#34; loading=&#34;lazy&#34; width=&#34;1690&#34; height=&#34;504&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;And the before and after of &lt;a href=&#34;https://getbootstrap.com/docs/5.2/forms/form-control/&#34;&gt;our inputs&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/05/inputs-compared.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;Updated inputs&#34; loading=&#34;lazy&#34; width=&#34;1690&#34; height=&#34;1200&#34;&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;component-css-variables&#34;&gt;Component CSS variables&lt;/h2&gt;
-&lt;p&gt;With this release, all our components now include CSS variables to enable real-time customization, easier theming, and (soon) color mode support starting with dark mode. Every component page has been updated to include a reference guide of the relevant CSS variables. Take for example &lt;a href=&#34;https://getbootstrap.com/docs/5.2/components/buttons/#css&#34;&gt;our buttons&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-padding-x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-padding-x&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-padding-y&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-padding-y&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-font-family&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-font-family&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;@include&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt; rfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-font-size&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$prefix&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;btn-font-size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-font-weight&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-font-weight&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-line-height&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-line-height&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$body-color&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-bg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;ni&#34;&gt;transparent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-border-width&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-border-width&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-border-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;ni&#34;&gt;transparent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-border-radius&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-border-radius&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-box-shadow&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-box-shadow&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-disabled-opacity&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-disabled-opacity&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;--#{$prefix}btn-focus-box-shadow&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$btn-focus-width&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;rgba&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;#{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$prefix&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;btn-focus-shadow-rgb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Values for virtually every CSS variables are assigned via Sass variable, so customization via CSS and Sass are both well supported. Also included for several components are examples of customizing via CSS variables.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/05/custom-button.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;Custom button&#34; loading=&#34;lazy&#34; width=&#34;1608&#34; height=&#34;872&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;Check out all our components to see how you can customize them to your liking.&lt;/p&gt;
-&lt;h2 id=&#34;new-_mapsscss&#34;&gt;New &lt;code&gt;_maps.scss&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Bootstrap v5.2.0-beta1 introduces a new Sass file with &lt;code&gt;_maps.scss&lt;/code&gt; that pulls out several Sass maps from &lt;code&gt;_variables.scss&lt;/code&gt; to fix an issue where updates to an original map were not applied to secondary maps that extend it. It&amp;rsquo;s not ideal, but it resolves a longstanding issue for folks when working with customized maps.&lt;/p&gt;
-&lt;p&gt;For example, updates to &lt;code&gt;$theme-colors&lt;/code&gt; were not being applied to other maps that relied on &lt;code&gt;$theme-colors&lt;/code&gt; (like the &lt;code&gt;$utilities-colors&lt;/code&gt; and more), which created broken customization workflows. To summarize the problem, &lt;strong&gt;Sass has a limitation where once a default variable or map has been &lt;em&gt;used&lt;/em&gt;, it cannot be updated&lt;/strong&gt;. &lt;em&gt;There&amp;rsquo;s a similar shortcoming with CSS variables when they&amp;rsquo;re used to compose other CSS variables.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This is also why variable customizations in Bootstrap have to come after &lt;code&gt;@import &amp;quot;functions&amp;quot;;&lt;/code&gt;, but before &lt;code&gt;@import &amp;quot;variables&amp;quot;;&lt;/code&gt; and the rest of our import stack. The same applies to Sass maps—you must override the defaults before they get used. The following maps have been moved to the new &lt;code&gt;_maps.scss&lt;/code&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$theme-colors-rgb&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$utilities-colors&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$utilities-text&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$utilities-text-colors&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$utilities-bg&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$utilities-bg-colors&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$negative-spacers&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$gutters&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Your custom Bootstrap CSS builds should now look like this with a separate maps import.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  // Functions come first
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @import &amp;#34;functions&amp;#34;;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  // Optional variable overrides here
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ $custom-color: #df711b;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ $custom-theme-colors: (
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+   &amp;#34;custom&amp;#34;: $custom-color
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ );
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  // Variables come next
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @import &amp;#34;variables&amp;#34;;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ // Optional Sass map overrides here
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ // Followed by our default maps
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ @import &amp;#34;maps&amp;#34;;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;&lt;/span&gt;  // Rest of our imports
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @import &amp;#34;mixins&amp;#34;;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @import &amp;#34;utilities&amp;#34;;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @import &amp;#34;root&amp;#34;;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  @import &amp;#34;reboot&amp;#34;;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  // etc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;new-helpers-and-utilities&#34;&gt;New helpers and utilities&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;re continuing to invest in our helpers and utilities to make it easier to quickly build and modify custom components.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Added new &lt;code&gt;.text-bg-{color}&lt;/code&gt; helpers. Instead of setting individual &lt;code&gt;.text-*&lt;/code&gt; and &lt;code&gt;.bg-*&lt;/code&gt; utilities, you can now use &lt;a href=&#34;https://getbootstrap.com/docs/5.2/helpers/color-background/&#34;&gt;the &lt;code&gt;.text-bg-*&lt;/code&gt; helpers&lt;/a&gt; to set a &lt;code&gt;background-color&lt;/code&gt; with contrasting foreground &lt;code&gt;color&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Expanded &lt;a href=&#34;https://getbootstrap.com/docs/5.2/utilities/text/#font-weight-and-italics&#34;&gt;&lt;code&gt;font-weight&lt;/code&gt; utilities&lt;/a&gt; to include &lt;code&gt;.fw-semibold&lt;/code&gt; for semibold fonts.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Expanded &lt;a href=&#34;https://getbootstrap.com/docs/5.2/utilities/borders/#sizes&#34;&gt;&lt;code&gt;border-radius&lt;/code&gt; utilities&lt;/a&gt; to include two new sizes, &lt;code&gt;.rounded-4&lt;/code&gt; and &lt;code&gt;.rounded-5&lt;/code&gt;, for more options.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Expect more improvements here as v5&amp;rsquo;s development continues.&lt;/p&gt;
-&lt;h2 id=&#34;responsive-offcanvas&#34;&gt;Responsive offcanvas&lt;/h2&gt;
-&lt;p&gt;Our Offcanvas component now has &lt;a href=&#34;https://getbootstrap.com/docs/5.2/components/offcanvas/#responsive&#34;&gt;responsive variations&lt;/a&gt;. The original &lt;code&gt;.offcanvas&lt;/code&gt; class remains unchanged—it hides content across all viewports. To make it responsive, change that &lt;code&gt;.offcanvas&lt;/code&gt; class to any &lt;code&gt;.offcanvas-{sm|md|lg|xl|xxl}&lt;/code&gt; class.&lt;/p&gt;
-&lt;h2 id=&#34;and-tons-more&#34;&gt;And tons more!&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Introduced new &lt;code&gt;$enable-container-classes&lt;/code&gt; option. —&lt;/strong&gt; Now when opting into the experimental CSS Grid layout, &lt;code&gt;.container-*&lt;/code&gt; classes will still be compiled, unless this option is set to &lt;code&gt;false&lt;/code&gt;. Containers also now keep their gutter values.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Thicker table dividers are now opt-in. —&lt;/strong&gt; We&amp;rsquo;ve removed the thicker and more difficult to override border between table groups and moved it to an optional class you can apply, &lt;code&gt;.table-group-divider&lt;/code&gt;. &lt;a href=&#34;https://getbootstrap.com/docs/5.2/content/tables/#table-group-dividers&#34;&gt;See the table docs for an example.&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/33421&#34;&gt;Scrollspy has been rewritten&lt;/a&gt; to use the Intersection Observer API&lt;/strong&gt;, which means you no longer need relative parent wrappers, deprecates &lt;code&gt;offset&lt;/code&gt; config, and more. Look for your Scrollspy implementations to be more accurate and consistent in their nav highlighting.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;code&gt;.form-check-reverse&lt;/code&gt; modifier to flip the order of labels and associated checkboxes/radios.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Added &lt;a href=&#34;https://getbootstrap.com/docs/5.2/content/tables/#striped-columns&#34;&gt;striped columns&lt;/a&gt; support to tables via the new &lt;code&gt;.table-striped-columns&lt;/code&gt; class.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For a complete list of changes, &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/32&#34;&gt;see the project on GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;coming-soon-dark-mode&#34;&gt;Coming soon: Dark mode!&lt;/h2&gt;
-&lt;p&gt;Much of the work we&amp;rsquo;ve done in v5.2.0-beta1 has been in support of adding dark mode to Bootstrap. Yes, it&amp;rsquo;s finally coming in our next minor release!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/05/docs-darkmode.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;Dark mode&#34; loading=&#34;lazy&#34; width=&#34;3360&#34; height=&#34;2100&#34;&gt;
-&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re adding tons of new global CSS variables, cleaning up docs styles, and better supporting overall customization. Some details and topics &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/35857&#34;&gt;being worked on for dark mode&lt;/a&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Do we provide a JS plugin for toggling color modes? Right now we&amp;rsquo;re just building custom functionality for our docs.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Our current implementation is being built with &lt;code&gt;data-theme&lt;/code&gt; selectors which allows explicit color mode switching (via user control vs and system preference) and custom color modes beyond &lt;code&gt;light&lt;/code&gt; and &lt;code&gt;dark&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;We&amp;rsquo;re adding quite a few new colors outside &lt;code&gt;$theme-colors&lt;/code&gt; to improve subtle UI customization. These are being implemented via &lt;code&gt;:root&lt;/code&gt; and &lt;code&gt;[data-theme=&amp;quot;{theme}&amp;quot;]&lt;/code&gt; selectors for global use.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We&amp;rsquo;d love your feedback along the way, so &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/35857&#34;&gt;check out the dark mode pull request&lt;/a&gt; and &lt;a href=&#34;https://deploy-preview-35857--twbs-bootstrap.netlify.app&#34;&gt;dark mode staging site&lt;/a&gt; to test it out.&lt;/p&gt;
-&lt;h2 id=&#34;also-coming-in-v530&#34;&gt;Also coming in v5.3.0&lt;/h2&gt;
-&lt;p&gt;There&amp;rsquo;s lots to look forward to in our next minor release, though we&amp;rsquo;ll likely have some bug fixes along the way.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Dark mode!&lt;/strong&gt; As mentioned above, we&amp;rsquo;re actively working to bring more nuanced color options and color modes to Bootstrap. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/35857&#34;&gt;Follow along.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;An &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/35872&#34;&gt;&lt;strong&gt;attribute toggle plugin&lt;/strong&gt;&lt;/a&gt; to programmatically toggle a classes and attributes by only writing HTML.&lt;/li&gt;
-&lt;li&gt;CSS variables for forms!&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/36125&#34;&gt;Sticky headers for tables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/35977&#34;&gt;Mixins and functions for modifying the utilities API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;An option for &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/36155&#34;&gt;&amp;ldquo;always floating&amp;rdquo; floating forms&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And likely a lot more!&lt;/p&gt;
-&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap@v5.2.0-beta1
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.2.0-beta1&#34;&gt;Read the GitHub v5.2.0-beta1 changelog&lt;/a&gt; for a complete list of changes in this release.&lt;/p&gt;
-&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
-&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
 </description>
     </item>
     

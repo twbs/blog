@@ -193,7 +193,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2021/09/07/bootstrap-5-1-1/" class="text-decoration-none">Bootstrap 5.1.1</a>
+          <a href="/2021/10/05/bootstrap-5-1-2/" class="text-decoration-none">Bootstrap 5.1.2</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -201,6 +201,53 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="05 Oct 21 00:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+October 05, 2021</span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/HoQN7K6HdRw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>Bootstrap v5.1.2 is here with a handful of improvements across our components, plus a fix for an issue in another project that prevented our Sass from compiling properly. Keep reading for the highlights.</p>
+<h2 id="highlights">Highlights</h2>
+<ul>
+<li>Temporarily patched a <a href="https://github.com/shellscape/postcss-values-parser/issues/138">postcss-values-parser</a> issue by rearranging our <code>calc()</code> functions that use negative numbers. This should restore the ability to import and compile Bootstrap&rsquo;s Sass in <code>create-react-app</code>.</li>
+<li>Added <code>border-radius</code> sizes to small and large <code>.form-select</code>s</li>
+<li>Added <code>align-self: center</code> to buttons for improved rendering in flex containers</li>
+<li>Fixed Collapse regression that prevented toggling between sibling children</li>
+<li>Updated JS Sanitizer to add <code>sms</code> in the <code>SAFE_URL_PATTERN</code></li>
+<li>Improved docs around <code>.img-fluid</code></li>
+<li>Added <code>role=&quot;switch&quot;</code> to our form switches in our docs</li>
+<li>Implemented GitHub Issue forms to replace our previous issue templates.</li>
+</ul>
+<h2 id="up-next">Up next</h2>
+<p>Up next is our v5.2.0 release, adding more utility improvements and fixing an issue with how <a href="https://github.com/twbs/bootstrap/issues/34756">Sass handles re-assigned maps and variables</a>. Alongside that, we&rsquo;ll be shipping an update to v4 soon as well.</p>
+<h2 id="get-the-release">Get the release</h2>
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap
+</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.1.2">Review the GitHub v5.1.2 release changelog</a> for a complete list of changes since our last release.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2021/09/07/bootstrap-5-1-1/" class="text-decoration-none">Bootstrap 5.1.1</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="07 Sep 21 00:00 UTC">
@@ -211,7 +258,7 @@
 September 07, 2021</span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/bRt5z880CFY?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/bRt5z880CFY?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -597,62 +644,6 @@ June 22, 2021</span>
 <p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap
 </span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.0.2">Review the v5.0.2 release changelog</a> for a complete list of changes.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2021/05/13/bootstrap-5-0-1/" class="text-decoration-none">Bootstrap 5.0.1</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="13 May 21 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-May 13, 2021</span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/gAjR4_CbPpQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p>Our first patch release for Bootstrap 5 has landed with v5.0.1! We&rsquo;ve fixed a handful of bugs in our CSS and JS while also resolving a few issues with our docs and examples.</p>
-<h2 id="changelog">Changelog</h2>
-<ul>
-<li>Fixed an issue where dropdowns wouldn&rsquo;t close after clicking into an <code>&lt;input&gt;</code></li>
-<li>Validated inputs in <code>.input-group</code>s no longer render behind sibling elements</li>
-<li>Prevent <code>accent-bg</code> from leaking in nested tables</li>
-<li>Modal backdrops no longer throw Uncaught TypeError when initialized through JS</li>
-<li>Refactored disposing properties into the base component</li>
-<li>Extracted static <code>DATA_KEY</code> and <code>EVENT_KEY</code> to the base component</li>
-<li>Merged <code>transitionend</code> listener callbacks into one method</li>
-<li>Popovers and tooltips have a streamlined config property</li>
-<li>Toasts no longer automatically hide on focus or hover</li>
-<li>No longer redefining <code>$list-group-color</code> in the list group loop</li>
-</ul>
-<p>Our docs and examples also received a few updates:</p>
-<ul>
-<li>Fixed Sidebars example not rendering correctly in Chrome</li>
-<li>Fixed RTLCSS <code>stringMap</code> configuration snippet</li>
-<li>Updated offcanvas navbar example to prevent console error</li>
-<li>Fixed miscellaneous typos, grammatical errors, and links in the Migration guide</li>
-</ul>
-<hr class="my-5">
-<p>Head to GitHub for a complete <a href="https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F38">list of issues and pull requests in v5.0.1</a>. You can also review the <a href="https://github.com/twbs/bootstrap/projects/38">v5.0.1 project board</a>.</p>
-<h2 id="get-the-release">Get the release</h2>
-<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap
-</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.0.1">Review the GitHub v5.0.1 release changelog</a> for a complete list of changes since our last release.</p>
 <h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 

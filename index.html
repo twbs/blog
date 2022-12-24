@@ -193,7 +193,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2022/11/22/bootstrap-5-2-3/" class="text-decoration-none">Bootstrap 5.2.3</a>
+          <a href="/2022/12/24/bootstrap-5-3-0-alpha1/" class="text-decoration-none">Bootstrap 5.3.0-alpha1</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -201,6 +201,90 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="24 Dec 22 08:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+December 24, 2022</span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/zcgxBHBsl-4?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>It&rsquo;s a Christmas miracle—Bootstrap v5.3.0-alpha1 has arrived just in time for the holiday break! This release brings new color mode support, an expanded color palette with variables and utilities, and more.</p>
+<p>We&rsquo;re keeping things short and simple in this blog post with deeper dives into the new color modes and more coming in future posts. For now, we want you to enjoy the holiday break and come back next year feeling refreshed and rejuvenated. Keep reading for what&rsquo;s new and we&rsquo;ll see you next year!</p>
+<h2 id="dark-mode-and-color-modes">Dark mode and color modes</h2>
+<p><a href="https://getbootstrap.com"><img src="/assets/img/2022/12/docs-dark-mode.png" class="d-block img-fluid mb-2 rounded border" alt="New homepage" loading="lazy" width="2880" height="1800">
+</a></p>
+<p>Bootstrap now supports an explicit opt-in for creating multiple color modes via the <code>data-bs-theme</code> attribute on the root <code>&lt;html&gt;</code> element. We opted for a <code>data</code> attribute solution so that you can create any number of themes instead of just light and dark. We use a new Sass mixin, <a href="https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass"><code>color-mode()</code></a>, to generate our dark mode styles with either a data attribute (the default) or a media query. The latter is useful if you only have two color modes and want automatic color mode changing via CSS.</p>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/color-modes/">Read more in the new color mode docs.</a></p>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/color-modes/"><img src="/assets/img/2022/12/docs-color-modes.png" class="d-block img-fluid mb-2 rounded border" alt="New homepage" loading="lazy" width="2880" height="1800">
+</a></p>
+<p>For those wanting to build something more advanced, you can <a href="https://getbootstrap.com/docs/5.3/customize/color-modes/#javascript">read how we built our own color mode picker</a> with JavaScript that respects the device or operating system setting by default, but still allows someone to override it with an explicit theme.</p>
+<p>If you&rsquo;re using the CDN or starter template, using the new color modes is straightforward. Add the <code>data-bs-theme</code> attribute with <code>light</code> or <code>dark</code> values to the <code>&lt;html&gt;</code> element and you&rsquo;ll be using either the light or dark theme.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span> <span class="na">data-bs-theme</span><span class="o">=</span><span class="s">&#34;dark&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Bootstrap demo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Want to use CSS media queries to change the color mode instead? You can also build Bootstrap with Sass and customize how you use color modes. <a href="https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass">Read the docs</a> to learn more. You can even create custom color modes.</p>
+<h2 id="expanded-color-palette">Expanded color palette</h2>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/color/"><img src="/assets/img/2022/12/docs-colors.png" class="d-block img-fluid mb-2 rounded border" alt="New homepage" loading="lazy" width="2880" height="1800">
+</a></p>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/color/"><img src="/assets/img/2022/12/docs-colors-dark-mode.png" class="d-block img-fluid mb-2 rounded border" alt="New homepage" loading="lazy" width="2880" height="1800">
+</a></p>
+<p>We have a huge new color palette update with new Sass variables, CSS variables, and utilities to boot. Foreground and background colors have new secondary, tertiary, and emphasis colors to choose from, while our theme colors have expanded on to include their subtle background colors, subtle border colors, and darker text colors. We&rsquo;ve rebuilt some components (like list groups and alerts) to use these new variables in their source Sass and compiled CSS so that they respond to the color mode changes.</p>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/color/#colors">Check out the new colors docs.</a></p>
+<h2 id="and-more">And more!</h2>
+<p>And a few more noteworthy changes:</p>
+<ul>
+<li>
+<p>Added new CSS variables for grid breakpoints, link colors, close button, alert links, forms, and more. In addition, many components have been updated to use more global CSS variables like <code>--bs-border-color</code> to better respond to changing color modes.</p>
+</li>
+<li>
+<p>Floating forms have been updated to be more bulletproof and now include proper support for textareas.</p>
+</li>
+<li>
+<p>Added many new utilities, including <code>fw-medium</code>, <code>overflow</code> and <code>object-fit</code> utilities, <a href="https://getbootstrap.com/docs/5.3/utilities/z-index/">z-index</a>, and more. Plus, <code>border-radius</code> utilities have been updated so that you can combine <code>.rounded-{top|bottom|start|end}</code> with <code>.rounded-{0-5|pill|circle}</code>.</p>
+</li>
+<li>
+<p>Fixed some Popper tooltip and popover consistency issues.</p>
+</li>
+</ul>
+<p>Be sure to consult the <a href="https://getbootstrap.com/docs/5.3/migration/">v5.3.0 migration guide</a> to see what&rsquo;s changed as well.</p>
+<h2 id="up-next">Up next</h2>
+<p>As we iron out the release with your feedback and bug reports, we&rsquo;ll also be updating the Bootstrap Blog and Bootstrap Icons sites to use the new themes soon. We&rsquo;ll also continue to refine how our componnts and utilities work with the new color modes, adding Sass testing to improve our coverage of how folks build with Bootstrap, and much more.</p>
+<h2 id="get-the-release">Get the release</h2>
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.3.0-alpha1
+</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.3.0-alpha1">Read the GitHub v5.3.0-alpha1 changelog</a> for a complete list of changes in this release.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2022/11/22/bootstrap-5-2-3/" class="text-decoration-none">Bootstrap 5.2.3</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="22 Nov 22 08:00 UTC">
@@ -473,175 +557,6 @@ September 07, 2022</span>
 <p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.2.1
 </span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.2.1">Read the GitHub v5.2.1 changelog</a> for a complete list of changes in this release.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2022/07/19/bootstrap-5-2-0/" class="text-decoration-none">Bootstrap 5.2.0</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="19 Jul 22 16:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-July 19, 2022</span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/L93-7vRfxNs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p><strong>Bootstrap v5.2.0 is finally stable!</strong> We&rsquo;ve ironed out more bugs, improved more documentation, written new guides and built out new functional environment examples, and so much more!</p>
-<p>Keep reading for highlights from both beta and stable releases.</p>
-<h2 id="docs-redesign">Docs redesign</h2>
-<p>As previewed in our beta release, the docs have been redesigned! It starts with <a href="https://getbootstrap.com">our new homepage</a>  where we have a more complete representation of Bootstrap&rsquo;s features and an updated design.</p>
-<p><a href="https://getbootstrap.com"><img src="/assets/img/2022/05/docs-home.png" class="d-block img-fluid mb-2 rounded border" alt="New homepage" loading="lazy" width="3360" height="2100">
-</a></p>
-<p>The docs sidebar navigation has been overhauled to have always expanded groups for easier browsing, a brand new DocSearch experience with search history, and new responsive offcanvas drawers for both sidebar and navbar on mobile.</p>
-<p><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"><img src="/assets/img/2022/05/docs-quick-start.png" class="d-block img-fluid mb-2 rounded border" alt="New docs page" loading="lazy" width="3360" height="2100">
-</a></p>
-<p><img src="/assets/img/2022/05/docs-search.png" class="d-block img-fluid mb-2 rounded border" alt="New search" loading="lazy" width="3360" height="2100">
-</p>
-<p>We even updated our version picker in the navbar to cross-link between minor releases!</p>
-<p><img src="/assets/img/2022/05/docs-version-picker.png" class="d-block img-fluid mb-2 rounded border" alt="Docs version picker" loading="lazy" width="1680" height="1050">
-</p>
-<h2 id="updated-buttons-and-inputs">Updated buttons and inputs</h2>
-<p>With our docs redesign, we refreshed buttons and inputs with modified <code>padding</code> and <code>border-radius</code>. Here&rsquo;s a look at the before and after of <a href="https://getbootstrap.com/docs/5.2/components/buttons/">our buttons</a>:</p>
-<p><img src="/assets/img/2022/05/buttons-compared.png" class="d-block img-fluid mb-2 rounded border" alt="Updated buttons" loading="lazy" width="1690" height="504">
-</p>
-<h2 id="tons-of-new-css-variables">Tons of new CSS variables</h2>
-<p>Nearly all our components now have CSS variables for real real-time customization, easier theming, and (soon) color mode support starting with dark mode. You can see what CSS variables are available on every docs page, like <a href="https://getbootstrap.com/docs/5.2/components/buttons/#css">our buttons</a>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-padding-x</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-padding-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-padding-y</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-font-family</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-font-family</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> rfs</span><span class="p">(</span><span class="nv">$btn-font-size</span><span class="o">,</span> <span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">btn-font-size</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-font-weight</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-font-weight</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-line-height</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-line-height</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$body-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-bg</span><span class="o">:</span> <span class="ni">transparent</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-border-width</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-border-color</span><span class="o">:</span> <span class="ni">transparent</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-border-radius</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-box-shadow</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-box-shadow</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-disabled-opacity</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-disabled-opacity</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="na">--#{$prefix}btn-focus-box-shadow</span><span class="o">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="si">#{</span><span class="nv">$btn-focus-width</span><span class="si">}</span> <span class="nf">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">btn-focus-shadow-rgb</span><span class="p">)</span><span class="o">,</span> <span class="mf">.5</span><span class="p">);</span>
-</span></span></code></pre></div><p>Values for virtually every CSS variables are assigned via Sass variable, so customization via CSS and Sass are both well supported. Also included for several components are examples of customizing via CSS variables.</p>
-<p><img src="/assets/img/2022/05/custom-button.png" class="d-block img-fluid mb-2 rounded border" alt="Custom button" loading="lazy" width="1608" height="872">
-</p>
-<h2 id="new-_mapsscss">New <code>_maps.scss</code></h2>
-<p>Bootstrap v5.2.0 introduced a new Sass file with <code>_maps.scss</code> that pulls out several Sass maps from <code>_variables.scss</code> to fix an issue where updates to an original map were not applied to secondary maps that extend it. It&rsquo;s not ideal, but it resolves a longstanding issue for folks when working with customized maps.</p>
-<p>For example, updates to <code>$theme-colors</code> were not being applied to other maps that relied on <code>$theme-colors</code> (like the <code>$utilities-colors</code> and more), which created broken customization workflows. To summarize the problem, <strong>Sass has a limitation where once a default variable or map has been <em>used</em>, it cannot be updated</strong>. <em>There&rsquo;s a similar shortcoming with CSS variables when they&rsquo;re used to compose other CSS variables.</em></p>
-<p>This is also why variable customizations in Bootstrap have to come after <code>@import &quot;functions&quot;;</code>, but before <code>@import &quot;variables&quot;;</code> and the rest of our import stack. The same applies to Sass maps—you must override the defaults before they get used. The following maps have been moved to the new <code>_maps.scss</code>:</p>
-<ul>
-<li><code>$theme-colors-rgb</code></li>
-<li><code>$utilities-colors</code></li>
-<li><code>$utilities-text</code></li>
-<li><code>$utilities-text-colors</code></li>
-<li><code>$utilities-bg</code></li>
-<li><code>$utilities-bg-colors</code></li>
-<li><code>$negative-spacers</code></li>
-<li><code>$gutters</code></li>
-</ul>
-<p>Your custom Bootstrap CSS builds should now look like this with a separate maps import.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">  // Functions come first
-</span></span><span class="line"><span class="cl">  @import &#34;functions&#34;;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  // Optional variable overrides here
-</span></span><span class="line"><span class="cl"><span class="gi">+ $custom-color: #df711b;
-</span></span></span><span class="line"><span class="cl"><span class="gi">+ $custom-theme-colors: (
-</span></span></span><span class="line"><span class="cl"><span class="gi">+   &#34;custom&#34;: $custom-color
-</span></span></span><span class="line"><span class="cl"><span class="gi">+ );
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span>
-</span></span><span class="line"><span class="cl">  // Variables come next
-</span></span><span class="line"><span class="cl">  @import &#34;variables&#34;;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="gi">+ // Optional Sass map overrides here
-</span></span></span><span class="line"><span class="cl"><span class="gi">+ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
-</span></span></span><span class="line"><span class="cl"><span class="gi">+
-</span></span></span><span class="line"><span class="cl"><span class="gi">+ // Followed by our default maps
-</span></span></span><span class="line"><span class="cl"><span class="gi">+ @import &#34;maps&#34;;
-</span></span></span><span class="line"><span class="cl"><span class="gi">+
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span>  // Rest of our imports
-</span></span><span class="line"><span class="cl">  @import &#34;mixins&#34;;
-</span></span><span class="line"><span class="cl">  @import &#34;utilities&#34;;
-</span></span><span class="line"><span class="cl">  @import &#34;root&#34;;
-</span></span><span class="line"><span class="cl">  @import &#34;reboot&#34;;
-</span></span><span class="line"><span class="cl">  // etc
-</span></span></code></pre></div><h2 id="new-helpers-and-utilities">New helpers and utilities</h2>
-<p>We&rsquo;ve updated our helpers and utilities to make it easier to quickly build and modify custom components:</p>
-<ul>
-<li>
-<p>Added new <code>.text-bg-{color}</code> helpers. Instead of setting individual <code>.text-*</code> and <code>.bg-*</code> utilities, you can now use <a href="https://getbootstrap.com/docs/5.2/helpers/color-background/">the <code>.text-bg-*</code> helpers</a> to set a <code>background-color</code> with contrasting foreground <code>color</code>.</p>
-</li>
-<li>
-<p>Expanded <a href="https://getbootstrap.com/docs/5.2/utilities/text/#font-weight-and-italics"><code>font-weight</code> utilities</a> to include <code>.fw-semibold</code> for semibold fonts.</p>
-</li>
-<li>
-<p>Expanded <a href="https://getbootstrap.com/docs/5.2/utilities/borders/#sizes"><code>border-radius</code> utilities</a> to include two new sizes, <code>.rounded-4</code> and <code>.rounded-5</code>, for more options.</p>
-</li>
-</ul>
-<p>Expect more improvements here as v5&rsquo;s development continues.</p>
-<h2 id="responsive-offcanvas">Responsive offcanvas</h2>
-<p>Our Offcanvas component now has <a href="https://getbootstrap.com/docs/5.2/components/offcanvas/#responsive">responsive variations</a>. The original <code>.offcanvas</code> class remains unchanged—it hides content across all viewports. To make it responsive, change that <code>.offcanvas</code> class to any <code>.offcanvas-{sm|md|lg|xl|xxl}</code> class.</p>
-<h2 id="new-examples-repo-and-guides">New Examples repo and guides</h2>
-<p>Since the beta, we&rsquo;ve completely rewritten our <a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/">Webpack guide</a> and <a href="https://getbootstrap.com/docs/5.2/getting-started/parcel/">Parcel guide</a>. We&rsquo;ve also added a new <a href="https://getbootstrap.com/docs/5.2/getting-started/vite/">Vite guide</a>.</p>
-<p><img src="/assets/img/2022/07/bootstrap-guides@2x.png" class="d-block img-fluid mb-2 rounded border" alt="Bootstrap guides" loading="lazy" width="2000" height="1000">
-</p>
-<p>In addition, we&rsquo;ve turned every one of those guides into a fully functioning example in our new <a href="https://github.com/twbs/examples">twbs/examples</a> repo. We&rsquo;ve even added a couple more examples to the repo, with plans to create even more.</p>
-<ul>
-<li><a href="https://github.com/twbs/examples/tree/main/starter/">Starter</a> – CDN links for our CSS and JS</li>
-<li><a href="https://github.com/twbs/examples/tree/main/sass-js/">Sass &amp; JS</a> — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm</li>
-<li><a href="https://github.com/twbs/examples/tree/main/sass-js-esm/">Sass &amp; ESM JS</a> — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim</li>
-<li><a href="https://github.com/twbs/examples/tree/main/webpack/">Webpack</a> - Import and bundle Sass and JS with Webpack</li>
-<li><a href="https://github.com/twbs/examples/tree/main/parcel/">Parcel</a> - Sass, JS via Parcel</li>
-<li><a href="https://github.com/twbs/examples/tree/main/vite/">Vite</a> - Sass, JS via Vite</li>
-<li><a href="https://github.com/twbs/examples/tree/main/icons-font">Bootstrap Icons font</a> - Import Bootstrap Icons via icon font</li>
-</ul>
-<p>Each guide matches up to a new example in that repo, and nearly all of them can be immediately available in StackBlitz. Now you don&rsquo;t even need to have a development environment configured on your computer to get started with Bootstrap.</p>
-<p><img src="/assets/img/2022/07/guides-stackblitz.png" class="d-block img-fluid mb-2 rounded border" alt="Examples StackBlitz repo" loading="lazy" width="3360" height="2100">
-</p>
-<p>And did we mention that nearly all our code snippets now have an open in StackBlitz button?</p>
-<p><img src="/assets/img/2022/07/snippets-stackblitz.png" class="d-block img-fluid mb-2 rounded border" alt="Code snippets StackBlitz" loading="lazy" width="1736" height="944">
-</p>
-<h2 id="and-more">And more!</h2>
-<ul>
-<li>
-<p><strong>Introduced new <code>$enable-container-classes</code> option. —</strong> Now when opting into the experimental CSS Grid layout, <code>.container-*</code> classes will still be compiled, unless this option is set to <code>false</code>. Containers also now keep their gutter values.</p>
-</li>
-<li>
-<p><strong>Thicker table dividers are now opt-in. —</strong> We&rsquo;ve removed the thicker and more difficult to override border between table groups and moved it to an optional class you can apply, <code>.table-group-divider</code>. <a href="https://getbootstrap.com/docs/5.2/content/tables/#table-group-dividers">See the table docs for an example.</a></p>
-</li>
-<li>
-<p><strong><a href="https://github.com/twbs/bootstrap/pull/33421">Scrollspy has been rewritten</a> to use the Intersection Observer API</strong>, which means you no longer need relative parent wrappers, deprecates <code>offset</code> config, and more. Look for your Scrollspy implementations to be more accurate and consistent in their nav highlighting.</p>
-</li>
-<li>
-<p>Added <code>.form-check-reverse</code> modifier to flip the order of labels and associated checkboxes/radios.</p>
-</li>
-<li>
-<p>Added <a href="https://getbootstrap.com/docs/5.2/content/tables/#striped-columns">striped columns</a> support to tables via the new <code>.table-striped-columns</code> class.</p>
-</li>
-<li>
-<p>Added a new experimental <a href="https://getbootstrap.com/docs/5.2/components/tooltips/#options">reserved data attribute <code>data-bs-config</code></a> that can house simple component configuration as a JSON string.</p>
-</li>
-<li>
-<p>Added new <code>smooth-scroll</code> to Scrollspy.</p>
-</li>
-</ul>
-<h2 id="get-the-release">Get the release</h2>
-<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.2.0
-</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.2.0">Read the GitHub v5.2.0 changelog</a> for a complete list of changes in this release.</p>
 <h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 

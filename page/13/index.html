@@ -193,7 +193,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2017/10/19/bootstrap-4-beta-2/" class="text-decoration-none">Bootstrap 4 Beta 2</a>
+          <a href="/2017/12/28/bootstrap-4-beta-3/" class="text-decoration-none">Bootstrap 4 Beta 3</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -201,6 +201,78 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="28 Dec 17 00:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+December 28, 2017</span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/9jK-NcRmVcw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>Welcome to the final beta of v4! It&rsquo;s been over two months since we shipped our second beta and we&rsquo;ve been busy making the last breaking changes before moving to our next stable release, v4.0.0! We have a few more breaking changes than we were planning, but fret not, we&rsquo;ve detailed them all.</p>
+<p>Beta 3 primarily focuses around our forms, but it also includes key fixes to tables, some global styles, our documentation, and some JavaScript bugs. Following this release, we&rsquo;ll <a href="https://github.com/twbs/bootstrap/projects/12">address a few issues and PRs</a> before doing a stable v4 release a week or two into the New Year.</p>
+<p>Let&rsquo;s dive into all the highlights.</p>
+<h2 id="breaking-changes">Breaking changes</h2>
+<p>As mentioned in <a href="/2017/10/19/bootstrap-4-beta-2/">our Beta 2 release</a>, we needed to make a few more breaking changes in Beta 3. We&rsquo;ve summarized them here and in our <a href="https://getbootstrap.com/docs/4.0/migration/#beta-3-changes">migration docs</a>—be sure to read them!</p>
+<ul>
+<li>
+<p><strong>Rewrote native and custom check controls.</strong> Both browser default and custom checkboxes and radios now have simpler markup after removing the <code>&lt;input&gt;</code> from the <code>&lt;label&gt;</code>. Now, all checkboxes and radios have a parent <code>&lt;div&gt;</code> and sibling <code>&lt;input&gt;</code> and <code>&lt;label&gt;</code> pair. This is essential for form validation and disabled inputs because we can use the input&rsquo;s state to style the label.</p>
+<p>In addition, custom checkbox and radio elements no longer have a <code>.custom-control-indicator</code>. This is generated from the new <code>.custom-control-label</code>.</p>
+</li>
+<li>
+<p><strong>Input groups were rewritten</strong> with specific <code>.input-group-{prepend|append}</code> classes. The new approach allows us to support validation styles and messages within input groups, while also adding support for custom selects, custom file inputs, and multiple <code>.form-control</code>s.</p>
+</li>
+<li>
+<p><strong>Responsive tables are once again parent classes</strong> to avoid accessiblity issues with changing a <code>&lt;table&gt;</code>&rsquo;s <code>display</code>.</p>
+</li>
+<li>
+<p><strong>Deleted the <code>.col-form-legend</code> class</strong>, consolidating it&rsquo;s styles into the <code>.col-form-label</code> class.</p>
+</li>
+</ul>
+<p>Read the <a href="https://getbootstrap.com/docs/4.0/migration/#beta-3-changes">Migration page</a> for further details.</p>
+<h2 id="more-highlights">More highlights</h2>
+<p>In addition to the breaking changes, we&rsquo;ve addressed a few more general issues that may impact your project.</p>
+<ul>
+<li>
+<p>Restored <code>cursor: pointer</code> to non-disabled links, buttons, <code>.close</code>, navbar toggler, and pagination links.</p>
+</li>
+<li>
+<p>Added a new vertically centered modal option with <code>.modal-dialog-centered</code>.</p>
+</li>
+<li>
+<p>Added new dropleft and dropright variants for dropdowns in #23860.</p>
+</li>
+<li>
+<p>Our npm package no longer includes any files other than our source and dist JavaScript and CSS files. If you previously relied on our running our scripts via the <code>node_modules</code> folder, you&rsquo;ll need to update your build tools.</p>
+</li>
+<li>
+<p>Print styles have moved to bottom of the import stack to properly override styles.</p>
+</li>
+</ul>
+<p>For more details on this release&rsquo;s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/24439">Beta 3 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/projects/10">Beta 3 project</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and specific feedback whenever possible.</p>
+<h2 id="coming-up">Coming up</h2>
+<p>Stable v4.0.0 is our next release and we already have a <a href="https://github.com/twbs/bootstrap/projects/12">GitHub project board</a> to track issues and PRs. There will be no breaking changes from Beta 3 to stable, so our changelog should be short and sweet. Expect some linting, Sass variable improvements, updated docs Examples, and more build tool improvements.</p>
+<p>With our next release, the <code>master</code> branch will once again become our default branch. We&rsquo;ll merge <code>v4-dev</code> into <code>master</code>, meaning v3&rsquo;s source code will only be in our <code>v3-dev</code> branch and <a href="https://github.com/twbs/bootstrap/releases">past releases</a>.</p>
+<p>See you again real soon!</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2017/10/19/bootstrap-4-beta-2/" class="text-decoration-none">Bootstrap 4 Beta 2</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="19 Oct 17 00:00 UTC">
@@ -211,7 +283,7 @@
 October 19, 2017</span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/MqnZ1RpmxBg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/MqnZ1RpmxBg?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -494,50 +566,6 @@ October 19, 2016</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2016/09/05/bootstrap-4-alpha-4/" class="text-decoration-none">Bootstrap 4 Alpha 4</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="05 Sep 16 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-September 05, 2016</span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/PeMvMNpvB5M?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p><a href="https://v4-alpha.getbootstrap.com/">Alpha 4 is here</a> to address those pesky build and package errors, a few CSS bugs, and some documentation inconsistencies we introduced in our last release.</p>
-<p>This is a super small release compared to our previous alphas, so here&rsquo;s the rundown on what&rsquo;s changed:</p>
-<ul>
-<li>Fixed <code>package.json</code> errors</li>
-<li>Additional migration notices for more components</li>
-<li>Fix broken flexbox utilities on flexbox grid page</li>
-<li>Fix inconsistent checkbox and radio markup, as well as validation styles</li>
-<li>Minor tweaks to cards, alerts, utilities, and input groups</li>
-</ul>
-<p>At the time of release, the Bootstrap CDN hasn&rsquo;t been updated for Alpha 4. Apologies for the delay, and stay tuned for an update on when they&rsquo;re live.</p>
-<p>For more details on this release&rsquo;s changes, take a look at the <a href="https://github.com/twbs/bootstrap/issues/20373">Alpha 4 ship list issue</a>, as well as the <a href="https://github.com/twbs/bootstrap/milestone/40?closed=1">closed Alpha 4 milestone</a>. Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
-<p><strong>Using the Bootstrap CDN?</strong> Review the changelog and update your CDN links to point to the latest files:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
       </div>
   </div>
