@@ -97,3 +97,6 @@ params:
   # the first image in the following array is always used, unless specified in the front matter
   images:
     - "/assets/img/bootstrap-social.png"
+
+social:
+  twitter:              "getbootstrap"
