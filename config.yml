@@ -80,7 +80,7 @@ module:
       target:           assets/js/bootstrap.bundle.min.js
 
 params:
-  docs_version:         "5.2"
+  docs_version:         "5.3"
   description:          "Official blog for the Bootstrap framework."
   author:               "Mark Otto"
   main:                 "https://getbootstrap.com"
