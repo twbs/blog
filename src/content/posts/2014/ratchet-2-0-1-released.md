@@ -9,7 +9,7 @@ Today we're pumped to release Ratchet 2.0.1. This release focuses on CSS bug fix
 
 Download Ratchet right from GitHub or, go to the [project repository](https://github.com/twbs/ratchet).
 
-<a class="btn-link btn-link-ratchet" href="https://github.com/twbs/ratchet/archive/v2.0.1.zip">Download Ratchet 2.0.1</a>
+<a class="btn-download-link btn-link-ratchet" href="https://github.com/twbs/ratchet/archive/v2.0.1.zip">Download Ratchet 2.0.1</a>
 
 For a complete list of changes, see the [v2.0.1 milestone](https://github.com/twbs/ratchet/issues?q=state%3Aclosed+type%3Aissue+milestone%3A2.0.1).
 

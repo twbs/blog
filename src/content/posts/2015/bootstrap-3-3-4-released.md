@@ -30,7 +30,7 @@ To avoid confusion regarding which bootstrap-sass release(s) correspond to which
 
 Download the latest release—source code, compiled assets, and documentation—as a ZIP file directly from GitHub:
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.4.zip">Download Bootstrap 3.3.4</a>
+<a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.3.4.zip">Download Bootstrap 3.3.4</a>
 
 Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.com/package/bootstrap), too.
 

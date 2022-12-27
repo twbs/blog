@@ -10,7 +10,7 @@ keywords:
 
 Today we're shipping a quick v3.0.2 patch to fix incorrect version numbers in our JavaScript files, restore missing grid classes, and make a few improvements to our documentation.
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.2.zip">Download Bootstrap 3.0.2</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
+<a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.0.2.zip">Download Bootstrap 3.0.2</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
 
 ---
 

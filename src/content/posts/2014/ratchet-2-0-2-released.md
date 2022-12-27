@@ -9,7 +9,7 @@ Today we're shipping Ratchet 2.0.2. This patch release is full of bug fixes, ref
 
 Download Ratchet right from GitHub or, go to the [project repository](https://github.com/twbs/ratchet).
 
-<a class="btn-link btn-link-ratchet" href="https://github.com/twbs/ratchet/archive/v2.0.2.zip">Download Ratchet 2.0.2</a>
+<a class="btn-download-link btn-link-ratchet" href="https://github.com/twbs/ratchet/archive/v2.0.2.zip">Download Ratchet 2.0.2</a>
 
 For a complete list of changes, see the [v2.0.2 milestone](https://github.com/twbs/ratchet/issues?milestone=4&state=closed).
 

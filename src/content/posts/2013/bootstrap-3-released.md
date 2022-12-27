@@ -90,4 +90,4 @@ No dates have been set for any patch or minor release yet. As soon as we figure 
 
 Woo, all set? Then head to the docs and download yourself some Bootstrap 3!
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.0.zip">Download Bootstrap 3</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
+<a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.0.0.zip">Download Bootstrap 3</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)

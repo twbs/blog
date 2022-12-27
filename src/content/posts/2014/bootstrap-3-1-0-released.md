@@ -64,7 +64,7 @@ We're constantly trying to improve our tools for developing Bootstrap and v3.1 b
 
 Get downloading now, or see the list below for more information on what's new in this release. Download it from GitHub or snag it from the CDN:
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.1.0.zip">Download Bootstrap 3.1.0</a>
+<a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.1.0.zip">Download Bootstrap 3.1.0</a>
 
 Or, hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass).
 

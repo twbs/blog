@@ -26,7 +26,7 @@ For a complete breakdown, [read the release changelog](https://github.com/twbs/b
 
 Download the latest release—source code, compiled assets, and documentation—as a zip file directly from GitHub:
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.3.0.zip">Download Bootstrap 3.3.0</a>
+<a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.3.0.zip">Download Bootstrap 3.3.0</a>
 
 Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options. Also, remember [we're available on npm](https://www.npmjs.com/package/bootstrap), too.
 

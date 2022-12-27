@@ -34,7 +34,7 @@ Bootstrap 2.3 includes some new features, as well as the standard bunch of bug f
 
 As always, you can see a more complete list of changes by viewing the [2.3.0 milestone](https://github.com/twbs/bootstrap/issues?milestone=18&q=is%3Aclosed) or [2.3.0 pull request](https://github.com/twbs/bootstrap/pull/6346) on GitHub. Most of the issues not mentioned above are minor CSS tweaks and documentation typos.
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v2.3.0.zip">Download Bootstrap 2.3.0</a> <span class="muted">(latest master ZIP)</span>
+<a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v2.3.0.zip">Download Bootstrap 2.3.0</a> <span class="muted">(latest master ZIP)</span>
 
 ## A note on tooltips
 
