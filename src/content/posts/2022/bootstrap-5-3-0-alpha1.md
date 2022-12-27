@@ -2,7 +2,6 @@
 author: mdo
 date: "2022-12-24T08:00:00Z"
 title: Bootstrap 5.3.0-alpha1
-video: zcgxBHBsl-4
 keywords:
   - bootstrap
   - release
