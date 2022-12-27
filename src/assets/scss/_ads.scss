@@ -14,11 +14,11 @@
   font-size: .875rem;
   line-height: 1.4;
   text-align: left;
-  background-color: var(--bs-gray-100);
+  background-color: var(--bs-tertiary-bg);
   border-radius: .5rem;
 
   a {
-    color: var(--bs-gray-600);
+    color: var(--bs-body-color);
     text-decoration: none;
   }
 }
@@ -35,5 +35,5 @@
 .carbon-poweredby {
   display: block;
   margin-top: .75rem;
-  color: var(--bs-gray-600) !important;
+  color: var(--bs-body-color) !important;
 }

@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-bs-theme="light"] {
   --base00: #fff;
   --base01: #f5f5f5;
   --base02: #c8c8fa;
@@ -17,11 +18,30 @@
   --base0F: #333;
 }
 
+@include color-mode(dark, true) {
+  --base00: #282c34;
+  --base01: #353b45;
+  --base02: #3e4451;
+  --base03: #868e96;
+  --base04: #565c64;
+  --base05: #abb2bf;
+  --base06: #b6bdca;
+  --base07: #d19a66;
+  --base08: #e06c75;
+  --base09: #d19a66;
+  --base0A: #e5c07b;
+  --base0B: #98c379;
+  --base0C: #56b6c2;
+  --base0D: #61afef;
+  --base0E: #c678dd;
+  --base0F: #be5046;
+}
+
 .hl { background-color: var(--base02); }
 .c { color: var(--base03); }
 .err { color: var(--base08); }
 .k { color: var(--base0E); }
-.l { color: var(--base09); }
+.l { color: var(----base09); }
 .n { color: var(--base08); }
 .o { color: var(--base05); }
 .p { color: var(--base05); }
@@ -98,17 +118,17 @@
 .language-sh .c { color: var(--base03); }
 
 .chroma {
-  .language-bash, // TODO .line
+  .language-bash,
   .language-sh {
-    &::before {
-      color: #777;
+    .line::before {
+      color: var(--base03);
       content: "$ ";
       user-select: none;
     }
   }
 
-  .language-powershell::before { // TODO .line
-    color: #009;
+  .language-powershell::before {
+    color: var(--base0C);
     content: "PM> ";
     user-select: none;
   }

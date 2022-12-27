@@ -76,8 +76,8 @@ module:
       target:           static/favicon.ico
     - source:           node_modules/bootstrap/scss
       target:           assets/scss/bootstrap
-    - source:           node_modules/bootstrap/dist/js/bootstrap.min.js
-      target:           assets/js/bootstrap.min.js
+    - source:           node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+      target:           assets/js/bootstrap.bundle.min.js
 
 params:
   docs_version:         "5.2"

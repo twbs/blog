@@ -26,7 +26,7 @@ hr {
   padding: 1.25rem;
   margin: 0 0 1rem;
   font-size: .875rem;
-  background-color: var(--bs-gray-100);
+  background-color: var(--bs-tertiary-bg);
   border-radius: var(--bs-border-radius);
 
   code {
@@ -94,7 +94,7 @@ table {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: var(--bs-emphasis-color);
 }
 
 // Meta data line below post title
@@ -122,25 +122,13 @@ table {
 
 // Related posts
 .related {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--bs-border-color);
 }
 .related-posts {
-  li {
-    small {
-      font-size: 75%;
-      color: #767676;
-    }
-
-    a:hover {
-      color: #268bd2;
-      text-decoration: none;
-    }
-
-    a:hover small {
-      color: inherit;
-    }
+  a {
+    text-decoration: none;
   }
 }
 
@@ -148,7 +136,6 @@ table {
 .post > p:first-of-type,
 .post > img:first-child + p {
   font-size: 133.333333%;
-  color: $gray-700;
 }
 
 .post .ratio {
