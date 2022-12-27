@@ -3,12 +3,12 @@
 //
 
 a {
-  text-decoration-color: rgba(var(--bs-primary-rgb), .25);
+  text-decoration-color: rgba(var(--bs-link-color-rgb), .25);
   text-underline-offset: .25rem;
 
   &:hover,
   &:focus {
-    text-decoration-color: rgba(var(--bs-primary-rgb), .5);
+    text-decoration-color: rgba(var(--bs-link-color-rgb), .5);
   }
 }
 
@@ -21,6 +21,9 @@ a {
 }
 
 .sidebar-nav {
+  --bs-nav-link-color: var(--bs-body-color);
+  --bs-nav-link-hover-color: var(--bs-emphasis-color);
+
   .nav-link {
     padding-inline: .75rem;
     border-radius: .5rem;
@@ -31,7 +34,7 @@ a {
     }
 
     &.active {
-      color: var(--bs-body-color);
+      color: var(--bs-emphasis-color);
       background-color: rgba(var(--bd-violet-rgb), .1);
     }
   }
@@ -78,7 +81,7 @@ a {
 // Download buttons
 //
 
-.btn-link {
+.btn-download-link {
   display: inline-block;
   padding: .6rem 1.2rem;
   margin-right: .25rem;

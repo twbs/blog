@@ -16,17 +16,21 @@
   </div>
 
   <div class="related">
-    <h2>Related posts</h2>
+    <h2 class="h3 mb-3">Related posts</h2>
+
     <ul class="related-posts list-unstyled">
       {{ $related := .Site.RegularPages.Related . | first 3 -}}
       {{- range $related -}}
-      <li>
-        <h4>
-          <a href="{{ .RelPermalink  }}">
-            {{ .Title }}
-            <small>{{ .Date | dateFormat "02 Jan 2006" }}</small>
-          </a>
-        </h4>
+      <li class="d-flex mb-3 text-body-secondary">
+        <svg class="bi me-2 f5"><use xlink:href="#file-earmark-richtext"></use></svg>
+        <div class="fs-6">
+          <h3 class="h5 mb-1 lh-1">
+            <a href="{{ .RelPermalink  }}">
+              {{ .Title }}
+            </a>
+          </h3>
+          {{ .Date | dateFormat "January 02, 2006" }}
+        </div>
       </li>
       {{- end }}
     </ul>

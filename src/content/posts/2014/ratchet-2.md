@@ -49,7 +49,7 @@ It's a huge release that's been a long time coming. [Head to the new Ratchet doc
 
 Ratchet 2 is available today for download from GitHub.
 
-<a class="btn-link btn-link-ratchet" href="https://github.com/twbs/ratchet/archive/v2.0.0.zip">Download Ratchet 2.0.0</a>
+<a class="btn-download-link btn-link-ratchet" href="https://github.com/twbs/ratchet/archive/v2.0.0.zip">Download Ratchet 2.0.0</a>
 
 Be sure to check out the [GitHub milestone](https://github.com/twbs/ratchet/issues?milestone=1&q=is%3Aclosed) to see a more complete changelog of what's new.
 

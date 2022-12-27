@@ -14,7 +14,7 @@ Today we're releasing Bootstrap v3.1.1. As our first patch release for the v3.1.
 
 Download Bootstrap directly from GitHub:
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.1.1.zip">Download Bootstrap 3.1.1</a>
+<a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.1.1.zip">Download Bootstrap 3.1.1</a>
 
 Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass repository](https://github.com/twbs/bootstrap-sass) for more options.
 

@@ -1,4 +1,4 @@
-{{- $bootstrapJs := resources.Get "/js/bootstrap.min.js" | resources.Copy "/assets/js/vendor/bootstrap.min.js" -}}
+{{- $bootstrapJs := resources.Get "/js/bootstrap.bundle.min.js" | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" -}}
 <script async src="{{ $bootstrapJs.Permalink | relURL }}"></script>
 
 {{- $esbuildOptions := dict "targetPath" "/assets/js/lazyload.js" "target" "es2019" -}}

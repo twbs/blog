@@ -10,7 +10,7 @@ keywords:
 
 Today we're shipping v3.0.1, a huge patch release with over 750 commits since v3 was released two months ago. We've outlined most of the changes below, including documentation updates, bug fixes, and even a few deprecations (our first in the history of the project).
 
-<a class="btn-link" href="https://github.com/twbs/bootstrap/archive/v3.0.1.zip">Download Bootstrap 3.0.1</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
+<a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.0.1.zip">Download Bootstrap 3.0.1</a> or hit the [GitHub repository](https://github.com/twbs/bootstrap)
 
 ---
 
