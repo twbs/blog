@@ -34,7 +34,7 @@
     "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm run build"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "bootstrap": "5.3.0-alpha1",
     "cross-env": "^7.0.3",
     "eslint": "^8.33.0",
