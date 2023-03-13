@@ -37,7 +37,7 @@
     "autoprefixer": "^10.4.13",
     "bootstrap": "5.3.0-alpha1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.33.0",
+    "eslint": "^8.36.0",
     "find-unused-sass-variables": "^4.0.5",
     "hugo-bin": "^0.98.0",
     "linkinator": "^4.1.2",
