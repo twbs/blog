@@ -1,4 +1,4 @@
-// stylelint-disable selector-no-qualifying-type, selector-max-id
+// stylelint-disable selector-no-qualifying-type
 
 @import "bootstrap";
 @import "variables";
@@ -67,7 +67,7 @@ table {
 //
 // Center the page content.
 
-#content {
+.content {
   grid-template-columns: 1.15fr 3fr;
   gap: 3rem;
 }
