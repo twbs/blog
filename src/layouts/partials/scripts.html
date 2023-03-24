@@ -2,17 +2,13 @@
 <script async src="{{ $bootstrapJs.Permalink | relURL }}"></script>
 
 {{- $esbuildOptions := dict "target" "es2019" -}}
-{{- $lazyloadOptions := dict "targetPath" "/assets/js/lazyload.js" -}}
-{{- $appOptions := dict "targetPath" "/assets/js/application.js" -}}
 
 {{- if eq hugo.Environment "production" -}}
   {{- $esbuildOptions = merge $esbuildOptions (dict "minify" "true") -}}
 {{- end -}}
 
-{{- $lazyloadOptions = merge $esbuildOptions $lazyloadOptions -}}
-{{- $appOptions = merge $esbuildOptions $appOptions -}}
-{{- $lazyload := resources.Get "js/lazyload.js" | js.Build $lazyloadOptions -}}
-{{- $application := resources.Get "js/application.js" | js.Build $appOptions -}}
+{{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | resources.Copy "/assets/js/lazyload.js" -}}
+{{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | resources.Copy "/assets/js/application.js" -}}
 
 <script async src="{{ $lazyload.RelPermalink | relURL }}"></script>
 <script async src="{{ $application.RelPermalink | relURL }}"></script>
