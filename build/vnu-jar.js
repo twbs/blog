@@ -2,8 +2,7 @@
 
 /*!
  * Script to run vnu-jar if Java is available.
- * Copyright 2017-2022 The Bootstrap Authors
- * Copyright 2017-2022 Twitter, Inc.
+ * Copyright 2017-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
@@ -26,7 +25,9 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
     // TODO report the issue upstream in Hugo
     'Duplicate ID.*',
     'The first occurrence of ID.*',
-    'Self-closing tag syntax in text/html documents is widely discouraged.*'
+    'Self-closing tag syntax in text/html documents is widely discouraged.*',
+    // TODO remove this when fixed in vnu-jar
+    'Attribute "imagesrcset" not allowed on element "link" at this point.*'
   ].join('|')
 
   const args = [
