@@ -61,7 +61,7 @@ And, in the meantime, here's the rundown on what's changed since our first alpha
 
 - Renamed Sass and CSS variables `${color}-text` to `${color}-text-emphasis` to match their associated utilities.
 
-- Added new `.link-body-emphasis` helper alongside our [colored links](https://getbootstrap.com/docs/5.3/helpers/colored-links). This creates a colored link using our color mode responsive emphasis color.
+- Added new `.link-body-emphasis` helper alongside our [colored links](https://getbootstrap.com/docs/5.3/helpers/colored-links/). This creates a colored link using our color mode responsive emphasis color.
 
 - Added new link utilities for link color opacity, underline offset, underline color, and underline opacity. [Explore the new links utilities.](https://getbootstrap.com/docs/5.3/utilities/link/)
 
