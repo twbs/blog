@@ -63,7 +63,7 @@ And, in the meantime, here's the rundown on what's changed since our first alpha
 
 - Added new `.link-body-emphasis` helper alongside our [colored links](https://getbootstrap.com/docs/5.3/helpers/colored-links). This creates a colored link using our color mode responsive emphasis color.
 
-- Added new link utilities for link color opacity, underline offset, underline color, and underline opacity. [Explore the new links utilities.](https://getbootstrap.com/docs/5.3/utilities/link)
+- Added new link utilities for link color opacity, underline offset, underline color, and underline opacity. [Explore the new links utilities.](https://getbootstrap.com/docs/5.3/utilities/link/)
 
 - CSS variable-based `border-width` utilities have been reverted to set their property directly (as was done before v5.2.0). This avoids inheritance issues across nested elements, including tables.
 
