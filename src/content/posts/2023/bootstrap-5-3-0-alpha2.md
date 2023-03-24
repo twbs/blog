@@ -85,7 +85,7 @@ And, in the meantime, here's the rundown on what's changed since our first alpha
 While not an exhaustive list, here's some of the stuff we're going to be working on before calling this release stable. You can track these and more in the [v5.3.0-stable project on GitHub](https://github.com/orgs/twbs/projects/18).
 
 - Add new functionality to utilities with mixins and functions.
-- Some components need another pass at enabling full color mode responsiveness. _Bear in mind, some components like buttons won't get full color mode adaptivity until v6._
+- Some components need another pass at enabling full-color mode responsiveness. _Bear in mind, some components like buttons won't get full-color mode adaptivity until v6._
 - Labels in disabled floating forms have incorrect rendering.
 - Docs need to be updated for modifying theme colors across color modes.
 - Examples need another pass for dark mode support, new screenshots, and more.
