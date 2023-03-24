@@ -6,7 +6,7 @@
 
 <link rel="preconnect" href="https://github.com">
 <link rel="preconnect" href="https://avatars.githubusercontent.com">
-<link rel="preload" href="/assets/brand/bootstrap-logo-shadow.png" as="image">
+<link rel="preload" href="/assets/brand/bootstrap-logo-shadow.png" imagesrcset="/assets/brand/bootstrap-logo-shadow.png, /assets/brand/bootstrap-logo-shadow@2x.png 2x" as="image">
 
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="canonical" href="https://blog.getbootstrap.com/2021/10/28/bootstrap-4.6.1/">
@@ -221,7 +221,10 @@ What&rsquo;s changed Replace Sass division with multiplication and custom divide
           <div class="masthead py-5">
   <div class="mb-4 text-center text-lg-start">
     <a class="flex-shrink-0 mb-lg-3 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-      <img src="/assets/brand/bootstrap-logo-shadow.png" width="200" height="165" alt="Bootstrap" class="bd-booticon d-block mx-auto mb-3 mx-lg-0">
+      <img srcset="/assets/brand/bootstrap-logo-shadow.png, /assets/brand/bootstrap-logo-shadow@2x.png 2x"
+           src="/assets/brand/bootstrap-logo-shadow.png"
+           width="200" height="165" alt="Bootstrap"
+           class="bd-booticon d-block mx-auto mb-3 mx-lg-0">
     </a>
     <div class="ms-3 ms-lg-0">
       <h1 class="mb-1 mb-lg-2 f1 fw-600">The Bootstrap Blog</h1>
