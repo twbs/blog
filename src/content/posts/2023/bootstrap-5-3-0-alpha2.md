@@ -9,9 +9,9 @@ keywords:
 
 Our second alpha release of v5.3.0 has landed with a ton of enhancements and bug fixes for our new color modes! There's still more to come, but we've held off shipping until we ironed out enough issues. Huzzah, we have!
 
-This v5.3.0 release is a monumental update for Bootstrap 5. It's big enough that it could've been a v6 on it's own, but we wanted to do right by the community and get color modes out the door without the massive major release upgrade. We're getting super close now, so bear with us as we continue to chip away at this.
+This v5.3.0 release is a monumental update for Bootstrap 5. It's big enough that it could've been a v6 on its own, but we wanted to do right by the community and get color modes out the door without the massive major release upgrade. We're getting super close now, so bear with us as we continue to chip away at this.
 
-And, in the mean time, here's the rundown on what's changed since our first alpha. Have a read through the [Migration guide](https://getbootstrap.com/docs/5.3/migration/#v530-alpha1) for the first alpha, or [the blog post for the release announcement](/2022/12/24/bootstrap-5-3-0-alpha1/), if you're just getting into v5.3.0.
+And, in the meantime, here's the rundown on what's changed since our first alpha. Have a read through the [Migration guide](https://getbootstrap.com/docs/5.3/migration/#v530-alpha1) for the first alpha, or [the blog post for the release announcement](/2022/12/24/bootstrap-5-3-0-alpha1/), if you're just getting into v5.3.0.
 
 ### CSS variables
 
@@ -19,11 +19,11 @@ And, in the mean time, here's the rundown on what's changed since our first alph
 
 ### Color modes
 
-- Dark mode colors are now derived from our theme colors (e.g., `$primary`) in Sass, rather than color specific tints or shades (e.g., `$blue-300`). This allows for a more automated dark mode when customizing the default theme colors.
+- Dark mode colors are now derived from our theme colors (e.g., `$primary`) in Sass, rather than color-specific tints or shades (e.g., `$blue-300`). This allows for a more automated dark mode when customizing the default theme colors.
 
 - Added Sass maps for generating theme colors for dark mode text, subtle background, and subtle border.
 
-- [Snippet examples](https://getbootstrap.com/docs/5.3/examples#snippets) are now ready for dark mode with updated markup and reduced custom styles.
+- [Snippet examples](https://getbootstrap.com/docs/5.3/examples/#snippets) are now ready for dark mode with updated markup and reduced custom styles.
 
 - Added `color-scheme: dark` to dark mode CSS to change OS level controls like scrollbars
 
@@ -47,15 +47,15 @@ And, in the mean time, here's the rundown on what's changed since our first alph
 
 - Cards now have a `color` set on them to improve rendering across color modes.
 
-- Added new `.nav-underline` variant for our navigation with a simpler bottom border under the active nav link. [See the docs for an example.](https://getbootstrap.com/docs/5.3/components/navs-tabs#underline)
+- Added a new `.nav-underline` variant for our navigation with a simpler bottom border under the active nav link. [See the docs for an example.](https://getbootstrap.com/docs/5.3/components/navs-tabs/#underline)
 
 - Navs now have new `:focus-visible` styles that better match our custom button focus styles.
 
 ### Helpers
 
-- Added new `.icon-link` helper to quickly place and align Bootstrap Icons alongside a textual link. Icon links support our new link utilities, too.
+- Added a new `.icon-link` helper to quickly place and align Bootstrap Icons alongside a textual link. Icon links support our new link utilities, too.
 
-- Added new focus ring helper for removing the default `outline` and setting a custom `box-shadow` focus ring.
+- Added a new focus ring helper for removing the default `outline` and setting a custom `box-shadow` focus ring.
 
 ### Utilities
 
@@ -65,7 +65,7 @@ And, in the mean time, here's the rundown on what's changed since our first alph
 
 - Added new link utilities for link color opacity, underline offset, underline color, and underline opacity. [Explore the new links utilities.](https://getbootstrap.com/docs/5.3/utilities/link)
 
-- CSS variable based `border-width` utilities have been reverted to set their property directly (as was done prior to v5.2.0). This avoids inheritance issues across nested elements, including tables.
+- CSS variable-based `border-width` utilities have been reverted to set their property directly (as was done before v5.2.0). This avoids inheritance issues across nested elements, including tables.
 
 - Added new `.border-black` utility to match our `.text-black` and `.bg-black` utilities.
 
@@ -73,7 +73,7 @@ And, in the mean time, here's the rundown on what's changed since our first alph
 
 ### Docs
 
-- Updated docs page table of contents to use Scrollpy (shoutout our v3 docs!).
+- Updated docs page table of contents to use Scrollpy (shoutout to our v3 docs!).
 - Revamped syntax highlighting colors for code snippets across color modes.
 - Improved content and rendering of several docs callouts.
 - Document more color mode features and usage suggestions.
