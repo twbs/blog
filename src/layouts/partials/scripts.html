@@ -10,5 +10,5 @@
 {{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | resources.Copy "/assets/js/lazyload.js" -}}
 {{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | resources.Copy "/assets/js/application.js" -}}
 
-<script async src="{{ $lazyload.RelPermalink | relURL }}"></script>
-<script async src="{{ $application.RelPermalink | relURL }}"></script>
+<script async src="{{ $lazyload.Permalink | relURL }}"></script>
+<script async src="{{ $application.Permalink | relURL }}"></script>
