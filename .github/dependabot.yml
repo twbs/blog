@@ -1,26 +1,16 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: monthly
-      day: wednesday
-      time: "12:00"
-      timezone: Europe/Athens
-    reviewers:
-      - XhmikosR
-    labels:
-      - dependencies
-    versioning-strategy: increase
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: monthly
-      day: wednesday
-      time: "12:00"
-      timezone: Europe/Athens
-    reviewers:
-      - XhmikosR
     labels:
       - dependencies
       - github_actions
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: monthly
+    labels:
+      - dependencies
+    versioning-strategy: increase
