@@ -27,12 +27,13 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
     'The first occurrence of ID.*',
     'Self-closing tag syntax in text/html documents is widely discouraged.*',
     // TODO remove this when fixed in vnu-jar
-    'Attribute "imagesrcset" not allowed on element "link" at this point.*'
+    'Attribute “imagesrcset” not allowed on element “link” at this point.*'
   ].join('|')
 
   const args = [
     '-jar',
     `"${vnu}"`,
+    '--asciiquotes',
     '--skip-non-html',
     '--Werror',
     `--filterpattern "${ignores}"`,
