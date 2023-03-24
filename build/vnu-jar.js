@@ -33,7 +33,6 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
   const args = [
     '-jar',
     `"${vnu}"`,
-    '--asciiquotes',
     '--skip-non-html',
     '--Werror',
     `--filterpattern "${ignores}"`,
