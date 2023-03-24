@@ -6,7 +6,128 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Dec 2022 08:00:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2023 14:40:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap 5.3.0-alpha2</title>
+      <link>https://blog.getbootstrap.com/2023/03/24/bootstrap-5-3-0-alpha2/</link>
+      <pubDate>Fri, 24 Mar 2023 14:40:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2023/03/24/bootstrap-5-3-0-alpha2/</guid>
+      <description>&lt;p&gt;Our second alpha release of v5.3.0 has landed with a ton of enhancements and bug fixes for our new color modes! There&amp;rsquo;s still more to come, but we&amp;rsquo;ve held off shipping until we ironed out enough issues. Huzzah, we have!&lt;/p&gt;
+&lt;p&gt;This v5.3.0 release is a monumental update for Bootstrap 5. It&amp;rsquo;s big enough that it could&amp;rsquo;ve been a v6 on its own, but we wanted to do right by the community and get color modes out the door without the massive major release upgrade. We&amp;rsquo;re getting super close now, so bear with us as we continue to chip away at this.&lt;/p&gt;
+&lt;p&gt;And, in the meantime, here&amp;rsquo;s the rundown on what&amp;rsquo;s changed since our first alpha. Have a read through the &lt;a href=&#34;https://getbootstrap.com/docs/5.3/migration/#v530-alpha1&#34;&gt;Migration guide&lt;/a&gt; for the first alpha, or &lt;a href=&#34;https://blog.getbootstrap.com/2022/12/24/bootstrap-5-3-0-alpha1/&#34;&gt;the blog post for the release announcement&lt;/a&gt;, if you&amp;rsquo;re just getting into v5.3.0.&lt;/p&gt;
+&lt;h3 id=&#34;css-variables&#34;&gt;CSS variables&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed several duplicate and unused root CSS variables.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;color-modes&#34;&gt;Color modes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Dark mode colors are now derived from our theme colors (e.g., &lt;code&gt;$primary&lt;/code&gt;) in Sass, rather than color-specific tints or shades (e.g., &lt;code&gt;$blue-300&lt;/code&gt;). This allows for a more automated dark mode when customizing the default theme colors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added Sass maps for generating theme colors for dark mode text, subtle background, and subtle border.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.3/examples/#snippets&#34;&gt;Snippet examples&lt;/a&gt; are now ready for dark mode with updated markup and reduced custom styles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added &lt;code&gt;color-scheme: dark&lt;/code&gt; to dark mode CSS to change OS level controls like scrollbars&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Form validation &lt;code&gt;border-color&lt;/code&gt; and text &lt;code&gt;color&lt;/code&gt; states now respond to dark mode, thanks to new Sass and CSS variables.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dropped recently added form control background CSS variables and reassigned the Sass variables to use CSS variables instead. This simplifies the styling across color modes and avoids an issue where form controls in dark mode wouldn&amp;rsquo;t update properly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Our &lt;code&gt;box-shadow&lt;/code&gt;s will once again always stay dark instead of inverting to white when in dark mode.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved HTML and JavaScript for our color mode toggle script. The selector for changing the active SVG has been improved, and the markup made more accessible with ARIA attributes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved docs code syntax colors and more across light and dark modes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Removed the ability to nest light mode components within dark mode. This was super incomplete unfortunately and just isn&amp;rsquo;t practical without quadrupling our selectors for every component. Maybe in v6!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;typography&#34;&gt;Typography&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We no longer set a color for &lt;code&gt;$headings-color-dark&lt;/code&gt; or &lt;code&gt;--bs-heading-color&lt;/code&gt; for dark mode. To avoid several problems of headings within components appearing the wrong color, we&amp;rsquo;ve set the Sass variable to &lt;code&gt;null&lt;/code&gt; and added a &lt;code&gt;null&lt;/code&gt; check like we use on the default light mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;components&#34;&gt;Components&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cards now have a &lt;code&gt;color&lt;/code&gt; set on them to improve rendering across color modes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a new &lt;code&gt;.nav-underline&lt;/code&gt; variant for our navigation with a simpler bottom border under the active nav link. &lt;a href=&#34;https://getbootstrap.com/docs/5.3/components/navs-tabs/#underline&#34;&gt;See the docs for an example.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navs now have new &lt;code&gt;:focus-visible&lt;/code&gt; styles that better match our custom button focus styles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;helpers&#34;&gt;Helpers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added a new &lt;code&gt;.icon-link&lt;/code&gt; helper to quickly place and align Bootstrap Icons alongside a textual link. Icon links support our new link utilities, too.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a new focus ring helper for removing the default &lt;code&gt;outline&lt;/code&gt; and setting a custom &lt;code&gt;box-shadow&lt;/code&gt; focus ring.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;utilities&#34;&gt;Utilities&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Renamed Sass and CSS variables &lt;code&gt;${color}-text&lt;/code&gt; to &lt;code&gt;${color}-text-emphasis&lt;/code&gt; to match their associated utilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added new &lt;code&gt;.link-body-emphasis&lt;/code&gt; helper alongside our &lt;a href=&#34;https://getbootstrap.com/docs/5.3/helpers/colored-links/&#34;&gt;colored links&lt;/a&gt;. This creates a colored link using our color mode responsive emphasis color.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added new link utilities for link color opacity, underline offset, underline color, and underline opacity. &lt;a href=&#34;https://getbootstrap.com/docs/5.3/utilities/link/&#34;&gt;Explore the new links utilities.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CSS variable-based &lt;code&gt;border-width&lt;/code&gt; utilities have been reverted to set their property directly (as was done before v5.2.0). This avoids inheritance issues across nested elements, including tables.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added new &lt;code&gt;.border-black&lt;/code&gt; utility to match our &lt;code&gt;.text-black&lt;/code&gt; and &lt;code&gt;.bg-black&lt;/code&gt; utilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;badge text-warning-emphasis bg-warning-subtle&#34;&gt;Deprecated&lt;/span&gt; Deprecated the &lt;code&gt;.text-muted&lt;/code&gt; utility and &lt;code&gt;$text-muted&lt;/code&gt; Sass variable. It&amp;rsquo;s been replaced by &lt;code&gt;.text-body-secondary&lt;/code&gt; and &lt;code&gt;$body-secondary-color&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;docs&#34;&gt;Docs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated docs page table of contents to use Scrollpy (shoutout to our v3 docs!).&lt;/li&gt;
+&lt;li&gt;Revamped syntax highlighting colors for code snippets across color modes.&lt;/li&gt;
+&lt;li&gt;Improved content and rendering of several docs callouts.&lt;/li&gt;
+&lt;li&gt;Document more color mode features and usage suggestions.&lt;/li&gt;
+&lt;li&gt;Added theme toggling to examples pages.&lt;/li&gt;
+&lt;li&gt;Updated dependencies across the board, including in our guides.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;known-issues&#34;&gt;Known issues&lt;/h2&gt;
+&lt;p&gt;While not an exhaustive list, here&amp;rsquo;s some of the stuff we&amp;rsquo;re going to be working on before calling this release stable. You can track these and more in the &lt;a href=&#34;https://github.com/orgs/twbs/projects/18&#34;&gt;v5.3.0-stable project on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add new functionality to utilities with mixins and functions.&lt;/li&gt;
+&lt;li&gt;Some components need another pass at enabling full-color mode responsiveness. &lt;em&gt;Bear in mind, some components like buttons won&amp;rsquo;t get full-color mode adaptivity until v6.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Labels in disabled floating forms have incorrect rendering.&lt;/li&gt;
+&lt;li&gt;Docs need to be updated for modifying theme colors across color modes.&lt;/li&gt;
+&lt;li&gt;Examples need another pass for dark mode support, new screenshots, and more.&lt;/li&gt;
+&lt;li&gt;Improve click/tap area for range inputs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Up next will be the stable release of v5.3.0. Originally this was planned as a beta, but I think we&amp;rsquo;re getting close enough to call this final with one more release.&lt;/p&gt;
+&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap@v5.3.0-alpha2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.3.0-alpha2&#34;&gt;Read the GitHub v5.3.0-alpha2 changelog&lt;/a&gt; for a complete list of changes in this release.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap 5.3.0-alpha1</title>
       <link>https://blog.getbootstrap.com/2022/12/24/bootstrap-5-3-0-alpha1/</link>
@@ -679,34 +800,6 @@
 &lt;p&gt;Expect more CSS variables to make their way into our utilities. There&amp;rsquo;s a lot of power in real-time customization, even for what we consider immutable styles.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Ready to get started with Bootstrap?&lt;/strong&gt; Checkout the &lt;a href=&#34;https://getbootstrap.com/docs/5.2/getting-started/introduction/#quick-start&#34;&gt;quick start guide&lt;/a&gt; so you can put these new CSS variables to work in your next project!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap Icons v1.8.2</title>
-      <link>https://blog.getbootstrap.com/2022/05/13/bootstrap-icons-1-8-2/</link>
-      <pubDate>Fri, 13 May 2022 00:01:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2022/05/13/bootstrap-icons-1-8-2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.8.2&lt;/a&gt; has arrived with some bug fixes and a refreshed docs design to match our main project.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s a quick rundown on the icon fixes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix cutoff &lt;code&gt;bank&lt;/code&gt; icon&lt;/li&gt;
-&lt;li&gt;Fix &lt;code&gt;house-heart&lt;/code&gt; and &lt;code&gt;house-heart-fill&lt;/code&gt; fill-rules&lt;/li&gt;
-&lt;li&gt;Fix corners of pentagon icons to match other shapes&lt;/li&gt;
-&lt;li&gt;Fix fill-rule for &lt;code&gt;x-lg&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fix cutoff &lt;code&gt;tool&lt;/code&gt; icon&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;On the CSS side, we&amp;rsquo;ve also added &lt;code&gt;font-display: block&lt;/code&gt; to help address our icon font affecting Google Lighthouse scores.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Looking for more new icons? Head to the &lt;a href=&#34;https://github.com/twbs/icons/issues&#34;&gt;issue tracker&lt;/a&gt; to check for open requests or submit a new one.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;To get started, install or update via npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap-icons
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or Composer:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer require twbs/bootstrap-icons
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.8.2&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.8.2/bootstrap-icons-1.8.2.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
-&lt;p&gt;The Figma file is now published to the Figma Community! It&amp;rsquo;s the same &lt;a href=&#34;https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons&#34;&gt;Bootstrap Icons Figma file&lt;/a&gt; you&amp;rsquo;ve seen from previous releases, just a little more accessible to those using the app.&lt;/p&gt;
 </description>
     </item>
     

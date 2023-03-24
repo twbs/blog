@@ -258,7 +258,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2022/12/24/bootstrap-5-3-0-alpha1/" class="text-decoration-none">Bootstrap 5.3.0-alpha1</a>
+          <a href="/2023/03/24/bootstrap-5-3-0-alpha2/" class="text-decoration-none">Bootstrap 5.3.0-alpha2</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -266,6 +266,142 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="24 Mar 23 14:40 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+March 24, 2023</span>
+</div>
+
+
+        
+
+        <p>Our second alpha release of v5.3.0 has landed with a ton of enhancements and bug fixes for our new color modes! There&rsquo;s still more to come, but we&rsquo;ve held off shipping until we ironed out enough issues. Huzzah, we have!</p>
+<p>This v5.3.0 release is a monumental update for Bootstrap 5. It&rsquo;s big enough that it could&rsquo;ve been a v6 on its own, but we wanted to do right by the community and get color modes out the door without the massive major release upgrade. We&rsquo;re getting super close now, so bear with us as we continue to chip away at this.</p>
+<p>And, in the meantime, here&rsquo;s the rundown on what&rsquo;s changed since our first alpha. Have a read through the <a href="https://getbootstrap.com/docs/5.3/migration/#v530-alpha1">Migration guide</a> for the first alpha, or <a href="/2022/12/24/bootstrap-5-3-0-alpha1/">the blog post for the release announcement</a>, if you&rsquo;re just getting into v5.3.0.</p>
+<h3 id="css-variables">CSS variables</h3>
+<ul>
+<li>Removed several duplicate and unused root CSS variables.</li>
+</ul>
+<h3 id="color-modes">Color modes</h3>
+<ul>
+<li>
+<p>Dark mode colors are now derived from our theme colors (e.g., <code>$primary</code>) in Sass, rather than color-specific tints or shades (e.g., <code>$blue-300</code>). This allows for a more automated dark mode when customizing the default theme colors.</p>
+</li>
+<li>
+<p>Added Sass maps for generating theme colors for dark mode text, subtle background, and subtle border.</p>
+</li>
+<li>
+<p><a href="https://getbootstrap.com/docs/5.3/examples/#snippets">Snippet examples</a> are now ready for dark mode with updated markup and reduced custom styles.</p>
+</li>
+<li>
+<p>Added <code>color-scheme: dark</code> to dark mode CSS to change OS level controls like scrollbars</p>
+</li>
+<li>
+<p>Form validation <code>border-color</code> and text <code>color</code> states now respond to dark mode, thanks to new Sass and CSS variables.</p>
+</li>
+<li>
+<p>Dropped recently added form control background CSS variables and reassigned the Sass variables to use CSS variables instead. This simplifies the styling across color modes and avoids an issue where form controls in dark mode wouldn&rsquo;t update properly.</p>
+</li>
+<li>
+<p>Our <code>box-shadow</code>s will once again always stay dark instead of inverting to white when in dark mode.</p>
+</li>
+<li>
+<p>Improved HTML and JavaScript for our color mode toggle script. The selector for changing the active SVG has been improved, and the markup made more accessible with ARIA attributes.</p>
+</li>
+<li>
+<p>Improved docs code syntax colors and more across light and dark modes.</p>
+</li>
+<li>
+<p>Removed the ability to nest light mode components within dark mode. This was super incomplete unfortunately and just isn&rsquo;t practical without quadrupling our selectors for every component. Maybe in v6!</p>
+</li>
+</ul>
+<h3 id="typography">Typography</h3>
+<ul>
+<li>We no longer set a color for <code>$headings-color-dark</code> or <code>--bs-heading-color</code> for dark mode. To avoid several problems of headings within components appearing the wrong color, we&rsquo;ve set the Sass variable to <code>null</code> and added a <code>null</code> check like we use on the default light mode.</li>
+</ul>
+<h3 id="components">Components</h3>
+<ul>
+<li>
+<p>Cards now have a <code>color</code> set on them to improve rendering across color modes.</p>
+</li>
+<li>
+<p>Added a new <code>.nav-underline</code> variant for our navigation with a simpler bottom border under the active nav link. <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#underline">See the docs for an example.</a></p>
+</li>
+<li>
+<p>Navs now have new <code>:focus-visible</code> styles that better match our custom button focus styles.</p>
+</li>
+</ul>
+<h3 id="helpers">Helpers</h3>
+<ul>
+<li>
+<p>Added a new <code>.icon-link</code> helper to quickly place and align Bootstrap Icons alongside a textual link. Icon links support our new link utilities, too.</p>
+</li>
+<li>
+<p>Added a new focus ring helper for removing the default <code>outline</code> and setting a custom <code>box-shadow</code> focus ring.</p>
+</li>
+</ul>
+<h3 id="utilities">Utilities</h3>
+<ul>
+<li>
+<p>Renamed Sass and CSS variables <code>${color}-text</code> to <code>${color}-text-emphasis</code> to match their associated utilities.</p>
+</li>
+<li>
+<p>Added new <code>.link-body-emphasis</code> helper alongside our <a href="https://getbootstrap.com/docs/5.3/helpers/colored-links/">colored links</a>. This creates a colored link using our color mode responsive emphasis color.</p>
+</li>
+<li>
+<p>Added new link utilities for link color opacity, underline offset, underline color, and underline opacity. <a href="https://getbootstrap.com/docs/5.3/utilities/link/">Explore the new links utilities.</a></p>
+</li>
+<li>
+<p>CSS variable-based <code>border-width</code> utilities have been reverted to set their property directly (as was done before v5.2.0). This avoids inheritance issues across nested elements, including tables.</p>
+</li>
+<li>
+<p>Added new <code>.border-black</code> utility to match our <code>.text-black</code> and <code>.bg-black</code> utilities.</p>
+</li>
+<li>
+<p><span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> Deprecated the <code>.text-muted</code> utility and <code>$text-muted</code> Sass variable. It&rsquo;s been replaced by <code>.text-body-secondary</code> and <code>$body-secondary-color</code>.</p>
+</li>
+</ul>
+<h3 id="docs">Docs</h3>
+<ul>
+<li>Updated docs page table of contents to use Scrollpy (shoutout to our v3 docs!).</li>
+<li>Revamped syntax highlighting colors for code snippets across color modes.</li>
+<li>Improved content and rendering of several docs callouts.</li>
+<li>Document more color mode features and usage suggestions.</li>
+<li>Added theme toggling to examples pages.</li>
+<li>Updated dependencies across the board, including in our guides.</li>
+</ul>
+<h2 id="known-issues">Known issues</h2>
+<p>While not an exhaustive list, here&rsquo;s some of the stuff we&rsquo;re going to be working on before calling this release stable. You can track these and more in the <a href="https://github.com/orgs/twbs/projects/18">v5.3.0-stable project on GitHub</a>.</p>
+<ul>
+<li>Add new functionality to utilities with mixins and functions.</li>
+<li>Some components need another pass at enabling full-color mode responsiveness. <em>Bear in mind, some components like buttons won&rsquo;t get full-color mode adaptivity until v6.</em></li>
+<li>Labels in disabled floating forms have incorrect rendering.</li>
+<li>Docs need to be updated for modifying theme colors across color modes.</li>
+<li>Examples need another pass for dark mode support, new screenshots, and more.</li>
+<li>Improve click/tap area for range inputs.</li>
+</ul>
+<p>Up next will be the stable release of v5.3.0. Originally this was planned as a beta, but I think we&rsquo;re getting close enough to call this final with one more release.</p>
+<h2 id="get-the-release">Get the release</h2>
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.3.0-alpha2
+</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.3.0-alpha2">Read the GitHub v5.3.0-alpha2 changelog</a> for a complete list of changes in this release.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2022/12/24/bootstrap-5-3-0-alpha1/" class="text-decoration-none">Bootstrap 5.3.0-alpha1</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="24 Dec 22 08:00 UTC">
@@ -504,121 +640,6 @@ October 03, 2022</span>
 <p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.2.2
 </span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.2.2">Read the GitHub v5.2.2 changelog</a> for a complete list of changes in this release.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2022/09/07/bootstrap-5-2-1/" class="text-decoration-none">Bootstrap 5.2.1</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="07 Sep 22 16:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-September 07, 2022</span>
-</div>
-
-
-        
-
-        <p>Bootstrap v5.2.1 is here with fixes from our latest minor release, v5.2. As a patch release, these changes are limited to bug fixes, documentation updates, and some dependency updates.</p>
-<p>We&rsquo;ve also continued to iterate on a few other projects to help folks get up and running with Bootstrap with npm, other JS frameworks, and various build tools. Keep reading to learn more.</p>
-<h2 id="key-changes">Key changes</h2>
-<p>We&rsquo;ve <strong>updated our <code>calc()</code> functions</strong> to work around an <a href="https://github.com/shellscape/postcss-values-parser/issues/138">apparent bug in <code>postcss-values-parser</code></a> that prevented our source Sass files from compiling properly when building with React and PostCSS. The fix was to reverse the order of our multiplication inside <code>calc()</code> functions. Be aware you may need to make similar <a href="https://github.com/twbs/bootstrap/pull/37079">modifications</a> depending on your own customizations.</p>
-<p>We&rsquo;ve also <a href="https://github.com/twbs/bootstrap/pull/37026">addressed some longstanding issues around button focus and active styling</a>, in particular for checkbox and radio buttons. On mobile devices, input-based buttons have trouble shedding their focus styles. This has been resolved in v5.2.1 with a change from <code>:focus</code> to <code>:focus-visible</code> for our <code>.btn</code>s. <strong>Now, checkbox and radio buttons no longer change their <code>background-color</code> on <code>:focus-visible</code> and they receive no <code>:hover</code> styling.</strong> Regular <code>.btn</code>s still have their familiar hover and focus styles.</p>
-<p>We debated not including the button focus change in v5.2.1, but felt it was important enough to close several bugs. Let us know what you think and we&rsquo;ll continue to refine our implementation.</p>
-<h2 id="highlights">Highlights</h2>
-<p>In addition to the changes above, we&rsquo;ve fixed bugs across several components:</p>
-<ul>
-<li><strong>Accordion</strong>
-<ul>
-<li>Update <code>color</code> value to use the <code>$accordion-button-color</code> Sass variable instead of our color contrast function</li>
-</ul>
-</li>
-<li><strong>Buttons</strong>
-<ul>
-<li>Added a <code>transparent</code> default hover border color CSS variable for buttons to fix a visual regression</li>
-<li><code>.btn-link</code> no longer has a gradient when <code>$enable-gradients</code> is set to <code>true</code></li>
-</ul>
-</li>
-<li><strong>Forms</strong>
-<ul>
-<li>Input groups have updated <code>z-index</code> values to ensure proper rendering of validated form fields</li>
-<li>Floating labels now reset their <code>text-align</code> to ensure consistent styling</li>
-</ul>
-</li>
-<li><strong>List Groups</strong>
-<ul>
-<li>Horizontal list groups with only one child now render the correct <code>border-radius</code></li>
-<li>Modified the <code>list-group-item</code> selectors to better support nested imports of Bootstrap&rsquo;s CSS</li>
-</ul>
-</li>
-<li><strong>Modals</strong>
-<ul>
-<li>Updated event listeners to ignore clicks on scrollbar clicks, clicks that start inside <code>.modal-dialog</code> but end outside it, and respond to clicks that start and end outside <code>.modal-dialog</code></li>
-</ul>
-</li>
-<li><strong>Pagination</strong>
-<ul>
-<li>Fixed incorrect <code>border-radius</code> values inside pagination components</li>
-</ul>
-</li>
-<li><strong>Scrollspy</strong>
-<ul>
-<li>Scrollspy threshold option is now configurable</li>
-</ul>
-</li>
-<li><strong>Tooltips &amp; Popovers</strong>
-<ul>
-<li>Reverted some tooltip plugin updates to prevent issues with <code>selector</code>, dynamic content, and disposed tooltips using <code>title</code></li>
-<li>Fixed <code>trigger: &quot;manual&quot;</code> showing and immediately hiding when calling <code>toggle()</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="dependencies">Dependencies</h2>
-<ul>
-<li>Updated Autoprefixer to fix warnings of the <code>color-adjust</code> property (thanks to <a href="https://github.com/julien-deramond/">@julien-deramond</a> on our team for reporting an issue upstream here)</li>
-</ul>
-<h2 id="docs">Docs</h2>
-<ul>
-<li>Searching our docs on mobile has been improved with the search field now always visible on responsive, narrow viewports</li>
-<li>Removed links to and mentions of Slack from across the codebase, as we intend to shutter Slack in favor of GitHub Discussions</li>
-<li>Reintroduced proper <code>outline</code> styles for docs code samples and buttons when <code>:not(:focus-visible)</code></li>
-</ul>
-<h2 id="farewell-slack">Farewell, Slack!</h2>
-<p>As mentioned over a month ago, we made the decision to close down our community Slack channel. Slack isn&rsquo;t great at managing a large scale community and it&rsquo;s prohibitively expensive as well for a community the size of ours (the Slack was over 45,000 people!). Instead of using Slack or similar tool, we&rsquo;re encouraging folks to use our Discussions tab on GitHub.</p>
-<p><strong><a href="https://github.com/twbs/bootstrap/discussions">Explore Bootstrap discussions</a></strong></p>
-<h2 id="examples-repo">Examples repo</h2>
-<p><a href="https://github.com/twbs/examples"><img src="/assets/img/2022/09/examples.png" class="d-block img-fluid mb-2 rounded border" alt="Examples" loading="lazy" width="2000" height="1000">
-</a></p>
-<p>Make sure to checkout (pun intended!) our latest project, the <a href="https://github.com/twbs/examples">twbs/examples repository</a>! The examples project includes functional demos for all sorts of environments and JS frameworks, with more planned! You can even open every example in StackBlitz and edit them in the browser.</p>
-<ul>
-<li><a href="https://github.com/twbs/examples/tree/main/starter/">Starter</a> – CDN links for our CSS and JS</li>
-<li><a href="https://github.com/twbs/examples/tree/main/sass-js/">Sass &amp; JS</a> — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm</li>
-<li><a href="https://github.com/twbs/examples/tree/main/sass-js-esm/">Sass &amp; ESM JS</a> — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim</li>
-<li><a href="https://github.com/twbs/examples/tree/main/webpack/">Webpack</a> - Import and bundle Sass and JS with Webpack</li>
-<li><a href="https://github.com/twbs/examples/tree/main/parcel/">Parcel</a> - Sass, JS via Parcel</li>
-<li><a href="https://github.com/twbs/examples/tree/main/vite/">Vite</a> - Sass, JS via Vite</li>
-<li><a href="https://github.com/twbs/examples/tree/main/icons-font/">Bootstrap Icons font</a> - Import and compile Sass, Stylelint, PurgeCSS, and our icon font</li>
-</ul>
-<p><strong>Have an idea for a new starter example?</strong> Feel free to open an issue or pull request!</p>
-<h2 id="v4-starter-project">v4 starter project</h2>
-<p><a href="https://github.com/twbs/bootstrap-npm-starter"><img src="/assets/img/2022/09/bnpm.png" class="d-block img-fluid mb-2 rounded border" alt="npm starter" loading="lazy" width="2000" height="1000">
-</a></p>
-<p>We&rsquo;ve shipped a v2.0.0 update to the <a href="https://github.com/twbs/bootstrap-npm-starter">twbs/bootstrap-npm-starter project</a>. This release includes Bootstrap v4.6.2, Bootstrap Icons v1.9.1, a new live reload feature for local development, and several dependency updates. This project will remain dedicated to Bootstrap 4 while our <a href="https://github.com/twbs/examples">twbs/examples</a> repo will focus on v5 and future major releases.</p>
-<h2 id="get-the-release">Get the release</h2>
-<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.2.1
-</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.2.1">Read the GitHub v5.2.1 changelog</a> for a complete list of changes in this release.</p>
 <h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
