@@ -13,7 +13,8 @@ Once again, if you're new to the v5.3.0 alpha releases, please read through the 
 
 Here's a look at what's changed in this quick release:
 
-- Added a check for interpolated variables to fix compilation errors with Node Sass when using Sass variables in `calc()` functions.
+- Fixed wrong interpolated variables with node-sass/Hugo.
+- Added a check for interpolated variables to catch compilation errors with Node Sass when using Sass variables in `calc()` functions.
 - Started using `--bs-border-radius` variables across more components.
 - Added `.d-inline-grid` utility class.
 - Fixed `.tooltip-inner` placement when using variations in `fallbackPlacements`.
