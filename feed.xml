@@ -6,11 +6,11 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Apr 2023 14:40:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 07:35:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bootstrap 5.3.0-alpha3</title>
       <link>https://blog.getbootstrap.com/2023/04/03/bootstrap-5-3-0-alpha3/</link>
-      <pubDate>Mon, 03 Apr 2023 14:40:00 +0000</pubDate>
+      <pubDate>Mon, 03 Apr 2023 07:35:00 +0000</pubDate>
       
       <guid>https://blog.getbootstrap.com/2023/04/03/bootstrap-5-3-0-alpha3/</guid>
       <description>&lt;p&gt;Hot on the heels of our second alpha, we&amp;rsquo;re releasing a third (and unexpected) alpha for v5.3.0 today with some fixes for some Node Sass compilation errors. In addition, we&amp;rsquo;ve added a handful of other updates. We&amp;rsquo;re still on target to ship our stable release soon!&lt;/p&gt;
