@@ -258,7 +258,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2023/03/24/bootstrap-5-3-0-alpha2/" class="text-decoration-none">Bootstrap 5.3.0-alpha2</a>
+          <a href="/2023/04/03/bootstrap-5-3-0-alpha3/" class="text-decoration-none">Bootstrap 5.3.0-alpha3</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -266,6 +266,49 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="03 Apr 23 14:40 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+April 03, 2023</span>
+</div>
+
+
+        
+
+        <p>Hot on the heels of our second alpha, we&rsquo;re releasing a third (and unexpected) alpha for v5.3.0 today with some fixes for some Node Sass compilation errors. In addition, we&rsquo;ve added a handful of other updates. We&rsquo;re still on target to ship our stable release soon!</p>
+<p>Once again, if you&rsquo;re new to the v5.3.0 alpha releases, please read through the <a href="https://getbootstrap.com/docs/5.3/migration/#v530-alpha1">Migration guide</a> for the first alpha and last month&rsquo;s <a href="https://getbootstrap.com/docs/5.3/migration/#v530-alpha2">second alpha</a>.</p>
+<p>Here&rsquo;s a look at what&rsquo;s changed in this quick release:</p>
+<ul>
+<li>Fixed wrong interpolated variables with node-sass/Hugo.</li>
+<li>Added a check for interpolated variables to catch compilation errors with Node Sass when using Sass variables in <code>calc()</code> functions.</li>
+<li>Started using <code>--bs-border-radius</code> variables across more components.</li>
+<li>Added <code>.d-inline-grid</code> utility class.</li>
+<li>Fixed <code>.tooltip-inner</code> placement when using variations in <code>fallbackPlacements</code>.</li>
+<li>Fix selectors for dark mode carousel overrides when compiling with <code>$color-mode-type: media-query</code>.</li>
+<li>Updated the styling of floating labels when &ldquo;floated&rdquo; to include a <code>background-color</code> to help with multiple lines of text in <code>textarea</code>s. This also fixes the colors when form elements are disabled in floating forms.</li>
+<li>Updated RFS to v10.0.0.</li>
+</ul>
+<h2 id="get-the-release">Get the release</h2>
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.3.0-alpha3
+</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.3.0-alpha3">Read the GitHub v5.3.0-alpha3 changelog</a> for a complete list of changes in this release.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2023/03/24/bootstrap-5-3-0-alpha2/" class="text-decoration-none">Bootstrap 5.3.0-alpha2</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="24 Mar 23 14:40 UTC">
@@ -566,82 +609,6 @@ November 11, 2022</span>
 </span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.9.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.9.0/bootstrap-icons-1.9.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
 <h2 id="figma">Figma</h2>
 <p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2022/10/03/bootstrap-5-2-2/" class="text-decoration-none">Bootstrap 5.2.2</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="03 Oct 22 08:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-October 03, 2022</span>
-</div>
-
-
-        
-
-        <p>Bootstrap v5.2.2 has landed with new bug fixes and documentation updates—keep reading to see what&rsquo;s changed!</p>
-<h2 id="highlights">Highlights</h2>
-<ul>
-<li><strong>Accordion</strong>
-<ul>
-<li>Use Sass variable for the accordion color instead of an invalid CSS variable</li>
-</ul>
-</li>
-<li><strong>Buttons</strong>
-<ul>
-<li>Undo changes to <code>.btn:hover</code> from v5.2.1. We now explicitly target <code>.btn-check</code> styles instead.</li>
-</ul>
-</li>
-<li><strong>Dropdowns</strong>
-<ul>
-<li>Temporarily restore ability for dropdowns to work without an explicit <code>data</code> attribute (will be removed again in v6)</li>
-</ul>
-</li>
-<li><strong>Modals</strong>
-<ul>
-<li>Improve modal event listeners</li>
-<li>Use <code>&lt;h1&gt;</code> for all <code>.modal-title</code> instances in our docs</li>
-</ul>
-</li>
-<li><strong>Tables</strong>
-<ul>
-<li>Don&rsquo;t redefine <code>$border-color</code> in <code>table-variant()</code> mixin</li>
-</ul>
-</li>
-<li><strong>Tabs</strong>
-<ul>
-<li>Tabs no longer autofocus and cause pages to jump on <code>tab.show()</code></li>
-<li>Fix <code>.active</code> class toggling of tabs within dropdowns</li>
-</ul>
-</li>
-<li><strong>Toasts</strong>
-<ul>
-<li>Properly set toast <code>z-index</code> on <code>.toast-container</code> as opposed to individual <code>.toast</code>s that don&rsquo;t receive any other positioning</li>
-</ul>
-</li>
-<li><strong>Tooltips</strong>
-<ul>
-<li>Fix tooltip selectors with <code>title</code> attribute on dynamically created elements</li>
-</ul>
-</li>
-</ul>
-<h2 id="get-the-release">Get the release</h2>
-<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.2.2
-</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.2.2">Read the GitHub v5.2.2 changelog</a> for a complete list of changes in this release.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
       </div>
   </div>

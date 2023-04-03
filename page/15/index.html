@@ -258,7 +258,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2015/11/24/bootstrap-3-3-6-released/" class="text-decoration-none">Bootstrap 3.3.6 released</a>
+          <a href="/2015/12/08/bootstrap-4-alpha-2/" class="text-decoration-none">New Bootstrap 4 alpha</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -266,6 +266,53 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="08 Dec 15 00:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+December 08, 2015</span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/t4QK8RxCAwo?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>Bootstrap 4 alpha 2 is now available. Since <a href="/2015/08/19/bootstrap-4-alpha/">our last release</a>, nearly 100 people have pushed over 900 commits to v4 and we&rsquo;ve closed over 400 issues and pull requests. Those numbers are outrageously awesome to see, and we&rsquo;ve still got a ton of work ahead of us this year for v4.</p>
+<p>As mentioned in <a href="/2015/08/19/bootstrap-4-alpha/">our last post</a>, the general plan for v4&rsquo;s development starts with a few alpha releases. We&rsquo;re a little behind on that, but should be getting caught up as the year winds down. Expect another alpha or two this month to really round things out.</p>
+<p>Here&rsquo;s a look at a handful of the changes since our last alpha:</p>
+<ul>
+<li>Overhauled spacing utilities to use a numerical tiering (to avoid confusion with grid tiers).</li>
+<li>Continued refactoring efforts to replace markup-specific selectors with classes across several components (including pagination, lists, and more). <em>Still more to do here with additional components.</em></li>
+<li>Reverted media queries and grid containers from rems to pixels as viewports are not affected by font-size. See <a href="https://github.com/twbs/bootstrap/pull/17403">#17403</a> for details. <em>We&rsquo;ve got a ton of grid work left, too. Feel free to follow along with <a href="https://github.com/twbs/bootstrap/issues/18471">#18471</a>.</em></li>
+<li>Reverted <code>.0625rem</code> width borders to <code>1px</code> for more consistent component borders that avoid zoom and font-size bugs across browsers.</li>
+<li>Renamed <code>.img-responsive</code> to <code>.img-fluid</code> to avoid future confusion on the various responsive image solutions out there.</li>
+<li>Replaced ZeroClipboard with clipboard.js for Flash-independent copy buttons.</li>
+<li>Inputs and buttons now share the same border variable to ensure components are always sized similarly.</li>
+<li>Updated all pseudo-element selectors to use the spec&rsquo;s preferred double colon (e.g., <code>::before</code> as opposed to <code>:before</code>).</li>
+<li>Cards now have outline variants and mixins to support extending base classes further.</li>
+<li>Utility classes for floats and text alignment now have responsive ranges. <em>This means we&rsquo;ve dropped the non-responsive classes to avoid duplication.</em></li>
+<li>Added support for jQuery 2.</li>
+<li>And hundreds more Sass improvements, bug fixes, documentation updates, and more.</li>
+</ul>
+<p>We highly encourage folks to skim through <a href="https://github.com/twbs/bootstrap/issues?q=milestone%3Av4.0.0-alpha.2+is%3Aclosed">the second alpha&rsquo;s milestone on GitHub</a> for a better idea of what&rsquo;s changed across the board. You can also follow along with other v4 efforts with the <a href="https://github.com/twbs/bootstrap/labels/v4"><code>v4</code> label</a> on our issue tracker.</p>
+<p><strong>Ready to dive in? Then <a href="https://v4-alpha.getbootstrap.com/">head to the v4 alpha docs!</a></strong></p>
+<p>Be sure to <a href="https://bootstrap-slack.herokuapp.com">join our official Slack room!</a> and dive into <a href="https://github.com/twbs/bootstrap/issues/">our issue tracker</a> with bug reports, questions, and general feedback whenever possible.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2015/11/24/bootstrap-3-3-6-released/" class="text-decoration-none">Bootstrap 3.3.6 released</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="24 Nov 15 00:00 UTC">
@@ -276,7 +323,7 @@
 November 24, 2015</span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/l-O5IHVhWj0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/l-O5IHVhWj0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -476,60 +523,6 @@ June 15, 2015</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2015/03/16/bootstrap-3-3-4-released/" class="text-decoration-none">Bootstrap 3.3.4 released</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/cvrebert" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/cvrebert.png?size=32, https://github.com/cvrebert.png?size=64 2x"
-                                     src="https://github.com/cvrebert.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@cvrebert</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="16 Mar 15 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-March 16, 2015</span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/_dx0qWHL7dc?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p>Bootstrap 3.3.4 is here! This release has been focused on bug fixes and documentation improvements. We&rsquo;ve had over 325 commits from 29 contributors since our last release! Nice.</p>
-<p>Here are some of the highlights:</p>
-<ul>
-<li>Fixes for a few significant bugs in the Modal plugin.</li>
-<li>Fixes for a couple annoying bugs in the ScrollSpy plugin.</li>
-<li><a href="https://atmospherejs.com/twbs/bootstrap">Bootstrap is now also available as a Meteor package in the Atmosphere package index.</a></li>
-<li>Convenience aliases have been added for currency symbol Glyphicons based on their related 3-letter ISO currency codes. For example, <code>.glyphicon-rub</code> is a new alias for <code>.glyphicon-ruble</code>, the currency symbol for the Russian ruble (RUB).</li>
-<li>We have deployed <a href="https://www.bryanbraun.com/anchorjs/">AnchorJS</a> in our documentation to make it easier to link to specific sections within the docs.</li>
-</ul>
-<p>For a complete breakdown, <a href="https://github.com/twbs/bootstrap/releases/tag/v3.3.4">read the release changelog</a> or the <a href="https://github.com/twbs/bootstrap/issues?q=milestone%3Av3.3.4+is%3Aclosed">v3.3.4 milestone</a>.</p>
-<h2 id="what-happened-to-v333">What happened to v3.3.3?</h2>
-<p>Since our previous release was v3.3.2, you&rsquo;re probably wondering why this release isn&rsquo;t v3.3.3 instead. Basically, <a href="https://github.com/twbs/bootstrap-sass">the official Sass port of Bootstrap</a> had <a href="https://github.com/twbs/bootstrap-sass/commit/daeb43dcc7b0ab06328acaca0549ee68c039aaa6">a Sass-specific bug</a> in their v3.3.2 release, so they immediately issued a follow-up release to fix the bug. This bugfix release was initially numbered as v3.3.2+1. However, this 4-digit version number scheme has caused grief with some tools, so with the blessing of the Core Team, the Sass Team took this opportunity to switch to a more vanilla 3-digit SemVer numbering scheme. Thus, bootstrap-sass v3.3.2+1 was re-released as <a href="https://github.com/twbs/bootstrap-sass/releases/tag/v3.3.3">bootstrap-sass v3.3.3</a>, with only the version number changed compared to v3.3.2+1.</p>
-<p>To avoid confusion regarding which bootstrap-sass release(s) correspond to which upstream Bootstrap release, Bootstrap&rsquo;s version numbering will henceforth skip over any bootstrap-sass patch release version numbers. Thus, the patch digit (i.e. the 3rd digit) of bootstrap-sass&rsquo;s version number may be ahead of Bootstrap&rsquo;s due to Sass-specific fixes, and the next Bootstrap release&rsquo;s number will always be greater than the previous bootstrap-sass release&rsquo;s number.</p>
-<h2 id="download-bootstrap">Download Bootstrap</h2>
-<p>Download the latest release—source code, compiled assets, and documentation—as a ZIP file directly from GitHub:</p>
-<p><a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.3.4.zip">Download Bootstrap 3.3.4</a></p>
-<p>Hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a> for more options. Also, remember <a href="https://www.npmjs.com/package/bootstrap">we&rsquo;re available on npm</a>, too.</p>
-<h2 id="bootstrap-cdn">Bootstrap CDN</h2>
-<p>After reviewing the changelog, update your CDN links to point to the v3.3.4 files:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Optional theme --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
       </div>
   </div>
