@@ -19,7 +19,7 @@ Here's a look at what's changed in this quick release:
 - Added `.d-inline-grid` utility class.
 - Fixed `.tooltip-inner` placement when using variations in `fallbackPlacements`.
 - Fix selectors for dark mode carousel overrides when compiling with `$color-mode-type: media-query`.
-- Updated the styling of floating labels when "floated" to include a `background-color` to help with multiple lines of text in textareas. This also fixes the colors when form elements are disabled in floating forms.
+- Updated the styling of floating labels when "floated" to include a `background-color` to help with multiple lines of text in `textarea`s. This also fixes the colors when form elements are disabled in floating forms.
 - Updated RFS to v10.0.0.
 
 ## Get the release
