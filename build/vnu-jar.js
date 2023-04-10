@@ -28,9 +28,7 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
     // TODO report the issue upstream in Hugo
     'Duplicate ID.*',
     'The first occurrence of ID.*',
-    'Self-closing tag syntax in text/html documents is widely discouraged.*',
-    // TODO remove this when fixed in vnu-jar
-    'Attribute “imagesrcset” not allowed on element “link” at this point.*'
+    'Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.*'
   ].join('|')
 
   const args = [
