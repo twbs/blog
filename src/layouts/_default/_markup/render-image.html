@@ -1,5 +1,5 @@
 {{- $src := .Destination | safeURL -}}
-{{- $config := imageConfig (add "/src/static" $src) -}}
+{{- $config := imageConfig (path.Join "src/static" $src) -}}
 {{- $classes := "d-block img-fluid mb-2 rounded border" -}}
 
 <img src="{{ $src }}" class="{{ $classes }}" alt="{{ .Text }}" loading="lazy" width="{{ $config.Width }}" height="{{ $config.Height }}">
