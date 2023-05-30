@@ -60,6 +60,9 @@
   <symbol id="archive" viewBox="0 0 16 16">
     <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
   </symbol>
+  <symbol id="arrow-right-short" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+  </symbol>
   <symbol id="check2" viewBox="0 0 16 16">
     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
   </symbol>
@@ -255,7 +258,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2023/04/03/bootstrap-5-3-0-alpha3/" class="text-decoration-none">Bootstrap 5.3.0-alpha3</a>
+          <a href="/2023/05/30/bootstrap-5-3-0/" class="text-decoration-none">Bootstrap 5.3.0</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -263,6 +266,341 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="30 May 23 07:35 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+May 30, 2023</span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/GC5E8ie2pdM?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>It&rsquo;s official, the final stable release of v5.3.0 has landed! It&rsquo;s been a monumental effort to revamp our codebase for CSS variables and color modes, one that will see continued changes leading up to an eventual Bootstrap 6. And we&rsquo;re so excited to finally ship it!</p>
+<p>On top of all the work that&rsquo;s gone into this release, a lot has happened behind the scenes since we shipped our pre-releases. Keep reading to learn everything that&rsquo;s new in v5.3.0.</p>
+<h2 id="whats-new">What&rsquo;s new</h2>
+<ul>
+<li><a href="#dark-mode">Dark mode support</a></li>
+<li><a href="#custom-color-modes">Custom color modes support</a> for themes beyond light and dark</li>
+<li><a href="#refreshed-color-palette">Extended color palette</a> for theme colors that adapt to color modes</li>
+<li><a href="#new-link-helpers-and-utilities">New link helpers</a>, link utilities, and focus ring helpers</li>
+<li><a href="#new-nav-underline">New nav underline</a> variant</li>
+<li>Several new utilities, bug fixes, and <a href="#and-much-more">much more</a>!</li>
+</ul>
+<p>Keep reading for the deep dive on all the top new features.</p>
+<h2 id="dark-mode">Dark mode</h2>
+<p>Bootstrap&rsquo;s core has been rewritten to provide first-class support for dark mode. Moreover, Bootstrap now supports any number of color modes, allowing you to build your own custom themes or more nuanced color modes. Let&rsquo;s take a look at how our new dark mode works first.</p>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/color-modes/"><img src="/assets/img/2022/12/docs-color-modes.png" class="d-block img-fluid mb-2 rounded border" alt="New homepage" loading="lazy" width="2880" height="1800">
+</a></p>
+<p><strong>Bootstrap&rsquo;s new dark mode is opt-in by default</strong>, meaning you&rsquo;ll need to set a <code>data-bs-theme</code> attribute on the root <code>&lt;html&gt;</code> element to change the entire page&rsquo;s design. <em>This was done to best support custom color modes beyond light and dark—more on that later. It also helps folks who aren&rsquo;t ready for dark mode in their own designs.</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span> <span class="na">data-bs-theme</span><span class="o">=</span><span class="s">&#34;dark&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="c">&lt;!-- ... --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Need a more isolated dark mode? You can also set the color mode on a parent element like the <code>.dropdown</code> shown below. This will only affect the dropdown and its children instead of the entire page.</p>
+<!-- markdownlint-disable no-inline-html -->
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0 d-flex justify-content-between">
+<div class="dropdown" data-bs-theme="light">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
+    Default dropdown
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="dropdown" data-bs-theme="dark">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDark" data-bs-toggle="dropdown" aria-expanded="false">
+    Dark dropdown
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+</div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">data-bs-theme</span><span class="o">=</span><span class="s">&#34;light&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary dropdown-toggle&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dropdownMenuButtonLight&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Default dropdown
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-menu&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dropdownMenuButtonLight&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item active&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Another action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Something else here<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">hr</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-divider&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Separated link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">data-bs-theme</span><span class="o">=</span><span class="s">&#34;dark&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary dropdown-toggle&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dropdownMenuButtonDark&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Dark dropdown
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-menu&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dropdownMenuButtonDark&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item active&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Another action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Something else here<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">hr</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-divider&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Separated link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
+<!-- markdownlint-enable no-inline-html -->
+<h3 id="new-color-mode-mixin">New <code>color-mode()</code> mixin</h3>
+<p>Dark mode styles are written with and generated through the new <a href="https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass"><code>color-mode()</code> Sass mixin</a>. The mixin allows you to write styles specific to a particular color mode, like dark mode.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> color-mode</span><span class="p">(</span><span class="ni">dark</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nc">.element</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-primary-text-emphasis</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="na">background-color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-primary-bg-subtle</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Together with the new <code>$color-mode-type</code> Sass variable, you can also change how color modes behave in Bootstrap. The default value is <code>data</code>, which tells Bootstrap to generate CSS selectors that scope the color mode&rsquo;s styles to the <code>data</code> attributes you&rsquo;ve seen above.</p>
+<p>The other supported value is <code>media-query</code>, which generates media query selectors instead. This is helpful for those who want light and dark modes, automatically, and without a user override.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$color-mode-type</span><span class="o">:</span> <span class="n">media-query</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> color-mode</span><span class="p">(</span><span class="ni">dark</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nc">.element</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-primary-text-emphasis</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="na">background-color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-primary-bg-subtle</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Which outputs to:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">prefers-color-scheme</span><span class="o">:</span> <span class="nt">dark</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs</span><span class="o">-</span><span class="n">primary</span><span class="o">-</span><span class="kc">text</span><span class="o">-</span><span class="n">emphasis</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs</span><span class="o">-</span><span class="n">primary</span><span class="o">-</span><span class="n">bg</span><span class="o">-</span><span class="n">subtle</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><a href="https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass">Read the new color mode docs</a> to learn more.</p>
+<h3 id="toggling-color-modes">Toggling color modes</h3>
+<p>While we haven&rsquo;t written a new JavaScript plugin for toggling color modes, we&rsquo;ve written a great script for <a href="https://getbootstrap.com/docs/5.3/customize/color-modes/#javascript">toggling color modes via <code>data-bs-theme</code></a> in our docs. Our implementation defaults to a user&rsquo;s operating system color mode (auto), but also allows users to override that with a particular mode (light or dark) that&rsquo;s recorded in local storage for easy reference on future page loads. You can use and adapt this script as needed.</p>
+<h3 id="new-color-mode-variables">New color mode variables</h3>
+<p>There&rsquo;s also a new <code>_variables-dark.scss</code> stylesheet that houses dark mode-specific Sass variables. This is where we modify mostly global values, and some component-specific values, for dark mode. We recommend creating separate Sass stylesheets for additional custom color modes (e.g., a blue theme might have <code>_variables-blue.scss</code>). <em>We expect this stylesheet to be simplified in our next major release as we continue to streamline the code base.</em>)</p>
+<p>Dark mode colors are all derived from our theme colors, meaning you can easily change the color mode palettes by updating the original theme colors. This means we&rsquo;re not using our already tinted and shaded colors (e.g., <code>shade-color($danger, 60%)</code> instead of <code>red-800</code> for the new danger emphasis color).</p>
+<p>Bootstrap v5.3.0 ships with dark mode enabled, but you can also disable it by updating the boolean <code>$enable-dark-mode</code> Sass variable.</p>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/color-modes/">Read more in the new color mode docs.</a></p>
+<h3 id="enabling-dark-mode">Enabling dark mode</h3>
+<p>If you&rsquo;re using the CDN or starter template, using the new color modes is straightforward. Add the <code>data-bs-theme</code> attribute with <code>light</code> or <code>dark</code> values to the <code>&lt;html&gt;</code> element and you&rsquo;ll be using either the light or dark theme.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span> <span class="na">data-bs-theme</span><span class="o">=</span><span class="s">&#34;dark&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Bootstrap demo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="custom-color-modes">Custom color modes</h2>
+<p>When we set out to add dark mode support to Bootstrap, we didn&rsquo;t want to just add a dark mode. We wanted to build the foundations for a color mode system that could be used to create any number of themes and color modes. That&rsquo;s why we lead with the <code>data-bs-theme</code> attribute and the new <code>color-mode()</code> Sass mixin, and why we&rsquo;ve added so many new CSS variables in these latest releases.</p>
+<p>To add a custom color mode, create your own <code>data-bs-theme</code> selector with a custom value as the name of your color mode, then modify any Sass and CSS variables as needed. We created a separate <code>_variables-dark.scss</code> stylesheet to house Bootstrap&rsquo;s dark mode-specific Sass variables, but that&rsquo;s not required for you.</p>
+<p>For example, you can create a &ldquo;blue theme&rdquo; with the selector <code>data-bs-theme=&quot;blue&quot;</code>. In your custom Sass or CSS file, add the new selector and override any global or component CSS variables as needed. If you&rsquo;re using Sass, you can also use Sass&rsquo;s functions within your CSS variable overrides.</p>
+<p><em>Heads up! Applying color modes to elements that aren&rsquo;t the <code>&lt;html&gt;</code> or <code>&lt;body&gt;</code> elements requires classes like <code>.text-body</code> and <code>.bg-body</code>. This is because many HTML elements have no set <code>color</code> or <code>background</code> to style until you add them yourself. We&rsquo;ve included them here for you just in case.</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="o">[</span><span class="nt">data-bs-theme</span><span class="o">=</span><span class="s2">&#34;blue&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// CSS variable overrides and styles
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">data-bs-theme</span><span class="o">=</span><span class="s">&#34;blue&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="refreshed-color-palette">Refreshed color palette</h2>
+<p>We&rsquo;ve revamped our color palette to include all new Sass variables, CSS variables, and utilities for setting <code>color</code>, <code>background-color</code>, and <code>border-color</code>. Our foreground and background colors have been expanded to include new secondary, tertiary, and emphasis colors, while our theme colors have been expanded on to include their subtle background colors, subtle border colors, and darker text colors.</p>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/color/#colors">Check out the new colors docs.</a></p>
+<p>We’ve rebuilt some components (like list groups and alerts) to use these new variables in their source Sass and compiled CSS so that they respond to the color mode changes.</p>
+<!-- markdownlint-disable no-inline-html -->
+<div class="d-flex gap-3">
+  <a href="https://getbootstrap.com/docs/5.3/customize/colors/">
+    <img src="/assets/img/2023/05/colors-light-mode.png" alt="New colors in light mode" class="rounded-2 img-thumbnail" loading="lazy" width="1610" height="5778">
+  </a>
+  <a href="https://getbootstrap.com/docs/5.3/customize/colors/">
+    <img src="/assets/img/2023/05/colors-dark-mode.png" alt="New colors in dark mode" class="rounded-2 img-thumbnail" loading="lazy" width="1610" height="5778">
+  </a>
+</div>
+<!-- markdownlint-enable no-inline-html -->
+<h2 id="new-link-helpers-and-utilities">New link helpers and utilities</h2>
+<p>Link styling has infinitely better in v5.3.0 with a slew of all-new link helpers and utilities. First up, we&rsquo;ve added styles to place icons like <a href="https://icons.getbootstrap.com">Bootstrap Icons</a> alongside links with <a href="https://getbootstrap.com/docs/5.3/helpers/icon-link/">the new icon link helper</a>.</p>
+<!-- markdownlint-disable no-inline-html -->
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+<a class="icon-link" href="#">
+  <svg class="bi" aria-hidden="true"><use xlink:href="#archive"></use></svg>
+  Icon link
+</a>
+</div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-link&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;#archive&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">use</span><span class="p">&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  Icon link
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+<a class="icon-link" href="#">
+  Icon link
+  <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right-short"></use></svg>
+</a>
+</div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-link&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  Icon link
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;#arrow-right-short&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">use</span><span class="p">&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
+<!-- markdownlint-enable no-inline-html -->
+<p>Our other new helper is a <a href="https://getbootstrap.com/docs/5.3/helpers/focus-ring/">new focus ring helper</a> for removing the default <code>outline</code> and setting a custom <code>box-shadow</code> focus ring.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  Custom focus ring
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>On the utilities side, we have new classes for setting link color opacity, underline offset, underline color, and underline opacity. <a href="https://getbootstrap.com/docs/5.3/utilities/link/">Explore the new links utilities.</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-opacity-10&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Link opacity 10<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-opacity-25&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Link opacity 25<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-opacity-50&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Link opacity 50<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-opacity-75&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Link opacity 75<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-opacity-100&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Link opacity 100<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Default link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-offset-1&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Offset 1 link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-offset-2&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Offset 2 link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-offset-3&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Offset 3 link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&#34;</span><span class="p">&gt;</span>Custom link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Lastly, we&rsquo;ve added a new <code>.link-body-emphasis</code> helper alongside our <a href="https://getbootstrap.com/docs/5.3/helpers/colored-links/">colored links</a>. This creates a colored link using our color mode responsive emphasis color.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover&#34;</span><span class="p">&gt;</span>Emphasis link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="new-nav-underline">New nav underline</h2>
+<p>There&rsquo;s a new <code>.nav</code> variant and modifier class with <code>.nav-underline</code>. Add <code>.nav-underline</code> to a <code>.nav</code> to get a simpler bottom border under the active nav link. <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#underline">See the docs for an example.</a></p>
+<!-- markdownlint-disable no-inline-html -->
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+<ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+</div><div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
+        <small class="font-monospace text-body-secondary text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav nav-underline&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-item&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-link active&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;page&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Active<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-item&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-link&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-item&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-link&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-item&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-link disabled&#34;</span><span class="p">&gt;</span>Disabled<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
+<!-- markdownlint-enable no-inline-html -->
+<h2 id="and-much-more">And much more!</h2>
+<p>Beyond all the color mode updates, new helpers, and new utilities, we have a ton of other quality-of-life updates in this release. Here&rsquo;s a quick rundown of the highlights:</p>
+<ul>
+<li>
+<p>Navs now have new <code>:focus-visible</code> styles that better match our custom button focus styles.</p>
+</li>
+<li>
+<p>CSS variable-based <code>border-width</code> utilities have been reverted to set their property directly (as was done before v5.2.0). This avoids inheritance issues across nested elements, including tables.</p>
+</li>
+<li>
+<p>Added new <code>.border-black</code> utility to match our <code>.text-black</code> and <code>.bg-black</code> utilities.</p>
+</li>
+<li>
+<p>Deprecated the <code>.text-muted</code> utility and <code>$text-muted</code> Sass variable. It&rsquo;s been replaced by <code>.text-body-secondary</code> and <code>$body-secondary-color</code>.</p>
+</li>
+<li>
+<p>Added a check for interpolated variables to catch compilation errors with Node Sass when using Sass variables in <code>calc()</code> functions.</p>
+</li>
+<li>
+<p>Started using <code>--bs-border-radius</code> variables across more components.</p>
+</li>
+<li>
+<p>Added <code>.d-inline-grid</code> utility class.</p>
+</li>
+<li>
+<p>Fixed <code>.tooltip-inner</code> placement when using variations in <code>fallbackPlacements</code>.</p>
+</li>
+<li>
+<p>Fix selectors for dark mode carousel overrides when compiling with <code>$color-mode-type: media-query</code>.</p>
+</li>
+<li>
+<p>Updated the styling of floating labels when &ldquo;floated&rdquo; to include a <code>background-color</code> to help with multiple lines of text in <code>textarea</code>s. This also fixes the colors when form elements are disabled in floating forms.</p>
+</li>
+<li>
+<p>Updated RFS to v10.0.0.</p>
+</li>
+</ul>
+<h2 id="next-up">Next up</h2>
+<p>We&rsquo;ll be shipping some patch releases for v5.3.x in the coming weeks to address any issues that come up. We&rsquo;ll also be working on v5.4.0, which will primarily focus on improvements to our utilities API and related code. Stay tuned for more updates on that front!</p>
+<h2 id="migrating-from-earlier-alphas">Migrating from earlier alphas</h2>
+<p>Have a read through the <a href="https://getbootstrap.com/docs/5.3/migration/#v530-alpha1">Migration guide</a> for the first alpha, or <a href="/2022/12/24/bootstrap-5-3-0-alpha1/">the blog post for the release announcement</a>, if you&rsquo;re just getting into v5.3.0.</p>
+<h2 id="get-the-release">Get the release</h2>
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.3.0
+</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.3.0">Read the GitHub v5.3.0 changelog</a> for a complete list of changes in this release.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2023/04/03/bootstrap-5-3-0-alpha3/" class="text-decoration-none">Bootstrap 5.3.0-alpha3</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="03 Apr 23 07:35 UTC">
@@ -551,61 +889,6 @@ November 22, 2022</span>
 </span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.2.3">Read the GitHub v5.2.3 changelog</a> for a complete list of changes in this release.</p>
 <h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2022/11/11/bootstrap-icons-1-10-0/" class="text-decoration-none">Bootstrap Icons v1.10.0</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="11 Nov 22 00:01 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-November 11, 2022</span>
-</div>
-
-
-        
-
-        <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.10.0</a> is here with nearly 150 new icons. This release includes tons of new variants for person, building, and database icons, plus new brands, rockets, road signs, globes, and many more. We&rsquo;re now at <strong>over 1,900 icons</strong>!</p>
-<h2 id="150-new-icons">150 new icons</h2>
-<p>Here&rsquo;s a quick look at all the new icons in v1.10.0:</p>
-<p><img src="/assets/img/2022/11/bootstrap-icons-v1100.png" class="d-block img-fluid mb-2 rounded border" alt="New love icons in v1.10.0" loading="lazy" width="1520" height="1664">
-</p>
-<p>Some highlights for the new icons include:</p>
-<ul>
-<li>22 new person icons</li>
-<li>26 new house icons</li>
-<li>24 new building icons, including a renamed <code>building</code> to <code>buildings</code></li>
-<li>22 new database icons</li>
-<li>24 new street sign icons</li>
-<li>New globe icons</li>
-<li>New EV, taxi, bus, and scooter transportation icons</li>
-<li>New rockets</li>
-<li>and more!</li>
-</ul>
-<p>We also fixed the fill rules for several  some issues across the docs, including:</p>
-<ul>
-<li>De-duped category names <code>Brand</code> and <code>Brands</code> to be just <code>Brand</code></li>
-<li>Updated tags on several icon pages for additional aliases</li>
-</ul>
-<p><em>Looking for more new icons? Head to the <a href="https://github.com/twbs/icons/issues">issue tracker</a> to check for open requests or submit a new one.</em></p>
-<h2 id="install">Install</h2>
-<p>To get started, install or update via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
-</span></span></code></pre></div><p>Or Composer:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">composer require twbs/bootstrap-icons
-</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.9.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.9.0/bootstrap-icons-1.9.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
-<h2 id="figma">Figma</h2>
-<p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
 
       </div>
   </div>

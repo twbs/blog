@@ -60,6 +60,9 @@
   <symbol id="archive" viewBox="0 0 16 16">
     <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
   </symbol>
+  <symbol id="arrow-right-short" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+  </symbol>
   <symbol id="check2" viewBox="0 0 16 16">
     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
   </symbol>
@@ -255,7 +258,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2022/10/03/bootstrap-5-2-2/" class="text-decoration-none">Bootstrap 5.2.2</a>
+          <a href="/2022/11/11/bootstrap-icons-1-10-0/" class="text-decoration-none">Bootstrap Icons v1.10.0</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -263,6 +266,61 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="11 Nov 22 00:01 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+November 11, 2022</span>
+</div>
+
+
+        
+
+        <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.10.0</a> is here with nearly 150 new icons. This release includes tons of new variants for person, building, and database icons, plus new brands, rockets, road signs, globes, and many more. We&rsquo;re now at <strong>over 1,900 icons</strong>!</p>
+<h2 id="150-new-icons">150 new icons</h2>
+<p>Here&rsquo;s a quick look at all the new icons in v1.10.0:</p>
+<p><img src="/assets/img/2022/11/bootstrap-icons-v1100.png" class="d-block img-fluid mb-2 rounded border" alt="New love icons in v1.10.0" loading="lazy" width="1520" height="1664">
+</p>
+<p>Some highlights for the new icons include:</p>
+<ul>
+<li>22 new person icons</li>
+<li>26 new house icons</li>
+<li>24 new building icons, including a renamed <code>building</code> to <code>buildings</code></li>
+<li>22 new database icons</li>
+<li>24 new street sign icons</li>
+<li>New globe icons</li>
+<li>New EV, taxi, bus, and scooter transportation icons</li>
+<li>New rockets</li>
+<li>and more!</li>
+</ul>
+<p>We also fixed the fill rules for several  some issues across the docs, including:</p>
+<ul>
+<li>De-duped category names <code>Brand</code> and <code>Brands</code> to be just <code>Brand</code></li>
+<li>Updated tags on several icon pages for additional aliases</li>
+</ul>
+<p><em>Looking for more new icons? Head to the <a href="https://github.com/twbs/icons/issues">issue tracker</a> to check for open requests or submit a new one.</em></p>
+<h2 id="install">Install</h2>
+<p>To get started, install or update via npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
+</span></span></code></pre></div><p>Or Composer:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">composer require twbs/bootstrap-icons
+</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.9.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.9.0/bootstrap-icons-1.9.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+<h2 id="figma">Figma</h2>
+<p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2022/10/03/bootstrap-5-2-2/" class="text-decoration-none">Bootstrap 5.2.2</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="03 Oct 22 08:00 UTC">
@@ -662,58 +720,6 @@ July 19, 2022</span>
 <p>From here, we don&rsquo;t expect to ship any meaningful updates to v4.6.x other than major security or dependency updates. Everything will focus on v5 and beyond after this release, starting with the stable release of v5.2.0. Bootstrap 4 will officially end of life January 1, 2023, though you&rsquo;re obviously welcome to continue using it longer than that. Follow our <a href="https://github.com/twbs/release">release repo</a> to stay in the loop on release maintenance status.</p>
 <h2 id="support-the-team">Support the team</h2>
 <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2022/07/13/bootstrap-icons-1-9-0/" class="text-decoration-none">Bootstrap Icons v1.9.0</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="13 Jul 22 00:01 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-July 13, 2022</span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/Z6_ZNW1DACE?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.9.0</a> is here with over 140 new and updated icons, including some longstanding requests for new brands, transportation options, numbers and letters, and so much more. With this release, we&rsquo;re now at <strong>over 1,800 icons</strong>!</p>
-<h2 id="140-new-icons">140+ new icons</h2>
-<p>Here&rsquo;s a quick look at all the new icons in v1.9.0:</p>
-<p><img src="/assets/img/2022/07/bootstrap-icons-v190.png" class="d-block img-fluid mb-2 rounded border" alt="New love icons in v1.9.0" loading="lazy" width="1544" height="1544">
-</p>
-<ul>
-<li>Tons of new brand icons including popular browsers, Ubuntu, Google Play, Android, Dropbox, and many more.</li>
-<li>New transportation icons including cars, trains, planes, fuel, and common road signs.</li>
-<li>New number and letter icons for 1-9, R, C, CC, H, and P (for use cases like registered trademark, copyright, Creative Commons, hospital or helicopter, and parking).</li>
-<li>New medical icons for prescriptions, pills, and viruses.</li>
-<li>New keyboard icons for tab and escape.</li>
-<li>New Universal Access cions.</li>
-<li>Redrawn cup icon, now with a steam variant for hot beverages.</li>
-<li>Fire, finally!</li>
-</ul>
-<p>There are a handful more in there as well, so have a look and put them to use in your next update! In addition, we&rsquo;ve updated our docs to include mention of Composer installs.</p>
-<p><em>Looking for more new icons? Head to the <a href="https://github.com/twbs/icons/issues">issue tracker</a> to check for open requests or submit a new one.</em></p>
-<h2 id="install">Install</h2>
-<p>To get started, install or update via npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
-</span></span></code></pre></div><p>Or Composer:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">composer require twbs/bootstrap-icons
-</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.9.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.9.0/bootstrap-icons-1.9.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
-<h2 id="figma">Figma</h2>
-<p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
 
       </div>
   </div>
