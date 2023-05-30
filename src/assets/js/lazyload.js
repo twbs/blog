@@ -1,8 +1,8 @@
-import LazyLoad from 'vanilla-lazyload'
+// import LazyLoad from 'vanilla-lazyload'
 
-const lazyLoadOptions = {
-  elements_selector: '.lazy',
-  threshold: 150
-}
+// const lazyLoadOptions = {
+//   elements_selector: '.lazy',
+//   threshold: 150
+// }
 
-new LazyLoad(lazyLoadOptions)
+// new LazyLoad(lazyLoadOptions)

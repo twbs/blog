@@ -4,6 +4,7 @@
 @import "variables";
 @import "ads";
 @import "buttons";
+@import "component-examples";
 @import "clipboard-js";
 @import "footer";
 @import "navbar";
@@ -21,18 +22,6 @@
 
 hr {
   margin-block: 2rem;
-}
-
-.highlight pre.chroma {
-  padding: 1.25rem;
-  margin: 0 0 1rem;
-  font-size: .875rem;
-  background-color: var(--bs-tertiary-bg);
-  border-radius: var(--bs-border-radius);
-
-  code {
-    word-wrap: normal;
-  }
 }
 
 // Quotes
@@ -118,6 +107,17 @@ table {
   h2 {
     margin-top: 1.5rem;
     @include font-size(1.75rem);
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+  }
+
+  > h1,
+  > h2,
+  > h3,
+  > h4 {
+    color: var(--bs-emphasis-color);
   }
 }
 

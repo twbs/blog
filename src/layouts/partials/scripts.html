@@ -6,8 +6,13 @@
   {{- $esbuildOptions = merge $esbuildOptions (dict "minify" "true") -}}
 {{- end -}}
 
-{{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | resources.Copy "/assets/js/lazyload.js" -}}
-{{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | resources.Copy "/assets/js/application.js" -}}
+{{- $vendor := resources.Match "js/vendor/*.js" -}}
+{{- $js := resources.Match "js/*.js" -}}
+{{- $targetDocsJSPath := path.Join "/" "assets/js/docs.js" -}}
+{{- $docsJs := append $js $vendor | resources.Concat $targetDocsJSPath -}}
 
-<script async src="{{ $lazyload.Permalink | relURL }}"></script>
-<script async src="{{ $application.Permalink | relURL }}"></script>
+{{- if eq hugo.Environment "production" -}}
+  {{- $docsJs = $docsJs | resources.Minify -}}
+{{- end }}
+
+<script async src="{{ $docsJs.Permalink | relURL }}"></script>
