@@ -5,15 +5,33 @@ import ClipboardJS from 'clipboard'
 const btnTitle = 'Copy to clipboard'
 
 const btnHtml = [
-'<div class="bd-clipboard">',
-  `<button type="button" class="btn-clipboard" title="${btnTitle}">`,
-    '<svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>',
-  '</button>',
-'</div>'].join('')
+  '<div class="bd-code-snippet">',
+  '  <div class="bd-clipboard">',
+  `    <button type="button" class="btn-clipboard" title="${btnTitle}">`,
+  '      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>',
+  '    </button>',
+  '  </div>',
+  '</div>'
+].join('')
 
-document.querySelectorAll('div.highlight')
-  .forEach((element) => {
-    element.insertAdjacentHTML('beforebegin', btnHtml)
+document.querySelectorAll('.highlight')
+  .forEach(element => {
+    if (!element.closest('.bd-example-snippet')) { // Ignore examples made be shortcode
+      element.insertAdjacentHTML('beforebegin', btnHtml)
+      element.previousElementSibling.append(element)
+    }
+  })
+
+document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  .forEach(tooltip => {
+    new bootstrap.Tooltip(tooltip)
+  })
+
+document.querySelectorAll('.content [href="#"]')
+  .forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault()
+    })
   })
 
 window.addEventListener('load', () => {
@@ -23,11 +41,11 @@ window.addEventListener('load', () => {
 })
 
 const clipboard = new ClipboardJS('.btn-clipboard', {
-  target: trigger => trigger.parentNode.nextElementSibling,
-  text: trigger => trigger.parentNode.nextElementSibling.textContent.trimEnd()
+  target: trigger => trigger.closest('.bd-code-snippet').querySelector('.highlight'),
+  text: trigger => trigger.closest('.bd-code-snippet').querySelector('.highlight').textContent.trimEnd()
 })
 
-clipboard.on('success', (event) => {
+clipboard.on('success', event => {
   const iconFirstChild = event.trigger.querySelector('.bi').firstElementChild
   const tooltipBtn = bootstrap.Tooltip.getInstance(event.trigger)
   const namespace = 'http://www.w3.org/1999/xlink'
