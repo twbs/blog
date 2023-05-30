@@ -145,6 +145,7 @@ We've revamped our color palette to include all new Sass variables, CSS variable
 
 We’ve rebuilt some components (like list groups and alerts) to use these new variables in their source Sass and compiled CSS so that they respond to the color mode changes.
 
+<!-- markdownlint-disable no-inline-html -->
 <div class="d-flex gap-3">
   <a href="https://getbootstrap.com/docs/5.3/customize/colors/">
     <img src="/assets/img/2023/05/colors-light-mode.png" alt="New colors in light mode" class="rounded-2 img-thumbnail" />
@@ -153,6 +154,7 @@ We’ve rebuilt some components (like list groups and alerts) to use these new v
     <img src="/assets/img/2023/05/colors-dark-mode.png" alt="New colors in dark mode" class="rounded-2 img-thumbnail" />
   </a>
 </div>
+<!-- markdownlint-enable no-inline-html -->
 
 ## New link helpers and utilities
 
