@@ -119,7 +119,7 @@ While we haven't written a new JavaScript plugin for toggling color modes, we've
 
 ### New color mode variables
 
-There's also a new `_variables-dark.scss` stylesheet that houses dark mode-specific Sass variables. This is where we modify mostly global values, and some component-specific values, for dark mode. We recommend creating separate Sass stylesheets for additional custom color modes (e.g., a blue theme might have `_variables-blue.scss`). _We expect this stylesheet to be simplified in our next major release as we continue to streamline the code base.)
+There's also a new `_variables-dark.scss` stylesheet that houses dark mode-specific Sass variables. This is where we modify mostly global values, and some component-specific values, for dark mode. We recommend creating separate Sass stylesheets for additional custom color modes (e.g., a blue theme might have `_variables-blue.scss`). *We expect this stylesheet to be simplified in our next major release as we continue to streamline the code base.*)
 
 Dark mode colors are all derived from our theme colors, meaning you can easily change the color mode palettes by updating the original theme colors. This means we're not using our already tinted and shaded colors (e.g., `shade-color($danger, 60%)` instead of `red-800` for the new danger emphasis color).
 
@@ -138,11 +138,11 @@ If you're using the CDN or starter template, using the new color modes is straig
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-fWfdm/mwLW1qNIZRV7G9ISLhn8NAnuWvn6vM+XVPm/3zvt4yOWjM1Foig1kc+Ddm" crossorigin="anonymous"></script>
   </body>
 </html>
 ```
