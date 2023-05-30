@@ -40,36 +40,6 @@ Bootstrap's core has been rewritten to provide first-class support for dark mode
 
 Need a more isolated dark mode? You can also set the color mode on a parent element like the `.dropdown` shown below. This will only affect the dropdown and its children instead of the entire page.
 
-{{< example class="d-flex justify-content-between" >}}
-<div class="dropdown" data-bs-theme="light">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-    Default dropdown
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-    <li><a class="dropdown-item active" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-
-<div class="dropdown" data-bs-theme="dark">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDark" data-bs-toggle="dropdown" aria-expanded="false">
-    Dark dropdown
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
-    <li><a class="dropdown-item active" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-{{< /example >}}
-
 ### New `color-mode()` mixin
 
 Dark mode styles are written with and generated through the new [`color-mode()` Sass mixin](https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass). The mixin allows you to write styles specific to a particular color mode, like dark mode.
@@ -188,20 +158,6 @@ We’ve rebuilt some components (like list groups and alerts) to use these new v
 
 Link styling has infinitely better in v5.3.0 with a slew of all new link helpers and utilities. First up, we've added styles to place icons like [Bootstrap Icons](https://icons.getbootstrap.com) alongside links with [the new icon link helper](https://getbootstrap.com/docs/5.3/helpers/icon-link/).
 
-{{< example >}}
-<a class="icon-link" href="#">
-  <svg class="bi" aria-hidden="true"><use xlink:href="#archive"></use></svg>
-  Icon link
-</a>
-{{< /example >}}
-
-{{< example >}}
-<a class="icon-link" href="#">
-  Icon link
-  <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right-short"></use></svg>
-</a>
-{{< /example >}}
-
 Our other new helper is a [new focus ring helper](https://getbootstrap.com/docs/5.3/helpers/focus-ring/) for removing the default `outline` and setting a custom `box-shadow` focus ring.
 
 ```html
@@ -238,23 +194,6 @@ Lastly, we've added a new `.link-body-emphasis` helper alongside our [colored li
 ## New nav underline
 
 There's a new `.nav` variant and modifier class with `.nav-underline`. Add `.nav-underline` to a `.nav` to get a simpler bottom border under the active nav link. [See the docs for an example.](https://getbootstrap.com/docs/5.3/components/navs-tabs/#underline)
-
-{{< example >}}
-<ul class="nav nav-underline">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Disabled</a>
-  </li>
-</ul>
-{{< /example >}}
 
 ## And much more!
 
