@@ -87,9 +87,9 @@ While we haven't written a new JavaScript plugin for toggling color modes, we've
 
 ### New color mode variables
 
-There's also a new `_variables-dark.scss` stylesheet that houses dark mode specific Sass variables. This is where we modify mostly global values, and some component specific values, for dark mode. We recommend creating separate Sass stylesheets for  additional custom color modes (e.g., a blue theme might have `_variables-blue.scss`). _We expect this stylesheet to be simplified in our next major release as we continue to streamline the code base.)
+There's also a new `_variables-dark.scss` stylesheet that houses dark mode-specific Sass variables. This is where we modify mostly global values, and some component-specific values, for dark mode. We recommend creating separate Sass stylesheets for additional custom color modes (e.g., a blue theme might have `_variables-blue.scss`). _We expect this stylesheet to be simplified in our next major release as we continue to streamline the code base.)
 
-Dark mode colors are all derived from our theme colors, meaning you can easily change the color mode palettes by updating the original theme colors. This means we're not using our already tinted and shaded colors (e.g., `shade-color($danger, 60%)` istead of `red-800` for the new danger emphasis color).
+Dark mode colors are all derived from our theme colors, meaning you can easily change the color mode palettes by updating the original theme colors. This means we're not using our already tinted and shaded colors (e.g., `shade-color($danger, 60%)` instead of `red-800` for the new danger emphasis color).
 
 Bootstrap v5.3.0 ships with dark mode enabled, but you can also disable it by updating the boolean `$enable-dark-mode` Sass variable.
 
@@ -119,7 +119,7 @@ If you're using the CDN or starter template, using the new color modes is straig
 
 When we set out to add dark mode support to Bootstrap, we didn't want to just add a dark mode. We wanted to build the foundations for a color mode system that could be used to create any number of themes and color modes. That's why we lead with the `data-bs-theme` attribute and the new `color-mode()` Sass mixin, and why we've added so many new CSS variables in these latest releases.
 
-To add a custom color mode, create your own `data-bs-theme` selector with a custom value as the name of your color mode, then modify any Sass and CSS variables as needed. We created a separate `_variables-dark.scss` stylesheet to house Bootstrap's dark mode specific Sass variables, but that's not required for you.
+To add a custom color mode, create your own `data-bs-theme` selector with a custom value as the name of your color mode, then modify any Sass and CSS variables as needed. We created a separate `_variables-dark.scss` stylesheet to house Bootstrap's dark mode-specific Sass variables, but that's not required for you.
 
 For example, you can create a "blue theme" with the selector `data-bs-theme="blue"`. In your custom Sass or CSS file, add the new selector and override any global or component CSS variables as needed. If you're using Sass, you can also use Sass's functions within your CSS variable overrides.
 
@@ -139,7 +139,7 @@ For example, you can create a "blue theme" with the selector `data-bs-theme="blu
 
 ## Refreshed color palette
 
-We've revamped our color palette to include all new Sass variables, CSS variables, and utilities for setting `color`, `background-color`, and `border-color`. Our foreground and background colors have been expanded to include new secondary, tertiary, and emphasis colors, while our theme colors have expanded on to include their subtle background colors, subtle border colors, and darker text colors.
+We've revamped our color palette to include all new Sass variables, CSS variables, and utilities for setting `color`, `background-color`, and `border-color`. Our foreground and background colors have been expanded to include new secondary, tertiary, and emphasis colors, while our theme colors have been expanded on to include their subtle background colors, subtle border colors, and darker text colors.
 
 [Check out the new colors docs.](https://getbootstrap.com/docs/5.3/customize/color/#colors)
 
@@ -158,7 +158,7 @@ We’ve rebuilt some components (like list groups and alerts) to use these new v
 
 ## New link helpers and utilities
 
-Link styling has infinitely better in v5.3.0 with a slew of all new link helpers and utilities. First up, we've added styles to place icons like [Bootstrap Icons](https://icons.getbootstrap.com) alongside links with [the new icon link helper](https://getbootstrap.com/docs/5.3/helpers/icon-link/).
+Link styling has infinitely better in v5.3.0 with a slew of all-new link helpers and utilities. First up, we've added styles to place icons like [Bootstrap Icons](https://icons.getbootstrap.com) alongside links with [the new icon link helper](https://getbootstrap.com/docs/5.3/helpers/icon-link/).
 
 Our other new helper is a [new focus ring helper](https://getbootstrap.com/docs/5.3/helpers/focus-ring/) for removing the default `outline` and setting a custom `box-shadow` focus ring.
 
@@ -199,7 +199,7 @@ There's a new `.nav` variant and modifier class with `.nav-underline`. Add `.nav
 
 ## And much more!
 
-Beyond all the color mode updates, new helpers, and new utilities, we have a ton of other quality of life updates in this release. Here's a quick rundown of the highlights:
+Beyond all the color mode updates, new helpers, and new utilities, we have a ton of other quality-of-life updates in this release. Here's a quick rundown of the highlights:
 
 - Navs now have new `:focus-visible` styles that better match our custom button focus styles.
 
