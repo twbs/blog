@@ -27,6 +27,13 @@ document.querySelectorAll('[data-bs-toggle="tooltip"]')
     new bootstrap.Tooltip(tooltip)
   })
 
+document.querySelectorAll('.content [href="#"]')
+  .forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault()
+    })
+  })
+
 window.addEventListener('load', () => {
   document.querySelectorAll('.btn-clipboard').forEach(btn => {
     bootstrap.Tooltip.getOrCreateInstance(btn, { btnTitle })
