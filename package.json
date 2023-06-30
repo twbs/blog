@@ -40,7 +40,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.43.0",
     "find-unused-sass-variables": "^5.0.0",
-    "hugo-bin": "^0.110.1",
+    "hugo-bin": "^0.111.0",
     "linkinator": "^5.0.1",
     "lockfile-lint": "^4.10.5",
     "markdownlint-cli2": "^0.8.1",
@@ -48,7 +48,7 @@
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "stylelint": "^15.9.0",
-    "stylelint-config-twbs-bootstrap": "^10.0.0",
+    "stylelint-config-twbs-bootstrap": "^11.0.0",
     "vanilla-lazyload": "^17.8.3",
     "vnu-jar": "23.4.11"
   }
