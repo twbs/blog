@@ -42,7 +42,7 @@
     "find-unused-sass-variables": "^5.0.0",
     "hugo-bin": "^0.111.2",
     "linkinator": "^5.0.1",
-    "lockfile-lint": "^4.10.5",
+    "lockfile-lint": "^4.10.6",
     "markdownlint-cli2": "^0.8.1",
     "npm-run-all2": "^6.0.6",
     "postcss": "^8.4.25",
