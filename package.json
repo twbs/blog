@@ -44,7 +44,7 @@
     "linkinator": "^5.0.1",
     "lockfile-lint": "^4.10.5",
     "markdownlint-cli2": "^0.8.1",
-    "npm-run-all2": "^6.0.5",
+    "npm-run-all2": "^6.0.6",
     "postcss": "^8.4.25",
     "postcss-cli": "^10.1.0",
     "stylelint": "^15.9.0",
