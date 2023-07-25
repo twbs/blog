@@ -5,7 +5,7 @@ title: Bootstrap 5.3.1
 keywords:
   - bootstrap
   - release
-video:
+video: WJ1I3ZmEozQ
 ---
 
 Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!
