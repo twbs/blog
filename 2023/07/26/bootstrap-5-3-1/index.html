@@ -9,11 +9,12 @@
 <link rel="preload" href="/assets/brand/bootstrap-logo-shadow.png" imagesrcset="/assets/brand/bootstrap-logo-shadow.png, /assets/brand/bootstrap-logo-shadow@2x.png 2x" as="image">
 
 <link rel="profile" href="https://gmpg.org/xfn/11">
-<link rel="canonical" href="https://blog.getbootstrap.com/">
+<link rel="canonical" href="https://blog.getbootstrap.com/2023/07/26/bootstrap-5-3-1/">
 <link rel="alternate" type="application/rss+xml" href="https://blog.getbootstrap.com/feed.xml" title="Bootstrap Blog">
 
-<title>Bootstrap Blog · Official blog for the Bootstrap framework.</title>
-<meta name="description" content="Official blog for the Bootstrap framework.">
+<title>Bootstrap 5.3.1 | Bootstrap Blog</title>
+<meta name="description" content="Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!
+Color modes: Increased color contrast for dark mode by replacing $gray-500 with $gray-300 for the body color Added our color mode switcher JavaScript to our examples ZIP download Components: Improved disabled styling for all .nav-links, providing .disabled and :disabled for use with anchors and buttons Add support for Home and End keys for navigating tabs by keyboard Added some basic styling to toggle buttons when no modifier class is present Fixed carousel colors in dark mode Forms: Fixed floating label disabled text color Utilities: .">
 <meta name="generator" content="Hugo 0.115.4">
 <script src="/assets/js/color-modes.js"></script>
 
@@ -32,15 +33,19 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
 
-<meta name="twitter:title" content="Bootstrap Blog"/>
-<meta name="twitter:description" content="Official blog for the Bootstrap framework."/>
+<meta name="twitter:title" content="Bootstrap 5.3.1"/>
+<meta name="twitter:description" content="Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!
+Color modes: Increased color contrast for dark mode by replacing $gray-500 with $gray-300 for the body color Added our color mode switcher JavaScript to our examples ZIP download Components: Improved disabled styling for all .nav-links, providing .disabled and :disabled for use with anchors and buttons Add support for Home and End keys for navigating tabs by keyboard Added some basic styling to toggle buttons when no modifier class is present Fixed carousel colors in dark mode Forms: Fixed floating label disabled text color Utilities: ."/>
 <meta name="twitter:site" content="@getbootstrap"/>
-<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:creator" content="@mdo">
 
-<meta property="og:title" content="Bootstrap Blog" />
-<meta property="og:description" content="Official blog for the Bootstrap framework." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.getbootstrap.com/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/>
+<meta property="og:title" content="Bootstrap 5.3.1" />
+<meta property="og:description" content="Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!
+Color modes: Increased color contrast for dark mode by replacing $gray-500 with $gray-300 for the body color Added our color mode switcher JavaScript to our examples ZIP download Components: Improved disabled styling for all .nav-links, providing .disabled and :disabled for use with anchors and buttons Add support for Home and End keys for navigating tabs by keyboard Added some basic styling to toggle buttons when no modifier class is present Fixed carousel colors in dark mode Forms: Fixed floating label disabled text color Utilities: ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.getbootstrap.com/2023/07/26/bootstrap-5-3-1/" /><meta property="og:image" content="https://blog.getbootstrap.com/assets/img/bootstrap-social.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-26T08:05:00+00:00" />
+<meta property="article:modified_time" content="2023-07-26T08:05:00+00:00" />
 <meta property="og:image:width" content="2000">
 <meta property="og:image:height" content="1000">
 
@@ -229,7 +234,7 @@
   </div>
 
   <nav class="nav nav-pills justify-content-center flex-lg-column justify-content-lg-start gap-1 sidebar-nav">
-    <a class="nav-link d-flex align-items-center active fw-600" href="/">
+    <a class="nav-link d-flex align-items-center" href="/">
       <svg class="bi me-2 f5 bd-text-purple"><use xlink:href="#file-earmark-richtext"></use></svg>
       All posts
     </a>
@@ -255,191 +260,111 @@
         <div class="main">
           
 <div class="posts-container mx-auto my-5">
-  <div class="posts">
-    <div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2012/11/09/glyphicons-font/" class="text-decoration-none">Update on the Glyphicons font</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <div class="post">
+    <h1 class="post-title fw-600">Bootstrap 5.3.1</h1>
+    <div class="d-flex align-items-center mb-4 text-muted author-info">
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
-  <span class="d-flex align-items-center ms-3" title="09 Nov 12 00:00 UTC">
+  <span class="d-flex align-items-center ms-3" title="26 Jul 23 08:05 UTC">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
 </svg>
-November 09, 2012</span>
+July 26, 2023</span>
 </div>
-
-
-        
-
-        <p>Earlier this week, I was excited to announce that our next release, <code>2.2.2-wip</code>, would include the new Glyphicons icon font. In hindsight I got a little carried away and forgot about something.</p>
-<p><strong>IE7 doesn&rsquo;t really do icon fonts.</strong></p>
-<p>I could put together a hack to add IE7 support, duplicating tons of code, but that doesn&rsquo;t feel right as we&rsquo;re dropping IE7 support in BS3. Instead of spending time on something we&rsquo;ll just remove later on, we&rsquo;re going to focus on things that will be here in the next major version.</p>
-<p>So, it&rsquo;s with some sadness that I inform you <strong>we will not be including the Glyphicons font in 2.2.2-wip</strong>.</p>
-<p>Backwards compatibility is always a pain in the ass, and to avoid huge headaches for folks, we sometimes have to bend over, well, backwards. I hope this doesn&rsquo;t screw up your plans too much and that you understand we have the community&rsquo;s best interests at heart.</p>
-<p>There&rsquo;s some good news though. For you nerds who live on the edge, I&rsquo;ve been working on tons of BS3-esque changes in the <code>3.0.0-wip</code> branch on GitHub. If you really cannot wait for the Glyphicons font (and don&rsquo;t mind using unsupported code), do check it out. I plan on accelerating work on it in the coming weeks. (Please don&rsquo;t submit issues for it though, but rather email me or ping me on Twitter for questions.)</p>
-<p>Thanks for listening, and as always, &lt;3&lt;3&lt;3.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2012/10/30/2-2-1-hotfix-released/" class="text-decoration-none">2.2.1 hotfix released</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="30 Oct 12 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-October 30, 2012</span>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/WJ1I3ZmEozQ?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
-
-
-        
-
-        <p>After the <a href="/2012/10/29/bootstrap-2-2-0-released/">2.2.0 release last night</a>, a few bugs were reported, but only one major one: <a href="https://twitter.com/getbootstrap/status/263327129905811459">malfunctioning carousels</a>. To address that, <a href="https://twitter.com/fat">@fat</a> just pushed out a 2.2.1 hotfix release that fixes the bug. Upgrading should be super simple given the scope of this release.</p>
-<p><a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v2.2.1.zip">Download Bootstrap 2.2.1</a> <span class="muted">(latest master ZIP)</span></p>
-<p>Once more, apologies for any hiccups and happy Bootstrapping!</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2012/10/29/bootstrap-2-2-0-released/" class="text-decoration-none">Bootstrap 2.2.0 released</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="29 Oct 12 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-October 29, 2012</span>
-</div>
-
-
-        
-
-        <p>Aww yeah, our first release since leaving Twitter is here with Bootstrap 2.2.0! We originally planned to release this as 2.1.2, but given the timing and scope we&rsquo;re bumping the version. Included in this release are dozens of bug fixes, documentation enhancements, and a few new and improved features.</p>
-<h2 id="tldr">tl;dr</h2>
-<p>2.1.2 is now 2.2.0: four new example templates, added media component, new typographic scale, fixed that box-shadow mixin bug, fixed z-index issues, and <a href="https://github.com/twbs/bootstrap/issues?milestone=15&amp;q=is%3Aclosed">more</a>.</p>
-<h2 id="highlights">Highlights</h2>
+<p>Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!</p>
 <ul>
-<li><strong>Added four new example templates</strong> to the docs, including a narrow marketing page, sign in form, sticky footer, and a fancy carousel (created for an upcoming .net magazine article).</li>
-<li><strong>Added the media component</strong>, to create larger common components like comments, Tweets, etc.</li>
-<li><strong>New variable-driven typographic scale</strong> based on <code>@baseFontSize</code> and <code>@baseLineHeight</code>.</li>
-<li>Revamped mini, small, and large padding via new variables for inputs and buttons so everything is the same size.</li>
-<li>Reverted 2.1.1&rsquo;s <code>.box-shadow();</code> mixin change that caused compiler errors.</li>
-<li>Improved dropdown submenus to support dropups and left-aligned submenus.</li>
-<li>Fixed z-index issues with tooltips and popovers in modals.</li>
-<li>Hero unit now sets basic type styles for the entire component, rather than on <code>.hero-unit p { ... }</code>.</li>
-<li>Updated JavaScript plugins and docs to jQuery 1.8.1.</li>
-<li>Added Contributing.md file.</li>
-<li>Added support for installing Bootstrap via <a href="https://bower.io/">Bower</a>.</li>
-<li>Miscellaneous variable improvements across the board.</li>
-<li>Miscellaneous documentation typos fixed.</li>
-</ul>
-<p>For the full list of issues included in this release, visit the <a href="https://github.com/twbs/bootstrap/issues?milestone=15&amp;q=is%3Aclosed">2.2.0 milestone on GitHub</a>. Otherwise, be sure to <a href="https://getbootstrap.com/">visit the docs</a> or download the latest to get your hands on 2.2.0.</p>
-<p><a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v2.2.0.zip">Download Bootstrap 2.2.0</a> <span class="muted">(latest master ZIP)</span></p>
-<h2 id="next-steps">Next steps</h2>
-<p>As a quick side note, we&rsquo;re still working on moving Bootstrap to its own organization on GitHub. That will come with a couple other big changes, but more on that soon. We&rsquo;ll be jumping on the next release shortly for more bugfixes, but until then enjoy the fixes and new hotness!</p>
-<p>Lastly, thanks everyone again for submitting issues and contributing—you rock!</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2012/09/29/onward/" class="text-decoration-none">Onward</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="29 Sep 12 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-September 29, 2012</span>
-</div>
-
-
-        
-
-        <p>Working at Twitter the last two and a half years has been incredible. Both Jacob and I have worked with a lot of amazing people on some pretty amazing projects, but nothing has been more enjoyable or rewarding than working on Bootstrap. Despite us leaving Twitter to go our <a href="https://www.youtube.com/watch?v=LatorN4P9aA">separate ways</a>, we&rsquo;ll both be continuing our work on the project.</p>
-<p>Bootstrap will remain a Twitter project on GitHub for the time being, but we&rsquo;ve realized the project has grown beyond us and the Twitter brand. It&rsquo;s a huge project playing a pretty awesome role in the web development industry, and we&rsquo;re excited to see it continue to grow. To that end, we&rsquo;ve begun working to move Bootstrap into its own open source organization. It will take time, but we&rsquo;re dedicated to making it happen.</p>
-<p>In the coming weeks, we&rsquo;ll release another bugfix update (2.1.2) to address a few things, and then it&rsquo;s full steam ahead on improving some key areas of the framework (modals, carousels, customizer, etc). We&rsquo;ll share more info on those updates as plans take shape.</p>
-<p>Until then, we have nothing but love for Twitter and the web development community. Thank you all so much for everything.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2012/09/04/bootstrap-2-1-1-released/" class="text-decoration-none">Bootstrap 2.1.1 released</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="04 Sep 12 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-September 04, 2012</span>
-</div>
-
-
-        
-
-        <p><a href="/2012/08/20/bootstrap-2-1-0-released/">Two weeks later</a>, we&rsquo;ve closed another 500 issues against Bootstrap. That includes all the dupes—you nerds like reporting typos—and invalid issues that don&rsquo;t end up making it on the official release milestone. But, what&rsquo;s awesome is that we have 2.1.1 ready to rock with 73 bugfixes.</p>
-<h2 id="get-it">Get it</h2>
-<p>Head on over to <a href="https://getbootstrap.com">https://getbootstrap.com</a> and get your fix, or download the <a href="https://github.com/twbs/bootstrap/archive/v2.1.1.zip">latest master ZIP right from GitHub</a>.</p>
-<h2 id="whats-changed">What&rsquo;s changed</h2>
-<p>Here&rsquo;s the rundown:</p>
+<li><strong>Color modes:</strong>
 <ul>
-<li>New feature: alert text. We documented these new classes, like <code>.text-success</code>, at the bottom of the <a href="https://getbootstrap.com/2.3.2/base-css.html#typography">Typography section</a> along with the long undocumented <code>.muted</code>.</li>
-<li>Fixed a lot of typos in the docs. Spelling is hard.</li>
-<li>Made the <code>.box-shadow()</code> mixin more durable. It no longer requires escaping for multiple shadows, meaning you can easily use variables and functions in them once again.</li>
-<li>Widened <code>.dl-horizontal dt</code> and <code>.horizontal-form .control-group</code> to better handle the increased font-size.</li>
-<li>Dropdown submenus improved: now you only see the next level, not all levels, on hover of the submenu toggle.</li>
-<li>Clarified jQuery and Bootstrap template requirements in Getting Started section.</li>
-<li><code>select</code> now utilizes <code>@inputBorder</code>.</li>
-<li><code>.lead</code> now scales up from <code>@baseFontSize</code> instead of being a fixed font-size and line-height.</li>
-<li>Fixed the vertical three color gradient in latest Firefox.</li>
-<li>Reordered some variables that caused errors in certain Less compilers.</li>
+<li>Increased color contrast for dark mode by replacing <code>$gray-500</code> with <code>$gray-300</code> for the body color</li>
+<li>Added our color mode switcher JavaScript to our examples ZIP download</li>
 </ul>
-<p>There&rsquo;s a bunch more, so do run through the <a href="https://github.com/twbs/bootstrap/issues?milestone=14&amp;q=is%3Aclosed">2.1.1 milestone</a> when you can, but those are the big ones.</p>
-<h2 id="next-up">Next up</h2>
-<p><strong>More bug fixes, more feature improvements.</strong> 2.1.2 will be coming shortly and we&rsquo;ll work to improve a handful of issues that we punted on for 2.1.1. Beyond that, we&rsquo;ve scoped out the <a href="https://github.com/twbs/bootstrap/issues/milestones">next few releases</a> around a set of key components like modals and carousels.</p>
-<p>We&rsquo;ll continue to add new features as appropriate, but we&rsquo;re primarily focused on improving current functionality in the next few months.</p>
+</li>
+<li><strong>Components:</strong>
+<ul>
+<li>Improved disabled styling for all <code>.nav-link</code>s, providing <code>.disabled</code> and <code>:disabled</code> for use with anchors and buttons</li>
+<li>Add support for <code>Home</code> and <code>End</code> keys for navigating tabs by keyboard</li>
+<li>Added some basic styling to toggle buttons when no modifier class is present</li>
+<li>Fixed carousel colors in dark mode</li>
+</ul>
+</li>
+<li><strong>Forms:</strong>
+<ul>
+<li>Fixed floating label disabled text color</li>
+</ul>
+</li>
+<li><strong>Utilities:</strong>
+<ul>
+<li><code>.text-bg-*</code> utilities now use CSS variables</li>
+</ul>
+</li>
+<li><strong>Sass:</strong>
+<ul>
+<li>Add new <code>$navbar-dark-icon-color</code> Sass variable</li>
+<li>Removed duplicate <code>$alert</code> Sass variables</li>
+<li>Added a new variable for <code>$vr-border-width</code> to customize the vertical rule helper width</li>
+</ul>
+</li>
+<li><strong>Documentation:</strong>
+<ul>
+<li>Added search to our homepage</li>
+<li>Improved responsive behavior on Dashboard example</li>
+<li>Improved dark mode rendering of Cheatsheet examples</li>
+</ul>
+</li>
+</ul>
+<h2 id="get-the-release">Get the release</h2>
+<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.3.1
+</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.3.1">Read the GitHub v5.3.1 changelog</a> for a complete list of changes in this release.</p>
+<h2 id="support-the-team">Support the team</h2>
+<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
 
-      </div>
   </div>
 
-  <div class="pagination"><a class="pagination-item older" href="/page/23/">Older</a>
-    <a class="pagination-item newer" href="/page/21/">Newer</a>
+  <div class="related">
+    <h2 class="h3 mb-3">Related posts</h2>
+
+    <ul class="related-posts list-unstyled">
+      <li class="d-flex mb-3 text-body-secondary">
+        <svg class="bi me-2 f5"><use xlink:href="#file-earmark-richtext"></use></svg>
+        <div class="fs-6">
+          <h3 class="h5 mb-1 lh-1">
+            <a href="/2023/05/30/bootstrap-5-3-0/">
+              Bootstrap 5.3.0
+            </a>
+          </h3>
+          May 30, 2023
+        </div>
+      </li><li class="d-flex mb-3 text-body-secondary">
+        <svg class="bi me-2 f5"><use xlink:href="#file-earmark-richtext"></use></svg>
+        <div class="fs-6">
+          <h3 class="h5 mb-1 lh-1">
+            <a href="/2023/04/03/bootstrap-5-3-0-alpha3/">
+              Bootstrap 5.3.0-alpha3
+            </a>
+          </h3>
+          April 03, 2023
+        </div>
+      </li><li class="d-flex mb-3 text-body-secondary">
+        <svg class="bi me-2 f5"><use xlink:href="#file-earmark-richtext"></use></svg>
+        <div class="fs-6">
+          <h3 class="h5 mb-1 lh-1">
+            <a href="/2023/03/24/bootstrap-5-3-0-alpha2/">
+              Bootstrap 5.3.0-alpha2
+            </a>
+          </h3>
+          March 24, 2023
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
         </div>
