@@ -11,12 +11,12 @@ video: WJ1I3ZmEozQ
 Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!
 
 - **Color modes:**
-  - Increased color contrast for dark mode by replacing `$gray-500` with `$gray-300` for the body color.
+  - Increased color contrast for dark mode by replacing `$gray-500` with `$gray-300` for the body color
   - Added our color mode switcher JavaScript to our examples ZIP download
 - **Components:**
-  - Improved disabled styling for all `.nav-link`s, providing `.disabled` and `:disabled` for use with anchors and buttons.
+  - Improved disabled styling for all `.nav-link`s, providing `.disabled` and `:disabled` for use with anchors and buttons
   - Add support for `Home` and `End` keys for navigating tabs by keyboard
-  - Added some basic styling to toggle buttons when no modifier class is present.
+  - Added some basic styling to toggle buttons when no modifier class is present
   - Fixed carousel colors in dark mode
 - **Forms:**
   - Fixed floating label disabled text color
@@ -25,7 +25,7 @@ Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more fo
 - **Sass:**
   - Add new `$navbar-dark-icon-color` Sass variable
   - Removed duplicate `$alert` Sass variables
-  - Added a new variable for `$vr-border-width` to customize the vertical rule helper width.
+  - Added a new variable for `$vr-border-width` to customize the vertical rule helper width
 - **Documentation:**
   - Added search to our homepage
   - Improved responsive behavior on Dashboard example
@@ -39,7 +39,7 @@ Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more fo
 npm i bootstrap@v5.3.1
 ```
 
-[Read the GitHub v5.3.0 changelog](https://github.com/twbs/bootstrap/releases/tag/v5.3.1) for a complete list of changes in this release.
+[Read the GitHub v5.3.1 changelog](https://github.com/twbs/bootstrap/releases/tag/v5.3.1) for a complete list of changes in this release.
 
 ## Support the team
 
