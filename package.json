@@ -38,7 +38,7 @@
     "bootstrap": "^5.3.1",
     "clipboard": "^2.0.11",
     "cross-env": "^7.0.3",
-    "eslint": "^8.45.0",
+    "eslint": "^8.46.0",
     "find-unused-sass-variables": "^5.0.0",
     "hugo-bin": "^0.111.4",
     "linkinator": "^5.0.1",
