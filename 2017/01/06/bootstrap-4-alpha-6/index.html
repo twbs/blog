@@ -283,7 +283,7 @@ January 06, 2017</span>
 <p>Read one for highlights from this release. We also recommend reviewing the <a href="https://github.com/twbs/bootstrap/issues/20939">ship list</a> and <a href="https://github.com/twbs/bootstrap/milestone/39?closed=1">milestone</a> for a more detailed look at what&rsquo;s changed.</p>
 <h2 id="embracing-flexbox">Embracing Flexbox</h2>
 <p>Bootstrap 4 is now flexbox by default! Flexbox is an immensely powerful layout tool, providing unparalleled flexibility (hah) and control to our grid system and core components. It comes at the cost of <a href="https://github.com/twbs/bootstrap/pull/21389">dropping IE9 support</a>, but brings significant improvements to component layout, alignment, and sizing.</p>
-<p><a class="jsbin-embed" href="https://output.jsbin.com/digabis/3/?output&height=440px">Bootstrap flexbox on jsbin.com</a></p>
+<p><a class="jsbin-embed border" href="https://jsbin.com/digabis/3/embed?output&height=470px">Bootstrap flexbox on jsbin.com</a></p>
 <p>If you&rsquo;re unfamiliar with flexbox, here&rsquo;s some of the power you can expect to utilize in Bootstrap 4:</p>
 <ul>
 <li>Automatic equal-width grid columns (e.g., two columns are automatically 50% wide)</li>
@@ -295,7 +295,7 @@ January 06, 2017</span>
 <li>No more HTML white space or broken table-style rendering</li>
 </ul>
 <p>Nearly every component now takes advantage of flexbox in place of <code>display: table</code> hacks and <code>float</code>s. That means less reliance on clearfix, more control over DOM and visual order, and fewer bugs. Navs, list groups, cards, and more all utilize flexbox. Even more complex components like the carousel have been modified to use flexbox in some places.</p>
-<p><a class="jsbin-embed" href="https://output.jsbin.com/wepoya/?output&height=340px">Bootstrap carousel on jsbin.com</a></p>
+<p><a class="jsbin-embed border" href="https://jsbin.com/wepoya/embed?output&height=430px">Bootstrap carousel on jsbin.com</a></p>
 <h2 id="responsive-utilities-and-the-great-infix">Responsive utilities and the great infix</h2>
 <p>With Alpha 6, we&rsquo;ve made Bootstrap&rsquo;s extensive suite of utilities—including classes for <code>display</code>, <code>float</code>, and flexbox, and more—<a href="https://github.com/twbs/bootstrap/pull/20934">completely responsive</a>. To keep these class names as approachable and representative of their scope as possible, we&rsquo;ve also made two important changes to their naming scheme.</p>
 <ul>
@@ -309,7 +309,7 @@ January 06, 2017</span>
 <p>Put that all together and you end up with updated classes like <code>.col-6</code>, <code>.d-none</code>, <code>.float-right</code>, <code>.d-md-flex</code>, <code>.justify-content-end</code>, and <code>.text-lg-left</code>. These new classes bring immense power and customization to folks building with Bootstrap. They also make it easier for those migrating from v3 with clearer mappings to legacy class names.</p>
 <h2 id="more-grid-improvements">More grid improvements</h2>
 <p>We&rsquo;re back at it with more grid improvements. This time we&rsquo;ve added responsive autosizing columns and more container padding options. Add any number of <code>.col-*</code> classes and they&rsquo;ll automatically be equal in width.</p>
-<p><a class="jsbin-embed" href="https://output.jsbin.com/sarire/?output&height=170px">Bootstrap flexbox auto columns on jsbin.com</a></p>
+<p><a class="jsbin-embed border" href="https://jsbin.com/sarire/embed?output&height=200px">Bootstrap flexbox auto columns on jsbin.com</a></p>
 <p>Padding for grid containers can now be configured across breakpoints with the new <code>$grid-gutter-widths</code> Sass map. In addition, you can remove gutters from grid rows and their columns with the <code>.no-gutters</code> modifier.</p>
 <h2 id="updated-navbar">Updated navbar</h2>
 <p>As mentioned in our last release, the Alpha 5 navbar was a little half baked. This time around, we&rsquo;re completely baked. No, but seriously, the navbar has been rewritten to provide better built-in responsive behaviors and improved layout customization thanks to our move to flexbox.</p>
@@ -441,5 +441,6 @@ January 06, 2017</span>
     <script async src="/assets/js/vendor/bootstrap.bundle.min.js"></script><script async src="/assets/js/lazyload.js"></script>
 <script async src="/assets/js/application.js"></script>
 
+<script async src="https://static.jsbin.com/js/embed.js"></script>
   </body>
 </html>
