@@ -11,3 +11,7 @@
 
 <script async src="{{ $lazyload.Permalink | relURL }}"></script>
 <script async src="{{ $application.Permalink | relURL }}"></script>
+
+{{ range .Page.Params.extra_js -}}
+<script{{ with .async }} async{{ end }} src="{{ .src }}"{{ with .integrity }} {{ printf "integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
+{{- end -}}

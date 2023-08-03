@@ -6,6 +6,9 @@ video: V44HiAX91Hs
 keywords:
   - bootstrap
   - release
+extra_js:
+  - src: "https://static.jsbin.com/js/embed.js"
+    async: true
 ---
 
 [Alpha 6 has landed](https://v4-alpha.getbootstrap.com/), and it's one of our biggest ships to date. We've rewritten our grid system and all major components in flexbox, forging ahead with it as our default layout option as we drop IE9 support. With 700 commits since our last release, we have some catching up to do.
@@ -16,7 +19,7 @@ Read one for highlights from this release. We also recommend reviewing the [ship
 
 Bootstrap 4 is now flexbox by default! Flexbox is an immensely powerful layout tool, providing unparalleled flexibility (hah) and control to our grid system and core components. It comes at the cost of [dropping IE9 support](https://github.com/twbs/bootstrap/pull/21389), but brings significant improvements to component layout, alignment, and sizing.
 
-<a class="jsbin-embed" href="https://output.jsbin.com/digabis/3/?output&height=440px">Bootstrap flexbox on jsbin.com</a>
+<a class="jsbin-embed border" href="https://jsbin.com/digabis/3/embed?output&height=470px">Bootstrap flexbox on jsbin.com</a>
 
 If you're unfamiliar with flexbox, here's some of the power you can expect to utilize in Bootstrap 4:
 
@@ -30,7 +33,7 @@ If you're unfamiliar with flexbox, here's some of the power you can expect to ut
 
 Nearly every component now takes advantage of flexbox in place of `display: table` hacks and `float`s. That means less reliance on clearfix, more control over DOM and visual order, and fewer bugs. Navs, list groups, cards, and more all utilize flexbox. Even more complex components like the carousel have been modified to use flexbox in some places.
 
-<a class="jsbin-embed" href="https://output.jsbin.com/wepoya/?output&height=340px">Bootstrap carousel on jsbin.com</a>
+<a class="jsbin-embed border" href="https://jsbin.com/wepoya/embed?output&height=430px">Bootstrap carousel on jsbin.com</a>
 
 ## Responsive utilities and the great infix
 
@@ -46,7 +49,7 @@ Put that all together and you end up with updated classes like `.col-6`, `.d-non
 
 We're back at it with more grid improvements. This time we've added responsive autosizing columns and more container padding options. Add any number of `.col-*` classes and they'll automatically be equal in width.
 
-<a class="jsbin-embed" href="https://output.jsbin.com/sarire/?output&height=170px">Bootstrap flexbox auto columns on jsbin.com</a>
+<a class="jsbin-embed border" href="https://jsbin.com/sarire/embed?output&height=200px">Bootstrap flexbox auto columns on jsbin.com</a>
 
 Padding for grid containers can now be configured across breakpoints with the new `$grid-gutter-widths` Sass map. In addition, you can remove gutters from grid rows and their columns with the `.no-gutters` modifier.
 
