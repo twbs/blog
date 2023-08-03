@@ -137,15 +137,6 @@ table {
   font-size: 133.333333%;
 }
 
-.post .ratio {
-  margin-bottom: 2rem;
-}
-
-iframe[data-url^="https://jsbin.com"] {
-  // stylelint-disable-next-line declaration-no-important
-  border-color: rgba(0, 0, 0, .1) !important;
-}
-
 .bd-text-purple {
   color: var(--bd-violet);
 }
