@@ -43,7 +43,7 @@
     "hugo-bin": "^0.112.1",
     "linkinator": "^5.0.1",
     "lockfile-lint": "^4.12.0",
-    "markdownlint-cli2": "^0.8.1",
+    "markdownlint-cli2": "^0.9.2",
     "npm-run-all2": "^6.0.6",
     "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0",
