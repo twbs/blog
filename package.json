@@ -47,7 +47,7 @@
     "npm-run-all2": "^6.0.6",
     "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0",
-    "stylelint": "^15.10.2",
+    "stylelint": "^15.10.3",
     "stylelint-config-twbs-bootstrap": "^11.0.1",
     "vanilla-lazyload": "^17.8.4",
     "vnu-jar": "23.4.11"
