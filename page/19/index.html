@@ -258,7 +258,7 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2014/01/30/bootstrap-3-1-0-released/" class="text-decoration-none">Bootstrap 3.1.0 released</a>
+          <a href="/2014/02/13/bootstrap-3-1-1-released/" class="text-decoration-none">Bootstrap 3.1.1 released</a>
         </h1>
 
         <div class="d-flex align-items-center mb-4 text-muted author-info">
@@ -266,6 +266,122 @@
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
                                      alt="" width="32" height="32">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="13 Feb 14 00:00 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+February 13, 2014</span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube-nocookie.com/embed/WMPM1q_Uyxc?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p>Today we&rsquo;re releasing Bootstrap v3.1.1. As our first patch release for the v3.1.x release series, we&rsquo;ve focused on CSS bug fixes, documentation improvements, and further refinements to our build tools. See the included changelog for more details.</p>
+<h2 id="download-bootstrap">Download Bootstrap</h2>
+<p>Download Bootstrap directly from GitHub:</p>
+<p><a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.1.1.zip">Download Bootstrap 3.1.1</a></p>
+<p>Hit the <a href="https://github.com/twbs/bootstrap">project repository</a> or <a href="https://github.com/twbs/bootstrap-sass">Sass repository</a> for more options.</p>
+<h2 id="bootstrap-cdn">Bootstrap CDN</h2>
+<p>Update your CDN links to point to the v3.1.1 files:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Optional theme --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="full-changelog">Full changelog</h2>
+<h3 id="css">CSS</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/11659">#11659</a>, <a href="https://github.com/twbs/bootstrap/issues/12349">#12349</a>, <a href="https://github.com/twbs/bootstrap/issues/12698">#12698</a>: Always show the input above appended buttons in input groups for proper focus and disabled state borders.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12025">#12025</a>: Ensure responsive utility classes can be combined with one another.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12195">#12195</a>: Apply <code>.btn:focused</code> styles to <code>.btn.active:focused</code> for improved accessibility.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12412">#12412</a>: Refactored and renamed our internal grid mixins for generating custom number of grid columns.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12433">#12433</a>: Use negative <code>margin</code> on <code>.list-inline</code>s so we don&rsquo;t override the <code>padding-left</code> on the first list item.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12448">#12448</a>: Use <code>@navbar-height</code> instead on <code>.navbar-brand</code> to prevent element from being shorter than navbar height. Corrects a change introduced in v3.1.0.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12462">#12462</a>: Add <code>border-radius</code> to tables when in panels for proper rounding with all background settings.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12470">#12470</a>: Scope large modal styles to minimum viewport width.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12486">#12486</a>: Restore full-width inputs for input groups in inline forms and navbars.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12502">#12502</a>: Remove long-deprecated <code>:-moz-placeholder</code> styles.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12532">#12532</a>: Scope popover arrow styles to immediate children.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12552">#12552</a>: Fixes two typos in <code>carousel.less</code> for the Glyphicon classes.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12620">#12620</a>, <a href="https://github.com/twbs/bootstrap/issues/12621">#12621</a>: Use <code>:extend(.img-responsive)</code> instead of mixin in thumbnail and carousel.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12625">#12625</a>: Only remove top and bottom borders on list groups in panels if the list group is the first or last element.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12629">#12629</a>: Override the default rounded corners in iOS&rsquo;s search input with <code>-webkit-appearance: none;</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12633">#12633</a>: Properly reset borders on table cells in panels.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12639">#12639</a>: Drop the unsupported by Opera <code>-o-user-select</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12659">#12659</a>: Add <code>@blockquote-font-size</code> variable for calculated text size.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12673">#12673</a>: Use <code>@popover-arrow-width</code> for popover offsets.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12674">#12674</a>: Update popover <code>border</code> colors to use computed values rather than static ones.</li>
+</ul>
+<h3 id="sass">Sass</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap-sass/issues/523">#523</a>: Rails 3.2 compatibility</li>
+<li><a href="https://github.com/twbs/bootstrap-sass/issues/518">#518</a>: <code>scale</code> mixin Sass compatibility issue</li>
+<li>Updated Bower docs</li>
+</ul>
+<h3 id="javascript">JavaScript</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/12436">#12436</a>: Update docs, examples, and tests to use jQuery v1.11.0.</li>
+</ul>
+<h3 id="docs">Docs</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/12437">#12437</a>: Note specific versions of IE where progress bar animation is supported.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12439">#12439</a>: Correct docs error about available grid resets.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12477">#12477</a>: Clarify supported versions of Internet Explorer (we do v8-11) in browser support docs.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12494">#12494</a>: Update docs to reflect modal remote change from <a href="https://github.com/twbs/bootstrap/pull/11933">#11933</a>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12497">#12497</a>: Remove manual full-width container callout now that there&rsquo;s <code>.container-fluid</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12512">#12512</a>: Improve alignment of the Dashboard example placeholder images.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12519">#12519</a>: Add Bower badge to README.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12527">#12527</a>: Clarify that dropdowns always require <code>data-toggle=&quot;dropdown&quot;</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12543">#12543</a>, <a href="https://github.com/twbs/bootstrap/issues/12544">#12544</a>, <a href="https://github.com/twbs/bootstrap/issues/12545">#12545</a>, <a href="https://github.com/twbs/bootstrap/issues/12546">#12546</a>: Various fixes to the v2.x to v3.x migration docs.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12555">#12555</a>: Rearrange variables to place grids and containers closer together in Customizer.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12564">#12564</a>: Distribution zip folder renamed to be more descriptive.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12589">#12589</a>: Add &ldquo;Back to top&rdquo; link to bottom of sidenav.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12590">#12590</a>: Add link to Korean translation.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12610">#12610</a>: Better and more consistent prefixing of docs CSS with <code>.bs-docs-</code>.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12611">#12611</a>: Mention limitation of one JavaScript plugin&rsquo;s data attributes per element.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12614">#12614</a>: Add progress bar example with visible label.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12645">#12645</a>: Omit semicolons consistently in JS examples.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12655">#12655</a>: Upgrade holder.js to v2.3.1 so docs images are rendered properly in Internet Explorer &gt;=9.</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/12455">#12455</a>: Fix typo in Dashboard example&rsquo;s CSS.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12512">#12512</a>: Improve alignment of the Dashboard example&rsquo;s placeholder images.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12526">#12526</a>: Add scrollbars when necessary to the Dashboard example&rsquo;s sidebar.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12579">#12579</a>: Improve sticky footer examples to avoid any wrappers and improve rendering in IE8.</li>
+<li><a href="https://github.com/twbs/bootstrap/pull/12695">#12695</a>: Fixed transitions on offcanvas example by adding initial left and right values.</li>
+</ul>
+<h3 id="build-tools">Build tools</h3>
+<ul>
+<li><a href="https://github.com/twbs/bootstrap/issues/12466">#12466</a>: Add the examples&rsquo; CSS to the <code>csslint</code> task.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12531">#12531</a>: Add <code>/docs/dist/</code> to the <code>clean</code> task.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12534">#12534</a>: Allow the bootstrap package in npm to directly expose CSS and Less files.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12568">#12568</a>: Add the examples&rsquo; CSS to the <code>csscomb</code> task.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12581">#12581</a>, <a href="https://github.com/twbs/bootstrap/issues/12583">#12583</a>: Reorganize all Grunt tasks into one directory so that <code>grunt</code> runs properly in Bower installations.</li>
+<li><a href="https://github.com/twbs/bootstrap/issues/12605">#12605</a>: Use license object instead of licenses array in Grunt.</li>
+</ul>
+<p>For an even more complete list of changes, see the <a href="https://github.com/twbs/bootstrap/issues?milestone=25&amp;page=1&amp;state=closed">v3.1.1 milestone</a>.</p>
+<p>&lt;3</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2014/01/30/bootstrap-3-1-0-released/" class="text-decoration-none">Bootstrap 3.1.0 released</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="30 Jan 14 00:00 UTC">
@@ -276,7 +392,7 @@
 January 30, 2014</span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube-nocookie.com/embed/phOW-CZJWT0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/phOW-CZJWT0?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -850,95 +966,6 @@ October 29, 2013</span>
 <p>It&rsquo;ll be a slow process, much like last time, but we need the help on several fronts to keep us shipping and iterating. In particular, we&rsquo;ll be keeping an eye out for folks with top notch CSS and JavaScript skills.</p>
 <h2 id="up-next">Up next</h2>
 <p>We&rsquo;re already tracking issues for a v3.0.2 release and its changes will be along the same lines as today&rsquo;s release—bugs and docs. v3.1.0 will likely ship after that sometime with a few new features. As always, no dates have been set yet for any future releases.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
-          <a href="/2013/08/19/bootstrap-3-released/" class="text-decoration-none">Bootstrap 3 released</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="19 Aug 13 00:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-August 19, 2013</span>
-</div>
-<div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/0hiUuL5uTKc?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
-</div>
-
-
-        
-
-        <p>Today, on the two year anniversary of releasing Bootstrap to the world, we&rsquo;re shipping Bootstrap 3.0. It&rsquo;s been a crazy long ride to say the least and we&rsquo;re stoked to finally have this out in the wild. Thanks to everyone who&rsquo;s tested our RCs (er, betas), reported bugs, and contributed code. We couldn&rsquo;t have done it without you beautiful nerds.</p>
-<h2 id="whats-new">What&rsquo;s new</h2>
-<p>For those who haven&rsquo;t been following along too closely, here&rsquo;s a recap of all the biggest changes shipping with Bootstrap 3:</p>
-<ul>
-<li><strong>New design and an optional theme!</strong> With v3, we&rsquo;ve gone flat. Don&rsquo;t call it a trend—it&rsquo;s all about customization, folks. Since we simplified the aesthetics though, we thought it&rsquo;d help to have an optional theme. To use it, check out the <a href="https://getbootstrap.com/examples/theme/">Bootstrap theme example</a>.</li>
-<li><strong>Mobile first and always responsive!</strong> Nearly everything has been redesigned and rebuilt to start from your handheld devices and scale up.</li>
-<li><strong>Brand new Customizer!</strong> It&rsquo;s been redesigned, is now compiled in the browser instead of Heroku, has better dependency support, and even has built-in error handling. Better yet, we now save your customizations to an anonymous Gist for easy reuse, sharing, and modifications.</li>
-<li><strong>Better box model by default.</strong> Everything in Bootstrap gets <code>box-sizing: border-box</code>, making for easier sizing options and an enhanced grid system.</li>
-<li><strong>Super-powered grid system.</strong> With four tiers of grid classes—phones, tablets, desktops, and large desktops—you can do some super crazy awesome layouts.</li>
-<li><strong>Rewritten JavaScript plugins.</strong> All events are now namespaced, no-conflict stuff works way better, and more.</li>
-<li><strong>New Glyphicons icon font!</strong> While they were gone for a while, we&rsquo;ve since restored the Glyphicons to the main repo. In 2.x, they were images, but now they&rsquo;re in font format and include 40 new glyphs.</li>
-<li><strong>Overhauled navbar.</strong> It&rsquo;s now always responsive and comes with some super handy and re-arrangable subcomponents.</li>
-<li><strong>Modals are way more responsive.</strong> We&rsquo;ve overhauled the modal code to make it way more responsive on mobile devices. They now scroll the entire viewport instead of having a max-height.</li>
-<li><strong>Added some components!</strong> New to the mix are panels and list groups.</li>
-<li><strong>Removed some components!</strong> We&rsquo;ve dropped the accordion (replaced with collapsible panels), submenus, typeahead, and a few more small items. (Worth celebrating as much as adding new ones.)</li>
-<li><strong>More consistent base and sizing classes.</strong> Buttons, tables, forms, alerts, and more have been updated to have more consistent classes for easier customizer and extensibility.</li>
-<li><strong>Docs have been blown up, yo.</strong> We&rsquo;ve added a lot of new documentation, not only for our components, but for browser support (including gotchas and bugs), license FAQs, third party support (and workarounds), accessibility, and more.</li>
-<li><strong>Dropped Internet Explorer 7 and Firefox 3.6 support.</strong> For Internet Explorer 8, you&rsquo;ll need to include <a href="https://github.com/scottjehl/Respond">Respond.js</a> for all the media queries to work correctly. You can read more about <a href="https://getbootstrap.com/getting-started/#browser-support">browser support</a> in the docs.</li>
-</ul>
-<p>For our pre-release testers and others who have been following along with the RCs, here&rsquo;s a list of some of the more prominent changes made since RC2:</p>
-<ul>
-<li>Hella bugs have been fixed (duh, right?).</li>
-<li>Restored the Glyphicons icon font.</li>
-<li>Navbars now require a <code>.navbar-default</code> for the standard version.</li>
-<li>Panels now require a <code>.panel-default</code> for the standard gray variation.</li>
-<li>Alerts now require a modifier class (e.g., <code>.alert.alert-warning</code> for the previously default yellow alert).</li>
-<li>Multiple responsive utilities can now be applied to the same element.</li>
-<li>Examples are back in the main repo and have been fully updated.</li>
-<li>Docs have been updated for more consistent placement, naming, etc.</li>
-<li>Customizer compiling bugs have all been fixed.</li>
-<li>The optional theme has been added and is demonstrated in an example.</li>
-<li>Jumbotrons are now made to extend the full width of the viewport with a container inside, but if you reverse that, the jumbotron in a container will be rounded and padded.</li>
-<li>The navbar components have been updated to better account for the presence of containers and more. You&rsquo;ll see some new margin and padding changes, but no markup changes should be required.</li>
-</ul>
-<h2 id="the-numbers-game">The numbers game</h2>
-<p>For those keeping track, Bootstrap 3 took nearly nine months to design, develop, and ship. In that time we&rsquo;ve had:</p>
-<ul>
-<li>Over 2,700 commits from 319 contributors</li>
-<li>379 files changed, meaning 84,000 additions and deletions</li>
-<li>Over 900 comments in the pull request</li>
-<li>Over a 20% reduction in minified CSS (from 127kb to 97kb)</li>
-</ul>
-<p>Beyond this release, numbers everywhere else are looking amazing. It&rsquo;s been staggering to watch these grow.</p>
-<ul>
-<li>Over 56,000 stars and 19,000 forks on GitHub (still number one, baby!).</li>
-<li>Over 9,800 closed issues (that&rsquo;s over 13 a day since we released Bootstrap).</li>
-<li>Last month, we had nearly 15 million pageviews on our docs (and that barely includes anything from our v3 pre-releases).</li>
-<li>In the last year, we&rsquo;ve logged over 3 million downloads just from the docs, 40% of which are from the Customizer.</li>
-</ul>
-<p>This was a massive undertaking and it couldn&rsquo;t have come out better. Thanks once again to all our contributors and the rest of the community for helping us make this a reality.</p>
-<h2 id="what-about-non-responsive-sites">What about non-responsive sites?</h2>
-<p>With Bootstrap 3 we&rsquo;ve gone deep on responsive and mobile first—it&rsquo;s built in and no longer requires a separate stylesheet. That&rsquo;s great for most folks, but not everyone needs or wants an adaptive web site or application. To help, we&rsquo;ve added some documentation and an example that disables the adaptive or responsive features with some extra CSS.</p>
-<p>Check out the <a href="https://getbootstrap.com/getting-started/#disable-responsive">Disabling responsiveness section</a> or head right to the <a href="https://getbootstrap.com/examples/non-responsive/">non-responsive example</a> to learn more.</p>
-<h2 id="bootstrap-232">Bootstrap 2.3.2</h2>
-<p>While we&rsquo;re not actively maintaining or supporting 2.3.2, you can still get to the old documentation. Head to <a href="https://getbootstrap.com/2.3.2/">https://getbootstrap.com/2.3.2/</a> and you&rsquo;ll find everything right where you left it (including the old customizer). We&rsquo;ll leave this up and available for the foreseeable future.</p>
-<p>As a side note, we apologize for all the redirect and 404 problems folks ran into during the last few weeks. This was our first time moving an entire repo on GitHub and we hit a huge snag with old builds of our docs and did our best to deal with those to not further confuse folks. We&rsquo;ll do better next time.</p>
-<h2 id="coming-up-next">Coming up next</h2>
-<p>As always, we&rsquo;ll have one or two patch releases before hitting our next minor release. Beyond that, we have a few things we&rsquo;d like to tackle for BS3.1 and are already tracking those as potential additions in <a href="https://github.com/twbs/bootstrap/issues/9397">#9397</a>. If you&rsquo;d like something considered for v3.1, check that list. If it&rsquo;s not there, open a new issue to discuss.</p>
-<p>No dates have been set for any patch or minor release yet. As soon as we figure that out, we&rsquo;ll let you know.</p>
-<h2 id="download">Download!</h2>
-<p>Woo, all set? Then head to the docs and download yourself some Bootstrap 3!</p>
-<p><a class="btn-download-link" href="https://github.com/twbs/bootstrap/archive/v3.0.0.zip">Download Bootstrap 3</a> or hit the <a href="https://github.com/twbs/bootstrap">GitHub repository</a></p>
 
       </div>
   </div>
