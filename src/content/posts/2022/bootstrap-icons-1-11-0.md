@@ -17,6 +17,8 @@ Here's a quick look at all the new icons in v1.11.0:
 
 [Check out the pull request](https://github.com/twbs/icons/pull/1792) for all the details on which icons were added and which were updated.
 
+I've also started adding a new `added` tag to icon pages with this release. So far I've only tagged v1.10.0 and v1.11.0 versions, but more will come. Once those are all tagged, you'll be able to search for icons added in each release. Stay tuned!
+
 *Looking for more new icons? Head to the [issue tracker](https://github.com/twbs/icons/issues) to check for open requests or submit a new one.*
 
 ## Install
