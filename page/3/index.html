@@ -258,121 +258,6 @@
   <div class="posts">
     <div class="post">
         <h1 class="post-title fw-600">
-          <a href="/2022/09/07/bootstrap-5-2-1/" class="text-decoration-none">Bootstrap 5.2.1</a>
-        </h1>
-
-        <div class="d-flex align-items-center mb-4 text-muted author-info">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
-                                     src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32">
-    <span>@mdo</span>
-  </a>
-  <span class="d-flex align-items-center ms-3" title="07 Sep 22 16:00 UTC">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg>
-September 07, 2022</span>
-</div>
-
-
-        
-
-        <p>Bootstrap v5.2.1 is here with fixes from our latest minor release, v5.2. As a patch release, these changes are limited to bug fixes, documentation updates, and some dependency updates.</p>
-<p>We&rsquo;ve also continued to iterate on a few other projects to help folks get up and running with Bootstrap with npm, other JS frameworks, and various build tools. Keep reading to learn more.</p>
-<h2 id="key-changes">Key changes</h2>
-<p>We&rsquo;ve <strong>updated our <code>calc()</code> functions</strong> to work around an <a href="https://github.com/shellscape/postcss-values-parser/issues/138">apparent bug in <code>postcss-values-parser</code></a> that prevented our source Sass files from compiling properly when building with React and PostCSS. The fix was to reverse the order of our multiplication inside <code>calc()</code> functions. Be aware you may need to make similar <a href="https://github.com/twbs/bootstrap/pull/37079">modifications</a> depending on your own customizations.</p>
-<p>We&rsquo;ve also <a href="https://github.com/twbs/bootstrap/pull/37026">addressed some longstanding issues around button focus and active styling</a>, in particular for checkbox and radio buttons. On mobile devices, input-based buttons have trouble shedding their focus styles. This has been resolved in v5.2.1 with a change from <code>:focus</code> to <code>:focus-visible</code> for our <code>.btn</code>s. <strong>Now, checkbox and radio buttons no longer change their <code>background-color</code> on <code>:focus-visible</code> and they receive no <code>:hover</code> styling.</strong> Regular <code>.btn</code>s still have their familiar hover and focus styles.</p>
-<p>We debated not including the button focus change in v5.2.1, but felt it was important enough to close several bugs. Let us know what you think and we&rsquo;ll continue to refine our implementation.</p>
-<h2 id="highlights">Highlights</h2>
-<p>In addition to the changes above, we&rsquo;ve fixed bugs across several components:</p>
-<ul>
-<li><strong>Accordion</strong>
-<ul>
-<li>Update <code>color</code> value to use the <code>$accordion-button-color</code> Sass variable instead of our color contrast function</li>
-</ul>
-</li>
-<li><strong>Buttons</strong>
-<ul>
-<li>Added a <code>transparent</code> default hover border color CSS variable for buttons to fix a visual regression</li>
-<li><code>.btn-link</code> no longer has a gradient when <code>$enable-gradients</code> is set to <code>true</code></li>
-</ul>
-</li>
-<li><strong>Forms</strong>
-<ul>
-<li>Input groups have updated <code>z-index</code> values to ensure proper rendering of validated form fields</li>
-<li>Floating labels now reset their <code>text-align</code> to ensure consistent styling</li>
-</ul>
-</li>
-<li><strong>List Groups</strong>
-<ul>
-<li>Horizontal list groups with only one child now render the correct <code>border-radius</code></li>
-<li>Modified the <code>list-group-item</code> selectors to better support nested imports of Bootstrap&rsquo;s CSS</li>
-</ul>
-</li>
-<li><strong>Modals</strong>
-<ul>
-<li>Updated event listeners to ignore clicks on scrollbar clicks, clicks that start inside <code>.modal-dialog</code> but end outside it, and respond to clicks that start and end outside <code>.modal-dialog</code></li>
-</ul>
-</li>
-<li><strong>Pagination</strong>
-<ul>
-<li>Fixed incorrect <code>border-radius</code> values inside pagination components</li>
-</ul>
-</li>
-<li><strong>Scrollspy</strong>
-<ul>
-<li>Scrollspy threshold option is now configurable</li>
-</ul>
-</li>
-<li><strong>Tooltips &amp; Popovers</strong>
-<ul>
-<li>Reverted some tooltip plugin updates to prevent issues with <code>selector</code>, dynamic content, and disposed tooltips using <code>title</code></li>
-<li>Fixed <code>trigger: &quot;manual&quot;</code> showing and immediately hiding when calling <code>toggle()</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="dependencies">Dependencies</h2>
-<ul>
-<li>Updated Autoprefixer to fix warnings of the <code>color-adjust</code> property (thanks to <a href="https://github.com/julien-deramond/">@julien-deramond</a> on our team for reporting an issue upstream here)</li>
-</ul>
-<h2 id="docs">Docs</h2>
-<ul>
-<li>Searching our docs on mobile has been improved with the search field now always visible on responsive, narrow viewports</li>
-<li>Removed links to and mentions of Slack from across the codebase, as we intend to shutter Slack in favor of GitHub Discussions</li>
-<li>Reintroduced proper <code>outline</code> styles for docs code samples and buttons when <code>:not(:focus-visible)</code></li>
-</ul>
-<h2 id="farewell-slack">Farewell, Slack!</h2>
-<p>As mentioned over a month ago, we made the decision to close down our community Slack channel. Slack isn&rsquo;t great at managing a large scale community and it&rsquo;s prohibitively expensive as well for a community the size of ours (the Slack was over 45,000 people!). Instead of using Slack or similar tool, we&rsquo;re encouraging folks to use our Discussions tab on GitHub.</p>
-<p><strong><a href="https://github.com/twbs/bootstrap/discussions">Explore Bootstrap discussions</a></strong></p>
-<h2 id="examples-repo">Examples repo</h2>
-<p><a href="https://github.com/twbs/examples"><img src="/assets/img/2022/09/examples.png" class="d-block img-fluid mb-2 rounded border" alt="Examples" loading="lazy" width="2000" height="1000">
-</a></p>
-<p>Make sure to checkout (pun intended!) our latest project, the <a href="https://github.com/twbs/examples">twbs/examples repository</a>! The examples project includes functional demos for all sorts of environments and JS frameworks, with more planned! You can even open every example in StackBlitz and edit them in the browser.</p>
-<ul>
-<li><a href="https://github.com/twbs/examples/tree/main/starter/">Starter</a> – CDN links for our CSS and JS</li>
-<li><a href="https://github.com/twbs/examples/tree/main/sass-js/">Sass &amp; JS</a> — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm</li>
-<li><a href="https://github.com/twbs/examples/tree/main/sass-js-esm/">Sass &amp; ESM JS</a> — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim</li>
-<li><a href="https://github.com/twbs/examples/tree/main/webpack/">Webpack</a> - Import and bundle Sass and JS with Webpack</li>
-<li><a href="https://github.com/twbs/examples/tree/main/parcel/">Parcel</a> - Sass, JS via Parcel</li>
-<li><a href="https://github.com/twbs/examples/tree/main/vite/">Vite</a> - Sass, JS via Vite</li>
-<li><a href="https://github.com/twbs/examples/tree/main/icons-font/">Bootstrap Icons font</a> - Import and compile Sass, Stylelint, PurgeCSS, and our icon font</li>
-</ul>
-<p><strong>Have an idea for a new starter example?</strong> Feel free to open an issue or pull request!</p>
-<h2 id="v4-starter-project">v4 starter project</h2>
-<p><a href="https://github.com/twbs/bootstrap-npm-starter"><img src="/assets/img/2022/09/bnpm.png" class="d-block img-fluid mb-2 rounded border" alt="npm starter" loading="lazy" width="2000" height="1000">
-</a></p>
-<p>We&rsquo;ve shipped a v2.0.0 update to the <a href="https://github.com/twbs/bootstrap-npm-starter">twbs/bootstrap-npm-starter project</a>. This release includes Bootstrap v4.6.2, Bootstrap Icons v1.9.1, a new live reload feature for local development, and several dependency updates. This project will remain dedicated to Bootstrap 4 while our <a href="https://github.com/twbs/examples">twbs/examples</a> repo will focus on v5 and future major releases.</p>
-<h2 id="get-the-release">Get the release</h2>
-<p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It&rsquo;s also been pushed to npm:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap@v5.2.1
-</span></span></code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.2.1">Read the GitHub v5.2.1 changelog</a> for a complete list of changes in this release.</p>
-<h2 id="support-the-team">Support the team</h2>
-<p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>&rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
-
-      </div><div class="post">
-        <h1 class="post-title fw-600">
           <a href="/2022/07/19/bootstrap-5-2-0/" class="text-decoration-none">Bootstrap 5.2.0</a>
         </h1>
 
@@ -380,7 +265,7 @@ September 07, 2022</span>
   <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
     <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
                                      src="https://github.com/mdo.png?size=32"
-                                     alt="" width="32" height="32" loading="lazy">
+                                     alt="" width="32" height="32">
     <span>@mdo</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="19 Jul 22 16:00 UTC">
@@ -391,7 +276,7 @@ September 07, 2022</span>
 July 19, 2022</span>
 </div>
 <div class="ratio ratio-16x9">
-  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/L93-7vRfxNs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/L93-7vRfxNs?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
 </div>
 
 
@@ -824,6 +709,52 @@ May 16, 2022</span>
 <p>Expect more CSS variables to make their way into our utilities. There&rsquo;s a lot of power in real-time customization, even for what we consider immutable styles.</p>
 <hr>
 <p><strong>Ready to get started with Bootstrap?</strong> Checkout the <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/#quick-start">quick start guide</a> so you can put these new CSS variables to work in your next project!</p>
+
+      </div><div class="post">
+        <h1 class="post-title fw-600">
+          <a href="/2022/05/13/bootstrap-icons-1-8-2/" class="text-decoration-none">Bootstrap Icons v1.8.2</a>
+        </h1>
+
+        <div class="d-flex align-items-center mb-4 text-muted author-info">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+    <img class="mb-0 me-2 rounded-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x"
+                                     src="https://github.com/mdo.png?size=32"
+                                     alt="" width="32" height="32" loading="lazy">
+    <span>@mdo</span>
+  </a>
+  <span class="d-flex align-items-center ms-3" title="13 May 22 00:01 UTC">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+</svg>
+May 13, 2022</span>
+</div>
+<div class="ratio ratio-16x9">
+  <iframe class="lazy" data-src="https://www.youtube-nocookie.com/embed/dKJfJMMsqX4?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen></iframe>
+</div>
+
+
+        
+
+        <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.8.2</a> has arrived with some bug fixes and a refreshed docs design to match our main project.</p>
+<p>Here&rsquo;s a quick rundown on the icon fixes:</p>
+<ul>
+<li>Fix cutoff <code>bank</code> icon</li>
+<li>Fix <code>house-heart</code> and <code>house-heart-fill</code> fill-rules</li>
+<li>Fix corners of pentagon icons to match other shapes</li>
+<li>Fix fill-rule for <code>x-lg</code></li>
+<li>Fix cutoff <code>tool</code> icon</li>
+</ul>
+<p>On the CSS side, we&rsquo;ve also added <code>font-display: block</code> to help address our icon font affecting Google Lighthouse scores.</p>
+<p><em>Looking for more new icons? Head to the <a href="https://github.com/twbs/icons/issues">issue tracker</a> to check for open requests or submit a new one.</em></p>
+<h2 id="install">Install</h2>
+<p>To get started, install or update via npm:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm i bootstrap-icons
+</span></span></code></pre></div><p>Or Composer:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">composer require twbs/bootstrap-icons
+</span></span></code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.8.2">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.8.2/bootstrap-icons-1.8.2.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+<h2 id="figma">Figma</h2>
+<p>The Figma file is now published to the Figma Community! It&rsquo;s the same <a href="https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons">Bootstrap Icons Figma file</a> you&rsquo;ve seen from previous releases, just a little more accessible to those using the app.</p>
 
       </div>
   </div>
