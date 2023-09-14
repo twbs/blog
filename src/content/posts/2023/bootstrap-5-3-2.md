@@ -1,6 +1,6 @@
 ---
 author: julien-deramond
-date: "2023-09-13T10:22:00Z"
+date: "2023-09-14T14:30:00Z"
 title: Bootstrap 5.3.2
 keywords:
   - bootstrap
@@ -11,8 +11,7 @@ Bootstrap v5.3.2 is here with bug fixes, documentation improvements, and more fo
 
 ## Key changes
 
-- Passing a percentage unit to the global `abs()` is deprecated from Dart Sass 1.65.0. It resulted in a deprecation warning when compiling Bootstrap with Dart Sass. This has been fixed internally by changing the values passed to the `divide()` function. The `divide()` function has not been fixed itself so that we can keep supporting node-sass cross-compatibility. In v6, this won't be an issue as we plan to drop support for node-sass.
-
+- Passing a percentage unit to the global `abs()` is deprecated since Dart Sass v1.65.0. It resulted in a deprecation warning when compiling Bootstrap with Dart Sass. This has been fixed internally by changing the values passed to the `divide()` function. The `divide()` function has not been fixed itself so that we can keep supporting node-sass cross-compatibility. In v6, this won't be an issue as we plan to drop support for node-sass.
 - Using multiple ids in a collapse target wasn't working anymore and has been fixed.
 
 ## Color modes
