@@ -6,7 +6,44 @@
     <description>Recent content on Bootstrap Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Sep 2023 00:01:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Sep 2023 14:30:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap 5.3.2</title>
+      <link>https://blog.getbootstrap.com/2023/09/14/bootstrap-5-3-2/</link>
+      <pubDate>Thu, 14 Sep 2023 14:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2023/09/14/bootstrap-5-3-2/</guid>
+      <description>&lt;p&gt;Bootstrap v5.3.2 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!&lt;/p&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Passing a percentage unit to the global &lt;code&gt;abs()&lt;/code&gt; is deprecated since Dart Sass v1.65.0. It resulted in a deprecation warning when compiling Bootstrap with Dart Sass. This has been fixed internally by changing the values passed to the &lt;code&gt;divide()&lt;/code&gt; function. The &lt;code&gt;divide()&lt;/code&gt; function has not been fixed itself so that we can keep supporting node-sass cross-compatibility. In v6, this won&amp;rsquo;t be an issue as we plan to drop support for node-sass.&lt;/li&gt;
+&lt;li&gt;Using multiple ids in a collapse target wasn&amp;rsquo;t working anymore and has been fixed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;color-modes&#34;&gt;Color modes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Increased color contrast of form range track background in light and dark modes.&lt;/li&gt;
+&lt;li&gt;Fixed table state rendering for color modes with a focus on the striped table in dark mode to increase color contrast.&lt;/li&gt;
+&lt;li&gt;Allow &lt;code&gt;&amp;lt;mark&amp;gt;&lt;/code&gt; color customization for color modes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;docs&#34;&gt;Docs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Added alternative CDNs section in &lt;a href=&#34;https://getbootstrap.com/docs/5.3/getting-started/download/#alternative-cdns&#34;&gt;Getting started -&amp;gt; Download&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added Discord and Bootstrap subreddit links in &lt;a href=&#34;https://github.com/twbs/bootstrap/blob/main/README.md&#34;&gt;README&lt;/a&gt; and &lt;a href=&#34;https://getbootstrap.com/docs/5.3/getting-started/introduction/&#34;&gt;Getting started -&amp;gt; Introduction&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://discord.gg/bZUvakRU3M&#34;&gt;Discord&lt;/a&gt; maintained by the community&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://reddit.com/r/bootstrap&#34;&gt;Bootstrap subreddit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap@v5.3.2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.3.2&#34;&gt;Read the GitHub v5.3.2 changelog&lt;/a&gt; for a complete list of changes in this release.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Bootstrap Icons v1.11.0</title>
       <link>https://blog.getbootstrap.com/2023/09/12/bootstrap-icons-1-11-0/</link>
@@ -740,106 +777,6 @@
 &lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap@v5.2.2
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.2.2&#34;&gt;Read the GitHub v5.2.2 changelog&lt;/a&gt; for a complete list of changes in this release.&lt;/p&gt;
-&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
-&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bootstrap 5.2.1</title>
-      <link>https://blog.getbootstrap.com/2022/09/07/bootstrap-5-2-1/</link>
-      <pubDate>Wed, 07 Sep 2022 16:00:00 +0000</pubDate>
-      
-      <guid>https://blog.getbootstrap.com/2022/09/07/bootstrap-5-2-1/</guid>
-      <description>&lt;p&gt;Bootstrap v5.2.1 is here with fixes from our latest minor release, v5.2. As a patch release, these changes are limited to bug fixes, documentation updates, and some dependency updates.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve also continued to iterate on a few other projects to help folks get up and running with Bootstrap with npm, other JS frameworks, and various build tools. Keep reading to learn more.&lt;/p&gt;
-&lt;h2 id=&#34;key-changes&#34;&gt;Key changes&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve &lt;strong&gt;updated our &lt;code&gt;calc()&lt;/code&gt; functions&lt;/strong&gt; to work around an &lt;a href=&#34;https://github.com/shellscape/postcss-values-parser/issues/138&#34;&gt;apparent bug in &lt;code&gt;postcss-values-parser&lt;/code&gt;&lt;/a&gt; that prevented our source Sass files from compiling properly when building with React and PostCSS. The fix was to reverse the order of our multiplication inside &lt;code&gt;calc()&lt;/code&gt; functions. Be aware you may need to make similar &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/37079&#34;&gt;modifications&lt;/a&gt; depending on your own customizations.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve also &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/37026&#34;&gt;addressed some longstanding issues around button focus and active styling&lt;/a&gt;, in particular for checkbox and radio buttons. On mobile devices, input-based buttons have trouble shedding their focus styles. This has been resolved in v5.2.1 with a change from &lt;code&gt;:focus&lt;/code&gt; to &lt;code&gt;:focus-visible&lt;/code&gt; for our &lt;code&gt;.btn&lt;/code&gt;s. &lt;strong&gt;Now, checkbox and radio buttons no longer change their &lt;code&gt;background-color&lt;/code&gt; on &lt;code&gt;:focus-visible&lt;/code&gt; and they receive no &lt;code&gt;:hover&lt;/code&gt; styling.&lt;/strong&gt; Regular &lt;code&gt;.btn&lt;/code&gt;s still have their familiar hover and focus styles.&lt;/p&gt;
-&lt;p&gt;We debated not including the button focus change in v5.2.1, but felt it was important enough to close several bugs. Let us know what you think and we&amp;rsquo;ll continue to refine our implementation.&lt;/p&gt;
-&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
-&lt;p&gt;In addition to the changes above, we&amp;rsquo;ve fixed bugs across several components:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Accordion&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Update &lt;code&gt;color&lt;/code&gt; value to use the &lt;code&gt;$accordion-button-color&lt;/code&gt; Sass variable instead of our color contrast function&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Buttons&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Added a &lt;code&gt;transparent&lt;/code&gt; default hover border color CSS variable for buttons to fix a visual regression&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.btn-link&lt;/code&gt; no longer has a gradient when &lt;code&gt;$enable-gradients&lt;/code&gt; is set to &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Forms&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Input groups have updated &lt;code&gt;z-index&lt;/code&gt; values to ensure proper rendering of validated form fields&lt;/li&gt;
-&lt;li&gt;Floating labels now reset their &lt;code&gt;text-align&lt;/code&gt; to ensure consistent styling&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;List Groups&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Horizontal list groups with only one child now render the correct &lt;code&gt;border-radius&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Modified the &lt;code&gt;list-group-item&lt;/code&gt; selectors to better support nested imports of Bootstrap&amp;rsquo;s CSS&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Modals&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated event listeners to ignore clicks on scrollbar clicks, clicks that start inside &lt;code&gt;.modal-dialog&lt;/code&gt; but end outside it, and respond to clicks that start and end outside &lt;code&gt;.modal-dialog&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Pagination&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Fixed incorrect &lt;code&gt;border-radius&lt;/code&gt; values inside pagination components&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Scrollspy&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Scrollspy threshold option is now configurable&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Tooltips &amp;amp; Popovers&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Reverted some tooltip plugin updates to prevent issues with &lt;code&gt;selector&lt;/code&gt;, dynamic content, and disposed tooltips using &lt;code&gt;title&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fixed &lt;code&gt;trigger: &amp;quot;manual&amp;quot;&lt;/code&gt; showing and immediately hiding when calling &lt;code&gt;toggle()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated Autoprefixer to fix warnings of the &lt;code&gt;color-adjust&lt;/code&gt; property (thanks to &lt;a href=&#34;https://github.com/julien-deramond/&#34;&gt;@julien-deramond&lt;/a&gt; on our team for reporting an issue upstream here)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;docs&#34;&gt;Docs&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Searching our docs on mobile has been improved with the search field now always visible on responsive, narrow viewports&lt;/li&gt;
-&lt;li&gt;Removed links to and mentions of Slack from across the codebase, as we intend to shutter Slack in favor of GitHub Discussions&lt;/li&gt;
-&lt;li&gt;Reintroduced proper &lt;code&gt;outline&lt;/code&gt; styles for docs code samples and buttons when &lt;code&gt;:not(:focus-visible)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;farewell-slack&#34;&gt;Farewell, Slack!&lt;/h2&gt;
-&lt;p&gt;As mentioned over a month ago, we made the decision to close down our community Slack channel. Slack isn&amp;rsquo;t great at managing a large scale community and it&amp;rsquo;s prohibitively expensive as well for a community the size of ours (the Slack was over 45,000 people!). Instead of using Slack or similar tool, we&amp;rsquo;re encouraging folks to use our Discussions tab on GitHub.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/discussions&#34;&gt;Explore Bootstrap discussions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;examples-repo&#34;&gt;Examples repo&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/examples&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/09/examples.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;Examples&#34; loading=&#34;lazy&#34; width=&#34;2000&#34; height=&#34;1000&#34;&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Make sure to checkout (pun intended!) our latest project, the &lt;a href=&#34;https://github.com/twbs/examples&#34;&gt;twbs/examples repository&lt;/a&gt;! The examples project includes functional demos for all sorts of environments and JS frameworks, with more planned! You can even open every example in StackBlitz and edit them in the browser.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/examples/tree/main/starter/&#34;&gt;Starter&lt;/a&gt; – CDN links for our CSS and JS&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/examples/tree/main/sass-js/&#34;&gt;Sass &amp;amp; JS&lt;/a&gt; — Import Sass, Autoprefixer, Stylelint, and our JS bundle via npm&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/examples/tree/main/sass-js-esm/&#34;&gt;Sass &amp;amp; ESM JS&lt;/a&gt; — Import Sass, Autoprefixer, and Stylelint via npm, and then load our ESM JS with a shim&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/examples/tree/main/webpack/&#34;&gt;Webpack&lt;/a&gt; - Import and bundle Sass and JS with Webpack&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/examples/tree/main/parcel/&#34;&gt;Parcel&lt;/a&gt; - Sass, JS via Parcel&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/examples/tree/main/vite/&#34;&gt;Vite&lt;/a&gt; - Sass, JS via Vite&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/examples/tree/main/icons-font/&#34;&gt;Bootstrap Icons font&lt;/a&gt; - Import and compile Sass, Stylelint, PurgeCSS, and our icon font&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Have an idea for a new starter example?&lt;/strong&gt; Feel free to open an issue or pull request!&lt;/p&gt;
-&lt;h2 id=&#34;v4-starter-project&#34;&gt;v4 starter project&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap-npm-starter&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2022/09/bnpm.png&#34; class=&#34;d-block img-fluid mb-2 rounded border&#34; alt=&#34;npm starter&#34; loading=&#34;lazy&#34; width=&#34;2000&#34; height=&#34;1000&#34;&gt;
-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve shipped a v2.0.0 update to the &lt;a href=&#34;https://github.com/twbs/bootstrap-npm-starter&#34;&gt;twbs/bootstrap-npm-starter project&lt;/a&gt;. This release includes Bootstrap v4.6.2, Bootstrap Icons v1.9.1, a new live reload feature for local development, and several dependency updates. This project will remain dedicated to Bootstrap 4 while our &lt;a href=&#34;https://github.com/twbs/examples&#34;&gt;twbs/examples&lt;/a&gt; repo will focus on v5 and future major releases.&lt;/p&gt;
-&lt;h2 id=&#34;get-the-release&#34;&gt;Get the release&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; for the latest.&lt;/strong&gt; It&amp;rsquo;s also been pushed to npm:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i bootstrap@v5.2.1
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.2.1&#34;&gt;Read the GitHub v5.2.1 changelog&lt;/a&gt; for a complete list of changes in this release.&lt;/p&gt;
 &lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
 &lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&amp;rsquo; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
 </description>

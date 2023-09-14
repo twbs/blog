@@ -2,11 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.getbootstrap.com/archive/</loc>
-    <lastmod>2023-09-12T00:01:00+00:00</lastmod>
+    <lastmod>2023-09-14T14:30:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.getbootstrap.com/2023/09/14/bootstrap-5-3-2/</loc>
+    <lastmod>2023-09-14T14:30:00+00:00</lastmod>
   </url>
   <url>
     <loc>https://blog.getbootstrap.com/</loc>
-    <lastmod>2023-09-12T00:01:00+00:00</lastmod>
+    <lastmod>2023-09-14T14:30:00+00:00</lastmod>
   </url>
   <url>
     <loc>https://blog.getbootstrap.com/2023/09/12/bootstrap-icons-1-11-0/</loc>
