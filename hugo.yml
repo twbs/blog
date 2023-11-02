@@ -98,5 +98,5 @@ params:
   images:
     - "/assets/img/bootstrap-social.png"
 
-social:
-  twitter:              "getbootstrap"
+  social:
+    twitter:              "getbootstrap"
