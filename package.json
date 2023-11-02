@@ -40,7 +40,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.52.0",
     "find-unused-sass-variables": "^5.0.0",
-    "hugo-bin": "^0.116.2",
+    "hugo-bin": "^0.116.3",
     "linkinator": "^6.0.1",
     "lockfile-lint": "^4.12.1",
     "markdownlint-cli2": "^0.10.0",
