@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="posts-container mx-auto my-5">
   <div class="post">
-    <h1 class="post-title fw-600">{{ .Page.Title }}</h1>
+    <h1 class="post-title fw-semibold">{{ .Page.Title }}</h1>
     {{ partial "author-info" (dict "context" .) -}}
 
     {{- if .Page.Params.video -}}
