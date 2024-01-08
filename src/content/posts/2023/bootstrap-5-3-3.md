@@ -11,11 +11,11 @@ Bootstrap v5.3.3 is here with bug fixes, documentation improvements, and more fo
 
 ## Highlights
 
-- Fixed the breaking change introduced with the color mode where it was needed to manually import `variables-dark.scss` when building Bootstrap with Sass. Now, `variables.scss` will automatically import `variables-dark.scss`. If you were already importing `variables-dark.scss` manually, you should keep doing it as it won't break anything and will be the way to go in v6.
+- Fixed a breaking change introduced with color modes where it was required to manually import `variables-dark.scss` when building Bootstrap with Sass. Now, `_variables.scss` will automatically import `_variables-dark.scss`. If you were already importing `_variables-dark.scss` manually, you should keep doing it as it won't break anything and will be the way to go in v6.
 
 ## Color modes
 
-- Our badges now use the `.text-bg-*` text utilities to be certain that the text is always readable (especially when the customized colors are different in light and dark modes).
+- Badges now use the `.text-bg-*` text utilities to be certain that the text is always readable (especially when the customized colors are different in light and dark modes).
 - Fixed our `color-modes.js` script to handle the case where the OS is set to light mode and the auto color mode is used on the website. If you copied the script from our docs, you should apply [this change](https://github.com/twbs/bootstrap/commit/73e1dcf43eff8371dde52ce41bd1d9fdc2b47d1f) to your own script.
 - Fixed color schemes description in the color modes documentation to show that `color-scheme()` only accept `light` and `dark` values as parameters.
 
