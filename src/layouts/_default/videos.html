@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $postsWithVideos := where (where site.RegularPages "Type" "posts") ".Params.video" "!=" nil -}}
-{{- range $index, $post := $postsWithVideos }}
+{{- range $index, $post := $postsWithVideos -}}
   {{- if eq $index 0 -}}
   <div class="row my-5">
   {{- end }}
