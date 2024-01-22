@@ -13,8 +13,10 @@
 <meta name="twitter:creator" content="@{{ $author_twitter | default .Site.Params.twitter }}">
 
 {{ template "_internal/opengraph.html" . -}}
+
 {{- /* Manually add `og:image`'s dimensions since Hugo's internal shortcode doesn't do it */ -}}
-{{ with (imageConfig (path.Join "src/static" (index $.Site.Params.images 0))) -}}
+{{- $socialImage := path.Join "src/static" (index $.Site.Params.images 0) -}}
+{{- with imageConfig $socialImage -}}
 <meta property="og:image:width" content="{{ .Width }}">
 <meta property="og:image:height" content="{{ .Height }}">
 {{- end }}
