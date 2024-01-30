@@ -1,6 +1,6 @@
 ---
 author: julien-deramond
-date: "2023-12-05T07:30:00Z"
+date: "2024-01-30T07:30:00Z"
 title: Bootstrap 5.3.3
 keywords:
   - bootstrap
@@ -34,6 +34,7 @@ Bootstrap v5.3.3 is here with bug fixes, documentation improvements, and more fo
 - Changed Vite config path import in Vite guide.
 - Enhanced the card image description of the `.card-img-*` classes.
 - Mentioned `shift-color()` function in the Sass customization page among `tint-color()` and `shade-color()`.
+- Added missing `type="button"` attribute to the Cheatsheet examples navigation buttons.
 
 ## Get the release
 
