@@ -1,6 +1,6 @@
 ---
 author: julien-deramond
-date: "2024-01-30T07:30:00Z"
+date: "2024-02-14T07:30:00Z"
 title: Bootstrap 5.3.3
 keywords:
   - bootstrap
@@ -25,6 +25,7 @@ Bootstrap v5.3.3 is here with bug fixes, documentation improvements, and more fo
 - Dropped evenly items distribution for modal and offcanvas headers.
 - Fixed the accordion CSS selectors to avoid inheritance issues when nesting accordions.
 - Fixed the focus box-shadow for the validation stated form controls.
+- Fixed the product example mobile navbar toggler.
 
 ## Docs
 
