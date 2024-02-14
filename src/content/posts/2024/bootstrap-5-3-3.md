@@ -25,7 +25,9 @@ Bootstrap v5.3.3 is here with bug fixes, documentation improvements, and more fo
 - Dropped evenly items distribution for modal and offcanvas headers.
 - Fixed the accordion CSS selectors to avoid inheritance issues when nesting accordions.
 - Fixed the focus box-shadow for the validation stated form controls.
+- Fixed the focus ring on focused checked buttons.
 - Fixed the product example mobile navbar toggler.
+- Changed the RTL processing of carousel control icons.
 
 ## Docs
 
@@ -36,6 +38,7 @@ Bootstrap v5.3.3 is here with bug fixes, documentation improvements, and more fo
 - Enhanced the card image description of the `.card-img-*` classes.
 - Mentioned `shift-color()` function in the Sass customization page among `tint-color()` and `shade-color()`.
 - Added missing `type="button"` attribute to the Cheatsheet examples navigation buttons.
+- Updated the colors table in the customization page to be responsive.
 
 ## Get the release
 
