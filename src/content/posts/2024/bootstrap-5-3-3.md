@@ -1,6 +1,6 @@
 ---
 author: julien-deramond
-date: "2024-02-14T07:30:00Z"
+date: "2024-02-19T07:30:00Z"
 title: Bootstrap 5.3.3
 keywords:
   - bootstrap
@@ -12,6 +12,7 @@ Bootstrap v5.3.3 is here with bug fixes, documentation improvements, and more fo
 ## Highlights
 
 - Fixed a breaking change introduced with color modes where it was required to manually import `variables-dark.scss` when building Bootstrap with Sass. Now, `_variables.scss` will automatically import `_variables-dark.scss`. If you were already importing `_variables-dark.scss` manually, you should keep doing it as it won't break anything and will be the way to go in v6.
+- Fixed a regression in the selector engine that wasn't able to handle multiple IDs anymore.
 
 ## Color modes
 
