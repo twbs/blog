@@ -1,13 +1,13 @@
 {{ define "main" }}
 <div class="posts-container mx-auto my-5">
   <div class="posts">
-    {{ $paginator := .Paginate (where site.RegularPages "Type" "posts") }}
+    {{ $paginator := .Paginate (where site.RegularPages "Type" "posts") -}}
     {{- range $i, $page := $paginator.Pages -}}
       {{- /* Don't lazyload the first video in each page */ -}}
       {{- $lazyload := cond (eq $i 0) false true -}}
 
       <div class="post">
-        <h1 class="post-title fw-600">
+        <h1 class="post-title fw-semibold">
           <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
         </h1>
 

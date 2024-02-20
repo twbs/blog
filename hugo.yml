@@ -1,7 +1,6 @@
 languageCode:           "en"
 title:                  "Bootstrap Blog"
 baseURL:                "https://blog.getbootstrap.com"
-enableInlineShortcodes: true
 
 security:
   enableInlineShortcodes: true
