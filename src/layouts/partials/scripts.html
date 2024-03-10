@@ -2,7 +2,7 @@
 
 {{- $esbuildOptions := dict "target" "es2019" -}}
 
-{{- if eq hugo.Environment "production" -}}
+{{- if hugo.IsProduction -}}
   {{- $esbuildOptions = merge $esbuildOptions (dict "minify" "true") -}}
 {{- end -}}
 
