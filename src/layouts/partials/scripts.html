@@ -1,16 +1,17 @@
-<script async src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
-
 {{- $esbuildOptions := dict "target" "es2019" -}}
 
 {{- if hugo.IsProduction -}}
   {{- $esbuildOptions = merge $esbuildOptions (dict "minify" "true") -}}
 {{- end -}}
 
-{{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | resources.Copy "/assets/js/lazyload.js" -}}
-{{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | resources.Copy "/assets/js/application.js" -}}
+{{- $bootstrapJs := resources.Get "/js/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" -}}
+<script async src="{{ $bootstrapJs.Permalink | relURL }}"></script>
 
-<script async src="{{ $lazyload.Permalink | relURL }}"></script>
+{{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/application.js" -}}
+{{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/lazyload.js" -}}
+
 <script async src="{{ $application.Permalink | relURL }}"></script>
+<script async src="{{ $lazyload.Permalink | relURL }}"></script>
 
 {{ range .Page.Params.extra_js -}}
 <script{{ with .async }} async{{ end }} src="{{ .src }}"{{ with .integrity }} {{ printf "integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
