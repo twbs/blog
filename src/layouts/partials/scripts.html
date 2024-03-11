@@ -1,10 +1,11 @@
-<script async src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
-
 {{- $esbuildOptions := dict "target" "es2019" -}}
 
 {{- if hugo.IsProduction -}}
   {{- $esbuildOptions = merge $esbuildOptions (dict "minify" "true") -}}
 {{- end -}}
+
+{{- $bootstrapJs := resources.Get "/js/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" -}}
+<script async src="{{ $bootstrapJs.Permalink | relURL }}"></script>
 
 {{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/lazyload.js" -}}
 {{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/application.js" -}}
