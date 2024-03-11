@@ -4,7 +4,7 @@
   {{- $esbuildOptions = merge $esbuildOptions (dict "minify" "true") -}}
 {{- end -}}
 
-{{- $bootstrapJs := resources.Get "/js/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" -}}
+{{- $bootstrapJs := resources.Get "/js/vendor/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" -}}
 <script async src="{{ $bootstrapJs.Permalink | relURL }}"></script>
 
 {{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/application.js" -}}
