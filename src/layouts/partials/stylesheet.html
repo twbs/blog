@@ -5,6 +5,6 @@
   {{- $sassOptions = merge $sassOptions (dict "outputStyle" "compressed") -}}
 {{- end -}}
 
-{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions | postCSS $postcssOptions -}}
+{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions | postCSS $postcssOptions | fingerprint -}}
 
 <link href="{{ $style.Permalink | relURL }}" rel="stylesheet">
