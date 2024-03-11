@@ -8,7 +8,7 @@
 <script async src="{{ $bootstrapJs.Permalink | relURL }}"></script>
 
 {{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/application.js" -}}
-{{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/lazyload.js" }}
+{{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/lazyload.js" -}}
 
 <script async src="{{ $application.Permalink | relURL }}"></script>
 <script async src="{{ $lazyload.Permalink | relURL }}"></script>
