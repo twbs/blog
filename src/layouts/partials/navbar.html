@@ -1,6 +1,6 @@
-<header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
+<header class="navbar navbar-expand-lg bd-navbar sticky-top">
   <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
-    <div class="d-lg-none" style="width: 2.25rem;"></div>
+    <div class="d-lg-none" style="width: 2rem;"></div>
 
     <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
       {{ partial "icons/bootstrap-white-fill.svg" (dict "class" "d-block my-1" "width" "40" "height" "32") }}
@@ -10,7 +10,7 @@
       <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#three-dots"></use></svg>
     </button>
 
-    <div class="offcanvas-lg offcanvas-end flex-grow-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+    <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
       <div class="offcanvas-header px-4 pb-0">
         <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Bootstrap</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
@@ -32,7 +32,7 @@
             <a class="nav-link py-2 px-0 px-lg-2" href="{{ .Site.Params.themes }}" target="_blank" rel="noopener">Themes</a>
           </li>
           <li class="nav-item col-6 col-lg-auto">
-            <a class="nav-link py-2 px-0 px-lg-2 active" href="{{ .Site.Params.blog }}">Blog</a>
+            <a class="nav-link py-2 px-0 px-lg-2 active" href="/">Blog</a>
           </li>
         </ul>
 
