@@ -1,10 +1,16 @@
 <div class="masthead py-5">
   <div class="mb-4 text-center text-lg-start">
     <a class="flex-shrink-0 mb-lg-3 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-      <img srcset="/assets/brand/bootstrap-logo-shadow.png, /assets/brand/bootstrap-logo-shadow@2x.png 2x"
-           src="/assets/brand/bootstrap-logo-shadow.png"
-           width="200" height="165" alt="Bootstrap"
-           class="bd-booticon d-block mx-auto mb-3 mx-lg-0">
+      {{ $img_path := "/assets/brand/bootstrap-logo-shadow.png" -}}
+      {{- $img_path_2x := "/assets/brand/bootstrap-logo-shadow@2x.png" -}}
+      {{- with (imageConfig (path.Join "/src/static" $img_path)) -}}
+        <img class="bd-booticon d-block mx-auto mb-3 mx-lg-0"
+             srcset="{{ $img_path }}, {{ $img_path_2x }} 2x"
+             src="{{ $img_path }}"
+             alt="Bootstrap"
+             width="{{ .Width }}"
+             height="{{ .Height }}">
+        {{- end }}
     </a>
     <div class="ms-3 ms-lg-0">
       <h1 class="mb-1 mb-lg-2 f1 fw-600">The Bootstrap Blog</h1>
