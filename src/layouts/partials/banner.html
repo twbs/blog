@@ -1,7 +1,7 @@
 {{- /* Accepts 1 parameter, the "context" */ -}}
 
 {{- $src := .context.Page.Params.banner -}}
-{{- $config := imageConfig (add "/src/static" $src) -}}
+{{- $config := imageConfig (path.Join "/src/static" $src) -}}
 {{- $classes := "d-block img-fluid rounded-3 mb-4" -}}
 
-<img src="{{ $src }}" class="{{ $classes }}" alt="" loading="lazy" width="{{ $config.Width }}" height="{{ $config.Height }}">
+<img src="{{ $src }}" class="{{ $classes }}" alt="" width="{{ $config.Width }}" height="{{ $config.Height }}" loading="lazy">
