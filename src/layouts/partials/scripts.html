@@ -5,14 +5,21 @@
 {{- end -}}
 
 {{- $bootstrapJs := resources.Get "/js/vendor/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" -}}
-<script async src="{{ $bootstrapJs.Permalink | relURL }}"></script>
+<script defer src="{{ $bootstrapJs.RelPermalink }}"></script>
 
-{{- $application := resources.Get "js/application.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/application.js" -}}
-{{- $lazyload := resources.Get "js/lazyload.js" | js.Build $esbuildOptions | fingerprint | resources.Copy "/assets/js/lazyload.js" -}}
+{{- $scripts := slice "js/application.js" "js/lazyload.js" -}}
+{{- range $scriptFile := $scripts -}}
+  {{- $script := resources.Get $scriptFile | js.Build $esbuildOptions | fingerprint -}}
 
-<script async src="{{ $application.Permalink | relURL }}"></script>
-<script async src="{{ $lazyload.Permalink | relURL }}"></script>
+  {{- if hugo.IsProduction -}}
+    {{- $script = $script | resources.Minify -}}
+  {{- end -}}
+
+  {{- $script = $script | resources.Copy (path.Join "/assets" $scriptFile) -}}
+
+  <script defer src="{{ $script.RelPermalink }}"></script>
+{{- end -}}
 
 {{ range .Page.Params.extra_js -}}
-<script{{ with .async }} async{{ end }} src="{{ .src }}"{{ with .integrity }} {{ printf "integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
+  <script{{ with .async }} async{{ end }}{{ with .defer }} defer{{ end }} src="{{ .src }}"{{ with .integrity }} {{ printf "integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
 {{- end -}}
