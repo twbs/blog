@@ -22,7 +22,7 @@
       {{ $related := .Site.RegularPages.Related . | first 3 -}}
       {{- range $related -}}
       <li class="d-flex mb-3 text-body-secondary">
-        <svg class="bi me-2 f5"><use xlink:href="#file-earmark-richtext"></use></svg>
+        <svg class="bi mt-1 me-2 f5"><use xlink:href="#file-earmark-richtext"></use></svg>
         <div class="fs-6">
           <h3 class="h5 mb-1 lh-1">
             <a href="{{ .RelPermalink }}">
