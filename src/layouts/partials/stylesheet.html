@@ -5,6 +5,10 @@
   {{- $sassOptions = merge $sassOptions (dict "outputStyle" "compressed") -}}
 {{- end -}}
 
-{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions | postCSS $postcssOptions | fingerprint -}}
+{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions | postCSS $postcssOptions -}}
+{{- if hugo.IsProduction -}}
+  {{- $style = $style | resources.Minify -}}
+{{- end -}}
+{{- $style = $style | fingerprint -}}
 
-<link href="{{ $style.Permalink | relURL }}" rel="stylesheet">
+<link href="{{ $style.RelPermalink }}" rel="stylesheet">
