@@ -45,11 +45,11 @@
     "lockfile-lint": "^4.13.2",
     "markdownlint-cli2": "^0.12.1",
     "npm-run-all2": "^6.1.2",
-    "postcss": "^8.4.36",
+    "postcss": "^8.4.37",
     "postcss-cli": "^11.0.0",
     "stylelint": "^16.2.1",
     "stylelint-config-twbs-bootstrap": "^14.0.0",
-    "vanilla-lazyload": "^17.8.8",
+    "vanilla-lazyload": "^18.0.0",
     "vnu-jar": "23.4.11"
   }
 }
