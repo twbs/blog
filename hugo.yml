@@ -9,6 +9,9 @@ security:
       - ^HUGO_
       - NETLIFY
 
+build:
+  noJSConfigInAssets: false
+
 markup:
   goldmark:
     renderer:
