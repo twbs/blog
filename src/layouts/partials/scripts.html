@@ -9,17 +9,11 @@
 
 {{- $scripts := slice "js/application.js" "js/lazyload.js" -}}
 {{- range $scriptFile := $scripts -}}
-  {{- $script := resources.Get $scriptFile | js.Build $esbuildOptions -}}
+{{- $script := resources.Get $scriptFile | js.Build $esbuildOptions | fingerprint | resources.Copy (path.Join "/assets" $scriptFile) -}}
 
-  {{- if hugo.IsProduction -}}
-    {{- $script = $script | resources.Minify -}}
-  {{- end -}}
-
-  {{- $script = $script | fingerprint | resources.Copy (path.Join "/assets" $scriptFile) -}}
-
-  <script defer src="{{ $script.RelPermalink }}"></script>
+<script defer src="{{ $script.RelPermalink }}"></script>
 {{- end -}}
 
 {{ range .Page.Params.extra_js -}}
-  <script{{ with .async }} async{{ end }}{{ with .defer }} defer{{ end }} src="{{ .src }}"{{ with .integrity }} {{ printf "integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
+<script{{ with .async }} async{{ end }}{{ with .defer }} defer{{ end }} src="{{ .src }}"{{ with .integrity }} {{ printf "integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
 {{- end -}}

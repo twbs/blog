@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "npm run serve",
-    "build": "hugo --cleanDestinationDir --minify --printPathWarnings --printUnusedTemplates",
+    "build": "hugo --cleanDestinationDir --printPathWarnings --printUnusedTemplates",
     "serve": "hugo server --port 4000 --disableFastRender --noHTTPCache --renderToMemory --printPathWarnings --printUnusedTemplates",
     "serve-only": "npx sirv-cli _site --port 4000",
     "test": "npm-run-all build --parallel --continue-on-error --aggregate-output test-*",
