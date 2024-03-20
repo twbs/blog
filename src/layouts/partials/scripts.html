@@ -7,18 +7,17 @@
 {{- $bootstrapJs := resources.Get "/js/vendor/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" -}}
 <script defer src="{{ $bootstrapJs.RelPermalink }}"></script>
 
-{{- $scripts := slice "js/application.js" "js/lazyload.js" -}}
-{{- range $scriptFile := $scripts -}}
-  {{- $script := resources.Get $scriptFile | js.Build $esbuildOptions -}}
+{{- $application := resources.Get "js/application.js" -}}
+{{- $lazyload := resources.Get "js/lazyload.js" -}}
+{{- $script := slice $lazyload $application | resources.Concat "/assets/js/application.js" | js.Build $esbuildOptions -}}
 
-  {{- if hugo.IsProduction -}}
-    {{- $script = $script | resources.Minify -}}
-  {{- end -}}
-
-  {{- $script = $script | fingerprint | resources.Copy (path.Join "/assets" $scriptFile) -}}
-
-  <script defer src="{{ $script.RelPermalink }}"></script>
+{{- if hugo.IsProduction -}}
+  {{- $script = $script | resources.Minify -}}
 {{- end -}}
+
+{{- $script = $script | fingerprint -}}
+
+<script defer src="{{ $script.RelPermalink }}"></script>
 
 {{ range .Page.Params.extra_js -}}
   <script{{ with .async }} async{{ end }}{{ with .defer }} defer{{ end }} src="{{ .src }}"{{ with .integrity }} {{ printf "integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
