@@ -17,7 +17,7 @@
 {{- end }}
 
 {{- $colorModeJS := resources.Get "js/color-modes.js" | fingerprint | resources.Copy "/assets/js/color-modes.js" -}}
-<script src="{{ $colorModeJS.Permalink | relURL }}"></script>
+<script src="{{ $colorModeJS.RelPermalink }}"></script>
 
 {{ partial "stylesheet" . }}
 {{ partial "favicons" . }}
