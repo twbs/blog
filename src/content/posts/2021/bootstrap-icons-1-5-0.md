@@ -6,6 +6,8 @@ video: FxzBvqY5PP0
 keywords:
   - icons
   - release
+images:
+  - "/assets/img/2021/05/v150-new-icons.png"
 ---
 
 [Bootstrap Icons v1.5.0](https://icons.getbootstrap.com) adds 45 new icons across a few categories as I continue to round out the set. Keep reading to see what's new!

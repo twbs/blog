@@ -6,6 +6,17 @@ video: L93-7vRfxNs
 keywords:
   - bootstrap
   - release
+images:
+  # TODO only 6 and order
+  - "/assets/img/2022/05/docs-home.png"
+  - "/assets/img/2022/05/docs-quick-start.png"
+  - "/assets/img/2022/05/docs-search.png"
+  - "/assets/img/2022/05/docs-version-picker.png"
+  - "/assets/img/2022/05/buttons-compared.png"
+  - "/assets/img/2022/05/custom-button.png"
+  - "/assets/img/2022/05/bootstrap-guides@2x.png"
+  - "/assets/img/2022/05/guides-stackblitz.png"
+  - "/assets/img/2022/05/snippets-stackblitz.png"
 ---
 
 **Bootstrap v5.2.0 is finally stable!** We've ironed out more bugs, improved more documentation, written new guides and built out new functional environment examples, and so much more!

@@ -6,6 +6,10 @@ video: phOW-CZJWT0
 keywords:
   - bootstrap
   - release
+images:
+  - "/assets/img/2014/01/docs.png"
+  - "/assets/img/2014/01/sass.png"
+  - "/assets/img/2014/01/examples.jpg"
 ---
 
 Today we're stoked to ship Bootstrap v3.1. We've got a handful of new features, plenty of bug fixes and improvements, and updated build tools.

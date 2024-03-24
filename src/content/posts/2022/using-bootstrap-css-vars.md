@@ -6,6 +6,12 @@ keywords:
   - bootstrap
   - guide
 banner: "/assets/img/bootstrap-banner.png"
+images:
+  - "/assets/img/bootstrap-banner.png"
+  - "/assets/img/2022/05/docs-root-vars.png"
+  - "/assets/img/2022/05/docs-custom-button.png"
+  - "/assets/img/2022/05/docs-custom-tooltip.png"
+  - "/assets/img/2022/05/bg-opacity.png"
 ---
 
 [Bootstrap v5.2.0-beta1](/2022/05/13/bootstrap-5-2-0-beta/) added a slew of CSS custom properties, or CSS variables, across the `:root` level and all our core components. Here's a quick look at how you can utilize them in your projects.

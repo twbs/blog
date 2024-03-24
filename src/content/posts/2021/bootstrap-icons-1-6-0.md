@@ -6,6 +6,8 @@ video: sOS9aOIXPEk
 keywords:
   - icons
   - release
+images:
+  - "/assets/img/2021/10/v160-new-updated-icons.png"
 ---
 
 [Bootstrap Icons v1.6.0](https://icons.getbootstrap.com) adds over 30 new icons, adds official Composer support, includes a new `.scss` stylesheet for the icon font, plus some other enhancements and bug fixes. Keep reading to see what's new!

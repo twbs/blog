@@ -6,6 +6,16 @@ video: 1-yzqgwTVi8
 keywords:
   - bootstrap
   - release
+images:
+  # TODO only 6 and order
+  - "/assets/img/2022/05/docs-home.png"
+  - "/assets/img/2022/05/docs-quick-start.png"
+  - "/assets/img/2022/05/docs-version-picker.png"
+  - "/assets/img/2022/05/docs-search.png"
+  - "/assets/img/2022/05/buttons-compared.png"
+  - "/assets/img/2022/05/inputs-compared.png"
+  - "/assets/img/2022/05/custom-button.png"
+  - "/assets/img/2022/05/docs-darkmode.png"
 ---
 
 It's the biggest release since v5 itself—**Bootstrap v5.2.0-beta1 is here!** This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.

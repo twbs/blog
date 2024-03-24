@@ -6,6 +6,8 @@ video: Z6_ZNW1DACE
 keywords:
   - icons
   - release
+images:
+  - "/assets/img/2022/07/bootstrap-icons-v190.png"
 ---
 
 [Bootstrap Icons v1.9.0](https://icons.getbootstrap.com) is here with over 140 new and updated icons, including some longstanding requests for new brands, transportation options, numbers and letters, and so much more. With this release, we're now at **over 1,800 icons**!

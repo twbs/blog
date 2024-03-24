@@ -2,6 +2,8 @@
 author: mdo
 date: "2013-03-03T00:00:00Z"
 title: Welcome to the Bootstrap Expo
+images:
+  - "/assets/img/2013/03/bootstrap-expo.jpg"
 ---
 
 [![Bootstrap Expo](/assets/img/2013/03/bootstrap-expo.jpg)](https://expo.getbootstrap.com/)

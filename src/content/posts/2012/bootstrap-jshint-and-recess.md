@@ -2,6 +2,8 @@
 author: mdo
 date: "2012-04-19T00:00:00Z"
 title: Bootstrap, JSHint, and Recess
+images:
+  - "/assets/img/2012/04/recess.png"
 ---
 
 This last week we've added two new developer tools to the Bootstrap tool chain and I wanted to take a minute to let you know a little bit more about what they are, why we've added them, and why it matters.

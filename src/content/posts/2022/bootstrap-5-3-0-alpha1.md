@@ -5,6 +5,11 @@ title: Bootstrap 5.3.0-alpha1
 keywords:
   - bootstrap
   - release
+images:
+  - "/assets/img/2022/12/docs-dark-mode.png"
+  - "/assets/img/2022/12/docs-color-modes.png"
+  - "/assets/img/2022/12/docs-colors.png"
+  - "/assets/img/2022/12/docs-colors-dark-mode.png"
 ---
 
 It's a Christmas miracle—Bootstrap v5.3.0-alpha1 has arrived just in time for the holiday break! This release brings new color mode support, an expanded color palette with variables and utilities, and more.

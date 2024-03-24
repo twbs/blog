@@ -6,6 +6,10 @@ keywords:
   - bootstrap
   - release
 video: GC5E8ie2pdM
+images:
+  - "/assets/img/2022/12/docs-color-modes.png"
+  - "/assets/img/2023/05/colors-light-mode.png"
+  - "/assets/img/2023/05/colors-dark-mode.png"
 ---
 
 It's official, the final stable release of v5.3.0 has landed! It's been a monumental effort to revamp our codebase for CSS variables and color modes, one that will see continued changes leading up to an eventual Bootstrap 6. And we're so excited to finally ship it!

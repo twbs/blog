@@ -3,6 +3,9 @@ author: mdo
 date: "2014-02-25T00:00:00Z"
 title: Introducing Ratchet 2
 video: vimZj8HW0Kg
+images:
+  - "/assets/img/2014/02/ratchet-docs.png"
+  - "/assets/img/2014/02/ratchet-examples-sm.png"
 ---
 
 Today we're stoked to introduce the brand spanking new [Ratchet 2.0](http://goratchet.com/). The mobile-only framework for building mobile apps with HTML, CSS, and JavaScript has been overhauled with new features, documentation, and a brand new home.

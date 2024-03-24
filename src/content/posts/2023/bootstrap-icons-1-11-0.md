@@ -7,6 +7,8 @@ keywords:
   - release
 aliases:
   - /2022/09/12/bootstrap-icons-1-11-0/
+images:
+  - "/assets/img/2023/09/icons-1-11-0.png"
 ---
 
 [Bootstrap Icons v1.11.0](https://icons.getbootstrap.com) has arrived with 100 new icons—including new floppy disk icons, additional brand icons, new person icons, new emojis, some birthday cake, a few new science icons, and more. We're now at **over 2,000 icons**!

@@ -5,6 +5,9 @@ title: Bootstrap 5.2.1
 keywords:
   - bootstrap
   - release
+images:
+  - "/assets/img/2022/09/examples.png"
+  - "/assets/img/2022/09/bnpm.png"
 ---
 
 Bootstrap v5.2.1 is here with fixes from our latest minor release, v5.2. As a patch release, these changes are limited to bug fixes, documentation updates, and some dependency updates.

@@ -5,6 +5,8 @@ title: Bootstrap Icons v1.10.0
 keywords:
   - icons
   - release
+images:
+  - "/assets/img/2022/11/bootstrap-icons-v1100.png"
 ---
 
 [Bootstrap Icons v1.10.0](https://icons.getbootstrap.com) is here with nearly 150 new icons. This release includes tons of new variants for person, building, and database icons, plus new brands, rockets, road signs, globes, and many more. We're now at **over 1,900 icons**!
