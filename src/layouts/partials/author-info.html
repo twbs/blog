@@ -13,9 +13,9 @@
          srcset="{{ $img_url }}, {{ $img_url_2x }} 2x"
          src="{{ $img_url }}"
          alt=""
+         {{ if eq .lazyload true }}loading="lazy"{{ end }}
          width="{{ $avatar_width }}"
-         height="{{ $avatar_width }}"
-         {{ if eq .lazyload true }}loading="lazy"{{ end }}>
+         height="{{ $avatar_width }}">
     <span>@{{ $author }}</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="{{ $date | dateFormat "02 Jan 06 15:04 MST" }}">
