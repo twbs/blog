@@ -2,11 +2,11 @@
 
 {{- $lazyload := .lazyload -}}
 {{- $video := .context.Params.video -}}
-{{- $video_start := .context.Params.video_start -}}
+{{- $videoStart := .context.Params.video_start -}}
 
 <div class="ratio ratio-16x9">
   <iframe
-    {{ if eq $lazyload true }}class="lazy" data-src{{ else }}src{{ end }}="https://www.youtube-nocookie.com/embed/{{ $video }}?rel=0{{ with $video_start }}&amp;start={{ . }}{{ end }}"
+    {{ if eq $lazyload true }}class="lazy" data-src{{ else }}src{{ end }}="https://www.youtube-nocookie.com/embed/{{ $video }}?rel=0{{ with $videoStart }}&amp;start={{ . }}{{ end }}"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
     title="YouTube Video"

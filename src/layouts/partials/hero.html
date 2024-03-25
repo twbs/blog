@@ -1,12 +1,12 @@
 <div class="masthead py-5">
   <div class="mb-4 text-center text-lg-start">
     <a class="flex-shrink-0 mb-lg-3 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-      {{ $img_path := "/assets/brand/bootstrap-logo-shadow.png" -}}
-      {{- $img_path_2x := "/assets/brand/bootstrap-logo-shadow@2x.png" -}}
-      {{- with (imageConfig (path.Join "/src/static" $img_path)) -}}
+      {{ $imgPath := "/assets/brand/bootstrap-logo-shadow.png" -}}
+      {{- $imgPath2x := "/assets/brand/bootstrap-logo-shadow@2x.png" -}}
+      {{- with (imageConfig (path.Join "/src/static" $imgPath)) -}}
       <img class="bd-booticon d-block mx-auto mb-3 mx-lg-0"
-           srcset="{{ $img_path }}, {{ $img_path_2x }} 2x"
-           src="{{ $img_path }}"
+           srcset="{{ $imgPath }}, {{ $imgPath2x }} 2x"
+           src="{{ $imgPath }}"
            alt="Bootstrap"
            width="{{ .Width }}"
            height="{{ .Height }}">
