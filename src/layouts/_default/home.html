@@ -3,7 +3,7 @@
   <div class="posts">
     {{ $paginator := .Paginate (where site.RegularPages "Type" "posts") -}}
     {{- range $i, $page := $paginator.Pages -}}
-      {{- /* Don't lazyload the first video in each page */ -}}
+      {{- /* Don't lazyload the first asset in each page (video, banner etc) */ -}}
       {{- $lazyload := cond (eq $i 0) false true -}}
 
       <div class="post">
