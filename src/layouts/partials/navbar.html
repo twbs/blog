@@ -3,7 +3,7 @@
     <div class="d-lg-none" style="width: 2rem;"></div>
 
     <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
-      {{ partial "icons/bootstrap-white-fill.svg" (dict "class" "d-block my-1" "width" "40" "height" "32") }}
+      {{ partial "icons/bootstrap-white-fill.svg" (dict "class" "d-block my-1") -}}
     </a>
 
     <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,19 +41,19 @@
         <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
           <li class="nav-item col-6 col-lg-auto">
             <a class="nav-link py-2 px-0 px-lg-2" href="{{ .Site.Params.github_org }}" target="_blank" rel="noopener" aria-label="GitHub">
-              {{ partial "icons/github.svg" (dict "class" "navbar-nav-svg" "width" "16" "height" "16") }}
+              {{ partial "icons/github.svg" (dict "class" "navbar-nav-svg") -}}
               <small class="d-lg-none ms-2">GitHub</small>
             </a>
           </li>
           <li class="nav-item col-6 col-lg-auto">
             <a class="nav-link py-2 px-0 px-lg-2" href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener" aria-label="X (formerly Twitter)">
-              {{ partial "icons/twitter.svg" (dict "class" "navbar-nav-svg" "width" "16" "height" "16") }}
+              {{ partial "icons/twitter.svg" (dict "class" "navbar-nav-svg") -}}
               <small class="d-lg-none ms-2">X (formerly Twitter)</small>
             </a>
           </li>
           <li class="nav-item col-6 col-lg-auto">
             <a class="nav-link py-2 px-0 px-lg-2" href="{{ .Site.Params.opencollective }}" target="_blank" rel="noopener" aria-label="Open Collective">
-              {{ partial "icons/opencollective.svg" (dict "class" "navbar-nav-svg" "width" "16" "height" "16") }}
+              {{ partial "icons/opencollective.svg" (dict "class" "navbar-nav-svg") -}}
               <small class="d-lg-none ms-2">Open Collective</small>
             </a>
           </li>

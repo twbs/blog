@@ -9,7 +9,7 @@
 <meta name="author" content="{{ $author | default .Site.Params.author }}">
 
 {{ template "_internal/twitter_cards.html" . -}}
-{{- /* Manually add `twitter:creator` since Hugo's internal shortcode has some issues */ -}}
+{{- /* Manually add `twitter:creator` since Hugo's internal shortcode doesn't add it */ -}}
 <meta name="twitter:creator" content="@{{ $authorTwitter | default .Site.Params.twitter }}">
 
 {{ template "_internal/opengraph.html" . -}}
@@ -20,3 +20,5 @@
 <meta property="og:image:width" content="{{ .Width }}">
 <meta property="og:image:height" content="{{ .Height }}">
 {{- end }}
+
+{{ template "_internal/schema.html" . -}}
