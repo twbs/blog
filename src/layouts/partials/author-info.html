@@ -7,6 +7,7 @@
   <a class="d-flex align-items-center text-muted text-decoration-none" href="{{ $authorUrl }}" target="_blank" rel="noopener">
     {{ $avatarWidth := 32 -}}
     {{- $avatarWidth2x := mul $avatarWidth 2 -}}
+    {{- $avatarHeight := $avatarWidth -}}
     {{- $imgUrl := printf "%s%s%d" $authorUrl ".png?size=" $avatarWidth -}}
     {{- $imgUrl2x := printf "%s%s%d" $authorUrl ".png?size=" $avatarWidth2x -}}
     <img class="mb-0 me-2 rounded-2"
@@ -15,7 +16,7 @@
          alt=""
          {{ if eq .lazyload true }}loading="lazy"{{ end }}
          width="{{ $avatarWidth }}"
-         height="{{ $avatarWidth }}">
+         height="{{ $avatarHeight }}">
     <span>@{{ $author }}</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="{{ $date | dateFormat "02 Jan 06 15:04 MST" }}">
