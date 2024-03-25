@@ -3,19 +3,20 @@
 {{- $author := .context.Page.Params.author -}}
 {{- $date := .context.Date -}}
 <div class="d-flex align-items-center mb-4 text-muted author-info">
-  {{ $author_url := urls.JoinPath "https://github.com" $author -}}
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="{{ $author_url }}" target="_blank" rel="noopener">
-    {{ $avatar_width := 32 -}}
-    {{- $avatar_width_2x := mul $avatar_width 2 -}}
-    {{- $img_url := printf "%s%s%d" $author_url ".png?size=" $avatar_width -}}
-    {{- $img_url_2x := printf "%s%s%d" $author_url ".png?size=" $avatar_width_2x -}}
+  {{ $authorUrl := urls.JoinPath "https://github.com" $author -}}
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="{{ $authorUrl }}" target="_blank" rel="noopener">
+    {{ $avatarWidth := 32 -}}
+    {{- $avatarWidth2x := mul $avatarWidth 2 -}}
+    {{- $avatarHeight := $avatarWidth -}}
+    {{- $imgUrl := printf "%s%s%d" $authorUrl ".png?size=" $avatarWidth -}}
+    {{- $imgUrl2x := printf "%s%s%d" $authorUrl ".png?size=" $avatarWidth2x -}}
     <img class="mb-0 me-2 rounded-2"
-         srcset="{{ $img_url }}, {{ $img_url_2x }} 2x"
-         src="{{ $img_url }}"
+         srcset="{{ $imgUrl }}, {{ $imgUrl2x }} 2x"
+         src="{{ $imgUrl }}"
          alt=""
-         width="{{ $avatar_width }}"
-         height="{{ $avatar_width }}"
-         {{ if eq .lazyload true }}loading="lazy"{{ end }}>
+         {{ if eq .lazyload true }}loading="lazy"{{ end }}
+         width="{{ $avatarWidth }}"
+         height="{{ $avatarHeight }}">
     <span>@{{ $author }}</span>
   </a>
   <span class="d-flex align-items-center ms-3" title="{{ $date | dateFormat "02 Jan 06 15:04 MST" }}">

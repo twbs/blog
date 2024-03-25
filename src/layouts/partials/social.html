@@ -1,16 +1,16 @@
 {{- $author := "" -}}
-{{- $author_twitter := "" -}}
+{{- $authorTwitter := "" -}}
 
 {{- if isset .Page.Params "author" -}}
   {{- $author = (index .Site.Data.authors .Page.Params.author).name -}}
-  {{- $author_twitter = (index .Site.Data.authors .Params.author).twitter -}}
+  {{- $authorTwitter = (index .Site.Data.authors .Params.author).twitter -}}
 {{- end -}}
 
 <meta name="author" content="{{ $author | default .Site.Params.author }}">
 
 {{ template "_internal/twitter_cards.html" . -}}
 {{- /* Manually add `twitter:creator` since Hugo's internal shortcode has some issues */ -}}
-<meta name="twitter:creator" content="@{{ $author_twitter | default .Site.Params.twitter }}">
+<meta name="twitter:creator" content="@{{ $authorTwitter | default .Site.Params.twitter }}">
 
 {{ template "_internal/opengraph.html" . -}}
 
