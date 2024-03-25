@@ -98,8 +98,8 @@ params:
   analytics:
     fathom_site:        "ITUSEYJG"
 
-  # This is currently used by Hugo's internal twitter_cards.html and opengraph.html templates;
-  # the first image in the following array is always used, unless specified in the front matter
+  # This is currently used by Hugo's internal templates; the first image
+  # in the following array is always used, unless specified in the front matter
   images:
     - "/assets/img/bootstrap-social.png"
 
