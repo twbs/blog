@@ -9,11 +9,10 @@
 <meta name="author" content="{{ $author | default .Site.Params.author }}">
 
 {{ template "_internal/twitter_cards.html" . -}}
-
 {{- /* Manually add `twitter:creator` since Hugo's internal shortcode doesn't add it */ -}}
 <meta name="twitter:creator" content="@{{ $authorTwitter | default .Site.Params.twitter }}">
 
-{{- template "_internal/opengraph.html" . }}
+{{ template "_internal/opengraph.html" . -}}
 
 {{- /* Manually add `og:image`'s dimensions since Hugo's internal shortcode doesn't do it */ -}}
 {{- $socialImage := path.Join "src/static" (index $.Site.Params.images 0) -}}
