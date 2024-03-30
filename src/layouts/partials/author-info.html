@@ -14,7 +14,7 @@
          srcset="{{ $imgUrl }}, {{ $imgUrl2x }} 2x"
          src="{{ $imgUrl }}"
          alt=""
-         {{ if eq .lazyload true }}loading="lazy"{{ end }}
+         {{ if eq .lazyload true }}loading="lazy"{{ end -}}
          width="{{ $avatarWidth }}"
          height="{{ $avatarHeight }}">
     <span>@{{ $author }}</span>
