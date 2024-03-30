@@ -13,8 +13,8 @@
     <img class="mb-0 me-2 rounded-2"
          srcset="{{ $imgUrl }}, {{ $imgUrl2x }} 2x"
          src="{{ $imgUrl }}"
-         alt=""
-         {{ if eq .lazyload true }}loading="lazy"{{ end -}}
+         alt=""{{ if eq .lazyload true }}
+         loading="lazy"{{ end }}
          width="{{ $avatarWidth }}"
          height="{{ $avatarHeight }}">
     <span>@{{ $author }}</span>
