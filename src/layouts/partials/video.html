@@ -5,12 +5,7 @@
 {{- $videoStart := .context.Params.video_start -}}
 
 <div class="ratio ratio-16x9">
-  <iframe
-    {{ if eq $lazyload true }}class="lazy" data-src{{ else }}src{{ end }}="https://www.youtube-nocookie.com/embed/{{ $video }}?rel=0{{ with $videoStart }}&amp;start={{ . }}{{ end }}"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    title="YouTube Video"
-    width="760"
-    height="570">
-  </iframe>
+  <lite-youtube videoid="{{ $video }}" videoStartAt="{{ $videoStart }}" nocookie="true" params="rel=0"{{ if eq $lazyload true }} posterloading="lazy"{{ end }}>
+    <a class="lite-youtube-fallback" href="https://www.youtube-nocookie.com/watch?v={{ $video }}" rel="noopener" target="_blank">Watch on YouTube"</a>
+  </lite-youtube>
 </div>

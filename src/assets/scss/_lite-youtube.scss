@@ -1,0 +1,29 @@
+.lite-youtube-fallback {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9; // matches YouTube player
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+}
+
+// right-facing triangle "Play" icon
+.lite-youtube-fallback::before {
+  display: block;
+  content: "";
+  border: solid transparent;
+  border-width: 2em 0 2em 3em;
+  border-left-color: #fb0005;
+}
+
+.lite-youtube-fallback:hover::before {
+  border-left-color: #fff;
+}
+
+.lite-youtube-fallback:focus {
+  outline: 2px solid #fb0005;
+}

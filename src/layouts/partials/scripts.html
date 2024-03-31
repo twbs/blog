@@ -7,7 +7,7 @@
 {{- $bootstrapJs := resources.Get "js/vendor/bootstrap.bundle.min.js" | fingerprint | resources.Copy "/assets/js/vendor/bootstrap.bundle.min.js" }}
 <script defer src="{{ $bootstrapJs.RelPermalink }}"></script>
 
-{{- $scripts := slice "js/application.js" "js/lazyload.js" -}}
+{{- $scripts := slice "js/application.js" "js/lite-youtube.js" -}}
 {{- range $scriptFile := $scripts -}}
 {{- $script := resources.Get $scriptFile | js.Build $esbuildOptions | fingerprint | resources.Copy (path.Join "/assets" $scriptFile) }}
 <script defer src="{{ $script.RelPermalink }}"></script>
