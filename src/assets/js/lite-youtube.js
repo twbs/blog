@@ -1,1 +1,1 @@
-import '@justinribeiro/lite-youtube'
+import 'lite-youtube-embed'

@@ -80,6 +80,8 @@ module:
       target:           assets/scss/bootstrap
     - source:           node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
       target:           assets/js/vendor/bootstrap.bundle.min.js
+    - source:           node_modules/lite-youtube-embed/src/lite-yt-embed.css
+      target:           assets/css/lite-yt-embed.css
 
 params:
   docs_version:         "5.3"

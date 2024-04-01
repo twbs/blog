@@ -34,7 +34,6 @@
     "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm run build"
   },
   "devDependencies": {
-    "@justinribeiro/lite-youtube": "^1.5.0",
     "autoprefixer": "^10.4.19",
     "bootstrap": "^5.3.3",
     "clipboard": "^2.0.11",
@@ -43,6 +42,7 @@
     "find-unused-sass-variables": "^5.0.0",
     "hugo-bin": "^0.121.1",
     "linkinator": "^6.0.4",
+    "lite-youtube-embed": "^0.3.2",
     "lockfile-lint": "^4.13.2",
     "markdownlint-cli2": "^0.12.1",
     "npm-run-all2": "^6.1.2",

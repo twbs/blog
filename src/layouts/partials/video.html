@@ -1,11 +1,8 @@
-{{- /* Accepts 2 parameters, the "context" and "lazyload" */ -}}
+{{- /* Accepts 2 parameters, the "context" and "video_start" */ -}}
 
-{{- $lazyload := .lazyload -}}
 {{- $video := .context.Params.video -}}
 {{- $videoStart := .context.Params.video_start -}}
 
 <div class="ratio ratio-16x9">
-  <lite-youtube videoid="{{ $video }}" videoStartAt="{{ $videoStart }}" nocookie="true" params="rel=0"{{ if eq $lazyload true }} posterloading="lazy"{{ end }}>
-    <a class="lite-youtube-fallback" href="https://www.youtube-nocookie.com/watch?v={{ $video }}" rel="noopener" target="_blank">Watch on YouTube"</a>
-  </lite-youtube>
+  <lite-youtube videoid="{{ $video }}" videoStartAt="{{ $videoStart }}" playlabel="Play video" params="rel=0"></lite-youtube>
 </div>
