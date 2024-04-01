@@ -5,5 +5,10 @@
   {{- $sassOptions = merge $sassOptions (dict "outputStyle" "compressed") -}}
 {{- end -}}
 
-{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions | postCSS $postcssOptions | fingerprint }}
-<link href="{{ $style.RelPermalink }}" rel="stylesheet">
+{{- $style := resources.Get "scss/style.scss" | toCSS $sassOptions -}}
+{{- $lye := resources.Get "css/lite-yt-embed.css" -}}
+{{- if hugo.IsProduction -}}
+  {{- $lye = $lye | minify -}}
+{{- end -}}
+{{- $styles := slice $style $lye | resources.Concat "/assets/css/styles.css" | postCSS $postcssOptions | fingerprint }}
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet">

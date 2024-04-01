@@ -14,7 +14,7 @@
         {{ partial "author-info" (dict "context" . "lazyload" $lazyload) -}}
 
         {{ if .Page.Params.video -}}
-          {{- partial "video" (dict "context" . "lazyload" $lazyload) -}}
+          {{- partial "video" (dict "context" .) -}}
         {{- end }}
 
         {{ if .Page.Params.banner -}}
