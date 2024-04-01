@@ -25,7 +25,7 @@ Bootstrap v5.3.2 is here with bug fixes, documentation improvements, and more fo
 - Added alternative CDNs section in [Getting started -> Download](https://getbootstrap.com/docs/5.3/getting-started/download/#alternative-cdns).
 - Added Discord and Bootstrap subreddit links in [README](https://github.com/twbs/bootstrap/blob/main/README.md) and [Getting started -> Introduction](https://getbootstrap.com/docs/5.3/getting-started/introduction/):
   - [Discord](https://discord.gg/bZUvakRU3M) maintained by the community
-  - [Bootstrap subreddit](https://reddit.com/r/bootstrap)
+  - [Bootstrap subreddit](https://www.reddit.com/r/bootstrap/)
 
 ## Get the release
 
