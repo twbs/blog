@@ -179,10 +179,10 @@ We’ve rebuilt some components (like list groups and alerts) to use these new v
 
 <!-- markdownlint-disable no-inline-html -->
 <div class="d-flex gap-3">
-  <a href="https://getbootstrap.com/docs/5.3/customize/colors/">
+  <a href="https://getbootstrap.com/docs/5.3/customize/color/">
     <img src="/assets/img/2023/05/colors-light-mode.png" alt="New colors in light mode" class="rounded-2 img-thumbnail" loading="lazy" width="1610" height="5778">
   </a>
-  <a href="https://getbootstrap.com/docs/5.3/customize/colors/">
+  <a href="https://getbootstrap.com/docs/5.3/customize/color/">
     <img src="/assets/img/2023/05/colors-dark-mode.png" alt="New colors in dark mode" class="rounded-2 img-thumbnail" loading="lazy" width="1610" height="5778">
   </a>
 </div>
