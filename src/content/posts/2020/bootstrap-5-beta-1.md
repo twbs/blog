@@ -48,7 +48,7 @@ For example, in a LTR context, instead of `.ml-3` for `margin-left`, use `.ms-3`
 
 ![Popper.js](/assets/img/2020/12/popper-header.png)
 
-We've upgraded [Popper.js](https://popper.js.org) from v1.x to v2.x, bringing with it some small breaking changes to our tooltips and popovers. These two changes are why we haven't been able to update to v2.x sooner.
+We've upgraded [Popper.js](https://popper.js.org/docs/v2/) from v1.x to v2.x, bringing with it some small breaking changes to our tooltips and popovers. These two changes are why we haven't been able to update to v2.x sooner.
 
 - Removed `offset` option from our Tooltip/Popover and Dropdown plugins; this can still be achieved using the `popperConfig` parameter.
 - The `fallbackPlacement` option has become `fallbackPlacements`.

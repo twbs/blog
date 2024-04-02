@@ -61,7 +61,7 @@ As mentioned in our last release, the Alpha 5 navbar was a little half baked. Th
 
 Here's the rundown on what's changed:
 
-- Navbars are built with flexbox! Instead of floats, you'll need [flexbox](https://v4-alpha.getbootstrap.com/utilities/flexbox/) and [margin utilities](https://v4-alpha.getbootstrap.com/utilities/spacing/).
+- Navbars are built with flexbox! Instead of floats, you'll need [flexbox](https://v4-alpha.getbootstrap.com/utilities/flex/) and [margin utilities](https://v4-alpha.getbootstrap.com/utilities/spacing/).
 - Navbar navs no longer require the `.nav` base class. While it provided a starting point, these shared styles often got in the way of navbar behaviors. Now it's just `.navbar-nav` and utilities for alignment.
 - The `.navbar-toggleable` classes are now applied to the `.navbar` instead of the `.collapse` within. This allows us to provide better responsive behavior with just one class change.
 - The responsive navbar toggle, `.navbar-toggler`, has also been updated. The icon is once again a child element, `.navbar-toggler-icon`, for improved customization. It also includes easy modifiers for absolutely aligning it to the top right or top left.

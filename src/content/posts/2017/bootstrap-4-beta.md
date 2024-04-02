@@ -23,7 +23,7 @@ For those who haven't been using the v4 alpha releases, here are some highlights
 - **Brand new customization options.** Instead of relegating style embellishments like gradients, transitions, shadows, grid classes, and more to a separate stylesheet like v3, we've moved all those options into Sass variables. Want default transitions on everything or to disable rounded corners? Simply update a variable and recompile.
 - **Dropped IE8 and IE9 support, dropped older browser versions, and moved to rem units for component sizing** to take advantage of newer CSS support. Aside from our grid, pixels have been swapped for rems and ems where appropriate to make responsive typography and component sizing even easier. Need support for IE8/IE9, Safari 8-, iOS 8-, etc? Keep using Bootstrap 3.
 - **Rewrote all our JavaScript plugins.** Every plugin has been rewritten in ES6 to take advantage of the newest JavaScript enhancements with new teardown methods, option type checking, new methods, and more.
-- **Improved auto-placement of tooltips, popovers, and dropdowns** thanks to the help of a library called [Popper.js](https://popper.js.org).
+- **Improved auto-placement of tooltips, popovers, and dropdowns** thanks to the help of a library called [Popper.js](https://popper.js.org/docs/v2/).
 - **Redesigned and improved documentation.** We redesigned it, rewrote it all in Markdown, and added a few handy plugins to streamline examples and code snippets to make working with our docs way easier. We also added an amazing new search form!
 - **New build tools** completely rewritten in npm scripts instead of Grunt, immensely simplifying the process of developing and contributing to Bootstrap.
 - **And so much more!** Custom form controls, a redesigned carousel, an overhauled navbar, HTML5 form validation styles, hundreds of responsive utility classes, new components, and more have also been included.
@@ -36,7 +36,7 @@ Bootstrap 4 has been sporting a slightly updated look throughout our alpha relea
 
 [![Bootstrap 4 beta docs](/assets/img/2017/bootstrap-4-beta.png)]({{< param "main" >}}/)
 
-In addition to a new color palette and new systems fonts, we have a brand new layout for our documentation. New with this beta is an amazing search form powered by Algolia's [DocSearch](https://community.algolia.com/docsearch/), an improved page layout with stickied navbar and sidebar, and a new table of contents.
+In addition to a new color palette and new systems fonts, we have a brand new layout for our documentation. New with this beta is an amazing search form powered by Algolia's [DocSearch](https://docsearch.algolia.com/), an improved page layout with stickied navbar and sidebar, and a new table of contents.
 
 ---
 
