@@ -20,7 +20,7 @@ While we haven't publicly worked on v3.x in years, we've heard from all of you d
 
 - **New:** Added a `.row-no-gutters` class.
 - **New:** Added docs searching via Algolia.
-- **Fixed:** Resolved an XSS issue in Alert, Carousel, Collapse, Dropdown, Modal, and Tab components. See <https://snyk.io/vuln/npm:bootstrap:20160627> for details.
+- **Fixed:** Resolved an XSS issue in Alert, Carousel, Collapse, Dropdown, Modal, and Tab components. See <https://security.snyk.io/vuln/npm:bootstrap:20160627> for details.
 - **Fixed:** Added padding to `.navbar-fixed-*` on modal open
 - **Fixed:** Removed the double border on `<abbr>` elements.
 - Removed Gist creation in web-based Customizer since anonymous gists were disabled long ago by GitHub.
