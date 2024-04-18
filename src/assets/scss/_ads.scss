@@ -9,7 +9,9 @@
   display: block;
   max-width: 400px;
   padding: 15px 15px 15px 160px;
-  margin: 2rem auto 0; // `auto` is some extra code compared to the upstream rule to center horizontally the ads at small breakpoints
+  // `auto` is some extra code compared to the upstream rule
+  // to center horizontally the ads at small breakpoints
+  margin: 2rem auto 0;
   overflow: hidden;
   @include font-size(.8125rem);
   line-height: 1.4;
