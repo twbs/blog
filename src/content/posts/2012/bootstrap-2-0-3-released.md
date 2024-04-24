@@ -41,7 +41,7 @@ We've also removed the bootstrap.zip file from the repository, so make runs much
 - Removed excess padding on `.search-query` inputs in IE7 since it doesn't have border-radius.
 - Updated alert messages in Components to use `button` elements as close icons instead of `a`. Both can be used, but an `a` will require `href="#"` for dismissal on iOS devices.
 - Fixed an issue with prepended/appended inputs in Firefox where `select` elements required two clicks to toggle the dropdown. Resolved by moving the `position: relative` to the `select` by default instead of on `:focus`.
-- Added a new mixin, `.backface-visibility`, to help refine CSS 3D tranforms. Examples and explanation of usage can be found on [CSS Tricks](https://css-tricks.com/almanac/properties/b/backface-visibility/).
+- Added a new mixin, `.backface-visibility`, to help refine CSS 3D transforms. Examples and explanation of usage can be found on [CSS Tricks](https://css-tricks.com/almanac/properties/b/backface-visibility/).
 - Changed specificity of grid classes in responsive layouts under 767px to accurately target `input`, `select`, and `textarea` elements that use `.span*` classes.
 - Horizontal description lists, `.dl-horizontal`, now truncate terms that are too long to fit in their fixed-width column. In the < 767px responsive layout, they change to their default stacked layout.
 - Changed tabbable tabs to prevent issues in left and right aligned tabs. `.tab-content` would not growing to its parent's full width due to `display: table`. We removed that and the `width: 100%` and instead just set `overflow: auto` to clear the left and right aligned tabs.
@@ -50,7 +50,7 @@ We've also removed the bootstrap.zip file from the repository, so make runs much
 - Added new variable, `@inputBorderRadius`, to all form controls that previously made use of the static `3px` value everywhere.
 - Changed the way we do `border-radius` for tables. Instead of the regular mixin that zeros out all other corners, we specify one corner only so they can be combined for use on single column table headers.
 - Updated Glyphicons Halflings from 1.5 to 1.6, introducing 20 new icons.
-- Added an `offset` paramater to the `.makeColumn`.
+- Added an `offset` parameter to the `.makeColumn`.
 - Increased the specificity of all tabbable nav selectors to include `.nav-collapse` to appropriately scope the responsive navbar behavior.
 - Fixed uneditable inputs: text now cuts off and does not wrap, making it behave just like a default `input`.
 - Labels and badges are now `vertical-align: baseline;` so they line up with surrounding text.

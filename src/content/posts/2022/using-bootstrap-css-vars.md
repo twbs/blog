@@ -48,7 +48,7 @@ It's also worth mentioning two larger efforts that are still to come around CSS 
 1. Adding CSS variables to all our forms
 2. Adding more nuanced global theme variables and support for color modes like [dark mode](https://github.com/twbs/bootstrap/pull/35857).
 
-These are likely coming in v5.3.0 (our next minor release after v5.2.0 stablizes), so in the mean time, check out the GitHub repo to see how things are shaping up.
+These are likely coming in v5.3.0 (our next minor release after v5.2.0 stabilizes), so in the mean time, check out the GitHub repo to see how things are shaping up.
 
 ## Root variables
 

@@ -18,7 +18,7 @@ Bootstrap 4 has been a massive undertaking that touches nearly every line of cod
 
 There are a ton of major changes to Bootstrap and it's impossible to cover them all in detail here, so here are some of our favorite highlights:
 
-- **Moved from Less to Sass.** Bootstrap now compiles faster than ever thanks to Libsass, and we join an increasingly large community of Sass developers.
+- **Moved from Less to Sass.** Bootstrap now compiles faster than ever thanks to LibSass, and we join an increasingly large community of Sass developers.
 - **Improved grid system.** We've added a new grid tier to better target mobile devices and completely overhauled our semantic mixins.
 - **Opt-in flexbox support is here.** The future is now—switch a boolean variable and recompile your CSS to take advantage of a flexbox-based grid system and components.
 - **Dropped wells, thumbnails, and panels for cards.** Cards are a brand new component to Bootstrap, but they'll feel super familiar as they do nearly everything wells, thumbnails, and panels did, only better.
