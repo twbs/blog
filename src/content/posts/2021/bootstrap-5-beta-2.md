@@ -16,7 +16,7 @@ Next up is our final beta, which we may even promote to a stable release dependi
 
 [![Dropdown docs screenshot](/assets/img/2021/02/bootstrap-v5b2-dropdowns.png)](https://getbootstrap.com/docs/5.0/components/dropdowns/)
 
-Dropdowns saw a lot of work in Beta 2 because of how much has changed in both our JavaScript and in Popper.js (which we depend on for most dropdown, popover, and toolip positioning). We've modified our dropdown plugin to add a new data attribute to help separate our own positioning styles with that of Popper's. The issues we saw—like a `.dropstart` menu overlapping a button or an incorrect responsive `.dropdown-menu-end` class—were largely the result of competing positioning.
+Dropdowns saw a lot of work in Beta 2 because of how much has changed in both our JavaScript and in Popper.js (which we depend on for most dropdown, popover, and tooltip positioning). We've modified our dropdown plugin to add a new data attribute to help separate our own positioning styles with that of Popper's. The issues we saw—like a `.dropstart` menu overlapping a button or an incorrect responsive `.dropdown-menu-end` class—were largely the result of competing positioning.
 
 Now when dropdown menus have `data-bs-display="static"`, we'll add `data-bs-popper="static"` via JavaScript to their associated `.dropdown-menu`. When dropdowns are in our navbars, their menus will have `data-bs-popper="none"` added. This separates two different positioning libraries, ours and Poppers, and ensures all behaviors are supported. You can see [all the options in a new example in our docs](https://getbootstrap.com/docs/5.0/components/dropdowns/#alignment-options). We updated our CSS selectors to use these new data attributes, too.
 

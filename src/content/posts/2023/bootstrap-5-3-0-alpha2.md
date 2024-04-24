@@ -73,7 +73,7 @@ And, in the meantime, here's the rundown on what's changed since our first alpha
 
 ### Docs
 
-- Updated docs page table of contents to use Scrollpy (shoutout to our v3 docs!).
+- Updated docs page table of contents to use Scrollspy (shoutout to our v3 docs!).
 - Revamped syntax highlighting colors for code snippets across color modes.
 - Improved content and rendering of several docs callouts.
 - Document more color mode features and usage suggestions.

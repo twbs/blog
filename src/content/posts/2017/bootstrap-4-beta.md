@@ -16,7 +16,7 @@ Long story short, shipping a beta means we're done breaking all your stuff until
 
 For those who haven't been using the v4 alpha releases, here are some highlights to get you caught up.
 
-- **Moved from Less to Sass.** Bootstrap now compiles faster than ever thanks to Libsass, and we join an increasingly large community of Sass developers.
+- **Moved from Less to Sass.** Bootstrap now compiles faster than ever thanks to LibSass, and we join an increasingly large community of Sass developers.
 - **Flexbox and an improved grid system.** We've moved nearly everything to flexbox, added a new grid tier to better target mobile devices, and completely overhauled our source Sass with better variables, mixins, and now maps, too.
 - **Dropped wells, thumbnails, and panels for cards.** [Cards]({{< param "main" >}}/docs/4.0/components/card/) are a brand new component to Bootstrap, but they'll feel super familiar as they do nearly everything wells, thumbnails, and panels did, only better.
 - **Forked Normalize.css and consolidated all our HTML resets into a new CSS module, Reboot.** Normalize.css has taken a different path than we'd prefer, dropping some core CSS tweaks we've long depended upon. Reboot takes the core of Normalize.css and expands it to include more opinionated resets like `box-sizing: border-box`, margin tweaks, and more all in a single Sass file.

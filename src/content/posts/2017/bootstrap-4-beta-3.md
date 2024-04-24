@@ -24,7 +24,7 @@ As mentioned in [our Beta 2 release]({{< relref "/posts/2017/bootstrap-4-beta-2"
 
 - **Input groups were rewritten** with specific `.input-group-{prepend|append}` classes. The new approach allows us to support validation styles and messages within input groups, while also adding support for custom selects, custom file inputs, and multiple `.form-control`s.
 
-- **Responsive tables are once again parent classes** to avoid accessiblity issues with changing a `<table>`'s `display`.
+- **Responsive tables are once again parent classes** to avoid accessibility issues with changing a `<table>`'s `display`.
 
 - **Deleted the `.col-form-legend` class**, consolidating it's styles into the `.col-form-label` class.
 

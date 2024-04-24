@@ -65,7 +65,7 @@ Since we added icon fonts in v1.2.0, it's been possible to use a CDN to deliver 
 
 Want to see it in action? We've put together a helpful [CodePen demo for using Bootstrap Icons fonts via CDN](https://codepen.io/emdeoh/pen/NWRzbKM).
 
-_**ProTip:** Most browsers do not allow SVG sprites to be used across domains, which is why having icon fonts (when SVGs are the preferrable and more accessible method of delivering icons) are so useful. Whenever possible, please use SVGs over icon fonts._
+_**ProTip:** Most browsers do not allow SVG sprites to be used across domains, which is why having icon fonts (when SVGs are the preferable and more accessible method of delivering icons) are so useful. Whenever possible, please use SVGs over icon fonts._
 
 ## Install
 
