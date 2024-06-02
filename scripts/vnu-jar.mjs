@@ -25,8 +25,7 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
   const ignores = [
     // TODO report the issue upstream in Hugo
     'Duplicate ID.*',
-    'The first occurrence of ID.*',
-    'Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.*'
+    'The first occurrence of ID.*'
   ].join('|')
 
   const args = [
