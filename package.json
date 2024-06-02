@@ -39,7 +39,7 @@
     "bootstrap": "^5.3.3",
     "clipboard": "^2.0.11",
     "cross-env": "^7.0.3",
-    "eslint": "^9.2.0",
+    "eslint": "^9.4.0",
     "find-unused-sass-variables": "^6.0.0",
     "globals": "^14.0.0",
     "hugo-bin": "^0.123.2",
