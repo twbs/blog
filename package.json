@@ -42,7 +42,7 @@
     "eslint": "^9.8.0",
     "find-unused-sass-variables": "^6.0.0",
     "globals": "^14.0.0",
-    "hugo-bin": "^0.126.0",
+    "hugo-bin": "^0.127.0",
     "linkinator": "^6.1.1",
     "lockfile-lint": "^4.14.0",
     "markdownlint-cli2": "^0.13.0",
