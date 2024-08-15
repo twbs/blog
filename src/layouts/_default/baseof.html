@@ -4,8 +4,8 @@
     {{ partial "head" . }}
   </head>
   <body>
-    {{ partial "icons" . }}
-    {{ partial "navbar" . }}
+    {{ partialCached "icons" . }}
+    {{ partialCached "navbar" . }}
 
     <div class="container-xxl px-4 px-xxl-2">
       <div class="d-lg-grid content" id="content">
@@ -19,6 +19,6 @@
       </div>
     </div>
 
-    {{ partial "footer" . }}
+    {{ partialCached "footer" . }}
   </body>
 </html>
