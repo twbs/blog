@@ -32,7 +32,7 @@ disableKinds:           ["404", "taxonomy", "term"]
 
 publishDir:             "_site"
 
-paginate:               5
+pagerSize:              5
 rssLimit:               10
 
 permalinks:
