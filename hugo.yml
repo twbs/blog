@@ -90,6 +90,7 @@ params:
   repo:                 "https://github.com/twbs/blog"
   twitter:              "getbootstrap"
   blog:                 "https://blog.getbootstrap.com/"
+  versions:             "https://getbootstrap.com/docs/versions/"
   icons:                "https://icons.getbootstrap.com/"
   themes:               "https://themes.getbootstrap.com/"
   opencollective:       "https://opencollective.com/bootstrap"
