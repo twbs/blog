@@ -13,7 +13,7 @@ Bootstrap v5.3.4 is here with several bug fixes and a load of documentation upda
 - Fixed close button display in color modes.
 - Fixed light mode carousel when in dark mode.
 - Updated floating labels for better `<select>` alignment and other styling issues.
-- Fix a Sass 1.77.7 deprecation for nested rules
+- Fixed a Sass 1.77.7 deprecation for nested rules
 - Fixed popover toggling twice to close.
 
 [Read the GitHub v5.3.4 changelog](https://github.com/twbs/bootstrap/releases/tag/v5.3.4) for a full list of changes (including a ton of documentation and dependency updates) in this release.
