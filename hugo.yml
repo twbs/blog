@@ -36,7 +36,7 @@ pagerSize:              5
 rssLimit:               10
 
 permalinks:
-  posts:                "/:year/:month/:day/:filename/"
+  posts:                "/:year/:month/:day/:contentbasename/"
 
 related:
   includeNewer: false
