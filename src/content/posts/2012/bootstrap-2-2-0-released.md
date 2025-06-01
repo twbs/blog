@@ -11,7 +11,7 @@ Aww yeah, our first release since leaving Twitter is here with Bootstrap 2.2.0! 
 
 ## tl;dr
 
-2.1.2 is now 2.2.0: four new example templates, added media component, new typographic scale, fixed that box-shadow mixin bug, fixed z-index issues, and [more](https://github.com/twbs/bootstrap/issues?milestone=15&q=is%3Aclosed).
+2.1.2 is now 2.2.0: four new example templates, added media component, new typographic scale, fixed that box-shadow mixin bug, fixed z-index issues, and [more changes](https://github.com/twbs/bootstrap/issues?milestone=15&q=is%3Aclosed).
 
 ## Highlights
 
