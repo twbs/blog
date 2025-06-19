@@ -39,7 +39,7 @@ Or Composer:
 composer require twbs/bootstrap-icons
 ```
 
-You can also [download the release from GitHub](https://github.com/twbs/icons/releases/tag/v1.13.1), or [download just the SVGs and fonts](https://github.com/twbs/icons/releases/download/v1.11.0/bootstrap-icons-1.13.1.zip) (without the rest of the repository files).
+You can also [download the release from GitHub](https://github.com/twbs/icons/releases/tag/v1.13.1), or [download just the SVGs and fonts](https://github.com/twbs/icons/releases/download/v1.13.1/bootstrap-icons-1.13.1.zip) (without the rest of the repository files).
 
 ## Figma
 
