@@ -7,7 +7,7 @@ keywords:
  - open source
 ---
 
-[Mark](https://github.com/mdo) and [Julien](https://github.com/julien-deramond/) recently represented Bootstrap in the second round of the [GitHub Secure Open Source Fund](https://resources.github.com/github-secure-open-source-fund/) this past June. The program is designed to programmatically and financially improve the security and sustainability of open source projects, and we were honored to be a part of it.
+[Mark](https://github.com/mdo) and [Julien](https://github.com/julien-deramond/) recently represented Bootstrap in the second round of the [GitHub Secure Open Source Fund](https://github.blog/open-source/maintainers/securing-the-supply-chain-at-scale-starting-with-71-important-open-source-projects/) this past June. The program is designed to programmatically and financially improve the security and sustainability of open source projects, and we were honored to be a part of it.
 
 GitHub brought together open source maintainers, security experts, and ecosystem partners for an intensive, hands-on learning experience. Throughout three weeks, we had a few days of mixed expert-led presentations, collaborative workshops, and dedicated office hours with security specialists. Between sessions, we had homework: concrete, project-specific actions to immediately strengthen our codebase, workflows, and processes.
 
