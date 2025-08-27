@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           persist-credentials: false
 
@@ -39,7 +39,7 @@ jobs:
         run: npm test
 
       - name: Upload docs
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         if: github.repository == 'twbs/blog' && github.ref == 'refs/heads/main'
 
   deploy:
