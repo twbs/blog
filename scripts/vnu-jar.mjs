@@ -25,7 +25,9 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
   const ignores = [
     // TODO report the issue upstream in Hugo
     'Duplicate ID.*',
-    'The first occurrence of ID.*'
+    'The first occurrence of ID.*',
+    // TODO fix or report this to vnu-jar
+    'The “aria-labelledby” attribute must not be specified on any “div” element unless the element has a “role”.*',
   ].join('|')
 
   const args = [
