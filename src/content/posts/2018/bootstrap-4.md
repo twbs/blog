@@ -84,7 +84,7 @@ It's worth reiterating that each minor release will bring a new hosted version o
 
 ## Themes update
 
-[Bootstrap Themes]({{< param "themes" >}}) are getting a major update this year! We've been absolutely thrilled with the response since we originally launched Bootstrap Themes and we're finally ready to share our plans for what's next.
+[Bootstrap Themes](https://themes.getbootstrap.com/) are getting a major update this year! We've been absolutely thrilled with the response since we originally launched Bootstrap Themes and we're finally ready to share our plans for what's next.
 
 For the past few months, we've been working with some amazing theme creators to bring their awesome work to the Official Bootstrap Themes store. We couldn't be more excited to announce we're expanding Bootstrap Themes to include ten brand new themes. We're currently targeting a first quarter launch with themes all built on Bootstrap 4 (sorry, no v3 for these). Depending on final reviews, we might even get them to y'all in the coming weeks.
 
