@@ -46,7 +46,7 @@ execFile('java', ['-version'], (error, _stdout, stderr) => {
 
   console.log(`command used: java ${args.join(' ')}`)
 
-  return spawn('java', args, {
+  spawn('java', args, {
     stdio: 'inherit'
   })
     .on('exit', process.exit)
