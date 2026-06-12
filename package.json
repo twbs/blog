@@ -31,7 +31,7 @@
     "test-markdownlint": "markdownlint-cli2 \"**/*.md\" \"!**/node_modules/**\"",
     "test-linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
     "test-vnu": "node scripts/vnu-jar.mjs",
-    "test-lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
+    "test-lockfile-lint": "lockfile-lint",
     "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm run build"
   },
   "devDependencies": {
