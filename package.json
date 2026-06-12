@@ -34,6 +34,11 @@
     "test-lockfile-lint": "lockfile-lint",
     "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm run build"
   },
+  "overrides": {
+    "hugo-bin": {
+      "@xhmikosr/bin-wrapper": "^14.3.0"
+    }
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "autoprefixer": "^10.5.0",
