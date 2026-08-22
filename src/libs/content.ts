@@ -33,6 +33,19 @@ export function getPostSlug(post: Post): string {
 // Google truncates meta descriptions somewhere north of this.
 const META_DESCRIPTION_MAX_LENGTH = 160
 
+/**
+ * Removes the parts of an `.mdx` body that aren't prose: JSX comments, the
+ * component imports at the top, and the markup passed to components as
+ * template-literal props. Without this they leak into the lede and the meta
+ * description, and inflate the reading time.
+ */
+function stripMdxSyntax(body: string): string {
+  return body
+    .replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+    .replace(/^(?:import|export)\s+[\s\S]*?$/gm, '')
+    .replace(/\{`[\s\S]*?`\}/g, '')
+}
+
 function markdownToPlainText(markdown: string): string {
   return markdown
     .replace(/<(https?:[^>]+)>/g, '$1') // autolinks, before tags are stripped
@@ -69,7 +82,7 @@ export function getPostLede(post: Post): string | undefined {
   }
 
   // Skip leading blocks that carry no prose, e.g. posts opening with an image.
-  for (const block of post.body?.split(/\r?\n\s*\r?\n/) ?? []) {
+  for (const block of stripMdxSyntax(post.body ?? '').split(/\r?\n\s*\r?\n/)) {
     const text = markdownToPlainText(block)
 
     if (text) {
@@ -92,7 +105,7 @@ const WORDS_PER_MINUTE = 200
 /** Rounded-up minutes to read the post, for the byline on post pages. */
 export function getReadingTime(post: Post): number {
   // Fenced code isn't read at prose speed, so it shouldn't pad the estimate.
-  const prose = (post.body ?? '').replace(/^```[\s\S]*?^```/gm, '')
+  const prose = stripMdxSyntax(post.body ?? '').replace(/^```[\s\S]*?^```/gm, '')
   const words = markdownToPlainText(prose).split(/\s+/).filter(Boolean).length
 
   return Math.max(1, Math.ceil(words / WORDS_PER_MINUTE))
