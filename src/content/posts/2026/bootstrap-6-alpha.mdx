@@ -9,29 +9,32 @@ keywords:
   - release
 ---
 
-****<!--
+{/*
   Draft: Bootstrap 6 alpha 1 announcement post.
 
-  Live example placeholders. Find them all with:
-    rg 'example:|screenshot:' blog-draft.md
+  This is an .mdx post so it can render live examples. Example,
+  ResizableExample, and ButtonPlayground are ported from the docs and live in
+  src/components/shortcodes/. All the `example:` placeholders are now real
+  demos.
 
-  Two forms:
-    <!- example: Example — description of what the demo shows ->
-    <!- example: ResizableExample showBreakpoint minWidth="320px" — description ->
-    <!- screenshot: description, including any GIF or light/dark needs ->
+  Remaining follow-ups, each marked inline with a TODO comment:
+    - TODO(screenshot) x5 — captures that need a full page, a real device, or
+      motion, so they can't be live embeds. Find them with:
+        rg 'TODO\(screenshot\)' src/content/posts/2026/bootstrap-6-alpha.mdx
+    - TODO(grid) — the Grid section is stubbed pending grid system decisions.
+    - TODO(form-adorn) — needs a source decision before it earns a mention.
 
-  The blog loads Bootstrap 6, so `Example` and `ResizableExample` can be ported
-  from the docs (site/src/components/shortcodes/). Use `screenshot:` for anything
-  needing a full page, a real device, or motion.
+  Still worth porting if we want it: ScssDocs, which prints the source between
+  `// scss-docs-start <name>` and `// scss-docs-end <name>` markers so snippets
+  stay in sync with node_modules/bootstrap/scss/.
+*/}
 
-  Also worth porting: `ScssDocs`, which prints the source between
-  `// scss-docs-start <name>` and `// scss-docs-end <name>` markers, so snippets
-  stay in sync with `node_modules/bootstrap/scss/`. And `ButtonPlayground`,
-  which already renders every button variant with live controls.
-
-  Open TODOs: the Grid section is stubbed pending grid decisions, and the
-  form-adorn wrapper needs a source decision before it earns a mention.
--->
+import Example from '../../../components/shortcodes/Example.astro'
+import ResizableExample from '../../../components/shortcodes/ResizableExample.astro'
+import ButtonPlayground from '../../../components/shortcodes/ButtonPlayground.astro'
+import TokenPlayground from '../../../components/shortcodes/TokenPlayground.astro'
+import ThemePairings from '../../../components/shortcodes/ThemePairings.astro'
+import ThemeComponents from '../../../components/shortcodes/ThemeComponents.astro'
 
 Today we’re releasing the first alpha version of Bootstrap 6, a major overhaul to the project that modernizes, reimagines, and expands one of the most prolific open source design systems of all time. It’s been incredibly fun and rewarding to work on this these last several months, and I’m excited to share what we’ve cooked up, as well as where I intend to steer things.
 
@@ -168,17 +171,20 @@ The `$radius` line is worth calling out too. Our radius scale is derived from a 
 
 This gives us the most flexible system possible using both Sass and CSS, with the advantage of customizing either before or after compilation. Update global tokens in the browser, and downstream components update in realtime. This is a massive improvement over v5’s hybrid Sass-CSS system, and one I hope you’ll love.
 
-<!-- example: Example — token playground. A range bound to `--radius-5` and a select bound to `--spacer` on a wrapper element, with a button, alert, card, and input inside that all move together. Proves the realtime claim in the paragraph above; nothing else in the post does. -->
+<TokenPlayground />
 
 ### Overhauled colors and theme engine
 
 Bootstrap 6 has a massively [expanded color system](https://getbootstrap.com/docs/6.0/customize/color) featuring 13 shades of 16 colors, meaning there are now over 200 colors to use. All colors are available as CSS variables on `:root` in a unified `oklch()` format.
 
-<!-- screenshot: the full swatch grid, 16 colors across 13 stops. Capture from the Color docs page. Light and dark side by side, since color-mode adaptivity is the point. -->
+{/* TODO(screenshot): the full swatch grid, 16 colors across 13 stops. Capture from
+    the Color docs page. Light and dark side by side, since color-mode adaptivity
+    is the point. */}
 
 Similar to previous versions, our theme system then consumes these colors and assigns them to semantic values for our component variants (like primary, success, etc) and our supporting **layer colors**.
 
-<!-- screenshot: the theme token grid from the Theme docs, all eight theme colors by all nine token keys. -->
+{/* TODO(screenshot): the theme token grid from the Theme docs, all eight theme
+    colors by all nine token keys. */}
 
 Our theme colors have been significantly overhauled to expand to more semantic tokens per color, to offer more colors in general, and to provide better support for our layer tokens.
 
@@ -219,7 +225,7 @@ Nine tokens per color sounds like a lot until you try to build a component with 
 
 Follow those four rules and you get accessible contrast without checking a ratio by hand. They’re also the reason our components can share one vocabulary: an alert reaching for `fg` on `bg-subtle` and a badge doing the same thing land in the same visual family automatically.
 
-<!-- example: Example — the three pairings stacked in one `.theme-primary` wrapper, lifted from the Pairings section of the Theme docs. Add a theme-color picker so readers can watch all three recolor at once. -->
+<ThemePairings />
 
 #### Layer colors
 
@@ -253,7 +259,7 @@ This greatly reduces the amount of generated CSS per-component and allows us to 
 
 It also changes what it costs to add a color of your own. In v5, a new brand color meant new classes for every component that could wear it—`.btn-brand`, `.btn-outline-brand`, `.alert-brand`, `.text-bg-brand`, and so on, each one more generated CSS. In v6 it’s one entry in `$theme-colors` with those nine keys, and `.theme-brand` works everywhere the built-in colors do.
 
-<!-- example: Example — one row of components (button, badge, alert, card, pagination) inside a wrapper whose theme class is switchable. Flipping `.theme-primary` to `.theme-danger` recolors all of them at once, with no per-component classes changing. -->
+<ThemeComponents />
 
 ### Generative components
 
@@ -310,7 +316,7 @@ That’s the real win here, and it compounds. In v5, every new color multiplied 
 
 Similar architecture can be found in `$button-sizes`, `$badge-variants`, `$form-control-sizes`, `$input-group-sizes`, and `$otp-sizes`.
 
-<!-- example: Example — port ButtonPlayground from the docs. It already renders every variant, theme color, size, and radius with live controls, which shows what the generative system produces better than any static grid could. -->
+<ButtonPlayground />
 
 ### Components galore
 
@@ -371,7 +377,38 @@ Accordion tells the same story from a different angle:
 
 No `.accordion-button`, no `.accordion-collapse`, no `data-bs-parent`, and no Collapse plugin. Open state styling is just `details[open]`.
 
-<!-- example: Example — the accordion above, live, with a caption noting no JavaScript is loaded for it. The claim is the demo. -->
+Here it is running. Open one item and the others close, because they share a
+`name`. There is no accordion JavaScript on this page at all.
+
+<Example code={`<div class="accordion">
+  <details class="accordion-item" name="accordionExample" open>
+    <summary class="accordion-header">
+      Native and nothing else
+      <svg class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      The browser owns the open and close behavior, and the height animation is pure CSS.
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      Exclusive by attribute
+      <svg class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      The shared <code>name</code> attribute replaces <code>data-bs-parent</code>, so opening this closes the others.
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      Styled with details[open]
+      <svg class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      No <code>.accordion-button</code>, no <code>.accordion-collapse</code>, and no Collapse plugin.
+    </div>
+  </details>
+</div>`} />
 
 #### What we deleted
 
@@ -395,7 +432,9 @@ Three components changed names along with their internals, and these are the ren
 
 The [migration guide](https://getbootstrap.com/docs/6.0/guides/migration) has the exhaustive mapping for all three.
 
-<!-- screenshot: GIF or screen recording — Dialog with `.dialog-slide-up` and the blurred `::backdrop`, plus Drawer swipe-to-dismiss at phone width. Neither survives a still image, so these need motion. -->
+{/* TODO(screenshot): GIF or screen recording — Dialog with `.dialog-slide-up` and
+    the blurred `::backdrop`, plus Drawer swipe-to-dismiss at phone width. Neither
+    survives a still image, so these need motion. */}
 
 #### Carousel and autoplay
 
@@ -403,7 +442,40 @@ Rebuilding the carousel on scroll snap handed us a pile of features we didn’t 
 
 Autoplay changed too, and the new behavior is stricter. It’s opt-in via `data-bs-autoplay="true"`, the old `ride` option is gone, and interacting with a carousel now stops autoplay permanently rather than resuming it. The new `.carousel-control-play-pause` button gives visitors a discoverable way to stop and resume playback, which is what [WCAG 2.2.2](https://www.w3.org/TR/WCAG/#pause-stop-hide) requires—a hover-only pause doesn’t satisfy it.
 
-<!-- example: Example — multi-slide carousel with peek and a visible play/pause control. Show the new capability, not a v5-style single slide. -->
+<Example code={`<div id="carouselV6" class="carousel slide" data-bs-autoplay="true" style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem; --bs-carousel-items-peek: 2rem;">
+  <div class="carousel-inner">
+    <div class="carousel-item active"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="1" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="2" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="3" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="4" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="5" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="6" /></div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center mt-3">
+    <div class="carousel-indicators m-0">
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="d-flex gap-1">
+      <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#carouselV6" aria-label="Pause" data-bs-pause-label="Pause" data-bs-play-label="Play">
+        <span class="carousel-icon-pause" aria-hidden="true"></span>
+        <span class="carousel-icon-play" aria-hidden="true"></span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselV6" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselV6" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>`} />
 
 #### Brand new
 
@@ -415,19 +487,46 @@ Autoplay changed too, and the new behavior is stricter. It’s opt-in via `data-
 
 Navbar, nav overflow, list group, stepper, and card groups now respond to container queries rather than viewport width, so they adapt to the space they’re actually in. One thing to know if you’re upgrading: card groups and horizontal list groups need an ancestor query container, so add something like `.contains-inline` to a wrapper or they’ll stay stacked.
 
-<!-- example: ResizableExample showBreakpoint minWidth="320px" — a card group inside a query container, so dragging the handle shows it go from stacked to an attached row. Best single demo of container queries in the post. -->
+Drag the handle on the right to resize the container. The card group responds to
+the space it's in, not to the width of your browser window.
+
+<ResizableExample showBreakpoint minWidth="320px" code={`<div class="contains-inline">
+  <div class="card-group">
+    <div class="card">
+      <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
+      <div class="card-body">
+        <h4 class="card-title fs-md">Card title</h4>
+        <p class="card-text fs-sm mb-0">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+    <div class="card">
+      <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
+      <div class="card-body">
+        <h4 class="card-title fs-md">Card title</h4>
+        <p class="card-text fs-sm mb-0">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+    <div class="card">
+      <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
+      <div class="card-body">
+        <h4 class="card-title fs-md">Card title</h4>
+        <p class="card-text fs-sm mb-0">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+</div>`} />
 
 ### Grid system
 
-<!-- TODO: on hold pending grid system decisions. Do not rewrite around the old
-     container-query claim, which was wrong: the flexbox grid still uses viewport
-     media queries (`make-grid-columns()` calls `media-breakpoint-up()`), while
-     the opt-in CSS Grid (`.grid`, `.md:g-col-4`) is container-query driven
-     because `.grid` sets `container-type: inline-size`.
+{/* TODO(grid): on hold pending grid system decisions. Do not rewrite around the
+    old container-query claim, which was wrong: the flexbox grid still uses
+    viewport media queries (`make-grid-columns()` calls `media-breakpoint-up()`),
+    while the opt-in CSS Grid (`.grid`, `.md:g-col-4`) is container-query driven
+    because `.grid` sets `container-type: inline-size`.
 
-     Also document here when this lands: lg 992 -> 1024, xl 1200 -> 1280 with a
-     1200 container, xxl renamed 2xl at 1536 with a 1440 container, and
-     `$grid-breakpoints` renamed to `$breakpoints`. -->
+    Also document here when this lands: lg 992 -> 1024, xl 1200 -> 1280 with a
+    1200 container, xxl renamed 2xl at 1536 with a 1440 container, and
+    `$grid-breakpoints` renamed to `$breakpoints`. */}
 
 ### Prefixes instead of infixes
 
@@ -459,9 +558,68 @@ Forms in Bootstrap 6 have been overhauled to simplify styles, add new components
 - `.form-control` now applies to `<input>`, `<textarea>`, and `<select>` elements without separate classes.
 - Validation styles now wait for user input.
 
-<!-- example: Example — Combobox in multi-select mode. Highest-value form demo in the post; lead with it. -->
-<!-- example: Example — OTP input, Range with bubble and datalist ticks, Password strength meter. Three small demos in a row. -->
-<!-- screenshot: Datepicker open, since it pulls in Vanilla Calendar Pro and may not port cleanly as a live embed. -->
+Combobox is the one to try first. Type to filter, click to toggle, and the menu
+stays open while you pick:
+
+<Example code={`<button class="form-control combobox-toggle" type="button"
+        data-bs-toggle="combobox"
+        data-bs-name="skills"
+        data-bs-placeholder="Select skills…"
+        data-bs-multiple="true">
+  <span class="combobox-value">Select skills…</span>
+  <svg class="combobox-caret" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.46967 5.46967C0.762563 5.17678 1.23744 5.17678 1.53033 5.46967L5 8.93934L8.46967 5.46967C8.76256 5.17678 9.23744 5.17678 9.53033 5.46967C9.82322 5.76256 9.82322 6.23744 9.53033 6.53033L5.53033 10.5303C5.23744 10.8232 4.76256 10.8232 4.46967 10.5303L0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967Z" fill="currentcolor"/></svg>
+</button>
+<div class="menu">
+  <button class="menu-item" type="button" data-bs-value="html">
+    HTML
+    <svg class="menu-item-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 16 16"><path d="m2 7 4 5 8-8"/></svg>
+  </button>
+  <button class="menu-item" type="button" data-bs-value="css">
+    CSS
+    <svg class="menu-item-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 16 16"><path d="m2 7 4 5 8-8"/></svg>
+  </button>
+  <button class="menu-item" type="button" data-bs-value="js">
+    JavaScript
+    <svg class="menu-item-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 16 16"><path d="m2 7 4 5 8-8"/></svg>
+  </button>
+  <button class="menu-item" type="button" data-bs-value="python">
+    Python
+    <svg class="menu-item-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 16 16"><path d="m2 7 4 5 8-8"/></svg>
+  </button>
+</div>`} />
+And three of the smaller additions, side by side:
+
+<Example class="d-grid grid grid-cols-1 md:grid-cols-3 gap-4" code={`<div>
+  <label class="form-label" for="otpDemo">Verification code</label>
+  <div class="otp otp-connected" data-bs-otp>
+    <input type="text" class="otp-input" maxlength="6" id="otpDemo" aria-label="Verification code">
+  </div>
+</div>
+<div>
+  <label for="rangeDemo" class="form-label">Temperature</label>
+  <div class="form-range" data-bs-bubble>
+    <input type="range" class="form-range-input" min="0" max="100" step="25" value="50" list="rangeDemoList" id="rangeDemo">
+  </div>
+  <datalist id="rangeDemoList">
+    <option value="0" label="Cold"></option>
+    <option value="25"></option>
+    <option value="50" label="Mild"></option>
+    <option value="75"></option>
+    <option value="100" label="Hot"></option>
+  </datalist>
+</div>
+<div>
+  <label for="passwordDemo" class="form-label">Password</label>
+  <input type="password" class="form-control" id="passwordDemo" placeholder="Enter password">
+  <div class="strength" data-bs-strength>
+    <div class="strength-segment"></div>
+    <div class="strength-segment"></div>
+    <div class="strength-segment"></div>
+    <div class="strength-segment"></div>
+  </div>
+</div>`} />
+{/* TODO(screenshot): Datepicker open, since it pulls in Vanilla Calendar Pro and
+    may not port cleanly as a live embed. */}
 
 Three of those changes need more explanation.
 
@@ -511,10 +669,10 @@ The class-toggling line is gone because the browser tracks interaction state for
 
 No `id`, no matching `for`, no invisible input floating next to its label.
 
-<!-- TODO: form-adorn wrapper. Source decision, not a writing one — the outer
-     wrapper should probably become a label. Resolve in the code, then decide
-     whether Form adorn earns a mention here (it’s already listed under
-     "Brand new" in the components section). -->
+{/* TODO(form-adorn): the form-adorn wrapper. Source decision, not a writing one —
+    the outer wrapper should probably become a label. Resolve in the code, then
+    decide whether Form adorn earns a mention here (it's already listed under
+    "Brand new" in the components section). */}
 
 ### Revamped utilities
 
@@ -544,8 +702,34 @@ We’ve also added several new utilities:
 - **Shadows:** new `.shadow-xs` and `.shadow-xl` sizes, layered multi-stop shadows for a more natural falloff, and `.shadow-{color}` and `.shadow-opacity-*` to re-tint them. They set non-inheriting local variables, so a colored shadow never leaks into a nested `.shadow-*` element.
 - **Borders:** `.border-keyline` for a hairline `.5px` border on high-density displays, plus `.border-subtle-*`.
 
-<!-- example: Example — the five shadow sizes in a row, then the same size re-tinted with `.shadow-primary` and `.shadow-opacity-*`. Shadows are hard to describe and easy to show. -->
-<!-- example: Example — `.divide-y` and `.space-y-3` on a simple list, since child-selector utilities are the most novel thing in the API. -->
+The five sizes, then one size re-tinted and re-weighted:
+
+<Example class="overflow-hidden vstack gap-7 p-7 bg-1" code={`<div class="d-flex flex-wrap gap-5">
+  <div class="shadow-xs p-3 bg-body rounded-5">xs</div>
+  <div class="shadow-sm p-3 bg-body rounded-5">sm</div>
+  <div class="shadow p-3 bg-body rounded-5">base</div>
+  <div class="shadow-lg p-3 bg-body rounded-5">lg</div>
+  <div class="shadow-xl p-3 bg-body rounded-5">xl</div>
+</div>
+<div class="d-flex flex-wrap gap-5">
+  <div class="shadow-xl shadow-primary p-3 bg-body rounded-5">primary</div>
+  <div class="shadow-xl shadow-primary shadow-opacity-80 p-3 bg-body rounded-5">primary, 80</div>
+  <div class="shadow-xl shadow-danger p-3 bg-body rounded-5">danger</div>
+  <div class="shadow-xl shadow-opacity-20 p-3 bg-body rounded-5">default, 20</div>
+</div>`} />
+And the child-selector utilities, which put the spacing and the dividers on the
+parent instead of on every child:
+
+<Example class="d-grid grid grid-cols-1 md:grid-cols-2 gap-4" code={`<ul class="list-unstyled divide-y border rounded-5 mb-0">
+  <li class="px-3 py-2">Dividers from .divide-y</li>
+  <li class="px-3 py-2">No :last-child override</li>
+  <li class="px-3 py-2">Borders between, not around</li>
+</ul>
+<ul class="list-unstyled space-y-3 mb-0">
+  <li class="px-3 py-2 bg-1 rounded-5">Spacing from .space-y-3</li>
+  <li class="px-3 py-2 bg-1 rounded-5">No margin on the children</li>
+  <li class="px-3 py-2 bg-1 rounded-5">Gaps between, not after</li>
+</ul>`} />
 
 Two of these changes will alter existing designs without any class renames to warn you. First, the spacing scale grew from six steps to ten for finer control, and the keys shifted in the process—`.p-3` used to be `1rem` and is now `0.75rem`. Second, the font size utilities flipped: `.fs-1` through `.fs-6` (which counted *down* in size) are replaced by `.fs-xs` through `.fs-6xl` (which count up), with `clamp()` on the larger steps for responsive scaling. `.display-1` through `.display-6` and `.lead` are gone as well; pair a size utility with a weight utility instead, like `.fs-6xl .fw-light` for the old `.display-1`.
 
@@ -588,7 +772,9 @@ The one to start with is `bootstrap-v5-v6-migration`. It walks an agent through 
 
 Review what an agent produces against the [migration guide](https://getbootstrap.com/docs/6.0/guides/migration), the same way you’d review any pull request.
 
-<!-- screenshot: a coding agent working through the migration skill on a real v5 project, showing a diff. Concrete proof beats description here, if we can get a clean capture. -->
+{/* TODO(screenshot): a coding agent working through the migration skill on a real
+    v5 project, showing a diff. Concrete proof beats description here, if we can
+    get a clean capture. */}
 
 ## Upgrading
 
