@@ -1,0 +1,648 @@
+---
+author: mdo
+date: "2026-08-21T00:00:00Z"
+title: Bootstrap 6 Alpha
+category: Release
+major: true
+keywords:
+  - bootstrap
+  - release
+---
+
+****<!--
+  Draft: Bootstrap 6 alpha 1 announcement post.
+
+  Live example placeholders. Find them all with:
+    rg 'example:|screenshot:' blog-draft.md
+
+  Two forms:
+    <!- example: Example — description of what the demo shows ->
+    <!- example: ResizableExample showBreakpoint minWidth="320px" — description ->
+    <!- screenshot: description, including any GIF or light/dark needs ->
+
+  The blog loads Bootstrap 6, so `Example` and `ResizableExample` can be ported
+  from the docs (site/src/components/shortcodes/). Use `screenshot:` for anything
+  needing a full page, a real device, or motion.
+
+  Also worth porting: `ScssDocs`, which prints the source between
+  `// scss-docs-start <name>` and `// scss-docs-end <name>` markers, so snippets
+  stay in sync with `node_modules/bootstrap/scss/`. And `ButtonPlayground`,
+  which already renders every button variant with live controls.
+
+  Open TODOs: the Grid section is stubbed pending grid decisions, and the
+  form-adorn wrapper needs a source decision before it earns a mention.
+-->
+
+Today we’re releasing the first alpha version of Bootstrap 6, a major overhaul to the project that modernizes, reimagines, and expands one of the most prolific open source design systems of all time. It’s been incredibly fun and rewarding to work on this these last several months, and I’m excited to share what we’ve cooked up, as well as where I intend to steer things.
+
+## Hold up…
+
+You’re probably asking yourself, “Wtf, new Bootstrap? What is this, 2015?” And I don’t blame you. It’s been all quiet on the Bootstrap front for a long time while I’ve focused on [Pierre](https://pierre.computer)—first with Pierre.co (RIP) and then with [Diffs](https://diffs.com), [Trees](https://trees.software), and more. Through that time, I’ve done the most design work I’ve done in years, built new products with extremely smart and talented engineers, and watched as AI took over software development. Through all that time, I’ve also had a few nagging ideas that I wanted to see built into *something*, and that has slowly became the foundations of Bootstrap 6.
+
+Now, to address the most obvious lines of questions:
+
+- No, no one _needs_ another version of Bootstrap. It’s an open source project, it’s fine.
+- Yes, you’re free to use Tailwind, shadcn/ui, Base UI, and more. (They’re great, their developers are awesome!)
+- Yes, it’s 2026, AI is here, and no one ever needs any human-built software ever again. Except there’s plenty of room for new ideas, technical excellence, pairing humans with generative code, and more.
+
+In short, software is more approachable than it has ever been and Bootstrap has always brought me so much joy and pride. The driving force behind Bootstrap ever since it was first created as Twitter Blueprint in late 2010 was to help more people build more software, faster and easier. With AI—plus modern browser APIs, evolving languages, and better tools—anything is possible for just about anyone.
+
+Bootstrap 6 is here to be the open source design system for anyone—human or AI, novice or pro. Even if you don’t use it, I just want to share new ideas with others, inspire people to build, and learn new things and challenge myself.
+
+## Community appreciation
+
+Before we get to the good parts, I want to thank my co-maintainer, Julien, for all the amazing work he’s put into Bootstrap the last couple of years. Without him, I’d be underwater on reviews, dependencies, migrations, and more. He’s an absolute legend and Bootstrap owes him a tremendous amount of gratitude and appreciation.
+
+Additionally, it’s truly astounding just how many frontend libraries, design systems, toolkits, and more that are available in the 15 years since Bootstrap was originally released. Each of these projects have helped proliferate good design, design systems, and inspiring engineering over the years.
+
+I also want to thank everyone backing Bootstrap on [Open Collective](https://opencollective.com/bootstrap), and every contributor who filed an issue, sent a patch, or argued with me in a pull request while this alpha came together.
+
+## Get started
+
+Bootstrap 6 alpha 1 is on npm and jsDelivr right now.
+
+```sh
+npm i bootstrap@6.0.0-alpha1
+```
+
+Or grab it from the CDN. One thing to flag up front, because it’s the change most likely to trip you up: our JavaScript is ESM-only in v6, so the `<script>` tag needs `type="module"`.
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+```
+
+From there, see [Install](https://getbootstrap.com/docs/6.0/getting-started/install) or the [Quickstart](https://getbootstrap.com/docs/6.0/guides/quickstart). If you’re coming from v5, read the next section first, then the [migration guide](https://getbootstrap.com/docs/6.0/guides/migration).
+
+## Updated browser support
+
+Bootstrap 6 requires Chrome and Edge 130, Firefox 132, and Safari 18 on both macOS and iOS. For comparison, v5 supported browsers as far back as Chrome and Firefox 60 and Safari 12. This is because we're building with browser features that weren’t safe to rely on a couple of years ago: `light-dark()`, `:has()`, container queries, `oklch()`, `color-mix()`, `content-visibility`, and the native `<dialog>` element. Shipping fallbacks for each of them would mean a lesser version of nearly every feature below.
+
+As a result, v6 includes no fallbacks, prefixes, or polyfills below that floor. Older browsers won’t degrade gracefully—they’ll break. Check your analytics before you upgrade, and see [Browsers and devices](https://getbootstrap.com/docs/6.0/getting-started/browsers-devices) for the full policy and the reasoning behind each version.
+
+Bootstrap 5 remains available and supported if that floor doesn’t work for your project.
+
+## Highlights
+
+Okay, let’s talk about all the awesome stuff coming to Bootstrap 6, starting with the broad strokes and highlights. Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards.
+
+### Sass modules, with a CSS twist
+
+Bootstrap 6 has been rewritten to use Sass’s modern `@use`/`@forward` module system, but there’s a catch. I didn’t want another system like v5 where you had two ways to customize, neither of which worked for everyone. While we still use Sass for programmatic customization (generating component variants, utilities, functions, etc), all visual customization happens with CSS. This is thanks to what we’re calling **token maps**.
+
+Token maps are Sass maps that house all our CSS variables for both `:root` and component levels. Global tokens are on `:root`, component tokens get generated on specific classes. This normalizes the path to customizing and focuses Bootstrap on the future of CSS, with a strong preprocessor foundation for managing large codebases. Nearly every Sass variable from v5 is now a CSS variable in a token map.
+
+That has a real consequence for anyone with a v5 `_custom.scss` full of variable overrides: most of those variables no longer exist. `_variables.scss` and `_maps.scss` are gone entirely, and the handful of genuinely global Sass options that survived now live together in `_config.scss`. Everything else moved into a token map, where you can reach it from Sass at build time or from CSS at runtime.
+
+Here’s how [this approach](https://getbootstrap.com/docs/6.0/getting-started/approach) looks in a component like [alert](https://getbootstrap.com/docs/6.0/components/alert):
+
+```scss
+$alert-tokens: () !default;
+
+$alert-tokens: defaults(
+  (
+    --alert-padding-x: var(--spacer),
+    --alert-border-radius: var(--radius-5),
+    --alert-bg: var(--theme-bg-subtle, var(--bg-1)),
+    // …
+  ),
+  $alert-tokens
+);
+
+@layer components {
+  .alert {
+    @include tokens($alert-tokens);
+    // Rest of alert styles…
+  }
+}
+```
+
+The values matter as much as the keys here. Component tokens point at global tokens rather than hardcoding lengths and colors, so `--alert-padding-x` moves when `--spacer` moves. That chain is what makes runtime customization work.
+
+And at the `:root` level where we emit the most tokens programmatically through additional Sass functions:
+
+```scss
+$root-tokens: () !default;
+$root-tokens: defaults(
+  (
+    // Individually set CSS variables…
+  )
+  $root-tokens
+);
+
+// Most root tokens are loop-generated
+@each $key, $value in $theme-bgs {
+  $root-tokens: map.set($root-tokens, --bg-#{$key}, $value);
+}
+```
+
+The `defaults()` function ensures anyone who adds new tokens to a token map, or overrides an existing token value, gets just that in their output—a new CSS variable or a new value for an existing one. It merges rather than replaces, so you never have to redeclare a map to change one value in it, and you can add tokens of your own alongside ours. Speaking of, for folks who’d want to customize those tokens, here’s how you do that in the new module system with tokens maps.
+
+Import Bootstrap via `@use ... with` and start modifying un-namespaced token maps. You can override root tokens with the `$root-tokens` map; components get their own unique token map named after the component. Additionally, this is how you customize the few global Sass variables we have left.
+
+```scss
+@use "../node_modules/bootstrap/scss/bootstrap" with (
+  // Manage global options
+  $enable-smooth-scroll: true,
+
+  // Move the entire radius scale by changing its base
+  $radius: .25rem,
+
+  // Modify global tokens
+  $root-tokens: (
+    --spacer: 1.5rem,
+    --focus-ring-width: 3px,
+  ),
+
+  // Modify component tokens
+  $alert-tokens: (
+    --alert-padding-x: calc(var(--spacer) * 2),
+    --alert-border-radius: var(--radius-8),
+  ),
+);
+```
+
+Notice that the tokens have no `bs` prefix here. In v5 the prefix was a Sass variable, `$prefix`, threaded through every declaration. In v6 we write custom properties unprefixed in the source and add the namespace with PostCSS at build time, so `$prefix` is gone and you configure the prefix in your PostCSS config instead.
+
+The `$radius` line is worth calling out too. Our radius scale is derived from a single base value, so changing that one number moves all ten steps together and every component that reads them follows. Same story for `$spacer` and the spacing scale.
+
+This gives us the most flexible system possible using both Sass and CSS, with the advantage of customizing either before or after compilation. Update global tokens in the browser, and downstream components update in realtime. This is a massive improvement over v5’s hybrid Sass-CSS system, and one I hope you’ll love.
+
+<!-- example: Example — token playground. A range bound to `--radius-5` and a select bound to `--spacer` on a wrapper element, with a button, alert, card, and input inside that all move together. Proves the realtime claim in the paragraph above; nothing else in the post does. -->
+
+### Overhauled colors and theme engine
+
+Bootstrap 6 has a massively [expanded color system](https://getbootstrap.com/docs/6.0/customize/color) featuring 13 shades of 16 colors, meaning there are now over 200 colors to use. All colors are available as CSS variables on `:root` in a unified `oklch()` format.
+
+<!-- screenshot: the full swatch grid, 16 colors across 13 stops. Capture from the Color docs page. Light and dark side by side, since color-mode adaptivity is the point. -->
+
+Similar to previous versions, our theme system then consumes these colors and assigns them to semantic values for our component variants (like primary, success, etc) and our supporting **layer colors**.
+
+<!-- screenshot: the theme token grid from the Theme docs, all eight theme colors by all nine token keys. -->
+
+Our theme colors have been significantly overhauled to expand to more semantic tokens per color, to offer more colors in general, and to provide better support for our layer tokens.
+
+- Every theme color is color-mode adaptive through `light-dark()`.
+- Accent and Inverse theme colors have been added to the `$theme-colors` Sass map.
+- Each theme color generates nine individual tokens for that color.
+- Every color exposes that *same* set of nine keys, which is what makes the theme classes below composable—a component can ask for `bg-subtle` and know it exists for every color.
+- Some colors feature `color-mix()` for better blending with surrounding elements.
+- Dark mode is now automatic, and has no global config to disable.
+
+Here’s how the new `_theme.scss` looks for declaring our colors.
+
+```scss
+$theme-colors: (
+  "primary": (
+    "base": var(--blue-500),
+    "fg": light-dark(var(--blue-600), var(--blue-400)),
+    "fg-emphasis": light-dark(var(--blue-800), var(--blue-200)),
+    "bg": var(--blue-500),
+    "bg-subtle": light-dark(var(--blue-100), var(--blue-900)),
+    "bg-muted": light-dark(var(--blue-200), var(--blue-800)),
+    "border": light-dark(var(--blue-300), var(--blue-600)),
+    "focus-ring": light-dark(color-mix(in oklch, var(--blue-500) 50%, var(--bg-body)), color-mix(in oklch, var(--blue-500) 75%, var(--bg-body))),
+    "contrast": var(--white)
+  ),
+  // …
+);
+```
+
+#### Pairings
+
+Nine tokens per color sounds like a lot until you try to build a component with them. They exist because they’re meant to be used in pairs, and the pairs are what make the whole thing hold together visually:
+
+- `contrast` works best with `bg`
+- `fg` works best with `bg-subtle`
+- `fg-emphasis` works best with `bg-muted`
+- `border` works best with `bg-subtle`, but works with `bg-muted` too
+
+Follow those four rules and you get accessible contrast without checking a ratio by hand. They’re also the reason our components can share one vocabulary: an alert reaching for `fg` on `bg-subtle` and a badge doing the same thing land in the same visual family automatically.
+
+<!-- example: Example — the three pairings stacked in one `.theme-primary` wrapper, lifted from the Pairings section of the Theme docs. Add a theme-color picker so readers can watch all three recolor at once. -->
+
+#### Layer colors
+
+The theme colors above cover intent—primary, success, danger. They don’t cover the far more common need: a surface that’s slightly different from the page behind it.
+
+That’s what **layer colors** are for. They live in their own maps (`$theme-bgs`, `$theme-fgs`, and `$theme-borders`) because they’re a contrast ladder rather than a palette. Backgrounds run from `bg-body` through `bg-1`, `bg-2`, `bg-3`, and `bg-4`, each step a little further from the body color. Foregrounds and borders follow the same idea with their own steps.
+
+The nice part is that the ladder is color-mode adaptive, so `bg-1` means “one step up from the page” in both light and dark mode. That’s what finally replaced v5’s `.bg-light` and `.bg-dark`, which were fixed grays that ignored the color mode entirely, along with the `.bg-body-secondary` and `.bg-body-tertiary` surfaces.
+
+One of the most important effects of the theme engine change is that per-component variants have gone away in favor of new `.theme-*` helper classes and CSS variables. For example:
+
+```html
+<button class="btn btn-primary">…</button>
+
+<button class="btn-solid theme-primary">…</button>
+```
+
+This is because each component includes a CSS variable stack where, if a theme color is present via an additional class on the element or a parent has the class, the component prioritizes that CSS variable. Here’s how `.badge` consumes optional theme variables:
+
+```scss
+.badge {
+  @include tokens($badge-tokens);
+
+  // Rest of badge styles…
+  color: var(--theme-contrast, var(--badge-color));
+  background-color: var(--theme-bg, var(--badge-bg));
+}
+```
+
+This greatly reduces the amount of generated CSS per-component and allows us to surgically apply those theme tokens (like bg, bg-subtle, fg, etc) wherever we want via CSS variables. The ultimate payoff is that the same modifier classes now work across buttons, badges, alerts, tables, cards, accordions, navigation (and links), and pagination.
+
+It also changes what it costs to add a color of your own. In v5, a new brand color meant new classes for every component that could wear it—`.btn-brand`, `.btn-outline-brand`, `.alert-brand`, `.text-bg-brand`, and so on, each one more generated CSS. In v6 it’s one entry in `$theme-colors` with those nine keys, and `.theme-brand` works everywhere the built-in colors do.
+
+<!-- example: Example — one row of components (button, badge, alert, card, pagination) inside a wrapper whose theme class is switchable. Flipping `.theme-primary` to `.theme-danger` recolors all of them at once, with no per-component classes changing. -->
+
+### Generative components
+
+Components with more complex variants—where we have multiple styles and/or sizes—are built using a series of supporting Sass maps and mixins. Generative here means the variants themselves are data: a map describes each one, a mixin turns that map into CSS, and adding a fifth button style is a map entry rather than another hand-written block of rules. Buttons, for example, are the most complex here.
+
+Buttons in v6 have four variants, plus three size modifiers—all of which can be customized. In the `$button-variants` map, we declare each variant and then set specific theme token values for each one that are then consumed by a new variant mixin generator.
+
+```scss
+$button-variants: defaults(
+  (
+    "solid": (
+      "base": (
+        "bg": "bg",
+        "color": "contrast",
+        "border-color": "bg"
+      ),
+      "hover": (
+        "bg": "bg",
+        "border-color": "bg",
+        "color": "contrast"
+      ),
+      "active": (
+        "bg": "bg",
+        "border-color": "bg",
+        "color": "contrast"
+      )
+    ),
+    "outline": (
+      "base": (
+        "bg": "transparent",
+        "color": "fg",
+        "border-color": "border"
+      ),
+      "hover": (
+        "bg": "bg",
+        "color": "contrast",
+        "border-color": "bg"
+      ),
+      "active": (
+        "bg": "bg",
+        "color": "contrast",
+        "border-color": "bg"
+      )
+    ),
+    // …
+  ),
+  $button-variants
+);
+```
+
+Look at what those values are: `bg`, `contrast`, `fg`, `border`, `bg-subtle`. They’re the theme token keys from the last section. The variant map never names a color—it names a *role*, and the theme class supplies the color. That’s why four variants times eight theme colors doesn’t cost us thirty-two blocks of CSS. It costs us four, and the colors arrive at runtime.
+
+That’s the real win here, and it compounds. In v5, every new color multiplied every existing variant, so the button CSS grew as the palette grew. In v6 the two are independent, and the compiled output stays roughly flat no matter how many colors you add.
+
+Similar architecture can be found in `$button-sizes`, `$badge-variants`, `$form-control-sizes`, `$input-group-sizes`, and `$otp-sizes`.
+
+<!-- example: Example — port ButtonPlayground from the docs. It already renders every variant, theme color, size, and radius with live controls, which shows what the generative system produces better than any static grid could. -->
+
+### Components galore
+
+Bootstrap 6 includes several brand new components and a few bottom-up rewrites to take advantage of newer HTML elements and standards, streamline JavaScript reliance, and leverage better CSS support.
+
+There’s a single idea running through most of this work: for years we shipped JavaScript to do things browsers couldn’t do. Browsers can do them now, so much of v6 is less about new code than about deleting old code and letting the platform take over.
+
+#### Rebuilt on the platform
+
+- **Dialog** replaces Modal, built on the native `<dialog>` element and its `showModal()`, `show()`, and `close()` APIs.
+- **Drawer** replaces Offcanvas, and shares its show/hide lifecycle with Dialog through a common `DialogBase` class—so it’s a `<dialog>` element too.
+- **Accordion** is rewritten on `<details>` and `<summary>`. Basic open and close needs no JavaScript at all, and exclusive groups use the HTML `name` attribute instead of `data-bs-parent`.
+- **Carousel** is rebuilt on CSS scroll snap, prioritizing the modern content carousel over the traditional slideshow.
+- **Navbar** collapses into a Drawer instead of a custom collapse.
+- **Menu, Tooltip, and Popover** now position with Floating UI instead of the deprecated Popper.js.
+
+Dialog is the clearest example of what that buys us. Here’s v5:
+
+```html
+<div class="modal fade" id="exampleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">…</div>
+    </div>
+  </div>
+</div>
+```
+
+And v6:
+
+```html
+<dialog class="dialog" id="exampleDialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title">Dialog title</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">…</div>
+</dialog>
+```
+
+Two wrapper elements gone, and with them a lot of machinery. The browser now supplies the backdrop through `::backdrop`, the focus trap, and the inert top layer. Body scroll locking moved to CSS, where `:root.dialog-open` pairs with `scrollbar-gutter: stable` so the page doesn’t shift when a dialog opens.
+
+Accordion tells the same story from a different angle:
+
+```html
+<details class="accordion-item" name="accordionExample" open>
+  <summary class="accordion-header">
+    Accordion Item #1
+    <svg class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m2 5 6 6 6-6"/></svg>
+  </summary>
+  <div class="accordion-body">…</div>
+</details>
+```
+
+No `.accordion-button`, no `.accordion-collapse`, no `data-bs-parent`, and no Collapse plugin. Open state styling is just `details[open]`.
+
+<!-- example: Example — the accordion above, live, with a caption noting no JavaScript is loaded for it. The claim is the demo. -->
+
+#### What we deleted
+
+Rebuilding on native elements let us remove a long list of workarounds:
+
+- `util/backdrop`, `util/focustrap`, and `util/scrollbar` — all three obsolete now that Dialog and Drawer are native `<dialog>` elements
+- The carousel’s custom swipe handler, plus `.carousel-item-start`, `-end`, `-next`, `-prev`, and the `.carousel.pointer-event` helper — the browser tracks scroll position instead
+- The `.modal-backdrop` element — `::backdrop` does it
+- `.btn-close-white`, `.carousel-dark`, and the separate light and dark navbar toggler SVGs
+- Popper.js, and the `.dropdown` wrapper, `.dropdown-toggle` class, and `<ul><li>` scaffolding that Menu no longer needs
+
+Several of those deletions come from one change: icons are now CSS masks. The close button, navbar toggler, breadcrumb divider, carousel controls, and checkbox marks all render via `mask-image` tinted with `background-color: currentcolor`. They inherit the surrounding text color, which means dark mode works for free and we no longer need a second SVG or a `filter` hack for light-on-dark.
+
+#### Renamed and reshaped
+
+Three components changed names along with their internals, and these are the renames that will show up in your markup:
+
+- **Modal → Dialog.** Classes, data attributes, events, CSS variables, and the JavaScript export all follow: `.modal-body` becomes `.dialog-body`, `data-bs-toggle="modal"` becomes `data-bs-toggle="dialog"`, `show.bs.modal` becomes `show.bs.dialog`.
+- **Offcanvas → Drawer.** Same mechanical rename throughout, plus a new `.drawer-sheet` variant for flush-to-edge panels and swipe-to-dismiss on touch devices.
+- **Dropdown → Menu.** `.dropdown-menu` becomes `.menu`, `.dropdown-item` becomes `.menu-item`, and the wrapper and toggle classes are gone—the toggle and the `.menu` are just siblings. Direction is now `data-bs-placement` instead of `.dropup` and friends, and submenus are supported through `.submenu`.
+
+The [migration guide](https://getbootstrap.com/docs/6.0/guides/migration) has the exhaustive mapping for all three.
+
+<!-- screenshot: GIF or screen recording — Dialog with `.dialog-slide-up` and the blurred `::backdrop`, plus Drawer swipe-to-dismiss at phone width. Neither survives a still image, so these need motion. -->
+
+#### Carousel and autoplay
+
+Rebuilding the carousel on scroll snap handed us a pile of features we didn’t have to write. Sliding, touch dragging, momentum, and keyboard scrolling are all just native scrolling now. On top of that we can show multiple slides at once, reveal a peek of the adjacent ones, add gaps, center the active slide, and support variable-width slides—all through CSS custom properties.
+
+Autoplay changed too, and the new behavior is stricter. It’s opt-in via `data-bs-autoplay="true"`, the old `ride` option is gone, and interacting with a carousel now stops autoplay permanently rather than resuming it. The new `.carousel-control-play-pause` button gives visitors a discoverable way to stop and resume playback, which is what [WCAG 2.2.2](https://www.w3.org/TR/WCAG/#pause-stop-hide) requires—a hover-only pause doesn’t satisfy it.
+
+<!-- example: Example — multi-slide carousel with peek and a visible play/pause control. Show the new capability, not a v5-style single slide. -->
+
+#### Brand new
+
+- **Avatar** with sizes, status indicators, and `.avatar-stack` for grouped avatars
+- **Stepper** for multi-step workflows, CSS-only
+- **Nav overflow**, a wrapper that collapses whatever doesn’t fit in a wide navigation into an automatic overflow menu
+- **Toggler**, a small plugin for toggling classes or attributes via `data-bs-toggle="toggler"`
+- **Chip** for tags and tokens, plus **Prose** for scoping rich typography and **Form adorn** for decorating inputs
+
+Navbar, nav overflow, list group, stepper, and card groups now respond to container queries rather than viewport width, so they adapt to the space they’re actually in. One thing to know if you’re upgrading: card groups and horizontal list groups need an ancestor query container, so add something like `.contains-inline` to a wrapper or they’ll stay stacked.
+
+<!-- example: ResizableExample showBreakpoint minWidth="320px" — a card group inside a query container, so dragging the handle shows it go from stacked to an attached row. Best single demo of container queries in the post. -->
+
+### Grid system
+
+<!-- TODO: on hold pending grid system decisions. Do not rewrite around the old
+     container-query claim, which was wrong: the flexbox grid still uses viewport
+     media queries (`make-grid-columns()` calls `media-breakpoint-up()`), while
+     the opt-in CSS Grid (`.grid`, `.md:g-col-4`) is container-query driven
+     because `.grid` sets `container-type: inline-size`.
+
+     Also document here when this lands: lg 992 -> 1024, xl 1200 -> 1280 with a
+     1200 container, xxl renamed 2xl at 1536 with a 1440 container, and
+     `$grid-breakpoints` renamed to `$breakpoints`. -->
+
+### Prefixes instead of infixes
+
+This is the most visible breaking change in v6. Responsive and state modifiers moved from an infix or suffix to a prefix, the way Tailwind and most newer libraries do it:
+
+- `.d-md-none` is now `.md:d-none`
+- `.col-lg-6` is now `.lg:col-6`
+- `.opacity-50-hover` is now `.hover:opacity-50`
+- `.d-print-none` is now `.print:d-none`
+
+It’s a costly change, since it touches nearly every line of markup in a v5 project, but it earns that cost two ways. One rule now covers everything—breakpoints, pseudo-class states, print, and dark mode all read the same way, instead of each having its own placement convention. And the modifier comes first, so the condition reads before the effect: at `md`, don’t display.
+
+The change is broad. It applies to utilities, grid columns, row columns, offsets, gutters, CSS grid, containers, navbar, drawer, tables, list groups, sticky helpers, stacks, dialog sizes, and print variants.
+
+In markup, write the colon unescaped: `class="md:d-none"`. The backslash in the compiled CSS (`.md\:d-none`) is only how CSS escapes a colon in a selector, and never appears in your HTML.
+
+If you have custom Sass built on our breakpoint helpers, `breakpoint-infix()` is now `breakpoint-prefix()` and returns a prefix string, and the `loop-breakpoints-up` and `loop-breakpoints-down` mixins expose `$prefix` instead of `$infix`. The [migration guide](https://getbootstrap.com/docs/6.0/guides/migration) has a full before-and-after table for every affected class.
+
+### Updated forms
+
+Forms in Bootstrap 6 have been overhauled to simplify styles, add new components, and improve validation behaviors and styles.
+
+- Added a new **Combobox**: a searchable, filterable select with single and multi-select modes, built on top of Menu. It’s the component people have asked us for the longest.
+- Added new **Chips** and **Chip Input** components for tags and tokens.
+- Added new **Datepicker**, **OTP input**, and **Password Strength** plugins.
+- New `.form-field` layout helper for label, input, help text, and validation.
+- New JS-powered range input component.
+- New checkbox, radio, and switch stylesheets, docs, and markup.
+- `.form-control` now applies to `<input>`, `<textarea>`, and `<select>` elements without separate classes.
+- Validation styles now wait for user input.
+
+<!-- example: Example — Combobox in multi-select mode. Highest-value form demo in the post; lead with it. -->
+<!-- example: Example — OTP input, Range with bubble and datalist ticks, Password strength meter. Three small demos in a row. -->
+<!-- screenshot: Datepicker open, since it pulls in Vanilla Calendar Pro and may not port cleanly as a live embed. -->
+
+Three of those changes need more explanation.
+
+**`.form-select` is gone.** Selects take `.form-control` now, same as text inputs and textareas. It was too much abstraction and too much duplication at the same time—two classes that had to stay visually identical forever. Now there’s one class and one set of tokens.
+
+**Validation waits for user input.** In v5, `.was-validated` meant a form full of required fields lit up red the moment you toggled it, often before the user typed a single character. In v6 you add `data-bs-validate` to the `<form>` and styling hangs off `:user-invalid`, which the browser only applies after a real interaction. Add `data-bs-validate="valid"` if you also want success styling. Server-side `.is-invalid` and `.is-valid` classes still work everywhere, with no attribute needed.
+
+If you copied the validation snippet out of the v5 docs, here’s the diff. Before:
+
+```js
+const forms = document.querySelectorAll('.needs-validation');
+[...forms].forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+```
+
+After:
+
+```js
+const forms = document.querySelectorAll('form[data-bs-validate]');
+[...forms].forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+  }, false)
+})
+```
+
+The class-toggling line is gone because the browser tracks interaction state for us.
+
+**Checks, radios, and switches lost their wrappers.** `.check` goes directly on the `<input>`, and the checked and indeterminate marks are drawn with a CSS mask on a pseudo-element instead of an inline SVG in your DOM. Toggle buttons got the same treatment from the other direction: `.btn-check` now goes on the `<label>` with the input nested inside, and `:has()` does the work that sibling selectors used to.
+
+```html
+<label class="btn-check btn-solid theme-primary">
+  <input type="checkbox"> Toggle
+</label>
+```
+
+No `id`, no matching `for`, no invisible input floating next to its label.
+
+<!-- TODO: form-adorn wrapper. Source decision, not a writing one — the outer
+     wrapper should probably become a label. Resolve in the code, then decide
+     whether Form adorn earns a mention here (it’s already listed under
+     "Brand new" in the components section). -->
+
+### Revamped utilities
+
+The utility API has been updated to make things more approachable, allow for more types of selectors and utilities, and more.
+
+- Utilities are now scoped to the highest `@layer` in our CSS, ensuring they always apply to elements and components without needing `!important`.
+- Speaking of, `!important` is no longer globally added to all utilities. As it’s no longer required, you can now optionally add it on a per-utility basis.
+
+Those two bullets are one causal chain, and it resolves a long-standing complaint. Utilities live in the last layer we declare, so they beat components in the cascade by position rather than by force. Because they win anyway, we could drop `!important` entirely. And because `!important` is gone, you can now override a utility with a plain class of your own—something v5 made nearly impossible.
+
+The API itself picked up several new options:
+
+- `selector` lets a utility generate attribute selectors (`attr-starts`, `attr-includes`) instead of class selectors. That’s how the aspect-ratio utilities read a value off a class name.
+- `child-selector` targets descendants, wrapped in `:where()` so it adds no specificity. This is what powers the new child-spacing and divider utilities.
+- `variables` emits CSS custom properties per class, replacing v5’s `css-var` and `local-vars` options.
+- `dark` generates a `dark:` prefixed family inside `prefers-color-scheme: dark`.
+- `enabled: false` compiles a utility out of the build entirely.
+
+We’ve also added several new utilities:
+
+- **Layout:** `.grid-cols-1` through `.grid-cols-6`, plus `.grid-cols-fill`, `.grid-cols-subgrid`, and `.grid-auto-flow-*`. New `.place-items-*` and `.justify-items-*` too.
+- **Container queries:** `.contains-inline` and `.contains-size` to make any element a query container.
+- **Child spacing:** `.space-x-*` and `.space-y-*` for spacing between children, and `.divide-x` / `.divide-y` for borders between them—no more `:last-child` overrides.
+- **Sizing:** `.min-w-*` and `.min-h-*` are new, `.mw-*` / `.mh-*` are renamed to `.max-w-*` / `.max-h-*`, and width and height now accept `min-content`, `max-content`, `fit-content`, and a fixed `.w-1` through `.w-12` scale.
+- **Type:** `.text-xs` through `.text-6xl` set font size and line height together, and `.text-balance` and `.text-pretty` join the text-wrap utilities.
+- **Color:** `.text-*` becomes `.fg-*`, joined by `.fg-emphasis-*`, `.fg-contrast-*`, `.bg-subtle-*`, and `.bg-muted-*`, plus `.theme-contrast` and friends for pulling a single pairing token.
+- **Shadows:** new `.shadow-xs` and `.shadow-xl` sizes, layered multi-stop shadows for a more natural falloff, and `.shadow-{color}` and `.shadow-opacity-*` to re-tint them. They set non-inheriting local variables, so a colored shadow never leaks into a nested `.shadow-*` element.
+- **Borders:** `.border-keyline` for a hairline `.5px` border on high-density displays, plus `.border-subtle-*`.
+
+<!-- example: Example — the five shadow sizes in a row, then the same size re-tinted with `.shadow-primary` and `.shadow-opacity-*`. Shadows are hard to describe and easy to show. -->
+<!-- example: Example — `.divide-y` and `.space-y-3` on a simple list, since child-selector utilities are the most novel thing in the API. -->
+
+Two of these changes will alter existing designs without any class renames to warn you. First, the spacing scale grew from six steps to ten for finer control, and the keys shifted in the process—`.p-3` used to be `1rem` and is now `0.75rem`. Second, the font size utilities flipped: `.fs-1` through `.fs-6` (which counted *down* in size) are replaced by `.fs-xs` through `.fs-6xl` (which count up), with `clamp()` on the larger steps for responsive scaling. `.display-1` through `.display-6` and `.lead` are gone as well; pair a size utility with a weight utility instead, like `.fs-6xl .fw-light` for the old `.display-1`.
+
+Spacing and border utilities also emit logical properties now. `.mt-3` sets `margin-block-start`, `.me-3` sets `margin-inline-end`, and `.border-end` sets `border-inline-end`. The class names are unchanged, but right-to-left layouts and vertical writing modes improve with no markup changes.
+
+### Modernized tech stack
+
+Bootstrap 6 has been overhauled to use as many of the latest browser-native features as possible. This makes Bootstrap more accessible, easier to customize, and primed for future browser updates. On the HTML and CSS side of things, some highlights include:
+
+- **CSS layers** for predictable specificity across the entire framework, including `utilities` as the top-most layer.
+- **oklch() colors** and **color-mix()** for perceptually uniform, themeable color palettes that automatically adjust to base color changes.
+- **light-dark()** for native color mode support without duplicating styles and in the same property-value pairing.
+- **Range media queries** like `(width >= 768px)` replacing min-width/max-width hacks.
+- **Container queries** for responsive design that adapts to the parent element instead of just the viewport. Includes mixins, helpers, and per-component changes.
+- **Native `<details>` and `<summary>`** powering the accordion—no JavaScript needed
+- **Native `<dialog>`** element behind the new Dialog component
+- `:where()` selector to reduce specificity in complex selectors
+- **`content-visibility` with `allow-discrete` transitions**, plus `interpolate-size` and the `::details-content` pseudo-element, so the accordion animates open and closed in pure CSS. Height animation on a disclosure widget used to mean measuring elements in JavaScript.
+- **`@property`** to register the custom properties our utility API composes, so they’re typed and don’t inherit into children.
+
+On the JS and tooling side:
+
+- **ESM-only plugins.** There’s no UMD bundle and no `window.bootstrap` global anymore. What this means for you depends entirely on how you use our JavaScript, so here are the three cases. If you only use data attributes like `data-bs-toggle`, add `type="module"` to your script tag and you’re done—everything else keeps working. If you call our APIs from a CDN build, switch to an explicit import: `import { Tooltip } from './bootstrap.bundle.min.js'`. And if you use a bundler like Vite, Webpack, or Parcel, nothing changes at all—`import { Tooltip } from 'bootstrap'` works as before, and now tree shakes properly thanks to `sideEffects` metadata in `package.json`.
+- **TypeScript.** Our source is `.ts` now, and we ship our own type declarations, so you can delete `@types/bootstrap` from your dependencies. Deep imports like `bootstrap/js/src/alert.js` still resolve.
+- **Rolldown**, which replaced both Rollup and Babel. It strips the types and lowers the syntax itself, so an entire layer of build tooling left the repo. This only matters if you build Bootstrap from source, but it made our own builds dramatically faster.
+- **Vitest** running in real Chromium through Playwright, which replaced Karma.
+- **Astro 7** for the docs, which also let us break the sprawling utilities pages into smaller focused ones.
+
+One plugin got a full rewrite worth calling out: **ScrollSpy**. It no longer polls scroll position. Instead it uses `IntersectionObserver` with a single activation line, so the highlighted section is always the one you’re actually reading, including at the very top and bottom of a page where the old implementation used to get confused. There’s a new `topMargin` option to move that line below a sticky navbar, and with smooth scrolling on, clicking a link now restores the URL hash and moves focus to the target section—so it works for keyboard and screen reader users too, not just mouse users.
+
+## Built for humans and agents
+
+Bootstrap 6 ships resources built for large language models and agentic coding tools, not just for people reading docs in a browser.
+
+Our documentation is now available in a machine-readable format following the [llms.txt](https://llmstxt.org/) convention. [`llms.txt`](https://getbootstrap.com/llms.txt) is a curated index of every documentation page with descriptions, and [`llms-full.txt`](https://getbootstrap.com/llms-full.txt) is the entire documentation set concatenated into one file for direct ingestion. No scraping, and no guessing which pages matter.
+
+Alongside those are **skills**. The repo has a `skills/` directory where each `SKILL.md` is a focused, step-by-step playbook for one Bootstrap task—installing v6, setting up Vite or Webpack or Parcel, authoring a component, extending the utility API, or working with the color system. Point an agent at the relevant file and it follows our current guidance rather than whatever it absorbed about older versions during training, which matters more than usual right now: v6 renamed or removed most of the class names a model has memorized.
+
+The one to start with is `bootstrap-v5-v6-migration`. It walks an agent through the upgrade in phases—dependencies, then class and attribute renames, then component restructuring, then JavaScript, then Sass—and there’s a `bootstrap-v4-v6-migration` for the longer jump. The reasoning is straightforward: v6 has a large number of mechanical renames, often thousands of class names across a project, all following consistent rules. That’s tedious and error-prone work by hand, and well-suited to an agent.
+
+Review what an agent produces against the [migration guide](https://getbootstrap.com/docs/6.0/guides/migration), the same way you’d review any pull request.
+
+<!-- screenshot: a coding agent working through the migration skill on a real v5 project, showing a diff. Concrete proof beats description here, if we can get a clean capture. -->
+
+## Upgrading
+
+If you’re moving a v5 project over, the mechanical path is short:
+
+1. Bump the dependency to `6.0.0-alpha1`.
+2. Switch your Sass entry point from `@import` to `@use`:
+
+   ```scss
+   @use "bootstrap/scss/bootstrap";
+   ```
+
+   Or with customization, which is where your old variable overrides go now:
+
+   ```scss
+   @use "bootstrap/scss/bootstrap" with (
+     $spacer: 1.25rem,
+     $root-tokens: (
+       --body-font-size: 1.0625rem,
+     ),
+   );
+   ```
+
+3. Adjust any individual partial imports—our file structure moved, and `_variables.scss`, `_maps.scss`, and `_variables-dark.scss` no longer exist.
+4. Update your markup and CSS per the migration guide.
+5. Recompile.
+
+The order you work in matters more than the list suggests. Confirm your browser support floor first, since that decision can end the project early. Then do the class prefixes, which are mechanical and touch everything. Then swap per-component color variants for `.theme-*` classes, then handle the three component renames. Save Sass customizations for last, once the markup is settled.
+
+**Breaking changes at a glance:**
+
+- Browser floors jump to Chrome and Edge 130, Firefox 132, Safari 18
+- Responsive and state classes use a prefix: `.md:d-none`, not `.d-md-none`
+- Per-component color variants become `.theme-*` composition: `.btn-solid .theme-primary`, not `.btn-primary`
+- Modal becomes Dialog, Offcanvas becomes Drawer, Dropdown becomes Menu
+- JavaScript is ESM-only, with no `window.bootstrap` global
+- The spacing scale gained steps and shifted keys, so `.p-3` changed value
+- Font size utilities flipped from `.fs-1`–`.fs-6` to `.fs-xs`–`.fs-6xl`
+- `.form-select`, `.text-bg-*`, `.bg-light`, `.bg-dark`, `.lead`, and `.display-*` are gone
+
+The [migration guide](https://getbootstrap.com/docs/6.0/guides/migration) documents all of it in detail, and the migration skill can handle much of the mechanical work.
+
+## What’s next
+
+This is an alpha, so APIs can still change before beta. There will be more alphas before we start stabilizing, the grid system is the largest open question, and some APIs will shift as people put real projects through this. Feedback now is worth far more than feedback after a stable release.
+
+Areas where feedback would help most:
+
+- **Token maps and customization.** Does `@use ... with` plus token overrides fit how you actually work? The release rests on this.
+- **Theme composition.** Is `.btn-solid .theme-primary` an improvement over `.btn-primary`, or does it read as more typing for its own sake?
+- **The prefix class names**, and how they hold up across a real project’s markup.
+- **Dialog and Drawer**, particularly in browsers and assistive technology we can’t test directly.
+- **The carousel**, which is the most heavily rewritten component in the release.
+
+[Issues](https://github.com/twbs/bootstrap/issues) and [discussions](https://github.com/twbs/bootstrap/discussions) are the best places for all of it.
+
+The [documentation](https://getbootstrap.com/docs/6.0/) covers everything here in far more detail, and there’s more still to come before beta. I hope you build something with it.
