@@ -1,41 +1,57 @@
-// stylelint-disable declaration-no-important, selector-max-id
+@use "bootstrap/scss/mixins/border-radius" as *;
+
+// stylelint-disable selector-max-id, declaration-no-important
 
 //
 // Carbon ads
 //
+// Synced from ~/work/b6-dev/site/src/scss/_ads.scss.
+//
 
-#carbonads {
-  position: static;
-  display: block;
-  max-width: 400px;
-  padding: 15px 15px 15px 160px;
-  // Custom blog property
-  // `auto` is some extra code compared to the upstream rule
-  // to center horizontally the ads at small breakpoints
-  margin: 2rem auto 0;
-  overflow: hidden;
-  @include font-size(.8125rem);
-  line-height: 1.4;
-  text-align: left;
-  background-color: var(--bs-tertiary-bg);
-
-  a {
-    color: var(--bs-body-color);
-    text-decoration: none;
+@layer custom {
+  #carbon-responsive .carbon-responsive-wrap {
+    padding: 1rem !important;
+    border: 0 !important;
+    @include border-radius(var(--radius-7) !important);
   }
 
-  @include media-breakpoint-up(sm) {
-    @include border-radius(.5rem);
+  .carbon-img {
+    position: relative;
+    overflow: hidden;
+    @include border-radius(var(--radius-5));
+
+    &::after {
+      position: absolute;
+      inset: 0;
+      display: block;
+      content: "";
+      border: 1px solid var(--bs-border-color-translucent);
+      @include border-radius(var(--radius-5));
+    }
   }
-}
 
-.carbon-img {
-  float: left;
-  margin-left: -145px;
-}
+  // Blog index ads render horizontally (image left, text right) to match the
+  // docs home page masthead ad, instead of Carbon's default unit that stacks
+  // the image over the text once the container gets narrow. `!important` is
+  // required to beat Carbon's runtime-injected `<style>` block.
+  .posts-header-ad,
+  .posts-ad {
+    #carbon-responsive .carbon-responsive-wrap {
+      flex-wrap: nowrap !important;
+      align-items: center !important;
+    }
 
-.carbon-poweredby {
-  display: block;
-  margin-top: .75rem;
-  color: var(--bs-body-color) !important;
+    #carbon-responsive .carbon-img {
+      flex: 0 0 130px !important;
+    }
+
+    #carbon-responsive .carbon-img img {
+      width: 130px !important;
+      height: auto !important;
+    }
+
+    #carbon-responsive .carbon-text {
+      flex-basis: 0 !important;
+    }
+  }
 }

@@ -1,5 +1,4 @@
-/* global bootstrap:false */
-
+import { Tooltip } from 'bootstrap'
 import ClipboardJS from 'clipboard'
 
 const btnTitle = 'Copy to clipboard'
@@ -16,7 +15,7 @@ const btnHtml = [
 
 document.querySelectorAll('.highlight')
   .forEach(element => {
-    if (!element.closest('.bd-example-snippet')) { // Ignore examples made be shortcode
+    if (!element.closest('.bd-example-snippet')) {
       element.insertAdjacentHTML('beforebegin', btnHtml)
       element.previousElementSibling.append(element)
     }
@@ -24,7 +23,7 @@ document.querySelectorAll('.highlight')
 
 document.querySelectorAll('[data-bs-toggle="tooltip"]')
   .forEach(tooltip => {
-    new bootstrap.Tooltip(tooltip)
+    new Tooltip(tooltip)
   })
 
 document.querySelectorAll('.content [href="#"]')
@@ -36,7 +35,7 @@ document.querySelectorAll('.content [href="#"]')
 
 window.addEventListener('load', () => {
   document.querySelectorAll('.btn-clipboard').forEach(btn => {
-    bootstrap.Tooltip.getOrCreateInstance(btn, { btnTitle })
+    Tooltip.getOrCreateInstance(btn, { btnTitle })
   })
 })
 
@@ -47,7 +46,7 @@ const clipboard = new ClipboardJS('.btn-clipboard', {
 
 clipboard.on('success', event => {
   const iconFirstChild = event.trigger.querySelector('.bi').firstElementChild
-  const tooltipBtn = bootstrap.Tooltip.getInstance(event.trigger)
+  const tooltipBtn = Tooltip.getInstance(event.trigger)
   const namespace = 'http://www.w3.org/1999/xlink'
   const originalXhref = iconFirstChild.getAttributeNS(namespace, 'href')
   const originalTitle = event.trigger.title
@@ -68,7 +67,7 @@ clipboard.on('success', event => {
 clipboard.on('error', event => {
   const modifierKey = /mac/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl-'
   const fallbackMsg = `Press ${modifierKey}C to copy`
-  const tooltipBtn = bootstrap.Tooltip.getInstance(event.trigger)
+  const tooltipBtn = Tooltip.getInstance(event.trigger)
 
   tooltipBtn.setContent({ '.tooltip-inner': fallbackMsg })
   event.trigger.addEventListener('hidden.bs.tooltip', () => {

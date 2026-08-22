@@ -1,133 +1,389 @@
-@import "bootstrap";
-@import "variables";
-@import "ads";
-@import "component-examples";
-@import "clipboard-js";
-@import "footer";
-@import "navbar";
-@import "pagination";
-@import "syntax";
-@import "theme";
+@use "bootstrap/scss/config" as *;
+@use "bootstrap/scss/layout/breakpoints" as *;
 
-hr {
-  margin-block: 2rem;
-}
+@use "bootstrap";
+@use "variables";
+@use "ads";
+@use "component-examples";
+@use "clipboard-js";
+@use "footer";
+@use "navbar";
+@use "pagination";
+@use "search";
+@use "theme";
 
-// Quotes
-blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+@layer custom {
+  :root {
+    --bd-post-width: 760px;
+    --bd-measure: 45rem;
+    --bd-media: 60rem;
+    --bd-gap-section: 3rem;
+    --bd-gap-media: 1.5rem;
+  }
 
-  p:last-child {
+  .ls-tight { letter-spacing: -.025em; }
+
+  hr {
+    margin-block: 2rem;
+  }
+
+  // Quotes
+  blockquote {
+    padding: .5rem 1rem;
+    margin: .8rem 0;
+    color: #7a7a7a;
+    border-left: .25rem solid #e5e5e5;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 30em) {
+      padding-right: 5rem;
+      padding-left: 1.25rem;
+    }
+  }
+
+  // Tables
+  table {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: .875rem;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: .5rem;
+      border: 1px solid var(--bs-border-color);
+    }
+
+    tbody {
+      border-top: 2px solid currentcolor;
+    }
+  }
+
+
+  // Mirrors the docs grid, with the docs' sidebar track balanced by an empty one
+  // of the same width on the opposite side so `main` sits centered in the
+  // viewport. Below lg the tracks stack into one centered, capped column.
+  .bd-layout {
+    display: grid;
+    grid-template-areas:
+      "main"
+      "sidebar";
+    grid-template-columns: minmax(0, var(--bd-post-width));
+    gap: $grid-gutter-x;
+    justify-content: center;
+
+    @include media-breakpoint-up(lg) {
+      grid-template-areas: ". main sidebar";
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    @include media-breakpoint-up(xl) {
+      gap: 2rem;
+    }
+  }
+
+  .bd-main {
+    grid-area: main;
+    min-width: 0;
+  }
+
+  // Sits at the bottom of the sidebar track and rides the bottom of the viewport,
+  // capped to the width the ad renders at in the docs.
+  .bd-aside {
+    grid-area: sidebar;
+
+    @include media-breakpoint-up(lg) {
+      position: sticky;
+      bottom: 2.25rem;
+      align-self: end;
+      max-width: 212px;
+    }
+  }
+
+  // Full-bleed variant used by the blog index: `main` fills the whole container
+  // with no ad sidebar, so the post grid can breathe across two or three columns.
+  .bd-layout-wide {
+    grid-template-areas: "main";
+    grid-template-columns: minmax(0, 1fr);
+
+    @include media-breakpoint-up(lg) {
+      grid-template-areas: "main";
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .bd-gutter {
+    --bs-gutter-x: 3rem;
+  }
+
+
+  .page {
+    margin-bottom: 4em;
+  }
+
+  .post {
+    margin-bottom: 4em;
+
+    a {
+      word-break: break-word;
+    }
+  }
+
+  // Blog index
+  //
+  // A Vercel-style masthead ("Blog" + relevant links) sitting above a grid of
+  // text-only post cards. No thumbnails: cards are a meta line, title, lede, and
+  // byline, so the emphasis lands on the writing.
+  .posts-subtitle {
+    max-width: 32rem;
+  }
+
+  // The ad rides the top-right of the masthead on desktop and drops between the
+  // heading and the post grid on smaller screens.
+  .posts-header-ad {
+    @include media-breakpoint-up(lg) {
+      width: 400px;
+      max-width: 100%;
+    }
+  }
+
+  .posts-header-link {
+    display: inline-flex;
+    gap: .375rem;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: var(--bs-font-size-sm);
+    color: var(--bs-fg-2);
+    text-decoration: none;
+    background-color: var(--bs-bg-1);
+    border: var(--bs-border-width-keyline) solid var(--bs-border-color);
+    border-radius: 100rem;
+
+    .bi {
+      color: var(--bs-fg-3);
+    }
+
+    &:hover {
+      color: var(--bs-fg-body);
+      background-color: var(--bs-bg-2);
+    }
+  }
+
+  .post-card {
+    background-color: color-mix(in oklch, var(--bs-bg-1), transparent);
+    transition: background-color .15s ease-in-out;
+
+    &:hover {
+      background-color: var(--bs-bg-1);
+    }
+
+    .author-info {
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    // Keep the GitHub byline clickable above the stretched-link overlay.
+    .author-info a {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .post-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover .post-card-title {
+      text-decoration: underline;
+      text-underline-offset: .15em;
+    }
+  }
+
+  .post-card-category {
+    color: var(--bs-fg-2);
+
+    &::before {
+      margin-inline-end: .75rem;
+      color: var(--bs-fg-4, var(--bs-fg-3));
+      content: "·";
+    }
+  }
+
+  // Opening paragraph of the post, clamped so long ledes can't unbalance the grid.
+  .post-card-lede {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .prose {
+    --bs-content-gap: 1.25rem;
+  }
+
+
+  // Single post
+  .post-single {
+    gap: var(--bd-gap-section);
+    max-width: var(--bd-media);
     margin-bottom: 0;
   }
 
-  @media (min-width: 30em) {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
-  }
-}
+  // Both gaps stay here because the base is off the spacer scale.
+  .post-header {
+    gap: .625rem;
 
-// Tables
-table {
-  @extend .table;
-  font-size: .875rem;
+    @include media-breakpoint-up(md) {
+      gap: 1rem;
+    }
 
-  tbody {
-    border-top: 2px solid currentcolor;
-  }
-}
+    // Small screens lead with the title and drop the meta below the subtitle. The
+    // title keeps its default order of 0, so it sorts ahead of the rest.
+    @include media-breakpoint-down(md) {
+      .post-subtitle {
+        order: 2;
+      }
 
+      .post-meta {
+        order: 3;
+      }
 
-// Container
-//
-// Center the page content.
-
-.content {
-  grid-template-columns: 1.15fr 3fr;
-  gap: 3rem;
-}
-
-.posts-container {
-  max-width: 760px;
-}
-
-.bd-gutter {
-  --bs-gutter-x: #{$bd-gutter-x};
-}
-
-
-// Posts and pages
-//
-// Each post is wrapped in `.post` and is used on default and post layouts. Each
-// page is wrapped in `.page` and is only used on the page layout.
-
-.page,
-.post {
-  margin-bottom: 4em;
-}
-
-// Blog post or page title
-.page-title,
-.post-title,
-.post-title a {
-  color: var(--bs-emphasis-color);
-}
-
-// Meta data line below post title
-.post-date {
-  display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
-  color: #767676;
-}
-
-.post {
-  a {
-    word-break: break-word;
+      .author-info {
+        order: 4;
+      }
+    }
   }
 
-  li {
-    margin-bottom: .25rem;
+  .post-meta {
+    gap: .625rem;
+    font-size: 1.125rem;
   }
 
-  h2 {
-    margin-top: 1.5rem;
-    @include font-size(1.75rem);
+  .post-subtitle {
+    max-width: 45rem;
+    font-size: 1.375rem;
+    line-height: 1.5;
   }
 
-  h3 {
-    margin-top: 1.5rem;
+  .post-media,
+  .post-figure-media {
+    background-color: var(--bs-gray-050);
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
-  > h1,
-  > h2,
-  > h3,
-  > h4 {
-    color: var(--bs-emphasis-color);
+  // Videos double as their own plate, and letterboxing reads better on black.
+  .post-media.ratio {
+    margin-bottom: 0;
+    background-color: #000;
   }
-}
 
-// Related posts
-.related {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid var(--bs-border-color);
-}
-.related-posts {
-  a {
-    text-decoration: none;
+  // Copy runs down a centered measure track, media spans the full width of the
+  // post, so figures always read wider than the text they belong to.
+  .post-single .prose {
+    --bs-content-gap: 1.667rem;
+    --bs-content-font-size: 1rem;
+    --bs-content-line-height: 1.625;
+
+    display: grid;
+    grid-template-columns: [full-start] 1fr [text-start] minmax(0, var(--bd-measure)) [text-end] 1fr [full-end];
+    column-gap: 0;
+    width: 100%;
+    max-width: none;
+    color: var(--bs-fg-2);
+    // letter-spacing: -.01em;
+
+    > * {
+      grid-column: text;
+    }
+
+    > figure,
+    > .ratio {
+      grid-column: full;
+    }
+
+    strong,
+    b {
+      font-weight: 600;
+      color: var(--bs-fg-body);
+    }
+
+    a {
+      text-decoration-color: color-mix(in oklch, var(--bs-link-color), transparent);
+      text-underline-offset: .25em;
+
+      &:hover {
+        text-decoration-color: color-mix(in oklch, var(--bs-link-hover-color) 75%, transparent);
+      }
+    }
   }
-}
 
-// Special case the opening paragraph
-.post > p:first-of-type,
-.post > img:first-child + p {
-  font-size: 133.333333%;
-}
+  // Paragraphs holding more than one image become a row of plates with a matching
+  // row of captions beneath.
+  .post-figure-grid {
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
 
-.bd-text-purple {
-  color: var(--bd-violet);
+      .post-figure-media {
+        flex: 1 1 0;
+        min-width: 0;
+      }
+
+      .post-figure-captions {
+        flex: 0 0 100%;
+        flex-direction: row;
+      }
+
+      .post-figure-caption {
+        flex: 1 1 0;
+        min-width: 0;
+      }
+    }
+  }
+
+  .post-figure-caption {
+    line-height: 1.57;
+  }
+
+
+  // Related posts
+  .related {
+    max-width: var(--bd-measure);
+    margin-top: var(--bd-gap-section);
+  }
+
+  .related-posts {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  // Posts that lead straight into the copy instead of setting a subtitle.
+  .post-no-subtitle .prose > p:first-of-type {
+    font-size: 1.125rem;
+    color: var(--bs-fg-body);
+  }
+
+  .bd-text-purple {
+    color: var(--bd-violet);
+  }
+
+  .astro-code {
+    padding: var(--bs-spacer-5);
+    font-size: 1rem;
+    // Shiki writes the theme background inline.
+    background-color: var(--bs-bg-1) !important; // stylelint-disable-line declaration-no-important
+    border-radius: var(--bs-radius-7);
+  }
 }
