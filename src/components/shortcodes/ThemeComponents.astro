@@ -1,0 +1,64 @@
+---
+import Example from './Example.astro'
+import { themeColors, themeColorTitle } from '../../libs/theme-colors'
+
+// Every component here reads its color from theme tokens, and the only theme
+// class on the page is the one on the wrapper. Switching it recolors the whole
+// row without a single per-component class changing.
+const code = [
+  '<div class="theme-primary vstack gap-3">',
+  '  <div class="d-flex flex-wrap gap-2 align-items-center">',
+  '    <button type="button" class="btn-solid">Button</button>',
+  '    <button type="button" class="btn-outline">Outline</button>',
+  '    <span class="badge">Badge</span>',
+  '  </div>',
+  '',
+  '  <div class="alert mb-0"><p>An alert, wearing the same theme color.</p></div>',
+  '',
+  '  <div class="card card-subtle">',
+  '    <div class="card-body">',
+  '      <h3 class="card-title fs-md mb-1">And a card</h3>',
+  '      <p class="card-text fs-sm mb-0">Same wrapper, same color, no extra classes.</p>',
+  '    </div>',
+  '  </div>',
+  '</div>'
+]
+---
+
+<div class="bd-playground not-prose" data-theme-components>
+  <div class="bd-playground-controls bg-1 p-3 fs-sm">
+    <div class="vstack gap-1 flex-grow-0" style="max-width: 14rem;">
+      <label class="form-label fw-semibold mb-0" for="bd-components-color">Theme color</label>
+      <select class="form-control form-control-sm" id="bd-components-color" data-control="color">
+        {themeColors.map(color => <option value={color}>{themeColorTitle(color)}</option>)}
+      </select>
+    </div>
+  </div>
+
+  <Example id="bd-components-preview" code={code} />
+</div>
+
+<script>
+  const playground = document.querySelector<HTMLElement>('[data-theme-components]')
+
+  if (playground) {
+    const wrapper = playground.querySelector<HTMLElement>('#bd-components-preview > div')
+    const select = playground.querySelector<HTMLSelectElement>('[data-control="color"]')
+
+    const classSpan = [
+      ...(playground.querySelectorAll<HTMLElement>('.bd-example-snippet .astro-code span') ?? [])
+    ].find(span => /^"theme-/.test(span.textContent ?? ''))
+
+    select?.addEventListener('change', () => {
+      const color = select.value
+
+      if (wrapper) {
+        wrapper.className = `theme-${color} vstack gap-3`
+      }
+
+      if (classSpan) {
+        classSpan.textContent = `"theme-${color} vstack gap-3"`
+      }
+    })
+  }
+</script>

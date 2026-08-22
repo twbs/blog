@@ -1,0 +1,41 @@
+---
+import { replacePlaceholdersInHtml } from '../../libs/placeholder'
+import Code from './Code.astro'
+
+interface Props {
+  /** The example markup, rendered live and shown as source. Arrays are joined with newlines. */
+  code: string | string[]
+  /** CSS class(es) for the preview wrapper, usually layout utilities. */
+  class?: string
+  /** Preview wrapper id, for examples driven by a script. */
+  id?: string
+  /**
+   * Language the source is shown as.
+   * @default 'html'
+   */
+  lang?: string
+  /**
+   * Show the source below the preview.
+   * @default true
+   */
+  showMarkup?: boolean
+}
+
+const { code, class: className, id, lang = 'html', showMarkup = true } = Astro.props
+
+const markup = replacePlaceholdersInHtml(Array.isArray(code) ? code.join('\n') : code)
+
+// Placeholder SVGs are noise in the source listing, so show them as a plain
+// `img` the reader can substitute.
+const sourceMarkup = markup.replace(
+  /<svg[^>]*class="bd-placeholder-img ?([^"]*)"[\s\S]*?<\/svg>/g,
+  (_match, classes: string) => `<img src="..."${classes ? ` class="${classes}"` : ''} alt="...">`
+)
+---
+
+<div class="bd-example-snippet bd-code-snippet not-prose" data-pagefind-ignore>
+  <div id={id} class:list={['bd-example', className]}>
+    <Fragment set:html={markup} />
+  </div>
+  {showMarkup && <Code code={sourceMarkup} lang={lang} />}
+</div>

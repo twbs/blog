@@ -3,6 +3,7 @@ import path from 'node:path'
 import { defineConfig } from 'astro/config'
 import type { AstroIntegration } from 'astro'
 import sitemap from '@astrojs/sitemap'
+import mdx from '@astrojs/mdx'
 import { unified } from '@astrojs/markdown-remark'
 import bootstrapLight from 'bootstrap-vscode-theme/themes/bootstrap-light.json'
 import bootstrapDark from 'bootstrap-vscode-theme/themes/bootstrap-dark.json'
@@ -48,7 +49,9 @@ const site = isDev
 // https://astro.build/config
 export default defineConfig({
   // Paginated index pages are noindex, so keep them out of the sitemap too.
-  integrations: [sitemap({ filter: (page) => !/\/page\/\d+\/$/.test(page) }), pagefindDev()],
+  // MDX inherits the `markdown` config below, so posts get the same plugins
+  // and highlighting whether they're `.md` or `.mdx`.
+  integrations: [mdx(), sitemap({ filter: (page) => !/\/page\/\d+\/$/.test(page) }), pagefindDev()],
   markdown: {
     processor: unified({ smartypants: false, rehypePlugins: [rehypeFigures] }),
     syntaxHighlight: 'shiki',

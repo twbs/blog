@@ -1,0 +1,61 @@
+---
+import Example from './Example.astro'
+import { themeColors, themeColorTitle } from '../../libs/theme-colors'
+
+// The three recommended pairings, lifted from the Pairings section of the Theme
+// docs. Each element reaches for theme tokens only, so swapping the `theme-*`
+// class on the wrapper recolors all three.
+const code = [
+  '<div class="theme-primary vstack gap-3">',
+  '  <div style="color: var(--bs-theme-contrast); background: var(--bs-theme-bg);" class="p-3 rounded-3">',
+  '    contrast on bg',
+  '  </div>',
+  '  <div style="color: var(--bs-theme-fg-emphasis); background: var(--bs-theme-bg-muted); border: 1px solid var(--bs-theme-border);" class="p-3 rounded-3">',
+  '    fg-emphasis on bg-muted',
+  '  </div>',
+  '  <div style="color: var(--bs-theme-fg); background: var(--bs-theme-bg-subtle); border: 1px solid var(--bs-theme-border);" class="p-3 rounded-3">',
+  '    fg on bg-subtle',
+  '  </div>',
+  '</div>'
+]
+---
+
+<div class="bd-playground not-prose" data-theme-pairings>
+  <div class="bd-playground-controls bg-1 p-3 fs-sm">
+    <div class="vstack gap-1 flex-grow-0" style="max-width: 14rem;">
+      <label class="form-label fw-semibold mb-0" for="bd-pairings-color">Theme color</label>
+      <select class="form-control form-control-sm" id="bd-pairings-color" data-control="color">
+        {themeColors.map(color => <option value={color}>{themeColorTitle(color)}</option>)}
+      </select>
+    </div>
+  </div>
+
+  <Example id="bd-pairings-preview" code={code} />
+</div>
+
+<script>
+  const playground = document.querySelector<HTMLElement>('[data-theme-pairings]')
+
+  if (playground) {
+    const wrapper = playground.querySelector<HTMLElement>('#bd-pairings-preview > div')
+    const select = playground.querySelector<HTMLSelectElement>('[data-control="color"]')
+
+    // Shiki emits an attribute value as a single span, so the class list in the
+    // source listing can be kept in sync with the preview.
+    const classSpan = [
+      ...(playground.querySelectorAll<HTMLElement>('.bd-example-snippet .astro-code span') ?? [])
+    ].find(span => /^"theme-/.test(span.textContent ?? ''))
+
+    select?.addEventListener('change', () => {
+      const color = select.value
+
+      if (wrapper) {
+        wrapper.className = `theme-${color} vstack gap-3`
+      }
+
+      if (classSpan) {
+        classSpan.textContent = `"theme-${color} vstack gap-3"`
+      }
+    })
+  }
+</script>
