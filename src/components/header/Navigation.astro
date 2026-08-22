@@ -1,0 +1,100 @@
+---
+import { getConfig } from '../../libs/config'
+import BootstrapIcon from '../icons/BootstrapIcon.astro'
+import GitHubIcon from '../icons/GitHubIcon.astro'
+import ThemeToggler from './ThemeToggler.astro'
+import SearchTrigger from './SearchTrigger.astro'
+import SearchDialog from './SearchDialog.astro'
+
+const config = getConfig()
+---
+
+<header class="navbar lg:navbar-expand bd-navbar border-bottom border-inverse border-20">
+  <nav class="xl:container bd-gutter flex-wrap lg:flex-nowrap justify-content-start" aria-label="Main navigation">
+    <div class="d-flex align-items-center gap-2 lg:gap-1">
+      <a class="navbar-brand p-0 me-0 lg:me-2" href="/" aria-label="Bootstrap" style="color: var(--bd-violet);">
+        <BootstrapIcon class="d-block my-1" />
+      </a>
+
+      <span class="lg:d-none fg-4">/</span>
+
+      {/* Mobile breadcrumb menu - visible below lg */}
+      <div class="nav-item lg:d-none">
+        <button
+          class="nav-link fw-medium d-inline-flex align-items-center gap-1 px-0"
+          type="button"
+          data-bs-toggle="menu"
+          aria-expanded="false"
+        >
+          Blog
+          <svg class="bi bi-sm" aria-hidden="true"><use href="#chevron-expand"></use></svg>
+        </button>
+        <div class="menu border-keyline">
+          <a class="menu-item" href={`${config.main}/`}>
+            Home
+          </a>
+          <a class="menu-item" href={`${config.main}/docs/${config.docs_version}/getting-started/introduction/`}>
+            Docs
+          </a>
+          <a class="menu-item" href={`${config.main}/docs/${config.docs_version}/examples/`}>
+            Examples
+          </a>
+          <a class="menu-item" href={config.icons}>
+            Icons
+          </a>
+          <a class="menu-item active" href="/">
+            Blog
+            <svg class="bi ms-auto" aria-hidden="true"><use href="#check2"></use></svg>
+          </a>
+          <hr class="menu-divider" />
+          <a class="menu-item" href={config.github_org} target="_blank" rel="noopener">
+            GitHub
+            <svg class="bi bi-sm ms-auto" aria-hidden="true"><use href="#box-arrow-up-right"></use></svg>
+          </a>
+          <a class="menu-item" href={config.opencollective} target="_blank" rel="noopener">
+            Open Collective
+            <svg class="bi bi-sm ms-auto" aria-hidden="true"><use href="#box-arrow-up-right"></use></svg>
+          </a>
+          <a class="menu-item" href={`https://x.com/${config.x}`} target="_blank" rel="noopener">
+            Twitter/X
+            <svg class="bi bi-sm ms-auto" aria-hidden="true"><use href="#box-arrow-up-right"></use></svg>
+          </a>
+        </div>
+      </div>
+
+      {/* Desktop nav links - visible at lg+ */}
+      <ul class="nav navbar-nav flex-row d-none lg:d-flex bd-navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link px-2" href={`${config.main}/docs/${config.docs_version}/getting-started/introduction/`}>Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2" href={`${config.main}/docs/${config.docs_version}/examples/`}>Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2" href={config.icons} target="_blank" rel="noopener">Icons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2 active" href="/">Blog</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="nav navbar-nav flex-row align-items-center ms-auto">
+      <li class="bd-search">
+        <SearchTrigger placeholder="Search the blog…" />
+      </li>
+
+      <li class="nav-item d-none lg:d-flex">
+        <a class="nav-link px-1" href={config.github_org} target="_blank" rel="noopener">
+          <GitHubIcon class="navbar-nav-svg" />
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <ThemeToggler />
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<SearchDialog placeholder="Search the blog…" />

@@ -1,0 +1,109 @@
+---
+import AuthorInfo from './AuthorInfo.astro'
+import Ads from './Ads.astro'
+import { getPostLede, getPostSlug, formatDate, type Post } from '../libs/content'
+
+interface Props {
+  posts: Post[]
+  currentPage: number
+  totalPages: number
+}
+
+const { posts, currentPage, totalPages } = Astro.props
+
+const pageHref = (page: number) => (page === 1 ? '/' : `/page/${page}/`)
+const hasOlder = currentPage < totalPages
+const hasNewer = currentPage > 1
+const showHeader = currentPage === 1
+
+// Posts carry an explicit `category` in frontmatter. Fall back to deriving one
+// from keywords for any post that predates the field. "bootstrap" tags nearly
+// every post, so prefer the next, more descriptive keyword when present.
+const GENERIC_KEYWORDS = new Set(['bootstrap'])
+
+function getCategory(post: Post): string | undefined {
+  if (post.data.category) {
+    return post.data.category
+  }
+
+  const keywords = post.data.keywords ?? []
+  const keyword = keywords.find((k) => !GENERIC_KEYWORDS.has(k.toLowerCase())) ?? keywords[0]
+
+  return keyword ? keyword.charAt(0).toUpperCase() + keyword.slice(1) : undefined
+}
+
+const cards = posts.map((post) => ({
+  post,
+  lede: getPostLede(post),
+  slug: getPostSlug(post),
+  category: getCategory(post),
+  date: new Date(post.data.date)
+}))
+---
+
+{
+  showHeader ? (
+    <header class="d-flex flex-column gap-6 pb-7 mb-8 border-bottom lg:flex-row lg:gap-7 lg:align-items-start lg:justify-content-between">
+      <div class="posts-header-intro">
+        <h1 class="text-4xl fw-bold fg-body mb-1 ls-tight">Blog</h1>
+        <p class="posts-subtitle mb-0 fg-2">Releases, updates, and stories from the Bootstrap team.</p>
+        <nav class="d-flex flex-wrap gap-2 mt-5" aria-label="Blog">
+          <a class="posts-header-link" href="/archive/">
+            <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#archive" /></svg>
+            Archive
+          </a>
+          <a class="posts-header-link" href="/feed.xml">
+            <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#rss" /></svg>
+            RSS
+          </a>
+        </nav>
+      </div>
+      <div class="posts-header-ad flex-shrink-0">
+        <Ads />
+      </div>
+    </header>
+  ) : (
+    <div class="posts-ad mb-8">
+      <Ads />
+    </div>
+  )
+}
+
+<div class="posts d-grid gap-5 md:grid-cols-2 xl:grid-cols-3 lg:gap-7">
+  {
+    cards.map(({ post, lede, slug, category, date }) => (
+      <article class="post-card position-relative d-flex flex-column p-6 rounded-6">
+        <a class="post-card-link stretched-link" href={`/${slug}/`}>
+          <div class="d-flex flex-wrap align-items-center row-gap-2 column-gap-3 mb-3 fs-sm fg-3">
+            <time datetime={date.toISOString()}>{formatDate(date)}</time>
+            {category && <span class="post-card-category">{category}</span>}
+          </div>
+          <h2 class="post-card-title fs-xl fw-semibold ls-tight mb-2 fg-body text-pretty">{post.data.title}</h2>
+          {lede && <p class="post-card-lede mb-0 fg-2">{lede}</p>}
+        </a>
+        <AuthorInfo author={post.data.author} date={date} showDate={false} size={24} />
+      </article>
+    ))
+  }
+</div>
+
+<nav class="pagination" aria-label="Post pagination">
+  {
+    hasOlder ? (
+      <a class="pagination-item older" href={pageHref(currentPage + 1)} rel="next">
+        Older
+      </a>
+    ) : (
+      <span class="pagination-item older">Older</span>
+    )
+  }
+  {
+    hasNewer ? (
+      <a class="pagination-item newer" href={pageHref(currentPage - 1)} rel="prev">
+        Newer
+      </a>
+    ) : (
+      <span class="pagination-item newer">Newer</span>
+    )
+  }
+</nav>

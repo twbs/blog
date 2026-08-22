@@ -1,0 +1,45 @@
+---
+interface Props {
+  banner?: string
+  video?: string
+  videoStart?: number
+  title: string
+  eager?: boolean
+  // Post pages sit the media on a plate wider than the copy; index cards don't.
+  hero?: boolean
+}
+
+const { banner, video, videoStart, title, eager = false, hero = false } = Astro.props
+
+const videoSrc = video
+  ? `https://www.youtube-nocookie.com/embed/${video}?rel=0${videoStart ? `&start=${videoStart}` : ''}`
+  : undefined
+---
+
+{
+  banner ? (
+    hero ? (
+      <div class="post-media w-100 overflow-hidden rounded-8">
+        <img src={banner} alt={title} loading={eager ? 'eager' : 'lazy'} />
+      </div>
+    ) : (
+      <img
+        src={banner}
+        class="d-block img-fluid rounded-3 mb-4"
+        alt={title}
+        loading={eager ? 'eager' : 'lazy'}
+      />
+    )
+  ) : videoSrc ? (
+    <div class:list={['ratio ratio-16x9', hero && 'post-media w-100 overflow-hidden rounded-8']}>
+      <iframe
+        src={videoSrc}
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title={`${title} video`}
+        loading={eager ? 'eager' : 'lazy'}
+        width="760"
+        height="570"></iframe>
+    </div>
+  ) : null
+}

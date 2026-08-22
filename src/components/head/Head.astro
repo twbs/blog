@@ -1,0 +1,47 @@
+---
+import { getConfig } from '../../libs/config'
+import type { SocialCard } from '../../libs/social'
+import Favicons from './Favicons.astro'
+import Social from './Social.astro'
+import Analytics from './Analytics.astro'
+
+interface Props {
+  title: string
+  description?: string
+  card?: SocialCard
+  robots?: string
+}
+
+const config = getConfig()
+const { title, description, card, robots } = Astro.props
+
+const pageTitle = Astro.url.pathname === '/'
+  ? `${config.title} · ${config.description}`
+  : `${title} | ${config.title}`
+
+const pageDescription = description || config.description
+const canonical = new URL(Astro.url.pathname, Astro.site)
+---
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://github.com" crossorigin>
+<link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="canonical" href={canonical}>
+<link rel="alternate" type="application/rss+xml" href={new URL('/feed.xml', Astro.site)} title={config.title}>
+
+<title>{pageTitle}</title>
+{pageDescription && <meta name="description" content={pageDescription}>}
+<meta name="generator" content={Astro.generator}>
+{robots && <meta name="robots" content={robots}>}
+
+<script is:inline src="/assets/js/color-modes.js"></script>
+
+<Favicons />
+<Social title={title} description={pageDescription} card={card} />
+<Analytics />

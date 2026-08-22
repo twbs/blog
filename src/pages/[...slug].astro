@@ -1,0 +1,114 @@
+---
+import { render } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import AuthorInfo from '../components/AuthorInfo.astro'
+import AuthorSignature from '../components/AuthorSignature.astro'
+import PostMedia from '../components/PostMedia.astro'
+import {
+  sortedPosts,
+  getPostSlug,
+  getPostDescription,
+  getReadingTime,
+  formatDate,
+  formatDateISO
+} from '../libs/content'
+import { getPostSocialCard } from '../libs/social'
+
+export function getStaticPaths() {
+  return sortedPosts.map(post => ({
+    params: { slug: getPostSlug(post) },
+    props: { post }
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await render(post)
+const date = new Date(post.data.date)
+const subtitle = post.data.description
+const readingTime = getReadingTime(post)
+
+// Related posts: find 3 posts with overlapping keywords, sorted by date
+const keywords = post.data.keywords || []
+const related = sortedPosts
+  .filter(p => p.id !== post.id)
+  .map(p => ({
+    post: p,
+    score: (p.data.keywords || []).filter(k => keywords.includes(k)).length
+  }))
+  .filter(p => p.score > 0)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 3)
+  .map(p => p.post)
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={getPostDescription(post)}
+  card={getPostSocialCard(post)}
+  extraJs={post.data.extra_js}
+>
+  <div class="my-9">
+    <article
+      class:list={[
+        'post post-single d-flex flex-column align-items-center w-100',
+        { 'post-no-subtitle': !subtitle }
+      ]}
+      data-pagefind-body
+    >
+      <header class="post-header d-flex flex-column w-100 text-pretty md:align-items-center md:text-center">
+        <p class="post-meta d-flex flex-wrap mb-0 lh-1 fg-3">
+          <time datetime={formatDateISO(date)} title={date.toUTCString()}>{formatDate(date)}</time>
+          <!-- <span aria-hidden="true">·</span>
+          <span>{readingTime} min read</span> -->
+        </p>
+        <h1 class="text-4xl fw-medium mb-0 ls-tight">{post.data.title}</h1>
+        {subtitle && <p class="post-subtitle mb-0 fg-2">{subtitle}</p>}
+        <AuthorInfo
+          author={post.data.author}
+          date={date}
+          lazyload={false}
+          align="center"
+          showDate={false}
+        />
+
+        <div class="border-bottom border-subtle w-25 mx-auto mt-7" />
+      </header>
+
+      <PostMedia
+        banner={post.data.banner}
+        video={post.data.video}
+        videoStart={post.data.video_start}
+        title={post.data.title}
+        eager
+        hero
+      />
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      <!-- <AuthorSignature author={post.data.author} /> -->
+    </article>
+
+    <!-- {related.length > 0 && (
+      <div class="related w-100 pb-7 mx-auto" data-pagefind-ignore>
+        <h2 class="h3 mb-3">Related posts</h2>
+        <ul class="related-posts list-unstyled">
+          {related.map(relatedPost => (
+            <li class="d-flex mb-3 fg-2">
+              <svg class="bi mt-1 me-2"><use href="#file-earmark-richtext"></use></svg>
+              <div class="fs-sm">
+                <h3 class="h5 mb-1 lh-1">
+                  <a href={`/${getPostSlug(relatedPost)}/`}>
+                    {relatedPost.data.title}
+                  </a>
+                </h3>
+                {formatDate(new Date(relatedPost.data.date))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )} -->
+  </div>
+</BaseLayout>
