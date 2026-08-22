@@ -2,6 +2,7 @@
 author: mdo
 date: "2014-11-12T00:00:00Z"
 title: Bootstrap 3.3.1 released
+category: Release
 video: ydd9Dn3bJlI
 keywords:
   - bootstrap

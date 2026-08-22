@@ -2,6 +2,7 @@
 author: mdo
 date: "2019-02-11T00:00:00Z"
 title: Bootstrap 4.3.0
+category: Release
 video: htgr3pvBr-I
 keywords:
   - bootstrap
@@ -32,7 +33,7 @@ We've added some new utilities and deprecated some unused code. Here are the key
 
 Checkout the full [v4.3.0 ship list](https://github.com/twbs/bootstrap/issues/27893) and [GitHub project](https://github.com/twbs/bootstrap/projects/16) for the full details.
 
-[Head to to the v4.3.x docs]({{< param "main" >}}/docs/4.3/) to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.
+[Head to to the v4.3.x docs](https://getbootstrap.com/docs/4.3/) to see the latest in action. The full release has been published to npm and will soon appear on the Bootstrap CDN and Rubygems.
 
 ## Introducing responsive font sizes
 
@@ -46,11 +47,11 @@ Our biggest new addition to Bootstrap in v4.3 is responsive font sizes, a [new p
 
 - `font-size`s are entirely configurable via Sass. Be sure to read the docs for how to modify the scales, variables, and more.
 
-While responsive font-sizes are disabled by default, we've enabled them in the custom CSS that powers our docs starting with v4.3. Please share feedback with us via GitHub issues or on Twitter. We've added some light guidance to [our Typography docs]({{< param "main" >}}/docs/4.3/content/typography/#responsive-font-sizes) to explain the feature. You can also learn more by [reading the rfs project documentation](https://github.com/twbs/rfs).
+While responsive font-sizes are disabled by default, we've enabled them in the custom CSS that powers our docs starting with v4.3. Please share feedback with us via GitHub issues or on Twitter. We've added some light guidance to [our Typography docs](https://getbootstrap.com/docs/4.3/content/typography/#responsive-font-sizes) to explain the feature. You can also learn more by [reading the rfs project documentation](https://github.com/twbs/rfs).
 
 ## Open Collective
 
-Last December we launched our [Open Collective page]({{< param "opencollective" >}}) with our [v3.4 release]({{< relref "/posts/2018/bootstrap-3-4-0" >}}) to help support the maintainers contributing to Bootstrap. The team has been very excited about this as a way to be transparent about maintainer costs (both time and money), as well as recognition of efforts.
+Last December we launched our [Open Collective page](https://opencollective.com/bootstrap) with our [v3.4 release](/2018/12/13/bootstrap-3-4-0/) to help support the maintainers contributing to Bootstrap. The team has been very excited about this as a way to be transparent about maintainer costs (both time and money), as well as recognition of efforts.
 
 ## Branches, Hugo, and jQuery
 

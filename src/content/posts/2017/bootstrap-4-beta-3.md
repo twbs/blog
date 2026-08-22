@@ -2,6 +2,7 @@
 author: mdo
 date: "2017-12-28T00:00:00Z"
 title: Bootstrap 4 Beta 3
+category: Release
 video: 9jK-NcRmVcw
 keywords:
   - bootstrap
@@ -16,7 +17,7 @@ Let's dive into all the highlights.
 
 ## Breaking changes
 
-As mentioned in [our Beta 2 release]({{< relref "/posts/2017/bootstrap-4-beta-2" >}}), we needed to make a few more breaking changes in Beta 3. We've summarized them here and in our [migration docs]({{< param "main" >}}/docs/4.0/migration/#beta-3-changes)—be sure to read them!
+As mentioned in [our Beta 2 release](/2017/10/19/bootstrap-4-beta-2/), we needed to make a few more breaking changes in Beta 3. We've summarized them here and in our [migration docs](https://getbootstrap.com/docs/4.0/migration/#beta-3-changes)—be sure to read them!
 
 - **Rewrote native and custom check controls.** Both browser default and custom checkboxes and radios now have simpler markup after removing the `<input>` from the `<label>`. Now, all checkboxes and radios have a parent `<div>` and sibling `<input>` and `<label>` pair. This is essential for form validation and disabled inputs because we can use the input's state to style the label.
 
@@ -28,7 +29,7 @@ As mentioned in [our Beta 2 release]({{< relref "/posts/2017/bootstrap-4-beta-2"
 
 - **Deleted the `.col-form-legend` class**, consolidating it's styles into the `.col-form-label` class.
 
-Read the [Migration page]({{< param "main" >}}/docs/4.0/migration/#beta-3-changes) for further details.
+Read the [Migration page](https://getbootstrap.com/docs/4.0/migration/#beta-3-changes) for further details.
 
 ## More highlights
 

@@ -2,6 +2,7 @@
 author: cvrebert
 date: "2015-03-16T00:00:00Z"
 title: Bootstrap 3.3.4 released
+category: Release
 video: _dx0qWHL7dc
 keywords:
   - bootstrap

@@ -2,24 +2,25 @@
 author: mdo
 date: "2012-09-04T00:00:00Z"
 title: Bootstrap 2.1.1 released
+category: Release
 keywords:
   - bootstrap
   - release
 ---
 
-[Two weeks later]({{< relref "/posts/2012/bootstrap-2-1-0-released" >}}), we've closed another 500 issues against Bootstrap. That includes all the dupes—you nerds like reporting typos—and invalid issues that don't end up making it on the official release milestone. But, what's awesome is that we have 2.1.1 ready to rock with 73 bugfixes.
+[Two weeks later](/2012/08/20/bootstrap-2-1-0-released/), we've closed another 500 issues against Bootstrap. That includes all the dupes—you nerds like reporting typos—and invalid issues that don't end up making it on the official release milestone. But, what's awesome is that we have 2.1.1 ready to rock with 73 bugfixes.
 
 
 ## Get it
 
-Head on over to [{{< param "main" >}}]({{< param "main" >}}) and get your fix, or download the [latest master ZIP right from GitHub](https://github.com/twbs/bootstrap/archive/v2.1.1.zip).
+Head on over to [https://getbootstrap.com](https://getbootstrap.com) and get your fix, or download the [latest master ZIP right from GitHub](https://github.com/twbs/bootstrap/archive/v2.1.1.zip).
 
 
 ## What's changed
 
 Here's the rundown:
 
-- New feature: alert text. We documented these new classes, like `.text-success`, at the bottom of the [Typography section]({{< param "main" >}}/2.3.2/base-css.html#typography) along with the long undocumented `.muted`.
+- New feature: alert text. We documented these new classes, like `.text-success`, at the bottom of the [Typography section](https://getbootstrap.com/2.3.2/base-css.html#typography) along with the long undocumented `.muted`.
 - Fixed a lot of typos in the docs. Spelling is hard.
 - Made the `.box-shadow()` mixin more durable. It no longer requires escaping for multiple shadows, meaning you can easily use variables and functions in them once again.
 - Widened `.dl-horizontal dt` and `.horizontal-form .control-group` to better handle the increased font-size.
