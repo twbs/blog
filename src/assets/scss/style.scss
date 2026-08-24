@@ -30,9 +30,8 @@
 
   // Quotes
   blockquote {
-    padding: .5rem 1rem;
-    margin: .8rem 0;
-    color: #7a7a7a;
+    padding: .5rem .75rem;
+    color: var(--bs-fg-2);
     border-left: .25rem solid #e5e5e5;
 
     p:last-child {
@@ -230,9 +229,21 @@
 
   // Single post
   .post-single {
-    gap: var(--bd-gap-section);
-    max-width: var(--bd-media);
     margin-bottom: 0;
+  }
+
+  // A single ad node rides the centered measure track, in the source flow below
+  // the header and before the body, on every viewport.
+  .post-layout {
+    display: grid;
+    grid-template-columns: minmax(0, var(--bd-media));
+    gap: var(--bd-gap-section);
+    justify-content: center;
+  }
+
+  .post-ad {
+    display: flex;
+    justify-content: center;
   }
 
   // Both gaps stay here because the base is off the spacer scale.
@@ -267,7 +278,7 @@
 
   .post-subtitle {
     max-width: 45rem;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     line-height: 1.5;
   }
 
@@ -371,7 +382,7 @@
   }
 
   // Posts that lead straight into the copy instead of setting a subtitle.
-  .post-no-subtitle .prose > p:first-of-type {
+  .post .prose > p:first-of-type {
     font-size: 1.125rem;
     color: var(--bs-fg-body);
   }
@@ -382,8 +393,7 @@
 
   .astro-code {
     padding: var(--bs-spacer-5);
-    font-size: 1rem;
-    // Shiki writes the theme background inline.
+    font-size: 87.5%;
     background-color: var(--bs-bg-1) !important; // stylelint-disable-line declaration-no-important
     border-radius: var(--bs-radius-7);
   }

@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import AuthorInfo from '../components/AuthorInfo.astro'
 import AuthorSignature from '../components/AuthorSignature.astro'
 import PostMedia from '../components/PostMedia.astro'
+import Ads from '../components/Ads.astro'
 import {
   allPosts,
   sortedPosts,
@@ -55,11 +56,12 @@ const related = scored
   card={getPostSocialCard(post)}
   extraJs={post.data.extra_js}
   robots={post.data.draft ? 'noindex, nofollow' : undefined}
+  wide
 >
   <div class="my-9">
     <article
       class:list={[
-        'post post-single d-flex flex-column align-items-center w-100',
+        'post post-single post-layout w-100',
         { 'post-no-subtitle': !subtitle }
       ]}
       data-pagefind-body
@@ -72,7 +74,7 @@ const related = scored
           <span>{readingTime} min read</span> -->
         </p>
         <h1 class="text-4xl fw-medium mb-0 ls-tight">{post.data.title}</h1>
-        {subtitle && <p class="post-subtitle mb-0 fg-2">{subtitle}</p>}
+        <!-- {subtitle && <p class="post-subtitle text-balance mb-0 fg-2">{subtitle}</p>} -->
         <AuthorInfo
           author={post.data.author}
           date={date}
@@ -92,6 +94,10 @@ const related = scored
         eager
         hero
       />
+
+      <div class="post-ad">
+        <Ads />
+      </div>
 
       <div class="prose">
         <Content />
