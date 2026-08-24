@@ -6,9 +6,11 @@ export const POSTS_PER_PAGE = 12
 
 export const allPosts = await getCollection('posts')
 
-export const sortedPosts = allPosts.sort((a, b) =>
-  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-)
+// `draft` posts are written but not yet published, so they're excluded from
+// every listing, feed, and route (their pages 404 until the flag is removed).
+export const sortedPosts = allPosts
+  .filter(post => !post.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
 
 export const totalPages = Math.max(1, Math.ceil(sortedPosts.length / POSTS_PER_PAGE))
 

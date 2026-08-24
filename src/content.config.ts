@@ -9,6 +9,9 @@ const postsSchema = z.object({
   description: z.string().optional(),
   // Gives the post a full-width card on the index instead of a half-width one.
   major: z.boolean().optional(),
+  // Written but not yet published: hidden from every listing, feed, and route
+  // until removed. Series navigation shows it as an upcoming (unlinked) entry.
+  draft: z.boolean().optional(),
   keywords: z.string().array().optional(),
   video: z.string().optional(),
   video_start: z.number().optional(),

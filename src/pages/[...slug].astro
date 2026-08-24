@@ -5,17 +5,23 @@ import AuthorInfo from '../components/AuthorInfo.astro'
 import AuthorSignature from '../components/AuthorSignature.astro'
 import PostMedia from '../components/PostMedia.astro'
 import {
+  allPosts,
   sortedPosts,
   getPostSlug,
   getPostDescription,
   getReadingTime,
   formatDate,
-  formatDateISO
+  formatDateISO,
+  type Post
 } from '../libs/content'
 import { getPostSocialCard } from '../libs/social'
 
+// Drafts are dev-only: `astro dev` builds pages for them so they can be
+// previewed, but a production build only ships published posts (`sortedPosts`).
 export function getStaticPaths() {
-  return sortedPosts.map(post => ({
+  const posts = import.meta.env.DEV ? allPosts : sortedPosts
+
+  return posts.map((post: Post) => ({
     params: { slug: getPostSlug(post) },
     props: { post }
   }))
@@ -29,12 +35,14 @@ const readingTime = getReadingTime(post)
 
 // Related posts: find 3 posts with overlapping keywords, sorted by date
 const keywords = post.data.keywords || []
-const related = sortedPosts
-  .filter(p => p.id !== post.id)
-  .map(p => ({
+const scored: { post: Post; score: number }[] = sortedPosts
+  .filter((p: Post) => p.id !== post.id)
+  .map((p: Post) => ({
     post: p,
-    score: (p.data.keywords || []).filter(k => keywords.includes(k)).length
+    score: (p.data.keywords || []).filter((k: string) => keywords.includes(k)).length
   }))
+
+const related = scored
   .filter(p => p.score > 0)
   .sort((a, b) => b.score - a.score)
   .slice(0, 3)
@@ -46,6 +54,7 @@ const related = sortedPosts
   description={getPostDescription(post)}
   card={getPostSocialCard(post)}
   extraJs={post.data.extra_js}
+  robots={post.data.draft ? 'noindex, nofollow' : undefined}
 >
   <div class="my-9">
     <article
@@ -56,6 +65,7 @@ const related = sortedPosts
       data-pagefind-body
     >
       <header class="post-header d-flex flex-column w-100 text-pretty md:align-items-center md:text-center">
+        {post.data.draft && <span class="chip theme-danger text-uppercase fs-sm fw-semibold">Draft</span>}
         <p class="post-meta d-flex flex-wrap mb-0 lh-1 fg-3">
           <time datetime={formatDateISO(date)} title={date.toUTCString()}>{formatDate(date)}</time>
           <!-- <span aria-hidden="true">·</span>

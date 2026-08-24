@@ -1,6 +1,6 @@
 import { OGImageRoute } from 'astro-og-canvas'
 
-import { getPostDescription, getPostSlug, sortedPosts, type Post } from '../../libs/content'
+import { getPostDescription, getPostSlug, allPosts, sortedPosts, type Post } from '../../libs/content'
 
 // Bootstrap 6's palette, converted from the oklch() source values in
 // bootstrap/scss/_colors.scss since canvaskit only takes RGB.
@@ -10,7 +10,9 @@ const INK_TINTED: [number, number, number] = [27, 11, 69]
 const WHITE: [number, number, number] = [255, 255, 255]
 const MUTED: [number, number, number] = [176, 172, 196]
 
-const pages = Object.fromEntries(sortedPosts.map((post) => [getPostSlug(post), post]))
+// Match the post routes: drafts get cards in dev previews only, not in prod.
+const posts = import.meta.env.DEV ? allPosts : sortedPosts
+const pages = Object.fromEntries(posts.map((post: Post) => [getPostSlug(post), post]))
 
 export const { getStaticPaths, GET } = await OGImageRoute({
   pages,
