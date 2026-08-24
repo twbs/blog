@@ -9,93 +9,86 @@ keywords:
   - release
 ---
 
-{/*
-  Draft: Bootstrap 6 alpha 1 announcement post.
-
-  This is an .mdx post so it can render live examples. Example,
-  ResizableExample, and ButtonPlayground are ported from the docs and live in
-  src/components/shortcodes/. All the `example:` placeholders are now real
-  demos.
-
-  Remaining follow-ups, each marked inline with a TODO comment:
-    - TODO(screenshot) x5 — captures that need a full page, a real device, or
-      motion, so they can't be live embeds. Find them with:
-        rg 'TODO\(screenshot\)' src/content/posts/2026/bootstrap-6-alpha.mdx
-    - TODO(grid) — the Grid section is stubbed pending grid system decisions.
-    - TODO(form-adorn) — needs a source decision before it earns a mention.
-
-  Still worth porting if we want it: ScssDocs, which prints the source between
-  `// scss-docs-start <name>` and `// scss-docs-end <name>` markers so snippets
-  stay in sync with node_modules/bootstrap/scss/.
-*/}
-
 import Example from '../../../components/shortcodes/Example.astro'
 import ResizableExample from '../../../components/shortcodes/ResizableExample.astro'
 import ButtonPlayground from '../../../components/shortcodes/ButtonPlayground.astro'
 import TokenPlayground from '../../../components/shortcodes/TokenPlayground.astro'
 import ThemePairings from '../../../components/shortcodes/ThemePairings.astro'
 import ThemeComponents from '../../../components/shortcodes/ThemeComponents.astro'
+import GithubUser from '../../../components/shortcodes/GithubUser.astro'
+import PostSeries from '../../../components/shortcodes/PostSeries.astro'
 
-Today we’re releasing the first alpha version of Bootstrap 6, a major overhaul to the project that modernizes, reimagines, and expands one of the most prolific open source design systems of all time. It’s been incredibly fun and rewarding to work on this these last several months, and I’m excited to share what we’ve cooked up, as well as where I intend to steer things.
+Today we’re releasing the first alpha version of Bootstrap 6, a major overhaul to the project that modernizes and expands one of the most prolific open source design systems of all time. It’s been incredibly fun and rewarding to work on this over the past year, and I’m excited to share it with you.
+
+Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards. We’ve broken this post into separate entries that we'll publish daily, starting with overview of v6 and spotlight on our new Sass & CSS implementation.
+
+<PostSeries current="alpha" />
 
 ## Hold up…
 
-You’re probably asking yourself, “Wtf, new Bootstrap? What is this, 2015?” And I don’t blame you. It’s been all quiet on the Bootstrap front for a long time while I’ve focused on [Pierre](https://pierre.computer)—first with Pierre.co (RIP) and then with [Diffs](https://diffs.com), [Trees](https://trees.software), and more. Through that time, I’ve done the most design work I’ve done in years, built new products with extremely smart and talented engineers, and watched as AI took over software development. Through all that time, I’ve also had a few nagging ideas that I wanted to see built into *something*, and that has slowly became the foundations of Bootstrap 6.
+You’re probably asking yourself, “Wtf, new Bootstrap? What is this, 2015?” And I don’t blame you. It’s been all quiet on the Bootstrap front for a long time while I’ve focused on [Pierre](https://pierre.computer), especially with our work on [Diffs](https://diffs.com), [Trees](https://trees.software), and [Code Storage](https://code.storage).
 
-Now, to address the most obvious lines of questions:
+Throughout all of that, I've had several nagging ideas for Bootstrap despite humans not writing any more code thanks to AI. And yes, there are tons of design libraries from amazing developers now. Still, the reason we made Bootstrap in the first place has never been more relevant.
 
-- No, no one _needs_ another version of Bootstrap. It’s an open source project, it’s fine.
-- Yes, you’re free to use Tailwind, shadcn/ui, Base UI, and more. (They’re great, their developers are awesome!)
-- Yes, it’s 2026, AI is here, and no one ever needs any human-built software ever again. Except there’s plenty of room for new ideas, technical excellence, pairing humans with generative code, and more.
+> To help people build more software, faster and easier.
 
-In short, software is more approachable than it has ever been and Bootstrap has always brought me so much joy and pride. The driving force behind Bootstrap ever since it was first created as Twitter Blueprint in late 2010 was to help more people build more software, faster and easier. With AI—plus modern browser APIs, evolving languages, and better tools—anything is possible for just about anyone.
+There’s never been more people building software than today, and I imagine that will continue to be true every day, for the rest of our lives. And so, Bootstrap 6 is here to continue being an open source design system for anyone—human or AI, novice or pro.
 
-Bootstrap 6 is here to be the open source design system for anyone—human or AI, novice or pro. Even if you don’t use it, I just want to share new ideas with others, inspire people to build, and learn new things and challenge myself.
+We hope you love it, and thanks to everyone who's supported the project over the years.
 
 ## Community appreciation
 
-Before we get to the good parts, I want to thank my co-maintainer, Julien, for all the amazing work he’s put into Bootstrap the last couple of years. Without him, I’d be underwater on reviews, dependencies, migrations, and more. He’s an absolute legend and Bootstrap owes him a tremendous amount of gratitude and appreciation.
+Before we get to the good parts, I want to thank my co-maintainer, [Julien](https://github.com/julien-deramond), for all the amazing work he’s put into Bootstrap the last couple of years. Without him, I’d be underwater on reviews, dependencies, migrations, and more. He’s an absolute legend and Bootstrap owes him a tremendous amount of gratitude and appreciation.
 
-Additionally, it’s truly astounding just how many frontend libraries, design systems, toolkits, and more that are available in the 15 years since Bootstrap was originally released. Each of these projects have helped proliferate good design, design systems, and inspiring engineering over the years.
+Huge thanks to everyone who contributed to the v6 development branch as well:
 
-I also want to thank everyone backing Bootstrap on [Open Collective](https://opencollective.com/bootstrap), and every contributor who filed an issue, sent a patch, or argued with me in a pull request while this alpha came together.
+<p class="d-flex flex-wrap gap-2">
+  <GithubUser user="julien-deramond" />
+  <GithubUser user="coliff" />
+  <GithubUser user="pricop" />
+  <GithubUser user="ThomasLandauer" />
+  <GithubUser user="Rishikesh183" />
+  <GithubUser user="pardeyke" />
+  <GithubUser user="meenalsingh0" />
+  <GithubUser user="ifer47" />
+  <GithubUser user="Hashim1999164" />
+  <GithubUser user="fauzan171" />
+  <GithubUser user="claudiob" />
+  <GithubUser user="aljojoby9" />
+</p>
+
+And most importantly, thanks to everyone who has backed Bootstrap on [Open Collective](https://opencollective.com/bootstrap) and every contributor who filed an issue, sent a patch, or argued with me in a pull request.
 
 ## Get started
 
-Bootstrap 6 alpha 1 is on npm and jsDelivr right now.
+Bootstrap 6 Alpha 1 is on npm and jsDelivr right now.
 
 ```sh
 npm i bootstrap@6.0.0-alpha1
 ```
 
-Or grab it from the CDN. One thing to flag up front, because it’s the change most likely to trip you up: our JavaScript is ESM-only in v6, so the `<script>` tag needs `type="module"`.
+Or grab it from the CDN. Be mindful that our JavaScript is ESM-only in v6, so the `<script>` tag needs `type="module"`.
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
-From there, see [Install](https://getbootstrap.com/docs/6.0/getting-started/install) or the [Quickstart](https://getbootstrap.com/docs/6.0/guides/quickstart). If you’re coming from v5, read the next section first, then the [migration guide](https://getbootstrap.com/docs/6.0/guides/migration).
+Then read our [Install](https://getbootstrap.com/docs/6.0/getting-started/install) or [Quickstart](https://getbootstrap.com/docs/6.0/guides/quickstart) pages. If you’re coming from v5, read the next section first, then the [migration guide](https://getbootstrap.com/docs/6.0/guides/migration).
 
-## Updated browser support
+## Modern browser support
 
-Bootstrap 6 requires Chrome and Edge 130, Firefox 132, and Safari 18 on both macOS and iOS. For comparison, v5 supported browsers as far back as Chrome and Firefox 60 and Safari 12. This is because we're building with browser features that weren’t safe to rely on a couple of years ago: `light-dark()`, `:has()`, container queries, `oklch()`, `color-mix()`, `content-visibility`, and the native `<dialog>` element. Shipping fallbacks for each of them would mean a lesser version of nearly every feature below.
+**Bootstrap 6 requires Chrome and Edge 130, Firefox 132, and Safari 18.** For comparison, v5 supported browsers as far back as Chrome and Firefox 60 and Safari 12. This new support floor is because we're building with browser features that weren’t available a few years ago: `light-dark()`, `:has()`, container queries, `oklch()`, `color-mix()`, the native `<dialog>` element, and more. This means v6 includes no fallbacks, prefixes, or polyfills below that floor.
 
-As a result, v6 includes no fallbacks, prefixes, or polyfills below that floor. Older browsers won’t degrade gracefully—they’ll break. Check your analytics before you upgrade, and see [Browsers and devices](https://getbootstrap.com/docs/6.0/getting-started/browsers-devices) for the full policy and the reasoning behind each version.
+Bootstrap 5 remains available and supported if that floor doesn’t work for your project. v5.4.0 will be released as soon as we can before we share an end of life date for Bootstrap 5.
 
-Bootstrap 5 remains available and supported if that floor doesn’t work for your project.
+## Spotlight: CSS-first Sass modules
 
-## Highlights
+Updating Bootstrap to use Sass modules was a massive undertaking that couldn't happen in v5 without some breaking changes. So we went big in v6.
 
-Okay, let’s talk about all the awesome stuff coming to Bootstrap 6, starting with the broad strokes and highlights. Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards.
+Bootstrap 6 uses the `@use`/`@forward` module system, and customization now happens via **token maps**. Sass is still used for _programmatic_ customization (generating component variants, utilities, functions, etc), while all _visual_ customization happens with CSS.
 
-### Sass modules, with a CSS twist
-
-Bootstrap 6 has been rewritten to use Sass’s modern `@use`/`@forward` module system, but there’s a catch. I didn’t want another system like v5 where you had two ways to customize, neither of which worked for everyone. While we still use Sass for programmatic customization (generating component variants, utilities, functions, etc), all visual customization happens with CSS. This is thanks to what we’re calling **token maps**.
-
-Token maps are Sass maps that house all our CSS variables for both `:root` and component levels. Global tokens are on `:root`, component tokens get generated on specific classes. This normalizes the path to customizing and focuses Bootstrap on the future of CSS, with a strong preprocessor foundation for managing large codebases. Nearly every Sass variable from v5 is now a CSS variable in a token map.
-
-That has a real consequence for anyone with a v5 `_custom.scss` full of variable overrides: most of those variables no longer exist. `_variables.scss` and `_maps.scss` are gone entirely, and the handful of genuinely global Sass options that survived now live together in `_config.scss`. Everything else moved into a token map, where you can reach it from Sass at build time or from CSS at runtime.
+**Token maps** are Sass maps that house all our CSS variables for both global settings in `:root` and on our individual components. This normalizes the path to customizing and focuses Bootstrap on the future of CSS, with a strong preprocessor foundation for managing large codebases. Nearly every Sass variable from v5 is now a CSS variable in a token map. This also means you can customize Bootstrap's CSS variables at runtime, rather than just before compilation.
 
 Here’s how [this approach](https://getbootstrap.com/docs/6.0/getting-started/approach) looks in a component like [alert](https://getbootstrap.com/docs/6.0/components/alert):
 
@@ -120,9 +113,9 @@ $alert-tokens: defaults(
 }
 ```
 
-The values matter as much as the keys here. Component tokens point at global tokens rather than hardcoding lengths and colors, so `--alert-padding-x` moves when `--spacer` moves. That chain is what makes runtime customization work.
+Practically speaking, this means that virtually all our Sass variables from v5 are now CSS variables in a token map. The handful of remaining global Sass options now live in `_config.scss`, `_colors.scss`, and `_theme.scss`.
 
-And at the `:root` level where we emit the most tokens programmatically through additional Sass functions:
+At the `:root` level where we emit the most tokens programmatically through additional Sass functions:
 
 ```scss
 $root-tokens: () !default;
@@ -832,3 +825,9 @@ Areas where feedback would help most:
 [Issues](https://github.com/twbs/bootstrap/issues) and [discussions](https://github.com/twbs/bootstrap/discussions) are the best places for all of it.
 
 The [documentation](https://getbootstrap.com/docs/6.0/) covers everything here in far more detail, and there’s more still to come before beta. I hope you build something with it.
+
+
+---
+
+
+Additionally, it’s truly astounding just how many frontend libraries, design systems, toolkits, and more that are available in the 15 years since Bootstrap was originally released. Each of these projects have helped proliferate good design, design systems, and inspiring engineering over the years.
