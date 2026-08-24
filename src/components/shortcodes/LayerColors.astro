@@ -1,0 +1,68 @@
+---
+// Live swatch ladders for the theme layer colors: backgrounds, foregrounds, and
+// borders. Each tile uses the real Bootstrap utility class, so the preview is
+// color-mode adaptive and stays in sync with the tokens in `$theme-bgs`,
+// `$theme-fgs`, and `$theme-borders`.
+
+interface Group {
+  title: string
+  hint: string
+  kind: 'bg' | 'fg' | 'border'
+  tokens: string[]
+}
+
+const groups: Group[] = [
+  {
+    title: 'Backgrounds',
+    hint: 'Surfaces stepping away from the page',
+    kind: 'bg',
+    tokens: ['bg-body', 'bg-1', 'bg-2', 'bg-3', 'bg-4']
+  },
+  {
+    title: 'Foregrounds',
+    hint: 'Text from body down to muted',
+    kind: 'fg',
+    tokens: ['fg-body', 'fg-1', 'fg-2', 'fg-3', 'fg-4']
+  },
+  {
+    title: 'Borders',
+    hint: 'Dividers and outlines',
+    kind: 'border',
+    tokens: ['border', 'border-subtle', 'border-muted', 'border-emphasized']
+  }
+]
+---
+
+<div class="not-prose vstack gap-4 my-4">
+  {
+    groups.map(group => (
+      <div>
+        <div class="d-flex align-items-baseline justify-content-between mb-2">
+          <span class="fs-xs text-uppercase fw-semibold fg-3">{group.title}</span>
+          <span class="fs-xs fg-3">{group.hint}</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          {group.tokens.map(token =>
+            group.kind === 'bg' ? (
+              <div class:list={['flex-fill text-center p-4 rounded-4 border', token]} style="min-width: 6rem;">
+                <span class="fs-xs font-monospace">{token}</span>
+              </div>
+            ) : group.kind === 'fg' ? (
+              <div class="flex-fill text-center p-4 rounded-4 border bg-body" style="min-width: 6rem;">
+                <div class:list={['fs-4 lh-1 mb-2', token]}>Aa</div>
+                <span class:list={['fs-xs font-monospace', token]}>{token}</span>
+              </div>
+            ) : (
+              <div
+                class:list={['flex-fill text-center p-4 rounded-4 border border-2 bg-body', token]}
+                style="min-width: 6rem;"
+              >
+                <span class="fs-xs font-monospace fg-body">{token}</span>
+              </div>
+            )
+          )}
+        </div>
+      </div>
+    ))
+  }
+</div>

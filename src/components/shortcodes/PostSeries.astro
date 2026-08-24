@@ -1,0 +1,51 @@
+---
+import { sortedPosts, getPostSlug, type Post } from '../../libs/content'
+
+interface Props {
+  current?: string
+}
+
+const { current } = Astro.props
+
+const SERIES = [
+  { key: 'alpha', id: '2026/bootstrap-6-alpha', label: 'Bootstrap 6 Alpha!' },
+  { key: 'colors', id: '2026/bootstrap-6-colors', label: 'Expanded colors and revamped theming' },
+  { key: 'components', id: '2026/bootstrap-6-components', label: 'New and improved components' },
+  { key: 'grid', id: '2026/bootstrap-6-grid', label: 'Grid system updates' },
+  { key: 'forms', id: '2026/bootstrap-6-forms', label: 'New and improved forms' },
+  { key: 'utilities', id: '2026/bootstrap-6-utilities', label: 'Prefixes & Utilities' },
+  { key: 'javascript', id: '2026/bootstrap-6-javascript', label: 'JavaScript plugins' }
+]
+
+const stripExtension = (id: string) => id.replace(/\.mdx?$/, '')
+const publishedById = new Map(sortedPosts.map((post: Post) => [stripExtension(post.id), post]))
+
+const items = SERIES.map(entry => {
+  const post = publishedById.get(entry.id)
+
+  return {
+    label: entry.label,
+    href: post ? `/${getPostSlug(post)}/` : undefined,
+    isCurrent: entry.key === current
+  }
+})
+---
+
+<nav class="not-prose bg-1 border rounded-7 py-5 px-7" aria-label="Bootstrap 6 series" data-pagefind-ignore>
+  <p class="text-uppercase fs-sm fw-semibold fg-3">In this series</p>
+  <ol class="mb-0 space-y-2">
+    {
+      items.map(item => (
+        <li>
+          {item.isCurrent ? (
+            <span class="fw-semibold fg-body" aria-current="true">{item.label}</span>
+          ) : item.href ? (
+            <a class="underline-50 underline-offset-2 hover:underline-100" href={item.href}>{item.label}</a>
+          ) : (
+            <span class="fg-3" title="Coming soon">{item.label}</span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
