@@ -4,14 +4,26 @@ import { defineConfig } from 'astro/config'
 import type { AstroIntegration } from 'astro'
 import sitemap from '@astrojs/sitemap'
 import mdx from '@astrojs/mdx'
-import { unified } from '@astrojs/markdown-remark'
+import { rehypeHeadingIds, unified } from '@astrojs/markdown-remark'
 import bootstrapLight from 'bootstrap-vscode-theme/themes/bootstrap-light.json'
 import bootstrapDark from 'bootstrap-vscode-theme/themes/bootstrap-dark.json'
 import { transformerNotationDiff, transformerNotationHighlight } from '@shikijs/transformers'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import type { Element, ElementContent } from 'hast'
 
 import { getAliasRedirects } from './src/libs/aliases'
 import { getConfig } from './src/libs/config'
 import rehypeFigures from './src/libs/rehype-figures'
+
+// Recursively flatten a heading's inline content to plain text for aria-labels,
+// so headings that contain inline code or links still get a readable label.
+function headingText(node: Element): string {
+  return node.children
+    .map((child: ElementContent) =>
+      child.type === 'text' ? child.value : child.type === 'element' ? headingText(child) : ''
+    )
+    .join('')
+}
 
 // Serve the Pagefind search index in `astro dev` by copying the index from the
 // last `dist/` build into `public/pagefind/`. It's a no-op until `npm run build`
@@ -53,7 +65,27 @@ export default defineConfig({
   // and highlighting whether they're `.md` or `.mdx`.
   integrations: [mdx(), sitemap({ filter: (page) => !/\/page\/\d+\/$/.test(page) }), pagefindDev()],
   markdown: {
-    processor: unified({ smartypants: false, rehypePlugins: [rehypeFigures] }),
+    processor: unified({
+      smartypants: false,
+      rehypePlugins: [
+        // Match the v6 docs: generate heading ids, then append a docs-style
+        // hash link (`.anchor-link`) to h2–h5. The visible “#” is CSS-driven.
+        rehypeHeadingIds,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: 'append',
+            content: [{ type: 'text', value: ' ' }],
+            properties: (element: Element) => ({
+              class: 'anchor-link',
+              ariaLabel: `Link to this section: ${headingText(element).trim()}`
+            }),
+            test: (element: Element) => /^h[2-5]$/.test(element.tagName)
+          }
+        ],
+        rehypeFigures
+      ]
+    }),
     syntaxHighlight: 'shiki',
     shikiConfig: {
       themes: {
