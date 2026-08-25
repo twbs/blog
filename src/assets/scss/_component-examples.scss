@@ -223,6 +223,38 @@
     user-select: none;
   }
 
+  // Color swatch grids
+  //
+  // Ported from the v6 Color and Theme docs. Each grid uses `display: contents`
+  // wrappers so the per-color heading (via `.grid-cols-fill`) and its swatches
+  // land directly on the shared grid track. Columns widen on larger screens.
+  .bd-colors-grid {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    min-width: 0;
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(13, 1fr);
+    }
+  }
+
+  .bd-theme-colors-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    min-width: 0;
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(9, 1fr);
+    }
+  }
+
+  // Let the grids use the full measure of the post so the wider column counts
+  // above have room to breathe, instead of the narrower text track.
+  .post-single .prose > .bd-colors-grid,
+  .post-single .prose > .bd-theme-colors-grid {
+    grid-column: full;
+  }
+
   // Playgrounds
   //
   // Controls that drive an example, attached to the top of it so the two read

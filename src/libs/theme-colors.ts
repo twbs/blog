@@ -14,6 +14,20 @@ export const themeColors = [
 
 export type ThemeColor = (typeof themeColors)[number]
 
+// The nine semantic keys every theme color exposes, matching the `themeTokens`
+// list in the v6 Theme docs and the roles declared per color in `_theme.scss`.
+export const themeTokens = [
+  'base',
+  'fg',
+  'fg-emphasis',
+  'bg',
+  'bg-subtle',
+  'bg-muted',
+  'border',
+  'focus-ring',
+  'contrast'
+] as const
+
 export function themeColorTitle(name: string): string {
   return name.charAt(0).toUpperCase() + name.slice(1)
 }
