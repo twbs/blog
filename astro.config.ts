@@ -14,6 +14,7 @@ import type { Element, ElementContent } from 'hast'
 import { getAliasRedirects } from './src/libs/aliases'
 import { getConfig } from './src/libs/config'
 import rehypeFigures from './src/libs/rehype-figures'
+import rehypeBsTable from './src/libs/rehype-bs-table'
 
 // Recursively flatten a heading's inline content to plain text for aria-labels,
 // so headings that contain inline code or links still get a readable label.
@@ -83,7 +84,8 @@ export default defineConfig({
             test: (element: Element) => /^h[2-5]$/.test(element.tagName)
           }
         ],
-        rehypeFigures
+        rehypeFigures,
+        rehypeBsTable
       ]
     }),
     syntaxHighlight: 'shiki',

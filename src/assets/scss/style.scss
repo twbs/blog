@@ -44,8 +44,9 @@
     }
   }
 
-  // Tables
-  table {
+  // Plain markdown tables (not wrapped in `<BsTable>`). Bootstrap's `.table`
+  // styles its own borders, so exclude it here to avoid double borders.
+  table:not(.table) {
     width: 100%;
     margin-bottom: 1rem;
     font-size: .875rem;
@@ -59,6 +60,37 @@
 
     tbody {
       border-top: 2px solid currentcolor;
+    }
+  }
+
+  // `<BsTable>` content tables, mirroring the v6 docs (`site/src/scss/_content.scss`).
+  .prose .table,
+  .prose .table-responsive .table {
+    --bs-table-border-color: var(--bs-border-color);
+
+    max-width: 100%;
+    font-size: var(--bs-font-size-sm);
+
+    th,
+    td {
+      &:first-child {
+        padding-inline-start: 0;
+      }
+
+      &:not(:last-child) {
+        padding-inline-end: 1.5rem;
+      }
+    }
+
+    th {
+      color: var(--bs-fg-body);
+      border-block-end-color: currentcolor;
+    }
+
+    // Prevent breaking of code
+    th,
+    td:first-child > code { // stylelint-disable-line selector-max-compound-selectors
+      white-space: nowrap;
     }
   }
 
