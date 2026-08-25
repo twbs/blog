@@ -1,0 +1,257 @@
+---
+author: mdo
+date: "2026-08-21T00:00:00Z"
+title: "Bootstrap 6: Expanded colors and revamped theming"
+category: Release
+description: Bootstrap 6's expanded color system, overhauled theme engine, token pairings, and layer colors.
+keywords:
+  - bootstrap
+  - release
+draft: true
+---
+
+import Example from '../../../components/shortcodes/Example.astro'
+import ThemePairings from '../../../components/shortcodes/ThemePairings.astro'
+import ThemeComponents from '../../../components/shortcodes/ThemeComponents.astro'
+import LayerColors from '../../../components/shortcodes/LayerColors.astro'
+import PostSeries from '../../../components/shortcodes/PostSeries.astro'
+import BsTable from '../../../components/shortcodes/BsTable.astro'
+import Swatch from '../../../components/shortcodes/Swatch.astro'
+import ColorsGrid from '../../../components/shortcodes/ColorsGrid.astro'
+import ThemeColorsGrid from '../../../components/shortcodes/ThemeColorsGrid.astro'
+
+Bootstrap 6 has arrived with the first alpha release! Don't miss the first post in the series with an overview of the major changes. Here, we’re diving deeper into the massively [expanded color system](https://getbootstrap.com/docs/6.0/customize/color), color modes, and theming available in v6.
+
+<PostSeries current="colors" />
+
+## New and refreshed colors
+
+Bootstrap 6 now features 16 colors with 13 stops each, meaning there are now over 200 colors to use. All colors are available as CSS variables on `:root` in a unified `oklch()` format. New colors include violet, amber, lime, teal, brown, and pewter (an alternate gray). There are also four more stops per color than in v5 with the addition of `025`, `050`, `950`, and `975`.
+
+<ColorsGrid />
+
+Similar to v5, color stops are generated from a fixed set of base colors, but in v6 they use `oklch()` instead of a mismatch of HEX and `rgb()`. All tints and shades are then generated from those using CSS-native `color-mix()`. Base colors are Sass variables which get processed and emitted as CSS variables on `:root`.
+
+```scss
+// From _colors.scss
+$blue: oklch(60% 0.24 240) !default;
+$indigo: oklch(56% 0.26 288) !default;
+$violet: oklch(56% 0.24 300) !default;
+$purple: oklch(56% 0.24 320) !default;
+$pink: oklch(60% 0.22 4) !default;
+$red: oklch(60% 0.22 20) !default;
+$orange: oklch(70% 0.22 52) !default;
+$amber: oklch(79% 0.2 78) !default;
+$yellow: oklch(88% 0.24 88) !default;
+$lime: oklch(65% 0.24 135) !default;
+$green: oklch(64% 0.22 160) !default;
+$teal: oklch(68% 0.22 190) !default;
+$cyan: oklch(69% 0.22 220) !default;
+$brown: oklch(60% 0.12 54) !default;
+$gray: oklch(60% 0.02 245) !default;
+$pewter: oklch(65% 0.01 290) !default;
+```
+
+You can customize those Sass variables, the tint and shade colors, plus the number of stops per color to adjust your own color palette.
+
+## Theme colors
+
+Similar to previous versions, our theme system then consumes these colors and assigns them to semantic values for our component variants (like primary, success, etc) and our supporting layer colors (used for foreground, background, and border colors).
+
+New in v6 is the Accent color. Inverse also replaces the old light and dark.
+
+<ThemeColorsGrid />
+
+Our theme colors have been significantly overhauled to expand to more semantic tokens per color, provide more colors, and offer better support for our layer tokens.
+
+- Every theme color is color-mode adaptive through `light-dark()`.
+- Accent and Inverse theme colors have been added to the `$theme-colors` Sass map.
+- Each theme color generates nine individual tokens for that color.
+- Every color exposes that *same* set of nine keys, which is what makes the theme classes below composable—a component can ask for `bg-subtle` and know it exists for every color.
+- Some colors feature `color-mix()` for better blending with surrounding elements.
+- Dark mode is now automatic, and has no global config to disable.
+
+<BsTable>
+| Theme token | Description |
+| --- | --- |
+| `base` | The default color value for the semantic color |
+| `fg` | Accessible text color (against body, plus `subtle` and `muted` color tokens) |
+| `fg-emphasis` | Emphasized text color for use with `muted` background tokens |
+| `bg` | For solid colored backgrounds with high contrast |
+| `bg-subtle` | Lowest contrast backgrounds, usually paired with `fg` key for text color |
+| `bg-muted` | Lower contrast backgrounds, often used for disabled states |
+| `border` | Borders and dividers |
+| `focus-ring` | For visible focus indicators and outline styles |
+| `contrast` | Text color that needs to be readable on the `base` and `bg` colors |
+</BsTable>
+
+Here’s how the new `_theme.scss` looks for declaring our colors.
+
+```scss
+$theme-colors: (
+  "primary": (
+    "base": var(--blue-500),
+    "fg": light-dark(var(--blue-600), var(--blue-400)),
+    "fg-emphasis": light-dark(var(--blue-800), var(--blue-200)),
+    "bg": var(--blue-500),
+    "bg-subtle": light-dark(var(--blue-100), var(--blue-900)),
+    "bg-muted": light-dark(var(--blue-200), var(--blue-800)),
+    "border": light-dark(var(--blue-300), var(--blue-600)),
+    "focus-ring": light-dark(color-mix(in oklch, var(--blue-500) 50%, var(--bg-body)), color-mix(in oklch, var(--blue-500) 75%, var(--bg-body))),
+    "contrast": var(--white)
+  ),
+  // …
+);
+```
+
+## Theme pairings
+
+Nine tokens per color sounds like a lot until you try to build a component with them. They exist because they’re meant to be used in pairs, and the pairs are what make the whole thing hold together visually:
+
+- `contrast` works best with `bg`
+- `fg` works best with `bg-subtle`
+- `fg-emphasis` works best with `bg-muted`
+- `border` works best with `bg-subtle`, but works with `bg-muted` too
+
+Follow those four rules and you get accessible contrast without checking a ratio by hand. They’re also the reason our components can share one vocabulary: an alert reaching for `fg` on `bg-subtle` and a badge doing the same thing land in the same visual family automatically.
+
+<ThemePairings />
+
+### Utilities and helpers
+
+To help (ha) manage theme tokens on components and custom elements, we’ve expanded our theme utilities and helpers to allow for a wider range of options.
+
+- **Theme variant helpers—like `.theme-primary`, `.theme-success`, etc.**—are helper classes that provide the nine theme tokens as CSS variables to whatever element is being styled. They’re generated by the `generate-theme-classes()` mixin (found in `_theme.scss`) in `helpers/_theme.scss`.
+
+- **Combination utilities—`.theme-contrast`, `.theme-muted`, and `.theme-subtle`**—are created by the utility API. These help specify which theme tokens to use for a given element, typically being most useful on custom elements as our built-in components already use CSS variable fallbacks to prefer specific tokens.
+
+- **`.theme-border`** also exists to set the border color for an element. It’s similar to our `.border` utilities, but uses the `border` theme token instead of the global `border-color` variable.
+
+- Lastly, the **`.theme-reset`** helper is available for when you don't want to inherit theme tokens from a parent element.
+
+## Layer colors
+
+The theme colors above cover intent—primary, success, danger. They don’t cover the far more common need: a surface that’s slightly different from the content behind it. That’s where our **[updated layer colors](https://getbootstrap.com/docs/6.0/customize/theme#layer-colors)** come in. They’re available as CSS variables on `:root` and as utility classes.
+
+<BsTable>
+| Foregrounds | Backgrounds | Borders |
+| --- | --- | --- |
+| <span class="fg-4">—</span> | <span class="fg-4">—</span> | <Swatch bg="border-bg" showVar={false} /> `border-bg` |
+| <Swatch bg="fg-body" showVar={false} /> `fg-body` | <Swatch bg="bg-body" showVar={false} /> `bg-body` | <Swatch bg="border-body" showVar={false} /> `border-body` |
+| <Swatch bg="fg-1" showVar={false} /> `fg-1` | <Swatch bg="bg-1" showVar={false} /> `bg-1` | <Swatch bg="border-muted" showVar={false} /> `border-muted` |
+| <Swatch bg="fg-2" showVar={false} /> `fg-2` | <Swatch bg="bg-2" showVar={false} /> `bg-2` | <Swatch bg="border-subtle" showVar={false} /> `border-subtle` |
+| <Swatch bg="fg-3" showVar={false} /> `fg-3` | <Swatch bg="bg-3" showVar={false} /> `bg-3` | <Swatch bg="border-emphasized" showVar={false} /> `border-emphasized` |
+| <Swatch bg="fg-4" showVar={false} /> `fg-4` | <Swatch bg="bg-4" showVar={false} /> `bg-4` | <span class="fg-4">—</span> |
+| <Swatch bg="fg-5" showVar={false} /> `fg-5` | <Swatch bg="bg-5" showVar={false} /> `bg-5` | <span class="fg-4">—</span> |
+| <Swatch bg="fg-white" showVar={false} /> `fg-white` | <Swatch bg="bg-white" showVar={false} /> `bg-white` | <Swatch bg="border-white" showVar={false} /> `border-white` |
+| <Swatch bg="fg-black" showVar={false} /> `fg-black` | <Swatch bg="bg-black" showVar={false} /> `bg-black` | <Swatch bg="border-black" showVar={false} /> `border-black` |
+| <span class="fg-4">—</span> | <Swatch bg="bg-transparent" showVar={false} /> `bg-transparent` | <span class="fg-4">—</span> |
+| <Swatch bg="fg-inherit" showVar={false} /> `fg-inherit` | <Swatch bg="bg-inherit" showVar={false} /> `bg-inherit` | <span class="fg-4">—</span> |
+</BsTable>
+
+Layer colors live in their own maps (`$theme-bgs`, `$theme-fgs`, and `$theme-borders`) because they’re a _contrast ladder_ rather than a palette. For example, backgrounds include `bg-body`, `bg-1`, `bg-2`, `bg-3`, and `bg-4`—each layer gets a little darker in light mode and a little lighter in dark mode as you walk through the steps.
+
+
+The nice part is that the ladder is color-mode adaptive, so `bg-1` means “one step up from the `<body>` element” in both light and dark mode. That’s what finally replaced v5’s `.bg-light` and `.bg-dark`, which were fixed grays that ignored the color mode entirely, along with the `.bg-body-secondary` and `.bg-body-tertiary` surface colors.
+
+### Examples
+
+Not all colors can be used for all purposes due to accessibility, color contrast, and general aesthetic considerations. Here are some examples showing all our layer colors coming together.
+
+<Example code={`<div class="vstack gap-3">
+    <div class="p-3 rounded-5 bg-body fg-body border border-subtle">
+      fg-body on bg-body with border-subtle
+    </div>
+    <div class="p-3 rounded-5 bg-body fg-body border border-muted">
+      fg-body on bg-body with border-muted
+    </div>
+    <div class="p-3 rounded-5 bg-body fg-body border">
+      fg-body on bg-body with border
+    </div>
+    <div class="p-3 rounded-5 bg-1 fg-3 border border-muted">
+      fg-3 on bg-1 with border-muted
+    </div>
+    <div class="p-3 rounded-5 bg-2 fg-2 border">
+      fg-2 on bg-2 with border
+    </div>
+    <div class="p-3 rounded-5 bg-3 fg-1 border">
+      fg-1 on bg-3 with border
+    </div>
+    <div class="p-3 rounded-5 bg-4 fg-body">
+      fg-body on bg-4
+    </div>
+  </div>`} />
+
+## Automatic dark mode
+
+Dark mode in Bootstrap 6 is now automatic, and there's no way to disable it anymore. Previously, we had separate variables for dark mode and extraneous styles to provide dark mode overrides in our CSS. No more in v6.
+
+- Colors, whenever possible and sensible, use CSS's native `light-dark()` function to switch between a preferred color value for light or dark mode. This depends on `color-scheme` being set to `light` or `dark`.
+
+- We still use the `data-bs-theme` attribute to toggle dark mode on custom elements, and now all components use this attribute to flip between light and dark mode instead of v5's variant options (like `.dropdown-dark`).
+
+- Similar to v5, one limitation exists is that `data-bs-theme` alone does not apply any foreground or background colors. Add `.fg-body` and `.bg-body` or similar, depending on the situation.
+
+As an example, here's how you can force the color mode of our new menu component.
+
+<Example class="d-flex justify-content-between" code={`<div data-bs-theme="light">
+    <button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu" aria-expanded="false">
+      Default menu
+    </button>
+    <div class="menu">
+      <a class="menu-item active" href="#">Action</a>
+      <a class="menu-item" href="#">Action</a>
+      <a class="menu-item" href="#">Another action</a>
+      <a class="menu-item" href="#">Something else here</a>
+      <hr class="menu-divider">
+      <a class="menu-item" href="#">Separated link</a>
+    </div>
+  </div>
+
+  <div data-bs-theme="dark">
+    <button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu" aria-expanded="false">
+      Dark menu
+    </button>
+    <div class="menu">
+      <a class="menu-item active" href="#">Action</a>
+      <a class="menu-item" href="#">Action</a>
+      <a class="menu-item" href="#">Another action</a>
+      <a class="menu-item" href="#">Something else here</a>
+      <hr class="menu-divider">
+      <a class="menu-item" href="#">Separated link</a>
+    </div>
+  </div>`} />
+
+Head to the [updated color modes documentation](https://getbootstrap.com/docs/6.0/customize/color-modes) to learn more.
+
+## Component theming
+
+We’ll dive into all the amazing updates to our components in the next post, but component theming is one thing we can cover here. Components that pickup theme tokens have been called _theme variants_, and that's still the case in v6. However, the theming mechanism has been completely overhauled.
+
+Component variants have gone away entirely in favor of our new `.theme-*` helper classes and CSS variables. For example:
+
+```html
+<!-- v5 -->
+<button class="btn btn-primary">…</button>
+
+<!-- v6 -->
+<button class="btn-solid theme-primary">…</button>
+```
+
+This is because each component includes a CSS variable stack where, if a theme color is present via an additional class on the element or a parent has the class, the component prioritizes that CSS variable. Here’s how `.badge` consumes optional theme variables:
+
+```scss
+.badge {
+  @include tokens($badge-tokens);
+
+  // Rest of badge styles…
+  color: var(--theme-contrast, var(--badge-color));
+  background-color: var(--theme-bg, var(--badge-bg));
+}
+```
+
+This greatly reduces the amount of generated CSS per-component and allows us to surgically apply those theme tokens (like bg, bg-subtle, fg, etc) wherever we want via CSS variables. The ultimate payoff is that the same modifier classes now work across buttons, badges, alerts, tables, cards, accordions, navigation (and links), and pagination.
+
+It also changes what it costs to add a color of your own. In v5, a new brand color meant new classes for every component that could wear it—`.btn-brand`, `.btn-outline-brand`, `.alert-brand`, `.text-bg-brand`, and so on, each one more generated CSS. In v6 it’s one entry in `$theme-colors` with those nine keys, and `.theme-brand` works everywhere the built-in colors do.
+
+<ThemeComponents />
