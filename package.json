@@ -13,6 +13,9 @@
   },
   "license": "MIT",
   "homepage": "https://blog.getbootstrap.com",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "start": "npm run dev",
     "dev": "astro dev",
