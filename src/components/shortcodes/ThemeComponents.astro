@@ -6,16 +6,19 @@ import { themeColors, themeColorTitle } from '../../libs/theme-colors'
 // class on the page is the one on the wrapper. Switching it recolors the whole
 // row without a single per-component class changing.
 const code = [
-  '<div class="theme-primary vstack gap-3">',
-  '  <div class="d-flex flex-wrap gap-2 align-items-center">',
+  '<div class="theme-primary vstack gap-5">',
+  '  <div class="d-flex flex-wrap gap-3 align-items-center">',
   '    <button type="button" class="btn-solid">Button</button>',
-  '    <button type="button" class="btn-outline">Outline</button>',
+  '    <button type="button" class="btn-outline">Outline button</button>',
   '    <span class="badge">Badge</span>',
   '  </div>',
   '',
-  '  <div class="alert mb-0"><p>An alert, wearing the same theme color.</p></div>',
+  '  <div class="alert"><p>An alert, wearing the same theme color.</p></div>',
   '',
   '  <div class="card card-subtle">',
+  '    <div class="card-header">',
+  '      <strong>Card header</strong>',
+  '    </div>',
   '    <div class="card-body">',
   '      <h3 class="card-title fs-md mb-1">And a card</h3>',
   '      <p class="card-text fs-sm mb-0">Same wrapper, same color, no extra classes.</p>',
@@ -53,11 +56,11 @@ const code = [
       const color = select.value
 
       if (wrapper) {
-        wrapper.className = `theme-${color} vstack gap-3`
+        wrapper.className = `theme-${color} vstack gap-5`
       }
 
       if (classSpan) {
-        classSpan.textContent = `"theme-${color} vstack gap-3"`
+        classSpan.textContent = `"theme-${color} vstack gap-5"`
       }
     })
   }

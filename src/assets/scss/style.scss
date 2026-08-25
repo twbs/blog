@@ -24,8 +24,17 @@
 
   .ls-tight { letter-spacing: -.025em; }
 
-  hr {
+  .post > hr {
     margin-block: 2rem;
+  }
+
+  code {
+    color: var(--bs-fg-body);
+  }
+
+  // Inline code inside bold text should follow the bold text's color.
+  strong > code {
+    color: inherit;
   }
 
   // Quotes

@@ -16,7 +16,7 @@
       margin-right: 0;
       margin-left: 0;
       border-width: 1px;
-      @include border-radius(var(--bs-border-radius));
+      @include border-radius(var(--bs-radius-5));
     }
   }
 
@@ -41,7 +41,7 @@
       margin-right: 0;
       margin-left: 0;
       border-width: 1px;
-      @include border-radius(var(--bs-border-radius));
+      @include border-radius(var(--bs-radius-5));
     }
 
     + p {
@@ -111,7 +111,7 @@
 
     @include media-breakpoint-up(md) {
       padding: .75rem 1.25rem;
-      @include border-radius(calc(var(--bs-border-radius) - 1px));
+      @include border-radius(calc(var(--bs-radius-5) - 1px));
     }
 
     @include media-breakpoint-up(lg) {
@@ -276,8 +276,8 @@
   @include media-breakpoint-up(md) {
     .bd-playground-controls {
       border-width: 1px;
-      border-start-start-radius: var(--bs-border-radius);
-      border-start-end-radius: var(--bs-border-radius);
+      border-start-start-radius: var(--bs-radius-5);
+      border-start-end-radius: var(--bs-radius-5);
     }
 
     .bd-playground .bd-example-snippet {

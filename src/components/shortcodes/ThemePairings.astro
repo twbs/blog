@@ -22,9 +22,9 @@ const code = [
 
 <div class="bd-playground not-prose" data-theme-pairings>
   <div class="bd-playground-controls bg-1 p-3 fs-sm">
-    <div class="vstack gap-1 flex-grow-0" style="max-width: 14rem;">
-      <label class="form-label fw-semibold mb-0" for="bd-pairings-color">Theme color</label>
-      <select class="form-control form-control-sm" id="bd-pairings-color" data-control="color">
+    <div class="d-inline-flex align-items-center gap-2">
+      <label class="form-label fw-semibold mb-0 flex-shrink-0" for="bd-pairings-color">Theme color</label>
+      <select class="form-control form-control-sm w-auto" id="bd-pairings-color" data-control="color">
         {themeColors.map(color => <option value={color}>{themeColorTitle(color)}</option>)}
       </select>
     </div>
