@@ -4,11 +4,3 @@
 
 [build.environment]
   NODE_VERSION = "22"
-
-# Astro's dev server is pinned to port 4000 in astro.config.ts, so tell
-# Netlify Dev to poll 4000 instead of Astro's default (4321), which is what
-# was causing "Failed to reach dev server".
-[dev]
-  command = "npm run dev"
-  targetPort = 4000
-  framework = "#custom"
