@@ -20,7 +20,7 @@ import PostSeries from '../../../components/shortcodes/PostSeries.astro'
 
 Today we’re releasing the first alpha version of Bootstrap 6, a major overhaul to the project that modernizes and expands one of the most prolific open source design systems of all time. It’s been incredibly fun and rewarding to work on this over the past year, and I’m excited to share it with you.
 
-Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards. We’ve broken this post into separate entries that we'll publish daily, starting with overview of v6 and spotlight on our new Sass & CSS implementation.
+Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards. We’ve broken this post into separate entries that we'll publish daily, starting with an overview of v6 and a spotlight on our new Sass & CSS implementation.
 
 <PostSeries current="alpha" />
 
@@ -38,7 +38,7 @@ We hope you love it, and thanks to everyone who's supported the project over the
 
 ## Community appreciation
 
-Before we get to the good parts, I want to thank my co-maintainer, [Julien](https://github.com/julien-deramond), for all the amazing work he’s put into Bootstrap the last couple of years. Without him, I’d be underwater on reviews, dependencies, migrations, and more. He’s an absolute legend and Bootstrap owes him a tremendous amount of gratitude and appreciation.
+Before we get to the good parts, I want to thank my co-maintainer, [Julien](https://github.com/julien-deramond), for all the amazing work he’s put into Bootstrap over the last couple of years. Without him, I’d be underwater on reviews, dependencies, migrations, and more. He’s an absolute legend and Bootstrap owes him a tremendous amount of gratitude and appreciation.
 
 Huge thanks to everyone who contributed to the v6 development branch as well:
 
@@ -132,7 +132,7 @@ $root-tokens: defaults(
 }
 ```
 
-The `defaults()` function ensures anyone who adds new tokens to a token map, or overrides an existing token value, gets just that in their output—a new CSS variable or a new value for an existing one. It merges rather than replaces, so you never have to redeclare a map to change one value in it, and you can add tokens of your own alongside ours. Speaking of, for folks who’d want to customize those tokens, here’s how you do that in the new module system with tokens maps.
+The `defaults()` function ensures anyone who adds new tokens to a token map, or overrides an existing token value, gets just that in their output—a new CSS variable or a new value for an existing one. It merges rather than replaces, so you never have to redeclare a map to change one value in it, and you can add tokens of your own alongside ours. Speaking of, here’s how to customize those tokens in the new module system with token maps.
 
 Import Bootstrap via `@use ... with` and start modifying un-namespaced token maps. You can override root tokens with the `$root-tokens` map; components get their own unique token map named after the component. Additionally, this is how you customize the few global Sass variables we have left.
 
@@ -162,7 +162,7 @@ Notice that the tokens have no `bs` prefix here. In v5 the prefix was a Sass var
 
 The `$radius` line is worth calling out too. Our radius scale is derived from a single base value, so changing that one number moves all ten steps together and every component that reads them follows. Same story for `$spacer` and the spacing scale.
 
-This gives us the most flexible system possible using both Sass and CSS, with the advantage of customizing either before or after compilation. Update global tokens in the browser, and downstream components update in realtime. This is a massive improvement over v5’s hybrid Sass-CSS system, and one I hope you’ll love.
+This gives us the most flexible system possible using both Sass and CSS, with the advantage of customizing either before or after compilation. Update global tokens in the browser, and downstream components update in real time. This is a massive improvement over v5’s hybrid Sass-CSS system, and one I hope you’ll love.
 
 <TokenPlayground />
 
@@ -174,7 +174,7 @@ Bootstrap 6 has a massively [expanded color system](https://getbootstrap.com/doc
     the Color docs page. Light and dark side by side, since color-mode adaptivity
     is the point. */}
 
-Similar to previous versions, our theme system then consumes these colors and assigns them to semantic values for our component variants (like primary, success, etc) and our supporting **layer colors**.
+Similar to previous versions, our theme system then consumes these colors and assigns them to semantic values for our component variants (like primary, success, etc.) and our supporting **layer colors**.
 
 {/* TODO(screenshot): the theme token grid from the Theme docs, all eight theme
     colors by all nine token keys. */}
@@ -182,7 +182,7 @@ Similar to previous versions, our theme system then consumes these colors and as
 Our theme colors have been significantly overhauled to expand to more semantic tokens per color, to offer more colors in general, and to provide better support for our layer tokens.
 
 - Every theme color is color-mode adaptive through `light-dark()`.
-- Accent and Inverse theme colors have been added to the `$theme-colors` Sass map.
+- `light` and `dark` are gone from `$theme-colors`, replaced by Accent and Inverse — keeping the map at eight colors total, alongside primary, secondary, success, danger, warning, and info.
 - Each theme color generates nine individual tokens for that color.
 - Every color exposes that *same* set of nine keys, which is what makes the theme classes below composable—a component can ask for `bg-subtle` and know it exists for every color.
 - Some colors feature `color-mix()` for better blending with surrounding elements.
@@ -224,7 +224,7 @@ Follow those four rules and you get accessible contrast without checking a ratio
 
 The theme colors above cover intent—primary, success, danger. They don’t cover the far more common need: a surface that’s slightly different from the page behind it.
 
-That’s what **layer colors** are for. They live in their own maps (`$theme-bgs`, `$theme-fgs`, and `$theme-borders`) because they’re a contrast ladder rather than a palette. Backgrounds run from `bg-body` through `bg-1`, `bg-2`, `bg-3`, and `bg-4`, each step a little further from the body color. Foregrounds and borders follow the same idea with their own steps.
+That’s what **layer colors** are for. They live in their own maps (`$theme-bgs`, `$theme-fgs`, and `$theme-borders`) because they’re a contrast ladder rather than a palette. Backgrounds run from `bg-body` through `bg-1`, `bg-2`, `bg-3`, and `bg-4`, each step a little further from the body color. Foregrounds follow the same numbered ladder; borders use a smaller set of named steps—`border-muted`, `border-subtle`, and `border-emphasized`—instead.
 
 The nice part is that the ladder is color-mode adaptive, so `bg-1` means “one step up from the page” in both light and dark mode. That’s what finally replaced v5’s `.bg-light` and `.bg-dark`, which were fixed grays that ignored the color mode entirely, along with the `.bg-body-secondary` and `.bg-body-tertiary` surfaces.
 
@@ -248,9 +248,9 @@ This is because each component includes a CSS variable stack where, if a theme c
 }
 ```
 
-This greatly reduces the amount of generated CSS per-component and allows us to surgically apply those theme tokens (like bg, bg-subtle, fg, etc) wherever we want via CSS variables. The ultimate payoff is that the same modifier classes now work across buttons, badges, alerts, tables, cards, accordions, navigation (and links), and pagination.
+This greatly reduces the amount of generated CSS per-component and allows us to surgically apply those theme tokens (like bg, bg-subtle, fg, etc.) wherever we want via CSS variables. The ultimate payoff is that the same modifier classes now work across buttons, badges, alerts, tables, cards, accordions, navigation (and links), and pagination.
 
-It also changes what it costs to add a color of your own. In v5, a new brand color meant new classes for every component that could wear it—`.btn-brand`, `.btn-outline-brand`, `.alert-brand`, `.text-bg-brand`, and so on, each one more generated CSS. In v6 it’s one entry in `$theme-colors` with those nine keys, and `.theme-brand` works everywhere the built-in colors do.
+It also changes what it costs to add a color of your own. In v5, a new brand color meant new classes for every component that could wear it—`.btn-brand`, `.btn-outline-brand`, `.alert-brand`, `.text-bg-brand`, and so on, each one more block of generated CSS. In v6 it’s one entry in `$theme-colors` with those nine keys, and `.theme-brand` works everywhere the built-in colors do.
 
 <ThemeComponents />
 
@@ -686,7 +686,7 @@ The API itself picked up several new options:
 
 We’ve also added several new utilities:
 
-- **Layout:** `.grid-cols-1` through `.grid-cols-6`, plus `.grid-cols-fill`, `.grid-cols-subgrid`, and `.grid-auto-flow-*`. New `.place-items-*` and `.justify-items-*` too.
+- **Layout:** `.grid-cols-1` through `.grid-cols-4`, plus `.grid-cols-6`, `.grid-cols-fill`, `.grid-cols-subgrid`, and `.grid-auto-flow-*`. New `.place-items-*` and `.justify-items-*` too.
 - **Container queries:** `.contains-inline` and `.contains-size` to make any element a query container.
 - **Child spacing:** `.space-x-*` and `.space-y-*` for spacing between children, and `.divide-x` / `.divide-y` for borders between them—no more `:last-child` overrides.
 - **Sizing:** `.min-w-*` and `.min-h-*` are new, `.mw-*` / `.mh-*` are renamed to `.max-w-*` / `.max-h-*`, and width and height now accept `min-content`, `max-content`, `fit-content`, and a fixed `.w-1` through `.w-12` scale.
@@ -801,7 +801,7 @@ The order you work in matters more than the list suggests. Confirm your browser 
 
 - Browser floors jump to Chrome and Edge 130, Firefox 132, Safari 18
 - Responsive and state classes use a prefix: `.md:d-none`, not `.d-md-none`
-- Per-component color variants become `.theme-*` composition: `.btn-solid .theme-primary`, not `.btn-primary`
+- Per-component color variants become `.theme-*` composition: `.btn-solid.theme-primary`, not `.btn-primary`
 - Modal becomes Dialog, Offcanvas becomes Drawer, Dropdown becomes Menu
 - JavaScript is ESM-only, with no `window.bootstrap` global
 - The spacing scale gained steps and shifted keys, so `.p-3` changed value
@@ -817,7 +817,7 @@ This is an alpha, so APIs can still change before beta. There will be more alpha
 Areas where feedback would help most:
 
 - **Token maps and customization.** Does `@use ... with` plus token overrides fit how you actually work? The release rests on this.
-- **Theme composition.** Is `.btn-solid .theme-primary` an improvement over `.btn-primary`, or does it read as more typing for its own sake?
+- **Theme composition.** Is `.btn-solid.theme-primary` an improvement over `.btn-primary`, or does it read as more typing for its own sake?
 - **The prefix class names**, and how they hold up across a real project’s markup.
 - **Dialog and Drawer**, particularly in browsers and assistive technology we can’t test directly.
 - **The carousel**, which is the most heavily rewritten component in the release.
