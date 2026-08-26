@@ -83,4 +83,4 @@ To be upfront, this was vibe coded to scratch our own itch. It's small, focused,
 npm i -D postcss-prefix-custom-properties
 ```
 
-[View the source on GitHub.](https://github.com/mdo/postcss-prefix-custom-properties)
+[View the source on GitHub.](https://github.com/twbs/postcss-prefix-custom-properties)
