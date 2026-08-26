@@ -31,15 +31,14 @@ const videoSrc = video
       />
     )
   ) : videoSrc ? (
-    <div class:list={['ratio ratio-16x9', hero && 'post-media w-100 overflow-hidden rounded-8']}>
+    <div class:list={['ratio', hero && 'post-media w-100 overflow-hidden rounded-8']}>
       <iframe
         src={videoSrc}
+        class="d-block w-100 ratio-16x9"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
         title={`${title} video`}
-        loading={eager ? 'eager' : 'lazy'}
-        width="760"
-        height="570"></iframe>
+        loading={eager ? 'eager' : 'lazy'}></iframe>
     </div>
   ) : null
 }
