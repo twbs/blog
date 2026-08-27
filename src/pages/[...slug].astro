@@ -66,14 +66,14 @@ const related = scored
       ]}
       data-pagefind-body
     >
-      <header class="post-header d-flex flex-column w-100 text-pretty md:align-items-center md:text-center">
+      <header class="post-header d-flex flex-column w-100 text-pretty align-items-start md:align-items-center md:text-center">
         {post.data.draft && <span class="chip theme-danger text-uppercase fs-sm fw-semibold">Draft</span>}
         <p class="post-meta d-flex flex-wrap mb-0 lh-1 fg-3">
           <time datetime={formatDateISO(date)} title={date.toUTCString()}>{formatDate(date)}</time>
           <!-- <span aria-hidden="true">·</span>
           <span>{readingTime} min read</span> -->
         </p>
-        <h1 class="text-4xl fw-medium mb-0 ls-tight">{post.data.title}</h1>
+        <h1 class="text-4xl fw-medium mb-0 ls-tight md:px-3">{post.data.title}</h1>
         <!-- {subtitle && <p class="post-subtitle text-balance mb-0 fg-2">{subtitle}</p>} -->
         <AuthorInfo
           author={post.data.author}
@@ -83,7 +83,7 @@ const related = scored
           showDate={false}
         />
 
-        <div class="border-bottom border-subtle w-25 mx-auto mt-7" />
+        <div class="d-none md:d-block border-bottom border-subtle w-25 mx-auto mt-7" />
       </header>
 
       <PostMedia
@@ -95,7 +95,7 @@ const related = scored
         hero
       />
 
-      <div class="post-ad">
+      <div class="md:mx-auto">
         <Ads />
       </div>
 

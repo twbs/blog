@@ -1,0 +1,641 @@
+---
+author: mdo
+date: "2026-08-21T00:00:00Z"
+title: "Bootstrap 6: New & Improved Components"
+category: Release
+description: New and rebuilt Bootstrap 6 components, from generative variants to native dialog, drawer, accordion, and carousel.
+keywords:
+  - bootstrap
+  - release
+draft: true
+---
+
+import Example from '../../../components/shortcodes/Example.astro'
+import ResizableExample from '../../../components/shortcodes/ResizableExample.astro'
+import ComponentWall from '../../../components/shortcodes/ComponentWall.astro'
+import PostSeries from '../../../components/shortcodes/PostSeries.astro'
+import { themeColors, themeColorTitle } from '../../../libs/theme-colors'
+
+For our third post in the Bootstrap 6 series, we're taking a look at all our new and improved components. We'll cover everything from new aesthetics, generative variants, the use of more native HTML elements, some new CSS strategies, and various dependencies.
+
+Heads up though, we won't be covering any form components here yet—those will come later.
+
+<PostSeries current="components" />
+
+## What’s new
+
+Honestly, nearly every component has been touched in some way, and many of them have been completely overhauled to implement new standards and features, update dependencies, and restyle for a more modern look and feel. Here's a little taste to start.
+
+<ComponentWall />
+
+Brand new components, or completely rewritten components, in v6 include:
+
+- **Avatar** with sizes, status indicators, and `.avatar-stack` for grouped avatars
+- **Chip** for tags and tokens (along with a Chip Input that we'll cover in the upcoming forms post).
+- **Dialog** replaces Modal with native `<dialog>` element (including its native `showModal()`, `show()`, and `close()` APIs), plus new transition effects and styles.
+- **Drawer**, like Dialog, replaces Offcanvas and is built on a shared architecture with Dialog.
+- **Menu** replaces Dropdown with Floating UI for placement, new styles, new options, and more.
+- **Nav overflow**, a wrapper that collapses whatever doesn’t fit in a wide navigation into an automatic overflow menu.
+- **Prose** for scoping rich typography across long-form content.
+- **Stepper** for multi-step workflows, CSS-only
+- **Toggler**, a small plugin for toggling classes or attributes via `data-bs-toggle="toggler"`
+
+Other components that have been significantly revamped in v6 include:
+
+- **Accordion** was rebuilt with native `<details>` and `<summary>` elements, plus updated styles and options.
+- **Breadcrumb** has new styles and divider options.
+- **Button** has new base class styles, three new variants, new extra small and icon-only sizes, and more.
+- **Card** has updated styles, namely around `border-radius` management and flexbox layout.
+- **Carousel** was rebuilt on CSS scroll snap, prioritizing the modern content carousel paradigms over the traditional image-based slideshow. It also features revamped autoplay behavior, new controls, more flexible layout, multiple items at once, new end behaviors, and more.
+- **Close button** was rebuilt to use CSS masks instead of SVGs, plus updated styles and better dark mode support.
+- **Navbar** was rebuilt to use container queries and the Drawer component for its responsive behavior, plus a few other style updates.
+- **Scrollspy** has a new detection strategy that's more robust and accurate.
+- **Tooltip** and **Popover** have been rewritten to use Floating UI for their placement and are now always available (unlike in v5, where they were opt-in due to performance concerns).
+
+We won't go into every change of every component, but our [migration guide](https://getbootstrap.com/docs/6.0/guides/migration) has an exhaustive list of all the changes (and how to migrate from v5 to v6) if you want to dig in. Instead, let's jump into spotlighting some of our favorite component changes.
+
+## Buttons
+
+Buttons just might be one of the most powerful Sass components in Bootstrap 6. Previously, we had few style variants for buttons—enable a global Sass variable for gradients and switch between default and outline styles. New in v6, we have [four style variants](https://getbootstrap.com/docs/6.0/components/button/#variants) plus a unique [styled hybrid modifier](https://getbootstrap.com/docs/6.0/components/button/#styled-buttons), [four sizes](https://getbootstrap.com/docs/6.0/components/button/#sizes), and an [icon-only option](https://getbootstrap.com/docs/6.0/components/button/#icon-buttons).
+
+<Example full toggleMarkup class="bd-example-buttons md:justify-items-start" code={themeColors.map(color => `<button type="button" class="btn-solid btn-styled theme-${color}">${themeColorTitle(color)}</button>
+<button type="button" class="btn-solid theme-${color}">${themeColorTitle(color)}</button>
+<button type="button" class="btn-outline theme-${color}">${themeColorTitle(color)}</button>
+<button type="button" class="btn-subtle theme-${color}">${themeColorTitle(color)}</button>
+<button type="button" class="btn-text theme-${color}">${themeColorTitle(color)}</button>`)} />
+
+Building those variants with our new [theme system](/2026/08/21/bootstrap-6-colors/) took some work, but what we landed on feels super powerful for folks to customize—a series of interconnected Sass maps and mixins that work together to generate styles for every variant.
+
+Like all other components, `_button.scss` starts with a `$button-tokens` Sass map for all the CSS variables we use. There are also separate `$button-link-tokens` and `$button-styled-tokens` maps for the link and styled variants. Button sizes are also a Sass map, `$button-sizes`, that works in conjunction with the variants map to generate styles for each size.
+
+```scss
+// Imports come first…
+
+// Token maps next…
+// Not shown here: $button-link-tokens and $button-styled-tokens
+$button-tokens: () !default;s
+$button-tokens: defaults(
+  (
+    // …
+  ),
+  $button-tokens
+);
+
+// Button sizes…
+$button-sizes: () !default;
+$button-sizes: defaults(
+  ("xs", "sm", "lg"),
+  $button-sizes
+);
+```
+
+The variants map, `$button-variants`, is a more complex Sass map that defines each variant at the top level, then assigns theme token names to CSS properties for each button state. So for `.btn-solid`, the `background` and `border-color` use the same theme `bg` token. Each variant get's the manual mapping, meaning you can customize, remove, or add variants as desired.
+
+```scss
+$button-variants: defaults(
+  (
+    "solid": (
+      "base": (
+        "bg": "bg",
+        "color": "contrast",
+        "border-color": "bg"
+      ),
+      "hover": (
+        "bg": "bg",
+        "border-color": "bg",
+        "color": "contrast"
+      ),
+      "active": (
+        "bg": "bg",
+        "border-color": "bg",
+        "color": "contrast"
+      )
+    ),
+    "outline": (
+      "base": (
+        "bg": "transparent",
+        "color": "fg",
+        "border-color": "border"
+      ),
+      "hover": (
+        "bg": "bg",
+        "color": "contrast",
+        "border-color": "bg"
+      ),
+      "active": (
+        "bg": "bg",
+        "color": "contrast",
+        "border-color": "bg"
+      )
+    ),
+    // Plus 2 other variants…
+  ),
+  $button-variants
+);
+```
+
+From the variants map, we generate a selector list needed for a shared ruleset for all the variants. That ruleset gets the tokens, styles, and more. The selector list lets us get away without needing a base class on every instance of a button in your HTML.
+
+```scss
+$btn-variant-selectors: (string.unquote(".btn"), string.unquote(".btn-link"), string.unquote(".btn-icon")) !default;
+@each $variant, $config in $button-variants {
+  $btn-variant-selectors: list.append($btn-variant-selectors, string.unquote(".btn-#{$variant}"), comma);
+}
+```
+
+The output of that looks like this in our compiled CSS:
+```css
+.btn,
+.btn-link,
+.btn-icon,
+.btn-solid,
+.btn-outline,
+.btn-subtle,
+.btn-text {
+  /* Tokens and styles… */
+}
+```
+
+Then finally, the loop does all the heavy lifting and generates the styles for all our variants.
+
+```scss
+@layer components {
+  #{$btn-variant-selectors} {
+    @include tokens($button-tokens);
+
+    // Shared base styles…
+  }
+
+  @each $variant, $config in $button-variants {
+    .btn-#{$variant} {
+      @each $property, $value in map.get($button-variants, $variant, "base") {
+        @if $value == "transparent" {
+          --btn-#{$property}: transparent;
+        } @else {
+          --btn-#{$property}: var(--theme-#{$value});
+        }
+      }
+      // Plus other variant-specific styles…
+    }
+  }
+  // Rest of the stylesheet…
+}
+```
+
+## Carousel
+
+## Dialog and Drawer
+
+Both are native `<dialog>` elements now, so the browser supplies the backdrop, the focus trap, and the inert top layer. Dialog uses `showModal()` for true modal behavior. Header, body, and footer are the same chrome Modal had, just renamed.
+
+<Example full toggleMarkup class="bd-example-dialog" code={`<dialog class="dialog" open>
+  <div class="dialog-header">
+    <h1 class="dialog-title">Dialog title</h1>
+    <button type="button" class="btn-close" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+    <p>This is a native dialog element. It uses the browser’s built-in modal behavior for accessibility and focus management.</p>
+  </div>
+  <div class="dialog-footer">
+    <button type="button" class="btn-solid theme-secondary">Close</button>
+    <button type="button" class="btn-solid theme-primary">Save changes</button>
+  </div>
+</dialog>`} />
+
+The default open and close is a fade. Add `.dialog-slide-down` or `.dialog-slide-up` and it enters from the edge of the viewport instead—the exit reverses the same path, including the blurred `::backdrop`.
+
+<Example full showMarkup={false} code={`<div class="d-flex flex-wrap gap-2">
+  <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#slideDownDialog">
+    Slide down
+  </button>
+  <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#slideUpDialog">
+    Slide up
+  </button>
+</div>
+
+<dialog class="dialog dialog-slide-down" id="slideDownDialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title">Slide down</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+    <p>This dialog slides down from the top of the viewport.</p>
+  </div>
+  <div class="dialog-footer">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+    <button type="button" class="btn-solid theme-primary">Save changes</button>
+  </div>
+</dialog>
+
+<dialog class="dialog dialog-slide-up" id="slideUpDialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title">Slide up</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+    <p>This dialog slides up from the bottom of the viewport.</p>
+  </div>
+  <div class="dialog-footer">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+    <button type="button" class="btn-solid theme-primary">Save changes</button>
+  </div>
+</dialog>`} />
+
+Modal is the default. Set `data-bs-modal="false"` and it uses `show()` instead of `showModal()`—no backdrop, no focus trap, no top layer—so you can still interact with the page behind it.
+
+<Example full showMarkup={false} code={`<div class="d-flex flex-wrap gap-2">
+  <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#modalDialog">
+    Modal
+  </button>
+  <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#nonModalDialog" data-bs-modal="false">
+    Non-modal
+  </button>
+</div>
+
+<dialog class="dialog" id="modalDialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title">Modal dialog</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+    <p>This uses <code>showModal()</code>. The page behind it is inert, focus is trapped, and the backdrop is native <code>::backdrop</code>.</p>
+  </div>
+  <div class="dialog-footer">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+  </div>
+</dialog>
+
+<dialog class="dialog" id="nonModalDialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title">Non-modal dialog</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+    <p>This dialog doesn’t block the page. You can still interact with content behind it.</p>
+  </div>
+  <div class="dialog-footer">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+  </div>
+</dialog>`} />
+
+`.dialog-fullscreen` covers the viewport. There are also breakpoint-down variants if you only want fullscreen on smaller screens.
+
+<Example full showMarkup={false} code={`<button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#fullscreenDialog">
+  Fullscreen
+</button>
+
+<dialog class="dialog dialog-fullscreen" id="fullscreenDialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title">Fullscreen dialog</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+    <p>This dialog covers the entire viewport.</p>
+  </div>
+  <div class="dialog-footer">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+  </div>
+</dialog>`} />
+
+Drawer shares its show and hide lifecycle with Dialog through a common `DialogBase`, so it's a `<dialog>` too—just anchored to an edge.
+
+<Example full showMarkup={false} code={`<a class="btn-solid theme-primary" data-bs-toggle="drawer" href="#drawerExample" role="button" aria-controls="drawerExample">
+  Link with href
+</a>
+<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerExample" aria-controls="drawerExample">
+  Button with data-bs-target
+</button>
+
+<dialog class="drawer drawer-start" tabindex="-1" id="drawerExample" aria-labelledby="drawerExampleLabel">
+  <div class="drawer-header">
+    <h5 class="drawer-title" id="drawerExampleLabel">Drawer</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+  </div>
+  <div class="drawer-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="mt-3">
+      <button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu">
+        Menu
+      </button>
+      <div class="menu">
+        <a class="menu-item" href="#">Action</a>
+        <a class="menu-item" href="#">Another action</a>
+        <a class="menu-item" href="#">Something else here</a>
+      </div>
+    </div>
+  </div>
+</dialog>`} />
+
+## Menu
+
+The wrapper and toggle classes are gone—a toggle and its `.menu` are just siblings. Items get an icon slot with `.menu-item-icon` and secondary text with `.menu-item-description`.
+
+<Example full showMarkup={false} class="hstack gap-3 align-items-start" code={`<div class="menu show position-static">
+  <button class="menu-item" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="menu-item-icon fg-3" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+    </svg>
+    Copy
+  </button>
+  <button class="menu-item" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="menu-item-icon fg-3" viewBox="0 0 16 16">
+      <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+    </svg>
+    Cut
+  </button>
+  <hr class="menu-divider">
+  <button class="menu-item theme-danger" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="menu-item-icon" viewBox="0 0 16 16">
+      <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+    </svg>
+    Delete
+  </button>
+</div>
+
+<div class="menu show position-static">
+  <button class="menu-item" type="button">
+    <span class="menu-item-content">
+      Publish now
+      <small class="menu-item-description">Make this page visible immediately</small>
+    </span>
+  </button>
+  <button class="menu-item" type="button">
+    <span class="menu-item-content">
+      Schedule
+      <small class="menu-item-description">Set a future publish date</small>
+    </span>
+  </button>
+</div>`} />
+
+## Nav overflow
+
+Whatever doesn't fit collapses into an automatic "More" menu. It watches the wrapper with a `ResizeObserver` rather than the viewport, so it responds to the space it's actually in—drag the handle on the right to see it work.
+
+<ResizableExample full showMarkup={false} minWidth="280px" code={`<div class="nav-overflow" data-bs-toggle="nav-overflow">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Analytics</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Reports</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Settings</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Help</a>
+    </li>
+  </ul>
+</div>`} />
+
+## Prose
+
+Prose scopes long-form typography to a wrapper, so Markdown or WYSIWYG output reads well without a class on every element. This post is itself inside a `.prose`, which makes the comparison easy: on the left is the same markup opted back out with `.not-prose`, on the right is what you've been reading all along.
+
+<div class="bd-full my-5" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));">
+  <div class="border border-keyline rounded-4 p-4">
+    <p class="fs-xs text-uppercase fw-semibold fg-3">.not-prose</p>
+    <div class="not-prose">
+      <h3>Getting started</h3>
+      <p>Writing clear documentation is essential for any project. <strong>Understanding your audience</strong> is where it starts.</p>
+      <ul>
+        <li>Write concise items that focus on one concept.</li>
+        <li>Use parallel structure across all items.</li>
+      </ul>
+      <blockquote>Documentation is a love letter you write to your future self.</blockquote>
+    </div>
+  </div>
+  <div class="border border-keyline rounded-4 p-4">
+    <p class="fs-xs text-uppercase fw-semibold fg-3">.prose</p>
+    <div class="prose">
+      <h3>Getting started</h3>
+      <p>Writing clear documentation is essential for any project. <strong>Understanding your audience</strong> is where it starts.</p>
+      <ul>
+        <li>Write concise items that focus on one concept.</li>
+        <li>Use parallel structure across all items.</li>
+      </ul>
+      <blockquote>Documentation is a love letter you write to your future self.</blockquote>
+    </div>
+  </div>
+</div>
+
+
+## Future of components
+
+One of the things I'm most excited about downstream in v6's lifecycle is the potential for building web component versions of our components. Consider the complexities of certain components, from even a checkbox to
+
+
+
+---
+
+## Components galore
+
+Bootstrap 6 includes several brand new components and a few bottom-up rewrites to take advantage of newer HTML elements and standards, streamline JavaScript reliance, and leverage better CSS support.
+
+There’s a single idea running through most of this work: for years we shipped JavaScript to do things browsers couldn’t do. Browsers can do them now, so much of v6 is less about new code than about deleting old code and letting the platform take over.
+
+### Rebuilt on the platform
+
+- **Dialog** replaces Modal, built on the native `<dialog>` element and its `showModal()`, `show()`, and `close()` APIs.
+- **Drawer** replaces Offcanvas, and shares its show/hide lifecycle with Dialog through a common `DialogBase` class—so it’s a `<dialog>` element too.
+- **Accordion** is rewritten on `<details>` and `<summary>`. Basic open and close needs no JavaScript at all, and exclusive groups use the HTML `name` attribute instead of `data-bs-parent`.
+- **Carousel** is rebuilt on CSS scroll snap, prioritizing the modern content carousel over the traditional slideshow.
+- **Navbar** collapses into a Drawer instead of a custom collapse.
+- **Menu, Tooltip, and Popover** now position with Floating UI instead of the deprecated Popper.js.
+
+Dialog is the clearest example of what that buys us. Here’s v5:
+
+```html
+<div class="modal fade" id="exampleModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">…</div>
+    </div>
+  </div>
+</div>
+```
+
+And v6:
+
+```html
+<dialog class="dialog" id="exampleDialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title">Dialog title</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">…</div>
+</dialog>
+```
+
+Two wrapper elements gone, and with them a lot of machinery. The browser now supplies the backdrop through `::backdrop`, the focus trap, and the inert top layer. Body scroll locking moved to CSS, where `:root.dialog-open` pairs with `scrollbar-gutter: stable` so the page doesn’t shift when a dialog opens.
+
+Accordion tells the same story from a different angle:
+
+```html
+<details class="accordion-item" name="accordionExample" open>
+  <summary class="accordion-header">
+    Accordion Item #1
+    <svg class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="m2 5 6 6 6-6"/></svg>
+  </summary>
+  <div class="accordion-body">…</div>
+</details>
+```
+
+No `.accordion-button`, no `.accordion-collapse`, no `data-bs-parent`, and no Collapse plugin. Open state styling is just `details[open]`.
+
+Here it is running. Open one item and the others close, because they share a
+`name`. There is no accordion JavaScript on this page at all.
+
+<Example code={`<div class="accordion">
+  <details class="accordion-item" name="accordionExample" open>
+    <summary class="accordion-header">
+      Native and nothing else
+      <svg class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      The browser owns the open and close behavior, and the height animation is pure CSS.
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      Exclusive by attribute
+      <svg class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      The shared <code>name</code> attribute replaces <code>data-bs-parent</code>, so opening this closes the others.
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      Styled with details[open]
+      <svg class="accordion-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      No <code>.accordion-button</code>, no <code>.accordion-collapse</code>, and no Collapse plugin.
+    </div>
+  </details>
+</div>`} />
+
+### What we deleted
+
+Rebuilding on native elements let us remove a long list of workarounds:
+
+- `util/backdrop`, `util/focustrap`, and `util/scrollbar` — all three obsolete now that Dialog and Drawer are native `<dialog>` elements
+- The carousel’s custom swipe handler, plus `.carousel-item-start`, `-end`, `-next`, `-prev`, and the `.carousel.pointer-event` helper — the browser tracks scroll position instead
+- The `.modal-backdrop` element — `::backdrop` does it
+- `.btn-close-white`, `.carousel-dark`, and the separate light and dark navbar toggler SVGs
+- Popper.js, and the `.dropdown` wrapper, `.dropdown-toggle` class, and `<ul><li>` scaffolding that Menu no longer needs
+
+Several of those deletions come from one change: icons are now CSS masks. The close button, navbar toggler, breadcrumb divider, carousel controls, and checkbox marks all render via `mask-image` tinted with `background-color: currentcolor`. They inherit the surrounding text color, which means dark mode works for free and we no longer need a second SVG or a `filter` hack for light-on-dark.
+
+### Renamed and reshaped
+
+Three components changed names along with their internals, and these are the renames that will show up in your markup:
+
+- **Modal → Dialog.** Classes, data attributes, events, CSS variables, and the JavaScript export all follow: `.modal-body` becomes `.dialog-body`, `data-bs-toggle="modal"` becomes `data-bs-toggle="dialog"`, `show.bs.modal` becomes `show.bs.dialog`.
+- **Offcanvas → Drawer.** Same mechanical rename throughout, plus a new `.drawer-sheet` variant for flush-to-edge panels and swipe-to-dismiss on touch devices.
+- **Dropdown → Menu.** `.dropdown-menu` becomes `.menu`, `.dropdown-item` becomes `.menu-item`, and the wrapper and toggle classes are gone—the toggle and the `.menu` are just siblings. Direction is now `data-bs-placement` instead of `.dropup` and friends, and submenus are supported through `.submenu`.
+
+The [migration guide](https://getbootstrap.com/docs/6.0/guides/migration) has the exhaustive mapping for all three.
+
+{/* TODO(screenshot): GIF or screen recording — Dialog with `.dialog-slide-up` and
+    the blurred `::backdrop`, plus Drawer swipe-to-dismiss at phone width. Neither
+    survives a still image, so these need motion. */}
+
+### Carousel and autoplay
+
+Rebuilding the carousel on scroll snap handed us a pile of features we didn’t have to write. Sliding, touch dragging, momentum, and keyboard scrolling are all just native scrolling now. On top of that we can show multiple slides at once, reveal a peek of the adjacent ones, add gaps, center the active slide, and support variable-width slides—all through CSS custom properties.
+
+Autoplay changed too, and the new behavior is stricter. It’s opt-in via `data-bs-autoplay="true"`, the old `ride` option is gone, and interacting with a carousel now stops autoplay permanently rather than resuming it. The new `.carousel-control-play-pause` button gives visitors a discoverable way to stop and resume playback, which is what [WCAG 2.2.2](https://www.w3.org/TR/WCAG/#pause-stop-hide) requires—a hover-only pause doesn’t satisfy it.
+
+<Example code={`<div id="carouselV6" class="carousel slide" data-bs-autoplay="true" style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem; --bs-carousel-items-peek: 2rem;">
+  <div class="carousel-inner">
+    <div class="carousel-item active"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="1" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="2" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="3" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="4" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="5" /></div>
+    <div class="carousel-item"><Placeholder width="260" height="180" class="d-block w-100 rounded-5" text="6" /></div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center mt-3">
+    <div class="carousel-indicators m-0">
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselV6" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="d-flex gap-1">
+      <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#carouselV6" aria-label="Pause" data-bs-pause-label="Pause" data-bs-play-label="Play">
+        <span class="carousel-icon-pause" aria-hidden="true"></span>
+        <span class="carousel-icon-play" aria-hidden="true"></span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselV6" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselV6" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>`} />
+
+### Brand new
+
+- **Avatar** with sizes, status indicators, and `.avatar-stack` for grouped avatars
+- **Stepper** for multi-step workflows, CSS-only
+- **Nav overflow**, a wrapper that collapses whatever doesn’t fit in a wide navigation into an automatic overflow menu
+- **Toggler**, a small plugin for toggling classes or attributes via `data-bs-toggle="toggler"`
+- **Chip** for tags and tokens, plus **Prose** for scoping rich typography and **Form adorn** for decorating inputs
+
+Navbar, nav overflow, list group, stepper, and card groups now respond to container queries rather than viewport width, so they adapt to the space they’re actually in. One thing to know if you’re upgrading: card groups and horizontal list groups need an ancestor query container, so add something like `.contains-inline` to a wrapper or they’ll stay stacked.
+
+Drag the handle on the right to resize the container. The card group responds to
+the space it's in, not to the width of your browser window.
+
+<ResizableExample showBreakpoint minWidth="320px" code={`<div class="contains-inline">
+  <div class="card-group">
+    <div class="card">
+      <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
+      <div class="card-body">
+        <h4 class="card-title fs-md">Card title</h4>
+        <p class="card-text fs-sm mb-0">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+    <div class="card">
+      <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
+      <div class="card-body">
+        <h4 class="card-title fs-md">Card title</h4>
+        <p class="card-text fs-sm mb-0">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+    <div class="card">
+      <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
+      <div class="card-body">
+        <h4 class="card-title fs-md">Card title</h4>
+        <p class="card-text fs-sm mb-0">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+</div>`} />

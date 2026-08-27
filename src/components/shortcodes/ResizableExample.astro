@@ -8,6 +8,12 @@ interface Props {
   /** CSS class(es) for the resizable container. */
   class?: string
   /**
+   * Span the full measure of the post rather than the narrower text track, for
+   * examples that need the extra room.
+   * @default false
+   */
+  full?: boolean
+  /**
    * Starting width of the resizable container.
    * @default '100%'
    */
@@ -32,6 +38,7 @@ interface Props {
 const {
   code,
   class: className,
+  full = false,
   initialWidth = '100%',
   minWidth = '200px',
   showBreakpoint = false,
@@ -54,7 +61,10 @@ const sourceMarkup = markup.replace(
 )
 ---
 
-<div class="bd-example-snippet bd-code-snippet not-prose" data-pagefind-ignore>
+<div
+  class:list={['bd-example-snippet bd-code-snippet not-prose', { 'bd-full': full }]}
+  data-pagefind-ignore
+>
   <div class="bd-example bd-example-resizable bg-1">
     <div
       class:list={['bd-resizable-container bg-body border border-keyline shadow-xs', className]}

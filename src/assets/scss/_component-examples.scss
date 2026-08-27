@@ -60,7 +60,9 @@
       display: block;
     }
 
-    > :last-child,
+    // Native <dialog> centers with `margin: auto` against `inset: 0`. Zeroing
+    // the last child's margin-bottom pins an open dialog to the viewport floor.
+    > :last-child:not(dialog),
     > nav:last-child .breadcrumb {
       margin-bottom: 0;
     }
@@ -97,6 +99,34 @@
     .sticky-bottom {
       position: static;
       margin: var(--bd-example-padding) calc(var(--bd-example-padding) * -1) calc(var(--bd-example-padding) * -1);
+    }
+  }
+
+  // A matrix of buttons: the style variants across, one theme color per row. Two
+  // columns on narrow screens so the labels don't get crushed.
+  .bd-example-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .5rem;
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+
+  // Static, in-flow dialog so the chrome is visible without opening a modal.
+  // Native <dialog open> still inherits UA `position: absolute`, and `.dialog`
+  // hides itself until `[open]`, so pin it in the plate and force the open look.
+  .bd-example-dialog {
+    background-color: color-mix(in srgb, var(--bs-fg-body) 8%, var(--bs-bg-1));
+
+    .dialog {
+      position: static;
+      display: flex;
+      margin-block: 1.75rem;
+      visibility: visible;
+      opacity: 1;
+      transform: none;
     }
   }
 
@@ -184,6 +214,48 @@
     }
   }
 
+  // Collapsible source, on `<details>` so the toggle needs no JavaScript. The
+  // example's own bottom border already separates the preview from this row, so
+  // the summary only draws a divider once it's open.
+  .bd-code-collapse {
+    > summary {
+      display: flex;
+      gap: .375rem;
+      align-items: center;
+      padding: .375rem .75rem;
+      font-size: .8125rem;
+      color: var(--bs-fg-3);
+      list-style: none; // Remove default marker
+      cursor: pointer;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover {
+        color: var(--bs-fg-body);
+      }
+    }
+
+    &[open] > summary {
+      border-bottom: 1px solid var(--bs-border-color);
+    }
+
+    .bd-code-collapse-icon {
+      flex-shrink: 0;
+      @include transition(transform .2s ease-in-out);
+    }
+
+    &[open] .bd-code-collapse-icon {
+      transform: rotate(180deg);
+    }
+
+    &:not([open]) .bd-code-collapse-hide,
+    &[open] .bd-code-collapse-show {
+      display: none;
+    }
+  }
+
   // Resizable examples
   //
   // The container is dragged with the native CSS resize handle, which needs
@@ -248,10 +320,12 @@
     }
   }
 
-  // Let the grids use the full measure of the post so the wider column counts
-  // above have room to breathe, instead of the narrower text track.
+  // Let the grids and anything opting in with `.bd-full` use the full measure of
+  // the post so the wider column counts above have room to breathe, instead of
+  // the narrower text track.
   .post-single .prose > .bd-colors-grid,
-  .post-single .prose > .bd-theme-colors-grid {
+  .post-single .prose > .bd-theme-colors-grid,
+  .post-single .prose > .bd-full {
     grid-column: full;
   }
 

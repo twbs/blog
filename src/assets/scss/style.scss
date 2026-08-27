@@ -174,21 +174,8 @@
   }
 
   // Blog index
-  //
-  // A Vercel-style masthead ("Blog" + relevant links) sitting above a grid of
-  // text-only post cards. No thumbnails: cards are a meta line, title, lede, and
-  // byline, so the emphasis lands on the writing.
   .posts-subtitle {
     max-width: 32rem;
-  }
-
-  // The ad rides the top-right of the masthead on desktop and drops between the
-  // heading and the post grid on smaller screens.
-  .posts-header-ad {
-    @include media-breakpoint-up(lg) {
-      width: 400px;
-      max-width: 100%;
-    }
   }
 
   .posts-header-link {
@@ -279,11 +266,6 @@
     display: grid;
     grid-template-columns: minmax(0, var(--bd-media));
     gap: var(--bd-gap-section);
-    justify-content: center;
-  }
-
-  .post-ad {
-    display: flex;
     justify-content: center;
   }
 
@@ -411,21 +393,25 @@
 
 
   // Related posts
-  .related {
-    max-width: var(--bd-measure);
-    margin-top: var(--bd-gap-section);
-  }
+  // .related {
+  //   max-width: var(--bd-measure);
+  //   margin-top: var(--bd-gap-section);
+  // }
 
-  .related-posts {
-    a {
-      text-decoration: none;
-    }
-  }
+  // .related-posts {
+  //   a {
+  //     text-decoration: none;
+  //   }
+  // }
 
   // Posts that lead straight into the copy instead of setting a subtitle.
   .post .prose > p:first-of-type {
-    font-size: 1.125rem;
+    // font-size: 1.125rem;
     color: var(--bs-fg-body);
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.125rem;
+    }
   }
 
   .bd-text-purple {
