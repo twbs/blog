@@ -82,6 +82,16 @@ Then read our [Install](https://getbootstrap.com/docs/6.0/getting-started/instal
 
 Bootstrap 5 remains available and supported if that floor doesn’t work for your project. v5.4.0 will be released as soon as we can before we share an end of life date for Bootstrap 5.
 
+## Architecture changes
+
+Due to the overall modernization of Bootstrap in v6, there are a few architectural changes to our source Sass and JavaScript, as well as our docs.
+
+- Older versions of Sass are no longer supported within Bootstrap.
+
+- Sass files have been reorganized, and several Sass files have been removed given the change to CSS variables for all visual customization, automatic color-mode adaptivity via `light-dark()`, and more. We've also cleaned up the shenanigans around the `_maps.scss` file, which is no more.
+
+- Source JavaScript is now written in TypeScript. Our JavaScript plugins are now ESM-only, and there’s no trace of jQuery anymore—not even a shim.
+
 ## Spotlight: CSS-first Sass modules
 
 Updating Bootstrap to use Sass modules was a massive undertaking that couldn't happen in v5 without some breaking changes. So we went big in v6.
@@ -308,8 +318,6 @@ Look at what those values are: `bg`, `contrast`, `fg`, `border`, `bg-subtle`. Th
 That’s the real win here, and it compounds. In v5, every new color multiplied every existing variant, so the button CSS grew as the palette grew. In v6 the two are independent, and the compiled output stays roughly flat no matter how many colors you add.
 
 Similar architecture can be found in `$button-sizes`, `$badge-variants`, `$form-control-sizes`, `$input-group-sizes`, and `$otp-sizes`.
-
-<ButtonPlayground />
 
 ### Components galore
 
