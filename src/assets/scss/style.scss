@@ -18,8 +18,12 @@
     --bd-post-width: 760px;
     --bd-measure: 45rem;
     --bd-media: 60rem;
-    --bd-gap-section: 3rem;
+    --bd-gap-section: 2rem;
     --bd-gap-media: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      --bd-gap-section: 3rem;
+    }
   }
 
   .ls-tight { letter-spacing: -.025em; }
@@ -406,7 +410,6 @@
 
   // Posts that lead straight into the copy instead of setting a subtitle.
   .post .prose > p:first-of-type {
-    // font-size: 1.125rem;
     color: var(--bs-fg-body);
 
     @include media-breakpoint-up(md) {

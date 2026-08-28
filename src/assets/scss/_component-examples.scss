@@ -8,7 +8,7 @@
 
 @layer custom {
   .bd-code-snippet {
-    margin: 0 ($bd-gutter-x * -.5) 1rem;
+    margin: 0 -1.25rem 1rem;
     border: solid var(--bs-border-color);
     border-width: 1px 0;
 
@@ -48,16 +48,12 @@
       margin-top: 2rem;
     }
 
-    > .nav + .nav,
-    > .alert + .alert,
-    > .navbar + .navbar,
-    > .progress + .progress {
-      margin-top: 1rem;
-    }
-
-    > .menu {
-      position: static;
-      display: block;
+    // Only the in-flow, always-open demos. A live `[data-bs-toggle="menu"]`
+    // sibling must stay `position: absolute` or Floating UI can't place it
+    // and the example plate grows, then clips, on open.
+    > .menu.position-static {
+      display: flex;
+      max-width: fit-content;
     }
 
     // Native <dialog> centers with `margin: auto` against `inset: 0`. Zeroing
@@ -105,11 +101,14 @@
   // A matrix of buttons: the style variants across, one theme color per row. Two
   // columns on narrow screens so the labels don't get crushed.
   .bd-example-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    // display: grid;
+    // grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: .5rem;
 
     @include media-breakpoint-up(md) {
+      display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
@@ -127,6 +126,20 @@
       visibility: visible;
       opacity: 1;
       transform: none;
+    }
+  }
+
+  // Static, in-flow drawer so the panel is visible without opening a modal.
+  // Same idea as `.bd-example-dialog`: native <dialog> is absolutely positioned
+  // and `.drawer` starts translated off-canvas, so pin it in the plate.
+  .bd-example-drawer {
+    .drawer {
+      position: static;
+      display: flex;
+      height: 400px;
+      margin: var(--drawer-inset);
+      visibility: visible;
+      transform: translate(0);
     }
   }
 
@@ -192,6 +205,12 @@
 
   .bd-example-snippet {
     overflow: hidden;
+
+    // `class="overflow-visible"` lands on `.bd-example`, but this wrapper is
+    // what actually clips absolutely positioned menus and popovers.
+    &:has(.bd-example.overflow-visible) {
+      overflow: visible;
+    }
 
     .bd-example {
       margin: 0;

@@ -33,6 +33,12 @@ interface Props {
    * @default true
    */
   showMarkup?: boolean
+  /**
+   * Put the source behind a toggle that starts collapsed, for examples whose
+   * markup is long enough to bury whatever follows.
+   * @default false
+   */
+  toggleMarkup?: boolean
 }
 
 const {
@@ -42,7 +48,8 @@ const {
   initialWidth = '100%',
   minWidth = '200px',
   showBreakpoint = false,
-  showMarkup = true
+  showMarkup = true,
+  toggleMarkup = false
 } = Astro.props
 
 const markup = replacePlaceholdersInHtml(Array.isArray(code) ? code.join('\n') : code)
@@ -65,16 +72,43 @@ const sourceMarkup = markup.replace(
   class:list={['bd-example-snippet bd-code-snippet not-prose', { 'bd-full': full }]}
   data-pagefind-ignore
 >
-  <div class="bd-example bd-example-resizable bg-1">
+  <div class="bd-example bd-example-resizable bg-1 overflow-visible rounded-top-5">
     <div
-      class:list={['bd-resizable-container bg-body border border-keyline shadow-xs', className]}
+      class:list={['bd-resizable-container bg-body border border-keyline shadow-xs mx-auto', className]}
       style={`width: ${initialWidth}; min-width: ${minWidth};`}
     >
       <Fragment set:html={previewMarkup} />
       {showBreakpoint && <output class="bd-resizable-badge" data-resizable-badge aria-live="polite" />}
     </div>
   </div>
-  {showMarkup && <Code code={sourceMarkup} />}
+  {
+    showMarkup &&
+      (toggleMarkup ? (
+        <details class="bd-code-collapse">
+          <summary>
+            <svg
+              class="bd-code-collapse-icon"
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m2 5 6 6 6-6" />
+            </svg>
+            <span class="bd-code-collapse-show">Show markup</span>
+            <span class="bd-code-collapse-hide">Hide markup</span>
+          </summary>
+          <Code code={sourceMarkup} />
+        </details>
+      ) : (
+        <Code code={sourceMarkup} />
+      ))
+  }
 </div>
 
 <script>
@@ -116,5 +150,20 @@ const sourceMarkup = markup.replace(
     })
 
     observer.observe(target, { box: 'content-box' })
+  })
+
+  // Nav overflow injects its "More" toggle after init, so the compile-time
+  // `data-bs-strategy="fixed"` rewrite never sees it. Stamp the attribute on
+  // any menu toggle inside a resizable plate so Floating UI uses `position:
+  // fixed` and the menu can paint past `overflow: hidden` (required for resize).
+  function pinMenuStrategy(root: ParentNode) {
+    root.querySelectorAll<HTMLElement>('[data-bs-toggle="menu"]:not([data-bs-strategy])').forEach(toggle => {
+      toggle.setAttribute('data-bs-strategy', 'fixed')
+    })
+  }
+
+  document.querySelectorAll<HTMLElement>('.bd-resizable-container').forEach(container => {
+    pinMenuStrategy(container)
+    new MutationObserver(() => pinMenuStrategy(container)).observe(container, { childList: true, subtree: true })
   })
 </script>

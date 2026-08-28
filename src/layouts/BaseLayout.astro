@@ -42,7 +42,7 @@ const { title, description, card, robots, extraJs = [], wide = false } = Astro.p
       <Navigation />
     </div>
 
-    <div class:list={['xl:container py-4 px-4 xl:px-2 bd-layout', { 'bd-layout-wide': wide }]}>
+    <div class:list={['xl:container py-4 px-5 xl:px-2 bd-layout', { 'bd-layout-wide': wide }]}>
       <main class="bd-main" id="content">
         <slot />
       </main>

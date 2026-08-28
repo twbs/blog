@@ -53,20 +53,6 @@
     </button>
   </div>
 
-  <div class="d-flex align-items-center justify-content-center">
-    <button type="button" class="btn-solid btn-styled btn-sm theme-accent" data-bs-toggle="menu" aria-expanded="false">
-      Menu
-      <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"></path></svg>
-    </button>
-    <div class="menu">
-      <a class="menu-item active" href="#">Duplicate</a>
-      <a class="menu-item" href="#">Rename</a>
-      <a class="menu-item" href="#">Move to</a>
-      <hr class="menu-divider" />
-      <a class="menu-item" href="#">Delete</a>
-    </div>
-  </div>
-
   <div class="w-100 flex-1 d-none"></div>
 
   <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
@@ -88,7 +74,49 @@
     </span>
   </div>
 
+  <div class="w-100 flex-1 d-none"></div>
+
+  <div class="d-flex flex-wrap align-items-center justify-content-center w-100 gap-2">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a class="breadcrumb-link" href="#">Home</a>
+        </li>
+        <li class="breadcrumb-divider"></li>
+        <li class="breadcrumb-item">
+          <a class="breadcrumb-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentcolor"><circle cx="2" cy="8" r="2"/><circle cx="8" cy="8" r="2"/><circle cx="14" cy="8" r="2"/></svg>
+          </a>
+        </li>
+        <li class="breadcrumb-divider"></li>
+        <li class="breadcrumb-item">
+          <a class="breadcrumb-link" href="#">Documents</a>
+        </li>
+        <li class="breadcrumb-divider"></li>
+        <li class="breadcrumb-item" aria-current="page">
+          <a class="breadcrumb-link active" href="#">2026</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="w-100 flex-1 d-none"></div>
+
   <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
+    <div class="d-flex align-items-center justify-content-center">
+      <button type="button" class="btn-solid btn-styled btn-sm theme-accent" data-bs-toggle="menu" aria-expanded="false">
+        Menu
+        <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"></path></svg>
+      </button>
+      <div class="menu theme-accent">
+        <a class="menu-item active" href="#">Duplicate</a>
+        <a class="menu-item" href="#">Rename</a>
+        <a class="menu-item" href="#">Move to</a>
+        <hr class="menu-divider" />
+        <a class="menu-item" href="#">Delete</a>
+      </div>
+    </div>
+
     <button type="button" class="btn-solid btn-styled theme-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Placed with Floating UI">
       Hover tooltip
     </button>
