@@ -279,7 +279,7 @@
 
   .bd-search-item-sub {
     padding-inline-start: var(--bs-spacer-3);
-    background-color: color-mix(in lab, var(--bs-bg-1), var(--bs-bg-body));
+    background-color: color-mix(in oklch, var(--bs-bg-1), var(--bs-bg-body));
 
     .bd-search-item-title {
       font-size: var(--bs-font-size-sm);

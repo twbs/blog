@@ -4,19 +4,13 @@
 // look of the new component set, not any one snippet.
 ---
 
-<div class="bd-component-wall not-prose d-flex flex-wrap align-items-center justify-content-center gap-8 my-5">
+<div class="bd-component-wall bd-full not-prose d-flex flex-wrap align-items-center justify-content-center gap-8 my-5">
   <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
     <span class="avatar avatar-lg theme-primary">MO
       <span class="avatar-status status-online"></span>
     </span>
     <span class="avatar">
-      <svg
-        class="bd-placeholder-img avatar-img"
-        width="40"
-        height="40"
-        preserveAspectRatio="xMidYMid slice"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-bg-3)"></rect></svg>
+      <img src="https://github.com/mdo.png" alt="mdo" class="avatar-img">
       <span class="avatar-status status-busy"></span>
     </span>
     <span class="avatar avatar-subtle theme-accent">JD</span>
@@ -44,10 +38,10 @@
 
   <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
     <button type="button" class="btn btn-sm">Base</button>
-    <button type="button" class="btn-solid btn-sm theme-primary">Solid</button>
-    <button type="button" class="btn-outline btn-sm theme-success">Outline</button>
-    <button type="button" class="btn-subtle btn-sm theme-accent">Accent subtle</button>
-    <button type="button" class="btn-text btn-sm theme-danger">Danger</button>
+    <button type="button" class="btn-solid btn-sm theme-primary">Solid primary</button>
+    <button type="button" class="btn-outline btn-sm theme-success">Outline success</button>
+    <button type="button" class="btn-subtle btn-sm theme-accent">Subtle accent</button>
+    <button type="button" class="btn-text btn-sm theme-danger">Text danger</button>
     <button type="button" class="btn-icon btn-sm" aria-label="Add">
       <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v10M3 8h10"></path></svg>
     </button>
@@ -56,18 +50,18 @@
   <div class="w-100 flex-1 d-none"></div>
 
   <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
-    <span class="chip">Default</span>
+    <span class="chip">Chip</span>
     <span class="chip theme-primary active">Selected</span>
     <span class="chip">
       <span class="chip-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4 5 8-8"></path></svg></span>
-      With icon
+      Chip with icon
     </span>
     <span class="chip theme-accent">
       <img src="https://github.com/twbs.png" alt="Bootstrap" class="chip-img">
       Avatar chip
     </span>
     <span class="chip theme-danger">
-      Dismissible
+      Danger dismiss
       <button type="button" class="chip-dismiss" aria-label="Remove">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m4 4 8 8M12 4l-8 8"></path></svg>
       </button>
@@ -141,7 +135,7 @@
     </div>
 
     <div class="g-col">
-      <div class="accordion accordion-sm w-100">
+      <div class="accordion accordion-sm accordion-gap w-100">
         <details class="accordion-item" name="accordionGallery" open>
           <summary class="accordion-header">
             Example accordion
@@ -168,16 +162,10 @@
 
     <div class="g-col">
       <div class="card">
-        <svg
-          class="bd-placeholder-img card-img-top"
-          width="100%"
-          height="96"
-          preserveAspectRatio="xMidYMid slice"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-bg-2)"></rect></svg>
+        <img src="/public/assets/img/bootstrap-banner.png" alt="Banner" class="card-img-top">
         <div class="card-body">
-          <h4 class="card-title fs-md">Card title</h4>
-          <p class="card-text fs-sm mb-0">Cards pick up refreshed radii and a cleaner flexbox layout.</p>
+          <h4 class="card-title fs-md">Updated cards</h4>
+          <p class="card-text fs-sm mb-0">Cards have a refreshed flexbox layout, new radii, plus new theming support.</p>
         </div>
       </div>
     </div>

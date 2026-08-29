@@ -58,8 +58,7 @@
 
     // Native <dialog> centers with `margin: auto` against `inset: 0`. Zeroing
     // the last child's margin-bottom pins an open dialog to the viewport floor.
-    > :last-child:not(dialog),
-    > nav:last-child .breadcrumb {
+    > :last-child:not(dialog) {
       margin-bottom: 0;
     }
 
