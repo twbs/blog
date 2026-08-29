@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-09-29T00:00:00Z"
 title: Onward
+category: Community
 ---
 
 Working at Twitter the last two and a half years has been incredible. Both Jacob and I have worked with a lot of amazing people on some pretty amazing projects, but nothing has been more enjoyable or rewarding than working on Bootstrap. Despite us leaving Twitter to go our [separate ways](https://www.youtube.com/watch?v=LatorN4P9aA), we'll both be continuing our work on the project.

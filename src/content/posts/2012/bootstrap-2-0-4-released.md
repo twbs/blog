@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-06-01T00:00:00Z"
 title: Bootstrap 2.0.4 released
+category: Release
 keywords:
   - bootstrap
   - release

@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-04-14T00:00:00Z"
 title: Bootstrap's first intercontinental release
+category: Community
 ---
 
 As you may have heard, Jacob and I are [heading to London in a week to talk Bootstrap](https://ukengopenhouse.eventbrite.com/)—and we're pretty stoked about it! The event is already sold out, but we'll be there for a few days to be sure to chat and hang with folks in the area.

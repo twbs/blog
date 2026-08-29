@@ -2,6 +2,8 @@
 author: mdo
 date: "2021-05-05T09:30:00Z"
 title: Bootstrap 5
+category: Release
+major: true
 video: FGBhQbmPwH8
 keywords:
   - bootstrap
@@ -345,4 +347,4 @@ And more features and updates are planned for a few more releases after that! Ch
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

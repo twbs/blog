@@ -2,6 +2,7 @@
 author: mdo
 date: "2019-07-24T00:00:00Z"
 title: Introducing our Long Term Support plan
+category: Community
 video: 2HuiH-0R6a0
 ---
 

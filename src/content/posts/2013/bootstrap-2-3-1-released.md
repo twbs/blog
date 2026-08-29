@@ -2,6 +2,7 @@
 author: mdo
 date: "2013-03-01T00:00:00Z"
 title: Bootstrap 2.3.1 released
+category: Release
 keywords:
   - bootstrap
   - release

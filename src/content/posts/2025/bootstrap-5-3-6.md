@@ -2,6 +2,7 @@
 author: mdo
 date: "2025-05-05T15:22:00Z"
 title: Bootstrap 5.3.6
+category: Release
 keywords:
   - bootstrap
   - release
@@ -30,4 +31,4 @@ npm i bootstrap@v5.3.6
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

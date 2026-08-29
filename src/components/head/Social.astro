@@ -1,0 +1,36 @@
+---
+import { getConfig } from '../../libs/config'
+import { defaultSocialCard, type SocialCard } from '../../libs/social'
+
+interface Props {
+  title: string
+  description?: string
+  card?: SocialCard
+}
+
+const config = getConfig()
+const { title, description, card = defaultSocialCard } = Astro.props
+
+const isHome = Astro.url.pathname === '/'
+const ogType = isHome ? 'website' : 'article'
+
+const socialImage = new URL(card.url, Astro.site)
+---
+
+<meta name="author" content={config.author}>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content={`@${config.x}`}>
+<meta name="twitter:creator" content={`@${config.x}`}>
+<meta name="twitter:title" content={title}>
+{description && <meta name="twitter:description" content={description}>}
+<meta name="twitter:image" content={socialImage}>
+
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)}>
+<meta property="og:title" content={title}>
+{description && <meta property="og:description" content={description}>}
+<meta property="og:type" content={ogType}>
+<meta property="og:image" content={socialImage}>
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content={String(card.width)}>
+<meta property="og:image:height" content={String(card.height)}>

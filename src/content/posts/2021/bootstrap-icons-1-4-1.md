@@ -2,6 +2,7 @@
 author: mdo
 date: "2021-03-29T21:30:00Z"
 title: Bootstrap Icons v1.4.1
+category: Icons
 video: zO6D_BAuYCI
 keywords:
   - icons

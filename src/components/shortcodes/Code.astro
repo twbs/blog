@@ -1,0 +1,59 @@
+---
+import { transformerNotationDiff, transformerNotationHighlight } from '@shikijs/transformers'
+import { highlightCode } from '../../libs/highlight'
+
+interface Props {
+  /** The code to highlight. Arrays are joined with newlines. */
+  code: string | string[]
+  /**
+   * Language to highlight as.
+   * @see https://shiki.style/languages
+   * @default 'html'
+   */
+  lang?: string
+}
+
+const { code, lang = 'html' } = Astro.props
+
+const source = Array.isArray(code) ? code.join('\n') : code
+
+const labels: Record<string, string> = {
+  css: 'CSS',
+  html: 'HTML',
+  js: 'JavaScript',
+  scss: 'SCSS',
+  sh: 'Shell',
+  ts: 'TypeScript'
+}
+const label = labels[lang] ?? lang.toUpperCase()
+
+const highlighted = await highlightCode(source, lang, [
+  transformerNotationDiff(),
+  transformerNotationHighlight()
+])
+---
+
+{/* Renders the toolbar and snippet only. The wrapping `.bd-code-snippet` comes
+    from `Example` or `ResizableExample`, which is the only way this is used. */}
+<div class="hstack highlight-toolbar align-items-center">
+  <div class="font-monospace text-uppercase fs-xs fg-3">{label}</div>
+  <button
+    type="button"
+    class="btn btn-xs btn-icon bg-transparent ms-auto"
+    title="Copy"
+    data-bd-clipboard
+  >
+    <svg class="bi fs-md" aria-hidden="true"><use href="#copy" /></svg>
+  </button>
+</div>
+<Fragment set:html={highlighted} />
+
+<script>
+  import { initCopyButtons } from '../../libs/clipboard'
+
+  initCopyButtons('.bd-code-snippet [data-bd-clipboard]', trigger => {
+    const snippet = trigger.closest('.bd-code-snippet')
+
+    return snippet?.querySelector('.astro-code')?.textContent?.trim() ?? ''
+  })
+</script>

@@ -2,12 +2,13 @@
 author: mdo
 date: "2013-02-07T00:00:00Z"
 title: Bootstrap 2.3 released
+category: Release
 keywords:
   - bootstrap
   - release
 ---
 
-It has been far too long, friends. Nearly three months has gone by since we pushed out a new version of Bootstrap, but fret not, for that void comes to a most excellent halt tonight. After numerous delays, including a bout with the flu, we're happy to announce the release of [Bootstrap 2.3]({{< param "main" >}}/).
+It has been far too long, friends. Nearly three months has gone by since we pushed out a new version of Bootstrap, but fret not, for that void comes to a most excellent halt tonight. After numerous delays, including a bout with the flu, we're happy to announce the release of [Bootstrap 2.3](https://getbootstrap.com/).
 
 ## Oh shit what
 
@@ -38,7 +39,7 @@ As always, you can see a more complete list of changes by viewing the [2.3.0 mil
 
 ## A note on tooltips
 
-When we [released 2.2.2]({{< relref "/posts/2012/bootstrap-2-2-2-released" >}}), we changed the insertion strategy for tooltips and popovers. Instead of appending to the `<body>` by default, they used `insertAfter`. This change fixed number `z-index` issues and ultimately makes controlling and styling tooltips much easier for folks.
+When we [released 2.2.2](/2012/12/08/bootstrap-2-2-2-released/), we changed the insertion strategy for tooltips and popovers. Instead of appending to the `<body>` by default, they used `insertAfter`. This change fixed number `z-index` issues and ultimately makes controlling and styling tooltips much easier for folks.
 
 Unfortunately, this also resulted in a few bugs, namely breaking input groups by interfering with [adjacent CSS selectors](https://css-tricks.com/child-and-sibling-selectors/). Instead of reverting the insertion method, **we've added a new `container` option**. If you run into a situation where `insertAfter` doesn't work for you, go ahead and set that option to whatever element works best for you.
 

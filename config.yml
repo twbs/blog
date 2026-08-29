@@ -1,0 +1,18 @@
+title:                  "Bootstrap Blog"
+baseURL:                "https://blog.getbootstrap.com"
+
+description:            "Official blog for the Bootstrap framework."
+author:                 "Mark Otto"
+
+docs_version:           "6.0"
+main:                   "https://getbootstrap.com"
+github_org:             "https://github.com/twbs"
+repo:                   "https://github.com/twbs/blog"
+x:                      "getbootstrap"
+blog:                   "https://blog.getbootstrap.com/"
+icons:                  "https://icons.getbootstrap.com/"
+opencollective:         "https://opencollective.com/bootstrap"
+swag:                   "https://cottonbureau.com/people/bootstrap"
+
+analytics:
+  fathom_site:          "ITUSEYJG"

@@ -2,6 +2,7 @@
 author: mdo
 date: "2014-06-09T00:00:00Z"
 title: Bootstrap now available via npm
+category: Community
 video: z33tH-JdPDg
 ---
 

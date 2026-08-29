@@ -1,0 +1,9 @@
+# Pagefind CLI configuration
+# https://pagefind.app/docs/config-options/
+
+site: dist
+
+# Index code-ish characters that show up in release notes so users can search
+# for things like `$primary`, `--bs-primary`, or `<head>` without them being
+# stripped at index time.
+include_characters: "$&-_<>:."

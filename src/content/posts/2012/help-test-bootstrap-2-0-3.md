@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-04-15T00:00:00Z"
 title: Help test Bootstrap 2.0.3
+category: Community
 keywords:
   - bootstrap
 ---

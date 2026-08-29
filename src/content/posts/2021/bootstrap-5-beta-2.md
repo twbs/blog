@@ -2,6 +2,7 @@
 author: mdo
 date: "2021-02-10T11:00:00Z"
 title: Bootstrap 5 Beta 2
+category: Release
 video: pUj9frKY46E
 keywords:
   - bootstrap
@@ -92,4 +93,4 @@ Our v5 Beta 3 will continue to focus on JavaScript issues and documentation impr
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

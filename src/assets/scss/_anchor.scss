@@ -1,0 +1,35 @@
+@layer custom {
+  // Docs-style hash links appended to post headings by rehype-autolink-headings.
+  // The link text is a single space; the visible "#" comes from ::after, and it
+  // only reveals on heading hover, link focus, or when the section is targeted.
+  .anchor-link {
+    padding: 0 .175rem;
+    font-weight: 400;
+    color: color-mix(in srgb, var(--bs-link-color), transparent 50%);
+    text-decoration: none;
+    opacity: 0;
+    transition: color .15s ease-in-out, opacity .15s ease-in-out;
+
+    &::after {
+      content: "#";
+    }
+
+    &:focus,
+    &:hover,
+    :hover > &,
+    :target > & {
+      text-decoration: none;
+      opacity: 1;
+    }
+
+    &:focus,
+    &:hover {
+      color: var(--bs-link-color);
+    }
+  }
+
+  // Keep a targeted heading clear of the sticky navbar when jumped to via hash.
+  .prose :is(h2, h3, h4, h5) {
+    scroll-margin-top: 5rem;
+  }
+}

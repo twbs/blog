@@ -2,6 +2,7 @@
 author: mdo
 date: "2014-02-25T00:00:00Z"
 title: Introducing Ratchet 2
+category: Community
 video: vimZj8HW0Kg
 ---
 

@@ -2,6 +2,7 @@
 author: mdo
 date: "2018-04-30T00:00:00Z"
 title: Bootstrap 4.1.1
+category: Release
 video: 9jNt7ZGCW-o
 keywords:
   - bootstrap

@@ -2,6 +2,7 @@
 author: mdo
 date: "2022-05-13T00:01:00Z"
 title: Bootstrap Icons v1.8.2
+category: Icons
 video: dKJfJMMsqX4
 keywords:
   - icons

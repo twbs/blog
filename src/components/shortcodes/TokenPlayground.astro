@@ -1,0 +1,121 @@
+---
+import Code from './Code.astro'
+
+// Both controls move two steps of their scale rather than one, which is what
+// changing the Sass base value does: `--radius-7` is `$radius * 1.5` and
+// `--spacer-5` is `$spacer * 1.25` in scss/_config.scss. The components below
+// read `--radius-5` and `--spacer` (button, input, alert) or `--radius-7` and
+// `--spacer-5` (card), so driving both makes the whole group move together.
+const css = `.token-demo {
+  --bs-radius-5: 0.5rem;
+  --bs-spacer: 1rem;
+}`
+---
+
+<div class="bd-playground not-prose" data-token-playground>
+  <div class="bd-playground-controls bg-1 p-3 fs-sm">
+    <div class="d-flex flex-wrap gap-4 align-items-end">
+      <div class="vstack gap-1 flex-grow-0">
+        <label class="form-label fw-semibold mb-0" for="bd-token-radius">
+          Radius <span class="fg-3 font-monospace fs-xs" data-radius-label>0.5rem</span>
+        </label>
+        <input
+          type="range"
+          class="form-range"
+          id="bd-token-radius"
+          min="0"
+          max="1.5"
+          step="0.125"
+          value="0.5"
+          data-control="radius"
+        />
+      </div>
+
+      <div class="vstack gap-1 flex-grow-0">
+        <label class="form-label fw-semibold mb-0" for="bd-token-spacer">Spacer</label>
+        <select class="form-control form-control-sm" id="bd-token-spacer" data-control="spacer">
+          <option value="0.75">0.75rem</option>
+          <option value="1" selected>1rem</option>
+          <option value="1.25">1.25rem</option>
+          <option value="1.5">1.5rem</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="bd-example-snippet bd-code-snippet">
+    <div class="bd-example">
+      <div class="token-demo vstack gap-3" data-token-target>
+        <div class="d-flex flex-wrap gap-2 align-items-center">
+          <button type="button" class="btn-solid theme-primary">Button</button>
+          <input type="text" class="form-control w-auto" value="Input" aria-label="Example input" />
+        </div>
+
+        <div class="alert theme-info mb-0">A token change reaches every component at once.</div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title fs-md mb-1">Card</h3>
+            <p class="card-text mb-0 fs-sm">Padding follows the spacer, corners follow the radius.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Code code={css} lang="css" />
+  </div>
+</div>
+
+<script>
+  const playground = document.querySelector<HTMLElement>('[data-token-playground]')
+
+  if (playground) {
+    const target = playground.querySelector<HTMLElement>('[data-token-target]')
+    const radiusInput = playground.querySelector<HTMLInputElement>('[data-control="radius"]')
+    const spacerSelect = playground.querySelector<HTMLSelectElement>('[data-control="spacer"]')
+    const radiusLabel = playground.querySelector<HTMLElement>('[data-radius-label]')
+    const code = playground.querySelector<HTMLElement>('.astro-code')
+
+    // Shiki splits a CSS length into a number span and a unit span, so find the
+    // number on the line declaring the given property and rewrite just that.
+    function valueSpan(property: string) {
+      const line = [...(code?.querySelectorAll<HTMLElement>('.line') ?? [])].find(candidate =>
+        candidate.textContent?.includes(property)
+      )
+
+      return [...(line?.querySelectorAll<HTMLElement>('span') ?? [])].find(span =>
+        /^\s*[\d.]+$/.test(span.textContent ?? '')
+      )
+    }
+
+    const radiusSpan = valueSpan('--bs-radius-5')
+    const spacerSpan = valueSpan('--bs-spacer')
+
+    function update() {
+      const radius = Number(radiusInput?.value ?? 0.5)
+      const spacer = Number(spacerSelect?.value ?? 1)
+
+      target?.style.setProperty('--bs-radius-5', `${radius}rem`)
+      target?.style.setProperty('--bs-radius-7', `${radius * 1.5}rem`)
+      target?.style.setProperty('--bs-spacer', `${spacer}rem`)
+      target?.style.setProperty('--bs-spacer-5', `${spacer * 1.25}rem`)
+
+      if (radiusLabel) {
+        radiusLabel.textContent = `${radius}rem`
+      }
+
+      if (radiusSpan) {
+        radiusSpan.textContent = ` ${radius}`
+      }
+
+      if (spacerSpan) {
+        spacerSpan.textContent = ` ${spacer}`
+      }
+    }
+
+    radiusInput?.addEventListener('input', update)
+    spacerSelect?.addEventListener('change', update)
+
+    update()
+  }
+</script>

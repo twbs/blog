@@ -1,0 +1,169 @@
+---
+import { replacePlaceholdersInHtml } from '../../libs/placeholder'
+import Code from './Code.astro'
+
+interface Props {
+  /** The example markup. Arrays are joined with newlines. */
+  code: string | string[]
+  /** CSS class(es) for the resizable container. */
+  class?: string
+  /**
+   * Span the full measure of the post rather than the narrower text track, for
+   * examples that need the extra room.
+   * @default false
+   */
+  full?: boolean
+  /**
+   * Starting width of the resizable container.
+   * @default '100%'
+   */
+  initialWidth?: string
+  /**
+   * Smallest width the container can be dragged to.
+   * @default '200px'
+   */
+  minWidth?: string
+  /**
+   * Show a badge naming the container query breakpoint currently in effect.
+   * @default false
+   */
+  showBreakpoint?: boolean
+  /**
+   * Show the source below the preview.
+   * @default true
+   */
+  showMarkup?: boolean
+  /**
+   * Put the source behind a toggle that starts collapsed, for examples whose
+   * markup is long enough to bury whatever follows.
+   * @default false
+   */
+  toggleMarkup?: boolean
+}
+
+const {
+  code,
+  class: className,
+  full = false,
+  initialWidth = '100%',
+  minWidth = '200px',
+  showBreakpoint = false,
+  showMarkup = true,
+  toggleMarkup = false
+} = Astro.props
+
+const markup = replacePlaceholdersInHtml(Array.isArray(code) ? code.join('\n') : code)
+
+// The container needs `overflow: hidden` for the CSS resize handle to work,
+// which clips menus when they open. Position them fixed in the preview only so
+// they can spill outside; the source listing below is left untouched.
+const previewMarkup = markup.replace(
+  /data-bs-toggle="menu"(?![^>]*\bdata-bs-strategy=)/g,
+  'data-bs-toggle="menu" data-bs-strategy="fixed"'
+)
+
+const sourceMarkup = markup.replace(
+  /<svg[^>]*class="bd-placeholder-img ?([^"]*)"[\s\S]*?<\/svg>/g,
+  (_match, classes: string) => `<img src="..."${classes ? ` class="${classes}"` : ''} alt="...">`
+)
+---
+
+<div
+  class:list={['bd-example-snippet bd-code-snippet not-prose', { 'bd-full': full }]}
+  data-pagefind-ignore
+>
+  <div class="bd-example bd-example-resizable bg-1 overflow-visible rounded-top-5">
+    <div
+      class:list={['bd-resizable-container bg-body border border-keyline shadow-xs mx-auto', className]}
+      style={`width: ${initialWidth}; min-width: ${minWidth};`}
+    >
+      <Fragment set:html={previewMarkup} />
+      {showBreakpoint && <output class="bd-resizable-badge" data-resizable-badge aria-live="polite" />}
+    </div>
+  </div>
+  {
+    showMarkup &&
+      (toggleMarkup ? (
+        <details class="bd-code-collapse">
+          <summary>
+            <svg
+              class="bd-code-collapse-icon"
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m2 5 6 6 6-6" />
+            </svg>
+            <span class="bd-code-collapse-show">Show markup</span>
+            <span class="bd-code-collapse-hide">Hide markup</span>
+          </summary>
+          <Code code={sourceMarkup} />
+        </details>
+      ) : (
+        <Code code={sourceMarkup} />
+      ))
+  }
+</div>
+
+<script>
+  // Breakpoints mirror `$breakpoints` in Bootstrap 6's scss/_config.scss.
+  // Container queries resolve against the content-box inline size of the
+  // nearest query container, so that's what gets measured.
+  const breakpoints = [
+    { name: 'xs', min: 0 },
+    { name: 'sm', min: 576 },
+    { name: 'md', min: 768 },
+    { name: 'lg', min: 1024 },
+    { name: 'xl', min: 1280 },
+    { name: '2xl', min: 1536 }
+  ]
+
+  function activeBreakpoint(width: number) {
+    return breakpoints.reduce((active, breakpoint) => (width >= breakpoint.min ? breakpoint : active), breakpoints[0])
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-resizable-badge]').forEach(badge => {
+    const container = badge.closest<HTMLElement>('.bd-resizable-container')
+
+    if (!container) {
+      return
+    }
+
+    // Measure the query container itself when the example nests one, so the
+    // badge agrees with what `@container` evaluates.
+    const target = container.querySelector<HTMLElement>(':scope > *:not(.bd-resizable-badge)') ?? container
+
+    const observer = new ResizeObserver(entries => {
+      for (const entry of entries) {
+        const width = entry.contentBoxSize?.[0]?.inlineSize ?? entry.contentRect.width
+        const breakpoint = activeBreakpoint(width)
+
+        badge.dataset.breakpoint = breakpoint.name
+        badge.textContent = `${breakpoint.name} · ${Math.round(width)}px`
+      }
+    })
+
+    observer.observe(target, { box: 'content-box' })
+  })
+
+  // Nav overflow injects its "More" toggle after init, so the compile-time
+  // `data-bs-strategy="fixed"` rewrite never sees it. Stamp the attribute on
+  // any menu toggle inside a resizable plate so Floating UI uses `position:
+  // fixed` and the menu can paint past `overflow: hidden` (required for resize).
+  function pinMenuStrategy(root: ParentNode) {
+    root.querySelectorAll<HTMLElement>('[data-bs-toggle="menu"]:not([data-bs-strategy])').forEach(toggle => {
+      toggle.setAttribute('data-bs-strategy', 'fixed')
+    })
+  }
+
+  document.querySelectorAll<HTMLElement>('.bd-resizable-container').forEach(container => {
+    pinMenuStrategy(container)
+    new MutationObserver(() => pinMenuStrategy(container)).observe(container, { childList: true, subtree: true })
+  })
+</script>

@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PostList from '../components/PostList.astro'
+import { getPostsForPage, totalPages } from '../libs/content'
+---
+
+<BaseLayout title="Bootstrap Blog" wide>
+  <div class="my-5">
+    <PostList posts={getPostsForPage(1)} currentPage={1} totalPages={totalPages} />
+  </div>
+</BaseLayout>

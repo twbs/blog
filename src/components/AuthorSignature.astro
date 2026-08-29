@@ -1,0 +1,18 @@
+---
+import { getAuthor } from '../libs/authors'
+
+interface Props {
+  author: string
+}
+
+const { author } = Astro.props
+const { name, role } = getAuthor(author)
+---
+
+<div class="post-signature">
+  <hr class="post-signature-rule">
+  <p>
+    <a href={`https://github.com/${author}`} target="_blank" rel="noopener">{name}</a>{role && ','}
+    {role && <Fragment><br>{role}</Fragment>}
+  </p>
+</div>
