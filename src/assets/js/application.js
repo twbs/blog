@@ -7,15 +7,17 @@ const btnHtml = [
   '<div class="bd-code-snippet">',
   '  <div class="bd-clipboard">',
   `    <button type="button" class="btn-clipboard" title="${btnTitle}">`,
-  '      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>',
+  '      <svg class="bi" role="img" aria-label="Copy"><use href="#clipboard"/></svg>',
   '    </button>',
   '  </div>',
   '</div>'
 ].join('')
 
-document.querySelectorAll('.highlight')
+// Shiki emits `.astro-code`. Example shortcodes ship their own copy button, so
+// skip anything already inside a snippet wrapper.
+document.querySelectorAll('.astro-code')
   .forEach(element => {
-    if (!element.closest('.bd-example-snippet')) {
+    if (!element.closest('.bd-example-snippet, .bd-code-snippet')) {
       element.insertAdjacentHTML('beforebegin', btnHtml)
       element.previousElementSibling.append(element)
     }
@@ -40,15 +42,14 @@ window.addEventListener('load', () => {
 })
 
 const clipboard = new ClipboardJS('.btn-clipboard', {
-  target: trigger => trigger.closest('.bd-code-snippet').querySelector('.highlight'),
-  text: trigger => trigger.closest('.bd-code-snippet').querySelector('.highlight').textContent.trimEnd()
+  target: trigger => trigger.closest('.bd-code-snippet').querySelector('.astro-code'),
+  text: trigger => trigger.closest('.bd-code-snippet').querySelector('.astro-code').textContent.trimEnd()
 })
 
 clipboard.on('success', event => {
   const iconFirstChild = event.trigger.querySelector('.bi').firstElementChild
   const tooltipBtn = Tooltip.getInstance(event.trigger)
-  const namespace = 'http://www.w3.org/1999/xlink'
-  const originalXhref = iconFirstChild.getAttributeNS(namespace, 'href')
+  const originalHref = iconFirstChild.getAttribute('href')
   const originalTitle = event.trigger.title
 
   tooltipBtn.setContent({ '.tooltip-inner': 'Copied!' })
@@ -56,10 +57,10 @@ clipboard.on('success', event => {
     tooltipBtn.setContent({ '.tooltip-inner': btnTitle })
   }, { once: true })
   event.clearSelection()
-  iconFirstChild.setAttributeNS(namespace, 'href', originalXhref.replace('clipboard', 'check2'))
+  iconFirstChild.setAttribute('href', originalHref.replace('clipboard', 'check2'))
 
   setTimeout(() => {
-    iconFirstChild.setAttributeNS(namespace, 'href', originalXhref)
+    iconFirstChild.setAttribute('href', originalHref)
     event.trigger.title = originalTitle
   }, 2000)
 })

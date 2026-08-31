@@ -24,13 +24,13 @@ function listPosts(dir: string): string[] {
       return listPosts(full)
     }
 
-    return entry.name.endsWith('.md') && !entry.name.startsWith('_') ? [full] : []
+    return /\.mdx?$/.test(entry.name) && !entry.name.startsWith('_') ? [full] : []
   })
 }
 
 /**
- * Rebuilds the redirects that Hugo used to generate from `aliases` frontmatter,
- * keeping historical post URLs alive.
+ * Builds redirects from `aliases` frontmatter so historical post URLs stay
+ * alive after the move from Hugo.
  */
 export function getAliasRedirects(): Record<string, string> {
   const redirects: Record<string, string> = {}
@@ -46,7 +46,7 @@ export function getAliasRedirects(): Record<string, string> {
     const year = date.getUTCFullYear()
     const month = String(date.getUTCMonth() + 1).padStart(2, '0')
     const day = String(date.getUTCDate()).padStart(2, '0')
-    const name = path.basename(file, '.md')
+    const name = path.basename(file).replace(/\.mdx?$/, '')
     const target = `/${year}/${month}/${day}/${name}/`
 
     for (const alias of data.aliases) {

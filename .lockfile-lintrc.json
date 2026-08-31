@@ -1,9 +1,12 @@
 {
   "allowed-hosts": [
-    "npm"
+    "npm",
+    "github.com"
   ],
   "allowed-schemes": [
-    "https:"
+    "https:",
+    "git+https:",
+    "git+ssh:"
   ],
   "empty-hostname": false,
   "type": "npm",

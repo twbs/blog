@@ -51,16 +51,6 @@ export default [
   },
   {
     files: [
-      'scripts/**'
-    ],
-    languageOptions: {
-      globals: {
-        ...globals.nodeBuiltin
-      }
-    }
-  },
-  {
-    files: [
       '**/*.cjs'
     ],
     languageOptions: {

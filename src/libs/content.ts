@@ -26,8 +26,8 @@ export function getPostSlug(post: Post): string {
   const month = String(date.getUTCMonth() + 1).padStart(2, '0')
   const day = String(date.getUTCDate()).padStart(2, '0')
 
-  // post.id is like "2025/bootstrap-5-3-8.md" - extract filename without extension
-  const filename = post.id.replace(/^.*\//, '').replace(/\.md$/, '')
+  // post.id is like "2025/bootstrap-5-3-8" — the glob loader already strips the extension
+  const filename = post.id.replace(/^.*\//, '')
 
   return `${year}/${month}/${day}/${filename}`
 }
