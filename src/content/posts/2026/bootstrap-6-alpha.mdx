@@ -7,6 +7,7 @@ major: true
 keywords:
   - bootstrap
   - release
+banner: /assets/img/2026/09/bootstrap-v6-alpha-social.png
 ---
 
 import Example from '../../../components/shortcodes/Example.astro'
@@ -19,7 +20,7 @@ import PostSeries from '../../../components/shortcodes/PostSeries.astro'
 
 Today we’re releasing the first alpha version of Bootstrap 6, a major overhaul to the project that modernizes and expands one of the most prolific open source design systems of all time. It’s been incredibly fun and rewarding to work on this over the past year, and I’m excited to share it with you.
 
-Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards. We’ve broken this post into separate entries that we'll publish daily, starting with an overview of v6 and a spotlight on our new Sass & CSS implementation.
+Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards. We’ve broken this post into separate entries that we'll publish one-by-one, starting with an overview of v6 and a spotlight on our new Sass & CSS implementation.
 
 <PostSeries current="alpha" />
 
@@ -77,25 +78,36 @@ Then read our [Install](https://getbootstrap.com/docs/6.0/getting-started/instal
 
 ## Modern browser support
 
+<div class="d-flex justify-content-center gap-5 md:gap-7 py-7 my-3 bg-1 rounded-7 text-center">
+  <div class="d-flex flex-column justify-content-center gap-2">
+    <img src="/assets/img/2026/09/chrome.svg" alt="Chrome" width="56" height="56" />
+    130+
+  </div>
+  <div class="d-flex flex-column justify-content-center gap-2">
+    <img src="/assets/img/2026/09/edge.svg" alt="Edge" width="56" height="56" />
+    130+
+  </div>
+  <div class="d-flex flex-column justify-content-center gap-2">
+    <img src="/assets/img/2026/09/firefox.svg" alt="Firefox" width="56" height="56" />
+    132+
+  </div>
+  <div class="d-flex flex-column justify-content-center gap-2">
+    <img src="/assets/img/2026/09/safari.svg" alt="Safari" width="56" height="56" />
+    18+
+  </div>
+</div>
+
 **Bootstrap 6 requires Chrome and Edge 130, Firefox 132, and Safari 18.** For comparison, v5 supported browsers as far back as Chrome and Firefox 60 and Safari 12. This new support floor is because we're building with browser features that weren’t available a few years ago: `light-dark()`, `:has()`, container queries, `oklch()`, `color-mix()`, the native `<dialog>` element, and more. This means v6 includes no fallbacks, prefixes, or polyfills below that floor.
 
+This doesn’t get us features like CSS Anchor Positioning, full pretty text support, or contrast color in Safari yet, but we expect to have a v7 sooner than our past major releases.
+
 Bootstrap 5 remains available and supported if that floor doesn’t work for your project. v5.4.0 will be released as soon as we can before we share an end of life date for Bootstrap 5.
-
-## Architecture changes
-
-Due to the overall modernization of Bootstrap in v6, there are a few architectural changes to our source Sass and JavaScript, as well as our docs.
-
-- Older versions of Sass are no longer supported within Bootstrap.
-
-- Sass files have been reorganized, and several Sass files have been removed given the change to CSS variables for all visual customization, automatic color-mode adaptivity via `light-dark()`, and more. We've also cleaned up the shenanigans around the `_maps.scss` file, which is no more.
-
-- Source JavaScript is now written in TypeScript. Our JavaScript plugins are now ESM-only, and there’s no trace of jQuery anymore—not even a shim.
 
 ## Spotlight: CSS-first Sass modules
 
 Updating Bootstrap to use Sass modules was a massive undertaking that couldn't happen in v5 without some breaking changes. So we went big in v6.
 
-Bootstrap 6 uses the `@use`/`@forward` module system, and customization now happens via **token maps**. Sass is still used for _programmatic_ customization (generating component variants, utilities, functions, etc), while all _visual_ customization happens with CSS.
+Bootstrap 6 uses the `@use`/`@forward` module system, and **customization now happens via token maps**. Sass is still used for _programmatic_ customization (generating component variants, utilities, functions, etc), while all _visual_ customization happens with CSS.
 
 **Token maps** are Sass maps that house all our CSS variables for both global settings in `:root` and on our individual components. This normalizes the path to customizing and focuses Bootstrap on the future of CSS, with a strong preprocessor foundation for managing large codebases. Nearly every Sass variable from v5 is now a CSS variable in a token map. This also means you can customize Bootstrap's CSS variables at runtime, rather than just before compilation.
 
@@ -124,7 +136,7 @@ $alert-tokens: defaults(
 
 Practically speaking, this means that virtually all our Sass variables from v5 are now CSS variables in a token map. The handful of remaining global Sass options now live in `_config.scss`, `_colors.scss`, and `_theme.scss`.
 
-At the `:root` level where we emit the most tokens programmatically through additional Sass functions:
+At the `:root` level where we emit the most tokens programmatically with Sass functions:
 
 ```scss
 $root-tokens: () !default;
@@ -169,32 +181,35 @@ Import Bootstrap via `@use ... with` and start modifying un-namespaced token map
 
 Notice that the tokens have no `bs` prefix here. In v5 the prefix was a Sass variable, `$prefix`, threaded through every declaration. In v6 we write custom properties unprefixed in the source and add the namespace with PostCSS at build time, so `$prefix` is gone and you configure the prefix in your PostCSS config instead.
 
-The `$radius` line is worth calling out too. Our radius scale is derived from a single base value, so changing that one number moves all ten steps together and every component that reads them follows. Same story for `$spacer` and the spacing scale.
+The `$radius` line is worth calling out, too. Our radius scale is derived from a single base value, so changing that one number moves all ten steps together and every component that reads them follows. Same story for `$spacer` and the spacing scale.
 
 This gives us the most flexible system possible using both Sass and CSS, with the advantage of customizing either before or after compilation. Update global tokens in the browser, and downstream components update in real time. This is a massive improvement over v5’s hybrid Sass-CSS system, and one I hope you’ll love.
 
 <TokenPlayground />
 
-### Prefixes instead of infixes
+## Prefixes
 
-This is the most visible breaking change in v6. Responsive and state modifiers moved from an infix or suffix to a prefix, the way Tailwind and most newer libraries do it:
+A super obvious and breaking change in v6 is moving from the infix to a prefix for our responsive utilities and component variants. Yes, this is a direct copy of how Tailwind does responsive, and yes, it’s better than what felt like a randomly positioned infix in v5.
+
+Here’s a look at the before and after on some Bootstrap classes:
 
 - `.d-md-none` is now `.md:d-none`
 - `.col-lg-6` is now `.lg:col-6`
 - `.opacity-50-hover` is now `.hover:opacity-50`
-- `.d-print-none` is now `.print:d-none`
+- `.justify-content-md-end` is now `.md:justify-content-end`
+- `.offcanvas-md` is now `.md:drawer` (rename intentional)
 
-It’s a costly change, since it touches nearly every line of markup in a v5 project, but it earns that cost two ways. One rule now covers everything—breakpoints, pseudo-class states, print, and dark mode all read the same way, instead of each having its own placement convention. And the modifier comes first, so the condition reads before the effect: at `md`, don’t display.
+This change applies to all utilities, components, grid layouts, and more. It also include state modifiers like `:hover`, `:focus`, etc. Same ergonomics for all of them.
 
-The change is broad. It applies to utilities, grid columns, row columns, offsets, gutters, CSS grid, containers, navbar, drawer, tables, list groups, sticky helpers, stacks, dialog sizes, and print variants.
+If you have custom Sass built on our breakpoint helpers, `breakpoint-infix()` is now `breakpoint-prefix()` and returns a prefix string, and the `loop-breakpoints-up` and `loop-breakpoints-down` mixins expose `$prefix` instead of `$infix`.
 
-In markup, write the colon unescaped: `class="md:d-none"`. The backslash in the compiled CSS (`.md\:d-none`) is only how CSS escapes a colon in a selector, and never appears in your HTML.
+## Modernizing
 
-If you have custom Sass built on our breakpoint helpers, `breakpoint-infix()` is now `breakpoint-prefix()` and returns a prefix string, and the `loop-breakpoints-up` and `loop-breakpoints-down` mixins expose `$prefix` instead of `$infix`. The [migration guide](https://getbootstrap.com/docs/6.0/guides/migration) has a full before-and-after table for every affected class.
+Bootstrap 6 has been overhauled to use as many of the latest browser-native features as possible, alongside updated build tooling. This makes Bootstrap more accessible, easier to customize, and primed for future browser updates. Alongside that, we’ve rewritten our source Sass around the modern module system and newer versions of Dart Sass. `@import` is deprecated and no longer supported for customization; use `@use` and `@forward` instead.
 
-### Modernized tech stack
+Sass files have also been reorganized, and several Sass files have been removed given the change to CSS variables for all visual customization, automatic color-mode adaptivity via `light-dark()`, and more. We've also cleaned up the shenanigans around the `_maps.scss` file, `_variables.scss` and `_variables-dark.scss`, both of which are no more.
 
-Bootstrap 6 has been overhauled to use as many of the latest browser-native features as possible. This makes Bootstrap more accessible, easier to customize, and primed for future browser updates. On the HTML and CSS side of things, some highlights include:
+On the HTML and CSS side of things, some highlights include:
 
 - **CSS layers** for predictable specificity across the entire framework, including `utilities` as the top-most layer.
 - **oklch() colors** and **color-mix()** for perceptually uniform, themeable color palettes that automatically adjust to base color changes.
@@ -205,30 +220,29 @@ Bootstrap 6 has been overhauled to use as many of the latest browser-native feat
 - **Native `<dialog>`** element behind the new Dialog component
 - `:where()` selector to reduce specificity in complex selectors
 - **`content-visibility` with `allow-discrete` transitions**, plus `interpolate-size` and the `::details-content` pseudo-element, so the accordion animates open and closed in pure CSS. Height animation on a disclosure widget used to mean measuring elements in JavaScript.
-- **`@property`** to register the custom properties our utility API composes, so they’re typed and don’t inherit into children.
+- **`@property`** to register the custom properties composed by our utility API as non-inheriting, preventing their values from leaking into children.
 
 On the JS and tooling side:
 
-- **ESM-only plugins.** There’s no UMD bundle and no `window.bootstrap` global anymore. What this means for you depends entirely on how you use our JavaScript, so here are the three cases. If you only use data attributes like `data-bs-toggle`, add `type="module"` to your script tag and you’re done—everything else keeps working. If you call our APIs from a CDN build, switch to an explicit import: `import { Tooltip } from './bootstrap.bundle.min.js'`. And if you use a bundler like Vite, Webpack, or Parcel, nothing changes at all—`import { Tooltip } from 'bootstrap'` works as before, and now tree shakes properly thanks to `sideEffects` metadata in `package.json`.
+- **ESM-only plugins.** There’s no UMD bundle and no `window.bootstrap` global anymore. What this means for you depends entirely on how you use our JavaScript, so here are the three cases.
+  - If you only use data attributes like `data-bs-toggle`, add `type="module"` to your script tag and you’re done—everything else keeps working.
+  - If you call our APIs from a CDN build, switch to an explicit import: `import { Tooltip } from './bootstrap.bundle.min.js'`.
+  - For modern ESM-based bundlers like Vite, Webpack, or Parcel, existing imports continue to work—`import { Tooltip } from 'bootstrap'` now tree shakes correctly while `sideEffects` metadata preserves Data API listeners. Projects using CommonJS `require()` must migrate to ESM imports.
 - **TypeScript.** Our source is `.ts` now, and we ship our own type declarations, so you can delete `@types/bootstrap` from your dependencies. Deep imports like `bootstrap/js/src/alert.js` still resolve.
-- **Rolldown**, which replaced both Rollup and Babel. It strips the types and lowers the syntax itself, so an entire layer of build tooling left the repo. This only matters if you build Bootstrap from source, but it made our own builds dramatically faster.
+- **Rolldown** replaces both Rollup and Babel in our tooling. It strips TypeScript types and lowers syntax itself, removing an entire layer of build tooling from the repo. This only affects you if you build Bootstrap from source.
 - **Vitest** running in real Chromium through Playwright, which replaced Karma.
-- **Astro 7** for the docs, which also let us break the sprawling utilities pages into smaller focused ones.
-
-One plugin got a full rewrite worth calling out: **ScrollSpy**. It no longer polls scroll position. Instead it uses `IntersectionObserver` with a single activation line, so the highlighted section is always the one you’re actually reading, including at the very top and bottom of a page where the old implementation used to get confused. There’s a new `topMargin` option to move that line below a sticky navbar, and with smooth scrolling on, clicking a link now restores the URL hash and moves focus to the target section—so it works for keyboard and screen reader users too, not just mouse users.
+- **Astro 7** for the docs, which have a new search experience with Pagefind, new pages, and updated navigation and layout.
 
 ## Built for humans and agents
 
-Bootstrap 6 ships resources built for large language models and agentic coding tools, not just for people reading docs in a browser.
+Bootstrap 6 includes LLM-friendly documentation and skill files for all your agentic coding needs.
 
-Our documentation is now available in a machine-readable format following the [llms.txt](https://llmstxt.org/) convention. [`llms.txt`](https://getbootstrap.com/llms.txt) is a curated index of every documentation page with descriptions, and [`llms-full.txt`](https://getbootstrap.com/llms-full.txt) is the entire documentation set concatenated into one file for direct ingestion. No scraping, and no guessing which pages matter.
+To be more efficient with agents, we have text-only versions of our documentation. [`llms.txt`](https://getbootstrap.com/llms.txt) is a curated index of every documentation page with descriptions while [`llms-full.txt`](https://getbootstrap.com/llms-full.txt) is all of our documentation concatenated into one file.
 
-Alongside those are **skills**. The repo has a `skills/` directory where each `SKILL.md` is a focused, step-by-step playbook for one Bootstrap task—installing v6, setting up Vite or Webpack or Parcel, authoring a component, extending the utility API, or working with the color system. Point an agent at the relevant file and it follows our current guidance rather than whatever it absorbed about older versions during training, which matters more than usual right now: v6 renamed or removed most of the class names a model has memorized.
-
-The one to start with is `bootstrap-v5-v6-migration`. It walks an agent through the upgrade in phases—dependencies, then class and attribute renames, then component restructuring, then JavaScript, then Sass—and there’s a `bootstrap-v4-v6-migration` for the longer jump. The reasoning is straightforward: v6 has a large number of mechanical renames, often thousands of class names across a project, all following consistent rules. That’s tedious and error-prone work by hand, and well-suited to an agent.
-
-Review what an agent produces against the [migration guide](https://getbootstrap.com/docs/6.0/guides/migration), the same way you’d review any pull request.
+Skills files have been added to the repository [in a new `skills/` directory](https://github.com/twbs/bootstrap/tree/main/skills). Skills are playbooks for specific tasks, in this case for working with Bootstrap 6. To start, we’ve drafted skill files for migrating to v6, using Bootstrap with different build tools, authoring components, and more. Point your agent at the relevant file and it’ll follow the correct guidance from us maintainers instead of anything potentially outdated or incorrect.
 
 ## What’s next
 
-This is an alpha, so APIs can still change before beta. There will be more alphas before we start stabilizing, the grid system is the largest open question, and some APIs will shift as people put real projects through this. Feedback now is worth far more than feedback after a stable release.
+This is an alpha, so things can still meaningfully change before beta. There will be more alphas before we start stabilizing through the beta and RC stages. Share any and all feedback you have and we’ll do our best to address.
+
+Thanks again to everyone who contributed, thanks for reading, and we hope you love Bootstrap 6!
