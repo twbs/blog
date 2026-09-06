@@ -353,11 +353,29 @@
   // as one unit.
   .bd-playground {
     margin-bottom: 1rem;
+    overflow: visible;
   }
 
   .bd-playground-controls {
+    position: relative;
+    z-index: 2;
+    overflow: visible;
     border: solid var(--bs-border-color);
     border-width: 1px 0;
+  }
+
+  .bd-token-swatch {
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0;
+    background-clip: padding-box;
+    border: 1px solid color-mix(in oklch, var(--bs-fg-body) 18%, transparent);
+    border-radius: var(--bs-radius-3);
+
+    &.selected {
+      outline: 2px solid var(--bs-fg-body);
+      outline-offset: 2px;
+    }
   }
 
   .bd-playground .bd-example-snippet {
