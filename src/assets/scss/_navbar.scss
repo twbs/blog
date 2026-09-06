@@ -2,6 +2,11 @@
 @use "bootstrap/scss/layout/breakpoints" as *;
 
 @layer custom {
+  :root {
+    // Where content has to start to clear the sticky navbar.
+    --bd-navbar-offset: 5rem;
+  }
+
   .bd-navbar {
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: .75rem;

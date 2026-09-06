@@ -30,6 +30,6 @@
 
   // Keep a targeted heading clear of the sticky navbar when jumped to via hash.
   .prose :is(h2, h3, h4, h5) {
-    scroll-margin-top: 5rem;
+    scroll-margin-top: var(--bd-navbar-offset);
   }
 }

@@ -5,6 +5,7 @@ import AuthorInfo from '../components/AuthorInfo.astro'
 import AuthorSignature from '../components/AuthorSignature.astro'
 import PostMedia from '../components/PostMedia.astro'
 import Ads from '../components/Ads.astro'
+import TableOfContents from '../components/TableOfContents.astro'
 import {
   allPosts,
   sortedPosts,
@@ -15,6 +16,7 @@ import {
   formatDateISO,
   type Post
 } from '../libs/content'
+import { getPostToc } from '../libs/toc'
 import { getPostSocialCard } from '../libs/social'
 
 // Drafts are dev-only: `astro dev` builds pages for them so they can be
@@ -29,10 +31,19 @@ export function getStaticPaths() {
 }
 
 const { post } = Astro.props
-const { Content } = await render(post)
+const { Content, headings } = await render(post)
 const date = new Date(post.data.date)
 const subtitle = post.data.description
 const readingTime = getReadingTime(post)
+const toc = getPostToc(headings)
+
+// Align the activation line with the sticky navbar offset so a heading
+// highlights right as it settles below the navbar, plus a small epsilon. A
+// fixed px value avoids the viewport-height drift of a percentage top margin.
+const bodyAttrs =
+  toc.length > 0
+    ? { 'data-bs-spy': 'scroll', 'data-bs-target': '#TableOfContents', 'data-bs-top-margin': '84px' }
+    : undefined
 
 // Related posts: find 3 posts with overlapping keywords, sorted by date
 const keywords = post.data.keywords || []
@@ -56,6 +67,7 @@ const related = scored
   card={getPostSocialCard(post)}
   extraJs={post.data.extra_js}
   robots={post.data.draft ? 'noindex, nofollow' : undefined}
+  bodyAttrs={bodyAttrs}
   wide
 >
   <div class="my-9">
@@ -83,7 +95,7 @@ const related = scored
           showDate={false}
         />
 
-        <div class="d-none md:d-block border-bottom border-subtle w-25 mx-auto mt-7" />
+        {!post.data.banner && <div class="d-none md:d-block border-bottom border-subtle w-25 mx-auto mt-7" />}
       </header>
 
       <PostMedia
@@ -99,8 +111,59 @@ const related = scored
         <Ads />
       </div>
 
-      <div class="prose">
-        <Content />
+      <div class="post-body">
+        {
+          toc.length > 0 && (
+            <Fragment>
+              <div class="2xl:d-none d-flex justify-content-center bd-toc-toggle">
+                <button
+                  class="btn-solid theme-inverse rounded-pill px-5"
+                  type="button"
+                  data-bs-toggle="drawer"
+                  data-bs-target="#bdTocSidebar"
+                  aria-controls="bdTocSidebar"
+                >
+                  <svg class="bi" aria-hidden="true">
+                    <use href="#list" />
+                  </svg>
+                  On this page…
+                </button>
+              </div>
+
+              <div class="bd-toc" data-pagefind-ignore>
+                <dialog
+                  class="2xl:drawer drawer-bottom"
+                  tabindex="-1"
+                  id="bdTocSidebar"
+                  aria-labelledby="bdTocDrawerLabel"
+                >
+                  <div class="drawer-header border-bottom">
+                    <h5 class="drawer-title" id="bdTocDrawerLabel">
+                      On this page
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="drawer"
+                      data-bs-target="#bdTocSidebar"
+                      aria-label="Close"
+                    />
+                  </div>
+
+                  <div class="drawer-body">
+                    <nav id="TableOfContents" aria-label="Table of contents">
+                      <TableOfContents entries={toc} />
+                    </nav>
+                  </div>
+                </dialog>
+              </div>
+            </Fragment>
+          )
+        }
+
+        <div class="prose">
+          <Content />
+        </div>
       </div>
 
       <!-- <AuthorSignature author={post.data.author} /> -->
@@ -127,4 +190,10 @@ const related = scored
       </div>
     )} -->
   </div>
+
+  <script>
+    import initToc from '../assets/js/toc.js'
+
+    initToc()
+  </script>
 </BaseLayout>

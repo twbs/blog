@@ -12,6 +12,7 @@
 @use "pagination";
 @use "search";
 @use "theme";
+@use "toc";
 
 @layer custom {
   :root {
@@ -34,6 +35,10 @@
 
   code {
     color: var(--bs-fg-body);
+    letter-spacing: -.015em;
+  }
+  a > code {
+    color: inherit;
   }
 
   // Inline code inside bold text should follow the bold text's color.
@@ -326,8 +331,30 @@
     background-color: #000;
   }
 
-  // Copy runs down a centered measure track, media spans the full width of the
-  // post, so figures always read wider than the text they belong to.
+  // Below 2xl the table of contents is a drawer, so it costs the body nothing
+  // and the copy runs full width. From 2xl it becomes a rail hanging in a
+  // zero-width track beside the copy, so nothing else shifts to make room.
+  .post-body {
+    @include media-breakpoint-up(2xl) {
+      display: grid;
+      grid-template-areas: "prose toc";
+      grid-template-columns: minmax(0, 1fr) 0;
+
+      > .prose {
+        grid-area: prose;
+      }
+
+      .bd-toc {
+        grid-area: toc;
+        width: 13rem;
+        margin-inline-start: 2rem;
+      }
+    }
+  }
+
+  // Copy runs down a centered measure track. Media, fenced snippets, and
+  // anything opted into `.bd-full` span the post so they read wider than the
+  // text they belong to.
   .post-single .prose {
     --bs-content-gap: 1.667rem;
     --bs-content-font-size: 1rem;
