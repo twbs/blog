@@ -1,0 +1,92 @@
+---
+author: mdo
+date: "2026-08-21T00:00:00Z"
+title: "Bootstrap 6: Utilities"
+category: Release
+description: Bootstrap 6's revamped utility API, new utilities, and the move from infixes to prefixes.
+keywords:
+  - bootstrap
+  - release
+draft: true
+---
+
+import Example from '../../../components/shortcodes/Example.astro'
+import PostSeries from '../../../components/shortcodes/PostSeries.astro'
+
+<PostSeries current="utilities" />
+
+The utility API has been updated to make things more approachable, allow for more types of selectors and utilities, and more.
+
+- Utilities are now scoped to the highest `@layer` in our CSS, ensuring they always apply to elements and components without needing `!important`.
+- Speaking of, `!important` is no longer globally added to all utilities. As it’s no longer required, you can now optionally add it on a per-utility basis.
+
+Those two bullets are one causal chain, and it resolves a long-standing complaint. Utilities live in the last layer we declare, so they beat components in the cascade by position rather than by force. Because they win anyway, we could drop `!important` entirely. And because `!important` is gone, you can now override a utility with a plain class of your own—something v5 made nearly impossible.
+
+The API itself picked up several new options:
+
+- `selector` lets a utility generate attribute selectors (`attr-starts`, `attr-includes`) instead of class selectors. That’s how the aspect-ratio utilities read a value off a class name.
+- `child-selector` targets descendants, wrapped in `:where()` so it adds no specificity. This is what powers the new child-spacing and divider utilities.
+- `variables` emits CSS custom properties per class, replacing v5’s `css-var` and `local-vars` options.
+- `dark` generates a `dark:` prefixed family inside `prefers-color-scheme: dark`.
+- `enabled: false` compiles a utility out of the build entirely.
+
+We’ve also added several new utilities:
+
+- **Layout:** `.grid-cols-1` through `.grid-cols-6`, plus `.grid-cols-fill`, `.grid-cols-subgrid`, and `.grid-auto-flow-*`. New `.place-items-*` and `.justify-items-*` too.
+- **Container queries:** `.contains-inline` and `.contains-size` to make any element a query container.
+- **Child spacing:** `.space-x-*` and `.space-y-*` for spacing between children, and `.divide-x` / `.divide-y` for borders between them—no more `:last-child` overrides.
+- **Sizing:** `.min-w-*` and `.min-h-*` are new, `.mw-*` / `.mh-*` are renamed to `.max-w-*` / `.max-h-*`, and width and height now accept `min-content`, `max-content`, `fit-content`, and a fixed `.w-1` through `.w-12` scale.
+- **Type:** `.text-xs` through `.text-6xl` set font size and line height together, and `.text-balance` and `.text-pretty` join the text-wrap utilities.
+- **Color:** `.text-*` becomes `.fg-*`, joined by `.fg-emphasis-*`, `.fg-contrast-*`, `.bg-subtle-*`, and `.bg-muted-*`, plus `.theme-contrast` and friends for pulling a single pairing token.
+- **Shadows:** new `.shadow-xs` and `.shadow-xl` sizes, layered multi-stop shadows for a more natural falloff, and `.shadow-{color}` and `.shadow-opacity-*` to re-tint them. They set non-inheriting local variables, so a colored shadow never leaks into a nested `.shadow-*` element.
+- **Borders:** `.border-keyline` for a hairline `.5px` border on high-density displays, plus `.border-subtle-*`.
+
+The five sizes, then one size re-tinted and re-weighted:
+
+<Example class="overflow-hidden vstack gap-7 p-7 bg-1" code={`<div class="d-flex flex-wrap gap-5">
+  <div class="shadow-xs p-3 bg-body rounded-5">xs</div>
+  <div class="shadow-sm p-3 bg-body rounded-5">sm</div>
+  <div class="shadow p-3 bg-body rounded-5">base</div>
+  <div class="shadow-lg p-3 bg-body rounded-5">lg</div>
+  <div class="shadow-xl p-3 bg-body rounded-5">xl</div>
+</div>
+<div class="d-flex flex-wrap gap-5">
+  <div class="shadow-xl shadow-primary p-3 bg-body rounded-5">primary</div>
+  <div class="shadow-xl shadow-primary shadow-opacity-80 p-3 bg-body rounded-5">primary, 80</div>
+  <div class="shadow-xl shadow-danger p-3 bg-body rounded-5">danger</div>
+  <div class="shadow-xl shadow-opacity-20 p-3 bg-body rounded-5">default, 20</div>
+</div>`} />
+And the child-selector utilities, which put the spacing and the dividers on the
+parent instead of on every child:
+
+<Example class="d-grid grid grid-cols-1 md:grid-cols-2 gap-4" code={`<ul class="list-unstyled divide-y border rounded-5 mb-0">
+  <li class="px-3 py-2">Dividers from .divide-y</li>
+  <li class="px-3 py-2">No :last-child override</li>
+  <li class="px-3 py-2">Borders between, not around</li>
+</ul>
+<ul class="list-unstyled space-y-3 mb-0">
+  <li class="px-3 py-2 bg-1 rounded-5">Spacing from .space-y-3</li>
+  <li class="px-3 py-2 bg-1 rounded-5">No margin on the children</li>
+  <li class="px-3 py-2 bg-1 rounded-5">Gaps between, not after</li>
+</ul>`} />
+
+Two of these changes will alter existing designs without any class renames to warn you. First, the spacing scale grew from six steps to ten for finer control, and the keys shifted in the process—`.p-3` used to be `1rem` and is now `0.75rem`. Second, the font size utilities flipped: `.fs-1` through `.fs-6` (which counted *down* in size) are replaced by `.fs-xs` through `.fs-6xl` (which count up), with `clamp()` on the larger steps for responsive scaling. `.display-1` through `.display-6` and `.lead` are gone as well; pair a size utility with a weight utility instead, like `.fs-6xl .fw-light` for the old `.display-1`.
+
+Spacing and border utilities also emit logical properties now. `.mt-3` sets `margin-block-start`, `.me-3` sets `margin-inline-end`, and `.border-end` sets `border-inline-end`. The class names are unchanged, but right-to-left layouts and vertical writing modes improve with no markup changes.
+
+## Prefixes instead of infixes
+
+This is the most visible breaking change in v6. Responsive and state modifiers moved from an infix or suffix to a prefix, the way Tailwind and most newer libraries do it:
+
+- `.d-md-none` is now `.md:d-none`
+- `.col-lg-6` is now `.lg:col-6`
+- `.opacity-50-hover` is now `.hover:opacity-50`
+- `.d-print-none` is now `.print:d-none`
+
+It’s a costly change, since it touches nearly every line of markup in a v5 project, but it earns that cost two ways. One rule now covers everything—breakpoints, pseudo-class states, print, and dark mode all read the same way, instead of each having its own placement convention. And the modifier comes first, so the condition reads before the effect: at `md`, don’t display.
+
+The change is broad. It applies to utilities, grid columns, row columns, offsets, gutters, CSS grid, containers, navbar, drawer, tables, list groups, sticky helpers, stacks, dialog sizes, and print variants.
+
+In markup, write the colon unescaped: `class="md:d-none"`. The backslash in the compiled CSS (`.md\:d-none`) is only how CSS escapes a colon in a selector, and never appears in your HTML.
+
+If you have custom Sass built on our breakpoint helpers, `breakpoint-infix()` is now `breakpoint-prefix()` and returns a prefix string, and the `loop-breakpoints-up` and `loop-breakpoints-down` mixins expose `$prefix` instead of `$infix`. The [migration guide](https://getbootstrap.com/docs/6.0/guides/migration) has a full before-and-after table for every affected class.

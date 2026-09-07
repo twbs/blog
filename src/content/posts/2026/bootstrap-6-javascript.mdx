@@ -1,0 +1,26 @@
+---
+author: mdo
+date: "2026-08-21T00:00:00Z"
+title: "Bootstrap 6: JavaScript plugins"
+category: Release
+description: "Bootstrap 6 JavaScript: ESM-only plugins, TypeScript source, and a rewritten ScrollSpy."
+keywords:
+  - bootstrap
+  - release
+draft: true
+---
+
+import PostSeries from '../../../components/shortcodes/PostSeries.astro'
+
+<PostSeries current="javascript" />
+
+Bootstrap 6’s JavaScript was modernized from the ground up: plugins are ESM-only, the source is TypeScript with shipped type declarations, and ScrollSpy was rewritten on `IntersectionObserver`.
+
+- **ESM-only plugins.** There’s no UMD bundle and no `window.bootstrap` global anymore. What this means for you depends entirely on how you use our JavaScript, so here are the three cases. If you only use data attributes like `data-bs-toggle`, add `type="module"` to your script tag and you’re done—everything else keeps working. If you call our APIs from a CDN build, switch to an explicit import: `import { Tooltip } from './bootstrap.bundle.min.js'`. And if you use a bundler like Vite, Webpack, or Parcel, nothing changes at all—`import { Tooltip } from 'bootstrap'` works as before, and now tree shakes properly thanks to `sideEffects` metadata in `package.json`.
+- **TypeScript.** Our source is `.ts` now, and we ship our own type declarations, so you can delete `@types/bootstrap` from your dependencies. Deep imports like `bootstrap/js/src/alert.js` still resolve.
+
+One plugin got a full rewrite worth calling out: **ScrollSpy**. It no longer polls scroll position. Instead it uses `IntersectionObserver` with a single activation line, so the highlighted section is always the one you’re actually reading, including at the very top and bottom of a page where the old implementation used to get confused. There’s a new `topMargin` option to move that line below a sticky navbar, and with smooth scrolling on, clicking a link now restores the URL hash and moves focus to the target section—so it works for keyboard and screen reader users too, not just mouse users.
+
+{/* TODO(js): expand this into a full JS plugins post — cover Floating UI powering
+    Menu, Tooltip, and Popover; the new Toggler plugin; and the Dialog/Drawer
+    DialogBase lifecycle. Currently seeded from the "Modernized tech stack" section. */}
