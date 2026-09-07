@@ -2,6 +2,7 @@
 author: mdo
 date: "2020-05-12T00:00:00Z"
 title: Bootstrap 4.5.0
+category: Release
 video: tNG62fULYgI
 keywords:
   - bootstrap
@@ -29,4 +30,4 @@ We've shipped a lot more in this release, so be sure to check out the [v4.5.0 Gi
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

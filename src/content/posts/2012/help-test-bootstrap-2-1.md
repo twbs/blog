@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-08-13T00:00:00Z"
 title: Help test Bootstrap 2.1
+category: Community
 ---
 
 We're stoked to release Bootstrap 2.1 next week Monday at our [first birthday party](https://twitter-bootstrap-birthday.eventbrite.com/), but to make it a great release, we need your help testing it out.

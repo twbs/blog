@@ -1,0 +1,24 @@
+---
+interface Props {
+  // GitHub username, e.g. "mdo".
+  user: string
+  // Avatar edge length in pixels.
+  size?: number
+}
+
+const { user, size = 20 } = Astro.props
+const profileUrl = `https://github.com/${user}`
+const avatarUrl = `${profileUrl}.png?size=${size}`
+const avatarUrl2x = `${profileUrl}.png?size=${size * 2}`
+---
+
+<a class="chip" href={profileUrl} target="_blank" rel="noopener">
+  <img class="chip-img"
+       src={avatarUrl}
+       srcset={`${avatarUrl}, ${avatarUrl2x} 2x`}
+       alt=""
+       width={size}
+       height={size}
+       loading="lazy">
+  <span>@{user}</span>
+</a>

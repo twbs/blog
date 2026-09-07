@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-03-22T00:00:00Z"
 title: Coming up in Bootstrap
+category: Community
 ---
 
 We've been mum on the next few releases for Bootstrap the last couple weeks, and with good reason: both Jacob and I have been super busy at work and we're uncertain of what features to add next. That said, we know we have some bugs and docs fixes to make and know we can slip in a few small features if time allows. I've updated [the roadmap](https://github.com/twbs/bootstrap/wiki/Roadmap) to reflect the last two releases and a general outline for the next two.

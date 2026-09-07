@@ -2,6 +2,7 @@
 author: cvrebert
 date: "2014-10-13T00:00:00Z"
 title: Introducing Rorschach
+category: Community
 video: Pav2f4b-1ZE
 ---
 

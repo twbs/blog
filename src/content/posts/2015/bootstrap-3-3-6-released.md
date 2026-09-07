@@ -2,6 +2,7 @@
 author: mdo
 date: "2015-11-24T00:00:00Z"
 title: Bootstrap 3.3.6 released
+category: Release
 video: l-O5IHVhWj0
 keywords:
   - bootstrap

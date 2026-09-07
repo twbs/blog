@@ -1,5 +1,4 @@
-/* global bootstrap:false */
-
+import { Tooltip } from 'bootstrap'
 import ClipboardJS from 'clipboard'
 
 const btnTitle = 'Copy to clipboard'
@@ -8,15 +7,17 @@ const btnHtml = [
   '<div class="bd-code-snippet">',
   '  <div class="bd-clipboard">',
   `    <button type="button" class="btn-clipboard" title="${btnTitle}">`,
-  '      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>',
+  '      <svg class="bi" role="img" aria-label="Copy"><use href="#clipboard"/></svg>',
   '    </button>',
   '  </div>',
   '</div>'
 ].join('')
 
-document.querySelectorAll('.highlight')
+// Shiki emits `.astro-code`. Example shortcodes ship their own copy button, so
+// skip anything already inside a snippet wrapper.
+document.querySelectorAll('.astro-code')
   .forEach(element => {
-    if (!element.closest('.bd-example-snippet')) { // Ignore examples made be shortcode
+    if (!element.closest('.bd-example-snippet, .bd-code-snippet')) {
       element.insertAdjacentHTML('beforebegin', btnHtml)
       element.previousElementSibling.append(element)
     }
@@ -24,7 +25,7 @@ document.querySelectorAll('.highlight')
 
 document.querySelectorAll('[data-bs-toggle="tooltip"]')
   .forEach(tooltip => {
-    new bootstrap.Tooltip(tooltip)
+    new Tooltip(tooltip)
   })
 
 document.querySelectorAll('.content [href="#"]')
@@ -36,20 +37,19 @@ document.querySelectorAll('.content [href="#"]')
 
 window.addEventListener('load', () => {
   document.querySelectorAll('.btn-clipboard').forEach(btn => {
-    bootstrap.Tooltip.getOrCreateInstance(btn, { btnTitle })
+    Tooltip.getOrCreateInstance(btn, { btnTitle })
   })
 })
 
 const clipboard = new ClipboardJS('.btn-clipboard', {
-  target: trigger => trigger.closest('.bd-code-snippet').querySelector('.highlight'),
-  text: trigger => trigger.closest('.bd-code-snippet').querySelector('.highlight').textContent.trimEnd()
+  target: trigger => trigger.closest('.bd-code-snippet').querySelector('.astro-code'),
+  text: trigger => trigger.closest('.bd-code-snippet').querySelector('.astro-code').textContent.trimEnd()
 })
 
 clipboard.on('success', event => {
   const iconFirstChild = event.trigger.querySelector('.bi').firstElementChild
-  const tooltipBtn = bootstrap.Tooltip.getInstance(event.trigger)
-  const namespace = 'http://www.w3.org/1999/xlink'
-  const originalXhref = iconFirstChild.getAttributeNS(namespace, 'href')
+  const tooltipBtn = Tooltip.getInstance(event.trigger)
+  const originalHref = iconFirstChild.getAttribute('href')
   const originalTitle = event.trigger.title
 
   tooltipBtn.setContent({ '.tooltip-inner': 'Copied!' })
@@ -57,10 +57,10 @@ clipboard.on('success', event => {
     tooltipBtn.setContent({ '.tooltip-inner': btnTitle })
   }, { once: true })
   event.clearSelection()
-  iconFirstChild.setAttributeNS(namespace, 'href', originalXhref.replace('clipboard', 'check2'))
+  iconFirstChild.setAttribute('href', originalHref.replace('clipboard', 'check2'))
 
   setTimeout(() => {
-    iconFirstChild.setAttributeNS(namespace, 'href', originalXhref)
+    iconFirstChild.setAttribute('href', originalHref)
     event.trigger.title = originalTitle
   }, 2000)
 })
@@ -68,7 +68,7 @@ clipboard.on('success', event => {
 clipboard.on('error', event => {
   const modifierKey = /mac/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl-'
   const fallbackMsg = `Press ${modifierKey}C to copy`
-  const tooltipBtn = bootstrap.Tooltip.getInstance(event.trigger)
+  const tooltipBtn = Tooltip.getInstance(event.trigger)
 
   tooltipBtn.setContent({ '.tooltip-inner': fallbackMsg })
   event.trigger.addEventListener('hidden.bs.tooltip', () => {

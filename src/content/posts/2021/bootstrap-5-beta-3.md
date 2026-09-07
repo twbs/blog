@@ -2,6 +2,7 @@
 author: mdo
 date: "2021-03-23T09:30:00Z"
 title: Bootstrap 5 Beta 3
+category: Release
 video: kldVOhKe4rg
 aliases:
   - /2021/03/22/bootstrap-5-beta-3/
@@ -86,4 +87,4 @@ As mentioned in our last release, after v5 goes stable, we'll look to add some o
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

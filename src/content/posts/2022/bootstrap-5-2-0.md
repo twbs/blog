@@ -2,6 +2,8 @@
 author: mdo
 date: "2022-07-19T16:00:00Z"
 title: Bootstrap 5.2.0
+category: Release
+major: true
 video: L93-7vRfxNs
 keywords:
   - bootstrap
@@ -173,4 +175,4 @@ npm i bootstrap@v5.2.0
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

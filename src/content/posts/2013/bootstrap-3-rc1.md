@@ -2,6 +2,7 @@
 author: mdo
 date: "2013-07-27T00:00:00Z"
 title: Bootstrap 3 RC1
+category: Release
 video: uB1D9wWxd2w
 keywords:
   - bootstrap

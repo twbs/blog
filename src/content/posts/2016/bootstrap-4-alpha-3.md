@@ -2,6 +2,7 @@
 author: mdo
 date: "2016-07-27T00:00:00Z"
 title: Bootstrap 4 Alpha 3
+category: Release
 video: xFrGuyw1V8s
 keywords:
   - bootstrap

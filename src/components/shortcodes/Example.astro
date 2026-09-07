@@ -1,0 +1,91 @@
+---
+import { replacePlaceholdersInHtml } from '../../libs/placeholder'
+import Code from './Code.astro'
+
+interface Props {
+  /** The example markup, rendered live and shown as source. Arrays are joined with newlines. */
+  code: string | string[]
+  /** CSS class(es) for the preview wrapper, usually layout utilities. */
+  class?: string
+  /**
+   * Span the full measure of the post rather than the narrower text track, for
+   * examples that need the extra room.
+   * @default false
+   */
+  full?: boolean
+  /** Preview wrapper id, for examples driven by a script. */
+  id?: string
+  /**
+   * Language the source is shown as.
+   * @default 'html'
+   */
+  lang?: string
+  /**
+   * Show the source below the preview.
+   * @default true
+   */
+  showMarkup?: boolean
+  /**
+   * Put the source behind a toggle that starts collapsed, for examples whose
+   * markup is long enough to bury whatever follows.
+   * @default false
+   */
+  toggleMarkup?: boolean
+}
+
+const {
+  code,
+  class: className,
+  full = false,
+  id,
+  lang = 'html',
+  showMarkup = true,
+  toggleMarkup = false
+} = Astro.props
+
+const markup = replacePlaceholdersInHtml(Array.isArray(code) ? code.join('\n') : code)
+
+// Placeholder SVGs are noise in the source listing, so show them as a plain
+// `img` the reader can substitute.
+const sourceMarkup = markup.replace(
+  /<svg[^>]*class="bd-placeholder-img ?([^"]*)"[\s\S]*?<\/svg>/g,
+  (_match, classes: string) => `<img src="..."${classes ? ` class="${classes}"` : ''} alt="...">`
+)
+---
+
+<div
+  class:list={['bd-example-snippet bd-code-snippet not-prose', { 'bd-full': full }]}
+  data-pagefind-ignore
+>
+  <div id={id} class:list={['bd-example', className]}>
+    <Fragment set:html={markup} />
+  </div>
+  {
+    showMarkup &&
+      (toggleMarkup ? (
+        <details class="bd-code-collapse">
+          <summary>
+            <svg
+              class="bd-code-collapse-icon"
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m2 5 6 6 6-6" />
+            </svg>
+            <span class="bd-code-collapse-show">Show markup</span>
+            <span class="bd-code-collapse-hide">Hide markup</span>
+          </summary>
+          <Code code={sourceMarkup} lang={lang} />
+        </details>
+      ) : (
+        <Code code={sourceMarkup} lang={lang} />
+      ))
+  }
+</div>

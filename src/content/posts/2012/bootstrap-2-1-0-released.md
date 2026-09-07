@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-08-20T00:00:00Z"
 title: Bootstrap 2.1.0 released
+category: Release
 keywords:
   - bootstrap
   - release
@@ -11,7 +12,7 @@ After a smaller 2.0.4 release, we've got another huge update that resolves tons 
 
 ## tl;dr
 
-New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120+ closed bugs, and more. [Go get it.]({{< param "main" >}}/)
+New docs, affix plugin, submenus on dropdowns, block buttons, image styles, fluid grid offsets, new navbar, increased font-size and line-height, 120+ closed bugs, and more. [Go get it.](https://getbootstrap.com/)
 
 ## Improved documentation
 

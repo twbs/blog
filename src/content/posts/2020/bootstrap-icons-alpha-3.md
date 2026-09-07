@@ -2,6 +2,7 @@
 author: mdo
 date: "2020-03-19T00:00:00Z"
 title: Bootstrap Icons Alpha 3
+category: Icons
 video: kijpcUv-b8M
 keywords:
   - icons

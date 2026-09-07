@@ -1,0 +1,43 @@
+---
+import CalendarIcon from './icons/CalendarIcon.astro'
+import { formatDate } from '../libs/content'
+
+interface Props {
+  author: string
+  date: Date
+  lazyload?: boolean
+  align?: 'start' | 'center'
+  // Post pages carry the date in their meta line, so the byline can drop it.
+  showDate?: boolean
+  // Avatar edge length in pixels.
+  size?: number
+}
+
+const { author, date, lazyload = true, align = 'start', showDate = true, size = 32 } = Astro.props
+const authorUrl = `https://github.com/${author}`
+const avatarWidth = size
+const imgUrl = `${authorUrl}.png?size=${avatarWidth}`
+const imgUrl2x = `${authorUrl}.png?size=${avatarWidth * 2}`
+const dateFormatted = formatDate(date)
+const dateTitle = date.toUTCString()
+---
+
+<div class:list={['d-flex align-items-center fg-2 fs-sm author-info', `justify-content-${align}`]}>
+  <a class="d-flex align-items-center gap-2 fg-2 text-decoration-none" href={authorUrl} target="_blank" rel="noopener">
+    <img class="avatar"
+         srcset={`${imgUrl}, ${imgUrl2x} 2x`}
+         src={imgUrl}
+         alt=""
+         loading={lazyload ? 'lazy' : 'eager'}
+         width={avatarWidth}
+         height={avatarWidth}
+         style={`--bs-avatar-size: ${avatarWidth}px;`}>
+    <span>@{author}</span>
+  </a>
+  {showDate && (
+    <span class="d-flex align-items-center ms-3" title={dateTitle}>
+      <CalendarIcon class="me-2" width={24} height={24} />
+      {dateFormatted}
+    </span>
+  )}
+</div>

@@ -2,6 +2,7 @@
 author: mdo
 date: "2020-12-23T21:30:00Z"
 title: Bootstrap Icons v1.2.2
+category: Icons
 video: hFDcoX7s6rE
 keywords:
   - icons

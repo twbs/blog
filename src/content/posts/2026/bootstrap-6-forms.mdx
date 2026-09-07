@@ -1,0 +1,143 @@
+---
+author: mdo
+date: "2026-08-21T00:00:00Z"
+title: "Bootstrap 6: Forms"
+category: Release
+description: "Bootstrap 6 forms: combobox, chips, simplified controls, and interaction-aware validation."
+keywords:
+  - bootstrap
+  - release
+draft: true
+---
+
+import Example from '../../../components/shortcodes/Example.astro'
+import PostSeries from '../../../components/shortcodes/PostSeries.astro'
+
+<PostSeries current="forms" />
+
+Forms in Bootstrap 6 have been overhauled to simplify styles, add new components, and improve validation behaviors and styles.
+
+- Added a new **Combobox**: a searchable, filterable select with single and multi-select modes, built on top of Menu. It’s the component people have asked us for the longest.
+- Added new **Chips** and **Chip Input** components for tags and tokens.
+- Added new **Datepicker**, **OTP input**, and **Password Strength** plugins.
+- New `.form-field` layout helper for label, input, help text, and validation.
+- New JS-powered range input component.
+- New checkbox, radio, and switch stylesheets, docs, and markup.
+- `.form-control` now applies to `<input>`, `<textarea>`, and `<select>` elements without separate classes.
+- Validation styles now wait for user input.
+
+Combobox is the one to try first. Type to filter, click to toggle, and the menu
+stays open while you pick:
+
+<Example code={`<button class="form-control combobox-toggle" type="button"
+        data-bs-toggle="combobox"
+        data-bs-name="skills"
+        data-bs-placeholder="Select skills…"
+        data-bs-multiple="true">
+  <span class="combobox-value">Select skills…</span>
+  <svg class="combobox-caret" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.46967 5.46967C0.762563 5.17678 1.23744 5.17678 1.53033 5.46967L5 8.93934L8.46967 5.46967C8.76256 5.17678 9.23744 5.17678 9.53033 5.46967C9.82322 5.76256 9.82322 6.23744 9.53033 6.53033L5.53033 10.5303C5.23744 10.8232 4.76256 10.8232 4.46967 10.5303L0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967Z" fill="currentcolor"/></svg>
+</button>
+<div class="menu">
+  <button class="menu-item" type="button" data-bs-value="html">
+    HTML
+    <svg class="menu-item-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 16 16"><path d="m2 7 4 5 8-8"/></svg>
+  </button>
+  <button class="menu-item" type="button" data-bs-value="css">
+    CSS
+    <svg class="menu-item-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 16 16"><path d="m2 7 4 5 8-8"/></svg>
+  </button>
+  <button class="menu-item" type="button" data-bs-value="js">
+    JavaScript
+    <svg class="menu-item-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 16 16"><path d="m2 7 4 5 8-8"/></svg>
+  </button>
+  <button class="menu-item" type="button" data-bs-value="python">
+    Python
+    <svg class="menu-item-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 16 16"><path d="m2 7 4 5 8-8"/></svg>
+  </button>
+</div>`} />
+And three of the smaller additions, side by side:
+
+<Example class="d-grid grid grid-cols-1 md:grid-cols-3 gap-4" code={`<div>
+  <label class="form-label" for="otpDemo">Verification code</label>
+  <div class="otp otp-connected" data-bs-otp>
+    <input type="text" class="otp-input" maxlength="6" id="otpDemo" aria-label="Verification code">
+  </div>
+</div>
+<div>
+  <label for="rangeDemo" class="form-label">Temperature</label>
+  <div class="form-range" data-bs-bubble>
+    <input type="range" class="form-range-input" min="0" max="100" step="25" value="50" list="rangeDemoList" id="rangeDemo">
+  </div>
+  <datalist id="rangeDemoList">
+    <option value="0" label="Cold"></option>
+    <option value="25"></option>
+    <option value="50" label="Mild"></option>
+    <option value="75"></option>
+    <option value="100" label="Hot"></option>
+  </datalist>
+</div>
+<div>
+  <label for="passwordDemo" class="form-label">Password</label>
+  <input type="password" class="form-control" id="passwordDemo" placeholder="Enter password">
+  <div class="strength" data-bs-strength>
+    <div class="strength-segment"></div>
+    <div class="strength-segment"></div>
+    <div class="strength-segment"></div>
+    <div class="strength-segment"></div>
+  </div>
+</div>`} />
+{/* TODO(screenshot): Datepicker open, since it pulls in Vanilla Calendar Pro and
+    may not port cleanly as a live embed. */}
+
+Three of those changes need more explanation.
+
+**`.form-select` is gone.** Selects take `.form-control` now, same as text inputs and textareas. It was too much abstraction and too much duplication at the same time—two classes that had to stay visually identical forever. Now there’s one class and one set of tokens.
+
+**Validation waits for user input.** In v5, `.was-validated` meant a form full of required fields lit up red the moment you toggled it, often before the user typed a single character. In v6 you add `data-bs-validate` to the `<form>` and styling hangs off `:user-invalid`, which the browser only applies after a real interaction. Add `data-bs-validate="valid"` if you also want success styling. Server-side `.is-invalid` and `.is-valid` classes still work everywhere, with no attribute needed.
+
+If you copied the validation snippet out of the v5 docs, here’s the diff. Before:
+
+```js
+const forms = document.querySelectorAll('.needs-validation');
+[...forms].forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+```
+
+After:
+
+```js
+const forms = document.querySelectorAll('form[data-bs-validate]');
+[...forms].forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+  }, false)
+})
+```
+
+The class-toggling line is gone because the browser tracks interaction state for us.
+
+**Checks, radios, and switches lost their wrappers.** `.check` goes directly on the `<input>`, and the checked and indeterminate marks are drawn with a CSS mask on a pseudo-element instead of an inline SVG in your DOM. Toggle buttons got the same treatment from the other direction: `.btn-check` now goes on the `<label>` with the input nested inside, and `:has()` does the work that sibling selectors used to.
+
+```html
+<label class="btn-check btn-solid theme-primary">
+  <input type="checkbox"> Toggle
+</label>
+```
+
+No `id`, no matching `for`, no invisible input floating next to its label.
+
+{/* TODO(form-adorn): the form-adorn wrapper. Source decision, not a writing one —
+    the outer wrapper should probably become a label. Resolve in the code, then
+    decide whether Form adorn earns a mention here (it's already listed under
+    "Brand new" in the components section). */}

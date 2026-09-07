@@ -2,6 +2,8 @@
 author: mdo
 date: "2023-05-30T07:35:00Z"
 title: Bootstrap 5.3.0
+category: Release
+major: true
 keywords:
   - bootstrap
   - release
@@ -41,7 +43,7 @@ Bootstrap's core has been rewritten to provide first-class support for dark mode
 Need a more isolated dark mode? You can also set the color mode on a parent element like the `.dropdown` shown below. This will only affect the dropdown and its children instead of the entire page.
 
 <!-- markdownlint-disable no-inline-html -->
-{{< example class="d-flex justify-content-between" >}}
+<div class="bd-example">
 <div class="dropdown" data-bs-theme="light">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
     Default dropdown
@@ -69,7 +71,7 @@ Need a more isolated dark mode? You can also set the color mode on a parent elem
     <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>
-{{< /example >}}
+</div>
 <!-- markdownlint-enable no-inline-html -->
 
 ### New `color-mode()` mixin
@@ -193,19 +195,19 @@ We’ve rebuilt some components (like list groups and alerts) to use these new v
 Link styling has infinitely better in v5.3.0 with a slew of all-new link helpers and utilities. First up, we've added styles to place icons like [Bootstrap Icons](https://icons.getbootstrap.com) alongside links with [the new icon link helper](https://getbootstrap.com/docs/5.3/helpers/icon-link/).
 
 <!-- markdownlint-disable no-inline-html -->
-{{< example >}}
+<div class="bd-example">
 <a class="icon-link" href="#">
   <svg class="bi" aria-hidden="true"><use xlink:href="#archive"></use></svg>
   Icon link
 </a>
-{{< /example >}}
+</div>
 
-{{< example >}}
+<div class="bd-example">
 <a class="icon-link" href="#">
   Icon link
   <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right-short"></use></svg>
 </a>
-{{< /example >}}
+</div>
 <!-- markdownlint-enable no-inline-html -->
 
 Our other new helper is a [new focus ring helper](https://getbootstrap.com/docs/5.3/helpers/focus-ring/) for removing the default `outline` and setting a custom `box-shadow` focus ring.
@@ -246,7 +248,7 @@ Lastly, we've added a new `.link-body-emphasis` helper alongside our [colored li
 There's a new `.nav` variant and modifier class with `.nav-underline`. Add `.nav-underline` to a `.nav` to get a simpler bottom border under the active nav link. [See the docs for an example.](https://getbootstrap.com/docs/5.3/components/navs-tabs/#underline)
 
 <!-- markdownlint-disable no-inline-html -->
-{{< example >}}
+<div class="bd-example">
 <ul class="nav nav-underline">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -261,7 +263,7 @@ There's a new `.nav` variant and modifier class with `.nav-underline`. Add `.nav
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-{{< /example >}}
+</div>
 <!-- markdownlint-enable no-inline-html -->
 
 ## And much more!
@@ -310,4 +312,4 @@ npm i bootstrap@v5.3.0
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

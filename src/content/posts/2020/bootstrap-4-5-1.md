@@ -2,6 +2,7 @@
 author: mdo
 date: "2020-08-04T00:00:00Z"
 title: Bootstrap 4.5.1
+category: Release
 video: iIpfWORQWhU
 keywords:
   - bootstrap
@@ -73,4 +74,4 @@ After v5's second alpha, we'll be targeting a final alpha before our first beta,
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

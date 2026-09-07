@@ -1,0 +1,27 @@
+---
+import { generateToc, type Heading, type TocEntry } from '../libs/toc'
+
+interface Props {
+  headings?: Heading[]
+  entries?: TocEntry[]
+}
+
+const { entries, headings } = Astro.props
+
+const toc = entries ? entries : generateToc(headings ?? [])
+---
+
+<ul class="nav flex-column">
+  {
+    toc.map(({ children, slug, text }: TocEntry) => {
+      return (
+        <li>
+          <a class="nav-link" href={`#${slug}`}>
+            {text}
+          </a>
+          {children.length > 0 && <Astro.self entries={children} />}
+        </li>
+      )
+    })
+  }
+</ul>

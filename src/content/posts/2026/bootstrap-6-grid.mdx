@@ -1,0 +1,27 @@
+---
+author: mdo
+date: "2026-08-21T00:00:00Z"
+title: "Bootstrap 6: Grid system"
+category: Release
+description: Where the Bootstrap 6 grid system stands in the alpha.
+keywords:
+  - bootstrap
+  - release
+draft: true
+---
+
+import PostSeries from '../../../components/shortcodes/PostSeries.astro'
+
+<PostSeries current="grid" />
+
+The grid system is the largest open question in the Bootstrap 6 alpha. This post is a placeholder while those decisions land.
+
+{/* TODO(grid): on hold pending grid system decisions. Do not rewrite around the
+    old container-query claim, which was wrong: the flexbox grid still uses
+    viewport media queries (`make-grid-columns()` calls `media-breakpoint-up()`),
+    while the opt-in CSS Grid (`.grid`, `.md:g-col-4`) is container-query driven
+    because `.grid` sets `container-type: inline-size`.
+
+    Also document here when this lands: lg 992 -> 1024, xl 1200 -> 1280 with a
+    1200 container, xxl renamed 2xl at 1536 with a 1440 container, and
+    `$grid-breakpoints` renamed to `$breakpoints`. */}

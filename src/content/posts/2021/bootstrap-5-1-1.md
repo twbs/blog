@@ -2,6 +2,7 @@
 author: mdo
 date: "2021-09-07T00:00:00Z"
 title: Bootstrap 5.1.1
+category: Release
 video: bRt5z880CFY
 keywords:
   - bootstrap
@@ -40,4 +41,4 @@ npm i bootstrap
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

@@ -2,6 +2,7 @@
 author: mdo
 date: "2021-08-19T00:00:00Z"
 title: Ten Years of Bootstrap
+category: Community
 video: KQ6zr6kCPj8
 video_start: 85
 ---

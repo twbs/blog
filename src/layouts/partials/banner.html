@@ -1,8 +1,0 @@
-{{- /* Accepts 1 parameter, the "context" */ -}}
-
-{{- $src := .context.Page.Params.banner -}}
-{{- $config := imageConfig (path.Join "/src/static" $src) -}}
-{{- $classes := "d-block img-fluid rounded-3 mb-4" -}}
-{{- $lazyload := .lazyload -}}
-
-<img src="{{ $src }}" class="{{ $classes }}" alt="" width="{{ $config.Width }}" height="{{ $config.Height }}"{{ if eq .lazyload true }} loading="lazy"{{ end }}>

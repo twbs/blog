@@ -2,6 +2,7 @@
 author: mdo
 date: "2019-11-26T00:00:00Z"
 title: Introducing Bootstrap Icons
+category: Icons
 video: eM8Ss28zjcE
 keywords:
   - icons

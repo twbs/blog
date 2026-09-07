@@ -2,6 +2,7 @@
 author: mdo
 date: "2019-12-14T00:00:00Z"
 title: Bootstrap Icons Alpha 2
+category: Icons
 video: HgzGwKwLmgM
 keywords:
   - icons

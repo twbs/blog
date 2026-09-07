@@ -2,6 +2,7 @@
 author: mdo
 date: "2020-06-16T11:00:00Z"
 title: Bootstrap 5 alpha!
+category: Release
 video: 3GwjfUFyY6M
 keywords:
   - bootstrap
@@ -218,4 +219,4 @@ Beyond that, keep an eye for more updates to the [Bootstrap Icons](https://icons
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

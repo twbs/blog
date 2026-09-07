@@ -2,6 +2,7 @@
 author: mdo
 date: "2022-07-19T15:30:00Z"
 title: Bootstrap v4.6.2
+category: Release
 video: EErSKhC0CZs
 video_start: 135
 keywords:
@@ -34,4 +35,4 @@ From here, we don't expect to ship any meaningful updates to v4.6.x other than m
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

@@ -1,0 +1,199 @@
+---
+import { render } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import AuthorInfo from '../components/AuthorInfo.astro'
+import AuthorSignature from '../components/AuthorSignature.astro'
+import PostMedia from '../components/PostMedia.astro'
+import Ads from '../components/Ads.astro'
+import TableOfContents from '../components/TableOfContents.astro'
+import {
+  allPosts,
+  sortedPosts,
+  getPostSlug,
+  getPostDescription,
+  getReadingTime,
+  formatDate,
+  formatDateISO,
+  type Post
+} from '../libs/content'
+import { getPostToc } from '../libs/toc'
+import { getPostSocialCard } from '../libs/social'
+
+// Drafts are dev-only: `astro dev` builds pages for them so they can be
+// previewed, but a production build only ships published posts (`sortedPosts`).
+export function getStaticPaths() {
+  const posts = import.meta.env.DEV ? allPosts : sortedPosts
+
+  return posts.map((post: Post) => ({
+    params: { slug: getPostSlug(post) },
+    props: { post }
+  }))
+}
+
+const { post } = Astro.props
+const { Content, headings } = await render(post)
+const date = new Date(post.data.date)
+const subtitle = post.data.description
+const readingTime = getReadingTime(post)
+const toc = getPostToc(headings)
+
+// Align the activation line with the sticky navbar offset so a heading
+// highlights right as it settles below the navbar, plus a small epsilon. A
+// fixed px value avoids the viewport-height drift of a percentage top margin.
+const bodyAttrs =
+  toc.length > 0
+    ? { 'data-bs-spy': 'scroll', 'data-bs-target': '#TableOfContents', 'data-bs-top-margin': '84px' }
+    : undefined
+
+// Related posts: find 3 posts with overlapping keywords, sorted by date
+const keywords = post.data.keywords || []
+const scored: { post: Post; score: number }[] = sortedPosts
+  .filter((p: Post) => p.id !== post.id)
+  .map((p: Post) => ({
+    post: p,
+    score: (p.data.keywords || []).filter((k: string) => keywords.includes(k)).length
+  }))
+
+const related = scored
+  .filter(p => p.score > 0)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 3)
+  .map(p => p.post)
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={getPostDescription(post)}
+  card={getPostSocialCard(post)}
+  extraJs={post.data.extra_js}
+  robots={post.data.draft ? 'noindex, nofollow' : undefined}
+  bodyAttrs={bodyAttrs}
+  wide
+>
+  <div class="my-9">
+    <article
+      class:list={[
+        'post post-single post-layout w-100',
+        { 'post-no-subtitle': !subtitle }
+      ]}
+      data-pagefind-body
+    >
+      <header class="post-header d-flex flex-column w-100 text-pretty align-items-start md:align-items-center md:text-center">
+        {post.data.draft && <span class="chip theme-danger text-uppercase fs-sm fw-semibold">Draft</span>}
+        <p class="post-meta d-flex flex-wrap mb-0 lh-1 fg-3">
+          <time datetime={formatDateISO(date)} title={date.toUTCString()}>{formatDate(date)}</time>
+          <!-- <span aria-hidden="true">·</span>
+          <span>{readingTime} min read</span> -->
+        </p>
+        <h1 class="text-4xl fw-medium mb-0 ls-tight md:px-3">{post.data.title}</h1>
+        <!-- {subtitle && <p class="post-subtitle text-balance mb-0 fg-2">{subtitle}</p>} -->
+        <AuthorInfo
+          author={post.data.author}
+          date={date}
+          lazyload={false}
+          align="center"
+          showDate={false}
+        />
+
+        {!post.data.banner && <div class="d-none md:d-block border-bottom border-subtle w-25 mx-auto mt-7" />}
+      </header>
+
+      <PostMedia
+        banner={post.data.banner}
+        video={post.data.video}
+        videoStart={post.data.video_start}
+        title={post.data.title}
+        eager
+        hero
+      />
+
+      <div class="md:mx-auto">
+        <Ads />
+      </div>
+
+      <div class="post-body">
+        {
+          toc.length > 0 && (
+            <Fragment>
+              <div class="2xl:d-none d-flex justify-content-center bd-toc-toggle">
+                <button
+                  class="btn-solid theme-inverse rounded-pill px-5"
+                  type="button"
+                  data-bs-toggle="drawer"
+                  data-bs-target="#bdTocSidebar"
+                  aria-controls="bdTocSidebar"
+                >
+                  <svg class="bi" aria-hidden="true">
+                    <use href="#list" />
+                  </svg>
+                  On this page…
+                </button>
+              </div>
+
+              <div class="bd-toc" data-pagefind-ignore>
+                <dialog
+                  class="2xl:drawer drawer-bottom"
+                  tabindex="-1"
+                  id="bdTocSidebar"
+                  aria-labelledby="bdTocDrawerLabel"
+                >
+                  <div class="drawer-header border-bottom">
+                    <h5 class="drawer-title" id="bdTocDrawerLabel">
+                      On this page
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="drawer"
+                      data-bs-target="#bdTocSidebar"
+                      aria-label="Close"
+                    />
+                  </div>
+
+                  <div class="drawer-body">
+                    <nav id="TableOfContents" aria-label="Table of contents">
+                      <TableOfContents entries={toc} />
+                    </nav>
+                  </div>
+                </dialog>
+              </div>
+            </Fragment>
+          )
+        }
+
+        <div class="prose">
+          <Content />
+        </div>
+      </div>
+
+      <!-- <AuthorSignature author={post.data.author} /> -->
+    </article>
+
+    <!-- {related.length > 0 && (
+      <div class="related w-100 pb-7 mx-auto" data-pagefind-ignore>
+        <h2 class="h3 mb-3">Related posts</h2>
+        <ul class="related-posts list-unstyled">
+          {related.map(relatedPost => (
+            <li class="d-flex mb-3 fg-2">
+              <svg class="bi mt-1 me-2"><use href="#file-earmark-richtext"></use></svg>
+              <div class="fs-sm">
+                <h3 class="h5 mb-1 lh-1">
+                  <a href={`/${getPostSlug(relatedPost)}/`}>
+                    {relatedPost.data.title}
+                  </a>
+                </h3>
+                {formatDate(new Date(relatedPost.data.date))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )} -->
+  </div>
+
+  <script>
+    import initToc from '../assets/js/toc.js'
+
+    initToc()
+  </script>
+</BaseLayout>

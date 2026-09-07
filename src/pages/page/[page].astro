@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import PostList from '../../components/PostList.astro'
+import { getPostsForPage, totalPages } from '../../libs/content'
+
+// Page 1 lives at `/`, so only pages 2 and up get their own route.
+export function getStaticPaths() {
+  return Array.from({ length: totalPages - 1 }, (_, index) => ({
+    params: { page: String(index + 2) },
+    props: { page: index + 2 }
+  }))
+}
+
+const { page } = Astro.props
+---
+
+<BaseLayout title={`Bootstrap Blog · Page ${page}`} robots="noindex" wide>
+  <div class="my-5">
+    <PostList posts={getPostsForPage(page)} currentPage={page} totalPages={totalPages} />
+  </div>
+</BaseLayout>
