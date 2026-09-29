@@ -37,6 +37,7 @@
     "@astrojs/mdx": "^7.0.8",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
+    "@twbs/docs-ui": "file:../docs",
     "@eslint/js": "^10.0.1",
     "@pagefind/component-ui": "^1.5.2",
     "@shikijs/transformers": "^4.2.0",

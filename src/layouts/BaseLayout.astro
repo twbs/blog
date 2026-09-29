@@ -1,9 +1,9 @@
 ---
 import Head from '../components/head/Head.astro'
-import Symbols from '../components/Symbols.astro'
 import Navigation from '../components/header/Navigation.astro'
 import Ads from '../components/Ads.astro'
 import Footer from '../components/footer/Footer.astro'
+import Shell from '@twbs/docs-ui/components/Shell'
 
 import type { HTMLAttributes } from 'astro/types'
 
@@ -39,46 +39,31 @@ const { title, description, card, robots, extraJs = [], wide = false, bodyAttrs 
   <head>
     <Head title={title} description={description} card={card} robots={robots} />
   </head>
-  <body {...bodyAttrs}>
-    <Symbols />
+  <Shell variant={wide ? 'wide' : 'narrow'} bodyAttrs={bodyAttrs}>
+    <Navigation slot="header" />
+    <slot />
+    {!wide && <Ads slot="aside" />}
+    <Footer slot="footer" />
+    <Fragment slot="scripts">
+      <script is:inline src="/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="../assets/js/application.js"></script>
+      <script>
+        import initSearch from '@twbs/docs-ui/browser/search'
 
-    <div class="navbar-translucent sticky-top bd-sticky-navbar">
-      <Navigation />
-    </div>
-
-    <div class:list={['xl:container py-4 px-5 xl:px-2 bd-layout', { 'bd-layout-wide': wide }]}>
-      <main class="bd-main" id="content">
-        <slot />
-      </main>
+        initSearch()
+      </script>
       {
-        !wide && (
-          <aside class="bd-aside">
-            <Ads />
-          </aside>
-        )
+        extraJs.map((script) => (
+          <script
+            is:inline
+            src={script.src}
+            async={script.async}
+            defer={script.defer}
+            integrity={script.integrity}
+            crossorigin={script.integrity ? 'anonymous' : undefined}
+          />
+        ))
       }
-    </div>
-
-    <Footer />
-
-    <script is:inline src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/application.js"></script>
-    <script>
-      import initSearch from '../assets/js/search.js'
-
-      initSearch()
-    </script>
-    {
-      extraJs.map((script) => (
-        <script
-          is:inline
-          src={script.src}
-          async={script.async}
-          defer={script.defer}
-          integrity={script.integrity}
-          crossorigin={script.integrity ? 'anonymous' : undefined}
-        />
-      ))
-    }
-  </body>
+    </Fragment>
+  </Shell>
 </html>
