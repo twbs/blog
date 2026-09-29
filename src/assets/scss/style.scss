@@ -8,9 +8,10 @@
 @use "component-examples";
 @use "clipboard-js";
 @use "footer";
-@use "navbar";
 @use "pagination";
-@use "search";
+@use "@twbs/docs-ui/scss/icons";
+@use "@twbs/docs-ui/scss/navbar";
+@use "@twbs/docs-ui/scss/search";
 @use "theme";
 @use "toc";
 

@@ -1,27 +1,28 @@
 ---
-import { getConfig } from '../../libs/config'
-import type { SocialCard } from '../../libs/social'
-import HeadMeta from '@twbs/docs-ui/components/Head'
-import Favicons from './Favicons.astro'
-import Social from './Social.astro'
-import Analytics from './Analytics.astro'
+import { getConfig } from "../../libs/config";
+import type { SocialCard } from "../../libs/social";
+import HeadMeta from "@twbs/docs-ui/components/Head";
+import Favicons from "./Favicons.astro";
+import Social from "./Social.astro";
+import Analytics from "./Analytics.astro";
 
 interface Props {
-  title: string
-  description?: string
-  card?: SocialCard
-  robots?: string
+  title: string;
+  description?: string;
+  card?: SocialCard;
+  robots?: string;
 }
 
-const config = getConfig()
-const { title, description, card, robots } = Astro.props
+const config = getConfig();
+const { title, description, card, robots } = Astro.props;
 
-const pageTitle = Astro.url.pathname === '/'
-  ? `${config.title} · ${config.description}`
-  : `${title} | ${config.title}`
+const pageTitle =
+  Astro.url.pathname === "/"
+    ? `${config.title} · ${config.description}`
+    : `${title} | ${config.title}`;
 
-const pageDescription = description || config.description
-const canonical = new URL(Astro.url.pathname, Astro.site)
+const pageDescription = description || config.description;
+const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <HeadMeta
@@ -29,12 +30,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
   description={pageDescription}
   canonical={canonical}
   robots={robots}
-  rss={new URL('/feed.xml', Astro.site)}
+  rss={new URL("/feed.xml", Astro.site)}
   rssTitle={config.title}
-  colorModeScript="/assets/js/color-modes.js"
 >
   <link rel="preconnect" href="https://github.com" crossorigin />
-  <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin />
+  <link
+    rel="preconnect"
+    href="https://avatars.githubusercontent.com"
+    crossorigin
+  />
   <Favicons />
   <Social title={title} description={pageDescription} card={card} />
   <Analytics />

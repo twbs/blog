@@ -1,65 +1,121 @@
 ---
-import { getConfig } from '../../libs/config'
-import BootstrapIcon from '../icons/BootstrapIcon.astro'
+import SharedFooter from "@twbs/docs-ui/components/Footer";
+import type { FooterColumn } from "@twbs/docs-ui";
+import { getConfig } from "../../libs/config";
 
-const config = getConfig()
+const site = getConfig();
+const columns: FooterColumn[] = [
+  {
+    title: "Links",
+    links: [
+      { label: "All posts", href: "/" },
+      { label: "Archive", href: "/archive/" },
+      { label: "RSS feed", href: "/feed.xml" },
+      { label: "Home", href: `${site.main}/` },
+      { label: "Docs", href: `${site.main}/docs/${site.docs_version}/` },
+      {
+        label: "Examples",
+        href: `${site.main}/docs/${site.docs_version}/examples/`,
+      },
+      { label: "Icons", href: site.icons },
+      { label: "Swag Store", href: site.swag, external: true },
+    ],
+  },
+  {
+    title: "Guides",
+    links: [
+      {
+        label: "Getting started",
+        href: `${site.main}/docs/${site.docs_version}/getting-started/`,
+      },
+      {
+        label: "Starter template",
+        href: `${site.main}/docs/${site.docs_version}/examples/starter-template/`,
+      },
+      {
+        label: "Webpack",
+        href: `${site.main}/docs/${site.docs_version}/guides/webpack/`,
+      },
+      {
+        label: "Parcel",
+        href: `${site.main}/docs/${site.docs_version}/guides/parcel/`,
+      },
+      {
+        label: "Vite",
+        href: `${site.main}/docs/${site.docs_version}/guides/vite/`,
+      },
+    ],
+  },
+  {
+    title: "Projects",
+    links: [
+      {
+        label: "Bootstrap 6",
+        href: `${site.github_org}/bootstrap`,
+        external: true,
+      },
+      {
+        label: "Bootstrap 5",
+        href: `${site.github_org}/bootstrap/tree/v5-dev`,
+        external: true,
+      },
+      { label: "Icons", href: `${site.github_org}/icons`, external: true },
+      {
+        label: "Examples repo",
+        href: `${site.github_org}/examples`,
+        external: true,
+      },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      {
+        label: "Issues",
+        href: `${site.github_org}/bootstrap/issues`,
+        external: true,
+      },
+      {
+        label: "Discussions",
+        href: `${site.github_org}/bootstrap/discussions`,
+        external: true,
+      },
+      {
+        label: "Corporate sponsors",
+        href: "https://github.com/sponsors/twbs",
+        external: true,
+      },
+      { label: "Open Collective", href: site.opencollective, external: true },
+      {
+        label: "Stack Overflow",
+        href: "https://stackoverflow.com/questions/tagged/bootstrap-5",
+        external: true,
+      },
+    ],
+  },
+];
 ---
 
-<footer class="bd-footer py-4 md:py-5 mt-5 bg-1">
-  <div class="container py-4 md:py-5 px-4 md:px-3 fg-2">
-    <div class="row">
-      <div class="lg:col-3 mb-3">
-        <a class="d-inline-flex align-items-center mb-2 fg-body text-decoration-none" href="/" aria-label="Bootstrap">
-          <BootstrapIcon class="d-block me-2" />
-          <span class="fw-medium">Bootstrap</span>
-        </a>
-        <ul class="list-unstyled small">
-          <li class="mb-2">Designed and built with all the love in the world by the <a href={`${config.main}/docs/${config.docs_version}/about/team/`}>Bootstrap team</a> with the help of <a href={`${config.repo}/graphs/contributors`}>our contributors</a>.</li>
-          <li class="mb-2">Code licensed <a href={`${config.repo}/blob/main/LICENSE`} target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
-        </ul>
-      </div>
-      <div class="col-6 lg:col-2 lg:offset-1 mb-3">
-        <h5>Links</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="/">All posts</a></li>
-          <li class="mb-2"><a href="/archive/">Archive</a></li>
-          <li class="mb-2"><a href="/feed.xml">RSS feed</a></li>
-          <li class="mb-2"><a href={`${config.main}/`}>Home</a></li>
-          <li class="mb-2"><a href={`${config.main}/docs/${config.docs_version}/`}>Docs</a></li>
-          <li class="mb-2"><a href={`${config.main}/docs/${config.docs_version}/examples/`}>Examples</a></li>
-          <li class="mb-2"><a href={config.icons}>Icons</a></li>
-          <li class="mb-2"><a href={config.swag} target="_blank" rel="noopener">Swag Store</a></li>
-        </ul>
-      </div>
-      <div class="col-6 lg:col-2 mb-3">
-        <h5>Guides</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href={`${config.main}/docs/${config.docs_version}/getting-started/`}>Getting started</a></li>
-          <li class="mb-2"><a href={`${config.main}/docs/${config.docs_version}/examples/starter-template/`}>Starter template</a></li>
-          <li class="mb-2"><a href={`${config.main}/docs/${config.docs_version}/guides/webpack/`}>Webpack</a></li>
-          <li class="mb-2"><a href={`${config.main}/docs/${config.docs_version}/guides/parcel/`}>Parcel</a></li>
-          <li class="mb-2"><a href={`${config.main}/docs/${config.docs_version}/guides/vite/`}>Vite</a></li>
-        </ul>
-      </div>
-      <div class="col-6 lg:col-2 mb-3">
-        <h5>Projects</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href={`${config.github_org}/bootstrap`} target="_blank" rel="noopener">Bootstrap 6</a></li>
-          <li class="mb-2"><a href={`${config.github_org}/bootstrap/tree/v5-dev`} target="_blank" rel="noopener">Bootstrap 5</a></li>
-          <li class="mb-2"><a href={`${config.github_org}/icons`} target="_blank" rel="noopener">Icons</a></li>
-          <li class="mb-2"><a href={`${config.github_org}/examples`} target="_blank" rel="noopener">Examples repo</a></li>
-        </ul>
-      </div>
-      <div class="col-6 lg:col-2 mb-3">
-        <h5>Community</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href={`${config.github_org}/bootstrap/issues`} target="_blank" rel="noopener">Issues</a></li>
-          <li class="mb-2"><a href={`${config.github_org}/bootstrap/discussions`} target="_blank" rel="noopener">Discussions</a></li>
-          <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Corporate sponsors</a></li>
-          <li class="mb-2"><a href={config.opencollective} target="_blank" rel="noopener">Open Collective</a></li>
-          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5" target="_blank" rel="noopener">Stack Overflow</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+<SharedFooter brand="Bootstrap" columns={columns}>
+  <ul class="list-unstyled small">
+    <li class="mb-2">
+      Designed and built with all the love in the world by the <a
+        href={`${site.main}/docs/${site.docs_version}/about/team/`}
+        >Bootstrap team</a
+      > with the help of <a href={`${site.repo}/graphs/contributors`}
+        >our contributors</a
+      >.
+    </li>
+    <li class="mb-2">
+      Code licensed <a
+        href={`${site.repo}/blob/main/LICENSE`}
+        target="_blank"
+        rel="license noopener">MIT</a
+      >, docs <a
+        href="https://creativecommons.org/licenses/by/3.0/"
+        target="_blank"
+        rel="license noopener">CC BY 3.0</a
+      >.
+    </li>
+  </ul>
+</SharedFooter>

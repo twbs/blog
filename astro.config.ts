@@ -115,6 +115,12 @@ export default defineConfig({
   },
   redirects: getAliasRedirects(),
   vite: {
+    optimizeDeps: {
+      exclude: ['@twbs/docs-ui']
+    },
+    resolve: {
+      dedupe: ['bootstrap']
+    },
     css: {
       preprocessorOptions: {
         scss: {

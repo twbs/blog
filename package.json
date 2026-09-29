@@ -44,7 +44,7 @@
     "astro": "^7.2.6",
     "astro-og-canvas": "^0.13.0",
     "autoprefixer": "^10.5.4",
-    "bootstrap": "github:twbs/bootstrap#v6-dev",
+    "bootstrap": "file:../b6-dev",
     "bootstrap-vscode-theme": "^0.0.9",
     "clipboard": "^2.0.11",
     "cross-env": "^10.1.0",

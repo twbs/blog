@@ -1,10 +1,5 @@
 ---
-// Synced from ~/work/b6-dev/site/src/components/Ads.astro
-// Uses blog-specific serve/placement values
+import SharedAds from "@twbs/docs-ui/components/Ads";
 ---
 
-<script
-  is:inline
-  async
-  src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJJ&placement=bloggetbootstrapcom&format=responsive"
-  id="_carbonads_js"></script>
+<SharedAds serve="CKYIKKJJ" placement="bloggetbootstrapcom" />
