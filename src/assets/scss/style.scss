@@ -5,8 +5,9 @@
 @use "variables";
 @use "anchor";
 @use "ads";
-@use "component-examples";
-@use "clipboard-js";
+@use "@twbs/docs-ui/scss/component-examples";
+@use "@twbs/docs-ui/scss/clipboard-js";
+@use "@twbs/docs-ui/scss/syntax";
 @use "footer";
 @use "pagination";
 @use "@twbs/docs-ui/scss/icons";
@@ -449,10 +450,4 @@
     color: var(--bd-violet);
   }
 
-  .astro-code {
-    padding: var(--bs-spacer-5);
-    font-size: 87.5%;
-    background-color: var(--bs-bg-1) !important; // stylelint-disable-line declaration-no-important
-    border-radius: var(--bs-radius-7);
-  }
 }
