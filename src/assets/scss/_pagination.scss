@@ -4,8 +4,7 @@
 
 @layer custom {
   .pagination {
-    margin-right: -1rem;
-    margin-left: -1rem;
+    margin-inline: 0;
     overflow: hidden;
     color: var(--bs-fg-body);
     text-align: center;
