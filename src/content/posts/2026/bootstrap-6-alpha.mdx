@@ -236,7 +236,7 @@ On the JS and tooling side:
 - **TypeScript.** Our source is `.ts` now, and we ship our own type declarations, so you can delete `@types/bootstrap` from your dependencies. Deep imports like `bootstrap/js/src/alert.js` still resolve.
 - **Rolldown** replaces both Rollup and Babel in our tooling. It strips TypeScript types and lowers syntax itself, removing an entire layer of build tooling from the repo. This only affects you if you build Bootstrap from source.
 - **Vitest** running in real Chromium through Playwright, which replaced Karma.
-- **Astro 7** for the docs, which have a new search experience with Pagefind, new pages, and updated navigation and layout.
+- **Astro 7** for the docs, which has a new search experience with Pagefind, new pages, and updated navigation and layout.
 
 ## Built for humans and agents
 
@@ -258,6 +258,10 @@ In addition, we've built out a new, private repository and package for sharing B
 
 ## What’s next
 
-This is an alpha, so things can still meaningfully change before beta. There will be more alphas before we start stabilizing through the beta and RC stages. Share any and all feedback you have and we’ll do our best to address.
+This is an alpha, so things can still meaningfully change before beta. There will be more alphas before we start stabilizing through the beta and RC stages. Share any and all feedback you have and we’ll do our best to address:
+
+- Use the v6 feedback category in [GitHub Discussions](https://github.com/orgs/twbs/discussions/categories/v6-feedback) if you have a general question or feedback on the v6 release.
+- File an issue in [GitHub Issues](https://github.com/twbs/bootstrap/issues) if you have a specific bug or feature request.
+- Open a [pull request](https://github.com/twbs/bootstrap/pulls) with your changes (it's always a good idea to review in a discussion or issue first so we don't waste anyone's time!)
 
 Thanks again to everyone who contributed, thanks for reading, and we hope you love Bootstrap 6!
