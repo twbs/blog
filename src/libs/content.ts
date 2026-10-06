@@ -64,17 +64,35 @@ function stripMdxSyntax(body: string): string {
     .replace(/\{`[\s\S]*?`\}/g, '')
 }
 
+function stripHtmlTags(html: string): string {
+  let text = ''
+  let insideTag = false
+
+  for (const character of html) {
+    if (character === '<') {
+      insideTag = true
+    } else if (character === '>') {
+      insideTag = false
+    } else if (!insideTag) {
+      text += character
+    }
+  }
+
+  return text
+}
+
 function markdownToPlainText(markdown: string): string {
-  return markdown
+  const text = markdown
     .replace(/<(https?:[^>]+)>/g, '$1') // autolinks, before tags are stripped
     .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
     .replace(/\[([^\]]*)\]\[[^\]]*\]/g, '$1')
-    .replace(/<[^>]+>/g, '')
     .replace(/`([^`]+)`/g, '$1')
     .replace(/(\*\*|__)(.+?)\1/g, '$2')
     .replace(/(\*|_)(.+?)\1/g, '$2')
     .replace(/\\([\\`*_{}[\]()#+\-.!])/g, '$1')
+
+  return stripHtmlTags(text)
     .replace(/\s+/g, ' ')
     .trim()
 }
