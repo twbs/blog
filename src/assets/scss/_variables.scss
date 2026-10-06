@@ -6,7 +6,6 @@
 // Local docs variables
 $bd-purple: #4c0bce !default;
 $bd-violet: color.adjust(color.adjust($bd-purple, $saturation: 5%), $lightness: 15%) !default;
-$bd-gutter-x: 3rem !default;
 
 @layer custom {
   :root,

@@ -2,7 +2,7 @@
 author: mdo
 date: "2022-09-07T16:00:00Z"
 title: Bootstrap 5.2.1
-category: Release
+category: Bootstrap 5
 keywords:
   - bootstrap
   - release

@@ -9,6 +9,21 @@
 //
 
 @layer custom {
+  // Temporary: keep ad markup and loading behavior intact while removing every
+  // placement and its layout wrapper for visual review.
+  .bd-aside,
+  .posts-header-ad,
+  .posts-ad,
+  :where(div):has(> [id="_carbonads_js"]),
+  :where(div):has(> #carbon-responsive) {
+    display: none !important;
+  }
+
+  .bd-layout:has(> .bd-aside) {
+    grid-template-areas: "main";
+    grid-template-columns: minmax(0, var(--bd-post-width));
+  }
+
   #carbon-responsive .carbon-responsive-wrap {
     padding: 1rem !important;
     border: 0 !important;

@@ -2,7 +2,7 @@
 author: mdo
 date: "2023-05-30T07:35:00Z"
 title: Bootstrap 5.3.0
-category: Release
+category: Bootstrap 5
 major: true
 keywords:
   - bootstrap

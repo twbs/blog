@@ -2,7 +2,7 @@
 author: mdo
 date: "2025-05-05T15:22:00Z"
 title: Bootstrap 5.3.6
-category: Release
+category: Bootstrap 5
 keywords:
   - bootstrap
   - release

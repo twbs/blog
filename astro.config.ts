@@ -5,9 +5,7 @@ import type { AstroIntegration } from 'astro'
 import sitemap from '@astrojs/sitemap'
 import mdx from '@astrojs/mdx'
 import { rehypeHeadingIds, unified } from '@astrojs/markdown-remark'
-import bootstrapLight from 'bootstrap-vscode-theme/themes/bootstrap-light.json'
-import bootstrapDark from 'bootstrap-vscode-theme/themes/bootstrap-dark.json'
-import { transformerNotationDiff, transformerNotationHighlight } from '@shikijs/transformers'
+import { bootstrapShikiConfig } from '@twbs/bui/shiki'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import type { Element, ElementContent } from 'hast'
 
@@ -89,32 +87,19 @@ export default defineConfig({
       ]
     }),
     syntaxHighlight: 'shiki',
-    shikiConfig: {
-      themes: {
-        light: { ...bootstrapLight, name: '', type: 'light' },
-        dark: { ...bootstrapDark, name: '', type: 'dark' }
-      },
-      defaultColor: 'light-dark()',
-      transformers: [
-        transformerNotationDiff(),
-        transformerNotationHighlight(),
-        {
-          name: 'add-language-attribute',
-          pre(node) {
-            const lang = this.options.lang
-            if (lang) {
-              node.properties['dataLanguage'] = lang
-            }
-          }
-        }
-      ]
-    }
+    shikiConfig: bootstrapShikiConfig
   },
   devToolbar: {
     enabled: false
   },
   redirects: getAliasRedirects(),
   vite: {
+    optimizeDeps: {
+      exclude: ['@twbs/bui']
+    },
+    resolve: {
+      dedupe: ['bootstrap']
+    },
     css: {
       preprocessorOptions: {
         scss: {

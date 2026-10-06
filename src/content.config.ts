@@ -5,7 +5,7 @@ const postsSchema = z.object({
   author: z.string(),
   date: z.coerce.date(),
   title: z.string(),
-  category: z.enum(['Release', 'Icons', 'Community']).optional(),
+  category: z.enum(['Release', 'Bootstrap 6', 'Bootstrap 5', 'Icons', 'Community']).optional(),
   description: z.string().optional(),
   // Gives the post a full-width card on the index instead of a half-width one.
   major: z.boolean().optional(),

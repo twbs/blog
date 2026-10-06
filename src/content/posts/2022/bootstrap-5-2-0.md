@@ -2,7 +2,7 @@
 author: mdo
 date: "2022-07-19T16:00:00Z"
 title: Bootstrap 5.2.0
-category: Release
+category: Bootstrap 5
 major: true
 video: L93-7vRfxNs
 keywords:

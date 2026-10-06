@@ -2,7 +2,7 @@
 author: mdo
 date: "2021-05-05T09:30:00Z"
 title: Bootstrap 5
-category: Release
+category: Bootstrap 5
 major: true
 video: FGBhQbmPwH8
 keywords:

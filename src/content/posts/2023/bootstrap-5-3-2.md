@@ -2,7 +2,7 @@
 author: julien-deramond
 date: "2023-09-14T14:30:00Z"
 title: Bootstrap 5.3.2
-category: Release
+category: Bootstrap 5
 keywords:
   - bootstrap
   - release

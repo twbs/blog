@@ -3,6 +3,14 @@ import { getCollection, type CollectionEntry } from 'astro:content'
 export type Post = CollectionEntry<'posts'>
 
 export const POSTS_PER_PAGE = 12
+export const POST_CATEGORIES = [
+  { label: 'Bootstrap 6', slug: 'bootstrap-6' },
+  { label: 'Bootstrap 5', slug: 'bootstrap-5' },
+  { label: 'Icons', slug: 'icons' },
+  { label: 'Community', slug: 'community' }
+] as const
+
+export type PostCategory = (typeof POST_CATEGORIES)[number]
 
 export const allPosts = await getCollection('posts')
 
@@ -14,10 +22,18 @@ export const sortedPosts = allPosts
 
 export const totalPages = Math.max(1, Math.ceil(sortedPosts.length / POSTS_PER_PAGE))
 
-export function getPostsForPage(page: number): Post[] {
+export function getPostsForPage(page: number, posts = sortedPosts): Post[] {
   const start = (page - 1) * POSTS_PER_PAGE
 
-  return sortedPosts.slice(start, start + POSTS_PER_PAGE)
+  return posts.slice(start, start + POSTS_PER_PAGE)
+}
+
+export function getPostsByCategory(category: PostCategory): Post[] {
+  return sortedPosts.filter(post => post.data.category === category.label)
+}
+
+export function getTotalPages(posts: Post[]): number {
+  return Math.max(1, Math.ceil(posts.length / POSTS_PER_PAGE))
 }
 
 export function getPostSlug(post: Post): string {

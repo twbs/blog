@@ -2,7 +2,7 @@
 author: mdo
 date: "2022-05-13T00:00:00Z"
 title: Bootstrap 5.2.0 beta
-category: Release
+category: Bootstrap 5
 video: 1-yzqgwTVi8
 keywords:
   - bootstrap
