@@ -1,12 +1,13 @@
 ---
-import SharedHeader from "@twbs/docs-ui/components/Header";
-import type { NavigationConfig } from "@twbs/docs-ui";
+import SharedHeader from "@twbs/bui/components/Header";
+import type { NavigationConfig } from "@twbs/bui";
 import { getConfig } from "../../libs/config";
 
 const site = getConfig();
 const config: NavigationConfig = {
   activeSection: "blog",
   brandHref: `${site.main}/`,
+  showVersion: false,
   homeHref: `${site.main}/`,
   docsHref: `${site.main}/docs/${site.docs_version}/getting-started/introduction/`,
   examplesHref: `${site.main}/docs/${site.docs_version}/examples/`,

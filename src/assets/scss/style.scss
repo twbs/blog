@@ -5,14 +5,14 @@
 @use "variables";
 @use "anchor";
 @use "ads";
-@use "@twbs/docs-ui/scss/component-examples";
-@use "@twbs/docs-ui/scss/clipboard-js";
-@use "@twbs/docs-ui/scss/syntax";
+@use "@twbs/bui/scss/component-examples";
+@use "@twbs/bui/scss/clipboard-js";
+@use "@twbs/bui/scss/syntax";
 @use "footer";
 @use "pagination";
-@use "@twbs/docs-ui/scss/icons";
-@use "@twbs/docs-ui/scss/navbar";
-@use "@twbs/docs-ui/scss/search";
+@use "@twbs/bui/scss/icons";
+@use "@twbs/bui/scss/navbar";
+@use "@twbs/bui/scss/search";
 @use "theme";
 @use "toc";
 
@@ -187,28 +187,6 @@
   // Blog index
   .posts-subtitle {
     max-width: 32rem;
-  }
-
-  .posts-header-link {
-    display: inline-flex;
-    gap: .375rem;
-    align-items: center;
-    padding: .375rem .75rem;
-    font-size: var(--bs-font-size-sm);
-    color: var(--bs-fg-2);
-    text-decoration: none;
-    background-color: var(--bs-bg-1);
-    border: var(--bs-border-width-keyline) solid var(--bs-border-color);
-    border-radius: 100rem;
-
-    .bi {
-      color: var(--bs-fg-3);
-    }
-
-    &:hover {
-      color: var(--bs-fg-body);
-      background-color: var(--bs-bg-2);
-    }
   }
 
   .post-card {

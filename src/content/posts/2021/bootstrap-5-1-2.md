@@ -2,7 +2,7 @@
 author: mdo
 date: "2021-10-05T00:00:00Z"
 title: Bootstrap 5.1.2
-category: Release
+category: Bootstrap 5
 video: HoQN7K6HdRw
 keywords:
   - bootstrap

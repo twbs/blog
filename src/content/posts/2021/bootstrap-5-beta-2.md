@@ -2,7 +2,7 @@
 author: mdo
 date: "2021-02-10T11:00:00Z"
 title: Bootstrap 5 Beta 2
-category: Release
+category: Bootstrap 5
 video: pUj9frKY46E
 keywords:
   - bootstrap

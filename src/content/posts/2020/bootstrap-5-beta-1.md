@@ -2,7 +2,7 @@
 author: mdo
 date: "2020-12-07T11:00:00Z"
 title: Bootstrap 5 Beta 1
-category: Release
+category: Bootstrap 5
 video: y2bVIBwpCTA
 keywords:
   - bootstrap

@@ -5,7 +5,7 @@ import type { AstroIntegration } from 'astro'
 import sitemap from '@astrojs/sitemap'
 import mdx from '@astrojs/mdx'
 import { rehypeHeadingIds, unified } from '@astrojs/markdown-remark'
-import { bootstrapShikiConfig } from '@twbs/docs-ui/shiki'
+import { bootstrapShikiConfig } from '@twbs/bui/shiki'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import type { Element, ElementContent } from 'hast'
 
@@ -95,7 +95,7 @@ export default defineConfig({
   redirects: getAliasRedirects(),
   vite: {
     optimizeDeps: {
-      exclude: ['@twbs/docs-ui']
+      exclude: ['@twbs/bui']
     },
     resolve: {
       dedupe: ['bootstrap']

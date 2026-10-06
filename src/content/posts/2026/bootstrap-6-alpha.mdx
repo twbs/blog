@@ -2,7 +2,7 @@
 author: mdo
 date: "2026-08-21T00:00:00Z"
 title: Bootstrap 6 Alpha
-category: Release
+category: Bootstrap 6
 major: true
 keywords:
   - bootstrap
@@ -10,8 +10,8 @@ keywords:
 banner: /assets/img/2026/09/bootstrap-v6-alpha-social.png
 ---
 
-import Example from '@twbs/docs-ui/components/Example'
-import ResizableExample from '@twbs/docs-ui/components/ResizableExample'
+import Example from '@twbs/bui/components/Example'
+import ResizableExample from '@twbs/bui/components/ResizableExample'
 import TokenPlayground from '../../../components/shortcodes/TokenPlayground.astro'
 import ThemePairings from '../../../components/shortcodes/ThemePairings.astro'
 import ThemeComponents from '../../../components/shortcodes/ThemeComponents.astro'
@@ -55,6 +55,11 @@ Huge thanks to everyone who contributed to the v6 development branch as well:
   <GithubUser user="fauzan171" />
   <GithubUser user="claudiob" />
   <GithubUser user="aljojoby9" />
+  <GithubUser user="VividLemon" />
+  <GithubUser user="cccabinet" />
+  <GithubUser user="Rawal27" />
+  <GithubUser user="jonnysp" />
+  <GithubUser user="kwy404" />
 </p>
 
 And most importantly, thanks to everyone who has backed Bootstrap on [Open Collective](https://opencollective.com/bootstrap) and every contributor who filed an issue, sent a patch, or argued with me in a pull request.
@@ -240,6 +245,16 @@ Bootstrap 6 includes LLM-friendly documentation and skill files for all your age
 To be more efficient with agents, we have text-only versions of our documentation. [`llms.txt`](https://getbootstrap.com/llms.txt) is a curated index of every documentation page with descriptions while [`llms-full.txt`](https://getbootstrap.com/llms-full.txt) is all of our documentation concatenated into one file.
 
 Skills files have been added to the repository [in a new `skills/` directory](https://github.com/twbs/bootstrap/tree/main/skills). Skills are playbooks for specific tasks, in this case for working with Bootstrap 6. To start, we’ve drafted skill files for migrating to v6, using Bootstrap with different build tools, authoring components, and more. Point your agent at the relevant file and it’ll follow the correct guidance from us maintainers instead of anything potentially outdated or incorrect.
+
+## Two more things…
+
+We’ve also updated the blog and Icons site with refreshed designs.
+
+- The blog has a new homepage, search via Pagefind, new category pages, and new post layouts like the one you're reading now.
+
+- The Icons site has a new homepage, too—immediately oriented around the grid of icons. We’ve added search with PageFind here as well (including `?tag=` queries), new sidebar category navigation and category pages, plus a refreshed icon show page.
+
+In addition, we've built out a new, private repository and package for sharing Bootstrap docs components across the main site, Icons, and Blog. It's called `@twbs/bui` and gives us better control as maintainers over all the separate sites without having to fully commit to a monorepo.
 
 ## What’s next
 

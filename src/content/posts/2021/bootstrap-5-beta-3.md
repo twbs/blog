@@ -2,7 +2,7 @@
 author: mdo
 date: "2021-03-23T09:30:00Z"
 title: Bootstrap 5 Beta 3
-category: Release
+category: Bootstrap 5
 video: kldVOhKe4rg
 aliases:
   - /2021/03/22/bootstrap-5-beta-3/

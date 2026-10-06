@@ -2,7 +2,7 @@
 author: mdo
 date: "2020-11-11T11:00:00Z"
 title: Bootstrap 5 Alpha 3
-category: Release
+category: Bootstrap 5
 video: god7hAPv8f0
 keywords:
   - bootstrap
