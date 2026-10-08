@@ -1,0 +1,79 @@
+---
+// A figure whose screenshots follow the blog's color mode: each shot comes as
+// a light and a dark capture, and only the one matching `data-bs-theme` on
+// `<html>` shows. `auto` falls back to `prefers-color-scheme`, so the right
+// capture shows even before the color mode script has resolved it.
+// Several shots sit side by side, and stack on narrow screens.
+
+interface Shot {
+  // Path of the light capture, e.g. `/assets/img/2026/10/foo-light.png`.
+  light: string
+  // Path of the dark capture.
+  dark: string
+  alt: string
+  width: number
+  height: number
+}
+
+interface Props {
+  shots: Shot[]
+  caption?: string
+  // Caps the figure's width, for tall captures such as phone screens.
+  maxWidth?: string
+}
+
+const { shots, caption, maxWidth } = Astro.props
+const grid = shots.length > 1
+---
+
+<figure
+  class="post-figure themed-figure d-flex flex-column gap-6 m-0"
+  style={maxWidth ? `max-width: ${maxWidth}; justify-self: center; width: 100%;` : undefined}
+>
+  <div class:list={['themed-figure-media', { 'themed-figure-row': grid }]}>
+    {
+      shots.map(shot => (
+        <span class="post-figure-media d-block w-100 overflow-hidden rounded-8 border border-subtle">
+          <img class="themed-shot-light" src={shot.light} alt={shot.alt} width={shot.width} height={shot.height} loading="lazy" decoding="async" />
+          <img class="themed-shot-dark" src={shot.dark} alt={shot.alt} width={shot.width} height={shot.height} loading="lazy" decoding="async" />
+        </span>
+      ))
+    }
+  </div>
+  {caption && <figcaption class="post-figure-caption fs-sm fg-3 text-center">{caption}</figcaption>}
+</figure>
+
+<style>
+  /* The plate behind a loading capture follows the color mode too. */
+  .post-figure-media {
+    background-color: var(--bs-bg-1);
+  }
+
+  .themed-figure-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    gap: var(--bd-gap-media, 1.5rem);
+  }
+
+  .themed-shot-dark {
+    display: none;
+  }
+
+  :global([data-bs-theme='dark']) .themed-shot-light {
+    display: none;
+  }
+
+  :global([data-bs-theme='dark']) .themed-shot-dark {
+    display: block;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :global([data-bs-theme='auto']) .themed-shot-light {
+      display: none;
+    }
+
+    :global([data-bs-theme='auto']) .themed-shot-dark {
+      display: block;
+    }
+  }
+</style>

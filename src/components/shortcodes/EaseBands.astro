@@ -1,0 +1,61 @@
+---
+// Horizontal bars for how many backlog items fall in each ease band. Built
+// from theme utilities, so it follows the color mode.
+
+interface Band {
+  range: string
+  label: string
+  count: number
+}
+
+interface Props {
+  bands: Band[]
+  caption?: string
+}
+
+const { bands, caption } = Astro.props
+const max = Math.max(...bands.map(band => band.count))
+---
+
+<figure class="not-prose ease-bands bg-1 rounded-7 p-4 md:p-5 my-3">
+  <ul class="list-unstyled m-0 p-0 vstack gap-3">
+    {
+      bands.map(band => (
+        <li class="ease-band">
+          <span class="font-monospace fs-sm fg-3">{band.range}</span>
+          <span class="fs-sm fg-body">{band.label}</span>
+          <span class="ease-band-track rounded-pill bg-2" aria-hidden="true">
+            <span class="ease-band-bar d-block h-100 rounded-pill bg-primary" style={`width: ${(band.count / max) * 100}%`} />
+          </span>
+          <span class="fw-semibold fg-body text-end">{band.count}</span>
+        </li>
+      ))
+    }
+  </ul>
+  {caption && <figcaption class="fs-sm fg-3 text-center mt-4">{caption}</figcaption>}
+</figure>
+
+<style>
+  .ease-band {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr) 2.5rem;
+    gap: .25rem .75rem;
+    align-items: center;
+  }
+
+  .ease-band-track {
+    grid-column: 2 / 3;
+    height: .625rem;
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .ease-band {
+      grid-template-columns: 3rem 15rem minmax(0, 1fr) 2.5rem;
+    }
+
+    .ease-band-track {
+      grid-column: auto;
+    }
+  }
+</style>
