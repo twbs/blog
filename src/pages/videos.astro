@@ -6,6 +6,7 @@ const videoPosts = sortedPosts.filter(post => post.data.video)
 ---
 
 <BaseLayout title="Videos" description="Every music video from Bootstrap Blog posts">
+  <h1 class="visually-hidden">Videos</h1>
   {videoPosts.length > 0 && (
     <div class="row my-5">
       {videoPosts.map(post => (
@@ -16,7 +17,7 @@ const videoPosts = sortedPosts.filter(post => post.data.video)
               class="d-block w-100 ratio-16x9"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-              title="YouTube Video"
+              title={`Video: ${post.data.title}`}
               loading="lazy"
             ></iframe>
           </div>
