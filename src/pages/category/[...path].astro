@@ -42,7 +42,8 @@ const { category, posts, page, totalPages } = Astro.props
 ---
 
 <BaseLayout
-  title={`${category.label} · Bootstrap Blog${page > 1 ? ` · Page ${page}` : ''}`}
+  title={`${category.label}${page > 1 ? ` · Page ${page}` : ''}`}
+  description={`Bootstrap Blog posts in the ${category.label} category.`}
   robots={page > 1 ? 'noindex' : undefined}
   wide
 >
