@@ -20,7 +20,7 @@ import PostSeries from '../../../components/shortcodes/PostSeries.astro'
 
 Today we’re releasing the first alpha version of Bootstrap 6, a major overhaul to the project that modernizes and expands one of the most prolific open source design systems of all time. It’s been incredibly fun and rewarding to work on this over the past year, and I’m excited to share it with you.
 
-Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards. We’ve broken this post into separate entries that we'll publish one-by-one, starting with an overview of v6 and a spotlight on our new Sass & CSS implementation.
+Bootstrap 6 has been modernized from the ground up with the Sass module system, support for more native browser APIs and elements, ESM-only JavaScript plugins, and a slew of new CSS standards. We’ve broken this post into separate entries that we’ll publish one-by-one, starting with an overview of v6 and a spotlight on our new Sass & CSS implementation.
 
 <PostSeries current="alpha" />
 
@@ -28,13 +28,13 @@ Bootstrap 6 has been modernized from the ground up with the Sass module system, 
 
 You’re probably asking yourself, “Wtf, new Bootstrap? What is this, 2015?” And I don’t blame you. It’s been all quiet on the Bootstrap front for a long time while I’ve focused on [Pierre](https://pierre.computer), especially with our work on [Diffs](https://diffs.com), [Trees](https://trees.software), and [Code Storage](https://code.storage).
 
-Throughout all of that, I've had several nagging ideas for Bootstrap despite humans not writing any more code thanks to AI. And yes, there are tons of design libraries from amazing developers now. Still, the reason we made Bootstrap in the first place has never been more relevant.
+Throughout all of that, I’ve had several nagging ideas for Bootstrap despite humans not writing any more code thanks to AI. And yes, there are tons of design libraries from amazing developers now. Still, the reason we made Bootstrap in the first place has never been more relevant.
 
 > To help people build more software, faster and easier.
 
-There’s never been more people building software than today, and I imagine that will continue to be true every day, for the rest of our lives. And so, Bootstrap 6 is here to continue being an open source design system for anyone—human or AI, novice or pro.
+There’s never been more people building software than today, and I imagine that will continue to be true every day, for the rest of our lives. It’s already been installed over 1.75 billion times since its release in 2011. So, Bootstrap 6 is here to continue being an open source design system for anyone—human or AI, novice or pro.
 
-We hope you love it, and thanks to everyone who's supported the project over the years.
+We hope you love it, and thanks to everyone who’s supported the project over the years.
 
 ## Community appreciation
 
@@ -103,7 +103,7 @@ Then read our [Install](https://getbootstrap.com/docs/6.0/getting-started/instal
   </div>
 </div>
 
-**Bootstrap 6 requires Chrome and Edge 130, Firefox 132, and Safari 18.** For comparison, v5 supported browsers as far back as Chrome and Firefox 60 and Safari 12. This new support floor is because we're building with browser features that weren’t available a few years ago: `light-dark()`, `:has()`, container queries, `oklch()`, `color-mix()`, the native `<dialog>` element, and more. This means v6 includes no fallbacks, prefixes, or polyfills below that floor.
+**Bootstrap 6 requires Chrome and Edge 130, Firefox 132, and Safari 18.** For comparison, v5 supported browsers as far back as Chrome and Firefox 60 and Safari 12. This new support floor is because we’re building with browser features that weren’t available a few years ago: `light-dark()`, `:has()`, container queries, `oklch()`, `color-mix()`, the native `<dialog>` element, and more. This means v6 includes no fallbacks, prefixes, or polyfills below that floor.
 
 This doesn’t get us features like CSS Anchor Positioning, full pretty text support, or contrast color in Safari yet, but we expect to have a v7 sooner than our past major releases.
 
@@ -111,11 +111,11 @@ Bootstrap 5 remains available and supported if that floor doesn’t work for you
 
 ## Spotlight: CSS-first Sass modules
 
-Updating Bootstrap to use Sass modules was a massive undertaking that couldn't happen in v5 without some breaking changes. So we went big in v6.
+Updating Bootstrap to use Sass modules was a massive undertaking that couldn’t happen in v5 without some breaking changes. So we went big in v6.
 
 Bootstrap 6 uses the `@use`/`@forward` module system, and **customization now happens via token maps**. Sass is still used for _programmatic_ customization (generating component variants, utilities, functions, etc), while all _visual_ customization happens with CSS.
 
-**Token maps** are Sass maps that house all our CSS variables for both global settings in `:root` and on our individual components. This normalizes the path to customizing and focuses Bootstrap on the future of CSS, with a strong preprocessor foundation for managing large codebases. Nearly every Sass variable from v5 is now a CSS variable in a token map. This also means you can customize Bootstrap's CSS variables at runtime, rather than just before compilation.
+**Token maps** are Sass maps that house all our CSS variables for both global settings in `:root` and on our individual components. This normalizes the path to customizing and focuses Bootstrap on the future of CSS, with a strong preprocessor foundation for managing large codebases. Nearly every Sass variable from v5 is now a CSS variable in a token map. This also means you can customize Bootstrap’s CSS variables at runtime, rather than just before compilation.
 
 Here’s how [this approach](https://getbootstrap.com/docs/6.0/getting-started/approach) looks in a component like [alert](https://getbootstrap.com/docs/6.0/components/alert):
 
@@ -213,7 +213,7 @@ If you have custom Sass built on our breakpoint helpers, `breakpoint-infix()` is
 
 Bootstrap 6 has been overhauled to use as many of the latest browser-native features as possible, alongside updated build tooling. This makes Bootstrap more accessible, easier to customize, and primed for future browser updates. Alongside that, we’ve rewritten our source Sass around the modern module system and newer versions of Dart Sass. `@import` is deprecated and no longer supported for customization; use `@use` and `@forward` instead.
 
-Sass files have also been reorganized, and several Sass files have been removed given the change to CSS variables for all visual customization, automatic color-mode adaptivity via `light-dark()`, and more. We've also cleaned up the shenanigans around the `_maps.scss` file, `_variables.scss` and `_variables-dark.scss`, both of which are no more.
+Sass files have also been reorganized, and several Sass files have been removed given the change to CSS variables for all visual customization, automatic color-mode adaptivity via `light-dark()`, and more. We’ve also cleaned up the shenanigans around the `_maps.scss` file, `_variables.scss` and `_variables-dark.scss`, both of which are no more.
 
 On the HTML and CSS side of things, some highlights include:
 
@@ -251,11 +251,11 @@ Skills files have been added to the repository [in a new `skills/` directory](ht
 
 We’ve also updated the blog and Icons site with refreshed designs.
 
-- The blog has a new homepage, search via Pagefind, new category pages, and new post layouts like the one you're reading now.
+- The blog has a new homepage, search via Pagefind, new category pages, and new post layouts like the one you’re reading now.
 
 - The Icons site has a new homepage, too—immediately oriented around the grid of icons. We’ve added search with PageFind here as well (including `?tag=` queries), new sidebar category navigation and category pages, plus a refreshed icon show page.
 
-In addition, we've built out a new, private repository and package for sharing Bootstrap docs components across the main site, Icons, and Blog. It's called `@twbs/bui` and gives us better control as maintainers over all the separate sites without having to fully commit to a monorepo.
+In addition, we’ve built out a new, private repository and package for sharing Bootstrap docs components across the main site, Icons, and Blog. It’s called `@twbs/bui` and gives us better control as maintainers over all the separate sites without having to fully commit to a monorepo.
 
 ## What’s next
 
@@ -263,6 +263,6 @@ This is an alpha, so things can still meaningfully change before beta. There wil
 
 - Use the v6 feedback category in [GitHub Discussions](https://github.com/orgs/twbs/discussions/categories/v6-feedback) if you have a general question or feedback on the v6 release.
 - File an issue in [GitHub Issues](https://github.com/twbs/bootstrap/issues) if you have a specific bug or feature request.
-- Open a [pull request](https://github.com/twbs/bootstrap/pulls) with your changes (it's always a good idea to review in a discussion or issue first so we don't waste anyone's time!)
+- Open a [pull request](https://github.com/twbs/bootstrap/pulls) with your changes (it’s always a good idea to review in a discussion or issue first so we don’t waste anyone’s time!)
 
 Thanks again to everyone who contributed, thanks for reading, and we hope you love Bootstrap 6!
