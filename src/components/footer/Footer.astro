@@ -1,0 +1,40 @@
+---
+import SharedFooter from "@twbs/bui/components/Footer";
+import { getFooterColumns } from "@twbs/bui";
+import { getConfig } from "../../libs/config";
+
+const site = getConfig();
+const docsHref = `${site.main}/docs/${site.docs_version}/`;
+const columns = getFooterColumns({
+  homeHref: `${site.main}/`,
+  getDocsHref: (path: string) => `${docsHref}${path}${path ? "/" : ""}`,
+  iconsHref: site.icons,
+  swagHref: site.swag,
+  githubOrgHref: site.github_org,
+  openCollectiveHref: site.opencollective,
+});
+---
+
+<SharedFooter brand="Bootstrap" columns={columns}>
+  <ul class="list-unstyled small">
+    <li class="mb-2">
+      Designed and built with all the love in the world by the <a
+        href={`${site.main}/docs/${site.docs_version}/about/team/`}
+        >Bootstrap team</a
+      > with the help of <a href={`${site.repo}/graphs/contributors`}
+        >our contributors</a
+      >.
+    </li>
+    <li class="mb-2">
+      Code licensed <a
+        href={`${site.repo}/blob/main/LICENSE`}
+        target="_blank"
+        rel="license noopener">MIT</a
+      >, docs <a
+        href="https://creativecommons.org/licenses/by/3.0/"
+        target="_blank"
+        rel="license noopener">CC BY 3.0</a
+      >.
+    </li>
+  </ul>
+</SharedFooter>

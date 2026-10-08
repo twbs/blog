@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-11-09T00:00:00Z"
 title: Update on the Glyphicons font
+category: Community
 ---
 
 Earlier this week, I was excited to announce that our next release, `2.2.2-wip`, would include the new Glyphicons icon font. In hindsight I got a little carried away and forgot about something.

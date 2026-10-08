@@ -2,6 +2,7 @@
 author: cvrebert
 date: "2014-06-25T00:00:00Z"
 title: Let Me Validate That For You (LMVTFY)
+category: Community
 video: HEXWRTEbj1I
 ---
 

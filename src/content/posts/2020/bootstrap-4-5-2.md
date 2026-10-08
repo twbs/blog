@@ -2,6 +2,7 @@
 author: mdo
 date: "2020-08-06T00:00:00Z"
 title: Bootstrap 4.5.2
+category: Release
 video: ccenFp_3kq8
 keywords:
   - bootstrap

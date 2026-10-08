@@ -2,6 +2,7 @@
 author: mdo
 date: "2018-02-21T00:00:00Z"
 title: New Bootstrap themes
+category: Community
 video: atxUuldUcfI
 ---
 

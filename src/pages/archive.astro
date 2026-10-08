@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { sortedPosts, getPostSlug, formatDateShort } from '../libs/content'
+
+// Group posts by year
+const postsByYear = new Map<number, typeof sortedPosts>()
+for (const post of sortedPosts) {
+  const year = new Date(post.data.date).getUTCFullYear()
+  if (!postsByYear.has(year)) {
+    postsByYear.set(year, [])
+  }
+  postsByYear.get(year)!.push(post)
+}
+---
+
+<BaseLayout title="Archive" description="All Bootstrap Blog posts by year">
+  <div class="px-3 py-5">
+    {[...postsByYear.entries()].map(([year, posts]) => (
+      <>
+        <h3>{year}</h3>
+        <ul class="list mb-5">
+          {posts.map(post => (
+            <li>
+              <a href={`/${getPostSlug(post)}/`}>{post.data.title}</a>
+              <span title={new Date(post.data.date).toUTCString()}>
+                {formatDateShort(new Date(post.data.date))}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </div>
+</BaseLayout>

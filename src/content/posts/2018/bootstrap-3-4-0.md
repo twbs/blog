@@ -2,6 +2,7 @@
 author: mdo
 date: "2018-12-13T00:00:00Z"
 title: Bootstrap 3.4.0
+category: Release
 video: 8WEtxJ4-sh4
 keywords:
   - bootstrap
@@ -35,7 +36,7 @@ Our documentation and tooling saw massive updates as well to make it easier to w
 - Updated links to always use https and fix broken URLs.
 - Replaced ZeroClipboard with clipboard.js
 
-[Head to the Bootstrap 3.4 docs]({{< param "main" >}}/docs/3.4/) to see the latest in action. [Check out the v3.4.0 pull request](https://github.com/twbs/bootstrap/pull/27288) for even more context on what's changed.
+[Head to the Bootstrap 3.4 docs](https://getbootstrap.com/docs/3.4/) to see the latest in action. [Check out the v3.4.0 pull request](https://github.com/twbs/bootstrap/pull/27288) for even more context on what's changed.
 
 ## Upgrading
 
@@ -43,7 +44,7 @@ Upgrade your Bootstrap 3 projects to v3.4.0 with `npm i bootstrap@previous` or `
 
 ## Open Collective
 
-Also new with our v3.4 is the creation of an [Open Collective page]({{< param "opencollective" >}}) to help support the maintainers contributing to Bootstrap. The team has been very excited about this as a way to be transparent about maintainer costs (both time and money), as well as recognition of efforts.
+Also new with our v3.4 is the creation of an [Open Collective page](https://opencollective.com/bootstrap) to help support the maintainers contributing to Bootstrap. The team has been very excited about this as a way to be transparent about maintainer costs (both time and money), as well as recognition of efforts.
 
 ## v4.2 and beyond
 

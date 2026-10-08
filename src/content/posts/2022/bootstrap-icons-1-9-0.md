@@ -2,6 +2,7 @@
 author: mdo
 date: "2022-07-13T00:01:00Z"
 title: Bootstrap Icons v1.9.0
+category: Icons
 video: Z6_ZNW1DACE
 keywords:
   - icons

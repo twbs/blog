@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-12-10T00:00:00Z"
 title: Bootstrap 3 plans
+category: Community
 ---
 
 With 2.2.2 out the door, our attention has shifted almost entirely to the next major update to the project, Bootstrap 3. Things are coming together and we want to give you an update on what's next and give you a chance to share your thoughts.

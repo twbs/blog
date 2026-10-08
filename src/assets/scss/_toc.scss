@@ -1,0 +1,117 @@
+@use "bootstrap/scss/layout/breakpoints" as *;
+@use "bootstrap/scss/mixins/border-radius" as *;
+
+@layer custom {
+  // "On this page", ported from the v6 docs (`site/src/scss/_toc.scss`). One
+  // node in the DOM with two presentations: a bottom drawer behind a floating
+  // button, and — from 2xl, the first breakpoint with room outside the post
+  // column — a sticky rail beside the copy. The docs flip at lg, where their
+  // narrower measure already leaves a sidebar track free.
+  .bd-toc {
+    container-type: inline-size;
+    font-size: var(--bs-font-size-sm);
+
+    @include media-breakpoint-up(2xl) {
+      position: sticky;
+      top: var(--bd-navbar-offset);
+      right: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: flex-start;
+      height: calc(100vh - var(--bd-navbar-offset) - 2.25rem - var(--bd-toc-footer-overlap, 0px));
+      padding-inline-end: .25rem;
+      margin-inline-end: -.25rem;
+      overflow-y: auto;
+
+      // The responsive drawer turns into a plain block up here, and it should
+      // take only the height its list needs.
+      > dialog {
+        flex-grow: 0 !important; // stylelint-disable-line declaration-no-important
+      }
+
+      nav {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(2xl) {
+      > dialog {
+        border-inline-start-color: var(--bs-border-color);
+        box-shadow: var(--bs-box-shadow-lg);
+      }
+    }
+
+    .nav {
+      --bs-nav-gap: 4px;
+      --bs-nav-link-justify: flex-start;
+      --bs-nav-link-padding-x: .75rem;
+      --bs-nav-link-padding-y: .0625rem;
+      --bs-nav-link-font-size: .875rem;
+      --bs-nav-link-hover-bg: transparent;
+      --bs-nav-link-active-bg: transparent;
+      --bs-nav-link-active-color: var(--bs-fg-body);
+
+      .nav .nav-link {
+        padding-inline-start: 1.75rem;
+      }
+    }
+
+    .nav-link {
+      align-items: flex-start;
+      line-height: 1.35;
+      text-wrap: pretty;
+      white-space: normal;
+      border-inline-start: .125rem solid transparent;
+      @include border-radius(0);
+
+      &.active {
+        font-weight: 500;
+        border-inline-start-color: var(--bs-fg-body);
+      }
+
+      code {
+        font: inherit;
+        overflow-wrap: anywhere;
+      }
+    }
+  }
+
+  // stylelint-disable-next-line selector-id-pattern, selector-max-id
+  #bdTocSidebar {
+    @include media-breakpoint-up(2xl) {
+      flex: 1 1 auto;
+      min-height: 0;
+      margin-bottom: auto;
+      overflow-y: auto;
+      mask-image:
+        linear-gradient(
+          to bottom,
+          transparent 0,
+          #000 var(--bd-toc-fade-top, 0),
+          #000 calc(100% - var(--bd-toc-fade-bottom, 0)),
+          transparent 100%
+        );
+    }
+
+    @include media-breakpoint-down(2xl) {
+      height: auto;
+      max-height: 80dvh;
+    }
+  }
+
+  .bd-toc-toggle {
+    position: fixed;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+    z-index: 1030;
+    margin-inline: auto;
+    font-size: var(--bs-font-size-sm);
+
+    > .btn-solid {
+      box-shadow: var(--bs-box-shadow-lg);
+    }
+  }
+}

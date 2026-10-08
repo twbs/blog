@@ -1,0 +1,23 @@
+---
+// The theme token grid from the Theme docs: every theme color by every one of
+// its nine semantic tokens. Each tile is a live `Swatch` reading a
+// `--bs-{name}-{token}` variable, so it tracks the theme and color mode.
+import Swatch from './Swatch.astro'
+import { themeColors, themeColorTitle, themeTokens } from '../../libs/theme-colors'
+---
+
+<div class="grid bd-theme-colors-grid small not-prose">
+  {
+    themeColors.map(color => (
+      <div class="d-contents grid-cols-fill">
+        <h6 class="d-block text-capitalize grid-cols-fill">{themeColorTitle(color)}</h6>
+        {themeTokens.map(token => (
+          <div class="mb-3 font-monospace">
+            <Swatch bg={`${color}-${token}`} size="medium" showVar={false} />
+            <div class="text-center small fg-3">{token}</div>
+          </div>
+        ))}
+      </div>
+    ))
+  }
+</div>

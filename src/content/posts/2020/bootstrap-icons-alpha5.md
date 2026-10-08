@@ -2,6 +2,7 @@
 author: mdo
 date: "2020-06-26T21:30:00Z"
 title: Bootstrap Icons Alpha 5
+category: Icons
 video: HgzGwKwLmgM
 keywords:
   - icons

@@ -2,6 +2,8 @@
 author: mdo
 date: "2022-11-11T00:01:00Z"
 title: Bootstrap Icons v1.10.0
+category: Icons
+major: true
 keywords:
   - icons
   - release

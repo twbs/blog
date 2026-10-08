@@ -1,7 +1,7 @@
 .DS_Store
+/.astro/
 /.cache/
 /.netlify/
-/_site/
+/dist/
 /node_modules/
-/resources/
-/.hugo_build.lock
+/public/pagefind/

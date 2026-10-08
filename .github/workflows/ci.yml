@@ -35,8 +35,6 @@ jobs:
           node-version: ${{ env.NODE }}
           cache: npm
 
-      - run: java -version
-
       - name: Install npm dependencies
         run: npm ci
 
@@ -46,6 +44,8 @@ jobs:
       - name: Upload docs
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         if: github.repository == 'twbs/blog' && github.ref == 'refs/heads/main'
+        with:
+          path: dist
 
   deploy:
     runs-on: ubuntu-latest

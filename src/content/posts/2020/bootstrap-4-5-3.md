@@ -2,6 +2,7 @@
 author: mdo
 date: "2020-10-13T00:00:00Z"
 title: Bootstrap 4.5.3
+category: Release
 video: Y3ywicffOj4
 keywords:
   - bootstrap
@@ -55,4 +56,4 @@ We'll be back to v5 with our third alpha release coming in a couple of weeks. Af
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

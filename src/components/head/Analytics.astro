@@ -1,0 +1,11 @@
+---
+// Synced from ~/work/bootstrap/site/src/components/head/Analytics.astro
+import { getConfig } from '../../libs/config'
+
+const config = getConfig()
+const isProd = import.meta.env.PROD
+---
+
+{isProd && (
+  <script is:inline async src="https://cdn.usefathom.com/script.js" data-site={config.analytics.fathom_site}></script>
+)}

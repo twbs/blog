@@ -1,0 +1,36 @@
+---
+import SharedHeader from "@twbs/bui/components/Header";
+import type { NavigationConfig } from "@twbs/bui";
+import { getConfig } from "../../libs/config";
+
+const site = getConfig();
+const config: NavigationConfig = {
+  activeSection: "blog",
+  brandHref: `${site.main}/`,
+  showVersion: false,
+  homeHref: `${site.main}/`,
+  docsHref: `${site.main}/docs/${site.docs_version}/getting-started/introduction/`,
+  examplesHref: `${site.main}/docs/${site.docs_version}/examples/`,
+  iconsHref: site.icons,
+  blogHref: "/",
+  githubHref: site.github_org,
+  openCollectiveHref: site.opencollective,
+  xHref: `https://x.com/${site.x}`,
+  currentVersion: site.docs_version,
+  currentVersionHref: `${site.main}/docs/${site.docs_version}/`,
+  previousVersions: [
+    {
+      label: "v5.3.x",
+      href: "https://getbootstrap.com/docs/5.3/",
+      note: "Latest",
+    },
+    { label: "v4.6.x", href: "https://getbootstrap.com/docs/4.6/" },
+    { label: "v3.4.1", href: "https://getbootstrap.com/docs/3.4/" },
+    { label: "v2.3.2", href: "https://getbootstrap.com/2.3.2/" },
+  ],
+  allVersionsHref: `${site.main}/docs/versions/`,
+  searchPlaceholder: "Search the blog…",
+};
+---
+
+<SharedHeader config={config} />

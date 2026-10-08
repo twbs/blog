@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import PostList from '../../components/PostList.astro'
+import {
+  POST_CATEGORIES,
+  getPostsByCategory,
+  getPostsForPage,
+  getTotalPages,
+  type Post,
+  type PostCategory
+} from '../../libs/content'
+
+interface Props {
+  category: PostCategory
+  posts: Post[]
+  page: number
+  totalPages: number
+}
+
+export function getStaticPaths() {
+  return POST_CATEGORIES.flatMap(category => {
+    const posts = getPostsByCategory(category)
+    const totalPages = getTotalPages(posts)
+
+    return Array.from({ length: totalPages }, (_, index) => {
+      const page = index + 1
+
+      return {
+        params: { path: page === 1 ? category.slug : `${category.slug}/page/${page}` },
+        props: {
+          category,
+          posts: getPostsForPage(page, posts),
+          page,
+          totalPages
+        }
+      }
+    })
+  })
+}
+
+const { category, posts, page, totalPages } = Astro.props
+---
+
+<BaseLayout
+  title={`${category.label} · Bootstrap Blog${page > 1 ? ` · Page ${page}` : ''}`}
+  robots={page > 1 ? 'noindex' : undefined}
+  wide
+>
+  <div class="my-5">
+    <PostList
+      posts={posts}
+      currentPage={page}
+      totalPages={totalPages}
+      category={category.slug}
+    />
+  </div>
+</BaseLayout>

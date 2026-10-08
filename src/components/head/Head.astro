@@ -1,0 +1,45 @@
+---
+import { getConfig } from "../../libs/config";
+import type { SocialCard } from "../../libs/social";
+import HeadMeta from "@twbs/bui/components/Head";
+import Favicons from "./Favicons.astro";
+import Social from "./Social.astro";
+import Analytics from "./Analytics.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  card?: SocialCard;
+  robots?: string;
+}
+
+const config = getConfig();
+const { title, description, card, robots } = Astro.props;
+
+const pageTitle =
+  Astro.url.pathname === "/"
+    ? `${config.title} · ${config.description}`
+    : `${title} | ${config.title}`;
+
+const pageDescription = description || config.description;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<HeadMeta
+  title={pageTitle}
+  description={pageDescription}
+  canonical={canonical}
+  robots={robots}
+  rss={new URL("/feed.xml", Astro.site)}
+  rssTitle={config.title}
+>
+  <link rel="preconnect" href="https://github.com" crossorigin />
+  <link
+    rel="preconnect"
+    href="https://avatars.githubusercontent.com"
+    crossorigin
+  />
+  <Favicons />
+  <Social title={title} description={pageDescription} card={card} />
+  <Analytics />
+</HeadMeta>

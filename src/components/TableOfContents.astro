@@ -1,0 +1,15 @@
+---
+import { generateToc, type Heading, type TocEntry } from "../libs/toc";
+import SharedTableOfContents from "@twbs/bui/components/TableOfContents";
+
+interface Props {
+  headings?: Heading[];
+  entries?: TocEntry[];
+}
+
+const { entries, headings } = Astro.props;
+
+const toc = entries ? entries : generateToc(headings ?? []);
+---
+
+<SharedTableOfContents entries={toc as TocEntry[]} />

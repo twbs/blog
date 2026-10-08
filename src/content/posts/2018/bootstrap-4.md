@@ -2,6 +2,7 @@
 author: mdo
 date: "2018-01-18T00:00:00Z"
 title: Bootstrap 4
+category: Release
 video: VcjzHMhBtf0
 keywords:
   - bootstrap
@@ -12,7 +13,7 @@ It's literally taken us years to do it, but Bootstrap 4 has finally arrived! Wor
 
 Since our last beta, we've been hard at work stabilizing a few key pieces of our CSS, polishing our documentation, adding some extra surprises, and planning for our follow-up releases. We still have some kinks to iron out, but nothing's going to stop us from shipping a stable release.
 
-**Anxious to jump right in? [Head over to our documentation site]({{< param "main" >}}/) and explore.** Be sure to check out our [new Examples]({{< param "main" >}}/docs/4.0/examples/) and the [migration docs page]({{< param "main" >}}/docs/4.0/migration/)!
+**Anxious to jump right in? [Head over to our documentation site](https://getbootstrap.com/) and explore.** Be sure to check out our [new Examples](https://getbootstrap.com/docs/4.0/examples/) and the [migration docs page](https://getbootstrap.com/docs/4.0/migration/)!
 
 Want to know more before hitting the docs? Great, let's dive in!
 
@@ -24,9 +25,9 @@ There are no breaking changes since our last beta, but we have made some key imp
 
 - Additive border utilities have been added (e.g., `.border-top`) and default to a solid 1px light gray border. Now it's easier to quickly add all borders or a subset of borders to your components.
 
-- Our `$spacers` and `$sizes` Sass maps have been updated to allow more customization the same way our color maps work. You can now add, remove, or replace all your key-value pairs consistently across our CSS. [Head to our Theming docs]({{< param "main" >}}/docs/4.0/getting-started/theming/) for more information and examples.
+- Our `$spacers` and `$sizes` Sass maps have been updated to allow more customization the same way our color maps work. You can now add, remove, or replace all your key-value pairs consistently across our CSS. [Head to our Theming docs](https://getbootstrap.com/docs/4.0/getting-started/theming/) for more information and examples.
 
-- Added documentation to our Theming docs for using our provided [CSS variables]({{< param "main" >}}/docs/4.0/getting-started/theming/#css-variables) for those are living on the edge and don't want to use Sass.
+- Added documentation to our Theming docs for using our provided [CSS variables](https://getbootstrap.com/docs/4.0/getting-started/theming/#css-variables) for those are living on the edge and don't want to use Sass.
 
 - Added responsive `.order-0` and `.order-last` classes for more control over the flexbox grid.
 
@@ -36,33 +37,33 @@ In addition, we've made plenty of improvements to reusing and extending variable
 
 Nearly every example has been overhauled for our stable v4 release. We've removed a couple outdated examples, added brand new ones, and really overhauled a few others.
 
-[![Bootstrap examples](/assets/img/2018/01/examples.png)]({{< param "main" >}}/docs/4.0/examples/)
+[![Bootstrap examples](/assets/img/2018/01/examples.png)](https://getbootstrap.com/docs/4.0/examples/)
 
 Here's the rundown of changes to each:
 
-- You've likely already seen our [Album example]({{< param "main" >}}/docs/4.0/examples/album/), but it's been updated for this release to include more content in our photo cards and improved mobile rendering.
+- You've likely already seen our [Album example](https://getbootstrap.com/docs/4.0/examples/album/), but it's been updated for this release to include more content in our photo cards and improved mobile rendering.
 
-- [Pricing]({{< param "main" >}}/docs/4.0/examples/pricing/) is brand new with this release and is a fully custom page built with our utilities and card components. It's responsive and easily extended.
+- [Pricing](https://getbootstrap.com/docs/4.0/examples/pricing/) is brand new with this release and is a fully custom page built with our utilities and card components. It's responsive and easily extended.
 
-- [Checkout]({{< param "main" >}}/docs/4.0/examples/checkout/) is a brand new, extensive form example featuring all the best parts of our form layouts, validation styles, grid, and more.
+- [Checkout](https://getbootstrap.com/docs/4.0/examples/checkout/) is a brand new, extensive form example featuring all the best parts of our form layouts, validation styles, grid, and more.
 
-- [Product]({{< param "main" >}}/docs/4.0/examples/product/) is also new and is a cheeky riff on Apple-style marketing pages, largely built with only our utility classes. Don't take it too seriously!
+- [Product](https://getbootstrap.com/docs/4.0/examples/product/) is also new and is a cheeky riff on Apple-style marketing pages, largely built with only our utility classes. Don't take it too seriously!
 
-- [Blog]({{< param "main" >}}/docs/4.0/examples/blog/) has been rewritten from the ground up. Gone is the two column blue header layout. We've built a snarky magazine-style layout with featured posts and responsive navigation.
+- [Blog](https://getbootstrap.com/docs/4.0/examples/blog/) has been rewritten from the ground up. Gone is the two column blue header layout. We've built a snarky magazine-style layout with featured posts and responsive navigation.
 
-- [Dashboard]({{< param "main" >}}/docs/4.0/examples/dashboard/) has been overhauled as well to feature a live ChartJS example, includes a refreshed sidebar with [Feather icons](https://feathericons.com/), and is semi-responsive.
+- [Dashboard](https://getbootstrap.com/docs/4.0/examples/dashboard/) has been overhauled as well to feature a live ChartJS example, includes a refreshed sidebar with [Feather icons](https://feathericons.com/), and is semi-responsive.
 
-- [Floating labels]({{< param "main" >}}/docs/4.0/examples/floating-labels/) is brand new and builds on our sign-in example to provide a CSS-only implementation of the floating input label. This one's experimental and may see major changes before we bring it to Bootstrap proper.
+- [Floating labels](https://getbootstrap.com/docs/4.0/examples/floating-labels/) is brand new and builds on our sign-in example to provide a CSS-only implementation of the floating input label. This one's experimental and may see major changes before we bring it to Bootstrap proper.
 
-- Finally, [Offcanvas]({{< param "main" >}}/docs/4.0/examples/offcanvas/) has been rewritten from the ground up to show off a navbar-built drawer, horizontal scrolling navigation, and some custom lists built on [media object]({{< param "main" >}}/docs/4.0/layout/media-object/) and utilities.
+- Finally, [Offcanvas](https://getbootstrap.com/docs/4.0/examples/offcanvas/) has been rewritten from the ground up to show off a navbar-built drawer, horizontal scrolling navigation, and some custom lists built on [media object](https://getbootstrap.com/docs/4.0/layout/media-object/) and utilities.
 
-[Cover]({{< param "main" >}}/docs/4.0/examples/cover/), [Carousel]({{< param "main" >}}/docs/4.0/examples/carousel/), [Sign-in]({{< param "main" >}}/docs/4.0/examples/sign-in/), and our [framework examples]({{< param "main" >}}/docs/4.0/examples/#framework) only saw minor updates to improve code quality and fix a few smaller bugs. Overall this was a huge update for our examples and I'm excited to iterate on these and add more in future releases.
+[Cover](https://getbootstrap.com/docs/4.0/examples/cover/), [Carousel](https://getbootstrap.com/docs/4.0/examples/carousel/), [Sign-in](https://getbootstrap.com/docs/4.0/examples/sign-in/), and our [framework examples](https://getbootstrap.com/docs/4.0/examples/#framework) only saw minor updates to improve code quality and fix a few smaller bugs. Overall this was a huge update for our examples and I'm excited to iterate on these and add more in future releases.
 
 ## Documenting our approach
 
 New with v4 stable is a brief overview of some of the guiding principles behind why we do the things we do in Bootstrap. Our intent is to distill and document all the things we keep in our heads while writing code, building linters, and debugging. Much of this is focused on concepts and strategies for writing responsive CSS, using simple selectors, and limiting how much JavaScript one needs to write.
 
-[Check out the new Approach page]({{< param "main" >}}/docs/4.0/extend/approach/), and be sure to open an issue or pull request with feedback and suggestions on what else to cover.
+[Check out the new Approach page](https://getbootstrap.com/docs/4.0/extend/approach/), and be sure to open an issue or pull request with feedback and suggestions on what else to cover.
 
 ## Known issues
 

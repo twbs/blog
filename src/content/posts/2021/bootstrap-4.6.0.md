@@ -4,6 +4,7 @@ date: "2021-01-19T21:30:00Z"
 aliases:
   - /2021/01/19/bootstrap-icons-4.6.0/
 title: Bootstrap v4.6.0
+category: Release
 video: LuN6gs0AJls
 keywords:
   - bootstrap
@@ -141,4 +142,4 @@ Please keep the feedback coming on what we can improve, how our releases are per
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

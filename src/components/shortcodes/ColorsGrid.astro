@@ -1,0 +1,59 @@
+---
+// The full palette swatch grid from the Color docs: 16 colors across 13 stops,
+// plus the `white`/`black` extras. Each tile is a live `Swatch` reading a
+// `--bs-{color}-{stop}` token, so the grid is color-mode adaptive.
+import Swatch from './Swatch.astro'
+
+// Mirrors `site/data/colors.yml` in the v6 docs, in the same order.
+const colors = [
+  'blue',
+  'indigo',
+  'violet',
+  'purple',
+  'pink',
+  'red',
+  'orange',
+  'amber',
+  'yellow',
+  'lime',
+  'green',
+  'teal',
+  'cyan',
+  'brown',
+  'gray',
+  'pewter'
+]
+
+const additionalColors = ['white', 'black']
+
+// The 13 tint/shade stops, matching `["025", "050", ...100–900, 950, 975]`.
+const stops = ['025', '050', 100, 200, 300, 400, 500, 600, 700, 800, 900, 950, 975]
+---
+
+<div class="grid bd-colors-grid not-prose">
+  {
+    colors.map(color => (
+      <div class="d-contents grid-cols-fill">
+        <h5 class="d-block text-capitalize grid-cols-fill">{color}</h5>
+        {stops.map(value => (
+          <div class="mb-3 font-monospace small">
+            <Swatch bg={`${color}-${value}`} size="medium" showVar={false} />
+            <div class="text-center fg-3">{value}</div>
+          </div>
+        ))}
+      </div>
+    ))
+  }
+
+  <div class="d-contents grid-cols-fill">
+    <h5 class="d-block text-capitalize grid-cols-fill">Additional</h5>
+    {
+      additionalColors.map(color => (
+        <div class="mb-3 font-monospace small">
+          <Swatch bg={color} size="medium" showVar={false} />
+          <div class="text-center fg-3">{color}</div>
+        </div>
+      ))
+    }
+  </div>
+</div>

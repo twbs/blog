@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-12-02T00:00:00Z"
 title: Help test Bootstrap 2.2.2
+category: Community
 ---
 
 In the next week or so, we plan on releasing `v2.2.2`. To date, there are over 50 CSS and documentation related issues already closed, and we want to get those out in your hands. We still have some significant JavaScript issues to work out, but those will be punted to 2.2.3 so we don't hold up development. Our hope is to have that release out by end of year at the latest.

@@ -2,6 +2,7 @@
 author: mdo
 date: "2014-06-26T00:00:00Z"
 title: Bootstrap 3.2.0 released
+category: Release
 video: LaTGrV58wec
 keywords:
   - bootstrap
@@ -39,7 +40,7 @@ Here's a look at some of the highlights of this release.
 
 ### Responsive embeds
 
-As seen in [SUIT CSS](https://suitcss.github.io/), we've added a few classes for creating responsive embeds. They're great for proportionally scaling down YouTube videos and other `iframe` or `embed` elements. [Head to the docs]({{< param "main" >}}/components/#responsive-embed) to check them out.
+As seen in [SUIT CSS](https://suitcss.github.io/), we've added a few classes for creating responsive embeds. They're great for proportionally scaling down YouTube videos and other `iframe` or `embed` elements. [Head to the docs](https://getbootstrap.com/components/#responsive-embed) to check them out.
 
 ### New responsive utility classes
 
@@ -51,11 +52,11 @@ Our documentation snippets just got an upgrade with the help of [ZeroClipboard](
 
 ### LMVTFY
 
-[We blogged about this yesterday]({{< relref "/posts/2014/lmvtfy" >}}), but we have a new bot hanging out in our issues and pull requests on GitHub. Whenever someone pastes in a live example—like those from JS Bin or jsFiddle—we now validate their HTML. If it's invalid, we tell folks what's wrong so they can fix it.
+[We blogged about this yesterday](/2014/06/25/lmvtfy/), but we have a new bot hanging out in our issues and pull requests on GitHub. Whenever someone pastes in a live example—like those from JS Bin or jsFiddle—we now validate their HTML. If it's invalid, we tell folks what's wrong so they can fix it.
 
 ### Browser bugs
 
-We've also begun tracking unresolved browser bugs that currently impact Bootstrap's development in some way. We call it the [Wall of browser bugs]({{< param "main" >}}/browser-bugs/). One of the coolest parts of developing Bootstrap is finding and reporting browser bugs to their developers. We're literally helping to make the web a better place, and that's pretty awesome in our book.
+We've also begun tracking unresolved browser bugs that currently impact Bootstrap's development in some way. We call it the [Wall of browser bugs](https://getbootstrap.com/browser-bugs/). One of the coolest parts of developing Bootstrap is finding and reporting browser bugs to their developers. We're literally helping to make the web a better place, and that's pretty awesome in our book.
 
 ### And dozens more...
 

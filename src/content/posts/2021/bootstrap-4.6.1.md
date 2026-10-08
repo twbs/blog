@@ -2,6 +2,7 @@
 author: mdo
 date: "2021-10-28T21:30:00Z"
 title: Bootstrap v4.6.1
+category: Release
 video: wBl2QGAIx1s
 video_start: 135
 keywords:
@@ -48,4 +49,4 @@ Please keep the feedback coming on what we can improve, how our releases are per
 
 ## Support the team
 
-Visit our [Open Collective page]({{< param "opencollective" >}}) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.
+Visit our [Open Collective page](https://opencollective.com/bootstrap) or our [team members](https://github.com/orgs/twbs/people)' GitHub profiles to help support the maintainers contributing to Bootstrap.

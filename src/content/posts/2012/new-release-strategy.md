@@ -2,6 +2,7 @@
 author: mdo
 date: "2012-04-30T00:00:00Z"
 title: New release strategy
+category: Community
 ---
 
 After three large point releases focusing on massive amounts of bugfixes and documentation changes, we're going to change up our release strategy to push out smaller, more frequent updates.
