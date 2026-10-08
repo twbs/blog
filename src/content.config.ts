@@ -16,6 +16,9 @@ const postsSchema = z.object({
   video: z.string().optional(),
   video_start: z.number().optional(),
   banner: z.string().optional(),
+  // Intrinsic size of the banner, so the browser reserves its space before it loads.
+  banner_width: z.number().optional(),
+  banner_height: z.number().optional(),
   // Historical URLs for this post; turned into redirects in astro.config.ts.
   aliases: z.string().array().optional(),
   extra_js: z
