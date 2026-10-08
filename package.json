@@ -29,8 +29,7 @@
     "test-stylelint": "stylelint src/assets/scss/ --cache --cache-location .cache/.stylelintcache",
     "test-markdownlint": "markdownlint-cli2 \"**/*.md\" \"**/*.mdx\" \"!**/node_modules/**\"",
     "test-linkinator": "linkinator dist --recurse --silent --skip \"^(?!http://(localhost|127\\.0\\.0\\.1))\"",
-    "test-lockfile-lint": "lockfile-lint",
-    "netlify": "cross-env-shell DEPLOY_PRIME_URL=$DEPLOY_PRIME_URL npm run build"
+    "test-lockfile-lint": "lockfile-lint"
   },
   "devDependencies": {
     "@astrojs/markdown-remark": "^7.2.4",
@@ -45,7 +44,6 @@
     "autoprefixer": "^10.5.4",
     "bootstrap": "github:twbs/bootstrap#v6-dev",
     "clipboard": "^2.0.11",
-    "cross-env": "^10.1.0",
     "eslint": "^10.9.1",
     "find-unused-sass-variables": "^6.2.1",
     "globals": "^17.11.0",
