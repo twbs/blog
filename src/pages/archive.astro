@@ -15,9 +15,10 @@ for (const post of sortedPosts) {
 
 <BaseLayout title="Archive" description="All Bootstrap Blog posts by year">
   <div class="px-3 py-5">
+    <h1 class="visually-hidden">Archive</h1>
     {[...postsByYear.entries()].map(([year, posts]) => (
       <>
-        <h3>{year}</h3>
+        <h2 class="h3">{year}</h2>
         <ul class="list mb-5">
           {posts.map(post => (
             <li>
