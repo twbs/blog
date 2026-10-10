@@ -1,0 +1,80 @@
+---
+// The triage loop for Bootstrap's backlog: four steps done by agents, one by a
+// maintainer. Built from theme utilities, so it follows the color mode.
+
+interface Step {
+  title: string
+  text: string
+  human?: boolean
+}
+
+const steps: Step[] = [
+  {
+    title: 'Sync',
+    text: 'Every open issue and pull request on twbs/bootstrap, read-only, a few times a day. New activity flags an item for a fresh look.'
+  },
+  {
+    title: 'Analyze',
+    text: 'Read the whole thread, search for duplicates, check the claim against the code on main (v5) or v6-dev, reproduce it from scratch.'
+  },
+  {
+    title: 'Prepare',
+    text: 'The analysis, the reply or review to post, a fix branch per direction when code or docs must change, and the next action with its ease.'
+  },
+  {
+    title: 'Publish',
+    text: 'One folder per item, and its fix branches, pushed to twbs/triage. Nothing is written on twbs/bootstrap.'
+  },
+  {
+    title: 'Decide',
+    text: 'A maintainer reads it, checks it, rewrites what needs rewriting, and acts on GitHub by hand. Or not at all.',
+    human: true
+  }
+]
+---
+
+<div class="not-prose triage-flow bg-1 rounded-7 p-4 md:p-5 my-3">
+  <ol class="triage-flow-steps list-unstyled m-0 p-0">
+    {
+      steps.map((step, index) => (
+        <li class:list={['triage-flow-step d-flex flex-column gap-2 p-4 rounded-5 border bg-body', { 'triage-flow-human': step.human }]}>
+          <span class="d-flex align-items-center gap-2">
+            <span class:list={['triage-flow-num d-inline-flex align-items-center justify-content-center rounded-pill fs-xs fw-semibold', step.human ? 'bg-primary fg-white' : 'bg-2 fg-2']}>
+              {index + 1}
+            </span>
+            <span class="fs-xs text-uppercase fw-semibold fg-3">{step.human ? 'Maintainer' : 'Agent'}</span>
+          </span>
+          <strong class="fg-body">{step.title}</strong>
+          <span class="fs-sm fg-2">{step.text}</span>
+        </li>
+      ))
+    }
+  </ol>
+</div>
+
+<style>
+  .triage-flow {
+    grid-column: full;
+  }
+
+  .triage-flow-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .75rem;
+  }
+
+  @media (min-width: 768px) {
+    .triage-flow-steps {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+
+  .triage-flow-num {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .triage-flow-human {
+    border-color: var(--bs-primary-border) !important;
+  }
+</style>
