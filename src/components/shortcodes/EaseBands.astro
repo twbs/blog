@@ -1,9 +1,8 @@
 ---
-// Horizontal bars for how many backlog items fall in each ease band. Built
+// Horizontal bars for how many backlog items need each next action. Built
 // from theme utilities, so it follows the color mode.
 
 interface Band {
-  range: string
   label: string
   count: number
 }
@@ -13,18 +12,17 @@ interface Props {
   caption?: string
 }
 
-const { bands, caption } = Astro.props
+const { bands, caption }: Props = Astro.props
 const max = Math.max(...bands.map(band => band.count))
 ---
 
-<figure class="not-prose ease-bands bg-1 rounded-7 p-4 md:p-5 my-3">
+<figure class="not-prose ease-bands bg-1 rounded-7 p-5 md:p-9 my-3">
   <ul class="list-unstyled m-0 p-0 vstack gap-3">
     {
       bands.map(band => (
         <li class="ease-band">
-          <span class="font-monospace fs-sm fg-3">{band.range}</span>
-          <span class="fs-sm fg-body">{band.label}</span>
-          <span class="ease-band-track rounded-pill bg-2" aria-hidden="true">
+          <span class="ease-band-label fs-sm fg-body">{band.label}</span>
+          <span class="ease-band-track rounded-pill bg-3" aria-hidden="true">
             <span class="ease-band-bar d-block h-100 rounded-pill bg-primary" style={`width: ${(band.count / max) * 100}%`} />
           </span>
           <span class="fw-semibold fg-body text-end">{band.count}</span>
@@ -36,26 +34,26 @@ const max = Math.max(...bands.map(band => band.count))
 </figure>
 
 <style>
+  .ease-bands {
+    width: 100%;
+    max-width: 45rem;
+    margin-inline: auto;
+  }
+
   .ease-band {
     display: grid;
-    grid-template-columns: 3rem minmax(0, 1fr) 2.5rem;
-    gap: .25rem .75rem;
+    grid-template-columns: minmax(0, 1fr) 2.5rem;
+    gap: .25rem 0;
     align-items: center;
   }
 
-  .ease-band-track {
-    grid-column: 2 / 3;
-    height: .625rem;
-    overflow: hidden;
+  .ease-band-label {
+    grid-row: 2;
   }
 
-  @media (min-width: 768px) {
-    .ease-band {
-      grid-template-columns: 3rem 15rem minmax(0, 1fr) 2.5rem;
-    }
-
-    .ease-band-track {
-      grid-column: auto;
-    }
+  .ease-band-track {
+    grid-row: 1;
+    height: .625rem;
+    overflow: hidden;
   }
 </style>
