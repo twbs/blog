@@ -11,6 +11,10 @@ keywords:
 
 We've published a VS Code theme powered by Bootstrap's color palette. It works with VS Code, Cursor, and [Shiki](https://shiki.style) projects. [Check it out on GitHub](https://github.com/twbs/bootstrap-vscode-theme) or install it from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=bootstrap.bootstrap-vscode-theme).
 
+![Bootstrap Dark theme](/assets/img/2026/04/bootstrap-vscode-theme-dark.png)
+
+![Bootstrap Light theme](/assets/img/2026/04/bootstrap-vscode-theme-light.png)
+
 ## Origins in Pierre
 
 The theme is a fork of [Pierre's VS Code Theme](https://github.com/pierrecomputer/theme), which itself was built on top of [GitHub's VS Code Theme](https://github.com/primer/github-vscode-theme). Pierre added more granular language token support and Display P3 color support. We adapted it to use Bootstrap's own OKLCH-based color palette instead of Pierre's.
