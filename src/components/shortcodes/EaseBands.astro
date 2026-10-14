@@ -9,42 +9,35 @@ interface Band {
 
 interface Props {
   bands: Band[]
-  caption?: string
 }
 
-const { bands, caption }: Props = Astro.props
+const { bands }: Props = Astro.props
 const max = Math.max(...bands.map(band => band.count))
 ---
 
-<figure class="not-prose ease-bands bg-1 rounded-7 p-5 md:p-9 my-3">
+<figure class="not-prose ease-bands w-100 mx-auto bg-1 rounded-7 p-5 md:p-9 my-3">
   <ul class="list-unstyled m-0 p-0 vstack gap-3">
     {
       bands.map(band => (
-        <li class="ease-band">
+        <li class="ease-band d-grid row-gap-1 align-items-center">
           <span class="ease-band-label fs-sm fg-body">{band.label}</span>
-          <span class="ease-band-track rounded-pill bg-3" aria-hidden="true">
-            <span class="ease-band-bar d-block h-100 rounded-pill bg-primary" style={`width: ${(band.count / max) * 100}%`} />
+          <span class="ease-band-track overflow-hidden rounded-pill bg-3" aria-hidden="true">
+            <span class="d-block h-100 rounded-pill bg-primary" style={`width: ${(band.count / max) * 100}%`} />
           </span>
           <span class="fw-semibold fg-body text-end">{band.count}</span>
         </li>
       ))
     }
   </ul>
-  {caption && <figcaption class="fs-sm fg-3 text-center mt-4">{caption}</figcaption>}
 </figure>
 
 <style>
   .ease-bands {
-    width: 100%;
     max-width: 45rem;
-    margin-inline: auto;
   }
 
   .ease-band {
-    display: grid;
     grid-template-columns: minmax(0, 1fr) 2.5rem;
-    gap: .25rem 0;
-    align-items: center;
   }
 
   .ease-band-label {
@@ -54,6 +47,5 @@ const max = Math.max(...bands.map(band => band.count))
   .ease-band-track {
     grid-row: 1;
     height: .625rem;
-    overflow: hidden;
   }
 </style>
