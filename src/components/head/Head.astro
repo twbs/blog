@@ -11,10 +11,11 @@ interface Props {
   description?: string;
   card?: SocialCard;
   robots?: string;
+  author?: string;
 }
 
 const config = getConfig();
-const { title, description, card, robots } = Astro.props;
+const { title, description, card, robots, author } = Astro.props;
 
 const pageTitle =
   Astro.url.pathname === "/"
@@ -40,6 +41,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     crossorigin
   />
   <Favicons />
-  <Social title={title} description={pageDescription} card={card} />
+  <Social
+    title={title}
+    description={pageDescription}
+    card={card}
+    author={author}
+  />
   <Analytics />
 </HeadMeta>

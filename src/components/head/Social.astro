@@ -6,10 +6,11 @@ interface Props {
   title: string
   description?: string
   card?: SocialCard
+  author?: string
 }
 
 const config = getConfig()
-const { title, description, card = defaultSocialCard } = Astro.props
+const { title, description, card = defaultSocialCard, author = config.author } = Astro.props
 
 const isHome = Astro.url.pathname === '/'
 const ogType = isHome ? 'website' : 'article'
@@ -17,7 +18,7 @@ const ogType = isHome ? 'website' : 'article'
 const socialImage = new URL(card.url, Astro.site)
 ---
 
-<meta name="author" content={config.author}>
+<meta name="author" content={author}>
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content={`@${config.x}`}>

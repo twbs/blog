@@ -18,6 +18,7 @@ import {
 } from '../libs/content'
 import { getPostToc } from '../libs/toc'
 import { getPostSocialCard } from '../libs/social'
+import { getAuthor } from '../libs/authors'
 
 // Drafts are dev-only: `astro dev` builds pages for them so they can be
 // previewed, but a production build only ships published posts (`sortedPosts`).
@@ -67,6 +68,7 @@ const related = scored
   card={getPostSocialCard(post)}
   extraJs={post.data.extra_js}
   robots={post.data.draft ? 'noindex, nofollow' : undefined}
+  author={getAuthor(post.data.author).name}
   bodyAttrs={bodyAttrs}
   wide
 >
