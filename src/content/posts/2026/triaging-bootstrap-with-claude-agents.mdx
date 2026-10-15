@@ -1,9 +1,9 @@
 ---
 author: julien-deramond
-date: "2026-10-10T00:00:00Z"
+date: "2026-10-15T00:00:00Z"
 title: "Triaging open source with agents"
 category: Community
-description: An internal triage tool uses LLM agents to analyze every open Bootstrap issue and pull request for review to provide contextual review and drafted answers. Maintainers still make every decision and post every response.
+description: An internal tool uses LLM agents to analyze every open Bootstrap issue and pull request, draft answers, and prepare fixes for maintainers to review.
 keywords:
   - bootstrap
   - open source
@@ -15,7 +15,7 @@ import GithubCard from '../../../components/shortcodes/GithubCard.astro'
 import ThemedFigure from '../../../components/shortcodes/ThemedFigure.astro'
 import EaseBands from '../../../components/shortcodes/EaseBands.astro'
 
-There are 230 open issues and PRs on the Bootstrap repository, a quarter of which are over three years old. Rewind a few months and we had over over 500. To help, we turned to LLMs and have had some amazing successes during the development of Bootstrap 6. The latest is an internal tool for us maintainers to triage everything automatically without prompting.
+There are 230 open issues and PRs on the Bootstrap repository, a quarter of which are over three years old. Rewind a few months and we had over 500. To help, we turned to LLMs and have had some amazing successes during the development of Bootstrap 6. The latest is an internal tool for us maintainers to triage everything automatically without prompting.
 
 We vibe coded out `twbs/triage` to triage open Bootstrap issues and pull requests with an analysis, drafted responses, and when needed, a working fix prepared by agents. We maintainers still make every decision and post every response, but this has been helping us move faster and more efficiently.
 
@@ -144,7 +144,7 @@ Now, when we have 20 minutes, we can pick an item, check the work, and act inste
 
 The pass also exposed gaps in our GitHub labels. We standardized their names, documented every label, added missing labels like `bug` and `needs-decision`, and applied 410 labels across 198 open items. Agents can set factual labels from a fixed allowlist. Labels that imply a decision, like `duplicate` or `wont-fix`, still come from a maintainer.
 
-We also added [GitHub Discussions](https://github.com/twbs/bootstrap/discussions) to our triage in-take. Instead of treating a long thread as one answered question, the analysis tracks each open point—bugs, feature requests, design questions, and support requests—back to the person who raised it.
+We also added [GitHub Discussions](https://github.com/twbs/bootstrap/discussions) to our triage intake. Instead of treating a long thread as one answered question, the analysis tracks each open point—bugs, feature requests, design questions, and support requests—back to the person who raised it.
 
 <ThemedFigure
   shots={[{ light: '/assets/img/2026/10/triage-42090-points-light.png', dark: '/assets/img/2026/10/triage-42090-points-dark.png', width: 2000, height: 1250, alt: 'The Bootstrap 6 feedback discussion broken into individual open and addressed points, each linked to its author and next action.' }]}
