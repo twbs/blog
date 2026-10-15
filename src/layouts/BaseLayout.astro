@@ -23,6 +23,7 @@ interface Props {
   description?: string;
   card?: SocialCard;
   robots?: string;
+  author?: string;
   extraJs?: ExtraScript[];
   // Full-bleed layout without the ad sidebar. Pages that opt in (e.g. the blog
   // index) place the ad themselves.
@@ -36,6 +37,7 @@ const {
   description,
   card,
   robots,
+  author,
   extraJs = [],
   wide = false,
   bodyAttrs,
@@ -49,6 +51,7 @@ const {
     description={description}
     card={card}
     robots={robots}
+    author={author}
   />
   <Navigation slot="header" />
 

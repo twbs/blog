@@ -1,0 +1,181 @@
+---
+author: julien-deramond
+date: "2026-10-15T00:00:00Z"
+title: "Triaging open source with agents"
+category: Community
+description: An internal tool uses LLM agents to analyze every open Bootstrap issue and pull request, draft answers, and prepare fixes for maintainers to review.
+keywords:
+  - bootstrap
+  - open source
+  - maintainers
+  - ai
+---
+
+import GithubCard from '../../../components/shortcodes/GithubCard.astro'
+import ThemedFigure from '../../../components/shortcodes/ThemedFigure.astro'
+import EaseBands from '../../../components/shortcodes/EaseBands.astro'
+
+There are 230 open issues and PRs on the Bootstrap repository, a quarter of which are over three years old. Rewind a few months and we had over 500. To help, we turned to LLMs and have had some amazing successes during the development of Bootstrap 6. The latest is an internal tool for us maintainers to triage everything automatically without prompting.
+
+We vibe coded out `twbs/triage` to triage open Bootstrap issues and pull requests with an analysis, drafted responses, and when needed, a working fix prepared by agents. We maintainers still make every decision and post every response, but this has been helping us move faster and more efficiently.
+
+Something we're most excited about is how personal software like this can be created so quickly, and then put to use in a way that benefits us and the community so immediately. Here's a look at our Triage tool in action.
+
+## Keeping up
+
+Bootstrap owes a lot to the many maintainers and contributors who have shaped it over the years. Today, the day-to-day work rests on two active core team members, [@mdo](https://github.com/mdo) and [myself](https://github.com/julien-deramond).
+
+Over the last twelve months, we received 186 issues and 838 pull requests. Of those pull requests, 189 came from bots, 433 from the core team, and 216 from about 130 contributors. Of those 216, 60 were merged, 106 were closed without merging, and 50 are still open.
+
+Answering any one of those well means reading the thread, checking against both v5 and v6 dev branches, looking for related work, reproducing the problem, and replying. As any maintainer knows, the biggest bottleneck is our time and attention.
+
+## How it works
+
+Earlier this month, I brought the setup I use to maintain my own projects into Bootstrap. I wrote more about that setup [on my personal blog](https://deramond.dev/blog/how-i-maintain-my-open-source-projects-with-claude-agents/).
+
+I use Claude Code to sync our backlog and dispatch background agents. Their work lands in the Triage app. Every item follows the same five steps:
+
+1. **Sync.** Read every open issue and pull request without writing to twbs/bootstrap.
+2. **Analyze.** Read the thread, find related work, check both branches, and reproduce the problem.
+3. **Prepare.** Draft the analysis, response, fixes, and next action.
+4. **Store.** Save each item and its fix branches to twbs/triage.
+5. **Decide.** Mark or I review the work, rewrite what needs rewriting, and act on GitHub by hand—or not at all.
+
+Each issue or pull request gets a folder. [#37807](https://github.com/twbs/bootstrap/issues/37807), which asks for container queries in the flexbox grid, looks like this:
+
+```text
+issues/37807/
+  analysis.md   what it is, findings, directions, recommendation
+  answer.md     the status comment to post on the issue
+  pr.md         fix 1: container-driven columns (recommended)
+  pr-2.md       fix 2: the same, behind an opt-in Sass option
+  meta.json     status, ease, related PRs, fix branches, dates
+```
+
+The analysis explains the item, what was checked, and what to do next. The answer is the exact text to post. Pull requests get a review covering the approach, CI, risks, and backports. Each item also gets a status—action, decision, waiting, or done—and an ease score:
+
+- **9–10:** Paste the drafted comment and close, or merge.
+- **6–8:** Submit a review, or open a pull request from a prepared branch.
+- **3–5:** Check something by hand first.
+- **0–2:** Make a real decision about scope, design, or a breaking change.
+
+If the resolution needs code or docs, the agent prepares a fix branch from Bootstrap's own `main` or `v5-dev`. If there are multiple reasonable directions, it can prepare up to three so we can compare working code instead of hypotheticals.
+
+The local dashboard puts all of this in one place, sorted by ease. It shows the next action, copies the drafted response, and compares prepared fixes with open pull requests.
+
+<ThemedFigure
+  shots={[{ light: '/assets/img/2026/10/triage-list-light.png', dark: '/assets/img/2026/10/triage-list-dark.png', width: 2000, height: 1250, alt: 'The local triage dashboard with issues, pull requests, and discussions grouped by ease and filtered by status. The planned outcomes are blurred because they have not been posted yet.' }]}
+  caption="The whole backlog, quickest first. The planned outcomes are blurred because they haven't been posted yet."
+/>
+
+## What it found
+
+The first pass found everything from issues already fixed to features with multiple viable implementations. Here are a few examples.
+
+<GithubCard
+  repo="twbs/bootstrap"
+  number={31088}
+  type="issue"
+  title="popovers: do not dismiss on next click inside"
+  openedAt="2020-06-18"
+  comments={1}
+  state="closed"
+/>
+
+Opened in June 2020, this issue asked that popovers using "dismiss on next click" stay open when someone clicks inside them. [#42834](https://github.com/twbs/bootstrap/pull/42834) fixed it, but that PR targeted v6 before it became the default branch, so GitHub never closed the issue. The analysis linked the code, tests, and docs that proved the fix, then drafted a two-sentence closing comment. From this one session, it found nine open items already fixed.
+
+<GithubCard
+  repo="twbs/bootstrap"
+  number={42714}
+  type="pull"
+  title="Fix carousel touch handling without Pointer Events"
+  openedAt="2026-07-20"
+  comments={1}
+  state="merged"
+/>
+
+This fix addresses the v5 carousel swiping the wrong way on iOS 12 Safari. It had been waiting since July without a review, and its CI had never run because workflows from a first-time contributor need maintainer approval. The analysis confirmed the bug against v5, traced it to a regression in [#32999](https://github.com/twbs/bootstrap/pull/32999), and recommended merging. I merged it on 4 October. It was a small, correct contribution buried among two hundred other items.
+
+<GithubCard
+  repo="twbs/bootstrap"
+  number={37442}
+  type="pull"
+  title="fix: Data.js must not overwrite exising element instance"
+  openedAt="2022-11-07"
+  comments={5}
+  state="closed"
+/>
+
+This pull request from 2022 got a review recommending that we close it and a drafted comment explaining why. Mark closed it, but [with his own explanation](https://github.com/twbs/bootstrap/pull/37442#issuecomment-6023237239): [#42509](https://github.com/twbs/bootstrap/pull/42509) superseded it in v6, while the change would leave the registry inconsistent in v5. The analysis supplied the context; the decision and the words stayed with a maintainer.
+
+<GithubCard
+  repo="twbs/bootstrap"
+  number={37807}
+  type="issue"
+  title="Grid System should support CSS Container Queries for responsive column sizing"
+  openedAt="2023-01-04"
+  comments={20}
+  state="open"
+/>
+
+For this issue, the agents prepared two v6 fixes for container-driven columns: one enabled by default, as v6's CSS Grid already does, and one behind a Sass option. Both sit beside Mark's wider draft pull request so we can compare working implementations instead of descriptions.
+
+<ThemedFigure
+  shots={[{ light: '/assets/img/2026/10/triage-37807-fixes-light.png', dark: '/assets/img/2026/10/triage-37807-fixes-dark.png', width: 2000, height: 1250, alt: 'Three fixes for issue 37807 shown side by side: two prepared branches based on main and Mark’s draft pull request 42784.' }]}
+  caption="Two prepared directions and Mark's draft pull request, compared side by side."
+/>
+
+There are dozens more issues and PRs that still need a maintainer decision. Finding buckets of work like these helps us move faster and more efficiently.
+
+## What changed
+
+The key change we get from the Triage app is a clearer, actionable view of every open issue and pull request, allowing us to act faster with the right context. Within no time, agents had processed more than 200 remaining items and sorted them by what each needed next.
+
+<EaseBands
+  bands={[
+    { label: 'Paste and close, or merge', count: 86 },
+    { label: 'Review, or open a PR', count: 90 },
+    { label: 'Check by hand first', count: 33 },
+    { label: 'Decide first', count: 8 }
+  ]}
+/>
+
+Now, when we have 20 minutes, we can pick an item, check the work, and act instead of spending that time rediscovering the problem, chasing histories across Git and GitHub cross references, etc.
+
+The pass also exposed gaps in our GitHub labels. We standardized their names, documented every label, added missing labels like `bug` and `needs-decision`, and applied 410 labels across 198 open items. Agents can set factual labels from a fixed allowlist. Labels that imply a decision, like `duplicate` or `wont-fix`, still come from a maintainer.
+
+We also added [GitHub Discussions](https://github.com/twbs/bootstrap/discussions) to our triage intake. Instead of treating a long thread as one answered question, the analysis tracks each open point—bugs, feature requests, design questions, and support requests—back to the person who raised it.
+
+<ThemedFigure
+  shots={[{ light: '/assets/img/2026/10/triage-42090-points-light.png', dark: '/assets/img/2026/10/triage-42090-points-dark.png', width: 2000, height: 1250, alt: 'The Bootstrap 6 feedback discussion broken into individual open and addressed points, each linked to its author and next action.' }]}
+  caption="One feedback thread, point by point: what's open, who raised it, and what's ready."
+/>
+
+For example, [Bootstrap 6 feedback](https://github.com/orgs/twbs/discussions/42090) is marked answered, but its analysis found 17 open points across 28. One bug had already been fixed by [#42856](https://github.com/twbs/bootstrap/pull/42856), two requests became draft issues, and seven replies are ready for people still waiting.
+
+## Hostile by default
+
+Anyone can open an issue or pull request, so everything from them is treated as data, never instructions.
+
+- Agents never check out, install, or run contributor code. They read the diff and use GitHub CI as evidence.
+- They never open links from an issue. They build reproductions from scratch against Bootstrap's own `dist/`.
+- They cannot comment, push, or open pull requests on twbs/bootstrap. Automatic labels from a fixed allowlist are the only exception.
+- Anything suspicious stops for a maintainer to review by hand.
+
+The agents also get things wrong. They don't know all of Bootstrap's history or the context that still lives in maintainers' heads. Sometimes they propose code where the right answer is to rethink the component. Their work is where we start, not what we ship.
+
+This doesn't replace contributors, either. Prepared branches never copy an outside pull request. When a contributor has the right fix, the recommendation is to merge their work.
+
+## If you contribute to Bootstrap
+
+You'll see activity on old issues and pull requests in the coming weeks: fixes recognized, stale reports checked, and long-waiting pull requests reviewed. If we close something that shouldn't be closed, tell us in the thread.
+
+You can help by:
+
+- Providing a minimal reproduction with only Bootstrap's CSS and JavaScript, plus the version you're using.
+- Targeting `v5-dev` for v5 fixes and `main` for new work. Since October 8, `main` is for v6 and `v5-dev` is for v5.
+- Keeping each pull request to one change, with what it fixes and how you tested it.
+
+The [contributing guidelines](https://github.com/twbs/bootstrap/blob/main/.github/CONTRIBUTING.md#issues-and-labels) explain what each label means. If you asked something in Discussions and never heard back, it's on our list now, too.
+
+Questions and ideas are welcome in [GitHub Discussions](https://github.com/twbs/bootstrap/discussions). We'll report back in a few months with what worked and what didn't.

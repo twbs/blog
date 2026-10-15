@@ -1,0 +1,51 @@
+---
+// Horizontal bars for how many backlog items need each next action. Built
+// from theme utilities, so it follows the color mode.
+
+interface Band {
+  label: string
+  count: number
+}
+
+interface Props {
+  bands: Band[]
+}
+
+const { bands }: Props = Astro.props
+const max = Math.max(...bands.map(band => band.count))
+---
+
+<figure class="not-prose ease-bands w-100 mx-auto bg-1 rounded-7 p-5 md:p-9 my-3">
+  <ul class="list-unstyled m-0 p-0 vstack gap-3">
+    {
+      bands.map(band => (
+        <li class="ease-band d-grid row-gap-1 align-items-center">
+          <span class="ease-band-label fs-sm fg-body">{band.label}</span>
+          <span class="ease-band-track overflow-hidden rounded-pill bg-3" aria-hidden="true">
+            <span class="d-block h-100 rounded-pill bg-primary" style={`width: ${(band.count / max) * 100}%`} />
+          </span>
+          <span class="fw-semibold fg-body text-end">{band.count}</span>
+        </li>
+      ))
+    }
+  </ul>
+</figure>
+
+<style>
+  .ease-bands {
+    max-width: 45rem;
+  }
+
+  .ease-band {
+    grid-template-columns: minmax(0, 1fr) 2.5rem;
+  }
+
+  .ease-band-label {
+    grid-row: 2;
+  }
+
+  .ease-band-track {
+    grid-row: 1;
+    height: .625rem;
+  }
+</style>
