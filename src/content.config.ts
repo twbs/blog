@@ -16,6 +16,9 @@ const postsSchema = z.object({
   video: z.string().optional(),
   video_start: z.number().optional(),
   banner: z.string().optional(),
+  banner_2x: z.string().optional(),
+  banner_avif: z.string().optional(),
+  banner_avif_2x: z.string().optional(),
   // Intrinsic size of the banner, so the browser reserves its space before it loads.
   banner_width: z.number().optional(),
   banner_height: z.number().optional(),

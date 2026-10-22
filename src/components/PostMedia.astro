@@ -1,6 +1,9 @@
 ---
 interface Props {
   banner?: string
+  banner2x?: string
+  bannerAvif?: string
+  bannerAvif2x?: string
   bannerWidth?: number
   bannerHeight?: number
   video?: string
@@ -11,7 +14,22 @@ interface Props {
   hero?: boolean
 }
 
-const { banner, bannerWidth, bannerHeight, video, videoStart, title, eager = false, hero = false } = Astro.props
+const {
+  banner,
+  banner2x,
+  bannerAvif,
+  bannerAvif2x,
+  bannerWidth,
+  bannerHeight,
+  video,
+  videoStart,
+  title,
+  eager = false,
+  hero = false
+} = Astro.props
+const bannerSrcset = banner && banner2x ? `${banner} 1x, ${banner2x} 2x` : undefined
+const bannerAvifSrcset =
+  bannerAvif && bannerAvif2x ? `${bannerAvif} 1x, ${bannerAvif2x} 2x` : undefined
 
 const videoSrc = video
   ? `https://www.youtube-nocookie.com/embed/${video}?rel=0${videoStart ? `&start=${videoStart}` : ''}`
@@ -22,25 +40,33 @@ const videoSrc = video
   banner ? (
     hero ? (
       <div class="post-media w-100 overflow-hidden rounded-8">
+        <picture>
+          {bannerAvifSrcset && <source srcset={bannerAvifSrcset} type="image/avif" />}
+          <img
+            src={banner}
+            srcset={bannerSrcset}
+            alt={title}
+            width={bannerWidth}
+            height={bannerHeight}
+            loading={eager ? 'eager' : 'lazy'}
+            fetchpriority={eager ? 'high' : undefined}
+          />
+        </picture>
+      </div>
+    ) : (
+      <picture>
+        {bannerAvifSrcset && <source srcset={bannerAvifSrcset} type="image/avif" />}
         <img
           src={banner}
+          srcset={bannerSrcset}
+          class="d-block img-fluid rounded-3 mb-4"
           alt={title}
           width={bannerWidth}
           height={bannerHeight}
           loading={eager ? 'eager' : 'lazy'}
           fetchpriority={eager ? 'high' : undefined}
         />
-      </div>
-    ) : (
-      <img
-        src={banner}
-        class="d-block img-fluid rounded-3 mb-4"
-        alt={title}
-        width={bannerWidth}
-        height={bannerHeight}
-        loading={eager ? 'eager' : 'lazy'}
-        fetchpriority={eager ? 'high' : undefined}
-      />
+      </picture>
     )
   ) : videoSrc ? (
     <div class:list={['ratio', hero && 'post-media w-100 overflow-hidden rounded-8']}>
