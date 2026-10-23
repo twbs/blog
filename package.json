@@ -32,14 +32,14 @@
     "test-lockfile-lint": "lockfile-lint"
   },
   "devDependencies": {
-    "@astrojs/markdown-remark": "^7.2.4",
+    "@astrojs/markdown-remark": "^7.3.4",
     "@astrojs/mdx": "^7.0.8",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "@eslint/js": "^10.0.1",
     "@pagefind/component-ui": "^1.5.2",
     "@twbs/bui": "^0.1.2",
-    "astro": "^7.2.6",
+    "astro": "^7.3.8",
     "astro-og-canvas": "^0.13.0",
     "autoprefixer": "^10.5.4",
     "bootstrap": "^6.0.0-alpha.1",
