@@ -3,7 +3,6 @@ author: mdo
 date: "2026-11-11T17:53:55Z"
 title: Bootstrap 5.3.9
 category: Bootstrap 5
-draft: true
 keywords:
   - bootstrap
   - release
