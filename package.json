@@ -40,7 +40,7 @@
     "@eslint/js": "^10.0.1",
     "@pagefind/component-ui": "^1.5.2",
     "@twbs/bui": "^0.1.8",
-    "astro": "^7.4.2",
+    "astro": "^7.4.12",
     "astro-og-canvas": "^0.13.2",
     "autoprefixer": "^10.6.1",
     "bootstrap": "^6.0.0-alpha.1",
