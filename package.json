@@ -43,7 +43,7 @@
     "astro": "^7.4.12",
     "astro-og-canvas": "^0.13.2",
     "autoprefixer": "^10.6.1",
-    "bootstrap": "git+https://github.com/twbs/bootstrap.git#228646ef6b42b6541827b414bdc7076ca1c51bef",
+    "bootstrap": "^6.0.0-alpha.2",
     "clipboard": "^2.0.11",
     "eslint": "^10.13.0",
     "find-unused-sass-variables": "^6.2.1",
