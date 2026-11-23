@@ -2,6 +2,7 @@ import { getPostSlug, type Post } from './content'
 
 export interface SocialCard {
   url: string
+  type: string
   width: number
   height: number
 }
@@ -12,20 +13,18 @@ export interface SocialCard {
  */
 export const defaultSocialCard: SocialCard = {
   url: '/assets/img/bootstrap-social.png',
+  type: 'image/png',
   width: 2000,
   height: 1000
 }
 
 /**
- * The card generated for this post by `src/pages/open-graph/[...route].ts`.
- * astro-og-canvas renders at a fixed 1200x630.
- *
- * Posts use this even when they set a `banner`, since banners are authored at
- * whatever size suits the post body and get cropped as social previews.
+ * Use a post's custom social image or its generated 1200x630 card.
  */
 export function getPostSocialCard(post: Post): SocialCard {
-  return {
+  return post.data.social_image ?? {
     url: `/open-graph/${getPostSlug(post)}.png`,
+    type: 'image/png',
     width: 1200,
     height: 630
   }

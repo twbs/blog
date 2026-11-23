@@ -32,6 +32,6 @@ const socialImage = new URL(card.url, Astro.site)
 {description && <meta property="og:description" content={description}>}
 <meta property="og:type" content={ogType}>
 <meta property="og:image" content={socialImage}>
-<meta property="og:image:type" content="image/png">
+<meta property="og:image:type" content={card.type}>
 <meta property="og:image:width" content={String(card.width)}>
 <meta property="og:image:height" content={String(card.height)}>

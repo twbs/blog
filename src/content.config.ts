@@ -22,6 +22,12 @@ const postsSchema = z.object({
   // Intrinsic size of the banner, so the browser reserves its space before it loads.
   banner_width: z.number().optional(),
   banner_height: z.number().optional(),
+  social_image: z.object({
+    url: z.string(),
+    type: z.string().startsWith('image/'),
+    width: z.number().int().positive(),
+    height: z.number().int().positive()
+  }).optional(),
   // Historical URLs for this post; turned into redirects in astro.config.ts.
   aliases: z.string().array().optional(),
   extra_js: z
