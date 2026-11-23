@@ -1,0 +1,140 @@
+---
+author: mdo
+date: "2026-11-23T00:00:00Z"
+title: Bootstrap 6 Alpha 2
+category: Bootstrap 6
+major: true
+description: Bootstrap 6 Alpha 2 brings native grid gaps, a new Combobox, and fixes for forms, overlays, and forced colors.
+keywords:
+  - bootstrap
+  - release
+  - security
+banner: /assets/img/2026/09/bootstrap-v6-alpha1.webp
+banner_2x: /assets/img/2026/09/bootstrap-v6-alpha1@2x.webp
+banner_avif: /assets/img/2026/09/bootstrap-v6-alpha1.avif
+banner_avif_2x: /assets/img/2026/09/bootstrap-v6-alpha1@2x.avif
+banner_width: 1000
+banner_height: 525
+---
+
+import Example from '@twbs/bui/components/Example'
+import ResizableExample from '@twbs/bui/components/ResizableExample'
+import GithubUser from '../../../components/shortcodes/GithubUser.astro'
+import PostSeries from '../../../components/shortcodes/PostSeries.astro'
+
+Bootstrap 6 Alpha 2 has arrived with tons of updates, documentation improvements, and two security advisories. Highlights include raised browser support, the flexbox grid now using native CSS `gap`, Combobox has replaced Chip input, and we’ve made a slew of fixes to forms, overlays, and more.
+
+If you’re already using Alpha 1, please update to Alpha 2 as soon as possible. Continue reading for details on the highlights and more.
+
+## Native gaps in the flexbox grid
+
+Rows now use CSS-native `gap`, so columns no longer need padding to create gutters and rows no longer need negative margins to offset it. Keep using `.g-*`, `.gx-*`, and `.gy-*`; those classes now set the gap and adjust column widths together.
+
+Resize the example to see how the columns share the available width while the gutters stay the same size.
+
+<ResizableExample code={`<div class="p-3">
+    <div class="row gx-5 gy-2">
+      <div class="col-8">
+        <div class="bg-1 border border-subtle rounded-3 p-2">.col-8</div>
+      </div>
+      <div class="col-4">
+        <div class="bg-1 border border-subtle rounded-3 p-2">.col-4</div>
+      </div>
+      <div class="col-12">
+        <div class="bg-1 border border-subtle rounded-3 p-2">.col-12</div>
+      </div>
+    </div>
+  </div>`} />
+
+## Combobox and form fixes
+
+The new Combobox brings search, single and multiple selection, and custom values into one component. It replaces the Chip input component entirely given they overlapped quite a bit. Multiple selections submit as separate fields with the same name, so check how your form handler reads them when you migrate. [See the Combobox examples.](https://getbootstrap.com/docs/6.0/forms/combobox/)
+
+Try searching for a topic, then select a suggestion or press Enter to add your own. Use the remove button on a chip to take it out.
+
+<Example code={`<label class="form-label" for="alpha2Topics">Topics</label>
+  <div class="combobox-control" data-bs-toggle="combobox"
+       data-bs-name="topics" data-bs-multiple="true" data-bs-allow-custom="true">
+    <input class="form-ghost combobox-input" id="alpha2Topics" placeholder="Add a topic">
+  </div>
+  <div class="menu" aria-label="Suggested topics">
+    <button class="menu-item" type="button" data-bs-value="design">Design</button>
+    <button class="menu-item" type="button" data-bs-value="accessibility">Accessibility</button>
+    <button class="menu-item" type="button" data-bs-value="engineering">Engineering</button>
+  </div>`} />
+
+Beyond that, we’ve also addressed a number of form issues:
+
+- Datepicker now displays dates in the selected locale and submits ISO dates. It also preserves the original input and its event listeners.
+- Range controls refresh their fill and tick marks when values change.
+- There’s a new [form validation playground](https://getbootstrap.com/docs/6.0/forms/validation/) in the docs so you can try the different form states.
+
+## Overlays, deep links, and forced colors
+
+- **Dialog and Drawer** now compensate for scrollbar space while the page is locked. Drawer backdrops fade out on close, and `.dialog-2xl` gives larger dialogs room for up to `1440px` of content.
+- **Menu** opens submenus in place on narrow screens and inside scrolling menus. A **Back** item takes you up a level. Moving a menu into another container now preserves its Tab order.
+- **Tabs and Collapse** can open from a URL fragment. Add `data-bs-hash` to opt in and link straight to a tab pane or expandable section.
+- **Forced colors** styles keep more controls, borders, and focus indicators visible when the browser uses a system palette, including Windows high contrast themes.
+
+Try the link below to open the panel and set the URL fragment. Reload with that fragment in the address bar to see the panel open on page load.
+
+<Example code={`<a class="btn-outline theme-primary" href="#alpha2Collapse">Open via link</a>
+  <div class="collapse" id="alpha2Collapse" data-bs-hash>
+    <div class="card card-body mt-3">
+      This panel opens when the URL ends in <code>#alpha2Collapse</code>.
+    </div>
+  </div>`} />
+
+## Security fixes
+
+Both published advisories cover medium-severity cross-site scripting (XSS) vulnerabilities that affect Bootstrap 6 Alpha 1. Both are fixed in `6.0.0-alpha.2`. If you’re using Alpha 1, upgrade to Alpha 2.
+
+- **Datepicker** now restricts which calendar options can come from HTML. [GHSA-hhp5-vh47-5858](https://github.com/twbs/bootstrap/security/advisories/GHSA-hhp5-vh47-5858)
+- **Toggler** now blocks unsafe HTML attribute updates. [GHSA-pj28-6c95-2682](https://github.com/twbs/bootstrap/security/advisories/GHSA-pj28-6c95-2682)
+
+Thanks to superboy-zjc and jackfromeast for finding and reporting both issues.
+
+[See the full Alpha 2 changelog on GitHub.](https://github.com/orgs/twbs/projects/50)
+
+## Upgrade to Alpha 2
+
+Alpha 2 raises our **minimum browser versions to Chrome and Edge 138, Firefox 147, and Safari 26** on macOS and iOS. Check your browser requirements before upgrading. The migration guide also covers changes to color opacity utilities, component tokens, and JavaScript behavior. [Read the Alpha 2 migration guide.](https://getbootstrap.com/docs/6.0/guides/migration/#alpha-2-changes)
+
+```sh
+npm install bootstrap@6.0.0-alpha.2
+```
+
+## Community appreciation
+
+A big welcome to the 26 people who made their first contribution to Bootstrap in Alpha 2. Thanks for helping us move v6 forward!
+
+<p class="d-flex flex-wrap gap-2">
+  <GithubUser user="xiao115255" />
+  <GithubUser user="davidchan125" />
+  <GithubUser user="dizziedbliss" />
+  <GithubUser user="nickalbrecht" />
+  <GithubUser user="ump45nose" />
+  <GithubUser user="akshatgg" />
+  <GithubUser user="Aryan9891" />
+  <GithubUser user="Aditya31032006" />
+  <GithubUser user="samyferhat" />
+  <GithubUser user="Shubham-Padkonde" />
+  <GithubUser user="stefzt" />
+  <GithubUser user="lazerg" />
+  <GithubUser user="mcenahle" />
+  <GithubUser user="vladosskins178" />
+  <GithubUser user="abd1rahmane" />
+  <GithubUser user="bercedev" />
+  <GithubUser user="sarthakkondawar2007" />
+  <GithubUser user="Aurantium-47" />
+  <GithubUser user="L4XB" />
+  <GithubUser user="b84330808" />
+  <GithubUser user="taekop" />
+  <GithubUser user="cestercian" />
+  <GithubUser user="Rajpal14" />
+  <GithubUser user="fengqiaoqu" />
+  <GithubUser user="thejesh23" />
+  <GithubUser user="zegganewalid" />
+</p>
+
+Thanks to everyone who tried Alpha 1, reported bugs, and sent fixes. Keep the feedback coming as you try Alpha 2, especially if an upgrade breaks markup or customizations that worked in Alpha 1. [Open an issue on GitHub.](https://github.com/twbs/bootstrap/issues)
